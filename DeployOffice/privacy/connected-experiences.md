@@ -1,0 +1,143 @@
+---
+title: Trải nghiệm được kết nối trong Office
+ms.author: danbrown
+author: DHB-MSFT
+manager: laurawi
+ms.audience: ITPro
+ms.topic: reference
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection: Ent_O365
+ms.custom:
+- Ent_Office_ProPlus
+- Ent_Office_Privacy
+description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
+hideEdit: true
+ms.openlocfilehash: 8b3ba855a7f4a6513473011e6d7ca5ed3acc7337
+ms.sourcegitcommit: 894a18676566981183dbe2d78f7466c9bb2c6354
+ms.translationtype: HT
+ms.contentlocale: vi-VN
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33465764"
+---
+# <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
+
+> [!IMPORTANT]
+> Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
+> - Office 365 Business và Office 365 ProPlus.
+> - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
+> - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+
+Office bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
+
+## <a name="connected-experiences-that-analyze-your-content"></a>Trải nghiệm được kết nối phân tích nội dung của bạn
+
+Các trải nghiệm được kết nối phân tích nội dung của bạn là các trải nghiệm sử dụng nội dung Office của bạn để cung cấp cho bạn các đề xuất thiết kế, đề xuất chỉnh sửa, thông tin chi tiết và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Trình soạn thảo trong Word.
+
+Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối để phân tích nội dung của bạn và cũng cung cấp các liên kết đến nhiều thông tin hơn về chúng.
+
+| **Name**   | **Xem thêm thông tin**   |
+| ----------- | ------------------ |
+| Bản đồ 2D    | [Tạo Biểu đồ dạng Bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
+| Bản đồ 3D    | [Bắt đầu với Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+| Đọc chính tả  | [Đọc chính tả bằng giọng nói của bạn trong Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+| Biên tập viên    | [Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
+| Ý tưởng     | [Các ý tưởng trong Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
+| Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang Hình, Văn bản hoặc Toán học trong PowerPoint cho Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Chú thích và phụ đề trực tiếp |  [Trình bày với chú thích theo thời gian thực, tự động hoặc phụ đề trong PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
+| Bản đồ trong Power View   | [Bản đồ trong Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
+| Dịch vụ Bản trình bày Office  | [Phát rộng bản trình bày PowerPoint của bạn đến một người xem từ xa](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
+| PowerPoint Designer   | [Tạo bố trí trang chiếu chuyên nghiệp cùng PowerPoint Designer](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
+| Phát hành lên Power BI   | [Phát hành lên Power BI từ Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
+| Phát hành lên Microsoft Stream    | [Chuyển bản trình bày thành video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
+| Nghiên cứu   | [Thêm hoặc thay đổi dịch vụ nghiên cứu](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Tra cứu Thông minh   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
+| Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
+| Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+
+## <a name="connected-experiences-that-download-online-content"></a>Trải nghiệm được kết nối tải xuống nội dung trực tuyến
+
+Trải nghiệm được kết nối tải xuống nội dung trực tuyến là những trải nghiệm cho phép bạn tìm kiếm và tải xuống nội dung trực tuyến bao gồm các mẫu, hình ảnh, mô hình 3D, video và tài liệu tham khảo để cải thiện tài liệu của bạn. Ví dụ: mẫu Office hoặc Trình Bắt đầu Nhanh PowerPoint.
+
+Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối tải xuống nội dung trực tuyến và cũng cung cấp các liên kết đến nhiều thông tin hơn về chúng.
+
+| **Name**      | **Xem thêm thông tin**  |
+| ------------- | ------------- |
+| Phông chữ đám mây                 | [Phông chữ đám mây trong Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
+| Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
+| Hiệu ứng viết tay                 | [Vẽ và viết bằng tính năng viết tay trong Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
+| Chèn biểu tượng                | [Chèn biểu tượng vào Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
+| Chèn Microsoft Forms      | [Chèn biểu mẫu hoặc bài kiểm tra vào PowerPoint](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
+| Chèn mô hình 3D trực tuyến     | [Sáng tạo với mô hình 3D](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
+| Chèn ảnh trực tuyến      | [Chèn ảnh](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
+| Chèn video trực tuyến     | [Chèn video từ YouTube hoặc site khác](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Trợ giúp Office                 | Khi bạn chọn **Trợ giúp** > **Trợ giúp** trên dải băng hoặc sử dụng F1 trong ứng dụng Office   |
+| Tìm kiếm hình trực tuyến (Visio) | [Tìm thêm các hình và mẫu tô](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
+| Trình bắt đầu Nhanh PowerPoint     | [Nghiên cứu một chủ đề bằng Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
+| Trình nghiên cứu    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
+| Cho Tôi Biết    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
+| Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
+| Thanh Thời tiết (Outlook)| [Thay đổi thành phố được dự báo trên Thanh Thời tiết của lịch](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+
+## <a name="other-connected-experiences"></a>Trải nghiệm được kết nối khác
+
+Ngoài các trải nghiệm được kết nối để phân tích nội dung và trải nghiệm được kết nối tải xuống trực tuyến, có một số trải nghiệm được kết nối khác có sẵn trong Office.
+
+Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối khác và cung cấp các liên kết đến nhiều thông tin hơn về chúng.
+
+| **Name**      | **Xem thêm thông tin**  |
+| ------------- | ------------- |
+| @đề cập đến | [Sử dụng @đề cập đến trong chú thích để gắn thẻ người khác để nhận phản hồi](https://support.office.com/article/644bf689-31a0-4977-a4fb-afe01820c1fd). |
+|Sơ đồ hội ý (Visio)|[Tạo sơ đồ hội ý](https://support.office.com/article/642706c0-7e63-463b-8aa8-a9aa67367989)|
+| Chat | [Tăng cường cộng tác với tính năng Chat trong Microsoft Office](https://support.office.com/article/1ecc6c7f-0b02-4baa-b9d9-c9d67023bedd)  |
+| Sắp ra mắt (Outlook)  |[Sắp ra mắt](https://support.office.com/article/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
+| Liên hệ Bộ phận hỗ trợ (Outlook) | Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng|
+| Nhập tùy chỉnh (Visio)  | [Nhập dữ liệu vào hình trong bản vẽ của bạn](https://support.office.com/article/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
+| Mẹo chính sách Ngăn Mất Dữ liệu (DLP) |[Gửi email thông báo và hiển thị các mẹo chính sách cho chính sách DLP](https://docs.microsoft.com/office365/securitycompliance/use-notifications-and-policy-tips)  |
+| Công cụ Trực quan hóa Dữ liệu (Visio) |[Tạo sơ đồ Công cụ trực quan hóa Dữ liệu](https://support.office.com/article/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
+| Thiết kế dòng (Visio)  | [Thiết kế Microsoft Flow trong Visio](https://support.office.com/article/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
+| Danh sách bên ngoài (Outlook) |[Kết nối một danh sách ngoài với Outlook](https://support.office.com/article/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
+| Hộp thư đến Ưu tiên (Outlook) |[Hộp thư đến Ưu tiên dành cho Outlook](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
+| Quản lý Quyền Thông tin |[Quản lý quyền thông tin trong Office](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
+| Thẻ liên hệ LinkedIn |[Kết nối tài khoản LinkedIn và Microsoft của bạn](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
+| Phản hồi về Office |[Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
+| Bộ phận hỗ trợ của Office (Liên hệ với chúng tôi) |Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng |
+| Phần bổ trợ Office 365 | [Quản lý việc triển khai các phần bổ trợ Office 365 trong Trung tâm quản trị Microsoft 365](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
+| Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức Viso](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
+| Trình kết nối Xã hội Outlook | [Bật Trình kết nối Xã hội Outlook](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
+| Outlook UserVoice | [Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+| Tài liệu gần đây |[Mở tệp từ menu Tệp](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
+| Trợ lý Sơ yếu lý lịch (hoặc Trợ lý CV) |[Viết sơ yếu lý lịch đẹp nhất của bạn với sự trợ giúp từ LinkedIn và Trợ lý Sơ yếu lý lịch](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
+| Bộ tìm phòng (Outlook)|[Cách kiểm soát Bộ tìm phòng trong Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
+| Liên kết an toàn |[Liên kết an toàn Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
+| Nhãn độ nhạy cảm |[Áp dụng nhãn nhạy cảm cho tài liệu và email của bạn trong Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
+| Chia sẻ  |[Chia sẻ tài liệu (Excel)](https://support.office.com//article/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Chia sẻ tài liệu (PowerPoint)](https://support.office.com//article/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Chia sẻ tài liệu (Word)](https://support.office.com//article/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
+| Được chia sẻ với tôi |[Xem tệp những người khác đã chia sẻ với bạn](https://support.office.com/article/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
+| Hộp thư của site SharePoint (Outlook)|[Hiển thị hoặc ẩn hộp thư của site trong Outlook](https://support.office.com/article/A9C4B8C7-A1A9-43C0-BD05-7513CA092863)  |
+|Nhập và xuất đường thời gian (Visio)|[Nhập và xuất dữ liệu đường thời gian giữa Visio và Project](https://support.office.com/article/bc09becb-8c77-49b1-8e47-af3cf8cb7242)|
+| Lịch sử phiên bản |[Xem các phiên bản trước đó của tệp Office](https://support.office.com/article/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
+| Khi bạn vắng mặt |[Nhận thông báo khi các thành viên trong nhóm của bạn cập nhật tệp chia sẻ của bạn](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
+
+
+## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Chọn xem những trải nghiệm được kết nối này có sẵn để sử dụng không
+
+Bạn có thể chọn xem một số loại trải nghiệm được kết nối nhất định, chẳng hạn như trải nghiệm được kết nối tải xuống nội dung trực tuyến, có sẵn để sử dụng hay không. Cách bạn đưa ra lựa chọn đó tùy thuộc vào việc bạn đã đăng nhập vào Office bằng tài khoản Microsoft, chẳng hạn như địa chỉ email outlook.com cá nhân hoặc với tài khoản cơ quan hoặc trường học.
+
+Nếu bạn đã đăng nhập bằng tài khoản Microsoft, hãy mở ứng dụng Office, chẳng hạn như Word và đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý thiết đặt**. Trong phần **Trải nghiệm được kết nối**, bạn có thể chọn xem một số loại trải nghiệm được kết nối nhất định, chẳng hạn như trải nghiệm được kết nối tải xuống nội dung trực tuyến, có sẵn để sử dụng hay không. Nếu bạn không đi đến phần **Quản lý thiết đặt**, tất cả các trải nghiệm được kết nối đều sẽ có sẵn cho bạn.
+
+Nếu bạn đã đăng nhập bằng tài khoản cơ quan hoặc trường học, người quản trị trong tổ chức của bạn sẽ quyết định xem những trải nghiệm được kết nối này có sẵn cho bạn hay không. Bạn sẽ không thấy bất kỳ lựa chọn nào cho các trải nghiệm được kết nối này nếu bạn đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý thiết đặt**.
+
+Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng thiết đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để biết thêm thông tin về cách sử dụng các thiết đặt chính sách này, hãy xem mục [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md).
+
+Nếu bạn chọn tắt một số loại trải nghiệm được kết nối, lệnh dải băng hoặc menu cho những trải nghiệm được kết nối đó sẽ chuyển sang màu xám hoặc bạn sẽ nhận được thông báo lỗi khi bạn cố gắng sử dụng những trải nghiệm được kết nối đó.
+
+Ngay cả khi bạn quyết định tắt các trải nghiệm được kết nối này, một số chức năng Office nhất định sẽ vẫn khả dụng, chẳng hạn như đồng bộ hóa hộp thư trong Outlook và Teams và Skype for Business sẽ tiếp tục hoạt động. Ngoài ra, có một tập hợp các dịch vụ rất cần thiết cho cách các chức năng Office không thể bị tắt, chẳng hạn như dịch vụ cấp phép xác nhận rằng bạn được cấp phép sử dụng Office đúng cách.
+
+## <a name="related-topics"></a>Chủ đề liên quan
+
+- [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
+- [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md)
+- [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
+- [Các dịch vụ cần thiết cho Office](essential-services.md)
