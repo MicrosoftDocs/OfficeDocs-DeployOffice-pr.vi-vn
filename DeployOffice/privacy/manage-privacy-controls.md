@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các thiết đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: 069b21632044354afded61ccc9b1d099cd9cda98
-ms.sourcegitcommit: 8dd9721bd618ae6e4d27f2c45c5dc8e3219858ac
+ms.openlocfilehash: a28da8a54ecb37f6fd26576ce2dfb4614521dd19
+ms.sourcegitcommit: c4147043c5e6581d58a6d09edbf95266e67dd796
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250405"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34545480"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -87,7 +87,7 @@ Chúng tôi hiểu rằng bạn có thể muốn chọn loại trải nghiệm �
 Nếu bạn không cấu hình các thiết đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn. Điều này cung cấp cho người dùng của bạn tất cả các tính năng và chức năng có thể truy cập thông qua Office 365 ProPlus. Nhưng chúng tôi hiểu rằng bạn có thể cần phải tắt một số hoặc tất cả những trải nghiệm được kết nối này để đáp ứng các yêu cầu nhất định của tổ chức của bạn.
 
 > [!IMPORTANT]
-> Hiện chúng tôi đang cố gắng khắc phục sự cố với 4 thiết đặt chính sách này. Hiện tại, để vô hiệu hóa một trong các thiết đặt chính sách này bằng cách sử dụng công cụ Quản lý chính sách nhóm, bạn cần chọn nút chọn **Đã bật**, rồi chọn **Đã tắt** từ danh sách thả xuống trong phần **Tuỳ chọn**. Việc chọn nút chọn **Đã tắt** sẽ không vô hiệu hóa các thiết đặt chính sách này.
+> Sự cố liên quan đến việc tắt 4 thiết đặt chính sách gần đây đã được khắc phục bằng cách xuất bản các tệp Mẫu quản trị mới (ADMX/ADML) vào Thứ Ba ngày 28/5/2019. Đảm bảo tải xuống và cài đặt bản cập nhật bằng cách thủ công từ [Trung tâm Tải xuống Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
 Nếu bạn chọn không cung cấp cho người dùng của mình một số loại trải nghiệm được kết nối nhất định, lệnh ruy băng hoặc menu cho những trải nghiệm được kết nối đó sẽ bị mờ đi hoặc người dùng sẽ nhận được thông báo lỗi khi họ cố gắng sử dụng những trải nghiệm được kết nối đó. Trong trường hợp đó, sẽ không có [dữ liệu dịch vụ bắt buộc](required-service-data.md) cho những trải nghiệm được kết nối nào được gửi đến Microsoft.
 
@@ -207,8 +207,8 @@ Một số người quản trị muốn thay đổi các thiết đặt trực t
 |Cấu hình mức độ dữ liệu chẩn đoán phần mềm máy khách được Office gửi cho Microsoft  | Gửi_phép_đo_từ_xa |1=Bắt buộc <br/> 2=Tuỳ chọn <br/> 3=Không có lựa chọn nào|
 |Cho phép sử dụng trải nghiệm được kết nối phân tích nội dung trong Office  | Nội_dung_người_dùng_đã_bị_tắt | 1=Đã bật <br/> 2=Đã tắt|
 |Cho phép sử dụng trải nghiệm được kết nối tải nội dung trực tuyến trong Office  | Nội_dung_tải_xuống_đã_bị_tắt | 1=Đã bật <br/> 2=Đã tắt|
-|Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office   |  Trạng_thái_ngắt_kết_nối |1=Đã bật <br/> 2=Đã tắt|
-|Cho phép sử dụng các trải nghiệm được kết nối trong Office | Dịch_vụ_được_kết_nối_kiểm_soát_đã_được_bật  | 1=Đã bật <br/> 2=Đã tắt|
+|Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office   | Dịch_vụ_được_kết_nối_kiểm_soát_đã_được_bật  |1=Đã bật <br/> 2=Đã tắt|
+|Cho phép sử dụng các trải nghiệm được kết nối trong Office | Trạng_thái_ngắt_kết_nối  | 1=Đã bật <br/> 2=Đã tắt|
 
 Để tạo tệp .reg cho cài đặt quyền riêng tư, hãy mở Notepad và sao chép vào các dòng sau. Điều chỉnh các giá trị cho phù hợp với nhu cầu của bạn, rồi lưu tệp. Hãy đảm bảo rằng tên tệp có phần mở rộng là .reg
 
