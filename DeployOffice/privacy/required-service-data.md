@@ -30,7 +30,7 @@ ms.locfileid: "33468571"
 
 Office bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
-Dữ liệu dịch vụ bắt buộc là dữ liệu cho phép chúng tôi cung cấp các trải nghiệm được kết nối dựa trên đám mây này và giúp làm cho các trải nghiệm này trở nên an toàn và hoạt động như mong đợi dành cho các khách hàng của chúng tôi. Dữ liệu dịch vụ bắt buộc gồm ba loại thông tin sau:
+Dữ liệu dịch vụ bắt buộc là dữ liệu cho phép chúng tôi cung cấp các trải nghiệm được kết nối dựa trên đám mây này và giúp làm cho các trải nghiệm này trở nên an toàn và hoạt động như mong đợi dành cho các khách hàng của chúng tôi. Dữ liệu dịch vụ bắt buộc gồm ba loại thông tin.
 
 - **Nội dung khách hàng** là nội dung bạn tạo bằng cách sử dụng Office, chẳng hạn như văn bản đã được nhập trong tài liệu Word và được sử dụng kết hợp với trải nghiệm được kết nối.
 - **Dữ liệu chức năng** bao gồm thông tin mà trải nghiệm được kết nối cần để thực hiện nhiệm vụ của mình, chẳng hạn như thông tin cấu hình về ứng dụng.
@@ -40,7 +40,7 @@ Dữ liệu dịch vụ bắt buộc là dữ liệu cho phép chúng tôi cung 
 
 Để giúp bạn hiểu về dữ liệu dịch vụ bắt buộc, sau đây là một kịch bản ví dụ, sử dụng PowerPoint Designer - một trải nghiệm được kết nối mà bạn có thể sử dụng khi tạo các trang chiếu cho bản trình bày. PowerPoint Designer giúp cải thiện các trang chiếu của bạn bằng cách tự động tạo các ý tưởng thiết kế mà bạn có thể chọn. Khi bạn dự định đưa nội dung vào một trang chiếu, Trình thiết kế sẽ hoạt động trong nền để khớp nội dung đó với các bố trí được thiết kế chuyên nghiệp.
 
-Dữ liệu dịch vụ bắt buộc được gửi tới Microsoft để cho phép những trải nghiệm được kết nối dành cho bạn này có thể bao gồm các thông tin sau:
+Dữ liệu dịch vụ bắt buộc được gửi tới Microsoft để cho phép trải nghiệm được kết nối dành cho bạn này có thể bao gồm các thông tin sau:
 
 - *Nội dung khách hàng*, chẳng hạn như văn bản hoặc hình ảnh mà bạn đã thêm vào trang chiếu của mình.
 - *Dữ liệu chức năng*, chẳng hạn như trang chiếu mà bạn đang làm việc và bố trí.
