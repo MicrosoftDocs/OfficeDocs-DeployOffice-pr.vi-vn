@@ -3,7 +3,7 @@ title: Dữ liệu dịch vụ bắt buộc cho Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office cái nhìn tổng quan về dữ liệu dịch vụ bắt buộc được thu thập về các trải nghiệm được kết nối trong Office.
 hideEdit: true
-ms.openlocfilehash: 88f8aadc098af6e167206486566e32af1767c741
-ms.sourcegitcommit: 894a18676566981183dbe2d78f7466c9bb2c6354
+ms.openlocfilehash: 9a276e00f5c852ffda00844c5e1aaa9187f581c3
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33468571"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701031"
 ---
 # <a name="required-service-data-for-office"></a>Dữ liệu dịch vụ bắt buộc cho Office 
 

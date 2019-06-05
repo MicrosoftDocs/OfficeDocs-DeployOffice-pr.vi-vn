@@ -3,7 +3,7 @@ title: Tổng quan về trải nghiệm được kết nối tuỳ chọn trong 
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: 217fd5b2aa29ad44c2caeea394d4cdf6dc8a824c
-ms.sourcegitcommit: e9c35e7cb930d13383817e69ef019b7cd6b06f2a
+ms.openlocfilehash: f1d8c16b7e267d49735814ee9d393c578dbf3c28
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33484408"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701346"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 

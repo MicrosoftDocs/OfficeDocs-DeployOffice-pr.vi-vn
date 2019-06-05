@@ -3,7 +3,7 @@ title: Dữ liệu chẩn đoán tuỳ chọn cho Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số ví dụ về các sự kiện.
 hideEdit: true
-ms.openlocfilehash: 1df576e8f5f1b3ed9fff11651ff4dd2b28d47229
-ms.sourcegitcommit: b3fd057154853fc588d0e83b4d632b6e9a051a3c
+ms.openlocfilehash: 852c53ad208cf02150de2e64e9e55d69015dda14
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32435881"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701207"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán tuỳ chọn cho Office
 

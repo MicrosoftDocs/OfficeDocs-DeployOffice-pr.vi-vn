@@ -3,7 +3,7 @@ title: Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office một tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus, bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: 4752894c0fec3b9eb625476851a4d0ec40642448
-ms.sourcegitcommit: 05820eb0281c0c8591f70b9d4b285d7f292a8cf0
+ms.openlocfilehash: a65fd2a6b7169c9098d233a926041d9cbc599886
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "33828384"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701141"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -119,7 +119,7 @@ Dữ liệu dịch vụ bắt buộc là dữ liệu cho phép chúng tôi mang 
 
 Để giúp bạn hiểu về dữ liệu dịch vụ bắt buộc, sau đây là một kịch bản ví dụ, sử dụng PowerPoint Designer, đây là trải nghiệm được kết nối mà bạn có thể sử dụng khi tạo các trang chiếu cho bản trình bày. PowerPoint Designer giúp cải thiện các trang chiếu của bạn bằng cách tự động tạo các ý tưởng thiết kế mà bạn có thể chọn. Khi bạn dự định đưa nội dung vào một trang chiếu, Trình thiết kế sẽ hoạt động trong nền để khớp nội dung đó với các bố trí được thiết kế chuyên nghiệp.
 
-Dữ liệu dịch vụ bắt buộc được gửi tới Microsoft để cho phép những trải nghiệm được kết nối dành cho bạn này có thể bao gồm các thông tin sau:
+Dữ liệu dịch vụ bắt buộc được gửi tới Microsoft để cho phép trải nghiệm được kết nối dành cho bạn này có thể bao gồm các thông tin sau:
 
 - *Nội dung khách hàng*, chẳng hạn như văn bản hoặc hình ảnh mà bạn đã thêm vào trang chiếu của mình.
 - *Dữ liệu chức năng*, chẳng hạn như trang chiếu mà bạn đang làm việc và bố trí.
