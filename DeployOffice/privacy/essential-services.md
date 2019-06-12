@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 81b5ff2e1451f910f2e9695dba488d39d27b7241
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701299"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813360"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -2718,6 +2718,14 @@ Các trường sau đây sẽ được thu thập:
 
   - **TimerDetectedChange** - Liệu thay đổi có được phát hiện bằng cách ping thường xuyên theo thời gian hay không.
 
+### <a name="officesystemprivacyfallbacktosettingsstore"></a>Office.System.PrivacyFallbackToSettingsStore
+
+Dùng để xác định xem có sự cố khi đọc các cài đặt quyền riêng tư của người dùng từ lưu trữ chuyển vùng hay không.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Tag-** Thẻ mã cho biết cài đặt nào đã quay lại vào lưu trữ cài đặt.
+
 ### <a name="officesystemsessiondatao365"></a>Office.System.SessionDataO365
 
 Siêu dữ liệu cần thiết để cô lập một bản sao thất bại.
@@ -2746,7 +2754,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **IsCeip -** Việc cài đặt Office có được đăng ký hay không trong Chương trình cải thiện trải nghiệm khách hàng không còn tồn tại.
 
-  - **IsDebug -** Liệu đây có phải là bản dựng gỡ lỗi của Office hay không.
+  - **IsDebug -** Đây có phải là bản dựng gỡ lỗi của Office hay không.
 
   - **IsImmersive -** Liệu ứng dụng Office có phải là một ứng dụng Windows phổ quát hay là một ứng dụng chân thực.
 

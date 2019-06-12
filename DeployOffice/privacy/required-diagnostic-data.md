@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: a5ac5dfded3dbb51693b5d15616675b067c59dc3
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: d42f2bd20e3e2169e58d6f5c0a563f1b117ea847
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701720"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813324"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -65,6 +65,7 @@ Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đ
 | **Sử dụng sản phẩm và dịch vụ**    | [Mức độ thành công của tính năng ứng dụng ](#application-feature-success-subtype)   | Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác). |
 | | [Trạng thái ứng dụng và khởi động](#application-status-and-boot-subtype)    | Xác định xem các sự kiện tính năng cụ thể đã xảy ra hay chưa, chẳng hạn như bắt đầu hoặc dừng và tính năng có đang hoạt động hay không.   |
 | | [Cấu hình khả năng truy nhập Office](#office-accessibility-configuration-subtype)  | Các tính năng trợ năng của Office       |
+| | [Quyền riêng tư](#privacy-subtype)| Thiết đặt quyền riêng tư của Office|
 | **Hiệu suất sản phẩm và dịch vụ**       | [Ứng dụng bất ngờ (gặp sự cố)](#unexpected-application-exit-crash-subtype)  | Ứng dụng bất ngờ thoát và trạng thái của ứng dụng khi điều đó xảy ra.    |
 |  | [Hiệu suất tính năng ứng dụng ](#application-feature-performance-subtype)  | Thời gian phản hồi hoặc hiệu suất kém cho các tình huống như ứng dụng khởi động hoặc mở tệp. |
 |  | [Lỗi hoạt động ứng dụng](#application-activity-error-subtype)   | Lỗi về chức năng của một tính năng hoặc trải nghiệm người dùng.  |
@@ -971,6 +972,7 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 - [Mức độ thành công của tính năng ứng dụng ](#application-feature-success-subtype)
 - [Trạng thái ứng dụng và khởi động](#application-status-and-boot-subtype)
 - [Cấu hình khả năng truy nhập Office](#office-accessibility-configuration-subtype)
+- [Quyền riêng tư](#privacy-subtype)
 
 
 ### <a name="application-feature-success-subtype"></a>*Loại con mức độ thành công của tính năng ứng dụng *
@@ -4000,8 +4002,12 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_CheckRequiredPartsLoaded -** Khoảng thời gian thực hiện phương pháp CheckRequiredPartsLoaded tính bằng mili giây
 
   - **Data\_CheckWebSharingViolationForIncOpen -** Khoảng thời gian thực hiện phương pháp CheckWebSharingViolationForIncOpen tính bằng mili giây
+   
+  - **Data_CloseAndReopenWithoutDiscard –** Tài liệu đã được đóng và mở lại trong suốt quy trình mở mà không cần loại bỏ hay không.
 
-  - **Data\_ContentTransaction -** Tập hợp các giá trị được xác định trước khi giao dịch có thể được tạo (AllowedOnLoadDocument, AllowedOnOpenComplete, v.v.)
+  - **Data\_ContentTransaction -** Tập hợp các giá trị được xác định trước của thời điểm có thể tạo giao dịch (AllowedOnLoadDocument, AllowedOnOpenComplete, v.v.)
+
+  - **Data_CorrelationId-** GUID được truyền qua PowerPoint bằng ProtocolHandler để kết hợp phép đo từ xa. ProtocolHandler là một quy trình riêng biệt để xử lý các liên kết Office cho hệ điều hành.
 
   - **Data\_CppUncaughtExceptionCount:long -** Không theo kịp ngoại lệ riêng trong khi hoạt động đang chạy
 
@@ -4911,6 +4917,50 @@ Sự kiện này cho biết Office Word dừng đọc to văn bản trong tài l
 Các trường sau đây sẽ được thu thập:
 
   - Không có
+
+### <a name="privacy-subtype"></a>*Loại con quyền riêng tư*
+
+Thiết đặt quyền riêng tư của Office 
+
+#### <a name="officeintelligentserviceprivacyconsentprivacyevent"></a>Office.IntelligentService.PrivacyConsent.PrivacyEvent
+
+Sự kiện này đại diện cho một người dùng hoặc hệ thống khởi tạo hành động nằm trong trải nghiệm người dùng trên Office ở mục quyền riêng tư. Sự kiện này được kích hoạt trên hộp thoại Chạy lần đầu tiên trong mục quyền riêng tư, hộp thoại Quyền riêng tư của tài khoản và thông báo về quyền riêng tư. Sự kiện này dùng để hiểu những điều sau: người dùng đồng ý với thiết đặt quyền riêng tư của Office, người dùng thay đổi thiết đặt quyền riêng tư của Office và thiết đặt quyền riêng tư của Office sẽ được cập nhật trong các phiên người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data_ActionId-** Hành động của người dùng trong một hộp thoại quyền riêng tư
+
+  - **Data_ControllerConnectedServicesState -** Cài đặt chính sách về quyền riêng tư của người dùng cho các trải nghiệm kết nối tùy chọn bổ sung
+
+  - **Data_DownloadedContentServiceGroupState-** Cài đặt của người dùng cho nội dung đã tải xuống 
+ 
+  - **Data_ForwardLinkId-** Liên kết đến tài liệu về quyền riêng tư cho kịch bản người dùng
+
+  - **Data_HRESULT-** Ghi lại các lỗi trong khi tương tác với một hộp thoại quyền riêng tư
+
+  - **Data_IsEnterpriseUser -** Danh mục giấy phép người dùng
+
+  - **Data_OfficeServiceConnectionState-** Cài đặt của người dùng cho các dịch vụ được kết nối
+
+  - **Data_RecordRegistry-** Ghi lại hiển thị hộp thoại quyền riêng tư của doanh nghiệp
+
+  - **Data_Scenario -** Kịch bản chạy lần đầu tiên dựa trên danh mục và giấy phép người dùng
+
+  - **Data_SeenInsidersDialog-** Ghi lại hiển thị hộp thoại quyền riêng tư của người dùng nội bộ
+
+  - **Data_SendTelemetryOption-** Cài đặt của người dùng cho phép đo từ xa
+
+  - **Data_SendTelemetryOptionPolicy -** Cài đặt chính sách người dùng cho phép đo từ xa
+
+  - **Data_UserCategory -** Loại tài khoản người dùng  
+
+  - **Data_UserCCSDisabled-** Người dùng ghi đè lên các trải nghiệm được kết nối tùy chọn bổ sung
+
+   - **Data_UserContentServiceGroupState-** Cài đặt của người dùng để phân tích nội dung
+
+  - **Data_WillShowDialogs-** Ghi lại những gì người dùng cần để xem các hộp thoại Chạy lần đầu tiên trong mục quyền riêng tư
+
+
 
 ## <a name="product-and-service-performance-data-events"></a>Sự kiện dữ liệu về hiệu suất sản phẩm và dịch vụ
 
