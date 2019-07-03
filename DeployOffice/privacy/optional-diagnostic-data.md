@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số ví dụ về các sự kiện.
 hideEdit: true
-ms.openlocfilehash: 852c53ad208cf02150de2e64e9e55d69015dda14
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: cf3a2488d985dd238456e86466688036c0c61ccb
+ms.sourcegitcommit: e6135e9937ef07785f0ce0eb6282ceece401f96e
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701207"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35430109"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán tuỳ chọn cho Office
 
@@ -36,7 +36,7 @@ Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phầ
 
 Nếu bạn chọn gửi cho chúng tôi dữ liệu chẩn đoán tùy chọn, dữ liệu chẩn đoán bắt buộc cũng sẽ được bao gồm.
 
-Ví dụ về dữ liệu chẩn đoán tùy chọn bao gồm dữ liệu chúng tôi thu thập về hình ảnh người dùng chèn vào tài liệu Word để chúng tôi có thể cung cấp tùy chọn hình ảnh tốt hơn và dữ liệu chúng tôi thu thập về thời gian để trang chiếu PowerPoint xuất hiện trên màn hình của bạn để chúng tôi có thể cải thiện trải nghiệm nếu quá trình đó diễn ra chậm.
+Ví dụ về dữ liệu chẩn đoán tùy chọn bao gồm dữ liệu chúng tôi thu thập về hình người dùng chèn vào tài liệu Word để chúng tôi có thể cung cấp tùy chọn tốt hơn và dữ liệu chúng tôi thu thập về thời gian để trang chiếu PowerPoint xuất hiện trên màn hình của bạn để chúng tôi có thể cải thiện trải nghiệm nếu quá trình đó diễn ra chậm.
 
 Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các mục sau:
 
@@ -73,7 +73,7 @@ Bảng sau đây cung cấp các ví dụ về các sự kiện trong danh mục
 
 | **Tên sự kiện**   | **Mô tả sự kiện**  |
 | ---- | ---- |
-| Office\_Extensibility\_AppCommands\_GetRibbonUpdatesForUserId | Sự kiện này cho biết liệu Word có cập nhật thành công dải băng trong Giao diện người dùng Word hay không khi người dùng thay đổi danh tính của họ. Chúng tôi sử dụng sự kiện này để phát hiện thiết lập không chính xác và các sự cố khác ảnh hưởng đến giao diện người dùng Office. |
+| Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | Sự kiện này cho biết liệu Word có cập nhật thành công dải băng trong Giao diện người dùng Word hay không khi người dùng thay đổi danh tính của họ. Chúng tôi sử dụng sự kiện này để phát hiện thiết lập không chính xác và các sự cố khác ảnh hưởng đến giao diện người dùng Office. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Sự kiện này cung cấp thông tin về phần bổ trợ Office mà người dùng đã cài đặt, bao gồm ID ứng dụng, bản dựng và phiên bản hệ điều hành, thành công của bản cài đặt và thời gian cài đặt.  |
 
 ## <a name="product-and-service-usage-events"></a>Sự kiện sử dụng sản phẩm và dịch vụ
@@ -90,7 +90,7 @@ Bảng sau đây cung cấp các ví dụ về các sự kiện trong danh mục
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | Sự kiện này cho thấy Word đã thực thi lệnh để tô sáng văn bản. Chúng tôi sử dụng sự kiện này để phát hiện lỗi trong lệnh tô sáng văn bản.  |
 | Office.Translator.AddInLoaded   | Thông báo hoạt động để chỉ ra rằng tính năng bộ dịch đã được tải và kết xuất thành công.  |
-| Office.Graphics.InsertPictureCommandActivity  | Theo dõi sự thành công hay thất bại của tính năng Chèn Ảnh và cũng báo cáo chi tiết về các loại ảnh được chèn và từ nguồn nào.|
+| Office.Graphics.GVizInsertShape |Theo dõi việc sử dụng tính năng Chèn Hình trong Word và cũng báo cáo chi tiết về các loại hình được chèn và từ nguồn nào.| 
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | Sự kiện này xác định xem có bất kỳ phần nào trong tài liệu hay không khi người dùng đang chèn Thu phóng Tóm tắt và nếu người dùng chọn xóa các phần hiện có. |
 | Office.Security.SecureReaderHost.ProtectedViewValidation | Theo dõi thời điểm và lý do tại sao tệp được mở trong Dạng xem được bảo vệ. Được sử dụng để chẩn đoán các điều kiện mà trong đó Chế độ xem được bảo vệ có thể không được kích hoạt chính xác để đảm bảo tính năng này hoạt động tốt. |
 
@@ -106,7 +106,7 @@ Bảng sau đây cung cấp các ví dụ về các sự kiện trong danh mục
 
 | **Tên sự kiện**    | **Mô tả sự kiện**   |
 | --------------- | -------------- |
-| Office\_Word\_Word\_CoreSaveTime100ns     | Sự kiện này ghi lại hiệu suất của hoạt động lưu tài liệu bằng Word. Chúng tôi sử dụng sự kiện này để phát hiện lỗi và các vấn đề về hiệu suất trong hoạt động lưu tài liệu Word.|
+| Office.Word.Word.CoreSaveTime100ns     | Sự kiện này ghi lại hiệu suất của hoạt động lưu tài liệu bằng Word. Chúng tôi sử dụng sự kiện này để phát hiện lỗi và các vấn đề về hiệu suất trong hoạt động lưu tài liệu Word.|
 | Office.Identity.SignInForWamAccountAad  | Sự kiện này được gửi khi người dùng đăng nhập vào tài khoản Active Directory Azure với thư viện Trình quản lý tài khoản web (WAM). Sự kiện này sẽ gửi siêu dữ liệu như AppName, AppVersion và ErrorCode nếu sự kiện không thành công. |
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | Sự kiện này thu thập khoảng thời gian cần thiết để hiển thị hình thu nhỏ chính của trang chiếu đầu tiên trong PowerPoint.  |
 | Office.Extensibility.Diagnostics   | Sự kiện này cung cấp thông tin chẩn đoán chung cho các phần bổ trợ Office, chẳng hạn như báo cáo sự cố để gỡ lỗi.|
@@ -121,6 +121,6 @@ Bảng sau đây cung cấp các ví dụ về các sự kiện trong danh mục
 
 | **Tên sự kiện**                    | **Mô tả sự kiện**                                                                                                                                                     |
 | ------ | ----- |
-| Office\_Graphics\_ArtViewValidate | Sự kiện này ghi lại xác nhận kết quả của Chế độ xem đồ họa hỗ trợ Giao diện người dùng đồ họa. Chúng tôi sử dụng sự kiện này để thu thập dữ liệu sử dụng và lỗi về kết xuất đồ họa. |
+| Office.Graphics.ArtViewValidate | Sự kiện này ghi lại xác nhận kết quả của Chế độ xem đồ họa hỗ trợ Giao diện người dùng đồ họa. Chúng tôi sử dụng sự kiện này để thu thập dữ liệu sử dụng và lỗi về kết xuất đồ họa. |
 | Office.Graphics.ARCExceptionScope | Sự kiện này theo dõi các lỗi kết xuất bắt nguồn từ công cụ kết xuất. |
 | Office.Extensibility.ODPLatency   | Sự kiện này cung cấp thông tin về tốc độ và kết nối mạng của người dùng.     |
