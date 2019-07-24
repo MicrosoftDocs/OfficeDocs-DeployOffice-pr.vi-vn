@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
-ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
+ms.openlocfilehash: 14b2426d021e5c559cabd3c969f80df9131cc9b9
+ms.sourcegitcommit: 22ae0005d3106ff02949fb613b82e0245abfa49f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34813360"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35817992"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -50,7 +50,7 @@ Bảng sau đây cung cấp danh sách các dịch vụ cần thiết cho Office
 | ------ | ---- |
 | [Xác thực](#authentication-events) | Xác thực là một dịch vụ đa nền tảng xác thực danh tính người dùng Office của bạn. Nó là điều bắt buộc để cho phép bạn đăng nhập vào Office, kích hoạt giấy phép Office, truy nhập các tệp được lưu trữ trên đám mây và cung cấp trải nghiệm nhất quán trên các phiên Office và thiết bị của bạn.    |
 | [Click-to-Run](#click-to-run-events) | Click-to-Run là công nghệ cài đặt được sử dụng để cài đặt và cập nhật Office trên Windows. Công nghệ này kiểm tra các phiên bản mới của Office và tải xuống và cài đặt khi có phiên bản mới.Click-to-Run sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật Office, bao gồm các bản cập nhật bảo mật.     |
-| [Dịch vụ cấu hình nâng cao (ECS)](#experimentation-and-configuration-service-ecs-events) | ECS cung cấp cho Microsoft khả năng cấu hình lại các bản cài đặt Office mà không cần bạn phải triển khai lại Office. Dịch vụ này được sử dụng để kiểm soát việc triển khai dần các tính năng hoặc bản cập nhật, trong khi ảnh hưởng của việc triển khai được theo dõi từ dữ liệu chẩn đoán được thu thập. Nó cũng được sử dụng để giảm thiểu các vấn đề về bảo mật hoặc hiệu suất với một tính năng hoặc bản cập nhật. Ngoài ra, ECS còn hỗ trợ thay đổi cấu hình liên quan đến dữ liệu chẩn đoán để giúp đảm bảo rằng các sự kiện thích hợp sẽ được thu thập. |
+| [Dịch vụ cấu hình nâng cao (ECS)](#enhanced-configuration-service-ecs-events) | ECS cung cấp cho Microsoft khả năng cấu hình lại các bản cài đặt Office mà không cần bạn phải triển khai lại Office. Dịch vụ này được sử dụng để kiểm soát việc triển khai dần các tính năng hoặc bản cập nhật, trong khi ảnh hưởng của việc triển khai được theo dõi từ dữ liệu chẩn đoán được thu thập. Nó cũng được sử dụng để giảm thiểu các vấn đề về bảo mật hoặc hiệu suất với một tính năng hoặc bản cập nhật. Ngoài ra, ECS còn hỗ trợ thay đổi cấu hình liên quan đến dữ liệu chẩn đoán để giúp đảm bảo rằng các sự kiện thích hợp sẽ được thu thập. |
 | [Cấp phép](#licensing-events)     | Cấp phép là dịch vụ dựa trên nền điện toán đám mây hỗ trợ kích hoạt Office của bạn để cài đặt mới và duy trì giấy phép trên thiết bị của bạn sau khi Office được kích hoạt. Dịch vụ này đăng ký từng thiết bị của bạn và kích hoạt Office, kiểm tra trạng thái đăng ký Office và quản lý các khóa sản phẩm của bạn.    |
 | [Cấu hình dịch vụ](#services-configuration-events)  | Cấu hình dịch vụ cung cấp khả năng cập nhật các cài đặt cấu hình Office để bật hoặc tắt các tính năng của máy khách. Nó được gọi mỗi khi ứng dụng Office được khởi động và cung cấp chi tiết về các cấu hình và dịch vụ khác của Office. Cấu hình dịch vụ cũng kiểm soát các dịch vụ được chỉ định là dịch vụ cần thiết.  |
 | [Phép đo từ xa](#telemetry-events)  | Dịch vụ phép đo từ xa được dùng để thu thập dữ liệu chẩn đoán từ ứng dụng Office. Dịch vụ này cho phép thu thập dữ liệu chẩn đoán do Office tạo ra, gồm cả dữ liệu chẩn đoán bắt buộc lẫn tùy chọn. Nó cũng chịu trách nhiệm thu thập phần dữ liệu chẩn đoán dịch vụ của dữ liệu dịch vụ bắt buộc cho Office.  |
@@ -2395,7 +2395,7 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_targetBuild -** - Phiên bản Office mà chúng tôi đang cố gắng cập nhật
 
 
-## <a name="experimentation-and-configuration-service-ecs-events"></a>Sự kiện Dịch vụ thử nghiệm và cấu hình (ECS)
+## <a name="enhanced-configuration-service-ecs-events"></a>Sự kện Dịch vụ cấu hình nâng cao (ECS)
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
 
@@ -2448,7 +2448,7 @@ Quan trọng là phát hiện số người dùng đang phải đối mặt vớ
 
 Các trường sau đây sẽ được thu thập:
 
-  - **ACID** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép
+  - **Acid** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép
 
   - **ReferralData** – Mã định danh của OEM đã cài đặt Office trên máy
 
@@ -2480,7 +2480,7 @@ Các trường sau đây sẽ được thu thập:
 
 Các trường sau đây sẽ được thu thập:
 
-  - **ACID** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép 
+  - **Acid** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép 
 
   - **IsSessionLicensing** – Chúng tôi hiện có đang chạy dưới chế độ kích hoạt máy tính dùng chung hay không 
 
@@ -2492,17 +2492,17 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinggetentitlement"></a>Office.Licensing.GetEntitlement 
 
-Chúng tôi thu thập điều này khi người dùng đang thiết lập một thiết bị và chúng tôi gọi dịch vụ cấp phép của chúng tôi để phát hiện xem người dùng đã đăng nhập có quyền văn phòng hay không. Điều này báo cáo kết quả của cuộc gọi đó. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
+Chúng tôi thu thập điều này khi người dùng đang thiết lập một thiết bị và chúng tôi gọi dịch vụ cấp phép của chúng tôi để phát hiện xem người dùng đã đăng nhập có quyền Office hay không. Điều này báo cáo kết quả của cuộc gọi đó. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Sự kiện này không thu thập trường nào.
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
-Trên mỗi phiên, chúng tôi kiểm tra xem đã qua 72 giờ kể từ khi gia hạn giấy phép cuối cùng hay chưa và tìm cách mở rộng hết giấy phép hiện tại. Sự kiện này báo cáo sự thành công hay thất bại của cuộc gọi mà chúng tôi thực hiện để đảm bảo chúng tôi có thể gia hạn hết hạn giấy phép và giữ cho chức năng cài đặt văn phòng của người dùng. Nó rất quan trọng trong việc chẩn đoán các vấn đề liên quan đến đăng ký và các vấn đề dịch vụ cho người dùng và rất quan trọng trong việc phát hiện hồi quy cho người dùng đăng ký đã kích hoạt.
+Trên mỗi phiên, chúng tôi kiểm tra xem đã qua 72 giờ kể từ khi gia hạn giấy phép cuối cùng hay chưa và tìm cách mở rộng hết giấy phép hiện tại. Sự kiện này báo cáo sự thành công hay thất bại của cuộc gọi mà chúng tôi thực hiện để đảm bảo chúng tôi có thể gia hạn hết hạn giấy phép và giữ cho chức năng cài đặt Office của người dùng. Nó rất quan trọng trong việc chẩn đoán các vấn đề liên quan đến đăng ký và các vấn đề dịch vụ cho người dùng và rất quan trọng trong việc phát hiện hồi quy cho người dùng đăng ký đã kích hoạt.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Mode**  – Một đại diện bộ liệt kê của ngăn xếp cấp phép Office đang được sử dụng trên máy này
+  - **Mode** – Một đại diện bộ liệt kê của ngăn xếp cấp phép Office đang được sử dụng trên máy này
 
 ### <a name="officelicensinginrfm"></a>Office.Licensing.InRFM 
 
@@ -2514,7 +2514,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **DaysRemaining** - Số ngày còn lại trước khi giấy phép Office hiện tại hết hạn
 
-  - **Mode**  – Một đại diện bộ liệt kê của ngăn xếp cấp phép Office đang được sử dụng trên máy này
+  - **Mode** – Một đại diện bộ liệt kê của ngăn xếp cấp phép Office đang được sử dụng trên máy này
 
   - **ProductName** – Tên sản phẩm mà người dùng hiện đang sử dụng
 
@@ -2536,7 +2536,7 @@ Trong trường hợp chúng tôi thấy có vấn đề với quy trình kích 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **ACID** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép
+  - **Acid** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép
 
   - **LicenseCategory** – Trạng thái giấy phép Ofice mà người dùng đang sử dụng
 
@@ -2556,7 +2556,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinglicexitofficeprocess"></a>Office.Licensing.LicExitOfficeProcess 
 
-Nếu chúng tôi đóng cửa Office do vấn đề cấp phép, chúng tôi sẽ gửi tín hiệu này để cho biết điều tương tự. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Nếu chúng tôi đóng hoặc gặp sự cố với Office do vấn đề cấp phép, chúng tôi sẽ gửi tín hiệu này để cho biết điều tương tự. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2578,7 +2578,7 @@ Các trường sau đây sẽ được thu thập:
 
 Các trường sau đây sẽ được thu thập:
 
-  - **ACID** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép
+  - **Acid** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép
 
   - **OptInShown** – Cho biết liệu hộp thoại opt in có được hiển thị trong lần khởi động đầu tiên của ứng dụng đã được hiển thị chưa
 
@@ -2602,7 +2602,7 @@ Các trường sau đây sẽ được thu thập:
 
 Các trường sau đây sẽ được thu thập:
 
-  - **ACID** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép 
+  - **Acid** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép 
 
   - **AllAcids** – Danh sách tất cả GUID sản phẩm mà người dùng hiện đang được cấp phép 
 
@@ -2616,7 +2616,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingofficeclientlicensingdolicensevalidation"></a>Office.Licensing.OfficeClientLicensing.DoLicenseValidation 
 
-Đây là siêu dữ liệu cấp phép được thu thập từ thiết bị trên mỗi lần khởi động báo cáo acid giấy phép, trạng thái giấy phép, loại và các thuộc tính khác của giấy phép rất quan trọng trong việc xác định các tính năng có sẵn cho người dùng. Điều này rất quan trọng trong việc xác định bộ tính năng có sẵn cho người dùng và nếu thiếu bất kỳ chức năng nào cho người dùng. Nó cũng được sử dụng cho người dùng hoạt động hàng ngày/người dùng hoạt động hàng tháng và nhiều báo cáo khác của các nhóm khác nhau trong Office (tiếp thị/DIG/cấp phép) vì điều này cho biết loại sản phẩm mà người dùng đang sử dụng, cho dù đó là sản phẩm đăng ký và họ có đang thiếu bất kỳ chức năng quan trọng nào.
+Đây là siêu dữ liệu cấp phép được thu thập từ thiết bị trên mỗi lần khởi động báo cáo acid giấy phép, trạng thái giấy phép, loại và các thuộc tính khác của giấy phép rất quan trọng trong việc xác định các tính năng có sẵn cho người dùng. Điều này rất quan trọng trong việc xác định bộ tính năng có sẵn cho người dùng và nếu thiếu bất kỳ chức năng nào cho người dùng. Nó cũng được sử dụng cho người dùng hoạt động hàng ngày/người dùng hoạt động hàng tháng và nhiều báo cáo khác của các nhóm khác nhau trong Office vì điều này cho biết loại sản phẩm mà người dùng đang sử dụng, cho dù đó là sản phẩm đăng ký và họ có đang thiếu bất kỳ chức năng quan trọng nào.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2634,7 +2634,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **LicenseCategory** – Trạng thái giấy phép Ofice mà người dùng đang sử dụng 
 
-  - **LicenseType** – Loại giấy phép Ofice mà người dùng đang sử dụng 
+  - **LicenseType** - Loại giấy phép Ofice mà người dùng đang sử dụng 
 
   - **LicensingACID** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép 
 
@@ -2652,7 +2652,7 @@ Sự kiện này không thu thập trường nào.
 
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
 
-Chúng tôi có một thử nghiệm cung cấp cho người dùng tùy chọn để thử và thiết lập tự động phát trực tiếp cho văn phòng từ một ứng dụng mà không bao giờ rời khỏi bối cảnh của ứng dụng. Điều này báo cáo sự thành công hay thất bại cùng với mã lỗi. Đây là điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Chúng tôi có một thử nghiệm cung cấp cho người dùng tùy chọn để thử và thiết lập tự động phát trực tiếp cho Office từ một ứng dụng mà không bao giờ rời khỏi bối cảnh của ứng dụng. Điều này báo cáo sự thành công hay thất bại cùng với mã lỗi. Đây là điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2866,7 +2866,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **InstallMethod** - Bản dựng hiện tại của Office đã được nâng cấp từ, quay lại hay cài đặt mới.
 
-  - **PreviousBuild** - Phiên bản của bản dựng này được nâng cấp lên hoặc quay lại từ đó.
+  - **PreviousBuild** - Phiên bản Office mà bản dựng này được nâng cấp lên hoặc quay lại từ đó.
 
   - **State** - Trạng thái mà phiên thay đổi thành.
 
@@ -3438,7 +3438,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **InteractionSessionID** - Mã định danh phiên.
 
-  - **PreviousBuild** - Phiên bản của bản dựng này được nâng cấp lên hoặc quay lại từ đó.
+  - **PreviousBuild** - Phiên bản Office mà bản dựng này được nâng cấp lên hoặc quay lại từ đó.
 
   - **State** - Trạng thái mà phiên thay đổi thành.
 
