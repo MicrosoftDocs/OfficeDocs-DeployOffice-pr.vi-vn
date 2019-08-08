@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office cái nhìn tổng quan về dữ liệu dịch vụ bắt buộc được thu thập về các trải nghiệm được kết nối trong Office.
 hideEdit: true
-ms.openlocfilehash: 9a276e00f5c852ffda00844c5e1aaa9187f581c3
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 76c30eddecbb84fecc5cb49c9691edcebc7c13b7
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701031"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238502"
 ---
 # <a name="required-service-data-for-office"></a>Dữ liệu dịch vụ bắt buộc cho Office 
 
@@ -27,6 +27,8 @@ ms.locfileid: "34701031"
 > - Office 365 Business và Office 365 ProPlus.
 > - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
 > - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+>
+> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
 Office bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
@@ -64,6 +66,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng tùy chọn để quản lý điều khiển quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md)
 
 ## <a name="examples-of-events-for-service-diagnostic-data"></a>Ví dụ về các sự kiện dành cho dữ liệu chẩn đoán dịch vụ.
 

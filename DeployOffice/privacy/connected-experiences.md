@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 3b0ac61cf01a588e3af85d1eb83d4b2fd7e8b63e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 1ae21c76eb0cc4addcc0a26e7ca1330aef99eee1
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701806"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238243"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -27,6 +27,8 @@ ms.locfileid: "34701806"
 > - Office 365 Business và Office 365 ProPlus.
 > - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
 > - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+>
+> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
 Office bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
@@ -129,7 +131,10 @@ Nếu bạn đã đăng nhập bằng tài khoản Microsoft, hãy mở ứng d�
 
 Nếu bạn đã đăng nhập bằng tài khoản cơ quan hoặc trường học, người quản trị trong tổ chức của bạn sẽ quyết định xem những trải nghiệm được kết nối này có sẵn cho bạn hay không. Bạn sẽ không thấy bất kỳ lựa chọn nào cho các trải nghiệm được kết nối này nếu bạn đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý thiết đặt**.
 
-Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng thiết đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để biết thêm thông tin về cách sử dụng các thiết đặt chính sách này, hãy xem mục [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md).
+> [!NOTE]
+> Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại thiết đặt Quyền riêng tư Tài khoản mà bạn có thể chọn tùy chọn quyền riêng tư của mình.
+
+Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng thiết đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để biết thêm thông tin về cách sử dụng các thiết đặt chính sách này, hãy xem mục [Sử dụng thiết đặt chính sách để quản lý các điều khiển quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md) và [Sử dụng các tùy chọn để quản lý điều khiển quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md).
 
 Nếu bạn chọn tắt một số loại trải nghiệm được kết nối, lệnh dải băng hoặc menu cho những trải nghiệm được kết nối đó sẽ chuyển sang màu xám hoặc bạn sẽ nhận được thông báo lỗi khi bạn cố gắng sử dụng những trải nghiệm được kết nối đó.
 
@@ -141,3 +146,4 @@ Ngay cả khi bạn quyết định tắt các trải nghiệm được kết n�
 - [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md)
 - [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
 - [Các dịch vụ cần thiết cho Office](essential-services.md)
+- [Thiết đặt Quyền riêng tư Tài khoản ](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

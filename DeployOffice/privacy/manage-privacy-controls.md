@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các thiết đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: 5d38a944c7fe0c2c17cb6cd50339908b1cb7ae6e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701262"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238992"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -41,6 +41,9 @@ Sau đây là 5 thiết đặt chính sách mới:
 - Cho phép sử dụng các trải nghiệm được kết nối trong Office
 
 Các thiết đặt chính sách này có thể được thực hiện bằng cách sử dụng Chính sách nhóm hoặc [dịch vụ chính sách đám mây Office](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Nếu bạn sử dụng Chính sách nhóm, bạn cần tải xuống phiên bản mới nhất của tệp Mẫu quản trị (ADMX/ADML) từ [Trung tâm tải xuống Microsoft](https://www.microsoft.com/download/details.aspx?id=49030).
+
+> [!NOTE]
+> Để biết thông tin về cách quản lý kiểm soát quyền riêng tư đối với Office cho Mac, hãy xem mục [Sử dụng tùy chọn quản lý các điều khiển quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md).
 
 Nếu bạn sử dụng công cụ quản lý chính sách nhóm, tất cả các thiết đặt chính sách này đều được đặt trong dưới Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.
 
@@ -117,7 +120,7 @@ Các trải nghiệm được kết nối này là khác nhau vì chúng không 
 
 Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* để kiểm soát xem các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối tuỳ chọn này sẽ có sẵn cho người dùng của bạn.
 
-Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, người dùng của bạn sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý thiết đặt**. Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
+Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, người dùng của bạn sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
 Ngoài ra, một số trải nghiệm được kết nối tùy chọn này cũng được coi là trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến. Ví dụ: Chèn ảnh trực tuyến là một trải nghiệm được kết nối tùy chọn, được cung cấp bởi Microsoft Bing, nhưng nó cũng được coi là một trải nghiệm được kết nối tải xuống nội dung trực tuyến. Lưu ý rằng nếu bạn vô hiệu hóa thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tải xuống nội dung trực tuyến trong Office*, tính năng Chèn ảnh trực tuyến sẽ không có sẵn cho người dùng của bạn. Tính năng này sẽ không có sẵn ngay cả khi bạn đã bật thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office*. Để biết thêm thông tin về trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến, hãy xem mục [Trải nghiệm được kết nối trong Office](connected-experiences.md).
 
@@ -174,7 +177,7 @@ Có một số thay đổi đối với giao diện người dùng (UI) của Of
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Hộp thoại về trải nghiệm được kết nối tùy chọn
 
-Nếu bạn đã chọn cung cấp cho người dùng của mình [các trải nghiệm được kết nối tùy chọn](optional-connected-experiences.md), lần đầu tiên người dùng của bạn mở ứng dụng Office sau khi họ được cập nhật lên Phiên bản 1904, một hộp thoại thông tin sẽ xuất hiện. Hộp thoại này thông báo cho người dùng của bạn rằng bạn đã cho họ lựa chọn sử dụng các trải nghiệm được kết nối tùy chọn này và cho họ biết rằng họ có thể đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** để thay đổi thiết đặt này.
+Nếu bạn đã chọn cung cấp cho người dùng của mình [các trải nghiệm kết nối tùy chọn](optional-connected-experiences.md), lần đầu tiên người dùng của bạn mở ứng dụng Office sau khi họ được cập nhật lên Phiên bản 1904 trở lên, một hộp thoại thông tin sẽ xuất hiện. Hộp thoại này thông báo cho người dùng của bạn rằng bạn đã cho họ lựa chọn sử dụng các trải nghiệm được kết nối tùy chọn này và cho họ biết rằng họ có thể đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** để thay đổi thiết đặt này.
 
 ### <a name="privacy-settings-removed-from-the-office-ui"></a>Thiết đặt quyền riêng tư bị xóa khỏi Giao diện người dùng Office
 
