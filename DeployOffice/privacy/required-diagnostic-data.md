@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: d42f2bd20e3e2169e58d6f5c0a563f1b117ea847
-ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
+ms.openlocfilehash: e6078bf96c60d0f01aeaea0cabe32f135a8fa1a3
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34813324"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238930"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -27,6 +27,8 @@ ms.locfileid: "34813324"
 > - Office 365 Business và Office 365 ProPlus.
 > - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
 > - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+>
+> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
@@ -45,6 +47,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng tùy chọn để quản lý điều khiển quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Danh mục, loại dữ liệu con, sự kiện và trường dữ liệu cho dữ liệu chẩn đoán được yêu cầu
 
@@ -423,6 +426,99 @@ Danh mục này chứa các trường sau đây:
 
   - **TelemetryPermissionLevel** - Giá trị cho biết mức độ dữ liệu chẩn đoán mà người dùng đã chọn tham gia. Cho phép chúng tôi hiểu được mức độ dữ liệu chẩn đoán mong đợi từ một phiên.
 
+## <a name="data-fields-that-are-common-for-onenote-events"></a>Các trường dữ liệu phổ biến cho các sự kiện OneNote
+
+Các trường dữ liệu sau là phổ biến cho tất cả các sự kiện cho OneNote trên Mac, iOS và Android.
+
+> [!NOTE]
+> Khi sử dụng Trình xem Dữ liệu Chẩn đoán, các sự kiện cho OneNote trên Mac, iOS và Android sẽ xuất hiện có tên là Hoạt động, Báo cáo hoặc Không mong muốn. Để tìm tên sự kiện thực tế, hãy chọn sự kiện và sau đó nhìn vào trường Tên_Sự_kiện.
+
+- **Activity_ActivityType** - Cho biết loại sự kiện của hoạt động này. Một hoạt động có thể là một hoạt động bình thường hoặc một hoạt động giá trị cao.
+
+- **Activity_AggMode** - Thông báo cho hệ thống biết cách tổng hợp kết quả hoạt động. Cho phép chúng tôi giảm lượng thông tin được tải lên từ máy người dùng bằng cách tổng hợp kết quả hoạt động thành một sự kiện duy nhất được gửi định kỳ.
+
+- **Activity_Count** - Số lần hoạt động xảy ra nếu số lượng là từ một sự kiện tổng hợp. Cho phép chúng tôi xác định tần suất một hoạt động thành công hay thất bại dựa trên chế độ tổng hợp của hoạt động.
+
+- **Activity_CV** - Một giá trị xác định mối quan hệ giữa các hoạt động và hoạt động con. Cho phép chúng tôi để xây dựng lại mối quan hệ giữa các hoạt động lồng nhau.
+
+- **Activity_DetachedDurationInMicroseconds** - Khoảng thời gian một hoạt động không hoạt động và không thực hiện bất kỳ công việc thực tế nào, nhưng thời gian vẫn được tính vào tổng thời gian của hoạt động.
+
+- **Activity_DurationInMicroseconds** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm người dùng.
+
+- **Activity_Expiration** - Ngày ở định dạng số cho biết thời điểm sự kiện này sẽ ngừng gửi từ máy khách
+
+- **Activity_FailCount** - Số lần hoạt động này không thành công
+
+- **Activity_Name** - Tên viết tắt của một sự kiện. Cho phép xác định sự kiện đã được gửi từ máy khách.
+
+- **Activity_Namespace** - Không gian tên của một sự kiện. Cho phép nhóm sự kiện thành nhóm.
+
+- **Activity_Reason** - Một chuỗi cho biết lý do khiến một hoạt động kết thúc với một kết quả cụ thể.
+
+- **Activity_Result** - Cờ cho biết nếu hoạt động thành công, thất bại hoặc bất ngờ thất bại. Cho phép chúng tôi xác định xem các thao tác mà người dùng thực hiện trong sản phẩm sẽ thành công hay thất bại. Điều này cho phép chúng tôi xác định các sự cố đang ảnh hưởng đến người dùng.
+
+- **Activity_State** - Cờ cho biết sự kiện là sự bắt đầu hoạt động của người dùng hay sự kết thúc hoạt động của người dùng.
+
+- **Activity_SucceedCount** - Số lần hoạt động này thành công.
+
+- **ErrorCode** - Cho biết mã lỗi nếu có.
+
+- **ErrorCode2** - Cho biết mã lỗi thứ hai nếu có.
+
+- **ErrorCode3** - Cho biết mã lỗi thứ va nếu có.
+
+- **ErrorTag** - Cho biết thẻ được liên kết trong mã lỗi nếu có.
+
+- **ErrorType** - Cho biết loại lỗi nếu có.
+
+- **EventName** - Tên duy nhất của sự kiện OneNote. Các sự kiện OneNote sử dụng trường tùy chỉnh này để chỉ định một tên duy nhất do giới hạn kỹ thuật trong quá khứ.
+
+- **ExpFeatures** - Cho biết người dùng có bật chuyển đổi tính năng thử nghiệm trong ứng dụng OneNote hay không.
+
+- **ExpirationDate** - Ngày ở định dạng số cho biết thời điểm sự kiện này sẽ ngừng gửi từ máy khách
+
+- **IsConsumer** - Cho biết người dùng có phải là người tiêu dùng hay không
+
+- **IsEdu** - Cho biết người dùng có phải là đối tượng thuê giáo dục hay không
+
+- **IsIW** - Cho biết người dùng có phải là người dùng doanh nghiệp hay không
+
+- **IsMsftInternal** - Cho biết người dùng có phải là nhân viên của Microsoft hay không
+
+- **IsPremiumUser** - Cho biết người dùng có giấy phép cao cấp hay không
+
+- **Namespace** - Không gian tên của một kiện. Cho phép nhóm sự kiện thành nhóm.
+
+- **Release_AppStore** - Cờ cho biết liệu bản dựng có đến từ cửa hàng ứng dụng hay không.
+
+- **Release_Audience** - Xác định người xem phụ của một nhóm đối tượng người dùng nhất định. Cho phép chúng tôi theo dõi các tập hợp con của các nhóm người xem để đánh giá mức độ phổ biến và mức độ ưu tiên của các sự cố.
+
+- **Release_AudienceGroup** - Xác định vòng mà dữ liệu đến từ. Cho phép chúng tôi triển khai các tính năng theo giai đoạn và xác định các sự cố tiềm ẩn trước khi chúng đến được với hầu hết người dùng.
+
+- **Release_Channel** - Các kênh mà thông qua đó sản phẩm đang được phát hành. Cho phép chúng tôi xác định xem một sự cố có ảnh hưởng đến một trong các kênh triển khai của chúng tôi khác với các kênh khác không.
+
+- **RunningMode** - Cho biết cách ứng dụng được khởi chạy bởi người dùng hoặc theo quy trình hệ thống.
+
+- **SchemaVersion** - Cho biết phiên bản sơ đồ phép đo từ xa hiện tại trong quy trình phép đo từ xa của OneNote.
+
+- **Session_EcsETag** - Một chỉ báo từ hệ thống bay đại diện cho các chuyến bay được gửi đến máy. Cho phép chúng tôi xác định chuyến bay có thể ảnh hưởng đến một phiên nhất định.
+
+- **Session_ImpressionId** - Xác định tập hợp các chuyến bay đang chạy trong một phiên nhất định. Cho phép chúng tôi xác định các chuyến bay riêng lẻ đang chạy trên một phiên để chúng tôi có thể xác định xem chuyến bay đó có phải là nguồn gốc của sự cố ảnh hưởng đến người dùng hay không.
+
+- **SessionCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
+
+- **SH_ErrorCode** - Cho biết mã lỗi nếu có khi hoạt động không thành công.
+
+- **Tag** - Thẻ số nguyên xác định vị trí trong mã nơi sự kiện phép đo từ xa được tạo.
+
+- **UserInfo_IdType** - Chuỗi cho biết loại tài khoản của người dùng
+
+- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **UserInfo_OtherId** - Danh sách các mã định danh giả không phải là chính đại diện cho tài khoản của người dùng.
+
+- **UserInfo_OtherIdType** - Danh sách các loại tài khoản không phải là chính.
+
 ## <a name="software-setup-and-inventory-data-events"></a>Sự kiện thiết lập và kiểm kê phần mềm
 
 Sau đây là những loại dữ liệu con trong danh mục này:
@@ -451,6 +547,27 @@ Các trường sau đây sẽ được thu thập:
 - **status** - Trạng thái hiện tại của bản cập nhật
 
 - **targetBuild** -Phiên bản mà Office đang cập nhật lên
+
+#### <a name="officecompliancefileformatballotdisplayedonfirstboot"></a>Office.Compliance.FileFormatBallotDisplayedOnFirstBoot
+
+Cho biết hộp thoại lựa chọn Định dạng tệp Office đã được hiển thị cho người dùng trong lần khởi động đầu tiên/thứ hai của Word, Excel, PowerPoint trên Win32.  Theo dõi xem hộp thoại FileFormat Ballot có được hiển thị hay không - sự kiện được gửi trong lần khởi động đầu tiên/thứ hai của Word, Excel hoặc PPT trên Win32.
+
+Các trường sau đây sẽ được thu thập.
+
+- **CountryRegion** – Thiết đặt vùng quốc gia của người dùng trong hệ thống Windows
+
+- **FileFormatBallotBoxAppIDBootedOnce** – Trong ứng dụng nào (Word, Excel, PPT), logic hiển thị phiếu định dạng tệp đã được xử lý.
+
+- **FileFormatBallotBoxDisplayedOnFirstBoot** – Kết quả hiển thị cho phiếu định dạng tệp là gì (hiển thị/không hiển thị do không mong muốn/không hiển thị do giấy phép/không hiển thị do vị trí).
+
+#### <a name="officecompliancefileformatballotoption"></a>Office.Compliance.FileFormatBallotOption
+
+Theo dõi xem hộp thoại FileFormat Ballot có được hiển thị hay không - sự kiện được gửi trong lần khởi động đầu tiên/thứ hai của Word, Excel hoặc PPT trên Win32.  Cho biết hộp thoại lựa chọn Định dạng tệp Office được hiển thị trong lần khởi động đầu tiên/thứ hai của Word, Excel hoặc PowerPoint trên Win32.
+
+Các trường sau đây sẽ được thu thập:
+
+- **FileFormatBallotSelectedOption** – Xác định tùy chọn định dạng tệp (OOXML/ODF) được người dùng chọn thông qua hộp thoại phiếu định dạng tệp.
+
 
 #### <a name="officecorrelationmetadatautccorrelationmetadata"></a>Office.CorrelationMetadata.UTCCorrelationMetadata
 
@@ -560,6 +677,26 @@ Các trường sau đây sẽ được thu thập:
 
 Phần bổ trợ phần mềm và các thiết đặt.
 
+#### <a name="exceladdindefinedfunctioncustomfunctionsallinone"></a>Excel. AddinDefinedFunction. CustomFunctionsAllInOne
+
+Thu thập thông tin về hành vi thời gian chạy trong các hàm phần bổ trợ tùy chỉnh. Duy trì bộ đếm các nỗ lực thực hiện, hoàn thành thành công, lỗi cơ sở hạ tầng và lỗi mã người dùng. Điều này được sử dụng để xác định các sự cố về độ tin cậy trong sản phẩm và khắc phục các sự cố ảnh hưởng đến người dùng.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **AsyncBegin** - Số lượng hàm không đồng bộ bắt đầu
+
+- **AsyncEndAddinError** - Số lượng hàm không đồng bộ kết thúc bị lỗi
+
+- **AsyncEndInfraFailure** - Số lượng hàm không đồng bộ kết thúc bằng lỗi cơ sở hạ tầng
+
+- **AsyncEndSuccess** - Số lượng hàm không đồng bộ kết thúc thành công
+
+- **AsyncRemoveCancel** - Số lượng hàm không đồng bộ bị hủy 
+
+- **AsyncRemoveRecycle** - Số lượng hàm không đồng bộ bị loại bỏ vì thùng rác 
+
+- **StreamingCycles1** - Bộ đếm chu kỳ phát trực tuyến
+
 #### <a name="officeextensibilityappcommandsappcmdprojectionstatus"></a>Office.Extensibility.AppCommands.AppCmdProjectionStatus
 
 Thu thập thông tin để theo dõi xem bản cài đặt phần bổ trợ Office nào đã cập nhật thành công dải băng so với cập nhật không thành công.
@@ -569,6 +706,21 @@ Thu thập thông tin để theo dõi xem bản cài đặt phần bổ trợ Of
 Các trường sau đây sẽ được thu thập:
 
   - Không có
+
+#### <a name="officeextensibilityappcommandsaddsolution"></a>Office.Extensibility.AppCommands.AddSolution
+
+Thu thập thông tin cài đặt cho phần bổ trợ Office tùy chỉnh dải băng.  Được sử dụng để phát hiện các sự cố đối với cách phần bổ trợ tùy chỉnh sửa đổi dải băng Office.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **AppVersion** - Phiên bản ứng dụng
+
+- **SolutionId** - ID của giải pháp
+
+- **StoreType** - Cho biết nguồn gốc của ứng dụng
+
+- **TelemetryId** - ID phép đo từ xa dựa trên danh tính đã đăng nhập
+
 
 #### <a name="officeextensibilitycatalogexchangegetentitlements"></a>Office.Extensibility.Catalog.ExchangeGetEntitlements
 
@@ -748,7 +900,57 @@ Thu thập mức độ thành công và thất bại của việc tải Outlook 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Hoạt động HVA tiêu chuẩn không có tải tùy chỉnh**
+  - **Hoạt động HVA tiêu chuẩn** không có tải tùy chỉnh
+
+#### <a name="officeoutlookmacaddinapiusage"></a>Office.Outlook.Mac.AddinAPIUsage
+
+Thu thập thành công và thất bại trong việc thực thi phần bổ trợ trong Outlook. Dữ liệu này được theo dõi tích cực để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccountType** - Loại tài khoản được liên kết với phần bổ trợ 
+
+- **Cookie** - Cookie được sử dụng bởi phần bổ trợ
+
+- **DispId** - Mã định danh phân phối 
+
+- **EndTime** - Thời gian khi kết thúc phần bổ trợ 
+
+- **ExecutionTime** - Thời gian trôi qua trong khi thực hiện phần bổ trợ 
+
+- **Result** - Kết quả của việc sử dụng phần bổ trợ trong Outlook 
+
+- **StartTime** - Thời gian khi bắt đầu phần bổ trợ
+
+
+#### <a name="officeoutlookmacaddineventapisusage"></a>Office.Outlook.Mac.AddinEventAPIsUsage
+
+Thu thập thành công hoặc thất bại trong việc thực thi phần bổ trợ trong Outlook. Dữ liệu này được theo dõi tích cực để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AddinType** - Loại phần bổ trợ 
+
+- **EventAction** - Hành động được thực hiện bởi phần bổ trợ 
+
+- **EventDispid** - Mã định danh phân phối
+
+- **EventResult** - Kết quả của hành động được thực hiện bởi phần bổ trợ 
+
+#### <a name="officeoutlookmacaddininstallationfrominclientstore"></a>Office.Outlook.Mac.AddInInstallationFromInClientStore
+
+Thu thập thành công hoặc thất bại trong quá trình cài đặt phần bổ trợ trong Outlook. Dữ liệu này được theo dõi tích cực để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccountType** - Loại tài khoản được liên kết với phần bổ trợ 
+
+- **FailureReason** - Lý do phần bổ trợ không thể cài đặt được 
+
+- **MarketplaceAssetId** - Lưu trữ mã định danh phần bổ trợ 
+
+- **Status** - Trạng thái cài đặt phần bổ trợ
+
 
 #### <a name="officeprogrammabilityadd-insinternalsetconnectenterprise"></a>Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
@@ -979,6 +1181,15 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 
 Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác).
 
+#### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
+
+Được tạo khi khởi động máy khách khi người dùng cuối đã kích hoạt Bảng điều khiển Đo từ xa cho Office.  Nó thu thập thông tin về thời điểm Tác nhân Đo từ xa cho Office đã tải dữ liệu lên thư mục chia sẻ. Mục đích sử dụng chính của sự kiện này là để theo dõi sức khỏe Tác nhân Đo từ xa cho Office và mục đích sử dụng thứ hai của sự kiện này là để ước tính việc sử dụng Bảng điều khiển Đo từ xa cho Office.
+
+Các trường sau đây sẽ được thu thập:
+
+- **UploadTime** - Dấu thời gian của lần tải lên thành công cuối cùng được thực hiện bởi Tác nhân Đo từ xa.
+
+
 #### <a name="officeappcompatappcompatagentscanandupload"></a>Office.AppCompat.AppCompat.AgentScanAndUpload
 
 Chỉ được thu thập khi người dùng cuối đã kích hoạt Bảng điều khiển đo từ xa cho Office.Nó thu thập thông tin về thời điểm Tác nhân đo từ xa cho Office được thực hiện.Điều này chỉ được thu thập khi Bảng điều khiển đo từ xa cho Office được bật và được sử dụng để xác định trạng thái của Tác nhân đo từ xa cho Office.
@@ -1048,6 +1259,36 @@ Các trường sau đây sẽ được thu thập:
   - **SolutionId** GUID đại diện cho phần bổ trợ duy nhất
 
   - **TelemetryId -** GUID đại diện cho một người dùng duy nhất
+
+#### <a name="officeextensibilitycatalogexchangeprocessmanifest"></a>Office.Extensibility.Catalog.ExchangeProcessManifest
+
+Dữ liệu liên quan đến việc xử lý tệp kê khai riêng cho người quản trị đối tượng thuê Office 365 được gán phần bổ trợ. Được sử dụng để phân tích các sự cố của khách hàng và biểu đồ thành công của khách hàng.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **AppVersion** - Phiên bản ứng dụng
+
+- **IsAllReturnedManifestsParsed** - Bool cho biết chúng tôi đã phân tích tất cả các tệp kê khai được trả về
+
+- **IsAppCommand** - Bool cho biết nếu đây là một ứng dụng lệnh ứng dụng 
+
+- **ReturnedManifestsParsed** - Số lượng các tệp kê khai được phân tích
+
+- **SolutionId** - ID của giải pháp
+
+- **TelemetryId** - ID phép đo từ xa dựa trên danh tính đã đăng nhập
+
+#### <a name="officeextensibilityodpappcommandsribbonclick"></a>Office.Extensibility.ODPAppCommandsRibbonClick
+
+Thu thập xem việc bấm vào điều khiển phần bổ trợ tùy chỉnh có thành công hay không. Được sử dụng để phát hiện sự cố trong tương tác của người dùng với các điều khiển phần bổ trợ.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **CommandActionType** - Loại lệnh phần bổ trợ
+
+- **CommandLabel** - Nhãn của lệnh đã được bấm vào
+
+- **SolutionId** - ID của giải pháp
 
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
@@ -1605,6 +1846,213 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Log** - Thông báo nhật ký tuỳ chỉnh cho biết sự thành công hay thất bại của việc kiểm tra trước
 
+
+#### <a name="officeonenotenavigationcreatepage"></a>Office.OneNote.Navigation.CreatePage
+
+Tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote tạo các trang trong OneNote.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo trang, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **IsAtSectionEnd** - Cho biết liệu trang mới có được tạo ở cuối mục hay không.
+
+- **IsBlank** - Cho biết trang mới là trang trắng hay được tạo theo mẫu.
+
+- **IsRecentsView** - Cho biết liệu trang có được tạo từ một thông tin gần đây hay không.
+
+- **NavView** - Cho biết liệu trang có được tạo từ dạng xem dẫn hướng hay không.
+
+- **NoteType** - Cho biết loại (ghi chú nhanh, danh sách hoặc ảnh) trang.
+
+- **QuickNoteType** - Cho biết loại (ghi chú nhanh, danh sách hoặc ảnh) trang.
+
+- **RailState** - Cho biết trạng thái của thanh trượt dẫn hướng của OneNote khi tạo trang.
+
+- **Trigger** - Cho biết điểm nhập nơi bắt đầu hành động tạo trang.
+
+- **TriggerInfo** - Cho biết thông tin bổ sung liên quan đến kích hoạt.
+
+
+#### <a name="officeonenotenavigationcreatesection"></a>Office.OneNote.Navigation.CreateSection
+
+Tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote tạo các mục trong OneNote.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo trang, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập
+
+- **NotebookID** - Mã định danh duy nhất của sổ tay.
+
+- **SectionID** - Mã định danh duy nhất của mục được tạo.
+
+- **Trigger** - Cho biết điểm nhập nơi bắt đầu hành động tạo mục.
+
+- **TriggerInfo** - Cho biết thông tin bổ sung liên quan đến kích hoạt.
+
+
+#### <a name="officeonenotenavigationnavigate"></a>Office.OneNote.Navigation.Navigate
+
+Tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote để dẫn hưỡng giữa các trang trong OneNote.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không dẫn hướng, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **FromNotebook** - Mã định danh duy nhất của sổ tay.
+
+- **FromPage** - Mã định danh duy nhất của trang.
+
+- **FromSection** - Mã định danh duy nhất của mục.
+
+- **FromSectionGroup** - Mã định danh duy nhất của nhóm mục.
+
+- **IsCurrentUserEduStudent** - Cho biết người dùng hiện tại có vai trò học viên trong sổ tay giáo dục hay không.
+
+- **IsEduNotebook** - Cho biết trang hiện tại có trong sổ tay giáo dục hay không.
+
+- **IsEduNotebookReadOnlyPage** - Cho biết trang hiện tại có phải là trang chỉ đọc trong sổ tay giáo dục hay không.
+
+- **ToNotebook** - Mã định danh duy nhất của sổ tay.
+
+- **ToPage** - Mã định danh duy nhất của trang.
+
+- **ToSection** - Mã định danh duy nhất của mục.
+
+- **ToSectionGroup** - Mã định danh duy nhất của nhóm mục.
+
+
+#### <a name="officeonenotenotebookmanagementcreatenotebook"></a>Office.OneNote.NotebookManagement.CreateNotebook
+
+Tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote tạo các sổ tay trong OneNote.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo sổ tay, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+    
+- **NotebookID** - Mã định danh duy nhất của sổ tay.
+
+
+#### <a name="officeonenotenotebookmanagementopennotebook"></a>Office.OneNote.NotebookManagement.OpenNotebook
+
+Tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote mở các sổ tay trong OneNote.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể mở sổ tay, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+-  **NotebookID** - Mã định danh duy nhất của sổ tay.
+
+    
+#### <a name="officeonenotesearchsearch"></a>Office.OneNote.Search.Search
+
+ID tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote tìm thông tin trên hàng ngàn trang và sổ tay.   Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tìm thấy thông tin trên sổ tay, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **PageSearchResultCount** - Cho biết số lượng kết quả tìm kiếm được tìm thấy trong chế độ tìm kiếm trang.
+
+-  **PageTimeToFirstResultInMs** - Cho biết thời gian OneNote sẽ cần để tìm kết quả khớp đầu tiên trong chế độ tìm kiếm trang.
+    
+-  **PageTimeToLastResultInMs** - Cho biết thời gian OneNote sẽ cần để tìm kết quả khớp cuối cùng trong chế độ tìm kiếm trang.
+
+-  **PageTimeToMedianResultInMs** - Cho biết thời gian trung bình mà OneNote cần để tìm tất cả các kết quả khớp trong chế độ tìm kiếm trang.
+
+-  **SearchResultCount** - Cho biết số lượng kết quả tìm kiếm được tìm thấy.
+
+-  **TagSearchResultCount** - Cho biết số lượng kết quả tìm kiếm được tìm thấy trong chế độ tìm kiếm thẻ.
+
+-  **TagTimeToFirstResultInMs** - Cho biết thời gian OneNote sẽ cần để tìm kết quả khớp đầu tiên trong chế độ tìm kiếm thẻ.
+
+-  **TagTimeToLastResultInMs** - Cho biết lượng thời gian OneNote cần để tìm kết quả khớp cuối cùng trong chế độ tìm kiếm thẻ.
+
+-  **TagTimeToMedianResultInMs** - Cho biết thời gian trung bình mà OneNote cần để tìm tất cả các kết quả khớp trong chế độ tìm kiếm thẻ.
+
+-  **TimeToFirstResultInMs** - Cho biết thời gian OneNote sẽ cần để tìm kết quả khớp đầu tiên.
+
+-  **TimeToLastResultInMs** - Cho biết thời gian OneNote sẽ cần để tìm kết quả khớp cuối cùng.
+
+-  **TimeToMedianResultInMs** - Cho biết thời gian trung bình mà OneNote cần để tìm tất cả các kết quả khớp.
+
+
+#### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
+ 
+Sự kiện này ghi lại kết quả đồng bộ sổ tay. Nó được sử dụng để tìm hiểu xem có bao nhiêu mục tiêu đồng bộ duy nhất khi tính điểm số đồng bộ OneNote.
+ 
+Các trường sau đây sẽ được thu thập
+
+- **CachedError_Code** - Mã được đánh số hoặc chữ số được sử dụng để xác định bản chất của lỗi được lưu trong bộ nhớ cache và/hoặc lý do tại sao điều đó xảy ra
+    
+- **CachedError_Description** - Mô tả về lỗi được lưu trong bộ nhớ cache
+
+- **CachedError_Tag** - Cho biết nơi trong mã trả về lỗi được lưu trong bộ nhớ cache
+
+- **CachedError_Type** - Loại lỗi được lưu trong bộ nhớ cache, ví dụ: Win32Error, v.v.
+
+- **ExecutionTime** - Thời gian tính bằng mili giây để sao chép sổ tay
+
+- **Gosid** - ID không gian đối tượng toàn cầu
+
+- **IdentityType** - Loại danh tính, ví dụ: Windows Live, ID tổ chức, v.v.
+
+- **InitialReplicationInSession** - Bản sao nhân bản này có phải bản sao nhân bản sổ tay đầu tiên sau khi mở hay không
+
+- **IsBackgroundSync** - Đây có phải là đồng bộ nền hay không
+
+- **IsCachedErrorSuppressed** - Lỗi có được lưu trong bộ nhớ cache hay không
+
+- **IsCachedErrorUnexpected** - Có phải lỗi không lưu trong bộ nhớ cache hay không
+
+- **IsNotebookErrorSuppressed** - Lỗi đồng bộ cấp sổ tay có bị chặn hay không
+
+- **IsNotebookErrorUnexpected** - Lỗi đồng bộ cấp sổ tay có ngoài dự kiến hay không
+
+- **IsSectionErrorSuppressed** - Lỗi đồng bộ mục có bị chặn hay không
+
+- **IsSectionErrorUnexpected** - Lỗi đồng bộ mục có ngoài dự kiến hay không 
+
+- **IsUsingRealtimeSync** - Đồng bộ hóa sổ tay có sử dụng đồng bộ nội dung trang hiện đại hay không
+
+- **LastAttemptedSync** - Dấu thời gian khi sổ tay đã được cố gắng đồng bộ lần cuối
+
+- **LastBackgroundSync** - Dấu thời gian khi thử đồng bộ nền mới nhất
+
+- **LastNotebookViewedDate** - Ngày sổ tay được xem lần cuối
+
+- **LastSuccessfulSync** - Dấu thời gian khi sổ tay được đồng bộ thành công trước
+
+- **NeedToRestartBecauseOfInconsistencies** - Đồng bộ có cần khởi động lại vì sự không nhất quán hay không
+
+- **NotebookErrorCode** - Mã lỗi đồng bộ hóa cấp sổ tay được lưu trên không gian biểu đồ sổ tay
+
+- **NotebookId** - ID sổ tay
+
+- **NotebookType** - Loại sổ tay
+
+- **ReplicatingAgainBecauseOfInconsistencies** - Thao tác đồng bộ có khởi động lại vì sự không nhất quán hay không
+
+- **SectionError_Code** - Mã được đánh số hoặc chữ số được sử dụng để xác định bản chất của lỗi đồng bộ mục và/hoặc lý do tại sao điều đó xảy ra
+
+- **SectionError_Description** - Mô tả về lỗi đồng bộ mục
+
+- **SectionError_Tag** - Cho biết nơi trong mã trả về lỗi đồng bộ mục
+
+- **SectionError_Type** - Loại lỗi được đồng bộ mục, ví dụ: Win32Error, v.v.
+
+- **Success** - Thao tác đồng bộ sổ tay có thành công hay không
+
+- **SyncDestinationType** - Loại đích đồng bộ hóa, tức là OneDrive hoặc SharePoint Online
+
+- **SyncId** - Số duy nhất cho từng đồng bộ sổ tay
+
+- **SyncWasFirstInSession** - Đây có phải là đồng bộ đầu tiên trong phiên hiện tại hay không
+
+- **SyncWasUserInitiated** - Có phải đồng bộ này được người dùng khởi tạo hay không
+
+- **TenantId** - ID đối tượng thuê SharePoint
+
+- **TimeSinceLastAttemptedSync** - Thời gian kể từ lần thử đồng bộ sổ tay cuối cùng
+
+- **TimeSinceLastSuccessfulSync** - Thời gian kể từ lần đồng bộ sổ tay thành công cuối cùng
+
+
+#### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
+
+Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công.
+Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng có thể khởi chạy ứng dụng trong cửa sổ hiệu suất của chúng tôi, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập: Không có
+
 #### <a name="officeoutlookdesktopaccountconfigurationcreateaccountresult"></a>Office.Outlook.Desktop.AccountConfiguration.CreateAccountResult
 
 Kết quả của việc thêm tài khoản vào Outlook trong cấu hình mới, từ Office Backstage hoặc từ hộp thoại cài đặt tài khoản. Dữ liệu được theo dõi tích cực để đảm bảo chúng tôi không thấy bất kỳ đột biến nào trong các lần thất bại. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện. Chúng tôi mong muốn cải thiện tỷ lệ thành công này với mỗi bản phát hành.
@@ -1670,6 +2118,68 @@ Các trường sau đây sẽ được thu thập:
   - **StoreType** – Loại cửa hàng được tạo OST/PST/NST
 
   - **StoreVersion** – Phiên bản cửa hàng đã tạo Small/Large/Tardis
+
+#### <a name="officeoutlookmacaccountaddworkflow"></a>Office.Outlook.Mac.AccountAddWorkflow
+
+Kết quả của việc thêm tài khoản trong Outlook. Dữ liệu được theo dõi để đảm bảo chúng tôi không thấy bất kỳ đột biến nào trong các lần thất bại. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện. Chúng tôi mong muốn cải thiện tỷ lệ thành công này với mỗi bản phát hành. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccountConfigMethod** - Phương pháp cấu hình tài khoản
+
+- **AccountType** – Loại tài khoản được cấu hình
+
+- **AccountWorkflowSession** - Phiên mà dòng công việc tài khoản được thử
+
+- **SessionDuration** - Thời lượng của phiên 
+
+- **ThreadId** - Mã định danh cho chủ đề
+
+
+#### <a name="officeoutlookmacaccountonboardingflow"></a>Office.Outlook.Mac.AccountOnboardingFlow
+
+Kết quả của việc thêm tài khoản trong Outlook bằng cách sử dụng trải nghiệm cấu hình tài khoản mới. Dữ liệu được theo dõi để đảm bảo chúng tôi không thấy bất kỳ đột biến nào trong các lần thất bại. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện. Chúng tôi mong muốn cải thiện tỷ lệ thành công này với mỗi bản phát hành. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccountConfigAutoSignIn** - Cấu hình tài khoản tự động được đặt bởi người quản trị
+
+- **AccountConfigDomain** - Tên miền được chỉ định trong cấu hình tài khoản 
+
+- **AccountConfigEntryPoint** - Điểm nhập nơi người dùng nhập cấu hình tài khoản 
+
+- **AccountConfigErrorCode** - Mã lỗi gặp phải trong quá trình cấu hình tài khoản 
+
+- **AccountConfigErrorString** - Lỗi gặp phải trong quá trình cấu hình tài khoản
+
+- **AccountConfigMethod** - Phương pháp cấu hình tài khoản
+
+- **AccountConfigPhase** - Bước hiện tại của quy trình cấu hình tài khoản
+
+- **AccountConfigPhaseFrom** - Bước khởi đầu của quy trình cấu hình tài khoản 
+
+- **AccountConfigPhaseTo** - Bước cuối cùng của quy trình cấu hình tài khoản 
+
+- **AccountType** – Loại tài khoản được cấu hình
+
+- **AccountWorkflowSession** - Phiên mà dòng công việc tài khoản được thử
+
+- **SessionDuration** - Thời lượng của phiên
+
+
+#### <a name="officeoutlookmacdeleteaccountusage"></a>Office.Outlook.Mac.DeleteAccountUsage
+
+Kết quả của việc xóa tài khoản trong Outlook. Dữ liệu được theo dõi để đảm bảo chúng tôi không thấy bất kỳ đột biến nào trong các lần thất bại. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện. Chúng tôi mong muốn cải thiện tỷ lệ thành công này với mỗi bản phát hành. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccountType** – Loại tài khoản được cấu hình
+
+- **AccountID** - Mã định danh tài khoản
+
+- **DeprovisionAccount** - Cho biết liệu tài khoản có bị xóa khỏi máy chủ hay không
+
+- **IsFastDelete** - Cho biết liệu tài khoản có bị xóa trên luồng nền hay không
 
 #### <a name="officepowerpointdocoperationclose"></a>Office.PowerPoint.DocOperation.Close
 
@@ -2075,457 +2585,481 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointdocoperationsaveas"></a>Office.PowerPoint.DocOperation.SaveAs
 
-Được thu thập bất cứ khi nào PowerPoint thực hiện lưu dưới dạng. Bao gồm loại kết quả thành công hoặc thất bại của số liệu về hiệu suất lưu và siêu dữ liệu của tài liệu có liên quan. Thất bại trong việc lưu có thể gây mất dữ liệu.
-
-Microsoft sử dụng dữ liệu này để đảm bảo tính năng này hoạt động như mong đợi và nội dung người dùng được duy trì thành công.
+Được thu thập bất cứ khi nào PowerPoint thực hiện lưu dưới dạng. Bao gồm loại kết quả thành công hoặc thất bại của số liệu về hiệu suất lưu và siêu dữ liệu của tài liệu có liên quan. Thất bại trong việc lưu có thể gây mất dữ liệu.  Microsoft sử dụng dữ liệu này để đảm bảo tính năng này hoạt động như mong đợi và nội dung người dùng được duy trì thành công.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemetryResult:long -** Mục nhập nhật ký này có tất cả các phép đo từ xa tài liệu cần thiết hay không (Các trường Dữ liệu\_Tài liệu\_\*) Nếu không, lý do là gì?
+- **Data_AddDocTelemetryResult:long** - Mục nhập nhật ký này có tất cả các phép đo từ xa tài liệu cần thiết hay không (Các trường Dữ_liệu_Tài_liệu_*) Nếu không, lý do là gì?
 
-  - **Data\_CppUncaughtExceptionCount:long -** Không theo kịp ngoại lệ riêng trong khi hoạt động đang chạy
+- **Data_CppUncaughtExceptionCount:long** - Không theo kịp ngoại lệ riêng trong khi hoạt động đang chạy
 
-  - **Data\_DetachedDuration:long -** Thời gian mà hoạt động bị tách ra/không chạy
+- **Data_DetachedDuration:long** - Thời gian mà hoạt động bị tách ra/không chạy
 
-  - **Data\_DstDoc\_AccessMode:long -** Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
+- **Data_DstDoc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
-  - **Data\_DstDoc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_DstDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_DstDoc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
+- **Data_DstDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
-  - **Data\_DstDoc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
+- **Data_DstDoc_EdpState:long** - Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
 
-  - **Data\_DstDoc\_Ext:string -** Phần mở rộng tài liệu
+- **Data_DstDoc_Ext:string** - Phần mở rộng tài liệu
 
-  - **Data\_DstDoc\_Extension:string -** Phần mở rộng tài liệu
+- **Data_DstDoc_Extension:string** - Phần mở rộng tài liệu
 
-  - **Data\_DstDoc\_FileFormat:long -** Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
+- **Data_DstDoc_FileFormat:long** - Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
 
-  - **Data\_DstDoc\_Fqdn:string -** Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+- **Data_DstDoc_Fqdn:string** - Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+    
+- **Data_DstDoc_FqdnHash:string** - Hàm băm của tài liệu được lưu trữ
 
-  - **Data\_DstDoc\_FqdnHash:string -** Hàm băm của tài liệu được lưu trữ
+- **Data_DstDoc_IdentityTelemetryId:string** - GUID duy nhất của người dùng
 
-  - **Data\_DstDoc\_IdentityTelemetryId:string -** GUID duy nhất của người dùng
+- **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-  - **Data\_DstDoc\_IdentityUniqueId:string -** Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
 
-  - **Data\_DstDoc\_IOFlags:long -** Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
+    
+- **Data_DstDoc_IsCloudCollabEnabled:bool** - True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
 
-  - **Data\_DstDoc\_IrmRights:long -** Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
+- **Data_DstDoc_IsIncrementalOpen:bool** - Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
 
-  - **Data\_DstDoc\_IsCloudCollabEnabled:bool -** True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
+- **Data_DstDoc_IsOcsSupported:bool** - Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
 
-  - **Data\_DstDoc\_IsIncrementalOpen:bool -** Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
+- **Data_DstDoc_IsOpeningOfflineCopy:bool** - Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-  - **Data\_DstDoc\_IsOcsSupported:bool -** Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
+- **Data_DstDoc_IsSyncBacked:bool** - Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
+    
+- **Data_DstDoc_Location:long** - Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy:bool -** Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
+- **Data_DstDoc_LocationDetails:long** - Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
 
-  - **Data\_DstDoc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
+- **Data_DstDoc_NumberCoAuthors:long** - Số lượng đồng tác giả tại thời điểm mở tài liệu
 
-  - **Data\_DstDoc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
+- **Data_DstDoc_PasswordFlags:long** - Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
 
-  - **Data\_DstDoc\_LocationDetails:long -** Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
+- **Data_DstDoc_ReadOnlyReasons:long** - Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
-  - **Data\_DstDoc\_NumberCoAuthors:long -** Số lượng đồng tác giả tại thời điểm mở tài liệu
+- **Data_DstDoc_ResourceIdHash:string** - Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
 
-  - **Data\_Doc\_PasswordFlags:long -** Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
+- **Data_DstDoc_ServerDocId:string** - Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
-  - **Data\_DstDoc\_ReadOnlyReasons:long -** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
+- **Data_DstDoc_ServerProtocol:long** - Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
 
-  - **Data\_DstDoc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+- **Data_DstDoc_ServerType:long** - Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
 
-  - **Data\_DstDoc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
+- **Data_DstDoc_ServerVersion:long** - Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
 
-  - **Data\_DstDoc\_ServerProtocol:long -** Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
+- **Data_DstDoc_SessionId:long** - GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
 
-  - **Data\_DstDoc\_ServerType:long -** Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
+- **Data_DstDoc_SharePointServiceContext:string** - Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
 
-  - **Data\_DstDoc\_ServerVersion:long -** Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
+- **Data_DstDoc_SizeInBytes:long** - Kích cỡ tài liệu tính bằng byte
 
-  - **Data\_DstDoc\_SessionId:long -** GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
+- **Data_DstDoc_SpecialChars:long** - Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_DstDoc\_SharePointServiceContext:string -** Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
+- **Data_DstDoc_StorageProviderId:string** - Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
 
-  - **Data\_DstDoc\_SizeInBytes:long -** Kích cỡ tài liệu tính bằng byte
+- **Data_DstDoc_StreamAvailability:long** - Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
 
-  - **Data\_DstDoc\_SpecialChars:long -** Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_DstDoc_UrlHash:string** - Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
 
-  - **Data\_DstDoc\_StorageProviderId:string -** Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
+- **Data_DstDoc_UsedWrsDataOnOpen:bool** - True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
 
-  - **Data\_DstDoc\_StreamAvailability:long-** Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
+- **Data_DstDoc_WopiServiceId:string** - Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
 
-  - **Data\_DstDoc\_UrlHash:string -** Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
+- **Data_FileType:long** - Tập hợp giá trị được xác định trước của loại tệp nội bộ
 
-  - **Data\_DstDoc\_UsedWrsDataOnOpen:bool -** True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
+- **Data_fLifeguarded:bool** - Tài liệu đã được bảo vệ chưa (tính năng tự sửa lỗi tài liệu mà không cần nhắc người dùng)?
 
-  - **Data\_DstDoc\_WopiServiceId:string -** Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
+- **Data_FWebCreated:bool** - Tài liệu này có cờ WebCreator không?
 
-  - **Data\_FileType:long -** Tập hợp giá trị được xác định trước của loại tệp nội bộ
+- **Data_SaveReason:long** - Tập hợp các giá trị được xác định trước về lý do tại sao thao tác lưu này được thực hiện? (Lưu tự động, ToOCSTransitionSave, ToCSITransitionSave v.v..)
 
-  - **Data\_fLifeguarded:bool -** Tài liệu đã được bảo vệ chưa (tính năng tự sửa lỗi tài liệu mà không cần nhắc người dùng)?
+- **Data_SaveType:long** - Tập hợp các giá trị được xác định trước của loại lưu (Lưu dưới dạng, Phát hành, Thủ công, OMSave, v.v.) 
 
-  - **Data\_FWebCreated:bool -** Tài liệu này có cờ WebCreator không?
+- **Data_SrcDoc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
-  - **Data\_SaveReason:long -** Tập hợp các giá trị được xác định trước về lý do tại sao thao tác lưu này được thực hiện? (Lưu tự động, ToOCSTransitionSave, ToCSITransitionSave v.v..)
+- **Data_SrcDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_SaveType:long -** Tập hợp các giá trị được xác định trước của loại lưu (Lưu dưới dạng, Phát hành, Thủ công, OMSave, v.v.)
+- **Data_SrcDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint 
 
-  - **Data\_SrcDoc\_AccessMode:long -** Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
+- **Data_SrcDoc_EdpState:long** - Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
 
-  - **Data\_SrcDoc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_SrcDoc_Ext:string** - Phần mở rộng tài liệu
 
-  - **Data\_SrcDoc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
+- **Data_SrcDoc_Extension:string** - Phần mở rộng tài liệu
 
-  - **Data\_SrcDoc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
+- **Data_SrcDoc_FileFormat:long** - Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
 
-  - **Data\_SrcDoc\_Ext:string -** Phần mở rộng tài liệu
+- **Data_SrcDoc_Fqdn:string** - Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
 
-  - **Data\_SrcDoc\_Extension:string -** Phần mở rộng tài liệu
+- **Data_SrcDoc_FqdnHash:string** - Hàm băm của tài liệu được lưu trữ
 
-  - **Data\_SrcDoc\_FileFormat:long -** Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
+- **Data_SrcDoc_IdentityTelemetryId:string** - GUID duy nhất của người dùng
 
-  - **Data\_SrcDoc\_Fqdn:string -** Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+- **Data_SrcDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-  - **Data\_SrcDoc\_FqdnHash:string -** Hàm băm của tài liệu được lưu trữ
+- **Data_SrcDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
 
-  - **Data\_SrcDoc\_IdentityTelemetryId:string -** GUID duy nhất của người dùng
+- **Data_SrcDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
 
-  - **Data\_SrcDoc\_IdentityUniqueId:string -** Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
+- **Data_SrcDoc_IsCloudCollabEnabled:bool** - True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
 
-  - **Data\_SrcDoc\_IOFlags:long -** Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_SrcDoc_IsIncrementalOpen:bool** - Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
 
-  - **Data\_SrcDoc\_IrmRights:long -** Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
+- **Data_SrcDoc_IsOcsSupported:bool** - Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
 
-  - **Data\_SrcDoc\_IsCloudCollabEnabled:bool -** True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
+- **Data_SrcDoc_IsOpeningOfflineCopy:bool** - Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-  - **Data\_SrcDoc\_IsIncrementalOpen:bool -** Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
+- **Data_SrcDoc_IsSyncBacked:bool** - Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
-  - **Data\_SrcDoc\_IsOcsSupported:bool -** Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
+- **Data_SrcDoc_Location:long** - Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy:bool -** Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
+- **Data_SrcDoc_LocationDetails:long** - Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
 
-  - **Data\_SrcDoc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
+- **Data_SrcDoc_NumberCoAuthors:long** - Số lượng đồng tác giả tại thời điểm mở tài liệu
 
-  - **Data\_SrcDoc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
+- **Data_SrcDoc_PasswordFlags:long** - Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
 
-  - **Data\_SrcDoc\_LocationDetails:long -** Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
+- **Data_SrcDoc_ReadOnlyReasons:long** - Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
-  - **Data\_SrcDoc\_NumberCoAuthors:long -** Số lượng đồng tác giả tại thời điểm mở tài liệu
+- **Data_SrcDoc_ResourceIdHash:string** - Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
 
-  - **Data\_SrcDoc\_PasswordFlags:long -** Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
+- **Data_SrcDoc_ServerDocId:string** - Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
-  - **Data\_SrcDoc\_ReadOnlyReasons:long -** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
+- **Data_SrcDoc_ServerProtocol:long** - Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
 
-  - **Data\_SrcDoc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+- **Data_SrcDoc_ServerType:long** - Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
 
-  - **Data\_SrcDoc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
+- **Data_SrcDoc_ServerVersion:long** - Xác minh nếu máy chủ dựa trên Office14, Office15 hoặc Office 16Data_SrcDoc_SessionId:long GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
 
-  - **Data\_SrcDoc\_ServerProtocol:long -** Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
+- **Data_SrcDoc_SharePointServiceContext:string** - Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
 
-  - **Data\_SrcDoc\_ServerType:long -** Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
+- **Data_SrcDoc_SizeInBytes:long** - Kích cỡ tài liệu tính bằng byte
 
-  - **Data\_SrcDoc\_ServerVersion:long -** Xác minh nếu máy chủ dựa trên Office14, Office15 hoặc Office 16Data\_SrcDoc\_SessionId:long GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
+- **Data_SrcDoc_SpecialChars:long** - Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_SrcDoc\_SharePointServiceContext:string -** Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
+- **Data_SrcDoc_StorageProviderId:string** - Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
 
-  - **Data\_SrcDoc\_SizeInBytes:long -** Kích cỡ tài liệu tính bằng byte
+- **Data_SrcDoc_StreamAvailability:long** - Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
 
-  - **Data\_SrcDoc\_SpecialChars:long -** Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_SrcDoc_UrlHash:string** - Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
 
-  - **Data\_SrcDoc\_StorageProviderId:string -** Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
+- **Data_SrcDoc_UsedWrsDataOnOpen:bool** - True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
 
-  - **Data\_SrcDoc\_StreamAvailability:long-** Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
+- **Data_SrcDoc_WopiServiceId:string** - Mã định danh Dịch vụ WOPI, ví dụ: "Dropbox"
 
-  - **Data\_SrcDoc\_UrlHash:string -** Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
+- **Data_StopwatchDuration:long** - Tổng thời gian cho Hoạt động
 
-  - **Data\_SrcDoc\_UsedWrsDataOnOpen:bool -** True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
+- **Data_TypeOfSaveDialog:long** - Tập hợp các giá trị được xác định trước của Hộp thoại (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG, v.v.)
 
-  - **Data\_SrcDoc\_WopiServiceId:string -** Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
+- **DstDoc** - Vị trí mới của tài liệu 
 
-  - **Data\_StopwatchDuration:long -** Tổng thời gian cho Hoạt động
+- **SrcDoc** - Vị trí ban đầu của tài liệu
 
-  - **Data\_TypeOfSaveDialog:long -** Tập hợp các giá trị được xác định trước của Hộp thoại (CHẠY\_LƯU DƯỚI DẠNG\_, CHẠY\_LƯU PHƯƠNG TIỆN\_, CHẠY\_LƯU DƯỚI DẠNG\_VIDEO\_, v.v.)
-
-  - **DstDoc -** Vị trí mới của tài liệu
-
-  - **SrcDoc -** Vị trí ban đầu của tài liệu
 
 #### <a name="officepowerpointdocoperationsavelegacy"></a>Office.PowerPoint.DocOperation.SaveLegacy
 
-Được thu thập bất cứ khi nào PowerPoint thực hiện lưu bằng cách sử dụng đường dẫn mã kế thừa. Bao gồm loại kết quả thành công hoặc thất bại của số liệu về hiệu suất lưu và siêu dữ liệu của tài liệu có liên quan. Thất bại trong việc lưu có thể gây mất dữ liệu. Microsoft sử dụng dữ liệu này để đảm bảo tính năng này hoạt động như mong đợi và nội dung người dùng được duy trì thành công.
+Được thu thập bất cứ khi nào PowerPoint thực hiện lưu bằng cách sử dụng đường dẫn mã kế thừa. Bao gồm loại kết quả thành công hoặc thất bại của số liệu về hiệu suất lưu và siêu dữ liệu của tài liệu có liên quan.  Thất bại trong việc lưu có thể gây mất dữ liệu.  Microsoft sử dụng dữ liệu này để đảm bảo tính năng này hoạt động như mong đợi và nội dung người dùng được duy trì thành công.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemetryResult:long -** Mục nhập nhật ký này có tất cả các phép đo từ xa tài liệu cần thiết hay không (Các trường Dữ liệu\_Tài liệu\_\*) Nếu không, lý do là gì?
+- **Data_AddDocTelemetryResult:long** - Mục nhập nhật ký này có tất cả các phép đo từ xa tài liệu cần thiết hay không (Các trường Dữ_liệu_Tài_liệu_*) Nếu không, lý do là gì?
 
-  - **Data\_CppUncaughtExceptionCount:long -** Không theo kịp ngoại lệ riêng trong khi hoạt động đang chạy
+- **Data_CppUncaughtExceptionCount:long** - Không theo kịp ngoại lệ riêng trong khi hoạt động đang chạy
 
-  - **Data\_DetachedDuration:long -** Thời gian mà hoạt động bị tách ra/không chạy
+- **Data_DetachedDuration:long** - Thời gian mà hoạt động bị tách ra/không chạy
 
-  - **Data\_Doc\_AccessMode:long -** Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
+- **Data_Doc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
-  - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
+- **Data_Doc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
-  - **Data\_Doc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
+- **Data_Doc_EdpState:long** - Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
 
-  - **Data\_Doc\_Ext:string -** Phần mở rộng tài liệu
+- **Data_Doc_Ext:string** - Phần mở rộng tài liệu
 
-  - **Data\_Doc\_Extension:string -** Phần mở rộng tài liệu
+- **Data_Doc_Extension:string** - Phần mở rộng tài liệu
 
-  - **Data\_Doc\_FileFormat:long -** Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
+- **Data_Doc_FileFormat:long** - Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
 
-  - **Data\_Doc\_Fqdn:string -** Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+- **Data_Doc_Fqdn:string** - Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
 
-  - **Data\_Doc\_FqdnHash:string -** Hàm băm của tài liệu được lưu trữ
+- **Data_Doc_FqdnHash:string** - Hàm băm của tài liệu được lưu trữ
 
-  - **Data\_Doc\_IdentityTelemetryId:string – -** GUID duy nhất của người dùng
+- **Data_Doc_IdentityTelemetryId:string** - GUID duy nhất của người dùng
 
-  - **Data\_Doc\_IdentityUniqueId:string -** Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
+- **Data_Doc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-  - **Data\_Doc\_IOFlags:long -** Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_Doc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
 
-  - **Data\_Doc\_IrmRights:long -** Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
+- **Data_Doc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
 
-  - **Dữ liệu\_tài liệu\_IsCloudCollabEnabled:bool -** True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
+- **Data_Doc_IsCloudCollabEnabled:bool** - True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
 
-  - **Data\_Doc\_IsIncrementalOpen:bool – -** : Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
+- **Data_Doc_IsIncrementalOpen:bool** - Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
 
-  - **Data\_Doc\_IsOcsSupported:bool -** Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
+- **Data_Doc_IsOcsSupported:bool** - Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
+- **Data_Doc_IsOpeningOfflineCopy:bool** - Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data\_Doc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
+- **Data_Doc_IsSyncBacked:bool** - Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
-  - **Data\_Doc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
+- **Data_Doc_Location:long** - Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
 
-  - **Data\_Doc\_LocationDetails:long -** Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
+- **Data_Doc_LocationDetails:long** - Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
 
-  - **Data\_Doc\_NumberCoAuthors:long -** Số lượng đồng tác giả tại thời điểm mở tài liệu
+- **Data_Doc_NumberCoAuthors:long** - Số lượng đồng tác giả tại thời điểm mở tài liệu
 
-  - **Data\_Doc\_PasswordFlags:long -** Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
+- **Data_Doc_PasswordFlags:long** - Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
 
-  - **Data\_Doc\_ReadOnlyReasons:long –-** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
+- **Data_Doc_ReadOnlyReasons:long** - Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
-  - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+- **Data_Doc_ResourceIdHash:string** - Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
 
-  - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
+- **Data_Doc_ServerDocId:string** - Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
-  - **Data\_Doc\_ServerProtocol:long -** Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
+- **Data_Doc_ServerProtocol:long** - Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
 
-  - **Data\_Doc\_ServerType:long -** Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
+- **Data_Doc_ServerType:long** - Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI) 
 
-  - **Data\_Doc\_ServerVersion:long -** Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
+- **Data_Doc_ServerVersion:long** - Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
 
-  - **Data\_Doc\_SessionId:long -** GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
+- **Data_Doc_SessionId:long** - GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
 
-  - **Data\_Doc\_SharePointServiceContext:string -** Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
+- **Data_Doc_SharePointServiceContext:string** - Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
 
-  - **Data\_Doc\_SizeInBytes:long -** Kích cỡ tài liệu tính bằng byte
+- **Data_Doc_SizeInBytes:long** - Kích cỡ tài liệu tính bằng byte
 
-  - **Data\_Doc\_SpecialChars:long -** Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_Doc_SpecialChars:long** - Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_StorageProviderId:string -** Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
+- **Data_Doc_StorageProviderId:string** - Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
 
-  - **Data\_Doc\_StreamAvailability:long-** Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
+- **Data_Doc_StreamAvailability:long** - Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
 
-  - **Data\_Doc\_UrlHash:string -** Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
+- **Data_Doc_UrlHash:string** - Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
 
-  - **Data\_Doc\_UsedWrsDataOnOpen:bool -** True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
+- **Data_Doc_UsedWrsDataOnOpen:bool** - True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
 
-  - **Data\_Doc\_WopiServiceId:string -** Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
+- **Data_Doc_WopiServiceId:string** - Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
 
-  - **Data\_DstDoc\_AccessMode:long -** Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
+- **Data_DstDoc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
-  - **Data\_DstDoc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_DstDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_DstDoc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
+- **Data_DstDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
-  - **Data\_DstDoc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
+- **Data_DstDoc_EdpState:long** - Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
 
-  - **Data\_DstDoc\_Ext:string -** Phần mở rộng tài liệu
+- **Data_DstDoc_Ext:string** - Phần mở rộng tài liệu
 
-  - **Data\_DstDoc\_Extension:string -** Phần mở rộng tài liệu
+- **Data_DstDoc_Extension:string** - Phần mở rộng tài liệu
 
-  - **Data\_DstDoc\_FileFormat:long -** Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
+- **Data_DstDoc_FileFormat:long** - Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
 
-  - **Data\_DstDoc\_Fqdn:string -** Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+- **Data_DstDoc_Fqdn:string** - Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+    
+- **Data_DstDoc_FqdnHash:string** - Hàm băm của tài liệu được lưu trữ
 
-  - **Data\_DstDoc\_FqdnHash:string -** Hàm băm của tài liệu được lưu trữ
+- **Data_DstDoc_IdentityTelemetryId:string** - GUID duy nhất của người dùng
 
-  - **Data\_DstDoc\_IdentityTelemetryId:string -** GUID duy nhất của người dùng
+- **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-  - **Data\_DstDoc\_IdentityUniqueId:string -** Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
 
-  - **Data\_DstDoc\_IOFlags:long -** Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
 
-  - **Data\_DstDoc\_IrmRights:long -** Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
+- **Data_DstDoc_IsCloudCollabEnabled:bool** - True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
 
-  - **Data\_DstDoc\_IsCloudCollabEnabled:bool -** True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
+- **Data_DstDoc_IsIncrementalOpen:bool** - Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
 
-  - **Data\_DstDoc\_IsIncrementalOpen:bool -** Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
+- **Data_DstDoc_IsOcsSupported:bool** - Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
 
-  - **Data\_DstDoc\_IsOcsSupported:bool -** Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
+- **Data_DstDoc_IsOpeningOfflineCopy:bool** - Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy:bool -** Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
+- **Data_DstDoc_IsSyncBacked:bool** - Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
-  - **Data\_DstDoc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
+- **Data_DstDoc_Location:long** - Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
 
-  - **Data\_DstDoc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
+- **Data_DstDoc_LocationDetails:long** - Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
 
-  - **Data\_DstDoc\_LocationDetails:long -** Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
+- **Data_DstDoc_NumberCoAuthors:long** - Số lượng đồng tác giả tại thời điểm mở tài liệu
 
-  - **Data\_DstDoc\_NumberCoAuthors:long -** Số lượng đồng tác giả tại thời điểm mở tài liệu
+- **Data_DstDoc_PasswordFlags:long** - Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
 
-  - **Data\_DstDoc\_PasswordFlags:long -** Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
+- **Data_DstDoc_ReadOnlyReasons:long** - Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
-  - **Data\_DstDoc\_ReadOnlyReasons:long -** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
+- **Data_DstDoc_ResourceIdHash:string** - Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
 
-  - **Data\_DstDoc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+- **Data_DstDoc_ServerDocId:string** - Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
-  - **Data\_DstDoc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
+- **Data_DstDoc_ServerProtocol:long** - Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
 
-  - **Data\_DstDoc\_ServerProtocol:long -** Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
+- **Data_DstDoc_ServerType:long** - Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
 
-  - **Data\_DstDoc\_ServerType:long -** Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
+- **Data_DstDoc_ServerVersion:long** - Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
 
-  - **Data\_DstDoc\_ServerVersion:long -** Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
+- **Data_DstDoc_SessionId:long** - GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
 
-  - **Data\_DstDoc\_SessionId:long -** GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
+- **Data_DstDoc_SharePointServiceContext:string** - Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
 
-  - **Data\_DstDoc\_SharePointServiceContext:string -** Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
+- **Data_DstDoc_SizeInBytes:long** - Kích cỡ tài liệu tính bằng byte
 
-  - **Data\_DstDoc\_SizeInBytes:long -** Kích cỡ tài liệu tính bằng byte
+- **Data_DstDoc_SpecialChars:long** - Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_DstDoc\_SpecialChars:long -** Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_DstDoc_StorageProviderId:string** - Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
 
-  - **Data\_DstDoc\_StorageProviderId:string -** Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
+- **Data_DstDoc_StreamAvailability:long** - Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
 
-  - **Data\_DstDoc\_StreamAvailability:long-** Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
+- **Data_DstDoc_UrlHash:string** - Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
 
-  - **Data\_DstDoc\_UrlHash:string -** Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
+- **Data_DstDoc_UsedWrsDataOnOpen:bool** - True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
 
-  - **Data\_DstDoc\_UsedWrsDataOnOpen:bool -** True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
+- **Data_DstDoc_WopiServiceId:string** - Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
 
-  - **Data\_DstDoc\_WopiServiceId:string -** Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
+- **Data_FileType:long** - Tập hợp giá trị được xác định trước của loại tệp nội bộ
 
-  - **Data\_FileType:long -** Tập hợp giá trị được xác định trước của loại tệp nội bộ
+- **Data_fLifeguarded:bool** - Tài liệu đã được bảo vệ chưa (tính năng tự sửa lỗi tài liệu mà không cần nhắc người dùng)?
 
-  - **Data\_fLifeguarded:bool -** Tài liệu đã được bảo vệ chưa (tính năng tự sửa lỗi tài liệu mà không cần nhắc người dùng)?
+- **Data_SaveReason:long** - Tập hợp các giá trị được xác định trước về lý do tại sao thao tác lưu này được thực hiện? (Lưu tự động, ToOCSTransitionSave, ToCSITransitionSave v.v..)
 
-  - **Data\_SaveReason:long -** Tập hợp các giá trị được xác định trước về lý do tại sao thao tác lưu này được thực hiện? (Lưu tự động, ToOCSTransitionSave, ToCSITransitionSave v.v..)
+- **Data_SaveType:long** - Tập hợp các giá trị được xác định trước của loại lưu (Lưu dưới dạng, Phát hành, Thủ công, OMSave, v.v.)
 
-  - **Data\_SaveType:long -** Tập hợp các giá trị được xác định trước của loại lưu (Lưu dưới dạng, Phát hành, Thủ công, OMSave, v.v.)
+- **Data_SrcDoc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
-  - **Data\_SrcDoc\_AccessMode:long -** Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
+- **Data_SrcDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_SrcDoc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_SrcDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
-  - **Data\_SrcDoc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
+- **Data_SrcDoc_EdpState:long** - Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
 
-  - **Data\_SrcDoc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
+- **Data_SrcDoc_Ext:string** - Phần mở rộng tài liệu
 
-  - **Data\_SrcDoc\_Ext:string -** Phần mở rộng tài liệu
+- **Data_SrcDoc_Extension:string** - Phần mở rộng tài liệu
 
-  - **Data\_SrcDoc\_Extension:string -** Phần mở rộng tài liệu
+- **Data_SrcDoc_FileFormat:long** - Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
 
-  - **Data\_SrcDoc\_FileFormat:long -** Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
+- **Data_SrcDoc_Fqdn:string** - Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
 
-  - **Data\_SrcDoc\_Fqdn:string -** Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+- **Data_SrcDoc_FqdnHash:string** - Hàm băm của tài liệu được lưu trữ 
 
-  - **Data\_SrcDoc\_FqdnHash:string -** Hàm băm của tài liệu được lưu trữ
+- **Data_SrcDoc_IdentityTelemetryId:string** - GUID duy nhất của người dùng
 
-  - **Data\_SrcDoc\_IdentityTelemetryId:string -** GUID duy nhất của người dùng
+- **Data_SrcDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-  - **Data\_SrcDoc\_IdentityUniqueId:string -** Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
+- **Data_SrcDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
 
-  - **Data\_SrcDoc\_IOFlags:long -** Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_SrcDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
+    
+- **Data_SrcDoc_IsCloudCollabEnabled:bool** - True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
 
-  - **Data\_SrcDoc\_IrmRights:long -** Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
+- **Data_SrcDoc_IsIncrementalOpen:bool** - Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
 
-  - **Data\_SrcDoc\_IsCloudCollabEnabled:bool -** True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
+- **Data_SrcDoc_IsOcsSupported:bool** - Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
 
-  - **Data\_SrcDoc\_IsIncrementalOpen:bool -** Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
+- **Data_SrcDoc_IsOpeningOfflineCopy:bool** - Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-  - **Data\_SrcDoc\_IsOcsSupported:bool -** Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
+- **Data_SrcDoc_IsSyncBacked:bool** - Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy:bool -** Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
+- **Data_SrcDoc_Location:long** - Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
 
-  - **Data\_SrcDoc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
+- **Data_SrcDoc_LocationDetails:long** - Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
 
-  - **Data\_SrcDoc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
+- **Data_SrcDoc_NumberCoAuthors:long** - Số lượng đồng tác giả tại thời điểm mở tài liệu
 
-  - **Data\_SrcDoc\_LocationDetails:long -** Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive, v.v)
+- **Data_SrcDoc_PasswordFlags:long** - Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
 
-  - **Data\_SrcDoc\_NumberCoAuthors:long -** Số lượng đồng tác giả tại thời điểm mở tài liệu
+- **Data_SrcDoc_ReadOnlyReasons:long** - Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
-  - **Data\_SrcDoc\_PasswordFlags:long -** Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
+- **Data_SrcDoc_ResourceIdHash:string** - Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
 
-  - **Data\_SrcDoc\_ReadOnlyReasons:long -** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
+- **Data_SrcDoc_ServerDocId:string** - Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
-  - **Data\_SrcDoc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+- **Data_SrcDoc_ServerProtocol:long** - Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
 
-  - **Data\_SrcDoc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
+- **Data_SrcDoc_ServerType:long** - Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
 
-  - **Data\_SrcDoc\_ServerProtocol:long -** Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
+- **Data_SrcDoc_ServerVersion:long** - Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
 
-  - **Data\_SrcDoc\_ServerType:long -** Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
+- **Data_SrcDoc_SessionId:long** - GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
 
-  - **Data\_SrcDoc\_ServerVersion:long -** Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
+- **Data_SrcDoc_SharePointServiceContext:string** - Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
 
-  - **Data\_SrcDoc\_SessionId:long -** GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
+- **Data_SrcDoc_SizeInBytes:long** - Kích cỡ tài liệu tính bằng byte
 
-  - **Data\_SrcDoc\_SharePointServiceContext:string -** Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
+- **Data_SrcDoc_SpecialChars:long** - Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_SrcDoc\_SizeInBytes:long -** Kích cỡ tài liệu tính bằng byte
+- **Data_SrcDoc_StorageProviderId:string** - Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
 
-  - **Data\_SrcDoc\_SpecialChars:long -** Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_SrcDoc_StreamAvailability:long** - Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
 
-  - **Data\_SrcDoc\_StorageProviderId:string -** Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
+- **Data_SrcDoc_UrlHash:string** - Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
 
-  - **Data\_SrcDoc\_StreamAvailability:long-** Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
+- **Data_SrcDoc_UsedWrsDataOnOpen:bool** - True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
 
-  - **Data\_SrcDoc\_UrlHash:string -** Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
+- **Data_SrcDoc_WopiServiceId:string** - Mã định danh Dịch vụ WOPI, ví dụ: "Dropbox"
 
-  - **Data\_SrcDoc\_UsedWrsDataOnOpen:bool -** True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
+- **Data_StopwatchDuration:long** - Tổng thời gian cho Hoạt động
 
-  - **Data\_SrcDoc\_WopiServiceId:string -** Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
+- **Data_TypeOfSaveDialog:long** - Tập hợp các giá trị được xác định trước của Hộp thoại (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG, v.v.)
 
-  - **Data\_StopwatchDuration:long -** Tổng thời gian cho Hoạt động
+- **Doc** - Tài liệu hiện tại để Lưu
 
-  - **Data\_TypeOfSaveDialog:long -** Tập hợp các giá trị được xác định trước của Hộp thoại (CHẠY\_LƯU DƯỚI DẠNG\_, CHẠY\_LƯU PHƯƠNG TIỆN\_, CHẠY\_LƯU DƯỚI DẠNG\_VIDEO\_, v.v.)
+- **DstDoc** - Vị trí mới của tài liệu (trong trường hợp Lưu dưới dạng)
 
-  - **Doc -** Tài liệu hiện tại để Lưu
+- **SrcDoc** - Vị trí ban đầu của tài liệu (trong trường hợp Lưu dưới dạng)
 
-  - **DstDoc -** Vị trí mới của tài liệu (trong trường hợp Lưu dưới dạng)
+#### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-  - **SrcDoc -** Vị trí ban đầu của tài liệu (trong trường hợp Lưu dưới dạng)
+Thu thập bất cứ khi nào thao tác in hoặc xuất PDF hoàn thành và chứa thông tin về loại bố cục cũng như sự thành công của thao tác. Thông tin này rất quan trọng để xác định sự thành công của thao tác in và xuất PDF cho ứng dụng của chúng tôi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ExportAsPDFSucceed** - Boolean cho biết nếu thao tác xuất dưới dạng PDF thành công.
+
+- **Data_SavePrintLayoutType** - Kiểu bố trí in tại thời điểm bắt đầu thao tác in hoặc xuất.
+
 
 #### <a name="officepowerpointpptsharedslideshowfailure"></a>Office.PowerPoint.PPT.Shared.SlideShow.Failure
 
-Thu thập lần thất bại trong quá trình trình chiếu. Trình chiếu là một tính năng chính cho PowerPoint. Microsoft đang thu thập khi xảy ra lỗi trong quá trình trình chiếu để giúp cải thiện trải nghiệm người dùng trên trình chiếu. Microsoft sử dụng dữ liệu này để nhận thông tin chẩn đoán về nơi xảy ra lỗi trong khi người dùng đang sử dụng trình chiếu
+Thu thập các lỗi trong khi trình chiếu như là một tính năng chính cho PowerPoint. Microsoft đang thu thập khi xảy ra lỗi trong quá trình trình chiếu để giúp cải thiện trải nghiệm người dùng trên trình chiếu. Microsoft sử dụng dữ liệu này để nhận thông tin chẩn đoán về nơi xảy ra lỗi trong khi người dùng đang sử dụng trình chiếu.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **CountSlideShowErrors** - Tổng số lỗi trình chiếu
+- **CountOArtErrors** - Tổng số lỗi OArt
 
-  - **CountPPTErrors** - Tổng số lỗi PPT
+- **CountOtherErrors** - Tổng số lỗi khác
 
-  - **CountOArtErrors** - Tổng số lỗi OArt
+- **CountPPTErrors** - Tổng số lỗi PPT
 
-  - **CountOtherErrors** - Tổng số lỗi khác
+- **CountSlideShowErrors** - Tổng số lỗi trình chiếu
 
-  - **FirstSlideShowError** - Lỗi đầu tiên xảy ra trong trình chiếu
+- **FirstOArtError** - Lỗi đầu tiên xảy ra trong OArt
 
-  - **FirstOArtError** - Lỗi đầu tiên xảy ra trong OArt
+- **FirstOtherError** - Lỗi đầu tiên xảy ra trong khu vực khác
 
-  - **FirstPPTError** - Lỗi đầu tiên xảy ra trong PPT
+- **FirstPPTError** - Lỗi đầu tiên xảy ra trong PPT
 
-  - **FirstOtherError** - Lỗi đầu tiên xảy ra trong khu vực khác
+- **FirstSlideShowError** - Lỗi đầu tiên xảy ra trong trình chiếu
+
+    
+#### <a name="officepowerpointrunprintoperation"></a>Office.PowerPoint.RunPrintOperation
+
+Thu thập bất cứ khi nào thao tác in PDF đã hoàn thành và chứa thông tin về loại bố cục, sử dụng số trang chiếu, cũng như sự thành công của thao tác. Thông tin này rất quan trọng để xác định sự thành công của các thao tác in PDF cho ứng dụng của chúng tôi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_PrintWithSlideNumbers** - Boolean cho biết nếu người dùng đang in bằng số trang chiếu.
+
+- **Data_SavePrintLayoutType** - Kiểu bố trí in tại thời điểm bắt đầu thao tác in hoặc xuất.
+
+- **Data_Success** - Boolean cho biết thao tác in có thành công hay không.
+
 
 #### <a name="officeprojectprojectfilesave"></a>Office.Project.ProjectFileSave
 
@@ -2645,121 +3179,124 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_RequestUrl** - URL của tài nguyên CDN mà chúng tôi đang cố gắng truy xuất
 
+
+
 #### <a name="officetranslatordocumenttranslated"></a>Office.Translator.DocumentTranslated
 
 Thu thập sự thành công hay thất bại của bản dịch tài liệu đầy đủ mà người dùng kích hoạt trong Translator SDX. Điều này là rất quan trọng để đánh giá trạng thái của tính năng và phản ứng với bất kỳ sự cố ngừng hoạt động nào có thể xảy ra. Giám sát trạng thái của kịch bản "Dịch tài liệu" trong Word.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data.actionSource -** Cách lựa chọn dịch được kích hoạt -
+- **Data.actionSource** - Cách lựa chọn dịch được kích hoạt
 
-  - **Data.bodyBackgroundColor -** Màu nền bộ chứa chủ đề Office-
+- **Data.bodyBackgroundColor** - Màu nền bộ chứa chủ đề Office
 
-  - **Data.bodyForegroundColor -** Màu mặt trước bộ chứa chủ đề Office-
+- **Data.bodyForegroundColor** - Màu mặt trước bộ chứa chủ đề Office
 
-  - **Data.browserLang -** Ngôn ngữ hiển thị hiện tại của trình duyệt-
+- **Data.browserLang** - Ngôn ngữ hiển thị hiện tại của trình duyệt
 
-  - **Data.browserOnline -** Đã lỗi thời -
+- **Data.browserOnline** - Đã lỗi thời
 
-  - **Data.browserPlatform -** Nền tảng trình duyệt-
+- **Data.browserPlatform** - Nền tảng trình duyệt
 
-  - **Data.browserUserAgent -** Tác nhân người dùng của trình duyệt -
+- **Data.browserUserAgent** - Tác nhân người dùng của trình duyệt
 
-  - **Data.colorDepth -** Độ sâu màu hệ thống-
+- **Data.colorDepth** - Độ sâu màu hệ thống
 
-  - **Data.contentLanguage -** Ngôn ngữ được phát hiện của nội dung cần dịch-
+- **Data.contentLanguage** - Ngôn ngữ được phát hiện của nội dung cần dịch
 
-  - **Data.controlBackgroundColor -** Màu nền bộ chứa chủ đề Office-
+- **Data.controlBackgroundColor** - Màu nền bộ chứa chủ đề Office
 
-  - **Data.controlForegroundColor -** Màu mặt trước bộ chứa chủ đề Office-
+- **Data.controlForegroundColor** - Màu mặt trước bộ chứa chủ đề Office
 
-  - **Data.correlationId -** Mã định danh duy nhất của yêu cầu được gửi đến dịch vụ-
+- **Data.correlationId** - Mã định danh duy nhất của yêu cầu được gửi đến dịch vụ
 
-  - **Data.crossSessionId -** Mã định danh duy nhất của người dùng-
+- **Data.crossSessionId** - Mã định danh duy nhất của người dùng
 
-  - **Data.crossSessionStartTime -** Dấu thời gian UTC khi bắt đầu phiên dịch-
+- **Data.crossSessionStartTime** - Dấu thời gian UTC khi bắt đầu phiên dịch
 
-  - **Data.currentTime -** Dấu thời gian UTC khi thông báo phép đo từ xa này được gửi-
+- **Data.currentTime** - Dấu thời gian UTC khi thông báo phép đo từ xa này được gửi
 
-  - **Data.displayLanguage -** Ngôn ngữ hiển thị của Office -
+- **Data.displayLanguage** - Ngôn ngữ hiển thị của Office
 
-  - **Data.documentSourceLang -** Ngôn ngữ của nội dung tài liệu-
+- **Data.documentSourceLang** - Ngôn ngữ của nội dung tài liệu-
 
-  - **Data.documentTargetLang -** Ngôn ngữ mà tài liệu sẽ được dịch sang-
+- **Data.documentTargetLang** - Ngôn ngữ mà tài liệu sẽ được dịch sang-
 
-  - **Data.Environment -** Môi trường dịch vụ mà yêu cầu được gửi tới-
+- **Data.Environment** - Môi trường dịch vụ mà yêu cầu được gửi tới
 
-  - **Data.errorMessage -** Thông báo lỗi được báo cáo bởi dịch vụ-
+- **Data.errorMessage** - Thông báo lỗi được báo cáo bởi dịch vụ
 
-  - **Data.eventActionType -** Loại sự kiện phép đo từ xa -
+- **Data.eventActionType** - Loại sự kiện phép đo từ xa -
 
-  - **Data.eventTagId -** Mã định danh duy nhất của dòng mã tạo ra thông báo phép đo từ xa này-
+- **Data.eventTagId** - Mã định danh duy nhất của dòng mã tạo ra thông báo phép đo từ xa này.
 
-  - **Data.Flights -** Chuyến bay được bật -
+- **Data.Flights** - Chuyến bay được bật
 
-  - **Data.fileSize -** Kích cỡ tệp Word để dịch-
+- **Data.fileSize** - Kích cỡ tệp Word để dịch-
 
-  - **Data.fileSource -** Nơi tệp Word được lưu trữ (ngoại tuyến, trực tuyến)-
+- **Data.fileSource** - Nơi tệp Word được lưu trữ (ngoại tuyến, trực tuyến)
 
-  - **Data.fileType -** Phần mở rộng tệp Word-
+- **Data.fileType** - Phần mở rộng tệp Word-
 
-  - **Data.innerHeight "-** Chiều cao bộ chứa ngăn bên-
+- **Data.innerHeight "** - Chiều cao bộ chứa ngăn bên
 
-  - **Data.innerWidth "-** Chiều rộng bộ chứa ngăn bên -
+- **Data.innerWidth "** - Chiều rộng bộ chứa ngăn bên
 
-  - **Data.lookupSourceLang-** Không được sử dụng để dịch tài liệu-
+- **Data.lookupSourceLang** - Không được sử dụng để dịch tài liệu-
 
-  - **Data.lookupTargetLang-** Không được sử dụng để dịch tài liệu-
+- **Data.lookupTargetLang** - Không được sử dụng để dịch tài liệu-
 
-  - **Data.officeHost-** Ứng dụng Office lưu trữ ngăn bên-
+- **Data.officeHost** - Ứng dụng Office lưu trữ ngăn bên
 
-  - **Data.officeLocale-** Ngôn ngữ người dùng Office-
+- **Data.officeLocale** - Ngôn ngữ người dùng Office
 
-  - **Data.officeMachineId-** Mã định danh duy nhất của thiết bị-
+- **Data.officeMachineId** - Mã định danh duy nhất của thiết bị
 
-  - **Data.officePlatform -** Nền tảng của thiết bị-
+- **Data.officePlatform** - Nền tảng của thiết bị
 
-  - **Data.officeSessionId -** Mã định danh phiên Office -
+- **Data.officeSessionId** - Mã định danh phiên Office
 
-  - **Data.officeUserId -** Mã định danh duy nhất của người dùng Office-
+- **Data.officeUserId** - Mã định danh duy nhất của người dùng Office
 
-  - **Data.officeVersion -** Phiên bản Office-
+- **Data.officeVersion** - Phiên bản Office
 
-  - **Data.pageXOffset -** Vị trí cuộn ngang của ngăn bên từ phía bên trái của ngăn-
+- **Data.pageXOffset** - Vị trí cuộn ngang của ngăn bên từ phía bên trái của ngăn
 
-  - **Data.pageYOffset -** Vị trí cuộn dọc của ngăn bên từ phía trên cùng của ngăn-
+- **Data.pageYOffset** - Vị trí cuộn dọc của ngăn bên từ phía trên cùng của ngăn
 
-  - **Data.pixelDepth -** Độ phân giải màu màn hình-
+- **Data.pixelDepth** - Màu độ phân giải màn hình
 
-  - **Data.responseCode -** Mã phản hồi yêu cầu từ dịch vụ-
+- **Data.responseCode** - Mã phản hồi yêu cầu từ dịch vụ
 
-  - **Data.responseTime -** Thời gian đã qua của yêu cầu -
+- **Data.responseTime** - Thời gian đã qua của yêu cầu 
 
-  - **Data.resultType -** Kết quả của yêu cầu -
+- **Data.resultType** - Kết quả của yêu cầu
 
-  - **Data.screenHeight -** Chiều cao màn hình tính bằng pixel-
+- **Data.screenHeight** - Chiều cao màn hình tính bằng pixel
 
-  - **Data.screenLeft -** Tọa độ ngang của cửa sổ so với màn hình-
+- **Data.screenLeft** - Tọa độ ngang của cửa sổ so với màn hình
 
-  - **Data.screenTop -** Tọa độ dọc của cửa sổ so với màn hình-
+- **Data.screenTop -** Tọa độ dọc của cửa sổ so với màn hình
 
-  - **Data.screenWidth -** Chiều rộng màn hình tính bằng pixel-
+- **Data.screenWidth** - Chiều rộng màn hình tính bằng pixel
 
-  - **Data.selectedTab -** Tab nào được chọn Lựa chọn hoặc Tài liệu-
+- **Data.selectedTab** - Tab nào được chọn Lựa chọn hoặc Tài liệu
 
-  - **Data.serverUrl -** URL dịch vụ dịch-
+- **Data.serverUrl** - URL dịch vụ dịch
 
-  - **Data.sessionId -** Mã định danh phiên ngăn bên-
+- **Data.sessionId** - Mã định danh phiên ngăn bên
 
-  - **Data.sessionStartTime -** Dấu thời gian UTC khi bắt đầu phiên dịch-
+- **Data.sessionStartTime** - Dấu thời gian UTC khi bắt đầu phiên dịch
 
-  - **Data.sourceTextHash -** Hàm băm của văn bản để dịch-
+- **Data.sourceTextHash** - Hàm băm của văn bản để dịch
 
-  - **Data.sourceTextLength -** Chiều dài của văn bản để dịch-
+- **Data.sourceTextLength** - Chiều dài của văn bản để dịch
 
-  - **Data.sourceTextWords -** Số từ trong văn bản để dịch-
+- **Data.sourceTextWords** - Số từ trong văn bản để dịch
 
-  - **Data.warningMessage -** Thông báo cảnh báo được dịch vụ báo cáo-
+- **Data.warningMessage** - Thông báo cảnh báo được dịch vụ báo cáo
+
 
 #### <a name="officetranslatortexttranslated"></a>Office.Translator.TextTranslated
 
@@ -2767,173 +3304,171 @@ Thu thập sự thành công hay thất bại của bản dịch lựa chọn m�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data.actionSource -** Cách lựa chọn dịch được kích hoạt
+- **Data.actionSource** - Cách lựa chọn dịch được kích hoạt
 
-  - **Data.bodyBackgroundColor -** Màu nền bộ chứa chủ đề Office
+- **Data.bodyBackgroundColor** - Màu nền bộ chứa chủ đề Office
 
-  - **Data.bodyForegroundColor -** Màu mặt trước bộ chứa chủ đề Office
+- **Data.bodyForegroundColor** - Màu mặt trước bộ chứa chủ đề Office
 
-  - **Data.browserLang -** Ngôn ngữ hiển thị hiện tại của trình duyệt
+- **Data.browserLang** - Ngôn ngữ hiển thị hiện tại của trình duyệt
 
-  - **Data.browserOnline -** Đã lỗi thời
+- **Data.browserOnline** - Đã lỗi thời
 
-  - **Data.browserPlatform -** Nền tảng trình duyệt
+- **Data.browserPlatform** - Nền tảng trình duyệt
 
-  - **Data.browserUserAgent -** Tác nhân người dùng của trình duyệt
+- **Data.browserUserAgent** - Tác nhân người dùng của trình duyệt
 
-  - **Data.colorDepth -** Độ sâu màu hệ thống
+- **Data.colorDepth** - Độ sâu màu hệ thống
 
-  - **Data.contentLanguage -** Ngôn ngữ được phát hiện của nội dung cần dịch
+- **Data.contentLanguage** - Ngôn ngữ được phát hiện của nội dung cần dịch
 
-  - **Data.controlBackgroundColor -** Màu nền bộ chứa chủ đề Office
+- **Data.controlBackgroundColor** - Màu nền bộ chứa chủ đề Office
 
-  - **Data.controlForegroundColor -** Màu mặt trước bộ chứa chủ đề Office
+- **Data.controlForegroundColor** - Màu mặt trước bộ chứa chủ đề Office
 
-  - **Data.correlationId -** Mã định danh duy nhất của yêu cầu được gửi đến dịch vụ
+- **Data.correlationId** - Mã định danh duy nhất của yêu cầu được gửi đến dịch vụ
 
-  - **Data.crossSessionId -** Mã định danh duy nhất của người dùng
+- **Data.crossSessionId** - Mã định danh duy nhất của người dùng
 
-  - **Data.crossSessionStartTime -** Dấu thời gian UTC khi bắt đầu phiên dịch
+- **Data.crossSessionStartTime** - Dấu thời gian UTC khi bắt đầu phiên dịch
 
-  - **Data.currentTime -** Dấu thời gian UTC khi thông báo phép đo từ xa này được gửi
+- **Data.currentTime** - Dấu thời gian UTC khi thông báo phép đo từ xa này được gửi
 
-  - **Data.displayLanguage -** Ngôn ngữ hiển thị của Office
+- **Data.displayLanguage** - Ngôn ngữ hiển thị của Office
 
-  - **Data.documentSourceLang -** Không được sử dụng để chọn
+- **Data.documentSourceLang** - Không được sử dụng để chọn
 
-  - **Data.documentTargetLang -** Cũng không được sử dụng để lựa chọn dịch
+- **Data.documentTargetLang** - Cũng không được sử dụng để lựa chọn dịch
 
-  - **Data.Environment -** Môi trường dịch vụ mà yêu cầu được gửi tới
+- **Data.Environment** - Môi trường dịch vụ mà yêu cầu được gửi tới
 
-  - **Data.errorMessage -** Thông báo lỗi được báo cáo bởi dịch vụ
+- **Data.errorMessage** - Thông báo lỗi được báo cáo bởi dịch vụ
 
-  - **Data.eventActionType -** Loại sự kiện phép đo từ xa -
+- **Data.eventActionType** - Loại sự kiện phép đo từ xa -
 
-  - **Data.eventTagId -** Mã định danh duy nhất của dòng mã tạo ra thông báo phép đo từ xa này
+- **Data.eventTagId”** - Mã định danh duy nhất của dòng mã tạo ra thông báo phép đo từ xa này
 
-  - **Data.Flights -** Chuyến bay được bật
+- **Data.Flights** - Chuyến bay được bật
 
-  - **Data.innerHeight "-** Chiều cao bộ chứa ngăn bên
+- **Data.innerHeight** - Chiều cao bộ chứa ngăn bên
 
-  - **Data.innerWidth "-** Chiều rộng bộ chứa ngăn bên
+- **Data.innerWidth** - Chiều rộng bộ chứa ngăn bên
 
-  - **Data.lookupSourceLang-** Ngôn ngữ của văn bản hiện đang được chọn
+- **Data.lookupSourceLang** - Ngôn ngữ của văn bản hiện đang được chọn
 
-  - **Data.lookupTargetLang-** Ngôn ngữ văn bản hiện được chọn sẽ được dịch sang
+- **Data.lookupTargetLang** - Ngôn ngữ văn bản hiện được chọn sẽ được dịch sang
 
-  - **Data.officeHost-** Ứng dụng Office lưu trữ ngăn bên
+- **Data.officeHost** - Ứng dụng Office lưu trữ ngăn bên
 
-  - **Data.officeLocale-** Ngôn ngữ người dùng Office
+- **Data.officeLocale** - Ngôn ngữ người dùng Office
 
-  - **Data.officeMachineId-** Mã định danh duy nhất của thiết bị
+- **Data.officeMachineId** - Mã định danh duy nhất của thiết bị
 
-  - **Data.officePlatform -** Nền tảng của thiết bị
+- **Data.officePlatform** - Nền tảng của thiết bị
 
-  - **Data.officeSessionId -** Mã định danh phiên Office
+- **Data.officeSessionId** - Mã định danh phiên Office
 
-  - **Data.officeUserId -** Mã định danh duy nhất của người dùng Office
+- **Data.officeUserId** - Mã định danh duy nhất của người dùng Office
 
-  - **Data.officeVersion -** Phiên bản Office
+- **Data.officeVersion** - Phiên bản Office
 
-  - **Data.pageXOffset -** Vị trí cuộn ngang của ngăn bên từ phía bên trái của ngăn
+- **Data.pageXOffset** - Vị trí cuộn ngang của ngăn bên từ phía bên trái của ngăn
 
-  - **Data.pageYOffset -** Vị trí cuộn dọc của ngăn bên từ phía trên cùng của ngăn
+- **Data.pageYOffset** - Vị trí cuộn dọc của ngăn bên từ phía trên cùng của ngăn
 
-  - **Data.pixelDepth -** màu độ phân giải màn hình
+- **Data.pixelDepth** - Màu độ phân giải màn hình
 
-  - **Data.responseCode -** Mã phản hồi yêu cầu từ dịch vụ
+- **Data.responseCode** - Mã phản hồi yêu cầu từ dịch vụ
 
-  - **Data.responseTime -** Thời gian đã qua của yêu cầu
+- **Data.responseTime** - Thời gian đã qua của yêu cầu
 
-  - **Data.resultType -** Kết quả của yêu cầu
+- **Data.resultType** - Kết quả của yêu cầu
 
-  - **Data.screenHeight -** Chiều cao màn hình tính bằng pixel
+- **Data.screenHeight** - Chiều cao màn hình tính bằng pixel
 
-  - **Data.screenLeft -** Tọa độ ngang của cửa sổ so với màn hình
+- **Data.screenLeft** - Tọa độ ngang của cửa sổ so với màn hình
 
-  - **Data.screenTop -** Tọa độ dọc của cửa sổ so với màn hình
+- **Data.screenTop -** Tọa độ dọc của cửa sổ so với màn hình
 
-  - **Data.screenWidth -** Chiều rộng màn hình tính bằng pixel
+- **Data.screenWidth** - Chiều rộng màn hình tính bằng pixel
 
-  - **Data.selectedTab -** Tab nào được chọn Lựa chọn hoặc Tài liệu
+- **Data.selectedTab** - Tab nào được chọn Lựa chọn hoặc Tài liệu
 
-  - **Data.serverUrl -** URL dịch vụ dịch
+- **Data.serverUrl** - URL dịch vụ dịch
 
-  - **Data.sessionId -** Mã định danh phiên ngăn bên
+- **Data.sessionId** - Mã định danh phiên ngăn bên
 
-  - **Data.sessionStartTime -** Dấu thời gian UTC khi bắt đầu phiên dịch
+- **Data.sessionStartTime** - Dấu thời gian UTC khi bắt đầu phiên dịch
 
-  - **Data.sourceTextHash -** Hàm băm của văn bản để dịch
+- **Data.sourceTextHash** - Hàm băm của văn bản để dịch
 
-  - **Data.sourceTextLength -** Chiều dài của văn bản để dịch
+- **Data.sourceTextLength** - Chiều dài của văn bản để dịch
 
-  - **Data.sourceTextWords -** Số từ trong văn bản để dịch
+- **Data.sourceTextWords** - Số từ trong văn bản để dịch
 
-  - **Data.warningMessage -** Thông báo cảnh báo được dịch vụ báo cáo
+- **Data.warningMessage** - Thông báo cảnh báo được dịch vụ báo cáo
 
 #### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
-Sự kiện này ghi lại số liệu thống kê tài liệu cho từng tài liệu khi Office Word bị đóng hoặc bị tạm ngừng.
-
-Sự kiện này được sử dụng để kết hợp các chỉnh sửa tài liệu, kích thước, v.v. với các lỗi lưu tài liệu, chia sẻ tài liệu và tài liệu cộng tác trực tuyến.
+Sự kiện này ghi lại số liệu thống kê tài liệu cho từng tài liệu khi Office Word bị đóng hoặc bị tạm ngừng.  Sự kiện này được sử dụng để kết hợp các chỉnh sửa tài liệu, kích thước, v.v. với các lỗi lưu tài liệu, chia sẻ tài liệu và tài liệu cộng tác trực tuyến.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_BkmkRefCount -** Số lượng tham chiếu thẻ đánh dấu trong tài liệu
+- **Data_BkmkRefCount** - Số lượng tham chiếu thẻ đánh dấu trong tài liệu
 
-  - **Data\_CharacterCount -** Số lượng ký tự trong tài liệu
+- **Data_CharacterCount** - Số lượng ký tự trong tài liệu
 
-  - **Data\_CharactersWithSpaceCount -** Số lượng ký tự và khoảng trắng trong tài liệu
+- **Data_CharactersWithSpaceCount** - Số lượng ký tự và khoảng trắng trong tài liệu
 
-  - **Data\_ChartCount -** Số lượng ký tự trong tài liệu
+- **Data_ChartCount** - Số lượng ký tự trong tài liệu
 
-  - **Data\_CitationCount -** Số lượng trích dẫn trong tài liệu
+- **Data_CitationCount** - Số lượng trích dẫn trong tài liệu
 
-  - **Data\_DocumentLocation -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_DocumentLocation** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_ETW\_TrackbackTag -** Xác định địa điểm trong mã nơi sự kiện này được kích hoạt (Đóng hoặc Tạm ngừng)
+- **Data_ETW_TrackbackTag** - Xác định địa điểm trong mã nơi sự kiện này được kích hoạt (Đóng hoặc Tạm ngừng)
 
-  - **Data\_EndnoteDocCount -** Số lượng chú thích cuối trong tài liệu
+- **Data_EndnoteDocCount** - Số lượng chú thích cuối trong tài liệu
 
-  - **Data\_FootnoteDocCount -** Số chú thích cuối trang trong tài liệu
+- **Data_FootnoteDocCount** - Số chú thích cuối trang trong tài liệu
 
-  - **Data\_HasBibliography -** Cho biết liệu tài liệu có chứa danh mục tham khảo hay không
+- **Data_HasBibliography** - Cho biết liệu tài liệu có chứa danh mục tham khảo hay không
 
-  - **Data\_HasHeader -** Cho biết liệu tài liệu có chứa đầu trang hay không
+- **Data_HasHeader** - Cho biết liệu tài liệu có chứa đầu trang hay không
 
-  - **Data\_IsImeUsed -** Cho biết liệu Trình soạn thảo phương pháp nhập có được sử dụng trong tài liệu hay không
+- **Data_IsImeUsed** - Cho biết liệu Trình soạn thảo phương pháp nhập có được sử dụng trong tài liệu hay không
 
-  - **Data\_IsPageCountInProgress -** Cho biết số lượng trang hiện đang được thực hiện cho tài liệu.
+- **Data_IsPageCountInProgress** - Cho biết số lượng trang hiện đang được thực hiện cho tài liệu.
+    
+- **Data_IsTouchUsed** - Cho biết liệu phương pháp nhập chạm có được sử dụng trong tài liệu hay không
 
-  - **Data\_IsTouchUsed -** Cho biết liệu phương pháp nhập chạm có được sử dụng trong tài liệu hay không
+- **Data_IsTrackChangesOn** - Cho biết liệu theo dõi thay đổi có được bật cho tài liệu hay không
 
-  - **Data\_IsTrackChangesOn -** Cho biết liệu theo dõi thay đổi có được bật cho tài liệu hay không
+- **Data_LineCount** - Số dòng trong tài liệu
 
-  - **Data\_LineCount -** Số dòng trong tài liệu
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
 
-  - **Data\_MainPdod -** Mã định danh tài liệu trong quy trình Office Word.
+- **Data_PageCount** - Số trang trong tài liệu
 
-  - **Data\_PageCount -** Số trang trong tài liệu
+- **Data_PageNumberFieldCount** - Số trường số trang trong tài liệu
 
-  - **Data\_PageNumberFieldCount -** Số trường số trang trong tài liệu
+- **Data_ParagraphCount** - Số đoạn trong tài liệu
 
-  - **Data\_ParagraphCount -** Số đoạn trong tài liệu
+- **Data_PicCount** - Số lượng ảnh trong tài liệu
 
-  - **Data\_PicCount -** Số lượng ảnh trong tài liệu
+- **Data_RsidCount** - Số hiệu đính lưu mã định danh trong tài liệu
 
-  - **Data\_RsidCount -** Số hiệu đính lưu mã định danh trong tài liệu
+- **Data_TocCount** - Số lượng mục lục trong tài liệu
 
-  - **Data\_TocCount -** Số lượng mục lục trong tài liệu
+- **Data_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_UserActionID** - Trường dữ liệu này không được sử dụng (giá trị luôn là 0).
 
-  - **Data\_UserActionID -** Trường dữ liệu này không được sử dụng (giá trị luôn là 0).
+- **Data_UserActionName** - luôn là “DocumentStatsOnCloseAndSuspend”
 
-  - **Data\_UserActionName -** luôn là “DocumentStatsOnCloseAndSuspend”
-
-  - **Data\_UserInteractionTimeMsec -** Số mili giây mà người dùng đã tích cực tương tác với tài liệu
-
-  - **Data\_WordCount -** Số từ trong tài liệu
+- **Data_UserInteractionTimeMsec** - Số mili giây mà người dùng đã tích cực tương tác với tài liệu
+    
+- **Data_WordCount** - Số từ trong tài liệu
 
 #### <a name="officewordfilenewcreatenewfile"></a>Office.Word.FileNew.CreateNewFile
 
@@ -2955,187 +3490,187 @@ Sự kiện này cho thấy rằng người dùng đang lưu các thay đổi c�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemRes -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
+- **Data_AddDocTelemRes** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
 
-  - **Data\_DetachedDuration -** Thời gian hoạt động được tách ra từ chuỗi
+- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
-  - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
-  - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+    
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
 
-  - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_Doc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_Doc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
 
-  - **Data\_Doc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
 
-  - **Data\_Doc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_Doc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở
 
-  - **Data\_Doc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_Doc\_InitializationScenario -** Ghi lại cách tài liệu được mở
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+    
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_Doc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+    
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data\_Doc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data\_Doc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
 
-  - **Data\_Doc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_Doc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
 
-  - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_Doc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_Doc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_Doc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_Doc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_Doc\_SizeInBytes -** Chỉ báo kích thước tài liệu
+- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_Doc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_Doc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_EditorDisablingRename** - Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
 
-  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
+- **Data_EditorsCount** - Số lượng trình chỉnh sửa trong tài liệu
 
-  - **Data\_Doc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_LastLoggedTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
 
-  - **Data\_EditorDisablingRename -** Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
+- **Data_MoveDisabledReason** - Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
 
-  - **Data\_EditorsCount -** Số lượng trình chỉnh sửa trong tài liệu
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-  - **Data\_LastLoggedTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu
 
-  - **Data\_MoveDisabledReason -** Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
-  - **Data\_MoveFlightEnabled -** Liệu chuyến bay cho tính năng di chuyển có được bật hay không
-
-  - **Data\_RenameDisabledReason -** Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu
-
-  - **Data\_RenameFlightEnabled -** Liệu chuyến bay cho tính năng đổi tên có được bật hay không
-
+    
 #### <a name="officewordfilesaveactfconfirmsavedoccoreautorecoverysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
 
-Sự kiện này cho biết Office Word lưu tài liệu tự động khôi phục chưa được lưu trước đó. Nó cho phép Microsoft phát hiện lỗi trong tự động phục hồi, điều này rất quan trọng đối với sự an toàn của dữ liệu tài liệu.
-
-Sự kiện theo dõi xem thao tác tự động khôi phục lưu khi có hoạt động như mong đợi hay không. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng và số liệu về độ tin cậy của đám mây.
+Sự kiện này cho biết Office Word lưu tài liệu tự động khôi phục chưa được lưu trước đó. Nó cho phép Microsoft phát hiện lỗi trong tự động phục hồi, điều này rất quan trọng đối với sự an toàn của dữ liệu tài liệu.  Sự kiện theo dõi xem thao tác tự động khôi phục lưu khi có hoạt động như mong đợi hay không. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng và số liệu về độ tin cậy của đám mây.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_DetachedDuration -** Thời gian hoạt động được tách ra từ chuỗi
+- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
-  - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
-  - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+    
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
 
-  - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_Doc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_Doc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
 
-  - **Data\_Doc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
 
-  - **Data\_Doc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_Doc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở
 
-  - **Data\_Doc\_InitializationScenario -** Ghi lại cách tài liệu được mở
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_Doc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
 
-  - **Data\_Doc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_Doc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+    
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data\_Doc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_Doc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
 
-  - **Data\_Doc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_Doc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
 
-  - **Data\_Doc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_Doc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_Doc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_Doc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_Doc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_SizeInBytes -** Chỉ báo kích thước tài liệu
+- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_Doc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_Doc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
+- **Data_Doc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
 
-  - **Data\_Doc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_FailureClass** - Số nguyên thể hiện lớp lỗi cho các lỗi chuyển tiếp Dịch vụ Cộng tác Office (OCS)
+    
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
 
-  - **Data\_Doc\_WopiServiceId -** Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-  - **Data\_FailureClass -** Số nguyên thể hiện lớp lỗi cho các lỗi chuyển tiếp Dịch vụ Cộng tác Office (OCS)
+- **Data_OCSSyncbackSaveStarted** - Cờ cho biết thao tác lưu này có liên quan đến việc lưu lại đồng bộ hóa
 
-  - **Data\_MainPdod -** Mã định danh tài liệu trong quy trình Office Word.
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
 
-  - **Data\_MoveFlightEnabled -** Liệu chuyến bay cho tính năng di chuyển có được bật hay không
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
-  - **Data\_OCSSyncbackSaveStarted -** Cờ cho biết thao tác lưu này có liên quan đến việc lưu lại đồng bộ hóa
+- **Data_SaveInitiateKind** - Số nguyên cho biết cách bắt đầu lưu
 
-  - **Data\_RenameDisabledReason -** Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
+- **Data_SrcDocIsUnnamedOrNew** - Cho biết liệu tài liệu chúng tôi đang lưu có mới không
 
-  - **Data\_RenameFlightEnabled -** Liệu chuyến bay cho tính năng đổi tên có được bật hay không
-
-  - **Data\_SaveInitiateKind -** Số nguyên cho biết cách bắt đầu lưu
-
-  - **Data\_SrcDocIsUnnamedOrNew -** Cho biết liệu tài liệu chúng tôi đang lưu có mới không
 
 #### <a name="officewordfilesaveactfconfirmsavedoccorequerysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -3143,113 +3678,114 @@ Sự kiện này cho biết Office Word sẽ nhắc người dùng lưu các tha
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemRes -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
+- **Data_AddDocTelemRes** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
 
-  - **Data\_DetachedDuration -** Thời gian hoạt động được tách ra từ chuỗi
+- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
-  - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
-  - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
 
-  - **Data\_Doc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_Doc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_Doc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
 
-  - **Data\_Doc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
 
-  - **Data\_Doc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_Doc\_InitializationScenario -** Ghi lại cách tài liệu được mở
+- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở
 
-  - **Data\_Doc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_Doc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
 
-  - **Data\_Doc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_Doc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+    
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_Doc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_Doc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
 
-  - **Data\_Doc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_Doc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
 
-  - **Data\_Doc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_Doc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_Doc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_Doc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_Doc\_SizeInBytes -** Chỉ báo kích thước tài liệu
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_Doc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_Doc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_Doc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
 
-  - **Data\_Doc\_WopiServiceId -** Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
+- **Data_DstDoc_AccessMode** - Tài liệu đích chỉ đọc/có thể chỉnh sửa
 
-  - **Data\_DstDoc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_DstDoc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu đích
 
-  - **Data\_DstDoc\_EdpState – Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu đích-**
+- **Data_DstDoc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v.) cho tài liệu đích
 
-  - **Data\_DstDoc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v.) cho tài liệu đích
+- **Data_DstDoc_FileFormat** - Phiên bản giao thức định dạng tệp cho tài liệu đích
 
-  - **Data\_DstDoc\_FileFormat -** Phiên bản giao thức định dạng tệp cho tài liệu đích
+- **Data_DstDoc_Location** - Cho biết dịch vụ nào sẽ cung cấp lưu trữ cho tài liệu đích (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_DstDoc\_Location -** Cho biết dịch vụ nào sẽ cung cấp lưu trữ cho tài liệu đích (OneDrive, File Server, SharePoint, v.v.)
+- **Data_DstDoc_LocationDetails** - Cho biết Thư mục đã biết cục bộ nào đã lưu trữ tài liệu đích
 
-  - **Data\_DstDoc\_LocationDetails -** Cho biết Thư mục đã biết cục bộ nào đã lưu trữ tài liệu đích
+- **Data_DstDoc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_DstDoc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_DstDoc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc cho tài liệu đích
 
-  - **Data\_DstDoc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc cho tài liệu đích
+- **Data_FailureClass** - Số nguyên thể hiện lớp lỗi với lỗi chuyển đổi OCS
 
-  - **Data\_FailureClass -** Số nguyên thể hiện lớp lỗi với lỗi chuyển đổi OCS
+- **Data_LocationPickerSaveStatus** - Giá trị số nguyên cho biết thao tác kích hoạt lưu từ hộp thoại lưu khi thoát
 
-  - **Data\_LocationPickerSaveStatus -** Giá trị số nguyên cho biết thao tác kích hoạt lưu từ hộp thoại lưu khi thoát
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
 
-  - **Data\_MainPdod -** Mã định danh tài liệu trong quy trình Office Word.
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-  - **Data\_MoveFlightEnabled -** Liệu chuyến bay cho tính năng di chuyển có được bật hay không
+- **Data_OCSSyncbackSaveStarted** - Cờ cho biết thao tác lưu này có liên quan đến việc lưu lại đồng bộ hóa 
 
-  - **Data\_OCSSyncbackSaveStarted -** Cờ cho biết thao tác lưu này có liên quan đến việc lưu lại đồng bộ hóa
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
 
-  - **Data\_RenameDisabledReason -** Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
-  - **Data\_RenameFlightEnabled -** Liệu chuyến bay cho tính năng đổi tên có được bật hay không
+- **Data_SaveInitiateKind** - Số nguyên cho biết cách bắt đầu lưu
 
-  - **Data\_SaveInitiateKind -** Số nguyên cho biết cách bắt đầu lưu
+- **Data_SrcDocIsUnnamedOrNew** - Cho biết liệu tài liệu chúng tôi đang lưu có mới không
 
-  - **Data\_SrcDocIsUnnamedOrNew -** Cho biết liệu tài liệu chúng tôi đang lưu có mới không
 
 #### <a name="officewordfilesavesaveassavefile"></a>Office.Word.FileSave.SaveAsSaveFile
 
@@ -3257,257 +3793,232 @@ Sự kiện này cho biết Office Word lưu tài liệu vào một tài liệu 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemRes -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
+- **Data_AddDocTelemRes** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
 
-  - **Data\_AddDocTelemResDst -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị từ xa liên quan đến tài liệu khác trong sự kiện cho tài liệu đích hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
+- **Data_AddDocTelemResDst** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị từ xa liên quan đến tài liệu khác trong sự kiện cho tài liệu đích hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
 
-  - **Data\_AddDocTelemResSrc -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện cho tài liệu nguồn hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
+- **Data_AddDocTelemResSrc** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện cho tài liệu nguồn hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
 
-  - **Data\_DetachedDuration -** Thời gian hoạt động được tách ra từ chuỗi
+- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
-  - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
-  - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
 
-  - **Data\_Doc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_Doc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_Doc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
 
-  - **Data\_Doc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
 
-  - **Data\_Doc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_Doc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_Doc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
 
-  - **Data\_Doc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_Doc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_Doc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_Doc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_Doc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
 
-  - **Data\_Doc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_Doc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_Doc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_Doc\_SizeInBytes -** Chỉ báo kích thước tài liệu
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_Doc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_Doc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_DstDoc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_DstDoc_AccessMode** - Tài liệu đích chỉ đọc/có thể chỉnh sửa
 
-  - **Data\_DstDo\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu đích được mở trong chế độ đọc được hỗ trợ
+- **Data_DstDoc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu đích được mở trong chế độ đọc được hỗ trợ
+    
+- **Data_DstDoc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_DstDoc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_DstDoc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu đích
 
-  - **Data\_DstDoc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu đích
+- **Data_DstDoc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_DstDoc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_DstDoc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_DstDoc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_DstDoc_Fqdn** - Tên miền trực tuyến OneDrive hoặc SharePoint cho tài liệu đích
 
-  - **Data\_DstDoc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint cho tài liệu đích
+- **Data_DstDoc_FqdnHash** - Hàm băm một chiều của tên miền nhận dạng khách hàng cho tài liệu đích
 
-  - **Data\_DstDoc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng cho tài liệu đích
+- **Data_DstDoc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_DstDoc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_DstDoc_InitializationScenario** - Ghi lại cách tài liệu đích được mở
 
-  - **Data\_DstDoc\_InitializationScenario -** Ghi lại cách tài liệu đích được mở
+- **Data_DstDoc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở cho tài liệu đích
+    
+- **Data_DstDoc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng đích
 
-  - **Data\_DstDoc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở cho tài liệu đích
+- **Data_DstDoc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_DstDoc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng đích
+- **Data_DstDoc_IsOcsSupported** -Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
 
-  - **Data\_DstDoc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_DstDoc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data\_DstDoc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_DstDoc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_DstDoc_Location** - Cho biết dịch vụ nào đã cung cấp lưu trữ cho tài liệu đích (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_DstDoc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu trên máy tính
+- **Data_DstDoc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_DstDoc\_Location -** Cho biết dịch vụ nào đã cung cấp lưu trữ cho tài liệu đích (OneDrive, File Server, SharePoint, v.v.)
+- **Data_DstDoc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_DstDoc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_DstDoc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt cho tài liệu đích
 
-  - **Data\_DstDoc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_DstDoc_ReadOnlyReasons** - Lý do tại sao tài liệuđích được mở ở dạng chỉ đọc 
 
-  - **Data\_DstDoc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt cho tài liệu đích
+- **Data_DstDoc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_DstDoc\_ReadOnlyReasons -** Lý do tại sao tài liệuđích được mở ở dạng chỉ đọc
+- **Data_DstDoc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
-  - **Data\_DstDoc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_DstDoc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_DstDoc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_DstDoc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+    
+- **Data_DstDoc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_DstDoc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_DstDoc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_DstDoc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_DstDoc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_DstDoc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_DstDoc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_DstDoc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_DstDoc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_DstDoc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_DstDoc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_DstDoc\_SizeInBytes -** Chỉ số kích thước tài liệu
+- **Data_DstDoc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_DstDoc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_DstDoc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc cho tài liệu đích
+    
+- **Data_DstDoc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
 
-  - **Data\_DstDoc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_FailureClass** - Số nguyên thể hiện lớp lỗi với lỗi chuyển đổi OCS
 
-  - **Data\_DstDoc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
+- **Data_LocationPickerPropagateToSaveTime,spLapsedMsec** - Đo thời gian, tính bằng mili giây, cần thiết để quá trình lưu kích hoạt sau khi nhận được kết quả từ bộ chọn vị trí
 
-  - **Data\_DstDoc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc cho tài liệu đích
+- **Data_LocationPickerSaveStatus** - Trạng thái được trả về bởi bộ chọn vị trí
 
-  - **Data\_DstDoc\_WopiServiceId -** Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
 
-  - **Data\_FailureClass -** Số nguyên thể hiện lớp lỗi với lỗi chuyển đổi OCS
+- **Data_MoveDisabledReason** - Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
 
-  - **Data\_LocationPickerPropagateToSaveTime,spLapsedMsec -** Đo thời gian, tính bằng mili giây, cần thiết để quá trình lưu kích hoạt sau khi nhận được kết quả từ bộ chọn vị trí
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-  - **Data\_LocationPickerSaveStatus -** Trạng thái được trả về bởi bộ chọn vị trí
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
 
-  - **Data\_MainPdod -** Mã định danh tài liệu trong quy trình Office Word
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
-  - **Data\_MoveDisabledReason -** Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
+- **Data_SaveInitiateKind** - Số nguyên cho biết cách bắt đầu lưu
 
-  - **Data\_MoveFlightEnabled -** Liệu thao tác chống lại tính năng di chuyển có được bật hay không
+- **Data_SrcDoc_AccessMode** - Tài liệu đích chỉ đọc/có thể chỉnh sửa
 
-  - **Data\_RenameDisabledReason -** Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
+- **Data_SrcDoc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_RenameFlightEnabled -** Liệu chuyến bay cho tính năng đổi tên có được bật hay không
+- **Data_SrcDoc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_SaveInitiateKind -** Số nguyên cho biết cách bắt đầu lưu
+- **Data_SrcDoc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu nguồn
 
-  - **Data\_SrcDoc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_SrcDoc_Ext** - Phần mở rộng tài liệu cho tài liệu nguồn (docx/xlsb/pptx, v.v.)
 
-  - **Data\_SrcDoc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_SrcDoc_FileFormat** - Phiên bản giao thức định dạng tệp cho tài liệu nguồn
 
-  - **Data\_SrcDoc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_SrcDoc_Fqdn** - Tên miền trực tuyến OneDrive hoặc SharePoint cho tài liệu nguồn
 
-  - **Data\_SrcDoc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu nguồn
+- **Data_SrcDoc_FqdnHash** - Hàm băm một chiều của tên miền nhận dạng khách hàng cho tài liệu nguồn
 
-  - **Data\_SrcDoc\_Ext -** Phần mở rộng tài liệu cho tài liệu nguồn (docx/xlsb/pptx, v.v.)
+- **Data_SrcDoc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_SrcDoc\_FileFormat -** Phiên bản giao thức định dạng tệp cho tài liệu nguồn
+- **Data_SrcDoc_InitializationScenario** - Ghi lại cách tài liệu được mở
 
-  - **Data\_SrcDoc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint cho tài liệu nguồn
+- **Data_SrcDoc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_SrcDoc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng cho tài liệu nguồn
+- **Data_SrcDoc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
 
-  - **Data\_SrcDoc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_SrcDoc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_SrcDoc\_InitializationScenario -** Ghi lại cách tài liệu được mở
+- **Data_SrcDoc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
 
-  - **Data\_SrcDoc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_SrcDoc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data\_SrcDoc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_SrcDoc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+    
+- **Data_SrcDoc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu nguồn (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_SrcDo\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_SrcDoc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_SrcDoc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_SrcDoc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_SrcDoc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
 
-  - **Data\_SrcDoc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu trên máy tính
+- **Data_SrcDoc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_SrcDoc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu nguồn (OneDrive, File Server, SharePoint, v.v.)
+- **Data_SrcDoc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_SrcDoc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_SrcDoc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
-  - **Data\_SrcDoc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_SrcDoc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_SrcDoc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
+- **Data_SrcDoc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
 
-  - **Data\_SrcDoc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_SrcDoc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_SrcDoc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_SrcDoc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_SrcDoc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_SrcDoc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_SrcDoc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_SrcDoc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_SrcDoc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_SrcDoc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_SrcDoc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_SrcDoc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_SrcDoc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_SrcDoc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_SrcDoc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_SrcDoc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_SrcDoc\_SizeInBytes -** Chỉ số kích thước tài liệu
+- **Data_SrcDoc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
 
-  - **Data\_SrcDoc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_SrcDocIsUnnamedOrNew** - Cho biết liệu tài liệu chúng tôi đang lưu có mới không
 
-  - **Data\_SrcDoc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
-
-  - **Data\_SrcDoc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
-
-  - **Data\_SrcDoc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
-
-  - **Data\_SrcDoc\_WopiServiceId -** Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
-
-  - **Data\_SrcDocIsUnnamedOrNew -** Cho biết liệu tài liệu chúng tôi đang lưu có mới không
-
-#### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
-
-Sự kiện này cho biết Office Word chỉnh sửa tài liệu thay đổi trạng thái bên trong của tài liệu thành "rác". Nó cho phép Microsoft để đánh giá trạng thái tính năng của tài liệu chỉnh sửa. Sự kiện này là thông báo hoạt động của chỉnh sửa người dùng. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Data\_CollectionTime-** Dấu thời gian của sự kiện
-
-  - **Data\_DocumentLocation-** Loại vị trí tài liệu
-
-  - **Data\_DocumentLocationDetails-** Loại con của vị trí tài liệu
-
-  - **Data\_FAlwaysSaveEnabled-** Cho biết liệu tính năng luôn lưu có được bật hay không
-
-  - **Data\_FirstEditTime-** Dấu thời gian của lần chỉnh sửa đầu tiên
-
-  - **Data\_NumberCoAuthors-** Số lượng đồng tác giả chỉnh sửa tài liệu trong phiên
-
-  - **Data\_NumberOfTimesDocumentDirtied-** Số lần chỉnh sửa được thực hiện cho tài liệu
-
-  - **Data\_Pdod -** Mã định danh tài liệu trong quy trình Office Word
-
-  - **Data\_UrlHash-** Hàm băm của đường dẫn tài liệu
-
-  - **Data\_ViewKind-** Kiểu dạng xem Word
 
 #### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
 
@@ -3569,6 +4080,31 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_WarningShownToConvertToTable:bool** - True cho biết cảnh báo được hiển thị cho người dùng để chuyển đổi dữ liệu Excel sang định dạng bảng
 
+#### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
+
+Sự kiện này cho biết Office Word chỉnh sửa tài liệu thay đổi trạng thái bên trong của tài liệu thành "rác". Nó cho phép Microsoft để đánh giá trạng thái tính năng của tài liệu chỉnh sửa. Sự kiện này là thông báo hoạt động của chỉnh sửa người dùng. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data\_CollectionTime-** Dấu thời gian của sự kiện
+
+  - **Data\_DocumentLocation-** Loại vị trí tài liệu
+
+  - **Data\_DocumentLocationDetails-** Loại con của vị trí tài liệu
+
+  - **Data\_FAlwaysSaveEnabled-** Cho biết liệu tính năng luôn lưu có được bật hay không
+
+  - **Data\_FirstEditTime-** Dấu thời gian của lần chỉnh sửa đầu tiên
+
+  - **Data\_NumberCoAuthors-** Số lượng đồng tác giả chỉnh sửa tài liệu trong phiên
+
+  - **Data\_NumberOfTimesDocumentDirtied-** Số lần chỉnh sửa được thực hiện cho tài liệu
+
+  - **Data\_Pdod -** Mã định danh tài liệu trong quy trình Office Word
+
+  - **Data\_UrlHash-** Hàm băm của đường dẫn tài liệu
+
+  - **Data\_ViewKind-** Kiểu dạng xem Word
 ### <a name="application-status-and-boot-subtype"></a>*Trạng thái ứng dụng và kiểu con khởi động*
 
 Xác định xem các sự kiện tính năng cụ thể đã xảy ra hay chưa, chẳng hạn như bắt đầu hoặc dừng và tính năng có đang hoạt động hay không.
@@ -3853,6 +4389,35 @@ Các trường sau đây sẽ được thu thập:
 
   - **Office.Visio.VisioFileSaveAsync -** Sự kiện này thu thập số liệu thống kê Lưu tệp đồng bộ cho Visio Dev16. Sự kiện này được sử dụng để theo dõi tỷ lệ mở thành công/thất bại của lưu tệp đồng bộ và ánh xạ nó với một vài thuộc tính như kích thước tệp và vị trí mà nó đang được lưu, ví dụ: đám mây/cục bộ. Thuộc tính tệp cho phép chúng tôi gỡ lỗi và truy ra được nguyên nhân nhanh hơn. Sự kiện này giúp chúng tôi theo dõi lưu lý do lỗi của một tệp.
 
+#### <a name="officeextensibilitysandboxodpactivationhanging"></a>Office.Extensibility.Sandbox.ODPActivationHanging
+
+Thu thập khi phần bổ trợ Office mất nhiều thời gian để khởi chạy (> 5 giây). Được sử dụng để phát hiện và khắc phục các sự cố với việc khởi chạy phần bổ trợ dành cho Office.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **AppId** - ID của ứng dụng
+
+- **AppInfo** - Dữ liệu liên quan đến loại phần bổ trợ (ngăn tác vụ hoặc UILess hoặc trong nội dung, v.v.) và loại nhà cung cấp (omen, SharePoint, hệ thống tệp, v.v.)
+
+- **AppInstanceId** - ID của ứng dụng 
+
+- **AssetId** - ID tài sản của ứng dụng
+
+- **NumberOfAddinsActivated** - Bộ đếm phần bổ trợ được kích hoạt
+
+- **RemoterType** - Xác định loại điều khiển từ xa (Đáng tin cậy, không đáng tin cậy, Win32webView, UDF đáng tin cậy, v.v.) được sử dụng để kích hoạt phần bổ trợ
+
+- **StoreType** - Nguồn gốc của ứng dụng
+
+- **TimeForAuth** - Thời gian dành cho việc xác thực 
+
+- **TimeForSandbox** - Thời gian dành cho hộp cát
+
+- **TimeForServerCall** - Thời gian dành cho cuộc gọi máy chủ 
+
+- **TotalTime** - Tổng thời gian sử dụng
+
+
 #### <a name="officeoutlookdesktopexchangepuidandtenantcorrelation"></a>Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
 Thu thập PUID người dùng và mã định danh đối thuê một lần mỗi phiên. Sự tương quan giữa PUID và đối tượng thuê là yếu tố cần thiết để hiểu và chẩn đoán các sự cố về Outlook trên cơ sở mỗi đối tượng thuê.
@@ -3867,103 +4432,14 @@ Các trường sau đây sẽ được thu thập:
 
   - **PUID** - PUID của Exchange PUID để nhận dạng riêng người dùng
 
-#### <a name="officepowerpointpptdesktopbootime"></a>Office.PowerPoint.PPT.Desktop.Bootime
 
-Thu thập cách PowerPoint được khởi động. Nó bao gồm việc khởi động PowerPoint trong dạng xem được bảo vệ, trong chế độ đọc được hỗ trợ, từ Macro, in, tài liệu mới và trống, khôi phục tài liệu, từ tự động hóa và nếu nó là click- to-run. Nó cũng thu thập thời gian để PowerPoint khởi động. Dữ liệu này rất quan trọng để đảm bảo PowerPoint hoạt động tốt khi được khởi động từ các chế độ khác nhau. Microsoft sử dụng dữ liệu này để phát hiện thời gian khởi động dài khi mở PowerPoint từ các chế độ khác nhau.
+#### <a name="officeoutlookmacmacolkactivationstate"></a>Office.Outlook.Mac.MacOLKActivationState
 
-Các trường sau đây sẽ được thu thập:
-
-  - **AssistedReading -** ở chế độ đọc hỗ trợ
-
-  - **Automation -** từ tự động hóa
-
-  - **Benchmark -** chạy tiêu chuẩn hiệu suất
-
-  - **Blank -** Tài liệu trống.
-
-  - **BootTime -** Thời gian khởi động phiên
-
-  - **Embedding -** Tài liệu nhúng
-
-  - **IsC2R -** ở chế độ click-to-run
-
-  - **IsNew -** Tài liệu mới
-
-  - **IsOpen -** đang mở
-
-  - **Macro1 -** chạy Macro
-
-  - **Macro2 -** chạy Macro
-
-  - **NonStandardSpaceInCmdLine** – Có khoảng trống không tiêu chuẩn trong dòng lệnh
-
-  - **Print -** in tài liệu
-
-  - **PrintDialog -** in tài liệu với hộp thoại
-
-  - **PrintPrinter -** in tài liệu bằng máy in
-
-  - **ProtectedView -** trong dạng xem được bảo vệ
-
-  - **RegServer -** Đăng ký PowerPoint dưới dạng một máy chủ COM
-
-  - **Restore -** Khôi phục tài liệu
-
-  - **Show -** Hiển thị tài liệu
-
-  - **Time -** Thời gian của phiên
-
-  - **ProtectedView -** trong dạng xem được bảo vệ
-
-#### <a name="officepowerpointppthasuserediteddocument"></a>Office.PowerPoint.PPT.HasUserEditedDocument
-
-Thu thập khi người dùng bắt đầu chỉnh sửa tài liệu. Microsoft sử dụng dữ liệu này để tính toán người dùng hoạt động đã chỉnh sửa tài liệu PowerPoint
+Thu thập cách Outlook được kích hoạt, chẳng hạn như với giấy phép đăng ký hoặc số lượng lớn. Dữ liệu được theo dõi để đảm bảo chúng tôi không thấy bất kỳ đột biến nào trong các lần thất bại. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện. 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **CorrelationId** – Mã định danh tương quan tài liệu
-
-#### <a name="officeprojectbootandopenproject"></a>Office.Project.BootAndOpenProject
-
-Project khởi động bằng cách mở một tệp. Sự kiện này cho biết rằng người dùng đã mở Office Project với một tệp được liên kết. Nó chứa dữ liệu thành công quan trọng của việc đảm bảo Project có thể bắt đầu và tải một tệp.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Data\_AlertTime -** Lượng thời gian hộp thoại khởi động được kích hoạt.
-
-  - **Data\_BootTime -** Lượng thời gian cần thiết để khởi động Project
-
-  - **Data\_CacheFileSize -** Nếu tệp được lưu trữ, kích cỡ tệp
-
-  - **Data\_EntDocType -** Loại tệp đã được mở
-
-  - **Data\_IsInCache -** Liệu tệp đã mở có được vào bộ đệm ẩn hay không
-
-  - **Data\_LoadSRAs -** Người dùng có muốn tải SRA hay không
-
-  - **Data\_Outcome -** Tổng thời gian khởi động và mở tệp.
-
-  - **Data\_OpenFromDocLib -** Nếu tệp Project được mở là từ thư viện tài liệu
-
-  - **Data\_ProjectServerVersion -** Phiên bản và bản dựng mà Project hiện đang bật
-
-#### <a name="officeprojectbootproject"></a>Office.Project.BootProject
-
-Project khởi động mà không cần mở một tệp. Sự kiện này cho biết rằng người dùng đã mở Office Project mà không cần một tệp được liên kết. Nó chứa dữ liệu thành công quan trọng của việc đảm bảo Project có thể bắt đầu.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Data\_BootTime -** Lượng thời gian cần thiết để khởi động Project
-
-  - **Data\_FileLoaded -** False nếu mở từ ngoài khoảng trống hoặc Project trống mới
-
-  - **Data\_IsEntOfflineWithProfile -** Nếu người dùng ở trong SKU chuyên nghiệp và không được kết nối với máy chủ
-
-  - **Data\_IsEntOnline -** Nếu phiên Project được kết nối với máy chủ Project có tính năng doanh nghiệp
-
-  - **Data\_IsLocalProfile -** Nếu phiên Project được kết nối với máy chủ Project có tính năng doanh nghiệp
-
-  - **Data\_ProjectServerVersion -** Phiên bản và bản dựng mà Project hiện đang bật
+- **SetupUIActivationMethod** - Phương thức kích hoạt Outlook, chẳng hạn như đăng ký hoặc giấy phép số lượng
 
 #### <a name="officepowerpointdocoperationopen"></a>Office.PowerPoint.DocOperation.Open 
 
@@ -4297,6 +4773,105 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ZRTOpenDisabledReasons -** Lý do chúng tôi không thể mở tài liệu từ bộ đệm ẩn (Chuyến đi khứ hồi)
 
+#### <a name="officepowerpointpptdesktopbootime"></a>Office.PowerPoint.PPT.Desktop.Bootime
+
+Thu thập cách PowerPoint được khởi động. Nó bao gồm việc khởi động PowerPoint trong dạng xem được bảo vệ, trong chế độ đọc được hỗ trợ, từ Macro, in, tài liệu mới và trống, khôi phục tài liệu, từ tự động hóa và nếu nó là click- to-run. Nó cũng thu thập thời gian để PowerPoint khởi động. Dữ liệu này rất quan trọng để đảm bảo PowerPoint hoạt động tốt khi được khởi động từ các chế độ khác nhau. Microsoft sử dụng dữ liệu này để phát hiện thời gian khởi động dài khi mở PowerPoint từ các chế độ khác nhau.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **AssistedReading -** ở chế độ đọc hỗ trợ
+
+  - **Automation -** từ tự động hóa
+
+  - **Benchmark -** chạy tiêu chuẩn hiệu suất
+
+  - **Blank -** Tài liệu trống.
+
+  - **BootTime -** Thời gian khởi động phiên
+
+  - **Embedding -** Tài liệu nhúng
+
+  - **IsC2R -** ở chế độ click-to-run
+
+  - **IsNew -** Tài liệu mới
+
+  - **IsOpen -** đang mở
+
+  - **Macro1 -** chạy Macro
+
+  - **Macro2 -** chạy Macro
+
+  - **NonStandardSpaceInCmdLine** – Có khoảng trống không tiêu chuẩn trong dòng lệnh
+
+  - **Print -** in tài liệu
+
+  - **PrintDialog -** in tài liệu với hộp thoại
+
+  - **PrintPrinter -** in tài liệu bằng máy in
+
+  - **ProtectedView -** trong dạng xem được bảo vệ
+
+  - **RegServer -** Đăng ký PowerPoint dưới dạng một máy chủ COM
+
+  - **Restore -** Khôi phục tài liệu
+
+  - **Show -** Hiển thị tài liệu
+
+  - **Time -** Thời gian của phiên
+
+  - **ProtectedView -** trong dạng xem được bảo vệ
+
+#### <a name="officepowerpointppthasuserediteddocument"></a>Office.PowerPoint.PPT.HasUserEditedDocument
+
+Thu thập khi người dùng bắt đầu chỉnh sửa tài liệu. Microsoft sử dụng dữ liệu này để tính toán người dùng hoạt động đã chỉnh sửa tài liệu PowerPoint
+
+Các trường sau đây sẽ được thu thập:
+
+  - **CorrelationId** – Mã định danh tương quan tài liệu
+
+#### <a name="officeprojectbootandopenproject"></a>Office.Project.BootAndOpenProject
+
+Project khởi động bằng cách mở một tệp. Sự kiện này cho biết rằng người dùng đã mở Office Project với một tệp được liên kết. Nó chứa dữ liệu thành công quan trọng của việc đảm bảo Project có thể bắt đầu và tải một tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data\_AlertTime -** Lượng thời gian hộp thoại khởi động được kích hoạt.
+
+  - **Data\_BootTime -** Lượng thời gian cần thiết để khởi động Project
+
+  - **Data\_CacheFileSize -** Nếu tệp được lưu trữ, kích cỡ tệp
+
+  - **Data\_EntDocType -** Loại tệp đã được mở
+
+  - **Data\_IsInCache -** Liệu tệp đã mở có được vào bộ đệm ẩn hay không
+
+  - **Data\_LoadSRAs -** Người dùng có muốn tải SRA hay không
+
+  - **Data\_Outcome -** Tổng thời gian khởi động và mở tệp.
+
+  - **Data\_OpenFromDocLib -** Nếu tệp Project được mở là từ thư viện tài liệu
+
+  - **Data\_ProjectServerVersion -** Phiên bản và bản dựng mà Project hiện đang bật
+
+#### <a name="officeprojectbootproject"></a>Office.Project.BootProject
+
+Project khởi động mà không cần mở một tệp. Sự kiện này cho biết rằng người dùng đã mở Office Project mà không cần một tệp được liên kết. Nó chứa dữ liệu thành công quan trọng của việc đảm bảo Project có thể bắt đầu.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data\_BootTime -** Lượng thời gian cần thiết để khởi động Project
+
+  - **Data\_FileLoaded -** False nếu mở từ ngoài khoảng trống hoặc Project trống mới
+
+  - **Data\_IsEntOfflineWithProfile -** Nếu người dùng ở trong SKU chuyên nghiệp và không được kết nối với máy chủ
+
+  - **Data\_IsEntOnline -** Nếu phiên Project được kết nối với máy chủ Project có tính năng doanh nghiệp
+
+  - **Data\_IsLocalProfile -** Nếu phiên Project được kết nối với máy chủ Project có tính năng doanh nghiệp
+
+  - **Data\_ProjectServerVersion -** Phiên bản và bản dựng mà Project hiện đang bật
+
+
 #### <a name="officeprojectopenproject"></a>Office.Project.OpenProject
 
 Project sẽ mở ra một tệp. Sự kiện này cho biết người dùng trực tiếp mở tệp Project bởi người dùng. Nó chứa dữ liệu thành công quan trọng của việc mở tệp trong Project.
@@ -4371,127 +4946,129 @@ Các trường sau đây sẽ được thu thập:
 
 - **parentSessionId** - GUID được tạo ngẫu nhiên để xác định phiên ứng dụng
 
+
 #### <a name="officewordfileopenopencmdfilemrupriv"></a>Office.Word.FileOpen.OpenCmdFileMruPriv
 
 Sự kiện này cho biết Office Word mở một tài liệu từ danh sách Được sử dụng gần đây nhất (MRU). Nó cũng chứa dữ liệu hiệu suất mở tệp quan trọng và là sự kiện bắt đầu ứng dụng từ góc độ người dùng. Sự kiện theo dõi xem tệp mở từ MRU có hoạt động như mong đợi hay không. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng và số liệu về độ tin cậy của đám mây.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemRes -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
+- **Data_AddDocTelemRes** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
 
-  - **Data\_BytesAsynchronous -** Số byte (được nén) mà chúng tôi tin rằng chúng tôi có thể mở tệp mà không cần lấy chúng trước khi người dùng muốn bắt đầu chỉnh sửa hoặc có thể lưu
+- **Data_BytesAsynchronous** - Số byte (được nén) mà chúng tôi tin rằng chúng tôi có thể mở tệp mà không cần lấy chúng trước khi người dùng muốn bắt đầu chỉnh sửa hoặc có thể lưu.
 
-  - **Data\_BytesAsynchronousWithWork -** Số byte (được nén) mà chúng tôi có thể mở tệp mà không cần nhưng sẽ yêu cầu đầu tư mã đáng kể để thực hiện
+- **Data_BytesAsynchronousWithWork** - Số byte (được nén) mà chúng tôi có thể mở tệp mà không cần nhưng sẽ yêu cầu đầu tư mã đáng kể để thực hiện
 
-  - **Data\_BytesSynchronous -** Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
+- **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
 
-  - **Data\_BytesUnknown -** Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy
+- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy. 
 
-  - **Data\_DetachedDuration -** Thời gian hoạt động được tách ra từ chuỗi
+- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
-  - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
-  - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
 
-  - **Data\_Doc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_Doc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_Doc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
 
-  - **Data\_Doc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
 
-  - **Data\_Doc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_Doc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở
 
-  - **Data\_Doc\_InitializationScenario -** Ghi lại cách tài liệu được mở
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_Doc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
 
-  - **Data\_Doc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_Doc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_Doc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_Doc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_Doc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
+- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
 
-  - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố 
 
-  - **Data\_Doc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_Doc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
 
-  - **Data\_Doc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_Doc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_Doc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_Doc\_SizeInBytes -** Chỉ báo kích thước tài liệu
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_Doc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL của tài liệu 
 
-  - **Data\_Doc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_Doc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_Doc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
 
-  - **Data\_Doc\_WopiServiceId -** Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
+- **Data_EditorDisablingRename** - Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
 
-  - **Data\_EditorDisablingRename -** Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
+- **Data_EditorsCount** - Số lượng trình chỉnh sửa trong tài liệu
 
-  - **Data\_EditorsCount -** Số lượng trình chỉnh sửa trong tài liệu
+- **Data_ForceReadWriteReason** - Giá trị số nguyên biểu thị lý do tại sao tệp bị buộc vào chế độ đọc/ghi
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Cho biết rằng mở thành công sau khi sửa lỗi trong khi mở tài liệu
+- **Data_FSucceededAfterRecoverableFailure** - Cho biết rằng mở thành công sau khi sửa lỗi trong khi mở tài liệu
 
-  - **Data\_ForceReadWriteReason -** Giá trị số nguyên biểu thị lý do tại sao tệp bị buộc vào chế độ đọc/ghi
+- **Data_LastLoggedTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
 
-  - **Data\_LastLoggedTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
+- **Data_LinkStyles** - Cho biết liệu chúng tôi có đang liên kết đến các kiểu mẫu hay không
 
-  - **Data\_LinkStyles -** Cho biết liệu chúng tôi có đang liên kết đến các kiểu mẫu hay không
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
 
-  - **Data\_MainPdod -** Mã định danh tài liệu trong quy trình Office Word
+- **Data_Measurements** - Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau. Được sử dụng để đo lường hiệu suất.
 
-  - **Data\_Measurements -** Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau. Được sử dụng để đo lường hiệu suất.
+- **Data_MoveDisabledReason** - Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
 
-  - **Data\_MoveDisabledReason -** Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-  - **Data\_MoveFlightEnabled -** Liệu thao tác chống lại tính năng di chuyển có được bật hay không
+- **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
 
-  - **Dữ liệu\_PartsUnknown -** Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
+- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở
 
-  - **Data\_RecoverableFailureInitiationLocationTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
 
-  - **Data\_RenameDisabledReason -** Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
-  - **Data\_RenameFlightEnabled -** Liệu thao tác chống lại tính năng đổi tên có được bật hay không
+- **Data_SecondaryTag** - Thẻ duy nhất cho site gọi mã được sử dụng để thêm dữ liệu lỗi bổ sung để mở 
 
-  - **Data\_SecondaryTag -** Thẻ duy nhất cho site gọi mã được sử dụng để thêm dữ liệu lỗi bổ sung để mở
+- **Data_TemplateFormat** - Định dạng tệp của mẫu mà tài liệu dựa trên.
 
-  - **Data\_TemplateFormat -** Định dạng tệp của mẫu mà tài liệu dựa trên.
+- **Data_UsesNormal** - Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không
 
-  - **Data\_UsesNormal -** Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không
+- **PathData_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+
 
 #### <a name="officewordfileopenopenffileopenxstzcore"></a>Office.Word.FileOpen.OpenFFileOpenXstzCore
 
@@ -4499,121 +5076,121 @@ Sự kiện này cho biết Office Word sẽ mở tài liệu được người 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemRes -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu
+- **Data_AddDocTelemRes** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu
+    
+- **Data_BytesAsynchronous** - Số byte (được nén) mà chúng tôi tin rằng chúng tôi có thể mở tệp mà không cần lấy chúng trước khi người dùng muốn bắt đầu chỉnh sửa hoặc có thể lưu.
+    
+- **Data_BytesAsynchronousWithWork** - Số byte (được nén) mà chúng tôi có thể mở tệp mà không cần nhưng sẽ yêu cầu đầu tư mã đáng kể để thực hiện
 
-  - **Data\_BytesAsynchronous -** Số byte (được nén) mà chúng tôi tin rằng chúng tôi có thể mở tệp mà không cần lấy chúng trước khi người dùng muốn bắt đầu chỉnh sửa hoặc có thể lưu
+- **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
+    
+- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy.
 
-  - **Data\_BytesAsynchronousWithWork -** Số byte (được nén) mà chúng tôi có thể mở tệp mà không cần nhưng sẽ yêu cầu đầu tư mã đáng kể để thực hiện
+- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
-  - **Data\_BytesSynchronous -** Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
-  - **Data\_BytesUnknown -** Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_DetachedDuration -** Thời gian hoạt động được tách ra từ chuỗi
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
 
-  - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
 
-  - **Data\_Doc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
 
-  - **Data\_Doc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_Doc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_Doc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng
+- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở
 
-  - **Data\_Doc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
 
-  - **Data\_Doc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_Doc\_InitializationScenario -** Ghi lại cách tài liệu được mở
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+    
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data\_Doc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data\_Doc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data\_Doc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+    
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
 
-  - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_Doc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+    
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ 
 
-  - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_Doc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_Doc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_Doc\_SessionId -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_Doc\_SharePointServiceContext-**
+- **Data_Doc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
 
-  - **Data\_Doc\_SizeInBytes -** Chỉ số kích thước tài liệu
+- **Data_EditorDisablingRename** - Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
 
-  - **Data\_Doc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_EditorsCount** - Số lượng trình chỉnh sửa trong tài liệu
 
-  - **Data\_Doc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_FSucceededAfterRecoverableFailure** - Cho biết rằng mở thành công sau khi sửa lỗi trong khi mở tài liệu
 
-  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
+- **Data_ForceReadWriteReason** - Giá trị số nguyên biểu thị lý do tại sao tệp bị buộc vào chế độ đọc/ghi
+    
+- **Data_LastLoggedTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
 
-  - **Data\_Doc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_LinkStyles** - Cho biết liệu chúng tôi có đang liên kết đến các kiểu mẫu hay không
 
-  - **Data\_Doc\_WopiServiceId -** Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
 
-  - **Data\_EditorDisablingRename -** Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
+- **Data_Measurements** - Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau. Được sử dụng để đo lường hiệu suất.
+    
+- **Data_MoveDisabledReason** - Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
 
-  - **Data\_EditorsCount -** Số lượng trình chỉnh sửa trong tài liệu
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Cho biết rằng mở thành công sau khi sửa lỗi trong khi mở tài liệu
+- **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
 
-  - **Data\_ForceReadWriteReason -** Giá trị số nguyên biểu thị lý do tại sao tệp bị buộc vào chế độ đọc/ghi
+- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở.
 
-  - **Data\_LastLoggedTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
 
-  - **Data\_LinkStyles -** Cho biết liệu chúng tôi có đang liên kết đến các kiểu mẫu hay không
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
-  - **Data\_MainPdod -** Mã định danh tài liệu trong quy trình Office Word
+- **Data_SecondaryTag** - Thẻ duy nhất cho site gọi mã được sử dụng để thêm dữ liệu lỗi bổ sung để mở.
 
-  - **Data\_Measurements -** Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau. Được sử dụng để đo lường hiệu suất.
+- **Data_TemplateFormat** - Định dạng tệp của mẫu mà tài liệu dựa trên.
 
-  - **Data\_MoveDisabledReason -** Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
-
-  - **Data\_MoveFlightEnabled -** Liệu thao tác chống lại tính năng di chuyển có được bật hay không
-
-  - **Dữ liệu\_PartsUnknown -** Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
-
-  - **Data\_RecoverableFailureInitiationLocationTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở.
-
-  - **Data\_RenameDisabledReason -** Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
-
-  - **Data\_RenameFlightEnabled -** Liệu thao tác chống lại tính năng đổi tên có được bật hay không
-
-  - **Data\_SecondaryTag -** Thẻ duy nhất cho site gọi mã được sử dụng để thêm dữ liệu lỗi bổ sung để mở.
-
-  - **Data\_TemplateFormat -** Định dạng tệp của mẫu mà tài liệu dựa trên.
-
-  - **Data\_UsesNormal -** Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không
+- **Data_UsesNormal** - Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không.
 
 
 #### <a name="officewordfileopenopenifrinitargs"></a>Office.Word.FileOpen.OpenIfrInitArgs
@@ -4743,119 +5320,119 @@ Sự kiện này cho biết Office Word mở một tài liệu thông qua hộp 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AddDocTelemRes -** Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
+- **Data_AddDocTelemRes** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu.
 
-  - **Data\_BytesAsynchronous -** Số byte (được nén) mà chúng tôi tin rằng chúng tôi có thể mở tệp mà không cần lấy chúng trước khi người dùng muốn bắt đầu chỉnh sửa hoặc có thể lưu
+- **Data_BytesAsynchronous** - Số byte (được nén) mà chúng tôi tin rằng chúng tôi có thể mở tệp mà không cần lấy chúng trước khi người dùng muốn bắt đầu chỉnh sửa hoặc có thể lưu.
 
-  - **Data\_BytesAsynchronousWithWork -** Số byte (được nén) mà chúng tôi có thể mở tệp mà không cần nhưng sẽ yêu cầu đầu tư mã đáng kể để thực hiện
+- **Data_BytesAsynchronousWithWork** - Số byte (được nén) mà chúng tôi có thể mở tệp mà không cần nhưng sẽ yêu cầu đầu tư mã đáng kể để thực hiện
+    
+- **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
 
-  - **Data\_BytesSynchronous -** Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
+- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy.
 
-  - **Data\_BytesUnknown -** Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy
+- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
-  - **Data\_DetachedDuration -** Thời gian hoạt động được tách ra từ chuỗi
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
-  - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
-  - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
 
-  - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
 
-  - **Data\_Doc\_Ext -** Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
 
-  - **Data\_Doc\_FileFormat -** Phiên bản giao thức định dạng tệp
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
 
-  - **Data\_Doc\_Fqdn -** Tên miền trực tuyến OneDrive hoặc SharePoint
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
 
-  - **Data\_Doc\_FqdnHash -** Hàm băm một chiều của tên miền nhận dạng khách hàng
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
 
-  - **Data\_Doc\_IdentityTelemetryId -** Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
+- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở
 
-  - **Data\_Doc\_InitializationScenario -** Ghi lại cách tài liệu được mở
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
 
-  - **Data\_Doc\_IOFlags -** Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu mở
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+    
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
 
-  - **Data\_Doc\_IrmRights -** Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
 
-  - **Data\_Doc\_IsIncrementalOpen -** Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data\_Doc\_IsOcsSupported -** Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
+- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
 
-  - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
 
-  - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
 
-  - **Data\_Doc\_LocationDetails -** Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
+- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
 
-  - **Data\_Doc\_NumberCoAuthors -** Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-  - **Data\_Doc\_PasswordFlags -** Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố 
 
-  - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
-  - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
 
-  - **Data\_Doc\_ServerProtocol -** Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
 
-  - **Data\_Doc\_ServerType -** Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
+- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
 
-  - **Data\_Doc\_ServerVersion -** Phiên bản máy chủ cung cấp dịch vụ
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
 
-  - **Data\_Doc\_SessionId -** Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
 
-  - **Data\_Doc\_SharePointServiceContext -** Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_SizeInBytes -** Chỉ báo kích thước tài liệu
+- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
 
-  - **Data\_Doc\_SpecialChars -** Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
+- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
 
-  - **Data\_Doc\_StreamAvailability -** Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
 
-  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
+- **Data_EditorDisablingRename** - Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
 
-  - **Data\_Doc\_UrlHash -** Hàm băm một chiều để tạo mã định danh tài liệu gốc
+- **Data_EditorsCount** - Số lượng trình chỉnh sửa trong tài liệu
 
-  - **Data\_EditorDisablingRename -** Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa
+- **Data_ForceReadWriteReason** - Giá trị số nguyên biểu thị lý do tại sao tệp bị buộc vào chế độ đọc/ghi
+    
+- **Data_FSucceededAfterRecoverableFailure** - Cho biết rằng mở thành công sau khi sửa lỗi trong khi mở tài liệu
 
-  - **Data\_EditorsCount -** Số lượng trình chỉnh sửa trong tài liệu
+- **Data_LastLoggedTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
 
-  - **Data\_ForceReadWriteReason -** Giá trị số nguyên biểu thị lý do tại sao tệp bị buộc vào chế độ đọc/ghi
+- **Data_LinkStyles** - Cho biết liệu chúng tôi có đang liên kết đến các kiểu mẫu hay không
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Cho biết rằng mở thành công sau khi sửa lỗi trong khi mở tài liệu
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
 
-  - **Data\_LastLoggedTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu)
+- **Data_Measurements** - Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau. Được sử dụng để đo lường hiệu suất.
 
-  - **Data\_LinkStyles -** Cho biết liệu chúng tôi có đang liên kết đến các kiểu mẫu hay không
+- **Data_MoveDisabledReason** - Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
 
-  - **Data\_MainPdod -** Mã định danh tài liệu trong quy trình Office Word
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-  - **Data\_Measurements -** Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau. Được sử dụng để đo lường hiệu suất.
+- **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
 
-  - **Data\_MoveDisabledReason -** Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu
+- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở
 
-  - **Data\_MoveFlightEnabled -** Liệu thao tác chống lại tính năng di chuyển có được bật hay không
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
 
-  - **Dữ liệu\_PartsUnknown -** Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
-  - **Data\_RecoverableFailureInitiationLocationTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở
+- **Data_SecondaryTag** - Thẻ duy nhất cho site gọi mã được sử dụng để thêm dữ liệu lỗi bổ sung để mở
 
-  - **Data\_RenameDisabledReason -** Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
+- **Data_TemplateFormat** - Định dạng tệp của mẫu mà tài liệu dựa trên
 
-  - **Data\_RenameFlightEnabled -** Liệu thao tác chống lại tính năng đổi tên có được bật hay không
-
-  - **Data\_SecondaryTag -** Thẻ duy nhất cho site gọi mã được sử dụng để thêm dữ liệu lỗi bổ sung để mở
-
-  - **Data\_TemplateFormat -** Định dạng tệp của mẫu mà tài liệu dựa trên
-
-  - **Data\_UsesNormal -** Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không
+- **Data_UsesNormal** - Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không
 
 
 ### <a name="office-accessibility-configuration-subtype"></a>*Loại con cấu hình khả năng truy nhập Office*
@@ -4983,6 +5560,46 @@ Các trường sau đây sẽ được thu thập:
 
 - **Tên sự kiện** - Tên sự kiện là Danh mục sự kiện và Nhãn sự kiện.
 
+#### <a name="officeapplesystemhealthappexitmacandios"></a>Office.Apple.SystemHealthAppExitMacAndiOS
+
+Trên sự kiện khởi động ứng dụng thoát ra một cách đáng tin cậy và không đáng tin cậy để tiếp tục điều tra.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AffectedProcessResidentMemoryOnCrash** – Bộ nhớ cố định của ứng dụng gặp sự cố
+
+- **AffectedProcessSessionID** – ID phiên của quy trình trong lần thoát trước
+
+- **AffectedProcessUnsymbolicatedChecksum** – Đi với hàm băm Ngăn xếp để tượng trưng
+
+- **AffectedProcessVirtualMemoryOnCrash** – Bộ nhớ ảo của ứng dụng gặp sự cố
+
+- **AffectedSessionBuildNumber** – Phiên bản ứng dụng
+
+- **AffectedSessionDuration** – Thời lượng của phiên tính bằng giây trước khi gặp sự cố
+
+- **AffectedSessionIDSMatch** – Boolean để xác minh xem ID phiên báo cáo có giống như được chọn bởi MERP không
+
+- **AffectedSessionLongBuildNumber** – Số lượng bản dựng dài
+
+- **AffectedSessionMERPSessionID** – ID phiên của MERP
+
+- **AffectedSessionOSLocale** – Ngôn ngữ của hệ điều hành
+
+- **AffectedSessionOSVersion** – Phiên bản của hệ điều hành
+
+- **AffectedSessionStackHash** – Hàm băm theo dõi xếp chồng của ứng dụng gặp sự cố
+
+- **AffectedSessionStartTime** – Thời gian bắt đầu phiên
+
+- **AffectedSessionUAEType** – Enum cung cấp cho chúng tôi thông tin về loại sự cố.
+
+- **AffectedSessionVersion** – Phiên bản ứng dụng
+
+- **DeviceModel** – Model phần cứng
+
+- **ExitWasGraceful** – Lần thoát ứng dụng trước có đáng tin cậy hay không?
+
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
 Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố
@@ -4992,29 +5609,82 @@ Thông tin chuyên sâu toàn cầu: Công cụ này được sử dụng để 
 
 Các trường sau đây sẽ được thu thập:
 
-**ScopeId** – Phạm vi chuỗi hội thoại hiện tại
+- **ScopeId** – Phạm vi chuỗi hội thoại hiện tại
 
-**Method** – Phương pháp Office nơi mà ngoại lệ đã xảy ra
+- **Method** – Phương pháp Office nơi mà ngoại lệ đã xảy ra
 
-**Interface** – Giao diện Office nơi xảy ra ngoại lệ
+- **Interface** – Giao diện Office nơi xảy ra ngoại lệ
 
-**AddinId** – ID lớp phần bổ trợ
+- **AddinId** – ID lớp phần bổ trợ
 
-**AddinProgId** – ID tiến trình phần bổ trợ
+- **AddinProgId** – ID tiến trình phần bổ trợ
 
-**AddinFriendlyName** – Tên thân thiện của phần bổ trợ
+- **AddinFriendlyName** – Tên thân thiện của phần bổ trợ
 
-**AddinTimeDateStamp** – Dấu thời gian phần bổ trợ từ siêu dữ liệu DLL
+- **AddinTimeDateStamp** – Dấu thời gian phần bổ trợ từ siêu dữ liệu DLL
 
-**AddinVersion** – Phiên bản phần bổ trợ
+- **AddinVersion** – Phiên bản phần bổ trợ
 
-**AddinFileName** – Tên tệp bổ trợ không bao gồm đường dẫn tệp
+- **AddinFileName** – Tên tệp bổ trợ không bao gồm đường dẫn tệp
 
-**VSTOAddIn** – Phần bổ trợ có phải là VSTO hay không
+- **VSTOAddIn** – Phần bổ trợ có phải là VSTO hay không
 
-**AddinConnectFlag** – Hành vi tải hiện tại
+- **AddinConnectFlag** – Hành vi tải hiện tại
 
-**LoadAttempts** – Số lần thử tải phần bổ trợ
+- **LoadAttempts** – Số lần thử tải phần bổ trợ
+
+#### <a name="officeextensibilitycomaddinunhandledexceptionenterprise"></a>Office.Extensibility.COMAddinUnhandledExceptionEnterprise
+
+Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố.  Công cụ này được sử dụng làm tử số trong tính toán trạng thái dành riêng cho doanh nghiệp cho các phần bổ trợ được sử dụng để phỏng đoán trong quá trình thử nghiệm nếu phần bổ trợ "sẵn sàng nâng cấp" trong vòng sản xuất.
+
+Các trường sau được thu thập (Lưu ý rằng các trường này được viết dưới dạng giữ chỗ để ngăn chặn các tập lệnh hiện có: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName)
+
+
+- **AddinConnectFlag** – Hành vi tải hiện tại
+
+- **AddinFileName** - Trường trống - lỗi thời
+
+- **AddinFriendlyName** - Trường trống - lỗi thời
+
+- **AddinId** – ID lớp phần bổ trợ
+
+- **AddinProgId** - Trường trống - lỗi thời
+
+- **AddinTimeDateStamp** – Dấu thời gian phần bổ trợ từ siêu dữ liệu DLL
+
+- **AddinVersion** - Trường trống - lỗi thời
+
+- **Interface** – Giao diện Office nơi xảy ra ngoại lệ
+
+- **LoadAttempts** – Số lần thử tải phần bổ trợ
+
+- **Method** – Phương pháp Office nơi mà ngoại lệ đã xảy ra
+
+- **ScopeId** – Phạm vi chuỗi hội thoại hiện tại
+
+- **VSTOAddIn** – Phần bổ trợ có phải là VSTO hay không
+
+#### <a name="officeextensibilitysandboxodpactivationheartbeat"></a>Office.Extensibility.Sandbox.ODPActivationHeartbeat
+
+Các phần bổ trợ dành cho Office chạy trong một hộp cát. Sự kiện này thu thập thông tin nhịp tim về kích hoạt. Khi một phần bổ trợ gặp sự cố, sự kiện này thu thập lý do tại sao nó gặp sự cố trong trường hợp nó có liên quan đến hộp cát của chúng tôi. Được sử dụng để điều tra khi khách hàng tăng sự cố
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **AppId** - ID của ứng dụng
+
+- **AppInfo** - Dữ liệu liên quan đến loại phần bổ trợ (ngăn tác vụ hoặc UILess hoặc trong nội dung, v.v.) và loại nhà cung cấp (omen, SharePoint, hệ thống tệp, v.v.)
+
+- **AppInstanceId** - ID của ứng dụng 
+
+- **AssetId** - ID tài sản của ứng dụng
+
+- **ErrorCode** - Tổng thời gian sử dụng 
+
+- **NumberOfAddinsActivated** - Bộ đếm phần bổ trợ được kích hoạt
+
+- **RemoterType** - Xác định loại điều khiển từ xa (Đáng tin cậy, không đáng tin cậy, Win32webView, UDF đáng tin cậy, v.v.) được sử dụng để kích hoạt phần bổ trợ
+
+- **StoreType** - Nguồn gốc của ứng dụng
 
 #### <a name="officeextensibilityvbatelemetrybreak"></a>Office.Extensibility.VbaTelemetryBreak
 
@@ -5024,13 +5694,24 @@ Phân tích trên máy tính: Công cụ này được sử dụng làm tử s�
 
 Các trường sau đây sẽ được thu thập:
 
-**TagId** – Dd của thẻ phép đo từ xa
+- **TagId** – Dd của thẻ phép đo từ xa
 
-**BreakReason** – Nguyên nhân gây ra sự cố (thời gian chạy, dịch mã, lỗi khác)
+- **BreakReason** – Nguyên nhân gây ra sự cố (thời gian chạy, dịch mã, lỗi khác)
 
-**SolutionType** – Loại giải pháp (tài liệu, mẫu, phần bổ trợ ứng dụng, phần bổ trợ COM)
+- **SolutionType** – Loại giải pháp (tài liệu, mẫu, phần bổ trợ ứng dụng, phần bổ trợ COM)
 
-**Data.ErrorCode** – Mã lỗi được báo cáo bởi công cụ VBA
+- **Data.ErrorCode** – Mã lỗi được báo cáo bởi công cụ VBA
+
+
+#### <a name="officefindtimeappfailedtostart"></a>Office.FindTime.AppFailedToStart
+
+Thu thập khi ứng dụng không khởi động được do lỗi không mong muốn trong khi khởi động. Được sử dụng để theo dõi các trường hợp ngoại lệ và sự cố.  Giúp theo dõi và gỡ lỗi trạng thái ứng dụng.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **DateTime** - Dấu thời gian của khi sự kiện được ghi nhật ký.
+
+- **EventName** - Tên sự kiện được ghi nhật ký.
 
 #### <a name="officeoutlookdesktophangbucketmetrics"></a>Office.Outlook.Desktop.HangBucketMetrics
 
@@ -5220,6 +5901,52 @@ Các trường sau đây sẽ được thu thập:
 
   - **ProgID** Mã định danh tiến trình phần bổ trợ
 
+#### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
+
+Trên sự kiện khởi động ứng dụng thoát ra một cách không đáng tin cậy để tiếp tục điều tra.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AffectedProcessAppBuild** – Số bản dựng
+
+- **AffectedProcessAppBuildRevision** – Số sửa chữa bản dựng
+
+- **AffectedProcessAppMajorVer** – Số phiên bản chính của Ứng dụng
+
+- **AffectedProcessAppMinorVer** – Số phiên bản phụ của Ứng dụng
+
+- **AffectedProcessAppName** – Tên ứng dụng
+
+- **AffectedProcessResidentMemoryOnCrash** – Bộ nhớ cố định của ứng dụng gặp sự cố
+
+- **AffectedProcessUnsymbolicatedChecksum** – Đi với hàm băm Ngăn xếp để tượng trưng
+
+- **AffectedProcessVirtualMemoryOnCrash** – Bộ nhớ ảo của ứng dụng gặp sự cố
+
+- **AffectedSessionDuration** – Thời lượng của phiên tính bằng giây trước khi gặp sự cố
+
+- **AffectedSessionLongBuildNumber** – Số lượng bản dựng dài
+
+- **CrashedProcessSessionID** – ID phiên của quy trình xảy ra sự cố ứng dụng
+
+- **DetectionTime** – Ngày giờ xảy ra sự cố ứng dụng
+    
+- **DeviceModel** – Model phần cứng
+
+- **MERPSessionID** – ID phiên của MERP
+
+- **ReportingOsLocaleTag** – Ngôn ngữ hệ điều hành
+
+- **ReportingOSVerStr** – Phiên bản hệ điều hành
+
+- **SessionBuildNumber** – Phiên bản ứng dụng bị sự cố
+
+- **SessionIDSMatch** – Boolean để xác minh xem ID phiên báo cáo có giống như được chọn bởi Merp không
+
+- **SessionVersion** – Phiên bản ứng dụng bị sự cố – **StackHash** – Hàm băm của ứng dụng bị sự cố
+
+- **UAEType** – Enum cung cấp cho chúng tôi thông tin về loại sự cố.
+
 #### <a name="officethisaddinstartupfailed"></a>Office.ThisAddIn.StartupFailed
 
 Thu thập thông tin cho ngoại lệ xảy ra trong quá trình khởi động Ứng dụng Data Streamer. Dữ liệu này được dùng để theo dõi tình trạng của ứng dụng. Sự kiện này được tạo bởi Microsoft Data Streamer cho phần bổ trợ Excel.
@@ -5234,6 +5961,27 @@ Các trường sau đây sẽ được thu thập:
 ### <a name="application-feature-performance-subtype"></a>*Loại con hiệu suất tính năng ứng dụng *
 
 Thời gian phản hồi hoặc hiệu suất kém cho các tình huống như ứng dụng khởi động hoặc mở tệp.
+
+#### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
+
+Khi khách hàng sử dụng phần bổ trợ dành cho Office và gọi Rich API để cung cấp dịch vụ, sự kiện này sẽ được kích hoạt. Được sử dụng để đo lường độ tin cậy, hiệu suất và mức độ sử dụng dịch vụ đối với việc gọi phương thức Rich API.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **Api** - Tên đầy đủ của API
+
+- **DispFlag** - Cờ bit mô tả loại cuộc gọi phương thức (Ví dụ: 0x1 = METHOD, 0x2 = PROPERTYGET, 0x4 = PROPERTYPUT, 0x8 = PROPERTYPUTREF)
+
+- **DispId** - ID phân phối cho phương thức được gọi
+
+- **HResult** - HResult cho cuộc gọi phương pháp
+
+- **Latency** - Độ trễ cho cuộc gọi, tính bằng micro giây
+
+- **Reqid** - GUID cho yêu cầu hàng loạt mà phương thức này thuộc về
+
+- **TypeId** - GUID cho giao diện mà phương thức này được gọi
+
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -5273,6 +6021,29 @@ Các trường sau đây sẽ được thu thập:
 
   - **ShowScanPstDlg** - Kiểm tra sửa chữa lưu trữ hiển thị thông báo lỗi
 
+
+#### <a name="officeoutlookmacbootperf"></a>Office.Outlook.Mac.BootPerf
+
+Thu thập thời gian được thực hiện để khởi động Outlook. Thời gian khởi động của Outlook được theo dõi tích cực để phát hiện và chẩn đoán hồi quy. Nó cũng được sử dụng để chẩn đoán sự nâng cấp của khách hàng cũng như cải thiện hiệu suất khởi động theo thời gian.
+
+Các trường sau đây sẽ được thu thập:
+
+- **MacOLKBootPerfDuration** - Tổng thời gian khởi động
+
+- **MacOLKBootPerfID** - Mã định danh cho thời gian khởi động
+
+
+#### <a name="officeoutlookmacperformanceunresponsive"></a>Office.Outlook.Mac.PerformanceUnresponsive
+
+Được sử dụng để xác định các sự cố ảnh hưởng đến người dùng trong Outlook có thể biểu hiện là hiệu suất bị suy giảm. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Duration** - Thời gian trôi qua của hiệu suất bị suy giảm
+
+- **EventType** - Loại sự kiện bị hiệu suất suy giảm
+
+
 #### <a name="officeperformanceboot"></a>Office.Performance.Boot
 
 Được thu thập khi khởi động một ứng dụng Office. Bao gồm việc khởi động được bắt đầu bằng cách mở tệp hoặc khởi chạy thông qua menu Bắt đầu, cho dù đây có phải là lần khởi động đầu tiên của ứng dụng, số lượng bộ nhớ ứng dụng đang sử dụng là bao nhiêu và liệu có bất kỳ giao diện người dùng chặn nào được hiển thị cho người dùng hay không. Được sử dụng để đo tốc độ khởi động của các ứng dụng Office và dung lượng bộ nhớ mà chúng sử dụng khi khởi động, để đảm bảo có trải nghiệm người dùng có thể chấp nhận được.
@@ -5293,6 +6064,28 @@ Các trường sau đây sẽ được thu thập:
 
   - **WorkingSetPeakMB** - Dung lượng bộ nhớ lớn nhất tính bằng megabyte đã từng có từ trước đến nay trong bộ làm việc của quy trình.
 
+#### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
+
+Theo dõi tín hiệu quan trọng tương tác người dùng với hộp thoại Tham gia người dùng nội bộ Office. Nó được sử dụng để xác định mọi sự cố trong việc thực hiện các thay đổi do người dùng khởi tạo như chúng tôi tham gia/rời khỏi chương trình Người dùng nội bộ Office và thay đổi cấp độ Người dùng nội bộ Office.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AcceptedContactMeNew** - Cho biết nếu người dùng đã chấp nhận để được Microsoft liên hệ khi tham gia chương trình Người dùng nội bộ Office
+
+- **Data_InsiderLevel** - Cấp độ Người dùng nội bộ khi mở hộp thoại “Tham gia Người dùng nội bộ Office”
+
+- **Data_InsiderLevelNew** - Cấp độ người dùng nội bộ khi đóng hộp thoại “Tham gia Người dùng nội bộ Office”
+
+- **Data_IsInternalUser** - Cho biết ứng dụng có chạy dưới thông tin đăng nhập của tài khoản công ty của Microsoft hay không.
+
+- **Data_IsInternalUserInit** - Cho biết liệu mã có thể xác định liệu ứng dụng có chạy dưới thông tin đăng nhập của tài khoản công ty của Microsoft hay không.
+
+- **Data_OpenNewsletterWebpage** - Cho biết liệu liên kết Đăng ký Bản tin của Người dùng nội bộ có được kích hoạt trong điều kiện người dùng đã tham gia chương trình Người dùng nội bộ Office, tính năng Đăng ký Bản tin được bật và người dùng chưa hủy mở trang web Đăng ký Bản tin Người dùng nội bộ Office hay không.
+    
+- **Data_RegisterInsider** - Trạng thái đăng ký Người dùng nội bộ Office
+
+- **Data_RegisterInsiderHr** - Mã kết quả cho đăng ký Người dùng nội bộ Office
+
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
 Hoạt động theo dõi xem liệu trình Người dùng nội bộ Office có thể được hiển thị cho người dùng trên tab Tài khoản trong giao diện người dùng Backstage Office hay không.
@@ -5307,31 +6100,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data_Reason** - Chưa được sử dụng
 
-#### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office. UX. OfficeInsider. ShowOfficeInsiderDlg
-
-Hoạt động theo dõi việc sử dụng và hiệu suất của hộp thoại Người dùng nội bộ Office.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Data_AcceptedContactMeNew** - Khi chọn tham gia cấp độ Người dùng nội bộ và khi lựa chọn của người dùng được ghi lại thành công, cho biết liệu người dùng có chấp nhận để được Microsoft liên hệ hay không.
-
-  - **Data_DialogChoice** = Chưa được sử dụng
-  
-  - **Data_DialogId** = Chưa được sử dụng
-  
-  - **Data_Event** - Chưa được sử dụng
-  
-  - **Data_EventInfo** - Chưa được sử dụng
-  
-  - **Data_InsiderLevel** - Cấp độ Người dùng nội bộ khi hộp thoại được hiển thị lần đầu tiên cho người dùng.
-  
-  - **Data_InsiderLevelNew** - Cấp độ Người dùng nội bộ mới được người dùng chọn.
-  
-  - **Data_IsInternalUser** - Cho biết ứng dụng có chạy dưới thông tin đăng nhập của tài khoản @microsoft.com hay không.
-  
-  - **Data_IsInternalUserInit** - Cho biết liệu mã có thể xác định xem liệu ứng dụng có chạy dưới thông tin đăng nhập của tài khoản @microsoft.com hay không.
-  
-  - **Data_OpenNewsletterWebpage** - Khi tính năng Đăng ký Bản tin Người dùng nội bộ Office được bật và người dùng chuyển sang cấp độ Người dùng nội bộ từ Sản xuất, cho biết liệu dẫn hướng trình duyệt đến liên kết Đăng ký Bản tin Người dùng nội bộ Office đã được kích hoạt hay chưa.
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender
 
@@ -5431,6 +6199,19 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Timeout** - Thời gian kéo dài sự cố treo
 
+#### <a name="officeextensibilitysandboxodperrornotification"></a>Office.Extensibility.Sandbox.ODPErrorNotification
+
+Theo dõi các thông báo lỗi khác nhau nhận được từ hộp cát. Được sử dụng để phát hiện các tình huống lỗi trong hộp cát và ở đó bằng cách sửa nó, để cải thiện năng suất của người dùng
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **AppId** - ID của ứng dụng
+
+- **AppUrl** - URL ứng dụng được lọc 
+
+- **Result** - Mã lỗi kết quả
+
+
 #### <a name="officegraphicsarcexceptions"></a>Office.Graphics.ARCExceptions 
 
 Thông tin báo cáo ngoại lệ này rất quan trọng để đánh giá trạng thái tổng thể của ngăn xếp đồ họa, cũng như xác định các phần của mã nơi xảy ra lỗi ở tần suất cao, để ưu tiên việc điều tra. Thông tin báo cáo ngoại lệ này rất quan trọng để đánh giá trạng thái tổng thể của ngăn xếp đồ họa, cũng như xác định các phần của mã nơi xảy ra lỗi ở tần suất cao. Điều này giúp các kỹ sư có thể xác định những lỗi kết xuất đang ảnh hưởng đến hầu hết người dùng, cho phép chúng tôi ưu tiên điều tra để khắc phục các sự cố sẽ mang lại lợi ích cao nhất cho người dùng.
@@ -5443,7 +6224,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_TagID** - Mã định danh của sự cố đã xảy ra
 
-#### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfoldererror"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder\_Error
+#### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfolder_error"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder\_Error
 
 Thu thập thông tin khi bất kỳ lỗi xảy ra khi trong khi dẫn hướng đến lịch dùng chung. Dữ liệu này được sử dụng để theo dõi trạng thái của API chia sẻ lịch cũng như tương tác của Outlook với lịch dùng chung.
 
@@ -5501,33 +6282,33 @@ Thu thập thành công và thất bại của Chuyển tiếp, Chuyển tiếp 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **CountExceptionForward- Số lượng Ngoại lệ Cuộc họp được chuyển tiếp**
+  - **CountExceptionForward** - Số lượng Ngoại lệ Cuộc họp được chuyển tiếp
 
-  - **CountExceptionForwardAsiCal- Số lượng Ngoại lệ Cuộc họp được chuyển tiếp dưới dạng iCal**
+  - **CountExceptionForwardAsiCal** - Số lượng Ngoại lệ Cuộc họp được chuyển tiếp dưới dạng iCal
 
-  - **CountExceptionForwardInSplit- Số lượng Ngoại lệ Cuộc họp được chuyển tiếp từ menu Tách trong Dải băng**
+  - **CountExceptionForwardInSplit** - Số lượng Ngoại lệ Cuộc họp được chuyển tiếp từ menu Tách trong Dải băng
 
-  - **CountExceptionForwardWithAttach- Số lượng Ngoại lệ Cuộc họp được chuyển tiếp dưới dạng tệp đính kèm**
+  - **CountExceptionForwardWithAttach** - Số lượng Ngoại lệ Cuộc họp được chuyển tiếp dưới dạng tệp đính kèm
 
-  - **CountRecurringForward - Số lượng cuộc họp định kỳ chuyển tiếp**
+  - **CountRecurringForward** - Số lượng cuộc họp định kỳ chuyển tiếp
 
-  - **CountRecurringForwardAsiCal - Số lượng cuộc họp định kỳ chuyển tiếp dưới dạng iCal**
+  - **CountRecurringForwardAsiCal** - Số lượng cuộc họp định kỳ chuyển tiếp dưới dạng iCal
 
-  - **CountRecurringForwardInSplit**- Số lượng cuộc họp định kỳ chuyển tiếp từ menu Tách trong Dải băng
+  - **CountRecurringForwardInSplit** - Số lượng cuộc họp định kỳ chuyển tiếp từ menu Tách trong Dải băng
 
-  - **CountRecurringForwardWithAttach- Số lượng cuộc họp định kỳ chuyển tiếp dưới dạng tệp đính kèm**
+  - **CountRecurringForwardWithAttach** - Số lượng cuộc họp định kỳ chuyển tiếp dưới dạng tệp đính kèm
 
-  - **CountSingleForward - Số lượng Cuộc họp Đơn chuyển tiếp**
+  - **CountSingleForward** - Số lượng Cuộc họp Đơn chuyển tiếp
 
-  - **CountSingleForwardAsiCal - Số lượng Cuộc họp Đơn chuyển tiếp dưới dạng iCal**
+  - **CountSingleForwardAsiCal** - Số lượng Cuộc họp Đơn chuyển tiếp dưới dạng iCal
 
-  - **CountSingleForwardInSplit- Số lượng Cuộc họp Đơn được chuyển tiếp từ menu Tách trong Dải băng**
+  - **CountSingleForwardInSplit** - Số lượng Cuộc họp Đơn được chuyển tiếp từ menu Tách trong Dải băng
 
-  - **CountSingleForwardWithAttach - Số lượng Cuộc họp Đơn chuyển tiếp dưới dạng tệp đính kèm**
+  - **CountSingleForwardWithAttach** - Số lượng Cuộc họp Đơn chuyển tiếp dưới dạng tệp đính kèm
 
-  - **HResult - ErrorCode**
+  - **HResult** - ErrorCode
 
-  - **OlkViewName -- Cho biết Thư, Lịch hoặc Dạng xem Giám định viên**
+  - **OlkViewName** - Cho biết Thư, Lịch hoặc Dạng xem Giám định viên
 
 #### <a name="officeoutlookdesktopoutlookcalendarusageerrmeetrcptreplyactionsruleo16"></a>Office.Outlook.Desktop.OutlookCalendarUsageErr.MeetRcpt.ReplyActions.Rule.O16
 
@@ -5535,33 +6316,33 @@ Thu thập thành công và thất bại của Trả lời, Trả lời Tất c�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **CountExceptionReply - Số lượng thư trả lời cuộc họp cho các trường hợp ngoại lệ**
+  - **CountExceptionReply** - Số lượng thư trả lời cuộc họp cho các trường hợp ngoại lệ
 
-  - **CountExceptionReplyAll - Số lượng trả lời tất cả cho cuộc họp cho các trường hợp ngoại lệ**
+  - **CountExceptionReplyAll** - Số lượng trả lời tất cả cho cuộc họp cho các trường hợp ngoại lệ
 
-  - **CountExceptionReplyAllWithIM - Số lượng trả lời tất cả cho cuộc họp với tin nhắn tức thời (IM) cho các trường hợp ngoại lệ**
+  - **CountExceptionReplyAllWithIM** - Số lượng trả lời tất cả cho cuộc họp với tin nhắn tức thời (IM) cho các trường hợp ngoại lệ
 
-  - **CountExceptionReplyWithIM- Số lượng trả lời cuộc họp với tin nhắn tức thời (IM) cho các trường hợp ngoại lệ**
+  - **CountExceptionReplyWithIM** - Số lượng trả lời cuộc họp với tin nhắn tức thời (IM) cho các trường hợp ngoại lệ
 
-  - **CountRecurringReply - Số lượng trả lời cuộc họp định kỳ**
+  - **CountRecurringReply** - Số lượng trả lời cuộc họp định kỳ
 
-  - **CountRecurringReplyAll- Số lượng trả lời tất cả cho cuộc họp định kỳ**
+  - **CountRecurringReplyAll** - Số lượng trả lời tất cả cho cuộc họp định kỳ
 
-  - **CountRecurringReplyAllWithIM- Số lượng trả lời tất cả cho cuộc họp định kỳ với tin nhắn tức thời (IM) cho các trường hợp ngoại lệ**
+  - **CountRecurringReplyAllWithIM** - Số lượng trả lời tất cả cho cuộc họp định kỳ với tin nhắn tức thời (IM) cho các trường hợp ngoại lệ
 
-  - **CountRecurringReplyWithIM- Số lượng trả lời cuộc họp định kỳ với tin nhắn tức thời (IM)**
+  - **CountRecurringReplyWithIM** - Số lượng trả lời cuộc họp định kỳ với tin nhắn tức thời (IM)
 
-  - **CountSingleReply- Số lượng trả lời cuộc họp đơn**
+  - **CountSingleReply** - Số lượng trả lời cuộc họp đơn
 
-  - **CountSingleReplyAll- Số lượng trả lời tất cả cho cuộc họp đơn**
+  - **CountSingleReplyAll** - Số lượng trả lời tất cả cho cuộc họp đơn
 
-  - **CountSingleReplyAll- Số lượng trả lời tất cả cho cuộc họp đơn**
+  - **CountSingleReplyAll** - Số lượng trả lời tất cả cho cuộc họp đơn
 
-  - **CountSingleReplyWithIM- Số lượng trả lời cuộc họp đơn với tin nhắn tức thời (IM)**
+  - **CountSingleReplyWithIM** - Số lượng trả lời cuộc họp đơn với tin nhắn tức thời (IM)
 
-  - **HResult - ErrorCode**
+  - **HResult** - ErrorCode
 
-  - **OlkViewName -- Cho biết Thư, Lịch hoặc Dạng xem Giám định viên**
+  - **OlkViewName** - Cho biết Thư, Lịch hoặc Dạng xem Giám định viên
 
 #### <a name="officeoutlookdesktopoutlookprivsdlgsingleuserloadfail"></a>Office.Outlook.Desktop.OutlookPrivsDlgSingleUser.LoadFail
 
@@ -5573,13 +6354,37 @@ Các trường sau đây sẽ được thu thập:
 
   - **CountCreatePIMAccount** - Đã bao nhiêu lần người dùng tạo Hồ sơ PIM
 
+#### <a name="officeoutlookmacmacolkasserts"></a>Office.Outlook.Mac.MacOLKAsserts
+
+Được sử dụng để xác định các sự cố ảnh hưởng đến người dùng trong Outlook có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Category** - Loại xác nhận
+
+- **CollectionTime** - Thời gian khi xác nhận được thu thập
+
+
+#### <a name="officeoutlookmacmacolkerrors"></a>Office.Outlook.Mac.MacOLKErrors
+
+Được sử dụng để xác định các sự cố ảnh hưởng đến người dùng trong Outlook có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Category** - Loại lỗi
+
+- **CollectionTime** - Thời gian khi lỗi được thu thập
+
+- **ThreadId** - Mã định danh cho chủ đề
+
+
 #### <a name="officesystemsystemhealthasserts"></a>Office.System.SystemHealthAsserts
 
 Các lỗi mà sự kiện này xác định giúp chúng tôi hiểu khi trải nghiệm của khách hàng đang xuống cấp. Nhiều trong số các ShipAsserts này dẫn đến sự cố và thông tin này giúp khắc phục nhiều lỗi trong số đó. Thu thập ShipAsserts từ sản phẩm giúp xác định lỗi.
 
 Các trường sau đây sẽ được thu thập:
 
-Count – Số lượng từng xác nhận được báo cáo
+ - **Count** – Số lượng từng xác nhận được báo cáo
 
   - **EndTime** – Thời gian mà tại đó xác nhận cuối cùng được báo cáo xảy ra
 
