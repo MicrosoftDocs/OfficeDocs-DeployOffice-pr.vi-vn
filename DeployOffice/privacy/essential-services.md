@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 14b2426d021e5c559cabd3c969f80df9131cc9b9
-ms.sourcegitcommit: 22ae0005d3106ff02949fb613b82e0245abfa49f
+ms.openlocfilehash: 3931f44787008e076807fe59746bccf015452ac3
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35817992"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239193"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -27,9 +27,10 @@ ms.locfileid: "35817992"
 > - Office 365 Business và Office 365 ProPlus.
 > - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
 > - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+>
+> Thông tin này cũng áp dụng cho Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
-
-Office bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối có sẵn cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không thể bị vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình. Bạn có thể xem dữ liệu này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Office bao gồm các ứng dụng phần mềm máy khách và những trải nghiệm kết nối được thiết kế nhằm cho phép bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối có sẵn cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không thể bị vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình. Bạn có thể xem dữ liệu này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
 Để biết thêm thông tin, hãy xem các nguồn sau:
 
@@ -41,6 +42,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Danh sách các dịch vụ cần thiết cho Office 
 
@@ -51,8 +53,10 @@ Bảng sau đây cung cấp danh sách các dịch vụ cần thiết cho Office
 | [Xác thực](#authentication-events) | Xác thực là một dịch vụ đa nền tảng xác thực danh tính người dùng Office của bạn. Nó là điều bắt buộc để cho phép bạn đăng nhập vào Office, kích hoạt giấy phép Office, truy nhập các tệp được lưu trữ trên đám mây và cung cấp trải nghiệm nhất quán trên các phiên Office và thiết bị của bạn.    |
 | [Click-to-Run](#click-to-run-events) | Click-to-Run là công nghệ cài đặt được sử dụng để cài đặt và cập nhật Office trên Windows. Công nghệ này kiểm tra các phiên bản mới của Office và tải xuống và cài đặt khi có phiên bản mới.Click-to-Run sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật Office, bao gồm các bản cập nhật bảo mật.     |
 | [Dịch vụ cấu hình nâng cao (ECS)](#enhanced-configuration-service-ecs-events) | ECS cung cấp cho Microsoft khả năng cấu hình lại các bản cài đặt Office mà không cần bạn phải triển khai lại Office. Dịch vụ này được sử dụng để kiểm soát việc triển khai dần các tính năng hoặc bản cập nhật, trong khi ảnh hưởng của việc triển khai được theo dõi từ dữ liệu chẩn đoán được thu thập. Nó cũng được sử dụng để giảm thiểu các vấn đề về bảo mật hoặc hiệu suất với một tính năng hoặc bản cập nhật. Ngoài ra, ECS còn hỗ trợ thay đổi cấu hình liên quan đến dữ liệu chẩn đoán để giúp đảm bảo rằng các sự kiện thích hợp sẽ được thu thập. |
-| [Cấp phép](#licensing-events)     | Cấp phép là dịch vụ dựa trên nền điện toán đám mây hỗ trợ kích hoạt Office của bạn để cài đặt mới và duy trì giấy phép trên thiết bị của bạn sau khi Office được kích hoạt. Dịch vụ này đăng ký từng thiết bị của bạn và kích hoạt Office, kiểm tra trạng thái đăng ký Office và quản lý các khóa sản phẩm của bạn.    |
-| [Cấu hình dịch vụ](#services-configuration-events)  | Cấu hình dịch vụ cung cấp khả năng cập nhật các cài đặt cấu hình Office để bật hoặc tắt các tính năng của máy khách. Nó được gọi mỗi khi ứng dụng Office được khởi động và cung cấp chi tiết về các cấu hình và dịch vụ khác của Office. Cấu hình dịch vụ cũng kiểm soát các dịch vụ được chỉ định là dịch vụ cần thiết.  |
+| [Cấp phép](#licensing-events)     | Cấp phép là dịch vụ dựa trên nền điện toán đám mây hỗ trợ kích hoạt Office của bạn để cài đặt mới và duy trì giấy phép trên thiết bị của bạn sau khi Office được kích hoạt. Dịch vụ này đăng ký cho từng thiết bị của bạn, kích hoạt Office, kiểm tra trạng thái đăng ký Office và quản lý khóa của các sản phẩm của bạn.    |
+|[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) là công nghệ dùng để cập nhật các ứng dụng Microsoft được làm ra dành cho MacOS, chẳng hạn như Office. MAU sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật ứng dụng, bao gồm cả các bản cập nhật bảo mật.|
+|[Đồng bộ OneNote](#onenote-sync-events)|OneNote cho Mac chỉ hỗ trợ sổ tay được lưu trữ trên Internet trong OneDrive hoặc SharePoint Online. OneNote cho Mac sẽ liên tục đồng bộ hoá mọi ghi chú của người dùng bằng OneDrive hoặc SharePoint Online. Ứng dụng này cho phép người dùng mở, xem và chỉnh sửa sổ tay trên tất cả các thiết bị của mình, nhờ vậy sổ tay luôn được cập nhật.
+ [Cấu hình dịch vụ](#services-configuration-events)  | Cấu hình dịch vụ cung cấp khả năng cập nhật các cài đặt cấu hình Office để bật hoặc tắt các tính năng của máy khách. Nó được gọi mỗi khi ứng dụng Office được khởi động và cung cấp chi tiết về các cấu hình và dịch vụ khác của Office. Cấu hình dịch vụ cũng kiểm soát các dịch vụ được chỉ định là dịch vụ cần thiết.  |
 | [Phép đo từ xa](#telemetry-events)  | Dịch vụ phép đo từ xa được dùng để thu thập dữ liệu chẩn đoán từ ứng dụng Office. Dịch vụ này cho phép thu thập dữ liệu chẩn đoán do Office tạo ra, gồm cả dữ liệu chẩn đoán bắt buộc lẫn tùy chọn. Nó cũng chịu trách nhiệm thu thập phần dữ liệu chẩn đoán dịch vụ của dữ liệu dịch vụ bắt buộc cho Office.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Các sự kiện và trường dữ liệu cho các dịch vụ cần thiết cho Office
@@ -2362,6 +2366,51 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Version -** Phiên bản Office 
 
+### <a name="officeclicktoruntransport"></a>Office.ClickToRun.Transport
+
+Báo cáo về hành động tải xuống tệp để xác định vận hành có thành công hay không, loại hình tải xuống được thực hiện và các thông tin chẩn đoán.
+
+
+- **BytesFromGroupPeers -** Byte từ các mạng nhóm ngang hàng, chỉ dành cho các bản tải xuống sử dụng Tối ưu hóa Phân phối
+
+- **BytesFromHttp -**    Byte từ http, chỉ dành cho các bản tải xuống sử dụng Tối ưu hóa Phân phối
+
+- **ByteFromInternetPeers -**   Byte từ các mạng Internet ngang hàng, chỉ dành cho các bản tải xuống sử dụng Tối ưu hóa Phân phối 
+
+- **BytesFromLanPeers -**   Byte từ các mạng LAN ngang hàng, chỉ dành cho các bản tải xuống sử dụng Tối ưu hóa Phân phối 
+
+- **CancelledJobs -**    Số lượng yêu cầu bị hủy trong phiên
+
+- **Connected -**   Liệu đã được kết nối với nguồn chưa
+
+- **ErrorCode -**   Mã lỗi gần nhất
+
+- **ErrorDetails -**     Thông tin chi tiết về lỗi gần nhất
+
+- **ErrorMessage -**    Thông báo về lỗi gần nhất 
+
+- **ErrorSource -** Nguồn gốc của lỗi gần nhất, ví dụ như Connection, LoadFile hoặc LoadRange
+
+- **FailedJob -**   Số lượng yêu cầu không thành công trong phiên
+
+- **FileSize -**    Kích thước của tài nguyên
+
+- **SourcePathNoFilePath -**    Đường dẫn nguồn của tài nguyên chỉ có nguồn http được báo cáo, đường dẫn tệp cục bộ hoặc đường dẫn UNC bị lọc ra
+
+- **SucceededJobs -**   Số lượng yêu cầu thành công trong phiên
+
+- **TotalJobs -**    Tổng số yêu cầu trong phiên
+
+- **TotalRequestedBytes -**  Tổng số byte đã yêu cầu trong phiên
+
+- **TotalTransferTime -**   Tổng thời gian chuyển giao trong phiên
+
+- **TransferredBytes -**    Tổng số byte đã chuyển giao trong phiên
+
+- **TransportType -**   Phương thức chuyển giao (Ví dụ: Trong bộ nhớ Tối ưu hóa phân phối, HTTP, Dịch vụ Truyền tải tệp thông minh dưới nền)
+
+
+
 ### <a name="officeclicktoruntransportexperimentaltransportpipelinecreatetransport"></a>Office.ClickToRun.Transport.ExperimentalTransport.PipelineCreateTransport
 
 Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy khách Click-to-Run đang tạo một luồng truyền dẫn để tải xuống các tệp Office. Được sử dụng để xác định trang thái của các công nghệ truyền dẫn khác nhau (ví dụ: HTTP, BITS, DO), điều này rất quan trọng để tải xuống Office đúng cách để cài đặt và cập nhật.
@@ -2392,10 +2441,194 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_status** – Một trạng thái ngắn về những gì đã xảy ra trong quá trình cập nhật, chẳng hạn như thành công hoặc đã tải xuống
 
-  - **Data\_targetBuild -** - Phiên bản Office mà chúng tôi đang cố gắng cập nhật
+  - **Data\_targetBuild -** -Phiên bản Office chúng tôi đang thử cập nhật
 
 
-## <a name="enhanced-configuration-service-ecs-events"></a>Sự kện Dịch vụ cấu hình nâng cao (ECS)
+### <a name="officeclicktorununiversalbootstrapperapplication"></a>Office.ClickToRun.UniversalBootstrapper.Application
+
+Báo cáo kết quả thử nghiệm cài đặt từ đầu đến cuối
+
+ - **ErrorCode –**  Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
+
+ - **ErrorDetails –**   Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+
+ - **ErrorMessage –**   Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+
+ - **ErrorType –**  Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+
+ - **ExitCode –**   Giá trị nguyên liên kết với kết quả của việc chạy trình khởi động, biểu thị sự so sánh phương thức thành công và không thành công cụ thể
+
+### <a name="officeclicktorununiversalbootstrappercalculateparameters"></a>Office.ClickToRun.UniversalBootstrapper.CalculateParameters
+
+Báo cáo về hành động giải thích lý do cho việc đầu vào được thu thập bằng cách sử dụng CollectParameters
+
+- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu)
+
+- **ChannelID –**   Số nguyên đại diện cho giá trị bộ đếm của kênh cài đặt/cập nhật đã chọn (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu, Không hợp lệ)
+
+- **CMDMode –** Chuỗi thân thiện tương ứng với thao tác chuyển đổi chế độ tổng thể phát hiện trong đối số cmd được chuyển sang cho exe.
+
+- **C2RClientUICulture –**  Văn hóa của Máy khách C2R để cài đặt
+
+- **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
+
+- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+
+- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+
+- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+
+- **ExcludedApps –**    Chuỗi liệt kê tên các ứng dụng Office riêng lẻ được yêu cầu loại trừ khỏi bộ Office đã cài đặt
+
+- **InstalledCabVersion –** Phiên bản "16.0.xxxxx.yyyyy" của Máy khách Office C2R đã được cài đặt
+
+- **InstalledProductVersion –** Phiên bản "16.0.xxxxx.yyyyy" của sản phẩm Office C2R đã được cài đặt
+
+- **IsC2RServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách C2R hiện đại có đang được thiết lập và hoạt động trên thiết bị hay không
+
+- **IsElevatedFlagSet –**   Cờ Boolean cho biết liệu trình khởi động đã thử nâng quyền của quản trị viên hay chưa
+
+- **IsFireFlyInstalled –**  Cờ Boolean cho biết liệu Máy khách Office 2013 RTM C2R hiện được cài đặt hay chưa
+
+- **IsFireflyServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách 2013 RTM C2R có đang được thiết lập và hoạt động trên thiết bị hay không
+
+- **IsOfficeInstalled –**   Cờ Boolean cho biết liệu Máy khách Office hiện đại đã được cài đặt hay chưa
+
+- **OfficeCultures –**  Danh sách một chuỗi những văn hóa Office để cài đặt
+
+- **OfficeSourceType –**    Chuỗi thân thiện liên kết với giá trị bộ đếm của nguồn cài đặt (CDN, HTTP, UNC, CMBITS, DVD, CỤC BỘ)
+
+- **Origin –**  Giá trị chuỗi cho chúng ta biết nguồn gốc được hỗ trợ nào (Puerto Rico [PR], Singapore [SG], Dublin [DB]) nên được sử dụng cho việc phát trực tuyến cài đặt ban đầu
+
+- **PlatformFromLink –**    Chuỗi cho biết hệ thống bit x86|x64|mặc định mà Office yêu cầu từ dịch vụ thiết lập C2R
+
+- **PlatformOfExistingInstallation –**  Chuỗi cho biết liệu Office x86 hay X64 đã được cài đặt trên thiết bị
+
+- **PlatformToInstall –**   Chuỗi cho biết quyết định cuối cùng về việc liệu Office x86 hay X64 nên được cài đặt. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
+
+- **PRID –**    Giá trị chuỗi đại diện cho ID Bản phát hành sản phẩm được yêu cầu trong một tình huống cài đặt dành cho người tiêu dùng (ví dụ: "O365ProPlusRetail")
+
+- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/ Văn hóa nào
+
+- **ProductsToRemove –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên gỡ cài đặt tổ hợp Sản phẩm/ Văn hóa nào
+
+- **SharedComputerLicensing –** Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
+
+- **ShouldActivate –**  Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
+
+- **VersionToInstall –**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
+ 
+
+### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
+
+Báo cáo về hành động đọc đầu vào đã gắn thẻ từ chữ ký nhúng của exe.  Đây là một khái niệm chưa được chứng minh, việc lặp lại trước đó của setup.exe đã không diễn ra và là những gì chúng tôi đang dựa vào để truyền tải những lựa chọn về sản phẩm/ ngôn ngữ/ bitness của người dùng từ trang web tới quá trình bên trong setup.exe.
+ 
+- **ErrorCode –**   Số nguyên được liên kết với một ngoại lệ chưa được xử lý
+
+- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+
+- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+
+- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+
+### <a name="officeclicktorununiversalbootstrappercollectparameters"></a>Office.ClickToRun.UniversalBootstrapper.CollectParameters
+
+Báo cáo các tham số được sử dụng cho cài đặt Office
+
+- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu)
+
+- **ChannelID –**   Số nguyên đại diện cho giá trị bộ đếm của kênh cài đặt/cập nhật đã chọn (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu, Không hợp lệ)
+
+- **CMDMode –** Chuỗi thân thiện tương ứng với thao tác chuyển đổi chế độ tổng thể phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
+
+- **C2RClientUICulture –**  Văn hóa của Máy khách C2R để cài đặt
+
+- **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
+
+- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+
+- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+
+- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+
+- **ExcludedApps –**    Chuỗi liệt kê tên các ứng dụng Office riêng lẻ được yêu cầu loại trừ khỏi bộ Office đã cài đặt
+
+- **InstalledCabVersion –** Phiên bản "16.0.xxxxx.yyyyy" của Máy khách Office C2R đã được cài đặt
+
+- **InstalledProductVersion –** Phiên bản "16.0.xxxxx.yyyyy" của sản phẩm Office C2R đã được cài đặt
+
+- **IsC2RServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách C2R hiện đại có đang được thiết lập và hoạt động trên thiết bị hay không
+
+- **IsElevatedFlagSet –**   Cờ Boolean cho biết liệu trình khởi động đã thử nâng quyền của quản trị viên hay chưa
+
+- **IsFireFlyInstalled –**  Cờ Boolean cho biết liệu Máy khách Office 2013 RTM C2R hiện được cài đặt hay chưa
+
+- **IsFireflyServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách 2013 RTM C2R có đang được thiết lập và hoạt động trên thiết bị hay không
+
+- **IsOfficeInstalled –**   Cờ Boolean cho biết liệu Máy khách Office hiện đại đã được cài đặt hay chưa
+
+- **OfficeCultures –**  Danh sách một chuỗi những văn hóa Office để cài đặt
+
+- **OfficeSourceType –**    Chuỗi thân thiện liên kết với giá trị bộ đếm của nguồn cài đặt (CDN, HTTP, UNC, CMBITS, DVD, CỤC BỘ)
+
+- **Origin –**  Giá trị chuỗi cho chúng ta biết nguồn gốc được hỗ trợ nào (Puerto Rico [PR], Singapore [SG], Dublin [DB]) nên được sử dụng cho việc phát trực tuyến cài đặt ban đầu
+
+- **PlatformFromLink –**    Chuỗi cho biết hệ thống bit x86|x64|mặc định mà Office yêu cầu từ dịch vụ thiết lập C2R
+
+- **PlatformOfExistingInstallation –**  Chuỗi cho biết liệu Office x86 hay X64 đã được cài đặt trên thiết bị
+
+- **PlatformToInstall –**   Chuỗi cho biết quyết định cuối cùng về việc liệu Office x86 hay X64 nên được cài đặt
+
+- **ProductsToRemove –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên gỡ cài đặt tổ hợp Sản phẩm/ Văn hóa nào
+
+- **PRID –**    Giá trị chuỗi đại diện cho ID Bản phát hành sản phẩm được yêu cầu trong một tình huống cài đặt dành cho người tiêu dùng (ví dụ: "O365ProPlusRetail")
+
+- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/ Văn hóa nào
+
+- **SharedComputerLicensing –** Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
+
+- **ShouldActivate–**   Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
+
+- **VersionToInstall–** Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
+
+### <a name="officeclicktorununiversalbootstrapperexecute"></a>Office.ClickToRun.UniversalBootstrapper.Execute
+
+Báo cáo về các hành động gây ảnh hưởng đến máy đã thực hiện, như từng được dữ liệu lấy lý do từ "CalculateParameters" xác định
+
+- **AvailableClientVersionText –**  Giá trị chuỗi của phiên bản Máy khách C2R "16.0.xxxxx.yyyyy" được tìm thấy trong Trình mô tả phiên bản XML, giá trị này được sử dụng để xác định xem Máy khách C2R hiện cài đặt có nên cập nhật hay không
+
+- **CleanFireflyAction –**  "đúng" nếu tác vụ CleanFireFlyAction được lên lịch hoạt động trong quá trình cài đặt này
+
+- **CleanO15Action –**  "đúng" nếu tác vụ CleanO15Action được lên lịch hoạt động trong quá trình cài đặt này
+
+- **CMDMode –** Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
+
+- **DeliveryMechanism –**   Guid "FFNRoot" được trích xuất từ Trình mô tả phiên bản XML (đóng dấu bởi RDX), điều này cho chúng ta biết nguồn dựng đến từ khán giả/ kênh nào
+
+- **DownloadC2RClientAction –** "đúng" nếu tác vụ DownloadC2RClientAction được lên lịch hoạt động trong quá trình cài đặt này
+
+- **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
+
+- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+
+- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+
+- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+
+- **ExitCode –**    Giá trị nguyên liên kết với kết quả của việc trình khởi động chạy giai đoạn thực thi, biểu thị sự so sánh phương thức thành công và không thành công cụ thể
+
+- **LaunchAction –**    "đúng" nếu tác vụ LaunchAction được lên lịch hoạt động trong quá trình cài đặt này
+
+- **LaunchUpdateAction –**  "đúng" nếu tác vụ LaunchUpdateAction được lên lịch hoạt động trong quá trình cài đặt này
+
+- **PreReqResult –**    Giá trị nguyên bộ đếm của kết quả khi thực hiện kiểm tra PreReq (đạt/ không đạt/ khởi chạy lại)
+
+- **UnexpectedAction –**    "đúng" nếu tác vụ UnexpectedAction (trường hợp lỗi) được lên lịch hoạt động trong quá trình cài đặt này
+
+- **VersionToInstall –**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
+
+
+## <a name="enhanced-configuration-service-ecs-events"></a>Sự kiện Dịch vụ cấu hình nâng cao (ECS)
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
 
@@ -2544,7 +2777,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinglicensingbar"></a>Office.Licensing.LicensingBar
 
-Nếu thiết bị đang phải đối mặt với vấn đề cấp phép và cuối cùng chúng tôi hiển thị thanh cái cho người dùng, chúng tôi sẽ gửi tín hiệu này cũng báo cáo loại thanh cái được hiển thị cho người dùng. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Nếu thiết bị đang phải đối mặt với vấn đề cấp phép và cuối cùng chúng tôi hiển thị thanh cái cho người dùng, chúng tôi sẽ gửi tín hiệu này cũng báo cáo loại thanh cái được hiển thị cho người dùng. Điều quan trọng là cần phát hiện xem người dùng có đang trong trạng thái tốt và không bị thiếu chức năng hay không, kết quả này được sử dụng cho tình trạng hệ thống và mục đích chẩn đoán trong trường hợp người dùng báo cáo sự cố về máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2580,9 +2813,11 @@ Các trường sau đây sẽ được thu thập:
 
   - **Acid** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép
 
-  - **OptInShown** – Cho biết liệu hộp thoại opt in có được hiển thị trong lần khởi động đầu tiên của ứng dụng đã được hiển thị chưa
+  - **OptInShown** – Cho biết liệu hộp thoại chọn tham gia sẽ hiển thị trong lần khởi động đầu tiên của ứng dụng đã hiển thị chưa
 
-  - **Office.Licensing.NextUserLicensingEligible -** Tín hiệu này cho chúng tôi biết nếu người dùng đủ điều kiện chuyển sang ngăn xếp cấp phép mới của chúng tôi. Điều này rất quan trọng để định lượng tác động đối với người dùng hiện tại khi chúng tôi triển khai ngăn xếp cấp phép mới của mình và đảm bảo rằng người dùng không bị mất chức năng
+### <a name="officelicensingnextuserlicensingeligible"></a>Office.Licensing.NextUserLicensingEligible 
+
+Thông báo này cho chúng ta biết một người dùng đủ điều kiện để chuyển sang ngăn xếp cấp phép mới hay không. Điều này rất quan trọng khi định lượng tác động đối với người dùng hiện có bởi vì chúng tôi sẽ triển khai ngăn xếp cấp phép mới của mình và đảm bảo rằng người dùng không bị mất chức năng.
 
 Sự kiện này không thu thập trường nào.
 
@@ -2701,6 +2936,7093 @@ Các trường sau đây sẽ được thu thập:
   - **OpportunisticTokenRenewalAttempted** – Cho biết nếu chúng tôi đã thử gia hạn cho người dùng ở chế độ kích hoạt máy tính được chia sẻ hay chưa
 
   - **ReArmResult** – Cho biết kết quả của việc sắp xếp lại khóa đã cài đặt có thể kéo dài thời hạn của giấy phép hiện tại
+
+## <a name="microsoft-autoupdate-mau-events"></a>Sự kiện Microsoft AutoUpdate (MAU)
+
+### <a name="appdelegate_launch"></a>appdelegate_launch
+
+Sự kiện này cho biết rằng đã xảy ra một lần thử khởi chạy ứng dụng. Chúng tôi ghi lại kết quả của sự kiện này (thất bại hoặc thành công). Chúng tôi sử dụng sự kiện này để xác định các trường hợp không thể khởi động MAU
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+    
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppversionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+ - **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Một bộ văn bản tĩnh cho biết trạng thái khởi chạy.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="appdelegate_terminate"></a>appdelegate_terminate
+
+Sự kiện này cho biết đã xảy ra một lần Thoát ứng dụng mượt mà. Chúng tôi dùng sự kiện này để phân biệt giữa những lần Thoát ứng dụng mượt mà và những lần không mượt mà khác.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+    
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+    
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh cho biết Microsoft Autoupdate đã chấm dứt.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="appinstall_connecttoxpc"></a>appinstall_connecttoxpc
+
+Sự kiện này cho biết đã xảy ra lỗi khi kết nối với Trình trợ giúp MAU (một cấu phần thực hiện cài đặt ứng dụng).  Sự kiện này biểu hiện ứng dụng MAU có dấu hiệu hỏng hóc. Thiết bị sẽ không thể cài đặt các bản cập nhật.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Bao gồm thông tin về lỗi của sự cố kết nối.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="appregistry_info"></a>appregistry_info
+
+Sự kiện này cho biết ứng dụng đã khởi động. Chúng tôi dùng sự kiện này để liệt kê các ứng dụng mà MAU có thể kiểm soát được về bản cập nhật, số lượng bản sao sẵn dùng cũng như phiên bản và vị trí cài đặt của các ứng dụng đó (mặc định hoặc khác).
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Bao gồm thông tin về danh sách ứng dụng định danh dùng để đăng ký các dịch vụ của Microsoft Autoupdate và số lượng bản cài đặt đã đăng ký ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="appregistry_remove"></a>appregistry_remove
+
+Sự kiện này cho biết đã diễn ra một lần thử loại bỏ một Ứng dụng ra khỏi danh sách các ứng dụng quản lý bởi MAU. Chúng tôi dùng sự kiện này để xác nhận rằng MAU chỉ quản lý những ứng dụng được phát hành bởi MAU (không bao gồm bất kỳ ứng dụng AppStore nào).
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Đang loại bỏ tên và mã định danh của ứng dụng, cho dù ứng dụng vẫn tồn tại trong vị trí đã đăng ký và ứng dụng được cài đặt từ AppStore.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="catalog_errorsignature"></a>catalog_errorsignature
+
+Sự kiện này cho biết đã xảy ra lỗi trong khi thực hiện xác thực chứng thực số trên một tệp cập nhật bổ sung.  Bất kỳ tệp bổ sung nào xác minh chứng thực số không thành công nên được coi là không hợp lệ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của tệp danh mục kèm chữ ký không hợp lệ. Sự khác nhau của văn bản tĩnh mô tả các điều kiện lỗi khác nhau.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
+
+Sự kiện này ghi lại sự cố khi cài đặt trên bản sao (nghĩa là chúng tôi không thể kết nối với trình trợ giúp để áp dụng bản cập nhật hoặc có thể kết nối nhưng trình trợ giúp lại không thể áp dụng bản cập nhật). Nếu chúng tôi nhận được một bản ghi được báo cáo, điều này có nghĩa là cài đặt trên bản sao đã từng không thành công và giờ đây sẽ phải chuyển sang thực hiện cập nhật tại chỗ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Bao gồm ID để xác định một hoạt động cập nhật riêng lẻ và lỗi Proxy được ghi nhận trong quá trình sao chép.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="configuration_channel"></a>configuration_channel
+
+Sự kiện này ghi lại các lần thử chuyển đổi kênh (Nhóm người xem) trong MAU.  Chúng tôi dùng sự kiện này để ghi lại các lần thử và kết quả (thành công hoặc thất bại).
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của kênh đã chọn.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="configuration_metadata"></a>configuration_metadata
+
+Sự kiện này được ghi lại bất cứ khi nào MAU đang khởi đầu. Đây là kiểu sự kiện thông báo hoạt động của MAU
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh cho biết siêu dữ liệu riêng lẻ hoặc cấu hình đang được khởi tạo.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên.
+
+
+### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
+
+Sự kiện này cho biết rằng MAU bị rơi vào trạng thái không thể sử dụng/ không thể phục hồi và cần được cài đặt lại. Sự kiện này chỉ ra lỗi không thể phục hồi và cần có sự can thiệp của người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa các lựa chọn được liệt kê ra của người dùng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_alertmanager_tmpdiskfull"></a>controller_alertmanager_tmpdiskfull
+
+Sự kiện này cho biết rằng đã phát hiện dung lượng đĩa không đủ. Chúng tôi sẽ không thể cài đặt các bản cập nhật do dung lượng đĩa không đủ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_alertmanager_tmpdiskfullretry"></a>controller_alertmanager_tmpdiskfullretry
+
+Sự kiện này cho biết đã khởi tạo một lần thử cài đặt lại bản cập nhật sau khi phát hiện dung lượng đĩa không đủ. Chúng tôi sẽ thử cài đặt lại sau khi không thể cài đặt bản cập nhật do dung lượng đĩa không đủ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+    
+
+### <a name="controller_alertmanager_tmpdiskfullretrycancel"></a>controller_alertmanager_tmpdiskfullretrycancel
+
+Sự kiện này cho biết đã hủy bỏ lần thử cài đặt lại sau khi phát hiện dung lượng đĩa không đủ. Chúng tôi dùng sự kiện này để xác định xem cơ chế dự phòng có đủ để hướng dẫn người dùng thông qua quá trình cập nhật khi phát hiện dung lượng đĩa không đủ hay không.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+    
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+    
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
+
+Sự kiện này cho biết không tìm thấy bản cập nhật nào khi kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+
+### <a name="controller_checkwindow_updatecheck"></a>controller_checkwindow_updatecheck
+
+Sự kiện này cho biết đã thực hiện kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+    
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
+
+Sự kiện này cho biết quá trình kiểm tra bản cập nhật đã bị hủy (bởi người dùng hoặc hệ thống). Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
+
+Sự kiện này cho biết người dùng đã hủy quá trình kiểm tra bản cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+    
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_checkwindow_updatesfound"></a>controller_checkwindow_updatesfound
+
+Sự kiện này cho biết đã tìm thấy các bản cập nhật từ quá trình kiểm tra bản cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_checkwindow_uptodate"></a>controller_checkwindow_uptodate
+
+Sự kiện này cho biết không tìm thấy bản cập nhật nào từ quá trình kiểm tra vì ứng dụng trong thiết bị đã được cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_applaunchwithpendingupdate"></a>controller_downloadwindow_applaunchwithpendingupdate
+
+Sự kiện này cho biết một ứng dụng đã khởi chạy trong quá trình cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác. Chúng tôi không nên cho phép các ứng dụng đang mở được cập nhật. Phải đóng các ứng dụng trước khi cập nhật.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+    
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_downloadwindow_closeapplicationdialog"></a>controller_downloadwindow_closeapplicationdialog
+
+Sự kiện này cho biết một ứng dụng đã khởi chạy trong quá trình cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác. Chúng tôi không nên cho phép các ứng dụng đang mở được cập nhật. Phải đóng các ứng dụng trước khi cập nhật.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_downloadwindow_curtasknull"></a>controller_downloadwindow_curtasknull
+
+Sự kiện này cho biết đã xảy ra lỗi không mong muốn khi thử áp dụng bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
+
+Sự kiện này cho biết người dùng đã huỷ quá trình tải xuống.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_downloadwindow_downloadfailed"></a>controller_downloadwindow_downloadfailed
+
+Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_downloadwindow_downloadfailedok"></a>controller_downloadwindow_downloadfailedok
+
+Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật và người dùng đã được thông báo. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. Trong trường hợp xảy ra lỗi, người dùng sẽ nhận được thông báo.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_downloadpathmissing"></a>controller_downloadwindow_downloadpathmissing
+
+Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. Sự kiện này cho biết URL tải xuống bị thiếu.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_downloadtasknull"></a>controller_downloadwindow_downloadtasknull
+
+Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. Sự kiện này cho biết Microsoft Autoupdate đã được yêu cầu tạm dừng/ tiếp tục tải xuống nhưng lại không thể tìm thấy trình quản lý tải xuống tương ứng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_filesignaturenotverified"></a>controller_downloadwindow_filesignaturenotverified
+
+Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Sự kiện này chỉ ra rằng Microsoft Autoupdate không thể xác minh bản cập nhật này do Microsoft phát hành. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản chứa URL tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_installcomplete"></a>controller_downloadwindow_installcomplete
+
+Sự kiện này cho biết quá trình cài đặt tất cả các bản cập nhật do Microsoft Autoupdate đề xuất đã hoàn thành. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+    
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_networkunavailablealert"></a>controller_downloadwindow_networkunavailablealert
+
+Sự kiện này cho biết khả năng kết nối mạng bị mất trong khi đang tải xuống các bản cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_downloadwindow_networkunavailablealertok"></a>controller_downloadwindow_networkunavailablealertok
+
+Sự kiện này cho biết khả năng kết nối mạng bị mất trong khi đang tải xuống các bản cập nhật. Sự kiện cũng cho biết người dùng đã được thông báo về lỗi này. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_downloadwindow_noconnectionok"></a>controller_downloadwindow_noconnectionok
+
+Sự kiện này cho biết khả năng kết nối mạng bị mất trong khi đang tải xuống các bản cập nhật. Sự kiện cũng cho biết người dùng đã được thông báo về lỗi này. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_repairrequired"></a>controller_downloadwindow_repairrequired
+
+Sự kiện này cho biết quy trình cập nhật không thành công. Sự kiện cũng cho biết bản cập nhật đã hoàn tất nhưng Microsoft Autoupdate tìm thấy sự cố với ứng dụng đã cập nhật và yêu cầu sửa chữa. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+    
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+    
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+### <a name="controller_downloadwindow_updateaborted"></a>controller_downloadwindow_updateaborted
+
+Sự kiện này cho biết quy trình cập nhật bị hủy bỏ. Sự kiện cũng cho biết Daemon đang trong quá trình tiến hành bản cập nhật nhưng người dùng bấm vào OK để huỷ tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_updatefailed"></a>controller_downloadwindow_updatefailed
+
+Sự kiện này cho biết một hoặc nhiều bản cập nhật từ lô hiện tại cài đặt không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_updatesuccessful"></a>controller_downloadwindow_updatesuccessful
+
+Sự kiện này cho biết tất cả các bản cập nhật từ lô hiện tại đều cài đặt thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_userpaused"></a>controller_downloadwindow_userpaused
+
+Sự kiện này cho biết tất cả các bản cập nhật từ lô hiện tại đều cài đặt thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_downloadwindow_userresumed"></a>controller_downloadwindow_userresumed
+
+Sự kiện này cho biết quá trình tải xuống các bản cập nhật đã tiếp tục tiến hành thành công sau khi tạm dừng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+    
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_mainwindow_setautomaticdownloadinstall"></a>controller_mainwindow_setautomaticdownloadinstall
+
+Sự kiện này cho biết thiết bị đã đăng ký chế độ Cập nhật tự động. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_mainwindow_setmanualchecking"></a>controller_mainwindow_setmanualchecking
+
+Sự kiện này cho biết thiết bị đã đăng ký chế độ Cập nhật thủ công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_templateawindow_cancel"></a>controller_templateawindow_cancel
+
+Sự kiện này cho biết người dùng đã chọn hủy hoặc bỏ qua một thông báo cảnh báo được đưa ra. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_templateawindow_enroll"></a>controller_templateawindow_enroll
+
+Sự kiện này cho biết người dùng đã chọn làm theo đề xuất cảnh báo được đưa ra. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+    
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+
+### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
+
+Sự kiện này cho biết người dùng đã chọn làm theo đề xuất cảnh báo được đưa ra, đề xuất này liên quan đến việc khởi chạy hành động cài đặt phần mềm. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_updatewindow_begindownloadingapps"></a>controller_updatewindow_begindownloadingapps
+
+Sự kiện này cho biết đã bắt đầu tải xuống bản cập nhật thông qua Cửa sổ cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa từ điển của các gói cập nhật sẵn dùng và thông báo dù người dùng đã chọn cài đặt mục nhập đó.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_updatewindow_networkretry"></a>controller_updatewindow_networkretry
+
+Sự kiện này cho biết đã kích hoạt thử lại trong trang tính Cập nhật do sự cố lỗi mạng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_updatewindow_networkretrycancel"></a>controller_updatewindow_networkretrycancel
+
+Sự kiện này cho biết đã không thể kích hoạt thử lại trong trang tính Cập nhật do sự cố lỗi mạng. Sự kiện này cho thấy người dùng đã chọn hủy cập nhật sau khi được cảnh báo về vấn đề mạng đang ngoại tuyến. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_updatewindow_networkunavailable"></a>controller_updatewindow_networkunavailable
+
+Sự kiện này cho biết khả năng kết nối mạng bị mất một cách đột ngột. Sự kiện này cho thấy không thể truy cập máy chủ trong khi cố gắng tải xuống gói cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_updatewindow_noupdateavailable"></a>controller_updatewindow_noupdateavailable
+
+Sự kiện này cho biết không tìm thấy bản cập nhật sẵn dùng nào sau khi tìm kiếm bản cập nhật. Sự kiện này cho thấy Microsoft Autoupdate không tìm thấy bản cập nhật sẵn dùng nào. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_updatewindow_noupdatestoselect"></a>controller_updatewindow_noupdatestoselect
+
+Sự kiện này cho biết đã xảy ra lỗi dẫn đến danh sách cập nhật trống. Sự kiện này cho thấy Microsoft Autoupdate đang hiển thị trang tính cập nhật trống. Điều này không nên xảy ra. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="controller_updatewindow_updateavailable"></a>Controller_UpdateWindow_UpdateAvailable
+
+Sự kiện này cho biết có bản cập nhật được đề xuất sau khi tìm kiếm bản cập nhật. Chúng tôi dùng sự kiện này để xác định xem liệu người dùng có nhìn thấy các bản cập nhật được đề xuất, liệu các bản cập nhật phù hợp có hiển thị hay liệu việc chặn cập nhật có hoạt động theo dự kiến hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa từ điển của các gói cập nhật sẵn dùng và trạng thái lựa chọn của người dùng đối với từng ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
+
+Sự kiện này cho biết người dùng đã hủy sau khi chúng tôi hiển thị trang tính danh sách bản cập nhật mới nhất. Chúng tôi dùng sự kiện này để giải thích lý do không cập nhật (nghĩa là người dùng sẵn lòng hủy). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadactor_pause"></a>downloadactor_pause
+
+Sự kiện này cho biết người dùng đã đưa ra yêu cầu tạm dừng tải xuống. Chúng tôi dùng sự kiện này để giải thích lý do cập nhật có vẻ chưa hoàn tất. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadactor_redirect"></a>downloadactor_redirect
+
+Sự kiện này cho biết tác vụ trình tải xuống được trỏ đến điểm kết thúc, điều này dẫn đến URL chuyển hướng để đáp ứng yêu cầu tải xuống. Chúng tôi dùng sự kiện này để giải thích lý do tải xuống không thành công và chẩn đoán sự cố proxy. Sự kiện cũng giúp chẩn đoán lý do tại sao chúng tôi nhận thấy người dùng cài đặt các bản dựng cũ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa URL chuyển hướng. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="downloadactor_resume"></a>downloadactor_resume
+
+Sự kiện này cho biết người dùng đưa ra yêu cầu tiếp tục bản tải xuống đang tạm dừng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadactor_resumeerror"></a>downloadactor_resumeerror
+
+Sự kiện này cho biết người dùng đưa ra yêu cầu tiếp tục bản tải xuống đang tạm dừng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa đường dẫn URL tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="downloadactor_status"></a>downloadactor_status
+
+Sự kiện này ghi lại đã có những lần thử tải các tệp bổ sung và kết quả của những lần thử này (Thành công hoặc Thất bại). Chúng tôi muốn biết các tệp bổ sung và gói đang được tải xuống. Việc tải một tệp không đúng có thể biểu hiện sự cố về bản dựng/ tệp bổ sung. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa URL tải xuống và mã lỗi trong trường hợp không thành công. URL tải xuống là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
+
+Sự kiện này đã xảy ra lỗi tải xuống. Tệp không thể tải xuống đã được ghi lại. Chúng tôi muốn biết các tệp bổ sung và gói đang được tải xuống. Việc không thể tải xuống tệp kê khai có thể chỉ ra đó là lỗi khởi tạo tệp bổ sung của bản dựng hoặc lỗi cấu hình CDN, lỗi cấu hình máy khách hay lỗi mạng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="downloadmanifest_downloadcatalogsuccess"></a>downloadmanifest_downloadcatalogsuccess
+
+Sự kiện này cho biết tệp đã được tải xuống thành công. Việc không thể tải xuống tệp kê khai có thể chỉ ra đó là lỗi khởi tạo tệp bổ sung của bản dựng hoặc lỗi cấu hình CDN, lỗi cấu hình máy khách hay lỗi mạng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+    
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_downloadfail"></a>downloadmanifest_downloadfail
+
+Sự kiện này cho biết đã xảy ra lỗi tải xuống. Tệp kê khai hoặc tệp gói không thể tải xuống và chi tiết lỗi đã được ghi lại. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_downloadfromurl"></a>downloadmanifest_downloadfromurl
+
+Sự kiện này cho biết đã bắt đầu tải xuống tệp danh mục. Chúng tôi đã ghi lại URL của tệp danh mục đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_downloading"></a>downloadmanifest_downloading
+
+Sự kiện này cho biết đã bắt đầu tải xuống tệp danh mục. Chúng tôi đã ghi lại URL của tệp danh mục đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_downloadsuccess"></a>downloadmanifest_downloadsuccess
+
+Sự kiện này cho biết việc tải xuống tệp XML và tệp gói đã thành công. Chúng tôi đã ghi lại URL của tệp đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="downloadmanifest_downloadurl"></a>downloadmanifest_downloadurl
+
+Sự kiện này cho biết có một yêu cầu tải xuống tệp. Chúng tôi đã ghi lại URL của tệp đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+    
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_filenameerror"></a>downloadmanifest_filenameerror
+
+Sự kiện này cho biết đã xảy ra lỗi không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_invalidhash"></a>downloadmanifest_invalidhash
+
+Sự kiện này cho biết việc xác thực bảo mật cho các tệp của chúng tôi không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của tệp đã tải xuống kèm giá trị hàm băm không hợp lệ.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_missingdaemon"></a>downloadmanifest_missingdaemon
+
+Sự kiện này cho biết người dùng thử kiểm tra bản cập nhật và chúng tôi phát hiện ra MAU bị thiếu một thành phần cốt lõi (daemon). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_signatureerror"></a>downloadmanifest_signatureerror
+
+Sự kiện này cho biết việc xác minh mã chữ ký cho gói không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của tệp đã tải xuống kèm giá trị hàm băm không hợp lệ.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmanifest_status"></a>downloadmanifest_status
+
+Sự kiện này ghi lại một tập hợp tóm tắt các lần thử/ sự cố đã xảy ra trong quá trình tải xuống tệp kê khai và tệp gói. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa các thông tin bao gồm URL (địa chỉ Microsoft), tiền tố của tệp đang tải xuống, bất kỳ lỗi nào gặp phải, v.v.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmgr_downloadend"></a>downloadmgr_downloadend
+
+Sự kiện này ghi lại dấu hiệu cho biết quá trình tải xuống đã tự hoàn tất. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa các thông tin bao gồm URL (địa chỉ Microsoft), tiền tố của tệp đang tải xuống, bất kỳ lỗi nào gặp phải, v.v.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadmgr_downloadstart"></a>downloadmgr_downloadstart
+
+Sự kiện này ghi lại bản cập nhật sắp được tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của bản cập nhật đang được tải xuống.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
+
+Sự kiện này ghi lại đã xảy ra lỗi khi tải xuống tệp gói. Chúng tôi đã ghi lại đường dẫn cập nhật và lỗi. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của bản cập nhật đang được tải xuống và lỗi chúng tôi quan sát được.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
+
+Tải xuống tệp gói thành công. Chúng tôi đã ghi lại đường dẫn cập nhật được sử dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa đường dẫn cập nhật của bản tải xuống thành công.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_checkforupdate"></a>fba_checkforupdate
+
+Sự kiện này cho biết quá trình nền đang kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_checkforupdateskip"></a>fba_checkforupdateskip
+
+Sự kiện này cho biết quá trình nền đã bỏ qua cập nhật vì lý do GUI MAU đang mở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_launchstatus"></a>fba_launchstatus
+
+Sự kiện này ghi lại các lỗi daemon của MAU trong khi cố gắng khởi chạy. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa trạng thái OS (mã trạng thái của Apple) phản ánh trạng thái khởi chạy.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
+
+Sự kiện này cho biết người dùng đang chọn áp dụng các bản cập nhật tự hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
+
+Sự kiện này cho biết quá trình kiểm tra cập nhật bắt buộc bị bỏ qua vì lý do có các ứng dụng đang mở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_startforcedupdate"></a>fba_startforcedupdate
+
+Sự kiện này cho biết đã xảy ra một lần thử áp dụng bản cập nhật bắt buộc. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_terminate"></a>fba_terminate
+
+Sự kiện này cho thấy daemon MAU đã chấm dứt theo cách thông thường. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fba_updatefound"></a>fba_updatefound
+
+Sự kiện này cho thấy daemon MAU đã tìm thấy nhằm đề xuất các bản cập nhật sẵn dùng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa số lượng bản cập nhật sẵn dùng được tìm thấy.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="fba_updatetimer"></a>fba_updatetimer
+
+Sự kiện này cho thấy quá trình Daemon Microsoft Autoupdate đã bắt đầu hoạt động để kiểm tra cập nhật sau khi ở trạng thái ngủ trong một khoảng thời gian. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa thông tin về thời gian hiện tại.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
+
+Sự kiện này sẽ ghi lại liệu đã đóng tất cả các ứng dụng trước khi cài đặt hay chưa. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+    
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_applaunchafterupdate"></a>fbasilentupdate_applaunchafterupdate
+
+Sự kiện này sẽ ghi lại một lần thử khởi chạy lại ứng dụng sau cập nhật tự hành và chế độ cập nhật (sao chép hoặc không). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của ứng dụng sẽ khởi chạy.
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+    
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_applaunchwileinstalling"></a>fbasilentupdate_applaunchwileinstalling
+
+Chúng tôi đã ghi lại thời điểm ứng dụng khởi chạy trong khi cài đặt bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_appneedtoclose"></a>fbasilentupdate_appneedtoclose
+
+Chúng tôi đã ghi lại thời điểm quá trình cập nhật khởi động và nhận thấy rằng ứng dụng cần cập nhật đã mở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và ID của gói ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
+
+Sự kiện này cho thấy Microsoft Autoupdate đã nhận được thông báo từ sự kiện Apple về việc ứng dụng đã chấm dứt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và ID của gói ứng dụng. Ngoài ra, cũng có thể chứa một chuỗi lỗi nếu Microsoft Autoupdate xác định ứng dụng vẫn chạy ngay cả khi đã nhận sự kiện chấm dứt.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
+
+Sự kiện này ghi lại kết quả xác minh chứng thực số sau khi áp dụng bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa kết quả của thao tác xác minh chứng thực số.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_download"></a>fbasilentupdate_download
+
+Sự kiện này cho thấy bản cập nhật đang được tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
+
+Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
+
+Sự kiện này cho biết chúng tôi đang bắt đầu tải xuống một tập hợp các bản cập nhật trong nền (chúng tôi sẽ ghi lại số lượng bản cập nhật đang tải xuống đồng thời). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa số lượng bản cập nhật đang chờ.
+
+    - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_downloadingrepairupdate"></a>fbasilentupdate_downloadingrepairupdate
+
+Sự kiện này cho biết chúng tôi đã bắt đầu một lần thử tải xuống bản sửa lỗi cho bản cập nhật không thành công. Chúng tôi sẽ ghi lại phiên bản và bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của bản cập nhật.
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
+
+Sự kiện này cho biết đã xảy ra lỗi. Chúng tôi chỉ nên tải xuống cùng một lúc một bản cập nhật cho một ứng dụng đã biết. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_installattemptfailed"></a>fbasilentupdate_installattemptfailed
+
+Sự kiện này cho biết lần thử cài đặt bản cập nhật (phiên bản) đã không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_installcomplete"></a>fbasilentupdate_installcomplete
+
+Sự kiện này cho biết tất cả các bản cập nhật trong lô đã hoàn tất cài đặt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_installed"></a>fbasilentupdate_installed
+
+Sự kiện này cho biết bản cập nhật riêng lẻ đã được cài đặt thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện. Chứa mã định danh của bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="fbasilentupdate_installing"></a>fbasilentupdate_installing
+
+Sự kiện này cho biết bản cập nhật riêng lẻ đã bắt đầu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và tên của gói cập nhật.
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
+
+Sự kiện này cho biết bản cập nhật đã chặn sẽ không còn bị chặn nữa. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng (mã định danh mà ứng dụng dùng để đăng ký dịch vụ Microsoft Autoupdate) của ứng dụng đã chặn trước đó
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_queueinstall"></a>fbasilentupdate_queueinstall
+
+Sự kiện này cho biết bản cập nhật sẽ ở trong hàng chờ cài đặt tự hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_requiredappsclosed"></a>fbasilentupdate_requiredappsclosed
+
+Chúng tôi sẽ ghi lại thời điểm ứng dụng có bản cập nhật đang chờ xử lý bị đóng. Thao tác này cho biết thời gian cài đặt thực tế có thể tiến hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và ID của gói ứng dụng.
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
+
+Sự kiện này cho thấy đã kích hoạt thông báo có bản cập nhật sẵn dùng. Chúng tôi phải đảm bảo luồng nhắc nhở cập nhật được kích hoạt mỗi khi phát hiện có bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_userclicknotification"></a>fbasilentupdate_userclicknotification
+
+Sự kiện này cho thấy người dùng đã bấm vào phần nội dung của thông báo có bản cập nhật sẵn dùng và GUI Microsoft Autoupdate đang khởi chạy. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_userselectinstalllater"></a>fbasilentupdate_userselectinstalllater
+
+Sự kiện này cho thấy người dùng chọn cài đặt sau, sau khi thông báo có bản cập nhật sẵn dùng hiển thị. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="fbasilentupdate_userselectinstallnow"></a>fbasilentupdate_userselectinstallnow
+
+Sự kiện này cho thấy người dùng chọn cài đặt ngay bây giờ sau khi thông báo có bản cập nhật sẵn dùng hiển thị. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installdata_checkrunning"></a>installdata_checkrunning
+
+Sự kiện này sẽ ghi lại kết quả kiểm tra giữa các ứng dụng sẽ cài đặt và liệu những lần thử cài đặt có tiến hành dựa trên ứng dụng đang mở hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installdata_cleanup"></a>installdata_cleanup
+
+Các tệp gói nên được loại bỏ sau khi cài đặt. Sự kiện này ghi lại các phiên bản mà chúng tôi không thể loại bỏ tệp gói. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của tệp đã tải xuống và chi tiết lỗi.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installedapp_invalidbundle"></a>installedapp_invalidbundle
+
+Sự kiện này cho thấy Microsoft Autoupdate không thể truy xuất thông tin về gói của ứng dụng đã đăng ký tại đường dẫn cụ thể. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installedapp_invalidpreference"></a>installedapp_invalidpreference
+
+Sự kiện này ghi lại các trường hợp mà trong đó, phần tùy chọn người dùng chứa mục nhập ứng dụng không hợp lệ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installedapp_nilbundleid"></a>installedapp_nilbundleid
+
+Sự kiện này ghi lại các trường hợp mà trong đó, ID gói của ứng dụng bị thiếu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installedapp_nilbundlename"></a>installedapp_nilbundlename
+
+Sự kiện này ghi lại các trường hợp mà trong đó, tên gói của ứng dụng bị thiếu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installstatus_codesign"></a>installstatus_codesign
+
+Sự kiện này ghi lại trạng thái của nhị phân chứng thực số OS. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+    
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installstatus_daemon"></a>installstatus_daemon
+
+Sự kiện này ghi lại trạng thái của tình trạng đối với daemon Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa chỉ báo cho biết liệu cấu phần Daemon có xuất hiện ở vị trí dự kiến và có được chứng thực số hay không.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installstatus_helper"></a>installstatus_helper
+
+Sự kiện này ghi lại trạng thái của tình trạng đối với công cụ trình trợ giúp Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa chỉ báo cho biết liệu cấu phần PrivilegedHelperTool có xuất hiện ở vị trí dự kiến và có được chứng thực số hay không.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installupdatestask_applaunched"></a>installupdatestask_applaunched
+
+Sự kiện này cho thấy Microsoft Autoupdate phát hiện ứng dụng khởi chạy một bản cập nhật đã chặn nhưng không thể tìm thấy chương trình cài đặt phù hợp. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của ứng dụng đã khởi chạy.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installupdatestask_applaunchwithpendingupdate"></a>installupdatestask_applaunchwithpendingupdate
+
+Sự kiện này cho thấy Microsoft Autoupdate phát hiện ứng dụng khởi chạy một ứng dụng có bản cập nhật đang chờ xử lý. Ứng dụng đã khởi chạy sẽ chấm dứt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installupdatestask_codesignverificationfail"></a>installupdatestask_codesignverificationfail
+
+Sự kiện này cho biết quá trình xác minh Chứng thực số cho bản cập nhật ứng dụng đã không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của ứng dụng được cập nhật và mã lỗi.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installupdatestask_codesignverificationstart"></a>installupdatestask_codesignverificationstart
+
+Sự kiện này cho biết quá trình xác minh Chứng thực số cho bản cập nhật ứng dụng đã bắt đầu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của ứng dụng được cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installupdatestask_codesignverificationsuccess"></a>installupdatestask_codesignverificationsuccess
+
+Sự kiện này cho biết quá trình xác minh Chứng thực số cho bản cập nhật ứng dụng đã thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của ứng dụng được cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installupdatestask_failsilentinstall"></a>installupdatestask_failsilentinstall
+
+Sự kiện này ghi lại lỗi trong khi áp dụng các bản cập nhật tự hành và liệu đây là bản cài đặt sao chép hay bản cài đặt thông thường. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+    
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và loại hình cập nhật.
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installupdatestask_multiplerelocatablepackage"></a>installupdatestask_multiplerelocatablepackage
+
+Sự kiện này cho thấy Microsoft Autoupdate đã tìm thấy nhiều phiên bản của mục nhập ứng dụng dành cho gói cập nhật cụ thể trong tệp kê khai đã tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của bản cập nhật
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installupdatestask_removeclone"></a>installupdatestask_removeclone
+
+Sự kiện này cho biết một bản sao đã bị loại bỏ. Chúng tôi sẽ loại bỏ bản sao sau khi quá trình Cài đặt bản sao hoàn thành hoặc khi một quá trình mới bắt đầu, cũng như khi một phiên bản sao chép cũ được tìm thấy trong máy. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật, tên của gói cập nhật và trạng thái loại bỏ bản sao/ thông tin chi tiết lỗi.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installupdatestask_retryfail"></a>installupdatestask_retryfail
+
+Sự kiện này cho biết đã gặp phải lỗi trong quá trình thử cài đặt lại. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và liệu bản cài đặt có nên được thực hiện thông qua Cài đặt bản sao hay không
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+
+Sự kiện này ghi lại các lỗi giao tiếp trong quá trình (giao tiếp với công cụ trình trợ giúp MAU). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và thông tin chi tiết về lỗi proxy được báo cáo.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+
+Sự kiện này ghi lại các lỗi giao tiếp trong quá trình (giao tiếp với công cụ trình trợ giúp MAU). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và thông tin chi tiết về lỗi proxy được báo cáo.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+
+### <a name="installupdatestask_retryresponse"></a>installupdatestask_retryresponse
+
+Sự kiện này ghi lại rằng lần thử lại không có tác dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật, phiên bản ứng dụng, tên của gói cập nhật và chỉ báo cho biết liệu Cài đặt bản sao đã bật hay chưa, liệu bản cài đặt có thành công và nếu thất bại, có bất kỳ lỗi nào được báo cáo hay không.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installupdatestask_retrysuccess"></a>installupdatestask_retrysuccess
+
+Sự kiện này ghi lại cài đặt bản cập nhật đã thành công sau khi thử lại. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật, phiên bản ứng dụng, tên của gói cập nhật và chỉ báo cho biết liệu Cài đặt bản sao đã bật hay chưa.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="installupdatestask_setreopengui"></a>installupdatestask_setreopengui
+
+Sự kiện này cho thấy liệu tuỳ chọn cài đặt nhằm mở lại GUI sau cài đặt có thành công hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho thấy thao tác thành công.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
+
+Sự kiện này cho thấy lệnh CLI (giao diện dòng máy khách) đã được đưa ra để áp dụng bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa danh sách ID các ứng dụng sẽ cập nhật.
+    
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
+
+Sự kiện này cho thấy mô-đun Giao diện dòng lệnh Microsoft Autoupdate đã nhận được sự kiện Apple để định cấu hình. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
+
+Sự kiện này cho thấy mô-đun Giao diện dòng lệnh Microsoft Autoupdate đã nhận được sự kiện Apple để liệt kê các bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="msupdate_monitor_progress_downloaded"></a>msupdate_monitor_progress_downloaded
+
+Sự kiện này cho thấy các bản cập nhật đã được tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa danh sách các bản cập nhật đã tải xuống
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="msupdate_monitor_progress_failure"></a>msupdate_monitor_progress_failure
+
+Sự kiện này ghi lại danh sách các bản cập nhật đang chờ nhưng không thể áp dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa danh sách các bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="msupdate_monitor_progress_finished"></a>msupdate_monitor_progress_finished
+
+Sự kiện này ghi lại danh sách các bản cập nhật đang chờ và đã hoàn tất cài đặt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa danh sách các bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="msupdate_monitor_progress_queued"></a>msupdate_monitor_progress_queued
+
+Sự kiện này ghi lại danh sách các bản cập nhật đang chờ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa danh sách các bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="optinnotificationaction"></a>Optinnotificationaction
+
+Sự kiện này sẽ ghi lại phản hồi của người dùng vào hộp thoại chọn tham gia để đăng ký cập nhật tự hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa văn bản tĩnh đại diện cho lựa chọn Tự động tải xuống và Cài đặt của người dùng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="sauupdateinfoprovider"></a>sauupdateinfoprovider
+
+Sự kiện này sẽ ghi lại bất cứ khi nào khóa kê khai trong tệp bổ sung bị thiếu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa chuỗi dùng để tìm kiếm vị trí hoặc kích thước bản cập nhật.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatecore_appregistration"></a>updatecore_appregistration
+
+Sự kiện này sẽ ghi lại các lần thử đăng ký ứng dụng và kết quả/ lý do. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã định danh dùng để theo dõi hoạt động cập nhật, cho thấy liệu tuỳ chọn có sẵn dùng không, liệu đây có phải là lần đăng ký lại và liệu có bắt buộc đăng ký hay không.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatecore_loadinglaunchagent"></a>updatecore_loadinglaunchagent
+
+Sự kiện này cho thấy Tác vụ khởi chạy đang được tải. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
+
+Sự kiện này ghi lại các lỗi xảy ra trong khi tiếp cận với CDN. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa thông tin về tên máy chủ, liệu máy chủ có hợp lệ và có thể truy nhập hay không.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
+
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại là không thể truy xuất ngày tháng từ siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
+
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+    
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefilterhelper_missingbuilddate"></a>updatefilterhelper_missingbuilddate
+
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefilterhelper_updatebypassedoldage"></a>updatefilterhelper_updatebypassedoldage
+
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại dịch vụ bị bỏ qua do ngày cập nhật đã cũ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_check_start"></a>updatefinder_check_start
+
+Sự kiện này sẽ ghi lại bất cứ khi nào chúng tôi bắt đầu hoạt động kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+    
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa thông tin về các bản cập nhật đề xuất, các ứng dụng đã đăng ký và vị trí tạm thời để lưu các tệp tải xuống.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_check_status"></a>updatefinder_check_status
+
+Sự kiện này tổng hợp lại trạng thái của thao tác kiểm tra bản cập nhật (hình phễu từ bước tìm kiếm cho đến tải xuống). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa thông tin về các bản cập nhật đề xuất, các ứng dụng đã đăng ký và vị trí tạm thời để lưu các tệp tải xuống.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_check_updatefound"></a>updatefinder_check_updatefound
+
+Chúng tôi sẽ ghi lại bất cứ khi nào tìm thấy bản cập nhật sau thao tác kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_check_updatenotfound"></a>updatefinder_check_updatenotfound
+
+Chúng tôi sẽ ghi lại bất cứ khi nào không tìm thấy bản cập nhật nào để đề xuất sau thao tác kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_check_uptodate"></a>updatefinder_check_uptodate
+
+Chúng tôi sẽ ghi lại bất cứ khi nào không tìm thấy bản cập nhật nào để đề xuất do tất cả các ứng dụng đều đã cập nhật, sau thao tác kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
+
+Chúng tôi sẽ ghi lại bất cứ khi nào chúng tôi chặn bản cập nhật do không đạt các yêu cầu OS. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa phiên bản OS tối thiểu bắt buộc dựa trên cụ thể như trong tệp kê khai đã tải xuống.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
+
+Sự kiện này cho thấy Microsoft Autoupdate không thể tải thông tin gói của ID ứng dụng cụ thể như trong tệp kê khai đã tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_offerupdates_updaterulematched"></a>updatefinder_offerupdates_updaterulematched
+
+Sự kiện này cho biết đã tìm thấy bản cập nhật cho một ứng dụng và đường cơ sở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng và thông tin về phiên bản của gói.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="updatefinder_registeredapps"></a>updatefinder_registeredapps
+
+Chúng tôi sẽ ghi lại các ứng dụng được MAU cài đặt/ đăng ký/ kiểm soát. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID ứng dụng và thông tin về phiên bản của gói.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
+
+Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không thể áp dụng bản cập nhật theo bộ do thiếu tệp bổ sung. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_suite_staleversion"></a>updatefinder_suite_staleversion
+
+Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không thể áp dụng bản cập nhật theo bộ do phiên bản cơ sở đã quá lạc hậu. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của bộ sản phẩm.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_suite_updateapplicable"></a>updatefinder_suite_updateapplicable
+
+Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào có thể áp dụng bản cập nhật theo bộ. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên, đường cơ sở và phiên bản phiên bản của bộ sản phẩm.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_suite_updatenotapplicabledefaultpath"></a>updatefinder_suite_updatenotapplicabledefaultpath
+
+Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không đề xuất cập nhật theo bộ do tất cả các ứng dụng theo bộ đều được cài đặt bằng đường dẫn mặc định. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên, đường cơ sở và phiên bản phiên bản của bộ sản phẩm.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="updatefinder_suite_updatenotapplicableversion"></a>updatefinder_suite_updatenotapplicableversion
+
+Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không đề xuất cập nhật theo bộ do tất cả các ứng dụng theo bộ đều có cùng phiên bản đường cơ sở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên, đường cơ sở và phiên bản phiên bản của bộ sản phẩm.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_suite_updatenotoffered"></a>updatefinder_suite_updatenotoffered
+
+Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không đề xuất cập nhật theo bộ do kích thước của bộ lớn hơn các bản cập nhật riêng lẻ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên của bộ sản phẩm.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatefinder_suite_updateoffered"></a>updatefinder_suite_updateoffered
+
+Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào có đề xuất bản cập nhật theo bộ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa tên, đường cơ sở và phiên bản phiên bản của bộ sản phẩm.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="updatemanager_checkupdate"></a>updatemanager_checkupdate
+
+Sự kiện này ghi lại số lượng bản cập nhật do Microsoft Autoupdate tìm thấy trong khi kiểm tra bản cập nhật sẵn dùng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa số lượng bản cập nhật sẵn dùng được tìm thấy.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="updatemanager_updatespending"></a>updatemanager_updatespending
+
+Sự kiện này cho biết đã tìm thấy các bản cập nhật và đang chờ để cài đặt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa chỉ báo cho biết liệu tác vụ có đang chạy trên luồng chính hay không và số lượng bản cập nhật đang chờ xử lý.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
+
+Sự kiện này cho biết đã tìm thấy các đề xuất bản cập nhật tự hành này. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa số lượng các bản cập nhật được tìm thấy và ID ứng dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="webservices_deltaupdater"></a>webservices_deltaupdater
+
+Sự kiện này ghi lại các tương tác giữa mã máy khách và cổng tính năng có nhiệm vụ kiểm soát xem máy khách có nên cho phép cập nhật Delta hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa phản hồi từ loại dịch vụ web và trình cập nhật để áp dụng.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="webservices_serviceaction"></a>webservices_serviceaction
+
+Chúng tôi sẽ ghi lại bất kỳ lỗi nào do phản hồi dịch vụ web không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa thông tin chi tiết của hành động được đẩy từ dịch vụ web.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="webservices_serviceaction"></a>webservices_serviceaction
+
+Chúng tôi sẽ ghi lại bất kỳ lỗi nào do phản hồi dịch vụ web không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa thông tin chi tiết của hành động được đẩy từ dịch vụ web.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+### <a name="webservices_serviceresponse"></a>webservices_serviceresponse
+
+Sự kiện này ghi lại các yêu cầu đối với Dịch vụ MAU, thời gian phản hồi cũng như các lỗi. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID của yêu cầu, tên ứng dụng, thời gian phản hồi và/ hoặc mã trạng thái.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+    
+### <a name="webservices_silentupdate"></a>webservices_silentupdate
+
+Chúng tôi sẽ ghi lại các yêu cầu kiểm tra bất kỳ quy tắc áp dụng "cập nhật bắt buộc” nào, nghĩa là chúng tôi phải đưa người dùng đi từ bản dựng N sang bản dựng N + 1 do một số vấn đề lớn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID của yêu cầu, tên ứng dụng, thời gian phản hồi và/ hoặc mã trạng thái.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+
+
+### <a name="webservices_webcontent"></a>webservices_webcontent
+
+Chúng tôi sẽ ghi lại các yêu cầu và phản hồi nhận được vào dịch vụ web. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa ID người gọi dịch vụ web
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh cho phiên
+
+## <a name="onenote-sync-events"></a>Sự kiện đồng bộ OneNote
+
+### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
+ 
+Sự kiện này ghi lại kết quả đồng bộ sổ tay. Kết quả này dùng để tìm hiểu xem có bao nhiêu mục tiêu đồng bộ duy nhất khi tính điểm đồng bộ OneNote.
+ 
+Các trường sau đây sẽ được thu thập
+
+- **CachedError_Code** - một mã đánh số hoặc chữ số dùng để xác định bản chất của lỗi lưu bộ đệm ẩn và/ hoặc lý do lỗi xảy ra
+
+- **CachedError_Description** – mô tả lỗi lưu bộ đệm ẩn
+
+- **CachedError_Tag** – chỉ ra vị trị đưa ra lỗi lưu bộ đệm ẩn trong mã
+
+- **CachedError_Type** – loại lỗi lưu bộ đệm ẩn, ví dụ: Win32Error, v.v.
+
+- **ExecutionTime** – thời gian tính bằng mili giây để sao chép sổ tay
+
+- **Gosid** – ID không gian đối tượng toàn cầu
+
+- **IdentityType** – kiểu danh tính, ví dụ: Windows Live, ID tổ chức, v.v.
+
+- **InitialReplicationInSession** – bản sao nhân bản này có phải là bản sao nhân bản sổ tay đầu tiên sau khi mở hay không
+
+- **IsBackgroundSync** – đây có phải là đồng bộ nền hay không
+
+- **IsCachedErrorSuppressed** - lỗi lưu bộ đệm ẩn có bị chặn hay không
+
+- **IsCachedErrorUnexpected** – lỗi lưu bộ đệm ẩn có phải là lỗi không mong muốn hay không
+
+- **IsNotebookErrorSuppressed** - lỗi đồng bộ cấp độ sổ tay có bị chặn hay không
+
+- **IsNotebookErrorUnexpected** - lỗi đồng bộ cấp độ sổ tay có phải là lỗi không mong muốn hay không
+
+- **IsSectionErrorSuppressed** - lỗi đồng bộ mục có bị chặn hay không
+
+- **IsSectionErrorUnexpected** - lỗi đồng bộ mục có phải là lỗi không mong muốn hay không
+
+- **IsUsingRealtimeSync** - thao tác đồng bộ hóa sổ tay có dùng đồng bộ nội dung trang hiện đại hay không
+
+- **LastAttemptedSync** - dấu thời gian của thời điểm sổ tay thử đồng bộ lần cuối
+
+- **LastBackgroundSync** - dấu thời gian của thời điểm thử đồng bộ nền gần nhất
+
+- **LastNotebookViewedDate** - ngày xem sổ tay được gần nhất
+
+- **LastSuccessfulSync** - dấu thời gian của thời điểm sổ tay được đồng bộ thành công trước đây
+
+- **NeedToRestartBecauseOfInconsistencies** - thao tác đồng bộ có cần khởi động lại vì lý do không đồng nhất hay không
+
+- **NotebookErrorCode** - mã lỗi đồng bộ hóa cấp độ sổ tay được lưu trên không gian biểu đồ sổ tay
+
+- **NotebookId** – ID sổ tay
+
+- **NotebookType** - loại sổ tay
+
+- **ReplicatingAgainBecauseOfInconsistencies** - thao tác đồng bộ có khởi động lại vì lý do không đồng nhất hay không
+
+- **SectionError_Code** - một mã đánh số hoặc chữ số dùng để xác định bản chất của lỗi đồng bộ mục và/ hoặc lý do lỗi xảy ra
+
+- **SectionError_Description** - mô tả về lỗi đồng bộ mục
+
+- **SectionError_Tag** - chỉ ra vị trí đưa ra lỗi đồng bộ mục trong mã
+
+- **SectionError_Type** – loại lỗi đồng bộ mục, ví dụ: Win32Error, v.v.
+
+- **Success** - thao tác đồng bộ sổ tay có thành công hay không
+
+- **SyncDestinationType** – loại điểm đến của đồng bộ hóa, nghĩa là OneDrive hoặc SharePoint Online
+
+- **SyncId** - một con số duy nhất cho mỗi đồng bộ sổ tay
+
+- **SyncWasFirstInSession** – đây có phải là lần đồng bộ đầu tiên trong phiên hiện tại hay không
+
+- **SyncWasUserInitiated** – đồng bộ này có phải được người dùng khởi tạo hay không
+
+- **TenantId** – ID đối tượng thuê SharePoint
+
+- **TimeSinceLastAttemptedSync** - thời gian kể từ lần thử đồng bộ sổ tay cuối cùng
+
+- **TimeSinceLastSuccessfulSync** - thời gian kể từ lần đồng bộ sổ tay thành công cuối cùng
+
+### <a name="officeonenotestoragerealtimewebsocketsessioninfo"></a>Office.OneNote.Storage.RealTime.WebSocketSessionInfo
+ 
+Sự kiện này ghi lại kết quả đồng bộ hóa WebSocket cho cả đồng bộ hóa nội dung trang hiện đại và đồng bộ hóa phân cấp hiện đại của OneNote. Kết quả này dùng để tìm hiểu xem có bao nhiêu mục tiêu đồng bộ duy nhất khi tính điểm đồng bộ OneNote. Kết quả này cũng dùng cho bảng điều khiển hiệu suất đồng bộ hiện đại của OneNote.
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **CloseReason** - lý do đóng WebSocket, ví dụ: Đóng bất thường, v.v.
+
+- **DataIsFreshCount** - số lượng yêu cầu kéo thành công trong phiên WebSocket
+
+- **DeviceSessionId** - ID phiên của thiết bị
+
+- **DownloadCount** - số lượt tải xuống trong phiên WebSocket
+
+- **Error** - là Exception_Type + Exception_Description + Exception_Code + Exception_Tag cơ bản
+
+- **Exception_Code** - một mã đánh số hoặc chữ số dùng để xác định bản chất của lỗi và/ hoặc lý do lỗi xảy ra
+
+- **Exception_Description** - mô tả về lỗi
+
+- **Exception_Tag** - cho biết vị trí đưa ra lỗi trong mã
+
+- **Exception_Type** - kiểu lỗi, ví dụ: Win32Error, v.v.
+
+- **FirstUpdateSize** - độ dài của thông báo cập nhật đầu tiên
+
+- **HasError** - có lỗi nào trong phiên WebSocket hay không 
+
+- **IsEducationNotebook** - Sổ tay hiện tại có phải sổ tay giáo dục hay không
+
+- **IsHierarchyResource** - Tài nguyên hiện tại là một trang hay một mục
+
+- **NotebookId** - ID sổ tay OneNote
+
+- **OperationWithError** - lỗi đã xảy ra trong thao tác nào, ví dụ: WebSocket.Close, WebSocket.Open, v.v.
+
+- **ResourceId** - trang hoặc ID mục tài nguyên OneNote
+
+- **SectionId** - ID mục OneNote
+
+- **ServerSessionId** - ID phiên dùng để liên kết yêu cầu WebSocket đến onenote.com
+
+- **SessionDurationInMs** - khoảng thời gian tính bằng mili giây của phiên WebSocket
+
+- **TenantId** - ID đối tượng thuê SharePoint
+
+- **TimeToFirstUpdateInMs** - thời gian tính bằng mili giây để nhận bản cập nhật đầu tiên từ phía máy chủ sau khi thiết lập phiên WebSocket
+
+- **UploadAckCount** - số lượng xác nhận tải lên trong phiên WebSocket
+
+- **WebUrl** - PII huỷ bỏ URL web 
+
+### <a name="officeonenotestoragesectionsyncresult"></a>Office.OneNote.Storage.SectionSyncResult
+ 
+Sự kiện này ghi lại kết quả đồng bộ mục. Kết quả này dùng để tìm hiểu xem có bao nhiêu mục tiêu đồng bộ duy nhất khi tính điểm đồng bộ OneNote. Kết quả này cũng dùng cho bảng điều khiển hiệu suất đồng bộ hiện đại của OneNote.
+ 
+Các trường sau đây sẽ được thu thập
+
+- **Error_Code** - một mã đánh số hoặc chữ số dùng để xác định bản chất của lỗi và/ hoặc lý do lỗi xảy ra
+
+- **Error_Description** - mô tả về lỗi
+
+- **Error_Tag** - cho biết vị trí đưa ra lỗi trong mã
+
+- **Error_Type** - kiểu lỗi, ví dụ: Win32Error, v.v.
+
+- **ErrorLast** - mã lỗi của lỗi được phát hiện gần nhất 
+
+- **ExecutionTime** - thời gian tính bằng mili giây để sao chép mục
+
+- **InitialReplicationInSession** - bản sao nhân bản này có phải là bản sao nhân bản sổ tay đầu tiên sau khi mở hay không
+
+- **IsAttachedViaShortcut** - mục có được đính kèm thông qua phím tắt hay không
+
+- **IsBackgroundSync** - đây có phải là đồng bộ nền hay không
+
+- **IsEncrypted** - mục có được mã hóa hay không
+
+- **IsErrorSuppressed** - lỗi có bị chặn hay không 
+
+- **IsErrorTransient** - lỗi này có phải là lỗi nhất thời hay không
+
+- **IsErrorUnexpected** - lỗi này có phải là lỗi không mong muốn hay không
+
+- **IsUsingRealtimeSync** - thao tác đồng bộ mục có dùng đồng bộ nội dung trang hiện đại hay không
+
+- **NotebookId** - ID sổ tay
+
+- **NotebookPath** - PII huỷ bỏ URL sổ tay
+
+- **SectionPath** - PII huỷ bỏ URL mục
+
+- **SectionReplicatingIsOutbound** - bản sao nhân bản này có phải là bản sao nhân bên ngoài hay không
+
+- **SectionReplicatingIsSameIdentity** - bản sao nhân bản này có dựa trên cùng một danh tính tệp hay không
+
+- **SectionResourceId** - ID mục tài nguyên OneNote
+
+- **Success** - thao tác đồng bộ hóa mục có thành công hay không
+
+- **SyncDestinationType** - loại điểm đến của đồng bộ hóa, nghĩa là OneDrive hoặc SharePoint Online
+
+- **SyncId** - một con số duy nhất cho mỗi đồng bộ mục
+
+- **SyncWasFirstInSession** - đây có phải là lần đồng bộ đầu tiên trong phiên hiện tại hay không
+
+- **SyncWasUserInitiated** - đồng bộ này có phải được người dùng khởi tạo hay không
+
+- **TenantId** - ID đối tượng thuê SharePoint
+
+- **UnmappedGosid** - ID mục trước khi áp dụng GUID ánh xạ
+
+
+### <a name="officeonenotestoragesyncscore"></a>Office.OneNote.Storage.SyncScore
+ 
+Sự kiện này ghi lại tất cả các yếu tố tiêu cực trong trải nghiệm đồng bộ sẽ hiển thị với người dùng. Sự kiện này được dùng để tính điểm đồng bộ OneNote, đây là một số liệu quan trọng để đánh giá trải nghiệm đồng bộ hóa của người dùng OneNote.
+ 
+Các trường sau đây sẽ được thu thập
+
+- **AutoShowSyncStatus** - trạng thái đồng bộ hóa có tự động hiển thị hay không
+
+- **Cause** - nguyên nhân khiến cho các trang/ mục của OneNote chuyển đến các mục sai vị trí
+
+- **Context** - bộ đếm phân loại những việc người dùng đang tìm cách thực hiện, ví dụ: đổi tên mục, mở lại sổ tay, v.v.
+
+- **Error_Code** - một mã đánh số hoặc chữ số dùng để xác định bản chất của lỗi và/ hoặc lý do lỗi xảy ra
+
+- **Error_Description** - mô tả về lỗi
+
+- **Error_Tag** - cho biết vị trí đưa ra lỗi trong mã
+
+- **Error_Type** - kiểu lỗi, ví dụ: Win32Error, v.v.
+
+- **ErrorText** - lỗi hiển thị văn bản lỗi trong giao diện người dùng (UI)
+
+- **Explanation** - giải thích loại thay đổi bên ngoài đang chờ xử lý nào cần được chuyển đến các mục sai vị trí
+
+- **fishbowlType** - loại bể cá, ví dụ: trang bể cá, mục bể cá, v.v.
+
+- **IDS** - mã định danh dạng nguyên cho văn bản hiển thị trong giao diện người dùng (UI)
+
+- **idsFishbowl** - mã định danh dạng nguyên cho lỗi bể cá hiển thị trong giao diện người dùng (UI)
+
+- **IsUsingRealtimeHierarchySync** - có đang sử dụng đồng bộ phân cấp hiện đại hay không
+
+- **NotebookId** - ID sổ tay
+
+- **PageSyncUIState** - chuỗi trạng thái đồng bộ hoá trang, ví dụ: UpToDate, Syncing, SaveOffline, SyncError, v.v. 
+
+- **ServerGosid** - ID tài nguyên cho trang xung đột mới tạo
+
+- **Source** - bộ đếm chỉ ra sự kiện nào kích hoạt giao diện người dùng (UI), nghĩa là tạo ra hình ảnh redx mới, đồng bộ lỗi trong giao diện đồng bộ, hiển thị hộp thoại lỗi, v.v.
+
 
 ## <a name="services-configuration-events"></a>Sự kiện Cấu hình dịch vụ
 
@@ -3098,7 +10420,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Platform -** Mã định danh cho môi trường mà Office đang chạy trên đó.
 
-  - **PowerPlatformRole -** Mã định danh về vai trò máy tính ưa thích OEM của thiết bị mà Office đang chạy trên đó.
+  - **PowerPlatformRole -** Mã định danh về vai trò máy tính ưu tiên OEM của thiết bị mà Office đang chạy trên đó.
 
   - **ProcessorCount -** Số lượng bộ vi xử lý trên thiết bị mà Office đang chạy trên đó.
 
