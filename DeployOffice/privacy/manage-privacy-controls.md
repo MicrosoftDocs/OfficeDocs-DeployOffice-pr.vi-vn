@@ -1,5 +1,5 @@
 ---
-title: Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus
+title: Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các thiết đặt chính sách.
+description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các cài đặt chính sách.
 hideEdit: true
 ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
 ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
@@ -22,7 +22,7 @@ ms.contentlocale: vi-VN
 ms.lasthandoff: 08/07/2019
 ms.locfileid: "36238992"
 ---
-# <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus
+# <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
 
 Microsoft cam kết cung cấp cho bạn thông tin và kiểm soát mà bạn cần để đưa ra lựa chọn về cách thu thập và sử dụng dữ liệu của bạn khi bạn sử dụng Office 365 ProPlus.
 
@@ -43,9 +43,9 @@ Sau đây là 5 thiết đặt chính sách mới:
 Các thiết đặt chính sách này có thể được thực hiện bằng cách sử dụng Chính sách nhóm hoặc [dịch vụ chính sách đám mây Office](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Nếu bạn sử dụng Chính sách nhóm, bạn cần tải xuống phiên bản mới nhất của tệp Mẫu quản trị (ADMX/ADML) từ [Trung tâm tải xuống Microsoft](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
-> Để biết thông tin về cách quản lý kiểm soát quyền riêng tư đối với Office cho Mac, hãy xem mục [Sử dụng tùy chọn quản lý các điều khiển quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md).
+> Để biết thông tin về cách quản lý kiểm soát quyền riêng tư đối với Office cho Mac, hãy xem mục [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md).
 
-Nếu bạn sử dụng công cụ quản lý chính sách nhóm, tất cả các thiết đặt chính sách này đều được đặt trong dưới Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.
+Nếu bạn sử dụng công cụ quản lý chính sách nhóm, tất cả các cài đặt chính sách này đều được đặt trong Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.
 
 Các thiết đặt chính sách mới này cũng áp dụng cho các phiên bản Project và Visio trên máy tính để bàn đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2. Chúng cũng áp dụng cho Office 365 Business.
 
@@ -120,7 +120,7 @@ Các trải nghiệm được kết nối này là khác nhau vì chúng không 
 
 Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* để kiểm soát xem các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối tuỳ chọn này sẽ có sẵn cho người dùng của bạn.
 
-Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, người dùng của bạn sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
+Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, họ sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
 Ngoài ra, một số trải nghiệm được kết nối tùy chọn này cũng được coi là trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến. Ví dụ: Chèn ảnh trực tuyến là một trải nghiệm được kết nối tùy chọn, được cung cấp bởi Microsoft Bing, nhưng nó cũng được coi là một trải nghiệm được kết nối tải xuống nội dung trực tuyến. Lưu ý rằng nếu bạn vô hiệu hóa thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tải xuống nội dung trực tuyến trong Office*, tính năng Chèn ảnh trực tuyến sẽ không có sẵn cho người dùng của bạn. Tính năng này sẽ không có sẵn ngay cả khi bạn đã bật thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office*. Để biết thêm thông tin về trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến, hãy xem mục [Trải nghiệm được kết nối trong Office](connected-experiences.md).
 

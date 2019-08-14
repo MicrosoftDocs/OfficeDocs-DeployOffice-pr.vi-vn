@@ -11,7 +11,7 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Cung cấp người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
+description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
 ms.openlocfilehash: e20a2cd70b8c5fbc47abac7288627cd2783855e7
 ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
@@ -25,9 +25,9 @@ ms.locfileid: "36239157"
 Nếu bạn có tài khoản cơ quan hoặc trường học, người quản trị tổ chức của bạn có thể cung cấp cho bạn khả năng sử dụng một hoặc nhiều dịch vụ được hỗ trợ trên nền tảng đám mây (còn được gọi là “trải nghiệm được kết nối tùy chọn”) trong khi sử dụng các ứng dụng Office 365 ProPlus. Các dịch vụ dựa trên đám mây này là tùy chọn. Việc bạn có sử dụng chúng hay không là tuỳ thuộc vào bạn. Chúng được cung cấp cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Trong một số trường hợp, các điều khoản khác cũng có thể áp dụng. Bài viết này liệt kê các dịch vụ được hỗ trợ bởi đám mây, giải thích thêm về các điều khoản sử dụng của chúng và mô tả cách bạn có thể tắt hoặc bật dịch vụ bất cứ lúc nào.
 
 > [!NOTE]
-> Nếu bạn là người quản trị, hãy xem các bài viết sau đây để tìm hiểu cách tạo hoặc giới hạn khả năng sử dụng cho người dùng của bạn trong việc sử dụng trải nghiệm đã kết nối tùy chọn:
-> - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
-> - [Sử dụng các tùy chọn để quản lý điều khiển quyền riêng tư đối với Office cho máy Mac](mac-privacy-preferences.md)
+> Nếu bạn là người quản trị, hãy xem các bài viết sau đây để tìm hiểu cách cho phép hoặc hạn chế khả năng sử dụng của người dùng của bạn trong việc sử dụng trải nghiệm được kết nối tùy chọn:
+> - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+> - [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho máy Mac](mac-privacy-preferences.md)
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Nếu bạn sử dụng các dịch vụ này, bạn cần đồng ý với những điều khoản sử dụng nào?
 
@@ -55,11 +55,11 @@ Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đ
 
 ### <a name="microsoft-error-reporting-program-merp"></a>Chương trình Báo cáo Lỗi Microsoft (MERP) 
 
-MERP kết nối với dịch vụ Watson.microsoft.com để gửi dữ liệu chẩn đoán khi ứng dụng máy khách Office chạy trên các thiết bị Mac gặp sự cố. Nó thuộc sở hữu của Microsoft và các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [Điều khoản về quyền riêng tư của Microsoft](https://privacy.microsoft.com/) sẽ được áp dụng. MERP không áp dụng cho các ứng dụng máy khách Office chạy trên Windows.
+MERP kết nối với dịch vụ Watson.microsoft.com để gửi dữ liệu chẩn đoán khi ứng dụng máy khách Office chạy trên các thiết bị Mac gặp sự cố. Chương trình này thuộc sở hữu của Microsoft và các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [Điều khoản về quyền riêng tư của Microsoft](https://privacy.microsoft.com/) sẽ được áp dụng. MERP không áp dụng cho các ứng dụng máy khách Office chạy trên Windows.
 
 ### <a name="research"></a>Nghiên cứu
 
-[Nghiên cứu](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397) kết nối với các dịch vụ dựa trên đám mây để có được kết quả về từ điển, từ điển đồng nghĩa, dịch thuật và tra cứu từ. Khi bạn sử dụng trải nghiệm này, nó sẽ kết nối với các dịch vụ do Microsoft sở hữu theo mặc định và [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/) sẽ được áp dụng. Nghiên cứu cho phép bạn thêm các nhà cung cấp dịch vụ khác. Nếu bạn quyết định sử dụng nhà cung cấp dịch vụ khác, các điều khoản bổ sung có thể được áp dụng.
+[Nghiên cứu](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397) kết nối với các dịch vụ dựa trên đám mây để nhận các kết quả về từ điển, từ điển đồng nghĩa, dịch thuật và tra cứu từ. Khi bạn sử dụng trải nghiệm này, nó sẽ kết nối với các dịch vụ do Microsoft sở hữu theo mặc định và [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/) sẽ được áp dụng. Nghiên cứu cho phép bạn thêm các nhà cung cấp dịch vụ khác. Nếu bạn quyết định sử dụng nhà cung cấp dịch vụ khác, các điều khoản bổ sung có thể được áp dụng.
 
 > [!NOTE]
 > Nghiên cứu khác với Trình nghiên cứu. Trong các phiên bản mới hơn của Office, một trải nghiệm khác gọi là Trình nghiên cứu sẽ sẵn dùng bên cạnh trải nghiệm Nghiên cứu. Trình nghiên cứu là một dịch vụ mới hơn, được hỗ trợ bởi Bing và được thảo luận ở phía trên bên dưới phần [Trải nghiệm dựa trên Bing](#experiences-that-rely-on-bing).
@@ -84,15 +84,15 @@ Khi bạn đi đến **Trợ giúp** > **Phản hồi** và cung cấp phản h�
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Cách xác định xem người quản trị của bạn có cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn không
 
-Để xác định xem người quản trị của bạn có cung cấp cho bạn khả năng sử dụng bất kỳ trải nghiệm được kết nối tùy chọn nào trong ứng dụng Office 365 ProPlus trên thiết bị Windows hay không, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết : “Người quản trị tổ chức của bạn quản lý thiết đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
+Để xác định xem người quản trị của bạn có cung cấp cho bạn khả năng sử dụng bất kỳ trải nghiệm được kết nối tùy chọn nào trong ứng dụng Office 365 ProPlus trên thiết bị Windows hay không, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết : “Người quản trị tổ chức của bạn quản lý các cài đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
 
-Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại thiết đặt Quyền riêng tư Tài khoản mà bạn có thể chọn tùy chọn quyền riêng tư của mình.
+Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
-## <a name="your-privacy-settings"></a>Thiết đặt quyền riêng tư của bạn
+## <a name="your-privacy-settings"></a>Cài đặt quyền riêng tư của bạn
 
-Nếu người quản trị của bạn cung cấp cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn trong ứng dụng Office 365 ProPlus trên thiết bị Windows, bạn có thể đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt** để quản lý thiết đặt của mình bất cứ lúc nào. Khi được bật, bạn sẽ có tùy chọn sử dụng các dịch vụ được mô tả trong bài viết này khi bạn muốn sử dụng chúng. Khi bị tắt, chúng sẽ không thể truy cập được.
+Nếu người quản trị của bạn cung cấp cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn trong ứng dụng Office 365 ProPlus trên thiết bị Windows, bạn có thể đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý cài đặt** để quản lý cài đặt của mình bất cứ lúc nào. Khi các cài đặt này được bật, bạn sẽ có tùy chọn sử dụng các dịch vụ được mô tả trong bài viết này khi bạn muốn sử dụng chúng. Các cài đặt này sẽ không thể truy cập được khi bị tắt.
 
-Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại thiết đặt Quyền riêng tư Tài khoản mà bạn có thể chọn tùy chọn quyền riêng tư của mình.
+Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
 ## <a name="diagnostic-data"></a>Dữ liệu chẩn đoán
 
@@ -103,4 +103,4 @@ Khi bạn sử dụng bất kỳ dịch vụ tùy chọn dựa trên đám mây 
 
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
-- [Thiết đặt Quyền riêng tư Tài khoản](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
+- [Cài đặt Quyền riêng tư Tài khoản](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
