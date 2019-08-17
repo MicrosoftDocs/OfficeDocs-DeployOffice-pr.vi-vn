@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus, bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: a362a50b3d75e0792623745ef32fb93b4e458a41
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
+ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238953"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36441623"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -65,7 +65,8 @@ Người dùng của bạn sẽ không thể thay đổi cấp độ dữ liệu
 Dữ liệu chẩn đoán này không bao gồm tên của người dùng, địa chỉ email hoặc nội dung của các tệp Office của họ. Hệ thống của chúng tôi tạo một ID duy nhất liên kết với dữ liệu chẩn đoán của người dùng của bạn. Khi chúng tôi nhận được dữ liệu chẩn đoán cho thấy một trong số các ứng dụng của chúng tôi đã gặp sự cố 100 lần, ID duy nhất này sẽ cho phép chúng tôi xác định xem đó có phải là một người dùng đã gặp sự cố 100 lần hay không đó là 100 người dùng khác nhau từng gặp sự cố một lần. Chúng tôi không sử dụng ID duy nhất này để xác định một người dùng cụ thể.
 
 Để xem dữ liệu chẩn đoán nào đang được gửi tới Microsoft, bạn có thể sử dụng Trình xem dữ liệu chẩn đoán mà bạn có thể tải xuống và cài đặt miễn phí từ Microsoft Store.
-7 Để biết thêm thông tin, hãy xem các nguồn sau:
+
+Để biết thêm thông tin, hãy xem các nguồn sau:
 
 - [Dữ liệu chẩn đoán bắt buộc cho Office](required-diagnostic-data.md)
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
