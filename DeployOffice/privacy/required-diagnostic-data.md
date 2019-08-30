@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: e6078bf96c60d0f01aeaea0cabe32f135a8fa1a3
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
+ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238930"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36656140"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -954,27 +954,19 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeprogrammabilityadd-insinternalsetconnectenterprise"></a>Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
-Sự kiện được tạo ra khi phần bổ trợ COM được tải trên thiết bị doanh nghiệp. Phân tích trên máy tính:\# của tải được sử dụng làm mẫu số để tính toán trạng thái (sự cố \#/tải \#) để tính toán các chỉ số trạng thái cho các vòng thử nghiệm và sản xuất trong các kịch bản doanh nghiệp. Điều này đòi hỏi dữ liệu phải chính xác, không được lấy mẫu vì số lượng thiết bị nhỏ hơn (100-1K).
+Sự kiện được tạo ra khi tải phần bổ trợ COM trên thiết bị doanh nghiệp. 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Add-inconnectFlag** – Hành vi tải hiện tại
+  - **Activity Result** - Trạng thái kết nối thành công
 
-  - **Add-inDescription** – Mô tả phần bổ trợ
+  - **Add-inconnectFlag** – hành vi tải hiện tại
 
-  - **Add-inFileName** – Tên tệp phần bổ trợ không bao gồm đường dẫn tệp
+  - **Add-inId** – ID lớp của phần bổ trợ
 
-  - **Add-inFriendlyName** – Tên thân thiện của phần bổ trợ
+  - **Add-inTimeDateStamp** – dấu thời gian của phần bổ trợ từ siêu dữ liệu DLL
 
-  - **Add-inId** – ID lớp phần bổ trợ
-
-  - **Add-inProgId** – ID tiến trình phần bổ trợ
-
-  - **Add-inProvider** – Nhà cung cấp phần bổ trợ
-
-  - **Add-inTimeDateStamp** – Dấu thời gian phần bổ trợ từ siêu dữ liệu DLL
-
-  - **Add-inVersion** – Phiên bản phần bổ trợ
+  - **IsBootInProgress** – liệu ứng dụng Office có đang trong quá trình khởi động hay không
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -1967,7 +1959,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
  
-Sự kiện này ghi lại kết quả đồng bộ sổ tay. Nó được sử dụng để tìm hiểu xem có bao nhiêu mục tiêu đồng bộ duy nhất khi tính điểm số đồng bộ OneNote.
+Sự kiện này ghi lại kết quả đồng bộ sổ tay. Kết quả này dùng để tìm hiểu xem có bao nhiêu mục tiêu đồng bộ duy nhất khi tính điểm đồng bộ OneNote.
  
 Các trường sau đây sẽ được thu thập
 
@@ -3016,13 +3008,11 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-Thu thập bất cứ khi nào thao tác in hoặc xuất PDF hoàn thành và chứa thông tin về loại bố cục cũng như sự thành công của thao tác. Thông tin này rất quan trọng để xác định sự thành công của thao tác in và xuất PDF cho ứng dụng của chúng tôi.
+Được thu thập bất cứ khi nào thao tác xuất PDF hoàn thành và có chứa thông tin về thao tác đã thành công. Thông tin này rất quan trọng nhằm xác định thao tác xuất PDF đã thành công cho ứng dụng của chúng tôi.
 
 Các trường sau đây sẽ được thu thập:
 
-- **Data_ExportAsPDFSucceed** - Boolean cho biết nếu thao tác xuất dưới dạng PDF thành công.
-
-- **Data_SavePrintLayoutType** - Kiểu bố trí in tại thời điểm bắt đầu thao tác in hoặc xuất.
+- **Data_ExportAsPDFSucceed** - Boolean cho biết thao tác xuất dưới dạng PDF có thành công hay không.
 
 
 #### <a name="officepowerpointpptsharedslideshowfailure"></a>Office.PowerPoint.PPT.Shared.SlideShow.Failure
@@ -3404,7 +3394,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.sourceTextLength** - Chiều dài của văn bản để dịch
 
-- **Data.sourceTextWords** - Số từ trong văn bản để dịch
+- **Data.sourceTextWords** - Số lượng từ trong văn bản cần dịch
 
 - **Data.warningMessage** - Thông báo cảnh báo được dịch vụ báo cáo
 
@@ -5602,10 +5592,9 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
-Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố
+Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố trong phiên bản dành cho người tiêu dùng của các ứng dụng Office. 
 
-Phân tích trên máy tính: Công cụ này được sử dụng làm tử số trong tính toán trạng thái dành riêng cho doanh nghiệp cho các phần bổ trợ được sử dụng để phỏng đoán trong quá trình thử nghiệm nếu phần bổ trợ "sẵn sàng nâng cấp" trong vòng sản xuất.  
-Thông tin chuyên sâu toàn cầu: Công cụ này được sử dụng để tính toán mức độ "sẵn sàng" toàn cầu, không dành riêng cho doanh nghiệp cho phần bổ trợ sau đó được xuất bản trên readyforwindows.com và các công cụ khác như Bộ công cụ về Tính sẵn sàng
+Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được xuất bản trên readyforwindows.com và các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5617,15 +5606,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **AddinId** – ID lớp phần bổ trợ
 
-- **AddinProgId** – ID tiến trình phần bổ trợ
+- **AddinProgId** – không dùng nữa
 
-- **AddinFriendlyName** – Tên thân thiện của phần bổ trợ
+- **AddinFriendlyName** – không dùng nữa
 
-- **AddinTimeDateStamp** – Dấu thời gian phần bổ trợ từ siêu dữ liệu DLL
+- **AddinTimeDateStamp** – dấu thời gian của phần bổ trợ từ siêu dữ liệu DLL
 
-- **AddinVersion** – Phiên bản phần bổ trợ
+- **AddinVersion** – không dùng nữa
 
-- **AddinFileName** – Tên tệp bổ trợ không bao gồm đường dẫn tệp
+- **AddinFileName** – không dùng nữa
 
 - **VSTOAddIn** – Phần bổ trợ có phải là VSTO hay không
 
@@ -5635,34 +5624,33 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilitycomaddinunhandledexceptionenterprise"></a>Office.Extensibility.COMAddinUnhandledExceptionEnterprise
 
-Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố.  Công cụ này được sử dụng làm tử số trong tính toán trạng thái dành riêng cho doanh nghiệp cho các phần bổ trợ được sử dụng để phỏng đoán trong quá trình thử nghiệm nếu phần bổ trợ "sẵn sàng nâng cấp" trong vòng sản xuất.
+Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố trong phiên bản dành cho doanh nghiệp của các ứng dụng Office.
 
-Các trường sau được thu thập (Lưu ý rằng các trường này được viết dưới dạng giữ chỗ để ngăn chặn các tập lệnh hiện có: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName)
-
-
-- **AddinConnectFlag** – Hành vi tải hiện tại
-
-- **AddinFileName** - Trường trống - lỗi thời
-
-- **AddinFriendlyName** - Trường trống - lỗi thời
-
-- **AddinId** – ID lớp phần bổ trợ
-
-- **AddinProgId** - Trường trống - lỗi thời
-
-- **AddinTimeDateStamp** – Dấu thời gian phần bổ trợ từ siêu dữ liệu DLL
-
-- **AddinVersion** - Trường trống - lỗi thời
-
-- **Interface** – Giao diện Office nơi xảy ra ngoại lệ
-
-- **LoadAttempts** – Số lần thử tải phần bổ trợ
-
-- **Method** – Phương pháp Office nơi mà ngoại lệ đã xảy ra
+Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được xuất bản trên readyforwindows.com và các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
 
 - **ScopeId** – Phạm vi chuỗi hội thoại hiện tại
 
+- **Method** – Phương pháp Office nơi mà ngoại lệ đã xảy ra
+
+- **Interface** – Giao diện Office nơi xảy ra ngoại lệ
+
+- **AddinId** – ID lớp phần bổ trợ
+
+- **AddinProgId** – không dùng nữa
+
+- **AddinFriendlyName** – không dùng nữa
+
+- **AddinTimeDateStamp** – dấu thời gian của phần bổ trợ từ siêu dữ liệu DLL
+
+- **AddinVersion** – không dùng nữa
+
+- **AddinFileName** – không dùng nữa
+
 - **VSTOAddIn** – Phần bổ trợ có phải là VSTO hay không
+
+- **AddinConnectFlag** – Hành vi tải hiện tại
+
+- **LoadAttempts** – Số lần thử tải phần bổ trợ
 
 #### <a name="officeextensibilitysandboxodpactivationheartbeat"></a>Office.Extensibility.Sandbox.ODPActivationHeartbeat
 
@@ -6050,7 +6038,11 @@ Các trường sau đây sẽ được thu thập:
 
 Các trường sau đây sẽ được thu thập:
 
-  - **ActivationKind** - Ứng dụng đã được khởi động bằng cách khởi chạy từ menu Bắt đầu, bằng cách mở tệp hay thông qua Tự động hoá OLE.
+  - **ActivationKind** - Liệu ứng dụng đã bắt đầu bằng cách khởi chạy từ menu Bắt đầu, mở tệp hay thông qua Tự động hoá OLE.
+  
+  - **BootToStart** - Liệu người dùng có chọn hiển thị màn hình bắt đầu khi ứng dụng này khởi chạy hay không.
+
+  - **DocLocation** -  Khi mở tài liệu, cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v).
 
   - **FirstBoot** - Đây có phải là lần khởi động đầu tiên của ứng dụng hay không.
 
@@ -6064,9 +6056,39 @@ Các trường sau đây sẽ được thu thập:
 
   - **WorkingSetPeakMB** - Dung lượng bộ nhớ lớn nhất tính bằng megabyte đã từng có từ trước đến nay trong bộ làm việc của quy trình.
 
+#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+
+Hoạt động theo dõi xem liệu trình Người dùng nội bộ Office có thể được hiển thị cho người dùng trên tab Tài khoản trong giao diện người dùng Backstage Office hay không.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data_CanShow** - Cho biết liệu trình Người dùng nội bộ Office có thể được hiển thị cho người dùng trên tab Tài khoản trong giao diện người dùng Backstage Office hay không.
+  
+  - **Data_Event** - Chưa được sử dụng
+
+  - **Data_EventInfo** - Chưa được sử dụng
+
+  - **Data_Reason** - Chưa được sử dụng
+ 
+
+#### <a name="officeuxofficeinsiderregistercurrentinsider"></a>Office.UX.OfficeInsider.RegisterCurrentInsider
+
+Tín hiệu quan trọng nhằm theo dõi thao tác đăng ký người dùng đối với người chưa đăng ký làm người dùng nội bộ Office trước đây bằng các bản dựng Người dùng nội bộ Office thành công hay thất bại. Kịch bản chính cho tín hiệu này là Người dùng nội bộ Office hiện tại, là người đã tham gia chương trình Người dùng nội bộ Office trước khi đăng ký Người dùng nội bộ Office đã được thêm vào.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_RegisterInsider** - Trạng thái đăng ký Người dùng nội bộ Office
+
+- **Data_RegisterInsiderHr** - Mã kết quả khi đăng ký Người dùng nội bộ Office
+
+- **Data_RegistrationStateCurrent** - Trạng thái đăng ký hiện tại
+
+- **Data_RegistrationStateDesired** - Trạng thái đăng ký đã yêu cầu
+
+
 #### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
 
-Theo dõi tín hiệu quan trọng tương tác người dùng với hộp thoại Tham gia người dùng nội bộ Office. Nó được sử dụng để xác định mọi sự cố trong việc thực hiện các thay đổi do người dùng khởi tạo như chúng tôi tham gia/rời khỏi chương trình Người dùng nội bộ Office và thay đổi cấp độ Người dùng nội bộ Office.
+Tín hiệu quan trọng theo dõi tương tác của người dùng đối với hộp thoại Tham gia người dùng nội bộ Office. Tín hiệu được dùng để xác định bất kỳ sự cố nào trong khi thực hiện các thay đổi do người dùng khởi tạo như tham gia hoặc rời khỏi chương trình Người dùng nội bộ Office và thay đổi cấp độ Người dùng nội bộ Office.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -6084,21 +6106,13 @@ Các trường sau đây sẽ được thu thập:
     
 - **Data_RegisterInsider** - Trạng thái đăng ký Người dùng nội bộ Office
 
-- **Data_RegisterInsiderHr** - Mã kết quả cho đăng ký Người dùng nội bộ Office
+- **Data_RegisterInsiderHr** - Mã kết quả khi đăng ký Người dùng nội bộ Office
 
-#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+- **Data_RegistrationStateCurrent** - Trạng thái đăng ký hiện tại
 
-Hoạt động theo dõi xem liệu trình Người dùng nội bộ Office có thể được hiển thị cho người dùng trên tab Tài khoản trong giao diện người dùng Backstage Office hay không.
+- **Data_RegistrationStateDesired** - Trạng thái đăng ký đã yêu cầu
 
-Các trường sau đây sẽ được thu thập:
 
-  - **Data_CanShow** - Cho biết liệu trình Người dùng nội bộ Office có thể được hiển thị cho người dùng trên tab Tài khoản trong giao diện người dùng Backstage Office hay không.
-  
-  - **Data_Event** - Chưa được sử dụng
-
-  - **Data_EventInfo** - Chưa được sử dụng
-
-  - **Data_Reason** - Chưa được sử dụng
 
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender

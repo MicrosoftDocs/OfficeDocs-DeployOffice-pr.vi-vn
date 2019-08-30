@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 3931f44787008e076807fe59746bccf015452ac3
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 785cd7f3e881d61be0ee3ee72924efb695e2f5a7
+ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239193"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36656212"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -28,7 +28,7 @@ ms.locfileid: "36239193"
 > - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
 > - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
 >
-> Thông tin này cũng áp dụng cho Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
+> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
 Office bao gồm các ứng dụng phần mềm máy khách và những trải nghiệm kết nối được thiết kế nhằm cho phép bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối có sẵn cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không thể bị vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình. Bạn có thể xem dữ liệu này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
@@ -1842,7 +1842,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -2777,7 +2777,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinglicensingbar"></a>Office.Licensing.LicensingBar
 
-Nếu thiết bị đang phải đối mặt với vấn đề cấp phép và cuối cùng chúng tôi hiển thị thanh cái cho người dùng, chúng tôi sẽ gửi tín hiệu này cũng báo cáo loại thanh cái được hiển thị cho người dùng. Điều quan trọng là cần phát hiện xem người dùng có đang trong trạng thái tốt và không bị thiếu chức năng hay không, kết quả này được sử dụng cho tình trạng hệ thống và mục đích chẩn đoán trong trường hợp người dùng báo cáo sự cố về máy của họ.
+Nếu thiết bị đang phải đối mặt với vấn đề cấp phép và cuối cùng chúng tôi hiển thị thanh cái cho người dùng, chúng tôi sẽ gửi tín hiệu này cũng báo cáo loại thanh cái được hiển thị cho người dùng. Điều quan trọng là cần phát hiện xem người dùng có đang trong trạng thái tốt và không bị thiếu chức năng hay không, kết quả này được dùng cho tình trạng hệ thống và mục đích chẩn đoán trong trường hợp người dùng báo cáo có sự cố với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4664,7 +4664,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
 
-Sự kiện này cho biết người dùng đã chọn làm theo đề xuất cảnh báo được đưa ra, đề xuất này liên quan đến việc khởi chạy hành động cài đặt phần mềm. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Sự kiện này cho biết người dùng đã chọn làm theo đề xuất cảnh báo được đưa ra và đề xuất này liên quan đến việc khởi chạy hành động cài đặt phần mềm. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -10504,8 +10504,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **SysVolSizeMB -** Lượng dung lượng cho dung lượng hệ thống tính bằng megabyte.
 
-<!-- end list -->
-
   - **WindowsErrorReportingMachineId -** Mã định danh máy được chỉ định cho báo cáo lỗi Windows của thiết bị mà Office đang chạy trên đó.
 
   - **WindowsSqmMachineId -** Mã định danh máy được chỉ định cho Windows của thiết bị mà Office đang chạy trên đó.
@@ -10592,7 +10590,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Platform -** Mã định danh cho môi trường mà Office đang chạy trên đó.
 
-  - **PowerPlatformRole -** Mã định danh về vai trò máy tính ưa thích OEM của thiết bị mà Office đang chạy trên đó.
+  - **PowerPlatformRole -** Mã định danh về vai trò máy tính ưu tiên OEM của thiết bị mà Office đang chạy trên đó.
 
   - **ProcessorCount -** Số lượng bộ vi xử lý trên thiết bị mà Office đang chạy trên đó.
 
@@ -11163,6 +11161,12 @@ Các trường sau đây sẽ được thu thập:
   - **ErrorMessage** - Phân tích thông báo lỗi
 
   - **NodeName** - Nút mà quá trình phân tích không thành công
+
+### <a name="officetelemetrydynamicconfigpopulatedrequestignored"></a>Office.Telemetry.DynamicConfig.PopulatedRequestIgnored
+
+Sự kiện này được tạo ra khi chúng tôi không thể thiết lập đường ống dẫn cấu hình đo từ xa.
+
+Sự kiện này không thu thập trường nào.
 
 ### <a name="officetelemetrydynamicconfigpopulatetreecalledagain"></a>Office.Telemetry.DynamicConfig.PopulateTreeCalledAgain
 
