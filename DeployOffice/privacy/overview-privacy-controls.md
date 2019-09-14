@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus, bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
-ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
+ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
+ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36441623"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980384"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -37,8 +37,9 @@ Là một phần của những thay đổi này, có các cài đặt chính sá
 > - Những thay đổi này cũng được áp dụng cho những phiên bản sau đây:
 >   - Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 >   - Phiên bản 1904 trở lên của Project và Visio trên máy tính đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
-> - Biện pháp kiểm soát quyền riêng tư được phát hành trong phiên bản 1904 dự kiến sẽ có sẵn trong các Kênh Nửa năm một lần (nhóm mục tiêu) vào tháng 9/2019 và Kênh Nửa năm một lần vào tháng 1/2020.
-> - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được cải thiện này cho các máy khách Office bổ sung, bao gồm Teams và các ứng dụng dành cho thiết bị di động. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365.
+> - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh nửa năm một lần (Nhóm mục tiêu) được phát hành vào ngày 10/9/2019. Dự kiến, chúng sẽ sẵn dùng trong các Kênh nửa năm một lần vào tháng 01/2020.
+> - Theo kế hoạch, các biện pháp kiểm soát quyền riêng tư này sẽ được áp dụng trong nửa sau của tháng 10/2019 đối với các phiên bản iOS của Excel, OneNote, PowerPoint, Visio và Word. Chúng tôi sẽ cung cấp thêm thông tin trong đầu tháng 10.
+> - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được tăng cường này cho các máy khách Office bổ sung, bao gồm Teams và các ứng dụng dành cho thiết bị di động. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Dữ liệu chẩn đoán được gửi từ Office 365 ProPlus đến Microsoft
 
