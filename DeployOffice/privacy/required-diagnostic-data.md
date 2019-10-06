@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: a5770d3ed30f86dfbf1cb1dfc4a45bbb15179da8
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656140"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386987"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -124,31 +124,31 @@ Danh mục này chứa các trường sau đây:
 
   - **DiagnosticConsentSourceLocation** – Cho biết cách người dùng đã cung cấp sự chấp thuận cho dữ liệu chẩn đoán
 
-  - **DiagnosticConsentConsentTime** – Cho biết khi người dùng cung cấp sự chấp thuận cho dữ liệu chẩn đoán
+  - **DiagnosticConsentConsentTime** – Cho biết thời điểm người dùng đã cung cấp sự chấp thuận cho dữ liệu chẩn đoán. Ngày tháng sẽ xuất hiện dưới dạng ngày có thể đọc được hoặc ngày được mã hóa trông giống như một số lớn.
 
   - **ServiceConnectionState** – Cho biết người dùng đã chọn sử dụng hay không sử dụng tất cả các trải nghiệm được kết nối
 
   - **ServiceConnectionStateSourceLocation** – Cho biết cách người dùng cung cấp lựa chọn có sử dụng tất cả các trải nghiệm được kết nối hay không
 
-  - **ServiceConnectionStateConsentTime** – Cho biết thời điểm người dùng chọn có sử dụng tất cả các trải nghiệm được kết nối hay không
+  - **ServiceConnectionStateConsentTime** – Cho biết thời điểm người dùng chọn có sử dụng tất cả các trải nghiệm được kết nối hay không. Ngày tháng sẽ xuất hiện dưới dạng ngày có thể đọc được hoặc ngày được mã hóa trông giống như một số lớn.
 
   - **ControllerConnectedServicesState** – Cho biết người dùng đã có quyền truy cập vào các trải nghiệm được kết nối tùy chọn hay không
 
   - **ControllerConnectedServicesStateSourceLocation** – Cho biết cách lựa chọn của người dùng cho các trải nghiệm được kết nối tùy chọn đã được thực hiện
 
-  - **ControllerConnectedServicesStateConsentTime** – Cho biết thời điểm người dùng chọn trạng thái trải nghiệm kết nối tùy chọn
+  - **ControllerConnectedServicesStateConsentTime** – Cho biết thời điểm người dùng chọn trạng thái trải nghiệm được kết nối tùy chọn. Ngày tháng sẽ xuất hiện dưới dạng ngày có thể đọc được hoặc ngày được mã hóa trông giống như một số lớn.
 
   - **UserContentDependentState** – Cho biết người dùng đã chọn bật hay tắt các trải nghiệm được kết nối để phân tích nội dung
 
   - **UserContentDependentStateSourceLocation** – Cho biết cách lựa chọn bật hoặc tắt của người dùng được tạo cho các trải nghiệm được kết nối phân tích nội dung
 
-  - **UserContentDependentStateConsentTime** – Cho biết thời điểm người dùng chọn bật hoặc tắt trải nghiệm được kết nối để phân tích nội dung được thực hiện
+  - **UserContentDependentStateConsentTime** – Cho biết thời điểm người dùng chọn bật hoặc tắt trải nghiệm được kết nối để phân tích nội dung được thực hiện. Ngày tháng sẽ xuất hiện dưới dạng ngày có thể đọc được hoặc ngày được mã hóa trông giống như một số lớn.
 
   - **DownloadContentState** – Cho biết người dùng đã chọn bật hay tắt các trải nghiệm được kết nối để tải xuống nội dung trực tuyến hay chưa
 
   - **DownloadContentStateSourceLocation** – Cho biết cách người dùng thực hiện lựa chọn bật hoặc tắt trải nghiệm được kết nối tải xuống nội dung trực tuyến
 
-  - **DownloadContentStateConsentTime** – Cho biết thời điểm người dùng đưa ra lựa chọn bật hoặc tắt trải nghiệm được kết nối tải xuống nội dung trực tuyến.
+  - **DownloadContentStateConsentTime** – Cho biết thời điểm người dùng đưa ra lựa chọn bật hoặc tắt trải nghiệm được kết nối tải xuống nội dung trực tuyến. Ngày tháng sẽ xuất hiện dưới dạng ngày có thể đọc được hoặc ngày được mã hóa trông giống như một số lớn.
 
 #### <a name="device"></a>Thiết bị 
 
@@ -305,6 +305,10 @@ Danh mục này chứa các trường sau đây:
   - **MotherboardUUIDHash** - Hàm băm của mã định danh duy nhất cho bo mạch chủ. Cho phép chúng tôi phân loại dữ liệu dựa trên trục thiết bị.
 
   - **Name** - Tên của thiết bị. Cho phép chúng tôi phân loại dữ liệu dựa trên trục thiết bị.
+  
+  - **NetworkCost** - Cho biết chi phí hoặc loại mạng, chẳng hạn như theo lưu lượng hoặc theo lưu lượng trên nắp.
+  
+  - **NetworkCountry** - Mã quốc gia của người gửi, dựa trên địa chỉ IP máy khách không sạch.
 
   - **NumProcPhysCores** - Số lượng lõi vật lý trên máy. Cho phép chúng tôi phân loại dữ liệu dựa trên trục thiết bị.
 
@@ -614,6 +618,65 @@ Các trường sau đây sẽ được thu thập:
 - **sessionID** - GUID được tạo ngẫu nhiên để xác định phiên ứng dụng
 
 - **UTCReplace_AppSessionGuid** - Giá trị boolean không đổi. Luôn true.
+
+#### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
+
+Tín hiệu quan trọng được sử dụng để đảm bảo người dùng mới có thể khởi động thành công và chạy OneNote lần đầu tiên.  Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+
+- **AfterOneDriveFrozenAccountError** - Cho biết lỗi từ OneDrive khi một tài khoản bị đóng băng.
+
+- **Attempt** - Số lần mà trải nghiệm chạy lần đầu tiên cần thử lại.
+
+- **IsDefaultNotebookCreated** - Cho biết OneNote có tạo sổ tay mặc định của người dùng hay chưa.
+
+- **IsDelayedSignIn** - Cho biết lần chạy đầu tiên có trong chế độ đăng nhập chậm khi người dùng không bắt buộc phải có đăng nhập hay không.
+
+- **IsMSA** - Cho biết tài khoản có phải là tài khoản Microsoft hay không.
+
+#### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
+
+Tín hiệu quan trọng được sử dụng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.
+Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Attempt** - Số lần mà trải nghiệm chạy lần đầu tiên cần thử lại.
+
+- **Error A** - Đối tượng lỗi của OneNote cho biết lỗi trong khi chạy lần đầu tiên.
+
+- **FAllowAddingGuide** - Cho biết OneNote sẽ cho phép tạo sổ tay hay không.
+
+- **FrozenOneDriveAccount** - Cho biết liệu một tài khoản OneDrive bị đóng băng hay không.
+
+- **IsDefaultNotebookCreated** - Cho biết OneNote có tạo sổ tay mặc định của người dùng hay chưa.
+
+- **NoInternetConnection** - Cho biết thiết bị nào không có kết nối Internet.
+
+- **ProvisioningFailure** - Đối tượng lỗi OneNote chỉ ra lỗi cung cấp nếu có.
+
+- **ProvisioningFinishedTime** - Cho biết thời điểm kết thúc khi OneNote hoàn tất việc cung cấp sổ tay trong trải nghiệm chạy lần đầu tiên.
+
+- **ProvisioningStartedTime** - Cho biết thời điểm bắt đầu khi OneNote bắt đầu cung cấp sổ tay trong trải nghiệm chạy lần đầu tiên.
+
+- **ShowSuggestedNotebooks** - Cho biết liệu OneNote có hiển thị tính năng sổ tay được đề xuất hay không.
+
+#### <a name="officeonenotefirstrunfirstrunfororgid"></a>Office.OneNote.FirstRun.FirstRunForOrgId
+
+Tín hiệu quan trọng được sử dụng để đảm bảo người dùng doanh nghiệp mới (AAD/OrgID) đều có thể khởi động thành công và chạy OneNote lần đầu tiên.  Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+
+- **Attempt** - Số lần mà trải nghiệm chạy lần đầu tiên cần thử lại.
+
+- **Error** - Đối tượng lỗi OneNote cho biết lỗi trong quá trình chạy đầu tiên nếu có.
+
+- **FAllowAddingGuide** - Cho biết OneNote sẽ cho phép tạo sổ tay hay không.
+
+- **IsDefaultNotebookCreated** - Cho biết OneNote có tạo sổ tay mặc định của người dùng hay chưa.
+
+- **ProvisioningFailure** - Đối tượng lỗi OneNote cho biết lỗi cung cấp nếu có.
+
+- **ProvisioningFinishedTime** - Cho biết thời điểm kết thúc khi OneNote hoàn tất việc cung cấp sổ tay trong trải nghiệm chạy lần đầu tiên.
+
+- **ProvisioningStartedTime** - Cho biết thời điểm bắt đầu khi OneNote bắt đầu cung cấp sổ tay trong trải nghiệm chạy lần đầu tiên.
 
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
@@ -1173,6 +1236,489 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 
 Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác).
 
+#### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcCreateRepublishingLicense.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+#### <a name="ipcgetlicenseproperty"></a>IpcGetLicenseProperty
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi cuộc gọi API IpcGetLicenseProperty được thực hiện.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.HttpCall** - Cho biết có hoạt động HTTP hay không
+
+- **RMS.LicensePropertyType** - loại thuộc tính của giấy phép
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+#### <a name="ipcgetserializedlicenseproperty"></a>IpcGetSerializedLicenseProperty
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán đúng sự cố xảy ra khi cuộc gọi API IpcGetSerializedLicenseProperty được thực hiện.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey**- ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.HttpCall** - Cho biết có hoạt động HTTP hay không
+
+- **RMS.LicensePropertyType** - Loại thuộc tính của giấy phép
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+#### <a name="ipcgettemplateissuerlist"></a>IpcGetTemplateIssuerList
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcgettemplateissuerList.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.AuthCallbackProvided** - Cho biết liệu có cung cấp cuộc gọi lại xác thực như đầu vào của cuộc gọi API hay không
+
+- **RMS.ConnectionInfo.ExtranetUrl** - URL extranet của thông tin kết nối
+
+- **RMS.ConnectionInfo.IntranetUrl** - URL intranet của thông tin kết nối
+
+- **RMS.ConnectionMode** - Chế độ kết nối giữa máy khách và máy chủ của Dịch vụ Quản lý Quyền: Trực tuyến hay ngoại tuyến
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.GuestTenant** - ID đối tượng thuê khách cho người dùng
+
+- **RMS.HomeTenant** - ID đối tượng thuê chủ dành cho người dùng
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.Identity.ExtranetUrl** - URL extranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+ 
+- **RMS.Identity.IntranetUrl** - URL intranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.Status** - Lần đầu tiên nhận Chứng nhận tài khoản quyền từ máy chủ hoặc gia hạn chứng nhận tài khoản quyền 
+
+- **RMS.Identity.Type** - Loại tài khoản người dùng, chẳng hạn như tài khoản Windows hoặc tài khoản trực tiếp
+
+- **RMS.Identity.UserProvided** - Cho biết địa chỉ email của người dùng được cung cấp hay không khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.IssuerId** - ID của máy chủ Dịch vụ quản lý quyền cấp Chứng nhận tài khoản quyền 
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.RACType** - Loại Chứng nhận tài khoản quyền
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **UserInfo.UserObjectId** - ID đối tượng người dùng
+
+#### <a name="ipcgettemplatelist"></a>IpcGetTemplateList
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcGetTemplateList.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.AuthCallbackProvided** - Cho biết liệu có cung cấp cuộc gọi lại xác thực như đầu vào của cuộc gọi API hay không
+
+- **RMS.ConnectionInfo.ExtranetUrl** - URL extranet của thông tin kết nối
+
+- **RMS.ConnectionInfo.IntranetUrl** - URL intranet của thông tin kết nối
+
+- **RMS.ConnectionMode** - Chế độ kết nối giữa máy khách và máy chủ của Dịch vụ Quản lý Quyền: Trực tuyến hay ngoại tuyến
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.GuestTenant** - ID đối tượng thuê khách cho người dùng
+
+- **RMS.HomeTenant** - ID đối tượng thuê chủ dành cho người dùng
+
+- **RMS.HttpCall** - Cho biết có hoạt động http hay không
+
+- **RMS.Identity.ExtranetUrl** - URL extranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+ 
+- **RMS.Identity.IntranetUrl** - URL intranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.Status** - Lần đầu tiên nhận Chứng nhận tài khoản quyền từ máy chủ hoặc gia hạn chứng nhận tài khoản quyền 
+
+- **RMS.Identity.Type** - Loại tài khoản người dùng, chẳng hạn như tài khoản Windows hoặc tài khoản trực tiếp
+
+- **RMS.Identity.UserProvided** - Cho biết địa chỉ email của người dùng được cung cấp hay không khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.IssuerId** - ID của máy chủ Dịch vụ quản lý quyền cấp Chứng nhận tài khoản quyền 
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.RACType** - Loại Chứng nhận tài khoản quyền
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **RMS.TemplatesCount** - Số mẫu
+
+- **UserInfo.UserObjectId** - ID đối tượng người dùng
+
+#### <a name="ipcpcreatelicensefromscratch"></a>IpcpCreateLicenseFromScratch
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpCreateLicenseFromScratch.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.GuestTenant** - ID đối tượng thuê khách cho người dùng
+
+- **RMS.HomeTenant** - ID đối tượng thuê chủ dành cho người dùng
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.Identity.ExtranetUrl** - URL extranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.IntranetUrl** - URL intranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.UserProvided** - Cho biết địa chỉ email của người dùng được cung cấp hay không khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.IssuerId** - ID của máy chủ Dịch vụ quản lý quyền cấp Chứng nhận tài khoản quyền 
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.RACType** - Loại Chứng nhận tài khoản quyền
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
+
+- **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
+
+- **UserInfo.UserObjectId** - ID đối tượng người dùng 
+
+#### <a name="ipcpcreatelicensefromtemplate"></a>IpcpCreateLicenseFromTemplate
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpCreateLicenseFromTemplate. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.AuthCallbackProvided** - Cho biết liệu có cung cấp cuộc gọi lại xác thực như đầu vào của cuộc gọi API hay không
+
+- **RMS.ConnectionMode** - Chế độ kết nối giữa máy khách và máy chủ của Dịch vụ Quản lý Quyền: Trực tuyến hay ngoại tuyến
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.HttpCall** - Cho biết có hoạt động http hay không
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
+
+- **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
+
+#### <a name="ipcpgettemplatelistforuser"></a>IpcpGetTemplateListForUser
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpGetTemplateListForUser. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.AuthCallbackProvided** - Cho biết liệu có cung cấp cuộc gọi lại xác thực như đầu vào của cuộc gọi API hay không
+
+- **RMS.ConnectionInfo.ExtranetUrl** - URL extranet của thông tin kết nối
+
+- **RMS.ConnectionInfo.IntranetUrl** - URL intranet của thông tin kết nối
+
+- **RMS.ConnectionMode** - Chế độ kết nối giữa máy khách và máy chủ của Dịch vụ Quản lý Quyền: Trực tuyến hay ngoại tuyến
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.GuestTenant** - ID đối tượng thuê khách cho người dùng
+
+- **RMS.HomeTenant** - ID đối tượng thuê chủ dành cho người dùng
+
+- **RMS.HttpCall** - Cho biết có hoạt động HTTP hay không
+
+- **RMS.Identity.ExtranetUrl** - URL extranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.IntranetUrl** - URL intranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.Status** - Lần đầu tiên nhận Chứng nhận tài khoản quyền từ máy chủ hoặc gia hạn chứng nhận tài khoản quyền 
+
+- **RMS.Identity.Type** - Loại tài khoản người dùng, chẳng hạn như tài khoản Windows hoặc tài khoản trực tiếp
+
+- **RMS.Identity.UserProvided** - Cho biết địa chỉ email của người dùng được cung cấp hay không khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.IssuerId** - ID của máy chủ Dịch vụ quản lý quyền cấp Chứng nhận tài khoản quyền 
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.RACType** - Loại Chứng nhận tài khoản quyền
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **RMS.TemplatesCount** - Số mẫu
+
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
+    
+- **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
+
+- **UserInfo.UserObjectId** - ID đối tượng người dùng 
+
+#### <a name="ipcpserializelicense"></a>IpcpSerializeLicense
+
+Được thu thập khi người dùng nỗ lực áp dụng bảo vệ IRM trên tài liệu. Thông tin này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpSerializeLicense.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.AuthCallbackProvided** - Cho biết liệu có cung cấp cuộc gọi lại xác thực như đầu vào của cuộc gọi API hay không
+
+- **RMS.ConnectionMode** - Chế độ kết nối giữa máy khách và máy chủ của Dịch vụ Quản lý Quyền: Trực tuyến hay ngoại tuyến
+
+- **RMS.ContentId** - ID nội dung của tài liệu
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.GuestTenant** - ID đối tượng thuê khách cho người dùng
+
+- **RMS.HomeTenant** - ID đối tượng thuê chủ dành cho người dùng
+
+- **RMS.HttpCall** - Cho biết có hoạt động http hay không
+
+- **RMS.Identity.ExtranetUrl** - URL extranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.IntranetUrl** - URL intranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.Status** - Lần đầu tiên nhận Chứng nhận tài khoản quyền từ máy chủ hoặc gia hạn chứng nhận tài khoản quyền 
+
+- **RMS.Identity.Type** - Loại tài khoản người dùng, chẳng hạn như tài khoản Windows hoặc tài khoản trực tiếp
+
+- **RMS.Identity.UserProvided** - Cho biết địa chỉ email của người dùng được cung cấp hay không khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.IssuerId** - ID của máy chủ Dịch vụ quản lý quyền cấp Chứng nhận tài khoản quyền 
+
+- **RMS.KeyHandle** - Địa chỉ bộ nhớ của điều khiển phím
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.RACType** - Loại Chứng nhận tài khoản quyền
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
+
+- **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
+
+- **UserInfo.UserObjectId** - ID đối tượng người dùng 
+
+#### <a name="ipcsetlicenseproperty"></a>IpcSetLicenseProperty
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API Ipcsetlicenall. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API 
+
+- **RMS.HttpCall** - Cho biết có hoạt động http hay không
+
+- **RMS.LicensePropertyType** - loại thuộc tính của giấy phép
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - ID kịch bản được xác định bởi API
+
+
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
 Được tạo khi khởi động máy khách khi người dùng cuối đã kích hoạt Bảng điều khiển Đo từ xa cho Office.  Nó thu thập thông tin về thời điểm Tác nhân Đo từ xa cho Office đã tải dữ liệu lên thư mục chia sẻ. Mục đích sử dụng chính của sự kiện này là để theo dõi sức khỏe Tác nhân Đo từ xa cho Office và mục đích sử dụng thứ hai của sự kiện này là để ước tính việc sử dụng Bảng điều khiển Đo từ xa cho Office.
@@ -1201,6 +1747,20 @@ Chỉ được thu thập khi Bảng điều khiển đo từ xa cho Office đã
 Các trường sau đây sẽ được thu thập:
 
   - **Data.CollectionTime** - Dấu thời gian khi sự kiện sự cố được ghi lại
+
+#### <a name="office_apple_cisauthticketwithidentity"></a>Office_Apple_CISAuthTicketWithIdentity
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để thu thập sự cố lỗi trên mã thông báo xác thực trong quá trình InAppPurchase trên máy Mac (sự kiện ghi lại mã lỗi đã nhận được).  Sự kiện này được sử dụng để phát hiện và giúp khắc phục sự cố hỏng mã thông báo
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EmptyAuthToken** - Chúng tôi thu thập một chuỗi đại diện cho vị trí trong dòng giấy phép kích hoạt vĩnh viễn mà chúng tôi đã không thành công.
+
+- **Data_TicketAuthError** - Mã lỗi cho biết nguyên nhân gây ra lỗi
+
+- **Data_ValidIdentity** - Liệu máy khách có nhận dạng hợp lệ hay không
+
+
 
 #### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
 
@@ -1310,6 +1870,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Doc.AssistedReadingReasons -** Thiết đặt nếu tài liệu có bảo vệ dữ liệu điện tử tại chỗ
 
+  - **Data.Doc.AsyncOpenKind –** Cho biết liệu có phiên bản đã được lưu trữ trên nền điện toán đám mây được mở ra hay không, và lô-gic làm mới không đồng bộ nào được sử dụng.
+
   - **Data.Doc.ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
   - **Data.Doc.EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -1416,7 +1978,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.FullyQualifiedDomainName -** Đã lỗi thời, được thay thế bằng Data\_Doc\_Fqdn
 
-  - **Data.Input.FileOpenState -** Trạng thái được yêu cầu bởi ứng dụng (Đọc/ĐọcGhi, v.v..) **-**
+  - **Data.Input.FileOpenState -** Trạng thái được yêu cầu bởi ứng dụng (Đọc/ĐọcGhi, v.v..)
 
   - **Data.Input.OpenAsync -** Mở không đồng bộ theo yêu cầu của ứng dụng
 
@@ -1561,6 +2123,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data.Doc.AccessMode -** Tài liệu ở chế độ chỉ đọc
 
   - **Data.Doc.AssistedReadingReasons -** Thiết đặt nếu tài liệu có bảo vệ dữ liệu điện tử tại chỗ
+
+  - **Data.Doc.AsyncOpenKind –** Cho biết liệu có phiên bản đã được lưu trữ trên nền điện toán đám mây được mở ra hay không, và lô-gic làm mới không đồng bộ nào được sử dụng.
 
   - **Data.Doc.ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -1817,6 +2381,84 @@ Các trường sau đây sẽ được thu thập:
 
 - **EventName** - Tên sự kiện được ghi nhật ký
 
+#### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
+
+Đã ghi nhật ký khi người dùng mở Thẻ Cá nhân. Ứng dụng này được sử dụng để quan sát các bất thường nghiêm trọng trong việc tung ra Thẻ Cá nhân Trực tiếp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data.appContextId** - Là ID được tạo ngẫu nhiên được sử dụng để xác định các tài khoản khác nhau trong cùng một ứng dụng
+
+- **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
+
+- **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
+
+- **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
+
+- **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
+
+- **Data.clientType** - Loại thiết bị, ứng dụng sẽ chạy trên đó.
+
+- **Data.eventId** - Đặt tên mã định danh của sự kiện, ví dụ: "LivePersonaCardRenderedAction"
+
+- **Data.exportName** - Tên người có thể đọc được của sự kiện hành động người dùng, ví dụ: "OpenedPersonaCard"
+
+- **Data.exportType** - Danh mục sự kiện cho yêu cầu xuất của GDPR
+
+- **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.hostAppRing** - Vòng mà ứng dụng đã được phân phối
+
+- **Data.OTelJS.Version** - Phiên bản của OTel Logger
+
+- **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
+
+- **Data.tenantAadObjectId** - Người thuê được liên kết với đăng ký của người dùng sẽ bị ràng buộc. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
+
+- **Data.userAadObjectId** -Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho Doanh nghiệp (Bản sao của Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho doanh nghiệp 
+
+- **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
+
+- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
+
+- **Data.version** - Phiên bản của dịch vụ (Thẻ Hồ sơ)
+
+- **Data.viewType** -Xác định loại thẻ Hồ sơ hiển thị
+
+- **NetworkCost** - Cho biết chi phí/loại mạng (gói dữ liệu theo lưu lượng sử dụng, giới hạn trên của kết nối bằng gói dữ liệu theo lưu lượng sử dụng, v.v.)
+
+- **NetworkCountry** - Mã Quốc gia của người gửi, dựa trên địa chỉ IP không sạch của máy khách.
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau.
+
+    - **bandwidthEstimateMbps** - Ước tính băng thông có hiệu lực theo đơn vị Mbps
+
+    - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
+
+    - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
+
+    - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
+
+    - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+
+    - **immersiveProfileCorrelationId** - Một mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+
+    - **networkEffectiveType**- Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có được kết nối với Internet vào thời điểm hiển thị thẻ cá nhân hay không
+
+    - **networkType** - Loại kết nối mạng của thiết bị đang được sử dụng
+
+    - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+    - **roundTripEstimateMs** - Vòng hành trình ước tính có hiệu lực của kết nối hiện tại theo mili giây
+
+    - **wasOpenedAsCompactCard** - Được sử dụng để xác định xem thẻ đã được mở làm dạng xem gọn đầu hay chưa
+
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -1957,6 +2599,34 @@ Các trường sau đây sẽ được thu thập:
 -  **TimeToMedianResultInMs** - Cho biết thời gian trung bình mà OneNote cần để tìm tất cả các kết quả khớp.
 
 
+#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+
+Đây là một dấu hiệu quan trọng được sử dụng để giám sát khả năng tạo ghi chú trong ứng dụng của người dùng Sticky Notes.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo trang, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **NoteLocalId** - Xác định mã định danh duy nhất được gán cho chú thích ở thời điểm người dùng tạo ghi chú trong ứng dụng.
+
+- **IsExportable** - Cờ cho biết liệu sự kiện này xảy ra do hành động của người dùng hay không. Nên được đặt là True vì NoteCreated là hành động được kích hoạt bởi người dùng.
+
+- **StickyNotes-SDKVersion** - Số phiên bản cho biết phiên bản Sticky Notes người dùng đang sử dụng. Cho phép chúng tôi xác định phiên bản nào của sản phẩm đang hiển thị sự cố để chúng tôi có thể ưu tiên chính xác.
+
+
+#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+
+Đây là một dấu hiệu quan trọng được sử dụng để giám sát khả năng tạo ghi chú trong ứng dụng của người dùng Sticky Notes.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo trang, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **HasImages** - Cờ cho biết liệu ghi chú đã xem có hình ảnh được lưu trữ trong đó hay không.
+
+- **IsExportable** - Cờ cho biết liệu sự kiện này xảy ra do hành động của người dùng hay không. Nên được đặt là True vì NoteViewed là hành động được kích hoạt bởi người dùng.
+
+- **NoteLocalId ** - Mã định danh duy nhất có thể phân biệt được gán cho chú thích tại thời điểm người dùng tạo ghi chú trong ứng dụng.
+
+- **StickyNotes-SDKVersion** - Số phiên bản cho biết phiên bản Sticky Notes người dùng đang sử dụng. Cho phép chúng tôi xác định phiên bản nào của sản phẩm đang hiển thị sự cố để chúng tôi có thể ưu tiên chính xác.
+
+
 #### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
  
 Sự kiện này ghi lại kết quả đồng bộ sổ tay. Kết quả này dùng để tìm hiểu xem có bao nhiêu mục tiêu đồng bộ duy nhất khi tính điểm đồng bộ OneNote.
@@ -2040,8 +2710,7 @@ Các trường sau đây sẽ được thu thập
 
 #### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công.
-Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng có thể khởi chạy ứng dụng trong cửa sổ hiệu suất của chúng tôi, điều này sẽ gây ra sự cố nghiêm trọng.
+Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công. Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng có thể khởi chạy ứng dụng trong cửa sổ hiệu suất của chúng tôi, điều này sẽ gây ra sự cố nghiêm trọng.
 
 Các trường sau đây sẽ được thu thập: Không có
 
@@ -2091,13 +2760,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Result** - Kết quả của nỗ lực cập nhật mật khẩu. Ví dụ: "Thành công" hoặc "Không thành công\_AllowLessSecureAppsDisabled"
 
-#### <a name="officeoutlookdesktopprovidersloadproviderlibrary"></a>Office.Outlook.Desktop.Providers.LoadProviderLibrary
-
-Sự kiện này theo dõi sự thành công hay thất bại của MAPI khi cố gắng tải DLL của nhà cung cấp (ví dụ: contab32.dll, emsmdb32.dll, một DLL được sử dụng bởi một phần bổ trợ). Thao tác MAPI chịu trách nhiệm cho tải DLL của nhà cung cấp là nền tảng cho thao tác Bắt buộc của Outlook cũng như khả năng mở rộng (thông qua phần bổ trợ hoặc nhà cung cấp Cửa hàng/Vận chuyển/Sổ địa chỉ tùy chỉnh). Chúng tôi tích cực giám sát kết quả thành không hay thất bại của thao tác này để đảm bảo rằng chức năng MAPI cốt lõi này tiếp tục hoạt động như mong đợi.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Hoạt động HVA tiêu chuẩn** không có tải tùy chỉnh
 
 #### <a name="officeoutlookdesktopstorescreatenewstore"></a>Office.Outlook.Desktop.Stores.CreateNewStore
 
@@ -2193,6 +2855,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
   - **Data\_Doc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
@@ -2223,8 +2887,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
   - **Data\_Doc\_IsSyncBacked:bool -** Xác minh xem tài liệu có được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive hay không
 
   - **Data\_Doc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
@@ -2238,6 +2900,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_ReadOnlyReasons:long –-** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+
+  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
@@ -2327,6 +2991,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
   - **Data\_Doc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
@@ -2357,8 +3023,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không?
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
   - **Data\_Doc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
   - **Data\_Doc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
@@ -2372,6 +3036,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_ReadOnlyReasons:long –-** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+
+  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
@@ -2449,6 +3115,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
   - **Data\_Doc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
@@ -2479,8 +3147,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
   - **Data\_Doc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
   - **Data\_Doc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
@@ -2494,6 +3160,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_ReadOnlyReasons:long –-** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+
+  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
@@ -2591,6 +3259,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_DstDoc_AsyncOpenKind:long – ** Cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây mới đã được mở hay không và lô-gic làm mới không đồng bộ nào đang được sử dụng.
+
 - **Data_DstDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
 - **Data_DstDoc_EdpState:long** - Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
@@ -2674,6 +3344,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_SrcDoc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+
+- **Data_SrcDoc_AsyncOpenKindlong –** cho biết có một phiên bản bộ đệm ẩn của tài liệu điện toán đám mây gốc đã được mở ra hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_SrcDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint 
 
@@ -2768,6 +3440,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_Doc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
 - **Data_Doc_EdpState:long** - Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
@@ -2798,8 +3472,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** - Xác minh xem tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked:bool** - Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
 - **Data_Doc_Location:long** - Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
@@ -2813,6 +3485,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Doc_ReadOnlyReasons:long** - Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
 - **Data_Doc_ResourceIdHash:string** - Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
 - **Data_Doc_ServerDocId:string** - Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
@@ -2843,6 +3517,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_DstDoc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+
+- **Data_DstDoc_AsyncOpenKind:long – ** Cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây mới đã được mở hay không và lô-gic làm mới không đồng bộ nào đang được sử dụng.
 
 - **Data_DstDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
@@ -2925,6 +3601,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_SrcDoc_AccessMode:long** - Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+
+- **Data_SrcDoc_AsyncOpenKindlong –** cho biết có một phiên bản bộ đệm ẩn của tài liệu điện toán đám mây gốc đã được mở ra hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_SrcDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
@@ -3283,7 +3961,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.sourceTextLength** - Chiều dài của văn bản để dịch
 
-- **Data.sourceTextWords** - Số từ trong văn bản để dịch
+- **Data.sourceTextWords** - Số lượng từ trong văn bản cần dịch
 
 - **Data.warningMessage** - Thông báo cảnh báo được dịch vụ báo cáo
 
@@ -3398,6 +4076,68 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.warningMessage** - Thông báo cảnh báo được dịch vụ báo cáo
 
+
+#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
+
+Theo dõi tính năng chống lại người dùng. Sự kiện này giúp chúng tôi xác định thành công hay thất bại của việc chống lại tính năng.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data\_Enable:bool**- True cho biết tính năng được bật cho người dùng hiện tại
+
+  - **Data\_Feature:string** - Tên của tính năng
+
+  - **Data\_Flighted:bool** - True cho biết tính năng được bật
+
+  - **Data\_Licensed:bool** - True cho biết tính năng đang được kiểm tra cấp phép
+
+  - **Data\_Subscriber:bool** - True cho biết người dùng có giấy phép đăng ký
+
+#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
+
+Ghi lại lỗi trong việc làm mới sơ đồ khi tệp được tạo thông qua DV. Điều này sẽ giúp chúng tôi gỡ lỗi các lỗi và sự cố trong làm mới dữ liệu trong sơ đồ DV.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data\_ConnectorsBasedOnSequence:bool** - True nếu sơ đồ được làm mới ban đầu được tạo bằng cách sử dụng trình kết nối dựa trên tuỳ chọn trình tự"
+
+  - **Data\_DialogError**:**string** - Li trong khi làm mới sơ đồ thông minh
+
+  - **Data\_FileError:string** - chuỗi lỗi khi tệp Excel được kết nối không hợp lệ
+
+  - **Data\_OverwriteSelected**:**bool** - True nếu người dùng chọn tùy chọn ghi đè lên sơ đồ trong khi làm mới
+
+  - **Data\_WarningShown**:**bool** - True nếu có bất kỳ cảnh báo nào được hiển thị cho người dùng trong quá trình làm mới dữ liệu
+
+#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
+
+Ghi lại lỗi ghi lại Excel khi tệp được tạo thông qua DV. Điều này sẽ giúp chúng tôi gỡ lỗi các lỗi và sự cố trong ghi lại Excel trong sơ đồ DV.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **Data\_ConnectorsBasedOnSequence:bool** - True nghĩa là các trình kết nối được tạo dựa trên các thiết đặt trình tự
+
+  - **Data\_DataSourceType:string** - Tệp này cho biết liệu sơ đồ được tạo từ "Bảng" hay "CustomRange"
+
+  - **Data\_DialogError:string** - Loại lỗi tùy chỉnh trong khi tạo sơ đồ thông minh thông qua Excel
+
+  - **Data\_NoOfShapesAdded:int** - Số lượng hình được thêm vào trong khi ghi lại chức năng Excel
+
+  - **Data\_NoOfShapesDeleted:int** - Số lượng hình đã bị xóa trong khi ghi lại chức năng Excel
+
+  - **Data\_OverwriteSelected:bool** - Tue cho biết người dùng đã chọn tùy chọn ghi đè dữ liệu
+
+  - **Data\_SourceDataModified:bool** - True cho biết dữ liệu nguồn được sửa đổi
+
+  - **Data\_WarningShown:bool** - True nghĩa là cảnh báo cập nhật dữ liệu được hiển thị cho người dùng
+
+  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** - True cho biết cảnh báo hiển thị cho người dùng vì sự hiện diện của công thức trong Excel
+
+  - **Data\_WarningShownToAddNextStepID:bool** - True cho biết cảnh báo hiển thị cho người dùng vì bước tiếp theo Định danh bị thiếu trong Excel
+
+  - **Data\_WarningShownToConvertToTable:bool** - True cho biết cảnh báo được hiển thị cho người dùng để chuyển đổi dữ liệu Excel sang định dạng bảng
+
+
 #### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
 Sự kiện này ghi lại số liệu thống kê tài liệu cho từng tài liệu khi Office Word bị đóng hoặc bị tạm ngừng.  Sự kiện này được sử dụng để kết hợp các chỉnh sửa tài liệu, kích thước, v.v. với các lỗi lưu tài liệu, chia sẻ tài liệu và tài liệu cộng tác trực tuyến.
@@ -3474,6 +4214,130 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_UsesCustomTemplate** -Cho biết tài liệu đã được tạo từ một mẫu tùy chỉnh hay chưa
 
+#### <a name="officewordfileopenuserinitiatedopen"></a>Office.Word.FileOpen.UserInitiatedOpen 
+
+Sự kiện này cho biết Office Word mở tài liệu thông qua người dùng bắt đầu thay vì theo chương trình Office Word. Nó cũng chứa dữ liệu hiệu suất mở tệp quan trọng và là sự kiện bắt đầu ứng dụng từ góc độ người dùng.  Sự kiện theo dõi xem tệp mở có hoạt động như mong đợi hay không. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng và số liệu về độ tin cậy của đám mây. 
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AddDocTelemRes** - Báo cáo xem chúng tôi có thể điền chính xác các giá trị liên quan đến tài liệu khác trong sự kiện hay không. Được sử dụng để chẩn đoán chất lượng dữ liệu. 
+
+- **Data_BytesAsynchronous** - Số byte (được nén) mà chúng tôi tin rằng chúng tôi có thể mở tệp mà không cần lấy chúng trước khi người dùng muốn bắt đầu chỉnh sửa hoặc có thể lưu. 
+
+- **Data_BytesAsynchronousWithWork** - Số byte (được nén) mà chúng tôi có thể mở tệp mà không cần nhưng sẽ yêu cầu đầu tư mã đáng kể để thực hiện 
+
+- **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp 
+
+- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy. 
+
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc/có thể sửa được 
+
+- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ 
+
+- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế 
+
+- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu 
+
+- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v) 
+
+- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp 
+
+- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online 
+
+- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng 
+
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở 
+
+- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở 
+
+- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu 
+
+- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng 
+
+- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần 
+
+- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác 
+
+- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở 
+
+- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính 
+
+- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.) 
+
+- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ 
+
+- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa 
+
+- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt 
+
+- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc 
+
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố 
+
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố 
+
+- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ 
+
+- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..) 
+
+- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ 
+
+- **Data_Doc_SessionId** - Phiên bản máy chủ cung cấp dịch vụ 
+
+- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online 
+
+- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu 
+
+- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu 
+
+- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa 
+
+- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ) 
+
+- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc 
+
+- **Data_Doc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI 
+
+- **Data_EditorDisablingRename** - Mã định danh của trình chỉnh sửa đầu tiên khiến việc đổi tên bị vô hiệu hóa 
+
+- **Data_EditorsCount** - Số lượng trình chỉnh sửa trong tài liệu 
+
+- **Data_ForceReadWriteReason** - Giá trị số nguyên biểu thị lý do tại sao tệp bị buộc vào chế độ đọc/ghi 
+
+- **Data_FSucceededAfterRecoverableFailure** - Cho biết rằng mở thành công sau khi sửa lỗi trong khi mở tài liệu 
+
+- **Data_LastLoggedTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định khi chúng tôi cố gắng không mở hai lần (được sử dụng để chẩn đoán chất lượng dữ liệu) 
+
+- **Data_LinkStyles** - Cho biết liệu chúng tôi có đang liên kết đến các kiểu mẫu hay không 
+
+- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word. 
+
+- **Data_Measurements** - Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau. Sử dụng để chẩn đoán hiệu suất mở. 
+
+- **Data_MoveDisabledReason** - Lỗi vô hiệu hóa thao tác di chuyển cho tài liệu 
+
+- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không 
+
+- **Data_OpenInitiateKind** – Kiểu kịch bản mà người dùng bắt đầu thao tác mở tệp này. 
+
+- **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu 
+
+- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở 
+
+- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này 
+
+- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không 
+
+- **Data_SecondaryTag** - Thẻ duy nhất cho site gọi mã được sử dụng để thêm dữ liệu lỗi bổ sung để mở. 
+
+- **Data_TemplateFormat** - Định dạng tệp của mẫu mà tài liệu dựa trên. 
+
+- **Data_UsesNormal** - Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không. 
+
+- **Data_VerboseMeasurements** - Chuỗi được mã hóa chứa phân tích thời gian của các phần mở khác nhau.  Được sử dụng để đo hiệu suất, chỉ được bật cho các vòng nội bộ. 
+
+
+
 #### <a name="officewordfilesaveactcmdgosubsaveas"></a>Office.Word.FileSave.ActCmdGosubSaveAs
 
 Sự kiện này cho thấy rằng người dùng đang lưu các thay đổi của họ vào một tài liệu mới. Sự kiện theo dõi xem thao tác lưu vào tài liệu mới có hoạt động như mong đợi hay không. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng và số liệu về độ tin cậy của đám mây.
@@ -3487,7 +4351,9 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
-    
+
+- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
 - **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -3514,8 +4380,6 @@ Các trường sau đây sẽ được thu thập:
     
 - **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
 - **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -3529,6 +4393,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
 - **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
 - **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
@@ -3578,6 +4444,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
+
+- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
     
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -3605,8 +4473,6 @@ Các trường sau đây sẽ được thu thập:
     
 - **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
 - **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -3620,6 +4486,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
 - **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
 - **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
@@ -3676,6 +4544,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
 - **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -3702,8 +4572,6 @@ Các trường sau đây sẽ được thu thập:
     
 - **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
 - **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -3717,6 +4585,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
 - **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
 - **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
@@ -3795,6 +4665,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
 - **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -3819,8 +4691,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
 - **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -3832,6 +4702,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
 - **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
 - **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
@@ -3856,6 +4728,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_DstDoc_AccessMode** - Tài liệu đích chỉ đọc/có thể chỉnh sửa
 
 - **Data_DstDoc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu đích được mở trong chế độ đọc được hỗ trợ
+
+- **Data_DstDoc_AsyncOpenKind –** cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây mới đã được mở hay không và lô-gic làm mới không đồng bộ nào được sử dụng.
     
 - **Data_DstDoc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -3943,6 +4817,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_SrcDoc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_SrcDoc_AsyncOpenKind – ** cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây đã được mở hay không và lô-gic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_SrcDoc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
 - **Data_SrcDoc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu nguồn
@@ -4010,66 +4886,6 @@ Các trường sau đây sẽ được thu thập:
 - **Data_SrcDocIsUnnamedOrNew** - Cho biết liệu tài liệu chúng tôi đang lưu có mới không
 
 
-#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
-
-Theo dõi tính năng chống lại người dùng. Sự kiện này giúp chúng tôi xác định thành công hay thất bại của việc chống lại tính năng.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Data\_Enable:bool**- True cho biết tính năng được bật cho người dùng hiện tại
-
-  - **Data\_Feature:string** - Tên của tính năng
-
-  - **Data\_Flighted:bool** - True cho biết tính năng được bật
-
-  - **Data\_Licensed:bool** - True cho biết tính năng đang được kiểm tra cấp phép
-
-  - **Data\_Subscriber:bool** - True cho biết người dùng có giấy phép đăng ký
-
-#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
-
-Ghi lại lỗi trong việc làm mới sơ đồ khi tệp được tạo thông qua DV. Điều này sẽ giúp chúng tôi gỡ lỗi các lỗi và sự cố trong làm mới dữ liệu trong sơ đồ DV.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Data\_ConnectorsBasedOnSequence:bool** - True nếu sơ đồ được làm mới ban đầu được tạo bằng cách sử dụng trình kết nối dựa trên tuỳ chọn trình tự"
-
-  - **Data\_DialogError**:**string** - Li trong khi làm mới sơ đồ thông minh
-
-  - **Data\_FileError:string** - chuỗi lỗi khi tệp Excel được kết nối không hợp lệ
-
-  - **Data\_OverwriteSelected**:**bool** - True nếu người dùng chọn tùy chọn ghi đè lên sơ đồ trong khi làm mới
-
-  - **Data\_WarningShown**:**bool** - True nếu có bất kỳ cảnh báo nào được hiển thị cho người dùng trong quá trình làm mới dữ liệu
-
-#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
-
-Ghi lại lỗi ghi lại Excel khi tệp được tạo thông qua DV. Điều này sẽ giúp chúng tôi gỡ lỗi các lỗi và sự cố trong ghi lại Excel trong sơ đồ DV.
-
-Các trường sau đây sẽ được thu thập:
-
-  - **Data\_ConnectorsBasedOnSequence:bool** - True nghĩa là các trình kết nối được tạo dựa trên các thiết đặt trình tự
-
-  - **Data\_DataSourceType:string** - Tệp này cho biết liệu sơ đồ được tạo từ "Bảng" hay "CustomRange"
-
-  - **Data\_DialogError:string** - Loại lỗi tùy chỉnh trong khi tạo sơ đồ thông minh thông qua Excel
-
-  - **Data\_NoOfShapesAdded:int** - Số lượng hình được thêm vào trong khi ghi lại chức năng Excel
-
-  - **Data\_NoOfShapesDeleted:int** - Số lượng hình đã bị xóa trong khi ghi lại chức năng Excel
-
-  - **Data\_OverwriteSelected:bool** - Tue cho biết người dùng đã chọn tùy chọn ghi đè dữ liệu
-
-  - **Data\_SourceDataModified:bool** - True cho biết dữ liệu nguồn được sửa đổi
-
-  - **Data\_WarningShown:bool** - True nghĩa là cảnh báo cập nhật dữ liệu được hiển thị cho người dùng
-
-  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** - True cho biết cảnh báo hiển thị cho người dùng vì sự hiện diện của công thức trong Excel
-
-  - **Data\_WarningShownToAddNextStepID:bool** - True cho biết cảnh báo hiển thị cho người dùng vì bước tiếp theo Định danh bị thiếu trong Excel
-
-  - **Data\_WarningShownToConvertToTable:bool** - True cho biết cảnh báo được hiển thị cho người dùng để chuyển đổi dữ liệu Excel sang định dạng bảng
-
 #### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
 
 Sự kiện này cho biết Office Word chỉnh sửa tài liệu thay đổi trạng thái bên trong của tài liệu thành "rác". Nó cho phép Microsoft để đánh giá trạng thái tính năng của tài liệu chỉnh sửa. Sự kiện này là thông báo hoạt động của chỉnh sửa người dùng. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng.
@@ -4095,9 +4911,254 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_UrlHash-** Hàm băm của đường dẫn tài liệu
 
   - **Data\_ViewKind-** Kiểu dạng xem Word
+
+
+#### <a name="parselicenseop"></a>ParseLicenseOp
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác phân tích giấy phép. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID Server nhật kí
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.Duration** - Tổng thời gian để hoàn thành hoạt động
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ thao tác
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.Result** - Thành công hay thất bại trong thao tác
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
+
+- **RMS.VerifyCertChainDuration** - Thời gian để xác minh Chuỗi chứng nhận
+
+- **RMS.VerifySignatureDuration** - Thời gian để xác minh chữ ký
+
+#### <a name="storeop"></a>StoreOp
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán đúng sự cố xảy ra khi hoạt động của Dịch vụ Quản lý quyền giấy phép được thực hiện. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.ContentId** - ID Nội dung trong giấy phép Người dùng cuối
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ thao tác
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.OperationName** - Tên hoạt động
+
+- **RMS.Result** - Thành công hay thất bại trong thao tác
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
+
+- **RMS.Url** - URL của máy chủ Dịch vụ Quản lý Quyền
+
+
 ### <a name="application-status-and-boot-subtype"></a>*Trạng thái ứng dụng và kiểu con khởi động*
 
 Xác định xem các sự kiện tính năng cụ thể đã xảy ra hay chưa, chẳng hạn như bắt đầu hoặc dừng và tính năng có đang hoạt động hay không.
+
+#### <a name="dnslookupop"></a>DnsLookupOp
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Thông tin này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán đúng sự cố xảy ra khi hoạt động tra cứu thông tin DNS được thực hiện. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.Duration** - Tổng thời gian để hoàn thành hoạt động
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ thao tác
+
+- **RMS.HttpCall** - Cho biết có hoạt động http hay không
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.NoOfDomainsSearched** - Số miền được tìm kiếm  
+
+- **RMS.NoOfDomainsSkipped** - Số miền đã bỏ qua 
+
+- **RMS.Result** - Thành công hay thất bại trong thao tác
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
+
+#### <a name="getuserop"></a>GetUserOp
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể tìm hiểu và chẩn đoán các sự cố xảy ra khi bạn thực hiện thao tác chứng chỉ người dùng. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - Dịch vụ ghi nhật ký ID máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.ContentId** - ID nội dung
+
+- **RMS.Duration** - Tổng thời gian để hoàn thành hoạt động
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về từ thao tác
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.Result** - Thành công hay thất bại trong thao tác
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
+
+- **RMS.Type** - kiểu thông tin người dùng
+
+#### <a name="httpop"></a>HttpOp
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+    
+- **AppInfo.Name** - Tên ứng dụng
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.CallBackStatus** - Trạng thái xác thực gọi trở lại kết quả trả về
+
+- **RMS.CallbackTime** - Thời gian dùng khi xác thực cuộc gọi trở lại 
+
+- **RMS.CorrelationId** - ID tương quan của yêu cầu http
+
+- **RMS.DataSize** - Kích cỡ dữ liệu của yêu cầu HTTP
+
+- **RMS.Duration** - Tổng thời gian để hoàn thành hoạt động
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ thao tác
+
+- **RMS.HttpCall** - cho biết có hoạt động http lồng nhau hay không 
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.OperationName** - tên thao tác
+
+- **RMS.Result** - Thành công hay thất bại trong thao tác
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
+
+- **RMS.Url** - URL của máy chủ Dịch vụ Quản lý Quyền
+
+- **RMS.WinhttpCallbackStatus** - Trạng thái của winhttp kết quả của cuộc gọi trở lại
+
+#### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán chính xác các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcCreateOauth2Token.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+    
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
 
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
@@ -4116,6 +5177,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_AppSizeWidth –** **-** Chiều rộng cửa sổ bổ trợ
 
   - **Data\_AppURL -** URL của phần bổ trợ; Ghi nhật ký URL đầy đủ cho phần bổ trợ lưu trữ và tên miền URL cho phần bổ trợ không lưu trữ
+
+  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
 
   - **Data\_AuthorsCount:integer -** Số lượng tác giả đã chỉnh sửa tài liệu trong phiên này
 
@@ -4149,8 +5212,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không?
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
   - **Data\_Doc\_IsSyncBacked:bool-** True khi đây là tài liệu máy chủ tồn tại cục bộ và được đồng bộ hóa với máy chủ (ví dụ: thông qua ứng dụng máy khách OneDrive hoặc ODB)
 
   - **Data\_Doc\_Location:long-** : Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
@@ -4158,6 +5219,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_LocationDetails:long -** Bộ giá trị được xác định trước của vị trí chi tiết hơn (thư mục Temp, thư mục tải xuống, Tài liệu One Drive, Hình ảnh One Drive
 
   - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+
+  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
@@ -4495,6 +5558,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
   - **Data\_Doc\_EdpState:long -** Trạng thái Bảo vệ Dữ liệu Doanh nghiệp của tài liệu
@@ -4525,8 +5590,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Tài liệu có đang được mở từ bộ nhớ đệm ẩn cục bộ hay không?
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
   - **Data\_Doc\_IsSyncBacked:bool -** Tài liệu được mở từ thư mục đang sử dụng ứng dụng đồng bộ OneDrive
 
   - **Data\_Doc\_Location:long -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Cục bộ, SharePoint, WOPI, Mạng, v.v.)
@@ -4540,6 +5603,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_ReadOnlyReasons:long –-** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
+
+  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
@@ -4959,6 +6024,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
 - **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -4985,8 +6052,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
 - **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -4999,9 +6064,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán các sự cố
 
-- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố 
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
+
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán các sự cố 
 
 - **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
@@ -5082,6 +6149,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
 - **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -5108,8 +6177,6 @@ Các trường sau đây sẽ được thu thập:
     
 - **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
 - **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -5122,9 +6189,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán các sự cố
 
-- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
+
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán các sự cố
 
 - **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
@@ -5203,6 +6272,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+  - **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+
   - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
   - **Data\_Doc\_EdpState -** Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -5229,8 +6300,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-  - **Data_Doc_IsRtcAlwaysOn -** True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
   - **Data\_Doc\_IsSyncBacked -** Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
   - **Data\_Doc\_Location -** Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -5244,6 +6313,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_ReadOnlyReasons -** Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
   - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+
+  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
@@ -5326,6 +6397,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
+- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
 - **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
@@ -5352,8 +6425,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
 
-- **Data_Doc_IsRtcAlwaysOn** - True nếu kênh thời gian thực (RTC) luôn bật cho tệp này.
-
 - **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
 
 - **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
@@ -5366,9 +6437,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
 
-- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
+- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán các sự cố
 
-- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố 
+- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
+
+- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán các sự cố 
 
 - **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
 
@@ -5423,6 +6496,83 @@ Các trường sau đây sẽ được thu thập:
 - **Data_TemplateFormat** - Định dạng tệp của mẫu mà tài liệu dựa trên
 
 - **Data_UsesNormal** - Cho biết liệu tài liệu mở có dựa trên mẫu thông thường hay không
+
+
+#### <a name="renewuserop"></a>RenewUserOp
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể tìm hiểu và chẩn đoán các sự cố xảy ra khi gia hạn chứng nhận thao tác người dùng được thực hiện. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID Server nhật kí
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.Duration** - Tổng thời gian để hoàn thành hoạt động
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ thao tác
+
+- **RMS.HttpCall** - Cho biết có thao tác HTTP hay không
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.Result** - Thành công hay thất bại trong thao tác
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
+
+- **RMS.Type** - Kiểu thông tin người dùng
+
+#### <a name="servicediscoveryop"></a>ServiceDiscoveryOp
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các sự cố xảy ra khi hoạt động khám phá dịch vụ được thực hiện. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.Duration** - Tổng thời gian để hoàn thành hoạt động
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ thao tác
+
+- **RMS.HttpCall** - Cho biết có thao tác HTTP hay không
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.OperationName** - Tên hoạt động
+
+- **RMS.Result** - Thành công hay thất bại trong thao tác
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
 
 
 ### <a name="office-accessibility-configuration-subtype"></a>*Loại con cấu hình khả năng truy nhập Office*
@@ -5737,7 +6887,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **ElapsedHanging** - Thời gian treo trong lệnh gọi
 
-#### <a name="officepowerpointsession"></a>**Office.PowerPoint.Session**
+#### <a name="officepowerpointsession"></a>Office.PowerPoint.Session
 
 Thu thập việc sử dụng tính năng trên mỗi phiên PowerPoint.Dữ liệu này được sử dụng để tính tỷ lệ thoát PowerPoint không đáng tin cậy trong khi sử dụng một tính năng. Tỷ lệ thoát PowerPoint không đáng tin cậy là tín hiệu chính để đảm bảo PowerPoint đang hoạt động như mong đợi.
 
@@ -5889,6 +7039,12 @@ Các trường sau đây sẽ được thu thập:
 
   - **ProgID** Mã định danh tiến trình phần bổ trợ
 
+#### <a name="officeprogrammabilitytelemetrymacrofileopened"></a>Office.Programmability.Telemetry.MacroFileOpened 
+
+Khi mở tệp có kèm theo macro (VBA) trên một thiết bị đã được onup sang các ứng dụng Office dưới dạng dịch vụ (OAAS) bởi người quản trị CNTT, đồng thời, Office 365 ProPlus đã được kích hoạt bằng giấy phép Enterprise. Sự kiện được sử dụng để tìm hiểu về sức khỏe của macro (VBA)-chứa các tệp trong một đối tượng thuê và được so sánh với Office.Programmability.Telemetry.VbaTelemetryBreak theo dõi lỗi trên các tệp có chứa VBA. 
+
+Không có trường nào được thu thập.
+
 #### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
 Trên sự kiện khởi động ứng dụng thoát ra một cách không đáng tin cậy để tiếp tục điều tra.
@@ -5950,6 +7106,75 @@ Các trường sau đây sẽ được thu thập:
 
 Thời gian phản hồi hoặc hiệu suất kém cho các tình huống như ứng dụng khởi động hoặc mở tệp.
 
+#### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở khi thực hiện cuộc gọi API IpcpBootstrapUser.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.AuthCallbackProvided** - Cho biết liệu có cung cấp cuộc gọi lại xác thực như đầu vào của cuộc gọi API hay không
+
+- **RMS.ConnectionInfo.ExtranetUrl** - URL extranet trong thông tin kết nối
+
+- **RMS.ConnectionInfo.IntranetUrl** - URL intranet trong thông tin kết nối
+
+- **RMS.ConnectionMode** - Chế độ kết nối giữa máy khách và máy chủ của Dịch vụ Quản lý Quyền: Trực tuyến hay ngoại tuyến
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.GuestTenant** - ID đối tượng thuê khách cho người dùng
+
+- **RMS.HomeTenant** - ID đối tượng thuê chủ dành cho người dùng
+
+- **RMS.HttpCall** - cho biết có hoạt động HTTP hay không
+
+- **RMS.Identity.ExtranetUrl** - URL extranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.IntranetUrl** - URL intranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.Status** - Lần đầu tiên nhận Chứng nhận tài khoản quyền từ máy chủ hoặc gia hạn chứng nhận tài khoản quyền 
+
+- **RMS.Identity.Type** - Loại tài khoản người dùng, chẳng hạn như tài khoản Windows hoặc tài khoản trực tiếp
+
+- **RMS.Identity.UserProvided** - Cho biết địa chỉ email của người dùng được cung cấp hay không khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.IssuerId** - ID của máy chủ Dịch vụ quản lý quyền cấp Chứng nhận tài khoản quyền  
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.RACType** - Loại Chứng nhận tài khoản quyền
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **RMS.TemplatesCount** - Số mẫu
+
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
+
+- **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
+
+- **UserInfo.UserObjectId** - ID đối tượng người dùng
 #### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
 
 Khi khách hàng sử dụng phần bổ trợ dành cho Office và gọi Rich API để cung cấp dịch vụ, sự kiện này sẽ được kích hoạt. Được sử dụng để đo lường độ tin cậy, hiệu suất và mức độ sử dụng dịch vụ đối với việc gọi phương thức Rich API.
@@ -6493,6 +7718,35 @@ Các trường sau đây sẽ được thu thập:
   - **FirstTimeStamp** – Lần đầu tiên mà tại đó lỗi xảy ra
 
   - **Trackback** – Mã định danh duy nhất cho một lỗi cụ thể
+
+#### <a name="renewidentityfailure"></a>RenewIdentityFailure
+
+Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra khi gia hạn chứng nhận người dùng thất bại.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **Failure.Category** - Danh mục hỏng "UnhandledError"
+
+- **Failure.Detail** - Thông tin chi tiết về sự hỏng
+
+- **Failure.Id** - Id hỏng
+
+- **Failure.Signature** - Chữ ký của việc hỏng, tương tự như tên sự kiện
+
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+
+- **RMS.HRESULT** - Kết quả chứng nhận người dùng
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi máy Khách Dịch vụ quản lý quyền
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Sự kiện dữ liệu cấu hình và kết nối thiết bị
 
