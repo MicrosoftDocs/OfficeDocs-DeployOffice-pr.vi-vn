@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus, bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
-ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
+ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
+ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "36980384"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417457"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -38,8 +38,9 @@ Là một phần của những thay đổi này, có các cài đặt chính sá
 >   - Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 >   - Phiên bản 1904 trở lên của Project và Visio trên máy tính đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
 > - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh nửa năm một lần (Nhóm mục tiêu) được phát hành vào ngày 10/9/2019. Dự kiến, chúng sẽ sẵn dùng trong các Kênh nửa năm một lần vào tháng 01/2020.
-> - Theo kế hoạch, các biện pháp kiểm soát quyền riêng tư này sẽ được áp dụng trong nửa sau của tháng 10/2019 đối với các phiên bản iOS của Excel, OneNote, PowerPoint, Visio và Word. Chúng tôi sẽ cung cấp thêm thông tin trong đầu tháng 10.
-> - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được tăng cường này cho các máy khách Office bổ sung, bao gồm Teams và các ứng dụng dành cho thiết bị di động. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365.
+> - Theo kế hoạch, các biện pháp kiểm soát quyền riêng tư này sẽ được áp dụng trong nửa sau của tháng 10/2019 đối với các phiên bản iOS của Excel, OneNote, PowerPoint, Visio và Word. Chúng tôi sẽ cung cấp thêm thông tin vào đầu tháng 10.
+> - Hầu hết các ứng dụng Office dành cho web được lên lịch để bắt đầu sử dụng biện pháp kiểm soát quyền riêng tư mới cho [các trải nghiệm được kết nối tùy chọn](optional-connected-experiences.md) vào giữa tháng Mười năm 2019. Các ứng dụng đó được liệt kê sau đây: Excel dành cho web, OneNote dành cho web, PowerPoint dành cho web, Visio dành cho web và Word dành cho web. Trước khi bắt đầu, bạn có thể sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md) để đặt cấu hình cho [cài đặt chính sách](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences) thích hợp.
+> - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được tăng cường này cho các máy khách Office bổ sung, bao gồm cả Teams và ứng dụng dành cho di động của chúng tôi. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Dữ liệu chẩn đoán được gửi từ Office 365 ProPlus đến Microsoft
 

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 785cd7f3e881d61be0ee3ee72924efb695e2f5a7
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: 82068f529e341a71557e65e6b7d060bab878bcbe
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656212"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386941"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -584,7 +584,28 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_PrereqFailure\_Type-** Lỗi tiên quyết mà chúng tôi gặp phải
 
-  - **Data\_ProductReleaseId** - Sản phẩm chúng tôi đang cài đặt, ví dụ: Office 365 ProPlus
+  - **Data\_ProductReleaseId-** Sản phẩm chúng tôi đang cài đặt, ví dụ: Office 365 ProPlus
+
+### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
+
+Báo cáo về trạng thái đối với đường ống dẫn cập nhật Click-to-Run mới ("Repoman") và liệu sản phẩm có tải xuống và áp dụng thành công các bản cập nhật Office hay không.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **ApplySucceeded -** Đúng nếu đường ống dẫn áp dụng thành công một bản cập nhật Office, sai nếu không thành công.
+  
+  - **DownloadSucceeded -** Đúng nếu đường ống dẫn tải xuống thành công một bản cập nhật Office, sai nếu không thành công.
+
+  - **ErrorCode -** Mã của lỗi cuối cùng xảy ra trong đường ống dẫn Repoman Click-to-run.
+
+  - **ErrorDetails -**  Thông tin lỗi bổ sung về lỗi cuối cùng xảy ra trong đường ống dẫn Repoman Click-to-run.
+ 
+  - **ErrorMessage -** Thông báo của lỗi cuối cùng xảy ra trong đường ống dẫn Repoman Click-to-run.
+
+  - **OpenStreamSessionSucceeded -** Đúng nếu đường ống dẫn tạo ra phiên thành công để truyền trực tiếp một bản cập nhật Office, sai nếu không thành công.
+
+  - **RepomanErrorMessage -** Thông báo lỗi nhận được từ trepoman.dll.
+ 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigure"></a>Office.ClickToRun.Scenario.InstallTaskConfigure
 
@@ -644,7 +665,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - ****Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
   - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
@@ -702,7 +723,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -778,7 +799,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -854,7 +875,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -930,7 +951,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1006,7 +1027,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1082,7 +1103,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1104,7 +1125,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**  ID máy duy nhất được sử dụng bởi Windows SQM
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
   - **Data\_SusClientID-** Mã định danh cập nhật Office trên máy 
 
@@ -1158,7 +1179,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1234,7 +1255,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1256,7 +1277,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**  ID máy duy nhất được sử dụng bởi Windows SQM
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
   - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
 
@@ -1310,7 +1331,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1356,7 +1377,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
 
   - **Data\_15\_Version -** Phiên bản Office 15 
 
@@ -1386,7 +1407,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1462,7 +1483,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1614,7 +1635,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1766,7 +1787,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -1918,7 +1939,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -2002,7 +2023,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -2040,7 +2061,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Version -** Phiên bản Office 
 
-  - Data\_WorkstationLockState -** Việc chúng tôi cho rằng máy tính bị khóa có đúng hay không
+  - **Data\_WorkstationLockState -** Việc chúng tôi cho rằng máy tính bị khóa có đúng hay không
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateclientdownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload
 
@@ -2082,7 +2103,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -2164,7 +2185,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -2212,7 +2233,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
 
   - **Data\_15\_Version -** Phiên bản Office 15 
 
@@ -2250,7 +2271,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -2276,7 +2297,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**  ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
   - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
 
@@ -2330,7 +2351,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
 
   - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
@@ -2656,8 +2677,15 @@ Các trường sau đây sẽ được thu thập:
 
   - **TimeToLock** - Thời gian giữa khởi đầu liblet và khóa FlightManager
 
-  - **UnmergedConfigs** - Danh sách các cấu hình không được phối
+  - **UnmergedConfigs** - Danh sách các cấu hình không hợp nhất
 
+### <a name="officeexperimentationtriggeranalysis"></a>Office.Experimentation.TriggerAnalysis
+
+Sự kiện này giúp phân tích phạm vi trong việc sử dụng sản phẩm và các số liệu về hiệu suất (chẳng hạn như sự cố, bị treo, v.v.) cho tập hợp con những người dùng hoặc thiết bị đủ điều kiện dùng tính năng này, từ đó giúp đảm bảo rằng sản phẩm đang hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+  - **FeatureGate -** Xác định tập hợp các tính năng mà có thể áp dụng phân tích kích hoạt.
 
 ## <a name="licensing-events"></a>Sự kiện cấp phép
 
@@ -2755,7 +2783,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinginstallkey"></a>Office.Licensing.InstallKey
 
-Điều này được thu thập khi chúng tôi cố gắng cài đặt một khóa trên thiết bị để cấp phép máy. Nó báo cáo việc cài đặt có thành công hay không và nếu không thì là mã lỗi. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
+Thông tin này được thu thập khi chúng tôi cố gắng cài đặt một khoá trên thiết bị để cấp phép máy. Nó báo cáo việc cài đặt có thành công hay không và nếu không thì là mã lỗi. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9410,7 +9438,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa tên, đường cơ sở và phiên bản phiên bản của bộ sản phẩm.
+- **Payload** - Chứa tên, đường cơ sở và phiên bản cập nhật cho bộ sản phẩm.
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -10920,7 +10948,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officesystemsystemhealthungracefulapplicationexitwin32"></a>Office.System.SystemHealthUngracefulApplicationExitWin32
 
-Sử dụng để ghi lại số liệu gặp sự cố.
+Sự kiện được kích hoạt do hành động chấm dứt ứng dụng bất thường (chẳng hạn như trình quản lý tác vụ bắt buộc thoát, ứng dụng bị treo, v.v.) đối với các ứng dụng máy khách Office như Word, Excel, PowerPoint, Outlook và một số ứng dụng khác. Chúng tôi dùng các số liệu Thoát ứng dụng bất thường để đo lường trạng thái sức khoẻ của sản phẩm máy khách Office. Đây là một tín hiệu nghiệp vụ quan trọng do các kỹ sư Office sử dụng để kết luận tính ổn định của sản phẩm.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -10930,13 +10958,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **CrashedAppMinor -** Mã định danh phiên bản phụ cho quá trình bị ảnh hưởng.
 
-  - **CrashedAppRevision -** Mã định danh phiên bản chỉnh sửa bản dựng cho quá trình bị ảnh hưởng.
+  - **CrashedAppRevision -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
 
-  - **CrashedConfigIds -** Cấu hình được gán cho quy trình bị rơi.
-
-  - **CrashedEcsETag -** một mã định danh thử nghiệm cho quy trình rơi.
-
-  - **CrashedImpressionId -** mã định danh ấn tượng của quy trình rơi.
+  - **CrashedEcsETag -** Mã định danh thử nghiệm cho quy trình xảy ra sự cố.
 
   - **CrashedModuleName -** Tên mô-đun lỗi.
 
@@ -10952,7 +10976,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **ExceptionCode -** Mã định danh bucketing cho trường hợp ngoại lệ.
 
-  - **HexExceptionAddress -** Địa chỉ theo hệ thập lục phân trong chương trình nơi xảy ra lỗi.
+  - **HexCrashTag -**  Mã định danh duy nhất cho mã của sự cố.
+
+  - **HexExceptionAddress -** Địa chỉ theo hệ thập lục phân trong chương trình, nơi xảy ra lỗi.
 
   - **HexExceptionCode -** Mã định danh theo hệ thập lục phân cho trường hợp ngoại lệ.
 
@@ -10976,7 +11002,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **PreviousBuild** - Phiên bản bản dựng đã được cài đặt trước đó
 
-  - **UAEOSEnvironment -** Mã định danh môi trường hệ điều hành môi trường.
+  - **UAEOSEnvironment -** Mã định danh môi trường của hệ điều hành.
+
+  - **UninitLibletId –** Mã định danh duy nhất cho cấu phần lỗi của sự cố.
 
   - **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố.
 
@@ -11380,7 +11408,7 @@ Các trường sau đây sẽ được thu thập:
 
 Các trường sau đây sẽ được thu thập:
 
-  - **ThrottlingTimestamp** - Khi phép đo từ xa được tiết lưu
+  - **ThrottlingTimestamp** - Thời điểm phép đo từ xa được tiết lưu
 
 ### <a name="officetelemetryrulesengineulsqueuesizebackgroundprocessinglevelreached"></a>Office.Telemetry.RulesEngineUlsQueueSizeBackgroundProcessingLevelReached
 

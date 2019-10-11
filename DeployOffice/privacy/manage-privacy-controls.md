@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các cài đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 041e7c5df5bb046843b07bedc4a8ee9b3848903d
+ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238992"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417367"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -120,7 +120,17 @@ Các trải nghiệm được kết nối này là khác nhau vì chúng không 
 
 Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* để kiểm soát xem các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối tuỳ chọn này sẽ có sẵn cho người dùng của bạn.
 
-Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, họ sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
+> [!NOTE]
+> Bạn cũng có thể đặt cấu hình cho cài đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* để áp dụng cho các ứng dụng Office dành cho web sau đây:
+> - Excel dành cho web
+> - OneNote dành cho web
+> - PowerPoint dành cho web
+> - Visio dành cho web
+> - Word dành cho web
+>
+> Các ứng dụng Office dành cho web này được lên lịch để bắt đầu sử dụng biện pháp kiểm soát quyền riêng tư mới cho các trải nghiệm được kết nối tùy chọn vào giữa tháng Mười năm 2019, những bạn có thể đặt cấu hình cho cài đặt chính sách ngay bây giờ. Để đặt cấu hình thiết đặt chính sách này cho các ứng dụng Office dành cho web, bạn cần sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md).
+
+Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tuỳ chọn này cho người dùng của mình, họ vẫn sẽ có tùy chọn tắt các trải nghiệm này đi với tư cách một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
 Ngoài ra, một số trải nghiệm được kết nối tùy chọn này cũng được coi là trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến. Ví dụ: Chèn ảnh trực tuyến là một trải nghiệm được kết nối tùy chọn, được cung cấp bởi Microsoft Bing, nhưng nó cũng được coi là một trải nghiệm được kết nối tải xuống nội dung trực tuyến. Lưu ý rằng nếu bạn vô hiệu hóa thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tải xuống nội dung trực tuyến trong Office*, tính năng Chèn ảnh trực tuyến sẽ không có sẵn cho người dùng của bạn. Tính năng này sẽ không có sẵn ngay cả khi bạn đã bật thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office*. Để biết thêm thông tin về trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến, hãy xem mục [Trải nghiệm được kết nối trong Office](connected-experiences.md).
 
