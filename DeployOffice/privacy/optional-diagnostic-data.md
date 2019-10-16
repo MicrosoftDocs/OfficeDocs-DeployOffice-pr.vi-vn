@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số ví dụ về các sự kiện.
 hideEdit: true
-ms.openlocfilehash: e4b42e97d7d954a968ad2a1366c6f64235c1d7f0
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: d772a649a78a88112a270e839834cbe48141217f
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239028"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510197"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán tuỳ chọn cho Office
 
@@ -49,7 +49,8 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
-- [Sử dụng tùy chọn để quản lý điều khiển quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 
 ## <a name="categories-of-optional-diagnostic-data"></a>Danh mục dữ liệu chẩn đoán tùy chọn
 
