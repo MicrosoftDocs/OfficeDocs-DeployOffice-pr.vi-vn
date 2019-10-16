@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: e20a2cd70b8c5fbc47abac7288627cd2783855e7
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: c3d6489603ff5cdc5f7a0ea4f187fb24438aeb35
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239157"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510107"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -27,7 +27,8 @@ Nếu bạn có tài khoản cơ quan hoặc trường học, người quản tr
 > [!NOTE]
 > Nếu bạn là người quản trị, hãy xem các bài viết sau đây để tìm hiểu cách cho phép hoặc hạn chế khả năng sử dụng của người dùng của bạn trong việc sử dụng trải nghiệm được kết nối tùy chọn:
 > - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
-> - [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho máy Mac](mac-privacy-preferences.md)
+> - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
+> - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Nếu bạn sử dụng các dịch vụ này, bạn cần đồng ý với những điều khoản sử dụng nào?
 

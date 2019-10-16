@@ -2,6 +2,7 @@
 ## [Tổng quan về kiểm soát quyền riêng tư](overview-privacy-controls.md)
 ## [Quản lý kiểm soát quyền riêng tư với thiết đặt chính sách](manage-privacy-controls.md)
 ## [Quản lý kiểm soát quyền riêng tư với các tùy chọn (Mac)](mac-privacy-preferences.md)
+## [Quản lý kiểm soát quyền riêng tư với các tùy chọn (iOS)](ios-privacy-preferences.md)
 
 ## Dữ liệu chẩn đoán
 ### [Dữ liệu chẩn đoán bắt buộc](required-diagnostic-data.md)

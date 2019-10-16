@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: a5770d3ed30f86dfbf1cb1dfc4a45bbb15179da8
-ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
+ms.openlocfilehash: 71b05ab46c7aa6aee2c7dbc2aa88201f50fc8b99
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386987"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510019"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -47,7 +47,8 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
-- [Sử dụng tùy chọn để quản lý điều khiển quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Danh mục, loại dữ liệu con, sự kiện và trường dữ liệu cho dữ liệu chẩn đoán được yêu cầu
 
