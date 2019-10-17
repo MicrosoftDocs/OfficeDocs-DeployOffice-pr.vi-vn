@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 82068f529e341a71557e65e6b7d060bab878bcbe
-ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
+ms.openlocfilehash: a482854210e5f609a41e6a810c3c3338a19586e7
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386941"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510487"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -43,6 +43,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Danh sách các dịch vụ cần thiết cho Office 
 
@@ -9438,7 +9439,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa tên, đường cơ sở và phiên bản cập nhật cho bộ sản phẩm.
+- **Payload** - Chứa tên, đường cơ sở và phiên bản phiên bản của bộ sản phẩm.
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 

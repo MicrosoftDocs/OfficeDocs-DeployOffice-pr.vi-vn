@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus, bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
-ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
+ms.openlocfilehash: 24a3d30d05fb2a1456e10d8a8036f31c25c14db7
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417457"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510745"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -38,7 +38,7 @@ Là một phần của những thay đổi này, có các cài đặt chính sá
 >   - Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 >   - Phiên bản 1904 trở lên của Project và Visio trên máy tính đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
 > - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh nửa năm một lần (Nhóm mục tiêu) được phát hành vào ngày 10/9/2019. Dự kiến, chúng sẽ sẵn dùng trong các Kênh nửa năm một lần vào tháng 01/2020.
-> - Theo kế hoạch, các biện pháp kiểm soát quyền riêng tư này sẽ được áp dụng trong nửa sau của tháng 10/2019 đối với các phiên bản iOS của Excel, OneNote, PowerPoint, Visio và Word. Chúng tôi sẽ cung cấp thêm thông tin vào đầu tháng 10.
+> - Các biện pháp kiểm soát quyền riêng tư này sẵn dùng đối với Phiên bản 2.30 trở lên của những phiên bản iOS của Excel, OneNote, PowerPoint và Word cũng như Phiên bản 1.17 trở lên của Visio Viewer for iOS.
 > - Hầu hết các ứng dụng Office dành cho web được lên lịch để bắt đầu sử dụng biện pháp kiểm soát quyền riêng tư mới cho [các trải nghiệm được kết nối tùy chọn](optional-connected-experiences.md) vào giữa tháng Mười năm 2019. Các ứng dụng đó được liệt kê sau đây: Excel dành cho web, OneNote dành cho web, PowerPoint dành cho web, Visio dành cho web và Word dành cho web. Trước khi bắt đầu, bạn có thể sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md) để đặt cấu hình cho [cài đặt chính sách](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences) thích hợp.
 > - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được tăng cường này cho các máy khách Office bổ sung, bao gồm cả Teams và ứng dụng dành cho di động của chúng tôi. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365.
 
@@ -73,7 +73,8 @@ Dữ liệu chẩn đoán này không bao gồm tên của người dùng, đị
 - [Dữ liệu chẩn đoán bắt buộc cho Office](required-diagnostic-data.md)
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
-- [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho máy Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-office-365-proplus"></a>Các trải nghiệm được kết nối cho Office 365 ProPlus
@@ -98,7 +99,8 @@ Người dùng của bạn sẽ không thể chọn bật các trải nghiệm �
 
 - [Các trải nghiệm kết nối trong Office](connected-experiences.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
-- [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho máy Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 
 ## <a name="optional-connected-experiences-for-office-365-proplus"></a>Các trải nghiệm được kết nối tùy chọn cho Office 365 ProPlus
 
@@ -114,7 +116,8 @@ Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối 
 
 - [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
-- [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho máy Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Dữ liệu dịch vụ bắt buộc cho trải nghiệm được kết nối
 

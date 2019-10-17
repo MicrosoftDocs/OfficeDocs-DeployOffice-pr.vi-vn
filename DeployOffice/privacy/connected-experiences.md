@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 04d71fcd601f76d2613dda9bd00dccd24ab8e950
-ms.sourcegitcommit: 27db488cae3bd23342bc0d902c53b5bf89ae30a7
+ms.openlocfilehash: 8b9038bdff83c786616ae87565e6ae66ac85516a
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37379797"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510449"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -135,7 +135,11 @@ Nếu bạn đã đăng nhập bằng tài khoản cơ quan hoặc trường h�
 > [!NOTE]
 > Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
-Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng cài đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để biết thêm thông tin về cách sử dụng các cài đặt chính sách này, hãy xem mục [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md) và [Sử dụng các tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md).
+Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng cài đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để tìm hiểu thêm thông tin về cách sử dụng các thiết đặt chính sách này, hãy xem những bài viết sau đây: 
+
+- [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md).
+- [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 
 Nếu bạn chọn tắt một số loại trải nghiệm được kết nối, lệnh dải băng hoặc menu cho những trải nghiệm được kết nối đó sẽ chuyển sang màu xám hoặc bạn sẽ nhận được thông báo lỗi khi bạn cố gắng sử dụng những trải nghiệm được kết nối đó.
 
