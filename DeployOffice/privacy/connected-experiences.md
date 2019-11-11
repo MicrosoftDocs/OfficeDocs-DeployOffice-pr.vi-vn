@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 8b9038bdff83c786616ae87565e6ae66ac85516a
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 5bf39e1fbe7e56b77496cfc0756484a9a1c051a0
+ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510449"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38067579"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -140,6 +140,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn có th�
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md).
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
+- [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
 
 Nếu bạn chọn tắt một số loại trải nghiệm được kết nối, lệnh dải băng hoặc menu cho những trải nghiệm được kết nối đó sẽ chuyển sang màu xám hoặc bạn sẽ nhận được thông báo lỗi khi bạn cố gắng sử dụng những trải nghiệm được kết nối đó.
 

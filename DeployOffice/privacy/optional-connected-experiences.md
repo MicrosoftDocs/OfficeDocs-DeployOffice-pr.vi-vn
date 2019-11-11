@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: c3d6489603ff5cdc5f7a0ea4f187fb24438aeb35
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: f59c737a41c3075f9c29c49f623d88f9876bf32d
+ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510107"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38067314"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -29,6 +29,7 @@ Nếu bạn có tài khoản cơ quan hoặc trường học, người quản tr
 > - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
+> - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Nếu bạn sử dụng các dịch vụ này, bạn cần đồng ý với những điều khoản sử dụng nào?
 

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các cài đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: 5f3b63c65d43827befe58ba600c7957410f2d3c0
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 31db528fe639b8685acf56d88d4a4bf8dd406bd3
+ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510323"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38067489"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -45,6 +45,7 @@ Các thiết đặt chính sách này có thể được thực hiện bằng c�
 > [!NOTE]
 > - Để biết thông tin về cách quản lý kiểm soát quyền riêng tư đối với Office cho Mac, hãy xem mục [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md).
 > - Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên thiết bị iOS, xem mục [Sử dụng tuỳ chọn để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị chạy iOS](ios-privacy-preferences.md).
+> - Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên thiết bị Android, xem mục [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md).
 
 
 Nếu bạn sử dụng công cụ quản lý chính sách nhóm, tất cả các cài đặt chính sách này đều được đặt trong Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.

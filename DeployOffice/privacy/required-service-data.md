@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office cái nhìn tổng quan về dữ liệu dịch vụ bắt buộc được thu thập về các trải nghiệm được kết nối trong Office.
 hideEdit: true
-ms.openlocfilehash: eaa659e375d3d5c29d5410ab53db7ae583df6e9d
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: b4cc25ae1c2a34082bff623ad630db664050effb
+ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510655"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38067263"
 ---
 # <a name="required-service-data-for-office"></a>Dữ liệu dịch vụ bắt buộc cho Office 
 
@@ -68,6 +68,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
+- [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
 
 ## <a name="examples-of-events-for-service-diagnostic-data"></a>Ví dụ về các sự kiện dành cho dữ liệu chẩn đoán dịch vụ.
 
