@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: f59c737a41c3075f9c29c49f623d88f9876bf32d
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
+ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067314"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38276524"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -47,9 +47,9 @@ Lưu ý: Thiết đặt quyền riêng tư được mô tả bên dưới không
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Trải nghiệm dựa trên các dịch vụ trực tuyến thuộc sở hữu của Microsoft và/hoặc các dịch vụ thuộc sở hữu của bên thứ ba
 
-### <a name="office-store"></a>Office Store 
+### <a name="help--suggest-a-feature"></a>Trợ giúp > Đề xuất một Tính năng
 
-Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đó được cấp phép bởi [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Tuy nhiên, mọi [phần bổ trợ Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) mà bạn tải xuống thông qua Office Store đều được bảo vệ theo các điều khoản sử dụng của nhà cung cấp phần bổ trợ. Đây có thể là các tổ chức hoặc doanh nghiệp khác nhau và một số có thể tính phí sử dụng. Bạn sẽ cần kiểm tra các quyền, điều khoản về quyền riêng tư và điều khoản cấp phép của từng phần bổ trợ để biết điều khoản nào được áp dụng và quyết định xem bạn có muốn đồng ý với các điều khoản sử dụng mà tổ chức đó cung cấp hay không.
+Đề xuất một Tính năng là một trải nghiệm cho phép bạn gửi ý tưởng của mình về việc sử dụng Outlook. Đề xuất của bạn được cung cấp trực tiếp cho dịch vụ của bên thứ ba có tên là UserVoice. Nếu bạn gửi ý tưởng bằng Đề xuất một Tính năng, các [điều khoản dịch vụ và chính sách quyền riêng tư của UserVoice](https://outlook.uservoice.com/tos) sẽ được áp dụng.
 
 ### <a name="insert-online-video"></a>Chèn video trực tuyến
 
@@ -58,6 +58,10 @@ Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đ
 ### <a name="microsoft-error-reporting-program-merp"></a>Chương trình Báo cáo Lỗi Microsoft (MERP) 
 
 MERP kết nối với dịch vụ Watson.microsoft.com để gửi dữ liệu chẩn đoán khi ứng dụng máy khách Office chạy trên các thiết bị Mac gặp sự cố. Chương trình này thuộc sở hữu của Microsoft và các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [Điều khoản về quyền riêng tư của Microsoft](https://privacy.microsoft.com/) sẽ được áp dụng. MERP không áp dụng cho các ứng dụng máy khách Office chạy trên Windows.
+
+### <a name="office-store"></a>Office Store 
+
+Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đó được cấp phép bởi [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Tuy nhiên, mọi [phần bổ trợ Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) mà bạn tải xuống thông qua Office Store đều được bảo vệ theo các điều khoản sử dụng của nhà cung cấp phần bổ trợ. Đây có thể là các tổ chức hoặc doanh nghiệp khác nhau và một số có thể tính phí sử dụng. Bạn sẽ cần kiểm tra các quyền, điều khoản về quyền riêng tư và điều khoản cấp phép của từng phần bổ trợ để biết điều khoản nào được áp dụng và quyết định xem bạn có muốn đồng ý với các điều khoản sử dụng mà tổ chức đó cung cấp hay không.
 
 ### <a name="research"></a>Nghiên cứu
 
@@ -70,19 +74,6 @@ MERP kết nối với dịch vụ Watson.microsoft.com để gửi dữ liệu 
 
 [Thanh Thời tiết](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc5d727b06b) trong Outlook hiển thị dự báo thời tiết cho các vị trí địa lý mà bạn chọn. Trong quá trình sử dụng, thanh thời tiết trong Outlook sẽ kết nối với Thời tiết trên MSN theo mặc định. MSN được sở hữu bởi Microsoft và các điều khoản của [Thỏa thuận Dịch vụ của Microsoft của Microsoft](https://www.microsoft.com/servicesagreement) và [Điều khoản về quyền riêng tư](https://privacy.microsoft.com/) sẽ được áp dụng. Khi bạn sử dụng Thanh Thời tiết với Thời tiết trên MSN, Microsoft không phát hiện vị trí của bạn và các thành phố bạn chọn hiển thị không liên kết với bạn. Bạn có thể [thay đổi thiết đặt mặc định này](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) để kết nối với nhà cung cấp dịch vụ thời tiết khác. Nếu bạn quyết định sử dụng một nhà cung cấp dịch vụ thời tiết khác, bạn sẽ cần kiểm tra điều khoản về quyền riêng tư và điều khoản cấp phép của nhà cung cấp đó để biết về những điều khoản được áp dụng.
 
-## <a name="experiences-that-allow-you-to-submit-feedback"></a>Trải nghiệm cho phép bạn gửi phản hồi
-
-### <a name="help--feedback"></a>Trợ giúp > Phản hồi
-
-Khi bạn đi đến **Trợ giúp** > **Phản hồi** và cung cấp phản hồi hoặc chọn phản hồi với một trong những yêu cầu khảo sát “Chúng tôi rất muốn nhận được phản hồi của bạn” khi sử dụng ứng dụng Office 365 ProPlus, thông tin bạn cung cấp được gửi tới Microsoft và các điều khoản của [Thoả thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/) sẽ được áp dụng. Khi bạn gửi phản hồi bằng nút Phản hồi, bạn có thể tùy chọn gửi địa chỉ email và/hoặc ảnh chụp màn hình của màn hình của bạn. Điều này không bắt buộc.  
-
-#### <a name="outlook-is-an-exception"></a>Outlook là một ngoại lệ
-
-**Trợ giúp** > **Phản hồi** trong Outlook khác với **Trợ giúp** > **Phản hồi** trong các ứng dụng Office 365 ProPlus khác. Khi bạn gửi phản hồi bằng cách sử dụng **Trợ giúp** > **Phản hồi** trong Outlook, bạn cho phép Microsoft thu thập nhật ký Outlook để giải quyết các vấn đề về hiệu suất tiềm năng. Các nhật ký này có thể chứa thông tin cá nhân như tên, địa chỉ email, nội dung email hoặc cụm từ tìm kiếm của bạn. Dịch vụ này được cung cấp cho bạn thông qua giấy phép tổ chức của bạn với Microsoft. Do đó, nếu bạn chọn gửi phản hồi qua nút Phản hồi trong Outlook, bạn không cần phải ký một thỏa thuận riêng với Microsoft và cài đặt quyền riêng tư được mô tả trong bài viết này không áp dụng.
-
-### <a name="help--suggest-a-feature"></a>Trợ giúp > Đề xuất một Tính năng
-
-Đề xuất một Tính năng là một trải nghiệm cho phép bạn gửi ý tưởng của mình về việc sử dụng Outlook. Đề xuất của bạn được cung cấp trực tiếp cho dịch vụ của bên thứ ba có tên là UserVoice. Nếu bạn gửi ý tưởng bằng Đề xuất một Tính năng, các [điều khoản dịch vụ và chính sách quyền riêng tư của UserVoice](https://outlook.uservoice.com/tos) sẽ được áp dụng.
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Cách xác định xem người quản trị của bạn có cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn không
 
