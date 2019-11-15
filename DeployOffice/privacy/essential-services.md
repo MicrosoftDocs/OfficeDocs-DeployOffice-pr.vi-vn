@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: a482854210e5f609a41e6a810c3c3338a19586e7
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
+ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510487"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310702"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -44,6 +44,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
+- [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Danh sách các dịch vụ cần thiết cho Office 
 
@@ -10058,6 +10059,15 @@ Các trường sau đây sẽ được thu thập
 Không có sự kiện dữ liệu chẩn đoán dịch vụ bắt buộc được thu thập bởi Cấu hình dịch vụ.
 
 ## <a name="telemetry-events"></a>Sự kiện phép đo từ xa
+
+### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để giám sát trạng thái của dòng chọn tham gia phép đo từ xa của chúng tôi trong trải nghiệm chạy lần đầu tiên. Chúng tôi thu thập mã biểu thị loại tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
+
+Các trường sau đây sẽ được thu thập:
+
+ - **Data_EventId** – Mã cho biết tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
+
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 

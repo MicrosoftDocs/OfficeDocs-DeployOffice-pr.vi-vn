@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các cài đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: 31db528fe639b8685acf56d88d4a4bf8dd406bd3
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
+ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067489"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639364"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
 
@@ -92,9 +92,6 @@ Chúng tôi hiểu rằng bạn có thể muốn chọn loại trải nghiệm �
 
 Nếu bạn không cấu hình các thiết đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn. Điều này cung cấp cho người dùng của bạn tất cả các tính năng và chức năng có thể truy cập thông qua Office 365 ProPlus. Nhưng chúng tôi hiểu rằng bạn có thể cần phải tắt một số hoặc tất cả những trải nghiệm được kết nối này để đáp ứng các yêu cầu nhất định của tổ chức của bạn.
 
-> [!IMPORTANT]
-> Sự cố liên quan đến việc tắt 4 thiết đặt chính sách gần đây đã được khắc phục bằng cách xuất bản các tệp Mẫu quản trị mới (ADMX/ADML) vào Thứ Ba ngày 28/5/2019. Đảm bảo tải xuống và cài đặt bản cập nhật bằng cách thủ công từ [Trung tâm Tải xuống Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
-
 Nếu bạn chọn không cung cấp cho người dùng của mình một số loại trải nghiệm được kết nối nhất định, lệnh ruy băng hoặc menu cho những trải nghiệm được kết nối đó sẽ bị mờ đi hoặc người dùng sẽ nhận được thông báo lỗi khi họ cố gắng sử dụng những trải nghiệm được kết nối đó. Trong trường hợp đó, sẽ không có [dữ liệu dịch vụ bắt buộc](required-service-data.md) cho những trải nghiệm được kết nối nào được gửi đến Microsoft.
 
 Người dùng của bạn sẽ không thể chọn bật hoặc tắt các trải nghiệm được kết nối này với Office 365 ProPlus nếu họ đã đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ, đôi khi được gọi là tài khoản cơ quan hoặc trường học.
@@ -131,7 +128,7 @@ Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng c
 > - Visio dành cho web
 > - Word dành cho web
 >
-> Các ứng dụng Office dành cho web này được lên lịch để bắt đầu sử dụng biện pháp kiểm soát quyền riêng tư mới cho các trải nghiệm được kết nối tùy chọn vào giữa tháng Mười năm 2019, những bạn có thể đặt cấu hình cho cài đặt chính sách ngay bây giờ. Để đặt cấu hình thiết đặt chính sách này cho các ứng dụng Office dành cho web, bạn cần sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md).
+> Để đặt cấu hình thiết đặt chính sách này cho các ứng dụng Office dành cho web, bạn cần sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md).
 
 Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tuỳ chọn này cho người dùng của mình, họ vẫn sẽ có tùy chọn tắt các trải nghiệm này đi với tư cách một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
