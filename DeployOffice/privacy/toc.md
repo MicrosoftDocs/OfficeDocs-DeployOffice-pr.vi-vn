@@ -1,9 +1,12 @@
 # Quyền riêng tư dành cho Office 365 ProPlus
+
 ## [Tổng quan về kiểm soát quyền riêng tư](overview-privacy-controls.md)
-## [Quản lý kiểm soát quyền riêng tư với thiết đặt chính sách](manage-privacy-controls.md)
-## [Quản lý kiểm soát quyền riêng tư với các tùy chọn (Mac)](mac-privacy-preferences.md)
-## [Quản lý kiểm soát quyền riêng tư với các tùy chọn (iOS)](ios-privacy-preferences.md)
-## [Quản lý các biện pháp kiểm soát quyền riêng tư với cài đặt chính sách (Android)](android-privacy-controls.md)
+
+## Quản lý điều khiển quyền riêng tư
+### [Cài đặt chính sách Windows](manage-privacy-controls.md)
+### [Tùy chọn Mac](mac-privacy-preferences.md)
+### [Tùy chọn iOS](ios-privacy-preferences.md)
+### [Cài đặt chính sách Android](android-privacy-controls.md)
 
 ## Dữ liệu chẩn đoán
 ### [Dữ liệu chẩn đoán bắt buộc](required-diagnostic-data.md)
