@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 71b05ab46c7aa6aee2c7dbc2aa88201f50fc8b99
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 0437779d269d4de7132961ce2edc37363d10b309
+ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510019"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639402"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -49,6 +49,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
+- [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Danh mục, loại dữ liệu con, sự kiện và trường dữ liệu cho dữ liệu chẩn đoán được yêu cầu
 
@@ -1237,6 +1238,7 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 
 Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác).
 
+
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
 Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcCreateRepublishingLicense.
@@ -1749,6 +1751,24 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.CollectionTime** - Dấu thời gian khi sự kiện sự cố được ghi lại
 
+#### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để theo dõi trạng thái của dòng kích hoạt vĩnh viễn cũng như việc điều tra các nguyên nhân gây ra lỗi bằng cách xem xét các giá trị FailedAt.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FailedAt** - Chúng tôi thu thập một chuỗi đại diện cho vị trí trong dòng giấy phép kích hoạt vĩnh viễn mà chúng tôi đã không thành công.
+
+#### <a name="office_apple_activatesubscription"></a>Office_Apple_ActivateSubscription
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập thông tin liên quan đến việc di chuyển từ ngăn xếp mã cấp phép kế thừa sang mã cấp phép vNext. Điều này được sử dụng để theo dõi trạng thái của luồng kích hoạt đăng ký cũng như theo dõi xem nếu đây là sự di chuyển sang cấp phép vNext và nếu danh tính chính được sử dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActivatingPrimaryIdentity** - Giá trị true/false biểu thị nếu danh tính chính được sử dụng. 
+
+- **Data_NULSubscriptionLicensed** - Giá trị true/false biểu thị trạng thái đăng ký
+
 #### <a name="office_apple_cisauthticketwithidentity"></a>Office_Apple_CISAuthTicketWithIdentity
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để thu thập sự cố lỗi trên mã thông báo xác thực trong quá trình InAppPurchase trên máy Mac (sự kiện ghi lại mã lỗi đã nhận được).  Sự kiện này được sử dụng để phát hiện và giúp khắc phục sự cố hỏng mã thông báo
@@ -1761,7 +1781,51 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_ValidIdentity** - Liệu máy khách có nhận dạng hợp lệ hay không
 
+#### <a name="office_apple_inappassociationactivity"></a>Office_Apple_InAppAssociationActivity
 
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập thông tin liên quan đến liên kết sản phẩm sau khi mua trong ứng dụng. Chúng tôi ghi nhật ký SKU đăng ký mà chúng tôi đang liên kết.  Điều này được sử dụng để theo dõi trạng thái của các liên kết sản phẩm mua hàng trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ProductID** - SKU đăng ký mà chúng tôi đang cố gắng liên kết sản phẩm.
+
+#### <a name="office_apple_inapppurchaseactivity"></a>Office_Apple_InAppPurchaseActivity
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. 
+
+Chúng tôi thu thập thông tin liên quan đến các giao dịch mua sản phẩm trên AppStore. Chúng tôi theo dõi kết quả của giao dịch mua hàng (Thất bại, thành công, vấn đề thanh toán, v.v.), loại yêu cầu mua hàng (khôi phục, mua hàng) và SKU/sản phẩm được mua (Office 365 Home, v.v.).  Dữ liệu này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ Data_PurchaseResult** - Kết quả của thao tác mua hàng
+
+- **Data_ProductID** - Sản phẩm được mua
+
+- **Data_PurchaseRequestType** - Loại yêu cầu mua hàng
+
+#### <a name="office_apple_intune"></a>Office_Apple_InTune
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập xem phiên hiện tại có được quản lý bởi Intune hay không. Điều này được sử dụng cho pivot/bộ lọc trên các phiên được Intune quản lý và cho phép chúng tôi điều tra các vấn đề tiềm ẩn liên quan đến Office đang được chạy dưới dạng một ứng dụng do Intune quản lý.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EventID** - Chúng tôi thu thập chuỗi đại diện cho mã cho biết xem liệu phiên này có được quản lý hay không.
+
+#### <a name="office_apple_licensing_mac_licensingstate"></a>Office_Apple_Licensing_Mac_LicensingState
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại trạng thái hiện tại của giấy phép cho một phiên trong máy (ID giấy phép OLS, SKU đang được sử dụng, có thời gian gia hạn hay không, RFM, v.v.). Dữ liệu thu thập được sử dụng để phát hiện lỗi và điều tra nguyên nhân gây ra lỗi. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_DidRunPreview** - Chuỗi cho biết nếu phiên này được chạy dưới chế độ xem trước
+
+- **Data_LicensingACID** - Chuỗi đại diện cho mã định danh nội bộ của hệ thống cấp phép
+
+- **Data_LicensingType** - Chuỗi đại diện cho loại giấy phép
+
+- **Data_OLSLicenseId** - Chuỗi đại diện cho mã định danh giấy phép
+
+- **Data_State** - Chuỗi đại diện cho trạng thái hiện tại của giấy phép
 
 #### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
 
@@ -1798,6 +1862,258 @@ Các trường sau đây sẽ được thu thập:
 - **Activity_StartStopType** - Stop
 
 - **Activity_DateTimeTicks** = Dữ liệu về thời gian cho hoạt động
+
+#### <a name="office_docs_apple_docsuxiossaveasthroughfilemenu"></a>Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác “Lưu dưới dạng” diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác tệp như danh mục vị trí.  Thao tác “Lưu dưới dạng” xảy ra khi người dùng tạo một tệp mới và lưu lại lần đầu tiên hoặc lưu bản sao của tệp hiện có vào một vị trí mới.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_OriginServiceType** - Cách phân loại trừu tượng về vị trí ban đầu của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí mới của một tệp sau khi hoàn thành việc lưu như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+#### <a name="office_docs_apple_docsuxmacatmentioninsertedatmention"></a>Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi một người dùng “@” đề cập đến một người dùng khác và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên cách người dùng cộng tác với những người dùng khác.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CharactersTyped** - Giá trị bằng số cho biết tổng số ký tự được nhập trong văn bản đề cập “@”.
+
+#### <a name="office_docs_apple_docsuxmacodspsharingwebviewsharingcompleted"></a>Office_Docs_Apple_DocsUXMacODSPSharingWebViewSharingCompleted 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn chia sẻ tài liệu đám mây bằng trải nghiệm chia sẻ OneDrive và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ShareType** - Chuỗi được mã hóa cứng cho biết về loại thao tác chia sẻ đã được hoàn thành bao gồm nhưng không giới hạn ở “Sao chép liên kết”, “Ứng dụng khác”, “Nhóm”.
+
+- **Data_ShareWebViewMode** - Chuỗi được mã hóa cứng cho biết về loại chế độ chia sẻ đã hoạt động khi hoàn thành việc chia sẻ bao gồm nhưng không giới hạn ở “Quản_lý_truy_nhập”, “Đề_cập”, “Chia_sẻ”.
+
+#### <a name="office_docsui_collaboration_coauthorgalleryrowtapped"></a>Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn xem danh sách các đồng tác giả hiện tại.  Dữ liệu này được sử dụng để hiểu rõ hơn và ưu tiên các trải nghiệm người dùng liên quan đến việc đồng tác giả một tài liệu cùng một lúc.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CoauthorCount** - Giá trị số đại diện cho tổng số người hiện đang chỉnh sửa cùng một tài liệu với người dùng.
+
+#### <a name="office_docsui_collaboration_collabcornerpeoplegallerycoauthorsupdated"></a>Office_DocsUI_Collaboration_CollabCornerPeopleGalleryCoauthorsUpdated 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại khi số lượng đồng tác giả hiện hoạt trong tài liệu đám mây thay đổi.  Dữ liệu này được sử dụng để hiểu rõ hơn và ưu tiên các trải nghiệm người dùng liên quan đến việc đồng tác giả một tài liệu cùng một lúc.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CoauthorsJoined** - Số lượng đồng tác giả đã tham gia vào tài liệu.
+
+- **Data_CoauthorsJoined** - Số lượng đồng tác giả đã rời khỏi tài liệu.
+
+- **Data_NewCoauthorCount** - Số lượng đồng tác giả hiện hoạt mới trong tài liệu. 
+
+- **Data_OldCoauthorCount** - Số lượng trước đó của đồng tác giả hiện hoạt trước khi cập nhật.
+
+- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+#### <a name="office_docsui_docstage_docstagecreatenewfromtemplate"></a>Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại khi một tệp mới được tạo từ trải nghiệm “Mới từ mẫu” và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên thông tin tạo tài liệu.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_InHomeTab** - Giá trị Boolean cho biết liệu tệp mới từ mẫu có được tạo từ tab Trang đầu của trải nghiệm mới từ tệp hay không.
+
+- **Data_InSearch** - Boolean cho biết liệu tệp đã được tạo khi người dùng đang tìm kiếm mẫu hay chưa.
+
+- **Data_IsHomeTabEnabled** - Giá trị Boolean cho biết nếu tab Trang đầu hiện sẵn dùng cho người dùng.
+
+- **Data_IsRecommendedEnabled** - Giá trị Boolean cho biết liệu trải nghiệm “Được đề xuất” hiện có sẵn dùng cho người dùng hay không.
+
+- **Data_TemplateIndex** - Chỉ mục số của tệp mẫu khi được hiển thị trực quan cho người dùng.
+
+- **Data_TemplateType** - Phân loại để giúp phân biệt loại mẫu, nhưng không giới hạn, mẫu “Trực tuyến”, mẫu “Tìm kiếm trực tuyến”, mẫu “Cục bộ”.
+
+#### <a name="office_docsui_docstage_recommendedopen"></a>Office_DocsUI_DocStage_RecommendedOpen
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ phần tệp được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Success** - Giá trị Boolean để cho biết thao tác đã thành công hay không.
+
+#### <a name="office_docsui_fileoperations_docsuifileopenmacrequired"></a>Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí “Loại_dịch_vụ” và bốn ký tự đầu tiên của phần mở rộng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Ext** - Phần mở rộng tệp giới hạn ở bốn ký tự đầu tiên của phần mở rộng hoặc ít hơn.
+
+- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v.
+
+#### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí “Loại_dịch_vụ” và từ vị trí trong Ứng dụng mà người dùng yêu cầu mở tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_IsCandidateDropboxFile** - Đây là giá trị Boolean được ghi lại nếu bằng cách kiểm tra đường dẫn của tệp mà chúng tôi nghĩ rằng nó có thể từ một thư mục được đồng bộ hóa bằng Drop Box.
+
+- **Data_IsSignedIn** - Người dùng có đăng nhập hay không khi lưu tệp.
+
+- **Data_OpenReason** - Lý do mở là một giá trị số cho biết vị trí người dùng đã mở tệp trong ứng dụng.
+
+- **Data_ServiceType** - Cách phân loại dạng số trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+#### <a name="office_docsui_fileoperations_savetourl"></a>Office_DocsUI_FileOperations_SaveToURL
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác “lưu dưới dạng” diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác tệp như danh mục vị trí và bốn ký tự đầu tiên của phần mở rộng.  Thao tác “Lưu dưới dạng” xảy ra khi người dùng tạo một tệp mới và lưu lại lần đầu tiên hoặc lưu bản sao của tệp hiện có vào một vị trí mới.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FileExtension** - Bốn ký tự đầu tiên của phần mở rộng của tệp mới.
+
+- **Data_IsNewFileCreation** - Cho biết thao tác lưu là cho tệp mới hay bản sao của tệp hiện có.
+
+- **Data_IsSignedIn** - Người dùng có đăng nhập hay không khi lưu tệp.
+
+- **Data_SaveErrorCode** - Giá trị số được thiết lập nếu có lỗi để giúp xác định loại lỗi.
+
+- **Data_SaveErrorDomain** - Xác định miền của SaveErrorCode như Apple SaveErrorDomains xác định, “là các chuỗi tùy ý được sử dụng để phân biệt các nhóm mã”.
+
+- **Data_SaveLocation** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_SaveOperationType** - Giá trị số do nhóm các giá trị NSSaveOperationType của Apple xác định.
+
+#### <a name="office_docsui_sharingui_cloudupsellshown"></a>Office_DocsUI_SharingUI_CloudUpsellShown 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại thời điểm người dùng trải qua quá trình bán hàng gia tăng tài liệu đến dòng đám mây.  Dữ liệu này được sử dụng để hiểu rõ hơn và ưu tiên các trải nghiệm người dùng liên quan đến việc di chuyển tài liệu đến các vị trí trên đám mây.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FileStyle** - Giá trị số cho biết kịch bản mà trải nghiệm bán hàng gia tăng được hiển thị giống như từ nút bật/tắt tự động hoặc nút chia sẻ.
+
+- **Data_FileType** - Bốn ký tự đầu tiên của phần mở rộng của tệp hiện tại.
+
+- **Data_InDocStage** - Boolean cho biết trải nghiệm bán hàng gia tăng được hiển thị từ Thư viện tài liệu hay từ trong cửa sổ tài liệu.
+
+- **Data_IsDocumentOpened** - Boolean cho biết nếu tài liệu hiện tại cho trải nghiệm bán hàng gia tăng đang được hiển thị cũng đang mở.
+
+- **Data_IsDraft** - Boolean cho biết nếu tệp hiện tại đã được lưu.
+
+- **Data_IsSheetModal** - Boolean cho biết liệu trải nghiệm bán hàng gia tăng có được trình bày theo mô thức hay không.
+
+#### <a name="office_docsui_sharingui_cloudupsellupload"></a>Office_DocsUI_SharingUI_CloudUpsellUpload 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại thời điểm người dùng chọn tải tệp mới hoặc tệp cục bộ lên đám mây và kết quả của hoạt động đó.  Dữ liệu này được sử dụng để hiểu rõ hơn và ưu tiên các trải nghiệm người dùng liên quan đến việc di chuyển tài liệu đến các vị trí trên đám mây.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FileStyle** - Giá trị số cho biết kịch bản mà trải nghiệm bán hàng gia tăng được hiển thị giống như nút bật/tắt tự động hoặc nút chia sẻ.
+
+- **Data_FileType** - Bốn ký tự đầu tiên của phần mở rộng của tệp hiện tại.
+
+- **Data_InDocStage** - Boolean cho biết trải nghiệm bán hàng gia tăng được hiển thị từ Thư viện tài liệu hay từ trong cửa sổ tài liệu.
+
+- **Data_IsDefaultServiceLocation** - Giá trị Boolean cho biết vị trí đã chọn để tải lên tài liệu là vị trí mặc định.
+
+- **Data_IsDocumentOpened** - Boolean cho biết nếu tài liệu hiện tại cho trải nghiệm bán hàng gia tăng đang được hiển thị cũng đang mở.
+
+- **Data_IsDraft** - Boolean cho biết nếu tệp hiện tại đã được lưu.
+
+- **Data_IsSheetModal** - Boolean cho biết liệu trải nghiệm bán hàng gia tăng có được trình bày theo mô thức hay không.
+
+- **Data_LocationServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_UploadAction** - Chuỗi mã hóa cứng cho biết việc tải lên là một sự di chuyển hay thao tác sao chép.
+
+- **Data_UploadResult** - Chuỗi được mã hóa cứng cho biết kết quả của nỗ lực tải lên bao gồm nhưng không giới hạn ở ‘’Success”, “UserCancelledUpload” và “PreAuthFailed”.
+
+#### <a name="office_docsui_sharingui_copylinkoperation"></a>Office_DocsUI_SharingUI_CopyLinkOperation
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn chia sẻ tài liệu bằng cách tạo liên kết đến tài liệu đám mây và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_LinkType** - Chuỗi được mã hóa cứng mô tả loại thao tác mời được thực hiện như “ViewOnly” và “ViewAndEdit”.
+
+- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ bao gồm nhưng không giới hạn ở, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+
+#### <a name="office_docsui_sharingui_docsuionedriveshare"></a>Office_DocsUI_SharingUI_DocsUIOneDriveShare 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn chia sẻ tài liệu đám mây bằng trải nghiệm chia sẻ OneDrive và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ODSPShareWebviewShareError** - Nếu trải nghiệm chia sẻ gặp lỗi thì đây là giá trị số để giúp xác định lý do cho sự thất bại.
+
+- **Data_ODSPShareWebviewShareGrantAccessResult** - Giá trị Boolean đúng cho biết rằng thao tác chia sẻ nhẹ đã hoàn thành thành công.
+
+- **Data_ODSPShareWebviewShareSuccessType** - Khi hoàn thành thành công thao tác chia sẻ, đây là một giá trị số được sử dụng để xác định loại thao tác chia sẻ đã được hoàn tất.
+
+- **Data_WebViewInfoResult** - Nếu giao diện người dùng không tải được thì đây là giá trị số để giúp xác định lý do cho sự thất bại. 
+
+- **Data_WebViewLoadTimeInMs** - Giá trị số ghi lại lượng thời gian cần thiết để giao diện người dùng web tải.
+
+#### <a name="office_docsui_sharingui_invitepeople"></a>Office_DocsUI_SharingUI_InvitePeople 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn để mời mọi người đến tài liệu đám mây và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_InviteeCount** - Tổng số liên hệ được mời đến tài liệu trong một thao tác mời.
+
+- **Data_LinkType** - Chuỗi được mã hóa cứng mô tả loại thao tác mời được thực hiện như “ViewOnly” và “ViewAndEdit”.
+
+- **Data_MessageLength** - Số đếm tổng số ký tự được gửi trong tin nhắn mời.
+
+- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ bao gồm nhưng không giới hạn ở, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+
+#### <a name="office_docsui_sharingui_sendacopyoperation"></a>Office_DocsUI_SharingUI_SendACopyOperation
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn để gửi bản sao của tài liệu và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_IsHomeTabEnabled** - Giá trị Boolean cho biết nếu tab Trang đầu hiện sẵn dùng cho người dùng.
+
+- **Data_IsRecommendedEnabled** - Giá trị Boolean cho biết liệu trải nghiệm “Được đề xuất” hiện có sẵn dùng cho người dùng hay không.
+
+- **Data_OperationType** - Giá trị số cho biết loại thao tác gửi bản sao sẽ xảy ra như gửi bản sao trong email hoặc gửi bản sao thông qua kiểm soát chia sẻ của Apple.
+
+- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_ShareFileType** - Mô tả chuỗi mã hóa cứng về loại đối tượng sẽ được chia sẻ bao gồm nhưng không giới hạn ở, “Tài liệu”, “PDF”, “Hình ảnh”.
+
+- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ bao gồm nhưng không giới hạn ở, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+
+- **Data_SharingService** - Boolean cho biết liệu tệp đã được tạo khi người dùng đang tìm kiếm mẫu hay chưa.
+
+#### <a name="office_docsui_sharingui_upsellshare"></a>Office_DocsUI_SharingUI_UpsellShare 
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại thời điểm người dùng trải qua quá trình bán hàng gia tăng tài liệu đến dòng đám mây khi cố gắng chia sẻ một tài liệu.  Dữ liệu này được sử dụng để hiểu rõ hơn và ưu tiên các trải nghiệm người dùng liên quan đến việc di chuyển tài liệu đến các vị trí trên đám mây.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FileOperationResult** - Giá trị số cho biết thao tác có thành công hay không.
+
+- **Data_HostedFromDocStage** - Boolean để cho biết liệu người dùng có trải qua quá trình bán hàng gia tăng đến dòng đám mây từ trải nghiệm DocStage hoặc từ một tài liệu mở hay không.
+
+- **Data_isLocalCopyOn** - Boolean cho biết liệu việc sử dụng có chọn giữ một bản sao cục bộ của tài liệu đang được tải lên vị trí trên đám mây hay di chuyển tài liệu hiện có sang vị trí trên đám mây hay không.
+
+- **Data_NewFileType** - Cách phân loại trừu tượng về vị trí của vị trí mới của tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_OriginalFileType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+
+- **Data_UploadButtonPressed** - Boolean cho biết liệu người dùng có chọn tải tài liệu hiện tại lên một vị trí trên đám mây hay không.
+
+- **Data_UploadError** - Giá trị số cho biết loại lỗi xảy ra nếu thao tác tải lên không thành công.
+
+- **Data_UpsellAppearsFromDelegate**-một giá trị Boolean để cho biết có dạng xem Hiển thị từ menu chia sẻ không.
 
 #### <a name="officeextensibilitycatalogexchangeprocessentitlement"></a>Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -1856,7 +2172,11 @@ Các trường sau đây sẽ được thu thập:
   - **Data.AsyncOpen -** Cờ cho biết rằng tài liệu đã được mở với nội dung đến sau khi phần chính được mở
 
   - **Data.CacheFileId -** Kết nối với phép đo từ xa Office Document Cache để cho phép phân tích tác động của các sự cố về bộ nhớ ẩn đối với trải nghiệm người dùng
+ 
+  - **Data.CFREnabled** - Cho biết CacheFileRuntime được bật cho phiên.
 
+  - **Data.CFRFailure** - Cho biết CacheFileRuntime bị lỗi.
+  
   - **Data.CoauthStatus -** Báo cáo trạng thái hợp tác của tài liệu đang Mở
 
   - **Data.CountOfMultiRoundTripsDownload -** Số lượng trọn vòng đến máy chủ được sử dụng để khắc phục sự cố về hiệu suất và mạng
@@ -2083,6 +2403,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.UseClientIdAsSchemaLockId -** Cờ để kiểm soát cách tài liệu bị khóa trong dịch vụ
 
+  - **Data.VersionType** - Cho biết loại phiên bản của thao tác mở hiện tại.
+
   - **Data.WopiServiceId -** Đã lỗi thời, được thay thế bằng Data\_Doc\_WopiServiceId
 
 #### <a name="officefileiocsiccachedfilecsisavefilebasic"></a>Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
@@ -2114,6 +2436,10 @@ Các trường sau đây sẽ được thu thập:
   - **Data.CountOfMultiRoundTripsDownload -** Số lượng trọn vòng đến máy chủ được sử dụng để khắc phục sự cố về hiệu suất và mạng
 
   - **Data.CountOfMultiRoundTripsUpload -** Số lượng trọn vòng đến máy chủ được sử dụng để khắc phục sự cố về hiệu suất và mạng
+  
+  - **Data.CFREnabled** - Cho biết CacheFileRuntime được bật cho phiên.
+
+  - **Data.CFRFailure** - Cho biết CacheFileRuntime bị lỗi.
 
   - **Data.DialogChoice -** Ghi lại lựa chọn được thực hiện trong bất kỳ hộp thoại lỗi nào
 
@@ -2381,6 +2707,198 @@ Các trường sau đây sẽ được thu thập:
 - **DateTime** - Dấu thời gian của khi sự kiện được ghi nhật ký
 
 - **EventName** - Tên sự kiện được ghi nhật ký
+
+#### <a name="office_firstrun_apple_activationresult"></a>Office_FirstRun_Apple_ActivationResult
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để tìm ra kết quả của việc kích hoạt đăng ký O365 cùng với dòng được sử dụng để kích hoạt (First Run Experience, In-App-Flow, Purchase, v.v.).
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActivationStatusCollectionTime** – Dấu thời gian
+
+- **Data_ActivationStatusError** – Mã lỗi kích hoạt.
+
+- **Data_ActivationStatusFlowType** – Giá trị số cho biết loại dòng kích hoạt
+
+#### <a name="office_firstrun_apple_activationstatus"></a>Office_FirstRun_Apple_ActivationStatus
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để tìm ra kết quả của việc kích hoạt đăng ký O365 cùng với dòng được sử dụng để kích hoạt (FRE, InApp, Purchase, v.v.). Chúng tôi thu thập dữ liệu chứa loại Kích hoạt, loại dòng (FRE/DocStage/Purchase) và ID dịch vụ cấp phép Office.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActivationTypeCollectionTime** – Dấu thời gian
+
+- **Data_ActivationTypeFlowType** – Giá trị số cho biết loại dòng kích hoạt
+
+- **Data_ActivationTypeOLSLicense** – Mã nhận dạng của giấy phép
+
+- **Data_ActivationTypeStatus** – Mã trạng thái kích hoạt.
+
+#### <a name="office_firstrun_apple_firstruncomplete"></a>Office_FirstRun_Apple_FirstRunComplete
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện cho chúng tôi biết nếu người dùng đang chạy trong freemium, loại dòng đang được chạy (FRE/DocStage/Purchase) và loại nhận dạng (MSA/OrgID). Chúng tôi sử dụng sự kiện này để tìm hiểu xem Trải nghiệm chạy lần đầu tiên (FRE) đã được hoàn thành chưa và loại nhận dạng được sử dụng để đăng nhập (MSA/OrgID).
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FirstRunCompletedCollectionTime** - Dấu thời gian đăng ký thời gian hoàn tất dòng
+
+- **Data_FirstRunCompletedFlowType** - Mã biểu thị loại dòng người dùng đã được hoàn tất 
+
+- **Data_FirstRunCompletedFreemiumStatus** - Mã đại diện cho trạng thái hoàn thành cho dòng người dùng freemium
+
+- **Data_FirstRunCompletedIdentityType** - Loại danh tính của người dùng đã hoàn thành dòng
+
+#### <a name="office_firstrun_apple_firstrunstart"></a>Office_FirstRun_Apple_FirstRunStart
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này cho chúng tôi biết một người dùng đã tham gia trải nghiệm chạy lần đầu tiên và loại dòng đang được chạy (FRE/DocStage/Purchase). Chúng tôi sử dụng sự kiện này để tìm hiểu xem Trải nghiệm chạy lần đầu tiên (FRE) đã được bắt đầu thành công hay chưa.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FirstRunStartedCollectionTime** - Dấu thời gian đăng ký thời gian hoàn tất dòng
+
+- **Data_FirstRunStartedFlowType** - Mã biểu thị loại dòng người dùng đã hoàn tất 
+
+#### <a name="office_firstrun_apple_firstrunstartedandcompleted"></a>Office_FirstRun_Apple_FirstRunStartedAndCompleted
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện cho chúng tôi biết nếu người dùng đang chạy trong freemium, loại dòng đang được chạy (FRE/DocStage/Purchase) và loại nhận dạng (MSA/OrgID). Chúng tôi sử dụng sự kiện này để tìm hiểu trạng thái và hiệu quả của dòng Trải nghiệm chạy lần đầu tiên (FRE) của mình.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FirstRunCompletedCollectionTime** - Dấu thời gian đăng ký thời gian hoàn tất dòng
+
+- **Data_FirstRunCompletedFlowType** - Mã biểu thị loại dòng người dùng đã được hoàn tất  
+
+- **Data_FirstRunCompletedFreemiumStatus** - Mã đại diện cho trạng thái hoàn thành cho dòng người dùng freemium
+
+- **Data_FirstRunCompletedIdentityType** - Loại danh tính của người dùng đã hoàn thành dòng
+
+- **Data_FirstRunStartedCollectionTime** - Dấu thời gian đăng ký thời gian bắt đầu dòng
+
+- **Data_FirstRunStartedFlowType** - Mã biểu thị loại dòng người dùng đã được bắt đầu
+
+#### <a name="office_firstrun_apple_inapppurchaseactivationfail"></a>Office_FirstRun_Apple_InAppPurchaseActivationFail
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để tìm ra kết quả của việc kích hoạt mua hàng trong ứng dụng cùng với dòng được sử dụng để kích hoạt (First Run Experience, In-App-Flow, Purchase, v.v.). 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActivationFailCollectionTime** - Dấu thời gian đăng ký thời gian xảy ra lỗi kích hoạt 
+
+- **Data_ActivationFailFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_AssoicatedSuccessfullyCollectionTime** - Dấu thời gian đăng ký thời gian xảy ra liên kết 
+
+- **Data_AssoicatedSuccessfullyFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+#### <a name="office_firstrun_apple_inapppurchaseactivationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseActivationSuccess
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để tìm ra kết quả của việc kích hoạt mua hàng trong ứng dụng cùng với dòng được sử dụng để kích hoạt (First Run Experience, In-App-Flow, Purchase, v.v.). 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActivatedSuccessfullyCollectionTime** - Dấu thời gian đăng ký thời gian xảy ra kích hoạt 
+
+- **Data_ActivatedSuccessfullyFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_AssoicatedSuccessfullyCollectionTime** - Dấu thời gian đăng ký thời gian xảy ra liên kết 
+
+- **Data_AssoicatedSuccessfullyFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+#### <a name="office_firstrun_apple_inapppurchaseassociationfailed"></a>Office_FirstRun_Apple_InAppPurchaseAssociationFailed
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để tìm ra kết quả của việc kích hoạt mua hàng trong ứng dụng cùng với dòng được sử dụng để kích hoạt (First Run Experience, In-App-Flow, Purchase, v.v.). 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppChargedSuccessfullyCollectionTime** - Dấu thời gian đăng ký thời gian tại đó giao dịch mua được tính phí
+
+- **Data_AppChargedSuccessfullyFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_AssoicationFailedCollectionTime** - Dấu thời gian đăng ký thời gian tại đó xảy ra lỗi liên kết ứng dụng
+
+- **Data_AssoicationFailedFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_AssoicationFailedResult** - Mã biểu thị loại lỗi được quan sát
+
+#### <a name="office_firstrun_apple_inapppurchaseassociationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseAssociationSuccess
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để tìm ra kết quả của việc kích hoạt mua hàng trong ứng dụng cùng với dòng được sử dụng để kích hoạt (First Run Experience, In-App-Flow, Purchase, v.v.). 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppChargedSuccessfullyCollectionTime** - Dấu thời gian đăng ký thời gian tại đó giao dịch mua được tính phí
+
+- **Data_AppChargedSuccessfullyFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_AssoicatedSuccessfullyCollectionTime** - Dấu thời gian đăng ký thời gian liên kết ứng dụng bị lỗi
+
+- **Data_AssoicatedSuccessfullyFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+#### <a name="office_firstrun_apple_inapppurchasefailures"></a>Office_FirstRun_Apple_InAppPurchaseFailures
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu về kết quả của dòng mua hàng trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppStoreFailureFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_AppStoreFailureResult** - Kết quả thất bại được quan sát
+
+- **Data_CancelRequestFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_EventId** - Mã biểu thị loại lỗi được quan sát
+
+#### <a name="office_firstrun_apple_inapppurchasesattempted"></a>Office_FirstRun_Apple_InAppPurchasesAttempted
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng trong ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để theo dõi các giao dịch mua trong ứng dụng đã được thử và loại SKU được mua của chúng (Hàng tháng/Hàng năm/Nhà/Cá nhân).
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EventId** - Mã biểu thị loại kết quả được quan sát
+
+- **Data_PurchasedClickedOfferType** - Loại SKU đã tìm cách mua
+
+- **Data_PurchaseSuccessfulFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+#### <a name="office_firstrun_apple_inapprestoreattempted"></a>Office_FirstRun_Apple_InAppRestoreAttempted
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng trong ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để theo dõi các bản khôi phục trong ứng dụng đã được thử
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EventId** - Mã biểu thị loại kết quả của nỗ lực
+
+- **Data_RestoreAttemptFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+#### <a name="office_firstrun_apple_inapprestoreattemptfailed"></a>Office_FirstRun_Apple_InAppRestoreAttemptFailed
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng trong ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để theo dõi các bản khôi phục trong ứng dụng đã được thử và các dòng và lỗi liên kết của chúng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_RestoreButtonFlowType** - Mã biểu thị loại dòng người dùng đã được thực hiện
+
+- **Data_RestoredFailedPaymentCancelledFlowType** - Mã biểu thị loại dòng hủy thanh toán đã được thực hiện
+
+- **Data_RestoredFailedUnKnownFlowType** - Liệu có phải nỗ lực không thành công do thực hiện dòng người dùng không mong muốn hay không
+
+- **Data_RestoredFailedUnKnownResult** - Liệu có phải nỗ lực không thành công vì lý do không xác định hay không
+
+#### <a name="office_firstrun_apple_macfirstruncompleted"></a>Office_FirstRun_Apple_MacFirstRunCompleted
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này cho chúng tôi biết người dùng đã trải qua trải nghiệm chạy lần đầu tiên. Chúng tôi sử dụng sự kiện này để tìm hiểu xem Trải nghiệm chạy lần đầu tiên (FRE) đã được hoàn tất thành công hay chưa.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FirstRunCollectionTime** - Dấu thời gian đăng ký thời gian hoàn tất dòng.
+
+#### <a name="office_firstrun_apple_macwxpfirstrunstarted"></a>Office_FirstRun_Apple_MacWXPFirstRunStarted
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này cho chúng tôi biết người dùng đã tham gia trải nghiệm chạy lần đầu tiên. Chúng tôi sử dụng sự kiện này để tìm hiểu xem Trải nghiệm chạy lần đầu tiên (FRE) đã được bắt đầu thành công hay chưa.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FirstRunPanelName** - Tên của bảng điều khiển bắt đầu trải nghiệm
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -5968,6 +6486,14 @@ Các trường sau đây sẽ được thu thập:
 
 - **UTCReplace_AppSessionGuid** - Giá trị boolean không đổi. Luôn true.
 
+#### <a name="officesystemsessionhandoff"></a>Office.System.SessionHandoff
+
+Cho biết rằng phiên Office hiện tại là phiên giao ca. Điều này có nghĩa là việc xử lý yêu cầu của người dùng để mở tài liệu đang được chuyển đến một phiên bản đã chạy của cùng một ứng dụng.
+
+Các trường sau đây sẽ được thu thập.
+
+- **ParentSessionId** - ID của phiên sẽ kiểm soát việc xử lý yêu cầu của người dùng.
+
 #### <a name="officetelemetryengineisprelaunch"></a>Office.TelemetryEngine.IsPreLaunch
 
 Có thể áp dụng cho các ứng dụng Office UWP.  Sự kiện này được kích hoạt khi một ứng dụng Ofice được bắt đầu để nâng cấp/cài đặt bài lần đầu tiên từ cửa hàng. Đây là một phần của dữ liệu chẩn đoán cơ bản, được sử dụng để theo dõi xem phiên có khởi chạy phiên hay không.
@@ -6002,6 +6528,21 @@ Các trường sau đây sẽ được thu thập:
 
 - **parentSessionId** - GUID được tạo ngẫu nhiên để xác định phiên ứng dụng
 
+#### <a name="officevisiovisioiosappboottime"></a>Office.Visio.VisioIosAppBootTime
+
+Điều này được kích hoạt mỗi khi ứng dụng Visio cho thiết bị iOS khởi động. Điều cần thiết là phải hiểu hiệu suất khởi động của ứng dụng Visio cho thiết bị iOS. Được sử dụng để khắc phục hiệu suất kém. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppBootTime** - Khoảng thời gian để ứng dụng khởi động, tính bằng mili giây.
+
+#### <a name="officevisiovisioiosappresumetime"></a>Office.Visio.VisioIosAppResumeTime 
+
+Sự kiện này được kích hoạt mỗi khi ứng dụng Visio cho thiết bị iOS tiếp tục tập trung. Điều cần thiết là đo lường hiệu suất tiếp tục ứng dụng và khắc phục các sự cố về hiệu suất của ứng dụng Visio cho thiết bị iOS.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppResumeTime** - Khoảng thời gian để ứng dụng tiếp tục tính bằng mili giây.
 
 #### <a name="officewordfileopenopencmdfilemrupriv"></a>Office.Word.FileOpen.OpenCmdFileMruPriv
 
@@ -6604,6 +7145,72 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Data\_ZoomText -** Cho biết nếu ZoomText có chạy trong phiên không
 
+#### <a name="office_apple_darkmode"></a>Office_Apple_DarkMode
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện cho chúng ta biết nếu người dùng đang chạy Hệ thống ở chế độ tối và liệu người dùng có ghi đè cài đặt Hệ thống chế độ tối trong Office hay không.  Chúng tôi sử dụng sự kiện này để giúp đảm bảo tính trợ năng và ưu tiên tối ưu hóa trải nghiệm người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_DarkModeIsEnabled** - Liệu Chế độ tối có được kích hoạt trong hệ thống hay không.
+
+- **Data_RequiresAquaSystemAppearanceEnabled** - Liệu Chế độ tối có được ghi đè trong Office.
+
+#### <a name="office_apple_hardwarekeyboardinuse_apple"></a>Office_Apple_HardwareKeyboardInUse_Apple
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện cho chúng tôi biết rằng một người dùng đang gắn bàn phím vào thiết bị di động của họ. Sự kiện giúp chúng tôi cải thiện tính trợ năng và tối ưu hóa trải nghiệm người dùng của chúng tôi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CollectionTime** - Dấu thời gian biểu thị thời gian thu thập sự kiện.
+
+#### <a name="office_apple_mbuinstrument_deviceaccessibilitysettings"></a>Office_Apple_MbuInstrument_DeviceAccessibilitySettings
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện thu thập trạng thái của các tùy chọn trợ năng khác nhau sẵn dùng trong một phiên. Chúng tôi sử dụng sự kiện này để giúp đảm bảo tính trợ năng và ưu tiên tối ưu hóa trải nghiệm người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AccessibilityContentSize** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_AssistiveTouchRunning** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_BoldTextEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_CollectionTime** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_DarkerSystemColorsEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_DifferentiateWithoutColor** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_GrayscaleEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_GuidedAccessEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_IncreaseContrast** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_InvertColorsEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_PreferredContentSizeCategory** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_ReduceMotionEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_ReduceTransparency** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_ReduceTransparencyEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_ShakeToUndeEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không. (Không dùng nữa - Chỉ áp dụng đối với các bản dựng cũ.)
+
+- **Data_ShakeToUndoEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không.
+
+- **Data_SpeakScreenEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_SpeakSelectionEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_SwitchControlRunning** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_UAZoomEnabled** - Cờ cho biết liệu cài đặt này có được bật hay không
+
+- **Data_VoiceOverRunning** - Cờ cho biết liệu cài đặt này có được bật hay không
+
 #### <a name="officewordaccessibilitylearningtoolsreadaloudplayreadaloud"></a>Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
 
 Sự kiện này cho biết Office Word đọc to văn bản trong tài liệu. Sự kiện là thông báo hoạt động cho tính năng trợ năng cho phép Microsoft đánh giá trạng thái tính năng đọc to văn bản.
@@ -6701,45 +7308,51 @@ Các trường sau đây sẽ được thu thập:
 
 - **Tên sự kiện** - Tên sự kiện là Danh mục sự kiện và Nhãn sự kiện.
 
-#### <a name="officeapplesystemhealthappexitmacandios"></a>Office.Apple.SystemHealthAppExitMacAndiOS
+#### <a name="office_apple_identitydomainname"></a>Office_Apple_IdentityDomainName
 
-Trên sự kiện khởi động ứng dụng thoát ra một cách đáng tin cậy và không đáng tin cậy để tiếp tục điều tra.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của hệ thống của chúng tôi cũng như điều tra nguyên nhân gây lỗi của một số người dùng tên miền nhất định. Chúng tôi thu thập tên miền được người dùng của chúng tôi sử dụng khi họ xác thực.  Chúng tôi sử dụng dữ liệu này để giúp xác định và khắc phục những sự cố có vẻ không quá ảnh hưởng ở cấp độ rộng hơn, nhưng thực ra lại rất có ảnh hưởng đến một miền nhất định của người dùng.
 
 Các trường sau đây sẽ được thu thập:
 
-- **AffectedProcessResidentMemoryOnCrash** – Bộ nhớ cố định của ứng dụng gặp sự cố
+- **Data_Domain** - Tên miền được sử dụng để xác thực
 
-- **AffectedProcessSessionID** – ID phiên của quy trình trong lần thoát trước
+- **Data_IdentityProvider** - Tên nhà cung cấp danh tính xác thực. (tức là LiveId hay ADAL)
 
-- **AffectedProcessUnsymbolicatedChecksum** – Đi với hàm băm Ngăn xếp để tượng trưng
+- **Data_IdentityProviderEnum** - Mã nhà cung cấp danh tính xác thực. (Số)
 
-- **AffectedProcessVirtualMemoryOnCrash** – Bộ nhớ ảo của ứng dụng gặp sự cố
+#### <a name="office_apple_systemhealthappexitmacandios"></a>Office_Apple_SystemHealthAppExitMacAndiOS
 
-- **AffectedSessionBuildNumber** – Phiên bản ứng dụng
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của các ứng dụng Office của chúng tôi cũng như để điều tra nguyên nhân gây ra lỗi. Chúng tôi thu thập dữ liệu về mỗi lần thoát ứng dụng để xác định xem ứng dụng có thoát một cách đáng tin cậy hay không.
 
-- **AffectedSessionDuration** – Thời lượng của phiên tính bằng giây trước khi gặp sự cố
+Các trường sau đây sẽ được thu thập:
 
-- **AffectedSessionIDSMatch** – Boolean để xác minh xem ID phiên báo cáo có giống như được chọn bởi MERP không
+- **Data_AffectedProcessSessionID** - Mã định danh cho phiên trải nghiệm thoát ứng dụng.
 
-- **AffectedSessionLongBuildNumber** – Số lượng bản dựng dài
+- **Data_AffectedSessionBuildNumber** - Phiên bản phụ của ứng dụng trong đó thoát ứng dụng được quan sát.
 
-- **AffectedSessionMERPSessionID** – ID phiên của MERP
+- **Data_AffectedSessionDuration** - Độ dài của phiên từ khi bắt đầu đến khi thoát
 
-- **AffectedSessionOSLocale** – Ngôn ngữ của hệ điều hành
+- **Data_AffectedSessionIDSMatch** - Chỉ báo về trạng thái của phép đo từ xa.
 
-- **AffectedSessionOSVersion** – Phiên bản của hệ điều hành
+- **Data_AffectedSessionMERPSessionID** - Chỉ báo về trạng thái của phép đo từ xa.
 
-- **AffectedSessionStackHash** – Hàm băm theo dõi xếp chồng của ứng dụng gặp sự cố
+- **Data_AffectedSessionOSLocale** - Ngôn ngữ của hệ điều hành theo đó thoát ứng dụng được quan sát.
 
-- **AffectedSessionStartTime** – Thời gian bắt đầu phiên
+- **Data_AffectedSessionOSVersion** - Phiên bản hệ điều hành theo đó thoát ứng dụng được quan sát.
 
-- **AffectedSessionUAEType** – Enum cung cấp cho chúng tôi thông tin về loại sự cố.
+- **Data_AffectedSessionResidentMemoryOnCrash** - Lượng bộ nhớ cố định đã sử dụng khi thoát ứng dụng xảy ra.
 
-- **AffectedSessionVersion** – Phiên bản ứng dụng
+- **Data_AffectedSessionStackHash** - Mã định danh sẽ biểu thị lỗi cụ thể đang xảy ra.
 
-- **DeviceModel** – Model phần cứng
+- **Data_AffectedSessionStartTime** - Thời gian phiên bắt đầu.
 
-- **ExitWasGraceful** – Lần thoát ứng dụng trước có đáng tin cậy hay không?
+- **Data_AffectedSessionUAEType** - Kiểu thoát ứng dụng được quan sát (nếu đó là kiểu thoát không đáng tin cậy, mã này sẽ biểu thị loại lỗi được quan sát)
+
+- **Data_AffectedSessionVersion** - Phiên bản chính của ứng dụng trong đó thoát ứng dụng được quan sát.
+
+- **Data_AffectedSessionVirtualMemoryOnCrash** - Lượng bộ nhớ ảo đã sử dụng khi thoát ứng dụng xảy ra.
+
+- **Data_ExitWasGraceful** - Thoát ứng dụng có đáng tin cậy hay không.
 
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
@@ -6824,6 +7437,11 @@ Các trường sau đây sẽ được thu thập:
 - **RemoterType** - Xác định loại điều khiển từ xa (Đáng tin cậy, không đáng tin cậy, Win32webView, UDF đáng tin cậy, v.v.) được sử dụng để kích hoạt phần bổ trợ
 
 - **StoreType** - Nguồn gốc của ứng dụng
+
+- **Tag**- Xác định chính xác nơi mã bị lỗi khi sử dụng thẻ duy nhất được liên kết.
+
+- **UsesSharedRuntime** - Cho biết ứng dụng có sử dụng sharedRuntime hay không.
+
 
 #### <a name="officeextensibilityvbatelemetrybreak"></a>Office.Extensibility.VbaTelemetryBreak
 
@@ -7107,6 +7725,20 @@ Các trường sau đây sẽ được thu thập:
 
 Thời gian phản hồi hoặc hiệu suất kém cho các tình huống như ứng dụng khởi động hoặc mở tệp.
 
+#### <a name="initial_page_landing"></a>Initial_page_landing 
+ 
+Sự kiện này giúp theo dõi loại trải nghiệm người dùng nhìn thấy khi họ đến trang ứng dụng của chúng tôi.  Dữ liệu này được sử dụng để xác định lưu lượng truy cập của người dùng được dẫn vào từng trải nghiệm trong ứng dụng của chúng tôi và cũng giúp chúng tôi dễ dàng hợp nhất các kết quả thử nghiệm.
+ 
+Các trường sau đây sẽ được thu thập: 
+
+- **Page** - Điều này được sử dụng để theo dõi loại trải nghiệm mà người dùng lần đầu tiên nhìn thấy khi họ đến trang của chúng tôi. Các giá trị có thể là “Trial”, “Skip”, “Prebundled”, “Subscription”, v.v.
+
+- **storeExperience** - Điều này được sử dụng để xác định xem người dùng có đủ điều kiện để xem Trải nghiệm Store SDK hay không.
+
+- **stringVariant** - Điều này được sử dụng để xác định loại chuỗi người dùng nhìn thấy khi họ truy cập vào trang của chúng tôi. Lưu ý rằng đối với bất kỳ trang nào, chẳng hạn như “Bản dùng thử”, người dùng có thể đủ điều kiện để xem các chuỗi khác nhau dựa trên việc họ đã cài đặt Office cũ hay chưa hoặc nếu họ đã kích hoạt Office trước đó. Bạn có thể liệt kê các thuộc tính này là “LegacyUpsell”, “OfficeOpened”, “Default”, “YesIntent”, “NoIntent”, v.v.
+
+- **windowsBuildType** - Điều này được sử dụng để theo dõi loại WindowsBuildType người dùng đang sử dụng. Ví dụ: “RS4”, “RS5”, “RS19H1”, “Vibranium, v.v. Vì trải nghiệm của chúng tôi thường được nhắm mục tiêu đến các WindowsBuildTypes khác nhau, nên thuộc tính này rất quan trọng trong việc phân biệt giữa các lần triển khai. 
+
 #### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
 
 Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở khi thực hiện cuộc gọi API IpcpBootstrapUser.
@@ -7176,6 +7808,211 @@ Các trường sau đây sẽ được thu thập:
 - **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
 
 - **UserInfo.UserObjectId** - ID đối tượng người dùng
+
+#### <a name="json_parse_error"></a>json_parse_error 
+ 
+Sự kiện này biểu thị rằng lỗi được đưa ra bởi trình phân tích cú pháp json.  Chúng tôi sẽ có thể gỡ lỗi chuỗi đăng ký đã đọc được gửi đến trình phân tích cú pháp json, giúp mang đến trải nghiệm mượt mà cho người dùng của chúng tôi.
+ 
+Các trường sau đây sẽ được thu thập: 
+
+- **Error** - Điều này bao gồm thông báo lỗi mà đối tượng lỗi trả về.
+
+#### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để thu thập thời gian thực hiện khởi động ứng dụng, cũng như một số chi tiết về loại khởi động được thực hiện. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ Data_EvtBootTimerDocStageReady** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_DocumentRecoveryInvoked** - Có phục hồi tài liệu trong khi khởi động hay không.
+
+- **Data_EvtBootTimerBootIdle** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_EvtBootTimerFinishLaunchEnd** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_EvtBootTimerLaunchDidFinish** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_EvtBootTimerLaunchStart** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_EvtBootTimerMainStart** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_EvtBootTimerStaticInit** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_EvtDockStageReady** - Thời gian trôi qua cho đến khi đạt đến một điểm nhất định trong mã.
+
+- **Data_IsFileOpenAttempted** - Có cố gắng mở tệp trong khi khởi động hay không.
+
+- **Data_IsFirstRunAttempted** - Việc khởi động ứng dụng có trải qua trải nghiệm chạy lần đầu tiên hay không.
+
+- **Data_SentToBackground** - Ứng dụng có được gửi đến nền trong khi khởi động hay không.
+
+#### <a name="office_apple_diskruleresultserializererroronstreamop"></a>Office_Apple_DiskRuleResultSerializerErrorOnStreamOp
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của cơ sở hạ tầng phép đo từ xa của chúng tôi. Sự kiện này cho biết đã xảy ra lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActualBytesModified** - Số byte được sửa đổi.
+
+- **Data_BytesRequested** - Số byte cần xử lý.
+
+- **Data_IsWriteOp** - Chúng tôi có sắp thực hiện thao tác ghi hay không
+
+#### <a name="office_apple_macbootresourceusage"></a>Office_Apple_MacBootResourceUsage
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để thu thập nhiều chỉ số xung quanh các tài nguyên đang được sử dụng trong quá trình khởi động bởi các ứng dụng Office. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_BlockInputOperations** - Số lượng các thao tác chặn đầu vào
+
+- **Data_BlockOutputOperations** - Số lượng thao tác chặn đầu ra
+
+- **Data_InvoluntaryContextSwitches** - Số lượng chuyển đổi bối cảnh không tự nguyện
+
+- **Data_MainThreadCPUTime** - Đo lường thời gian đã trôi qua
+
+- **Data_MaxResidentSize** - Đo lường kích thước bộ nhớ
+
+- **Data_MessagesReceived** - Số lượng tin nhắn nhận được
+
+- **Data_MessagesSent** - Số lượng tin nhắn được gửi
+
+- **Data_PageFaults** - Số lượng trang nhận lại
+
+- **Data_PageReclaims** - Số lượng trang nhận lại
+
+- **Data_ProcessCPUTime** - Đo lường thời gian đã trôi qua
+
+- **Data_SharedTextMemorySize** - Đo lường kích thước bộ nhớ
+
+- **Data_SignalsReceived** - Số lượng tín hiệu nhận được
+
+- **Data_Swaps** - Số lượng hoán đổi dữ liệu
+
+- **Data_SystemCPUTime** - Đo lường thời gian đã trôi qua
+
+- **Data_SystemUpTime** - Đo lường thời gian đã trôi qua
+
+- **Data_UnsharedDataSize** - Đo lường kích cỡ dữ liệu
+
+- **Data_UnsharedStackSize** - Đo lường kích cỡ ngăn xếp
+
+- **Data_UserCPUTime** - Đo lường thời gian đã trôi qua
+
+- **Data_VoluntaryContextSwitchesNvcsw** - Số lượng chuyển đổi bối cảnh không tự nguyện
+
+#### <a name="office_apple_mau_validation"></a>Office_Apple_MAU_Validation
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của thành phần Microsoft Autoupdate, được sử dụng để phân phối và cài đặt các bản cập nhật ứng dụng. Dữ liệu thu thập được sử dụng để phát hiện lỗi và điều tra nguyên nhân gây ra lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EventID** - Chúng tôi thu thập chuỗi biểu thị mã lỗi
+
+- **Data_Message** - Chúng tôi thu thập chuỗi chứa mô tả về lỗi
+
+#### <a name="office_apple_mbuinstrument_hang_detection_spin_control"></a>Office_Apple_MbuInstrument_Hang_Detection_Spin_Control
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được ghi nhật ký bất cứ khi nào ứng dụng dường như không phản hồi. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CountSpinControlStart** - Vạch dấu cho biết ứng dụng dường như đã không phản hồi (hoặc phản hồi chậm)
+
+#### <a name="office_apple_mbuinstrument_vmondocumentclose"></a>Office_Apple_MbuInstrument_VMOnDocumentClose
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để thu thập ảnh chụp nhanh về trạng thái của bộ nhớ trong khi đóng tài liệu. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CollectionTime** - Dấu thời gian từ thời điểm dữ liệu được thu thập
+
+- **Data_ResidentMemory** - Giá trị bộ nhớ cố định được quan sát
+
+- **Data_VirtualMemory** - Giá trị bộ nhớ ảo được quan sát
+
+#### <a name="office_apple_mbuinstrument_vmonshutdown"></a>Office_Apple_MbuInstrument_VMOnShutdown
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để thu thập ảnh chụp nhanh về trạng thái của bộ nhớ trong khi tắt ứng dụng. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CollectionTime** - Dấu thời gian từ thời điểm dữ liệu được thu thập
+
+- **Data_ResidentMemory** - Giá trị bộ nhớ cố định được quan sát
+
+- **Data_VirtualMemory** - Giá trị bộ nhớ ảo được quan sát
+
+#### <a name="office_apple_mbuinstrument_vmonstart"></a>Office_Apple_MbuInstrument_VMOnStart
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để thu thập ảnh chụp nhanh về trạng thái của bộ nhớ trong khi bắt đầu ứng dụng. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_CollectionTime** - Dấu thời gian từ thời điểm dữ liệu được thu thập
+
+- **Data_ResidentMemory** - Giá trị bộ nhớ cố định được quan sát
+
+- **Data_VirtualMemory** - Giá trị bộ nhớ ảo được quan sát
+
+#### <a name="office_apple_msoappdelegate_bootperf"></a>Office_Apple_MsoAppDelegate_BootPerf
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để thu thập thời gian và bộ nhớ sử dụng trong quá trình khởi động bởi các ứng dụng Office, cũng như một số chi tiết về loại khởi động được thực hiện. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppLaunchDurationMicroSec** - Thời lượng của quy trình khởi động
+
+- **Data_AppLaunchFinishSystemTime** - Dấu thời gian tại đánh dấu mã khởi động cụ thể
+
+- **Data_AppLaunchStartSystemTime** - Dấu thời gian tại đánh dấu mã khởi động cụ thể
+
+- **Data_ResidentMemory** - Ảnh chụp nhanh bộ nhớ cố định sẵn dùng trong khi khởi động
+
+- **Data_VirtualMemory** - Ảnh chụp nhanh bộ nhớ ảo sẵn dùng trong khi khởi động
+
+#### <a name="office_apple_ungracefulappexithangsinprevioussession"></a>Office_Apple_UngracefulAppExitHangsInPreviousSession
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của các ứng dụng Office của chúng tôi cũng như để điều tra nguyên nhân gây ra lỗi. Chúng tôi thu thập số lần một ứng dụng dường như không phản hồi trước khi nhấn vào thoát ứng dụng không đáng tin cậy.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_HangsDetected** - Số lần ứng dụng dường như không phản hồi trước khi việc thoát ứng dụng không đáng tin cậy xảy ra.
+
+- **Data_LastSessionId** - Mã định danh cho phiên trong đó thoát ứng dụng không đáng tin cậy được quan sát.
+
+- **Data_SessionBuildNumber** - Phiên bản phụ của ứng dụng trong đó thoát ứng dụng không đáng tin cậy được quan sát.
+
+- **Data_SessionVersion** - Phiên bản chính của ứng dụng trong đó thoát ứng dụng không đáng tin cậy được quan sát.
+
+#### <a name="office_apple_whatsnewerrorandwarning"></a>Office_Apple_WhatsNewErrorAndWarning
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của tính năng Có gì mới. Sự kiện này biểu thị rằng đã xảy ra lỗi/cảnh báo trong khi phân tích nội dung mục Có gì mới, chỉ ra các sự cố tạo nội dung tiềm năng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ContentKey** - Con trỏ tới phần nội dung có khả năng gây ra lỗi.
+
+- **Data_ErrorCode** - Mã lỗi được quan sát (nếu có)
+
+- **Data_ErrorDescription** - Mô tả về lỗi (nếu có)
+
+- **Data_EventID** - Chúng tôi thu thập chuỗi đại diện cho loại lỗi được quan sát.
+
+- **Data_IncludesHTMLTag** - Nội dung có chứa html phong phú hay không
+
+- **Data_IncludesItemsTag** - Nội dung có chứa phân cấp các mục hay không
+
+- **Data_LengthOfRawData** - Kích cỡ nội dung
+
+- **Data_RequestURL** - URL nội dung được tải xuống
+
+- **Data_ServerLanguageTag** - Ngôn ngữ của nội dung.
+
+- **Data_StatusCode** - Trạng thái lỗi (nếu có)
+
 #### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
 
 Khi khách hàng sử dụng phần bổ trợ dành cho Office và gọi Rich API để cung cấp dịch vụ, sự kiện này sẽ được kích hoạt. Được sử dụng để đo lường độ tin cậy, hiệu suất và mức độ sử dụng dịch vụ đối với việc gọi phương thức Rich API.
@@ -7439,6 +8276,28 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Timeout** - Thời gian kéo dài sự cố treo
 
+#### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để ghi lại các lỗi kích hoạt dòng kỹ thuật số (sự kiện này ghi lại khóa và sản phẩm đã được sử dụng để kích hoạt, cũng như mã lỗi nhận được).  Sự kiện này được sử dụng để phát hiện và giúp khắc phục sự cố kích hoạt (sự cố Dòng kỹ thuật số).
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_DigitalRiverID** - Id sản phẩm Dòng kỹ thuật số ánh xạ tới SKY sản phẩm Office này
+
+- **Data_Error** - Chuỗi đại diện cho mã lỗi kích hoạt.
+
+- **Data_ProductKey** - Khóa sản phẩm đã được cố gắng kích hoạt
+
+- **Data_ProductKeyHash** - Khóa sản phẩm được mã hóa đang được kích hoạt
+
+#### <a name="office_apple_licensing_mac_getmachinestatuserrors"></a>Office_Apple_Licensing_Mac_GetMachineStatusErrors
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện thu thập mã lỗi được trả về trong khi kiểm tra định kỳ tính hợp lệ của giấy phép đăng ký. Mã lỗi có thể biểu thị sự không có sẵn của máy chủ cùng sự hết hạn giấy phép, giới hạn số lượng máy, ID phần cứng không hợp lệ, v.v. Sự kiện này không chỉ được sử dụng để theo dõi tình trạng của Dịch vụ cấp phép Office mà còn để điều tra các sự cố liên quan đến quản lý máy đăng ký.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Error** - Chúng tôi thu thập chuỗi biểu thị mã lỗi.
+
 #### <a name="officeextensibilitysandboxodperrornotification"></a>Office.Extensibility.Sandbox.ODPErrorNotification
 
 Theo dõi các thông báo lỗi khác nhau nhận được từ hộp cát. Được sử dụng để phát hiện các tình huống lỗi trong hộp cát và ở đó bằng cách sửa nó, để cải thiện năng suất của người dùng
@@ -7451,6 +8310,13 @@ Các trường sau đây sẽ được thu thập:
 
 - **Result** - Mã lỗi kết quả
 
+#### <a name="office_firstrun_apple_maconiolkfirstrunstarted"></a>Office_FirstRun_Apple_MacONIOLKFirstRunStarted
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này cho chúng tôi biết người dùng đã tham gia trải nghiệm chạy lần đầu tiên. Chúng tôi sử dụng sự kiện này để tìm hiểu xem Trải nghiệm chạy lần đầu tiên (FRE) đã được bắt đầu thành công hay chưa.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FirstRunCollectionTime** - Dấu thời gian đăng ký thời gian bắt đầu dòng.
 
 #### <a name="officegraphicsarcexceptions"></a>Office.Graphics.ARCExceptions 
 
