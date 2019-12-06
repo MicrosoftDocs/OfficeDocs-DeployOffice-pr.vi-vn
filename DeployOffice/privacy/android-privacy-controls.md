@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư cho Office trên thiết bị Android.
 hideEdit: true
-ms.openlocfilehash: 36ae9878d03845c24e3717dfac970b2b961279dc
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 69a8880b03e63be391731f9882bcee17a81a51ab
+ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38068457"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39837736"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android
 
@@ -31,7 +31,7 @@ Sẽ có các thiết đặt chính sách mới cho Office trên thiết bị An
 Để biết thêm thông tin về dữ liệu chẩn đoán và trải nghiệm được kết nối, hãy xem mục [Tổng quan về các biện pháp kiểm soát quyền riêng tư](overview-privacy-controls.md).
 
 Các thiết đặt chính sách này sẽ áp dụng cho các ứng dụng sau đây:
-- Phiên bản 16.0.12226.10000 trở lên trong Word for Android, Excel for Android và PowerPoint for Android.
+- Phiên bản 16.0.12228.20260 trở lên trong Word for Android, Excel for Android và PowerPoint for Android.
 - Phiên bản 16.0.12228.20004 trở lên trong OneNote for Android.
 
 > [!NOTE]

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 0437779d269d4de7132961ce2edc37363d10b309
-ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
+ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
+ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639402"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39837700"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -3118,7 +3118,7 @@ Các trường sau đây sẽ được thu thập:
 -  **TimeToMedianResultInMs** - Cho biết thời gian trung bình mà OneNote cần để tìm tất cả các kết quả khớp.
 
 
-#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+#### <a name="officeonenotestickynotesnotecreated-on-ios-onenotestickynotesnotecreated-on-android"></a>Office.OneNote.StickyNotes.NoteCreated (trên iOS), OneNote.StickyNotes.NoteCreated (trên Android)
 
 Đây là một dấu hiệu quan trọng được sử dụng để giám sát khả năng tạo ghi chú trong ứng dụng của người dùng Sticky Notes.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo trang, điều này sẽ gây ra sự cố nghiêm trọng.
 
@@ -3131,7 +3131,7 @@ Các trường sau đây sẽ được thu thập:
 - **StickyNotes-SDKVersion** - Số phiên bản cho biết phiên bản Sticky Notes người dùng đang sử dụng. Cho phép chúng tôi xác định phiên bản nào của sản phẩm đang hiển thị sự cố để chúng tôi có thể ưu tiên chính xác.
 
 
-#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+#### <a name="officeonenotestickynotesnoteviewed-on-ios-onenotestickynotesnoteviewed-on-android"></a>Office.OneNote.StickyNotes.NoteViewed (trên iOS), OneNote.StickyNotes.NoteViewed (trên Android)
 
 Đây là một dấu hiệu quan trọng được sử dụng để giám sát khả năng tạo ghi chú trong ứng dụng của người dùng Sticky Notes.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo trang, điều này sẽ gây ra sự cố nghiêm trọng.
 
@@ -4657,68 +4657,6 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_WarningShownToConvertToTable:bool** - True cho biết cảnh báo được hiển thị cho người dùng để chuyển đổi dữ liệu Excel sang định dạng bảng
 
 
-#### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
-
-Sự kiện này ghi lại số liệu thống kê tài liệu cho từng tài liệu khi Office Word bị đóng hoặc bị tạm ngừng.  Sự kiện này được sử dụng để kết hợp các chỉnh sửa tài liệu, kích thước, v.v. với các lỗi lưu tài liệu, chia sẻ tài liệu và tài liệu cộng tác trực tuyến.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_BkmkRefCount** - Số lượng tham chiếu thẻ đánh dấu trong tài liệu
-
-- **Data_CharacterCount** - Số lượng ký tự trong tài liệu
-
-- **Data_CharactersWithSpaceCount** - Số lượng ký tự và khoảng trắng trong tài liệu
-
-- **Data_ChartCount** - Số lượng ký tự trong tài liệu
-
-- **Data_CitationCount** - Số lượng trích dẫn trong tài liệu
-
-- **Data_DocumentLocation** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
-
-- **Data_ETW_TrackbackTag** - Xác định địa điểm trong mã nơi sự kiện này được kích hoạt (Đóng hoặc Tạm ngừng)
-
-- **Data_EndnoteDocCount** - Số lượng chú thích cuối trong tài liệu
-
-- **Data_FootnoteDocCount** - Số chú thích cuối trang trong tài liệu
-
-- **Data_HasBibliography** - Cho biết liệu tài liệu có chứa danh mục tham khảo hay không
-
-- **Data_HasHeader** - Cho biết liệu tài liệu có chứa đầu trang hay không
-
-- **Data_IsImeUsed** - Cho biết liệu Trình soạn thảo phương pháp nhập có được sử dụng trong tài liệu hay không
-
-- **Data_IsPageCountInProgress** - Cho biết số lượng trang hiện đang được thực hiện cho tài liệu.
-    
-- **Data_IsTouchUsed** - Cho biết liệu phương pháp nhập chạm có được sử dụng trong tài liệu hay không
-
-- **Data_IsTrackChangesOn** - Cho biết liệu theo dõi thay đổi có được bật cho tài liệu hay không
-
-- **Data_LineCount** - Số dòng trong tài liệu
-
-- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
-
-- **Data_PageCount** - Số trang trong tài liệu
-
-- **Data_PageNumberFieldCount** - Số trường số trang trong tài liệu
-
-- **Data_ParagraphCount** - Số đoạn trong tài liệu
-
-- **Data_PicCount** - Số lượng ảnh trong tài liệu
-
-- **Data_RsidCount** - Số hiệu đính lưu mã định danh trong tài liệu
-
-- **Data_TocCount** - Số lượng mục lục trong tài liệu
-
-- **Data_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
-
-- **Data_UserActionID** - Trường dữ liệu này không được sử dụng (giá trị luôn là 0).
-
-- **Data_UserActionName** - luôn là “DocumentStatsOnCloseAndSuspend”
-
-- **Data_UserInteractionTimeMsec** - Số mili giây mà người dùng đã tích cực tương tác với tài liệu
-    
-- **Data_WordCount** - Số từ trong tài liệu
-
 #### <a name="officewordfilenewcreatenewfile"></a>Office.Word.FileNew.CreateNewFile
 
 Sự kiện này cho biết rằng một tài liệu mới được tạo trong Office Word và theo dõi thành công hay thất bại của hoạt động này. Sự kiện này được sử dụng để theo dõi việc tạo tài liệu mới đang hoạt động như mong đợi. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng và số liệu về độ tin cậy của đám mây.
@@ -4952,102 +4890,6 @@ Các trường sau đây sẽ được thu thập:
 - **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
 
     
-#### <a name="officewordfilesaveactfconfirmsavedoccoreautorecoverysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
-
-Sự kiện này cho biết Office Word lưu tài liệu tự động khôi phục chưa được lưu trước đó. Nó cho phép Microsoft phát hiện lỗi trong tự động phục hồi, điều này rất quan trọng đối với sự an toàn của dữ liệu tài liệu.  Sự kiện theo dõi xem thao tác tự động khôi phục lưu khi có hoạt động như mong đợi hay không. Nó cũng được sử dụng để tính toán người dùng/thiết bị hoạt động hàng tháng và số liệu về độ tin cậy của đám mây.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
-
-- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc
-
-- **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
-
-- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
-    
-- **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
-
-- **Data_Doc_EdpState** - Cài đặt Bảo vệ Dữ liệu Điện tử cho tài liệu
-
-- **Data_Doc_Ext** - Phần mở rộng tài liệu (docx/xlsb/pptx, v.v)
-
-- **Data_Doc_FileFormat** - Phiên bản giao thức định dạng tệp
-
-- **Data_Doc_Fqdn** - Tên miền của OneDrive hoặc SharePoint Online
-
-- **Data_Doc_FqdnHash** - Hàm băm một chiều của tên miền có thể nhận dạng khách hàng
-
-- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở
-
-- **Data_Doc_InitializationScenario** - Ghi lại cách tài liệu được mở
-
-- **Data_Doc_IOFlags** - Báo cáo về các cờ đã lưu trong bộ nhớ đệm ẩn được sử dụng để đặt tùy chọn yêu cầu
-
-- **Data_Doc_IrmRights** - Các thao tác được cho phép bởi chính sách Bảo vệ Dữ liệu Điện tử đã được áp dụng cho tài liệu/người dùng
-
-- **Data_Doc_IsIncrementalOpen** - Cờ cho biết rằng tài liệu đã được mở một cách tăng dần
-
-- **Data_Doc_IsOcsSupported** - Cờ cho biết rằng tài liệu được hỗ trợ trong dịch vụ cộng tác
-    
-- **Data_Doc_IsOpeningOfflineCopy** - Cờ cho biết rằng bản sao ngoại tuyến của tài liệu đã được mở
-
-- **Data_Doc_IsSyncBacked** - Cờ cho biết rằng bản sao được đồng bộ hóa tự động của tài liệu tồn tại trên máy tính
-
-- **Data_Doc_Location** - Cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v.)
-
-- **Data_Doc_LocationDetails** - Cho biết Thư mục đã biết nào cung cấp tài liệu được lưu trữ cục bộ
-
-- **Data_Doc_NumberCoAuthors** - Số lượng người dùng đồng nghiệp trong một phiên cộng tác chỉnh sửa
-
-- **Data_Doc_PasswordFlags** - Cho biết cờ đọc hoặc đọc/ghi mật khẩu được đặt
-
-- **Data_Doc_ReadOnlyReasons** - Lý do tại sao tài liệu được mở ở dạng chỉ đọc
-
-- **Data_Doc_ResourceIdHash** - Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
-
-- **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
-
-- **Data_Doc_ServerDocId** - Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
-
-- **Data_Doc_ServerProtocol** - Phiên bản giao thức được sử dụng để giao tiếp với dịch vụ
-
-- **Data_Doc_ServerType** - Loại máy chủ cung cấp dịch vụ (SharePoint, OneDrive, WOPI, v.v..)
-
-- **Data_Doc_ServerVersion** - Phiên bản máy chủ cung cấp dịch vụ
-
-- **Data_Doc_SessionId** - Xác định phiên chỉnh sửa tài liệu cụ thể trong phiên đầy đủ
-
-- **Data_Doc_SharePointServiceContext** - Thông tin chẩn đoán từ các yêu cầu của SharePoint Online
-
-- **Data_Doc_SizeInBytes** - Chỉ báo kích thước tài liệu
-
-- **Data_Doc_SpecialChars** - Chỉ báo các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
-
-- **Data_Doc_StreamAvailability** - Chỉ báo nếu luồng tài liệu khả dụng/bị vô hiệu hóa
-
-- **Data_Doc_SyncBackedType** - Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ)
-
-- **Data_Doc_UrlHash** - Hàm băm một chiều để tạo mã định danh tài liệu gốc
-
-- **Data_Doc_WopiServiceId** - Chứa mã định danh duy nhất của nhà cung cấp dịch vụ WOPI
-
-- **Data_FailureClass** - Số nguyên thể hiện lớp lỗi cho các lỗi chuyển tiếp Dịch vụ Cộng tác Office (OCS)
-    
-- **Data_MainPdod** - Mã định danh tài liệu trong quy trình Office Word.
-
-- **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
-
-- **Data_OCSSyncbackSaveStarted** - Cờ cho biết thao tác lưu này có liên quan đến việc lưu lại đồng bộ hóa
-
-- **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này
-
-- **Data_RenameFlightEnabled** - Liệu chuyến bay cho tính năng đổi tên có được bật hay không
-
-- **Data_SaveInitiateKind** - Số nguyên cho biết cách bắt đầu lưu
-
-- **Data_SrcDocIsUnnamedOrNew** - Cho biết liệu tài liệu chúng tôi đang lưu có mới không
-
 
 #### <a name="officewordfilesaveactfconfirmsavedoccorequerysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -7358,7 +7200,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố trong phiên bản dành cho người tiêu dùng của các ứng dụng Office. 
 
-Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được xuất bản trên readyforwindows.com và các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
+Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được sử dụng trên các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -7390,7 +7232,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố trong phiên bản dành cho doanh nghiệp của các ứng dụng Office.
 
-Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được xuất bản trên readyforwindows.com và các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
+Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được sử dụng trên các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
 
 - **ScopeId** – Phạm vi chuỗi hội thoại hiện tại
 
@@ -7430,7 +7272,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **AssetId** - ID tài sản của ứng dụng
 
-- **ErrorCode** - Tổng thời gian sử dụng 
+- **ErrorCode** - Tổng thời gian sử dụng
+
+- **IsDebug** - cho biết phiên có phải là phiên gỡ lỗi hay không
 
 - **NumberOfAddinsActivated** - Bộ đếm phần bổ trợ được kích hoạt
 
