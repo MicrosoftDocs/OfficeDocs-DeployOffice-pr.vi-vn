@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
-ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
+ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
+ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38310702"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962867"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -423,6 +423,37 @@ Các trường sau đây sẽ được thu thập:
   - **Wamapi** - Xác định WAM API được gọi
 
   - **Wamtelemetrybatch** - Hiện chưa sử dụng. Trong tương lai, cho phép cấu phần WAM gửi thông tin bổ sung về sự kiện xác thực.
+
+### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
+ 
+Sự kiện này đã được ghi nhật ký khi một tài khoản có mã thông báo làm mới hợp lệ được tìm thấy trong danh sách tài khoản được cung cấp bởi TokenSharingManager.  Kịch bản này sẽ được dành riêng để Đăng nhập một lần (SSO).
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **AccountType** - Nhập loại tài khoản
+
+- **ProviderPackageID**- Ghi nhật ký ID gói của ứng dụng cung cấp tài khoản này
+
+### <a name="onenotesigninssoexternalappsinvalidaccount"></a>OneNote.SignIn.SSOExternalAppsInvalidAccount
+
+Sự kiện này đã được ghi nhật ký khi xảy ra lỗi trong quá trình tìm cách làm mới một mã thông báo cho tài khoản trong danh sách các tài khoản được cung cấp bởi TokenSharingManager. Kịch bản này dành riêng cho trường hợp Đăng nhập một lần (SSO).
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **RawError** - Nhật ký lỗi gốc thu được trong quá trình cố gắng nhận mã thông báo làm mới với tài khoản đã cho
+
+### <a name="onenotestickynotesfetchtokencompleted"></a>OneNote.StickyNotes.FetchTokenCompleted
+ 
+Sự kiện này đã được ghi nhật ký bài đăng xác thực, sau khi hoàn tất tải lại mã thông báo làm mới.
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **ErrorMessage** - Nếu việc lấy lại mã thông báo không thành công thì điều này sẽ ghi nhật ký thông báo lỗi 
+
+- **Result** - Nhật ký kết quả của việc lấy mã thông báo
+
+- **StickyNoteAccountType** - Loại Nhật ký của tài khoản mà ứng dụng đang tìm cách lấy mã thông báo làm mới
+
 
 ## <a name="click-to-run-events"></a>Sự kiện Click-to-Run
 
@@ -2531,13 +2562,19 @@ Báo cáo về hành động giải thích lý do cho việc đầu vào đượ
 
 - **PRID –**    Giá trị chuỗi đại diện cho ID Bản phát hành sản phẩm được yêu cầu trong một tình huống cài đặt dành cho người tiêu dùng (ví dụ: "O365ProPlusRetail")
 
-- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/ Văn hóa nào
+- **PridsToMigrateFromCentennial-** Chuỗi các sản phẩm Office để di chuyển từ bản cài đặt Store sang Click-to-Run
+
+- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/Văn hóa nào
+
+- **ProductsToMigrateFromO15C2R -**  Chuỗi các sản phẩm và văn hóa Office để chuyển từ một bản cài đặt Office 2013 Click-To-Run
 
 - **ProductsToRemove –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên gỡ cài đặt tổ hợp Sản phẩm/ Văn hóa nào
 
 - **SharedComputerLicensing –** Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
 
 - **ShouldActivate –**  Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
+
+- **ShouldUninstallCentennial-** Cờ Boolean cho biết các sản phẩm Office từ Store nên được gỡ cài đặt
 
 - **VersionToInstall –**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
  
@@ -2602,15 +2639,21 @@ Báo cáo các tham số được sử dụng cho cài đặt Office
 
 - **PlatformToInstall –**   Chuỗi cho biết quyết định cuối cùng về việc liệu Office x86 hay X64 nên được cài đặt
 
-- **ProductsToRemove –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên gỡ cài đặt tổ hợp Sản phẩm/ Văn hóa nào
-
 - **PRID –**    Giá trị chuỗi đại diện cho ID Bản phát hành sản phẩm được yêu cầu trong một tình huống cài đặt dành cho người tiêu dùng (ví dụ: "O365ProPlusRetail")
 
-- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/ Văn hóa nào
+- **PridsToMigrateFromCentennial-** Chuỗi các sản phẩm Office để di chuyển từ bản cài đặt Store sang Click-to-Run
+
+- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/Văn hóa nào
+
+- **ProductsToMigrateFromO15C2R -** Chuỗi các sản phẩm và văn hóa Office để chuyển từ một bản cài đặt Office 2013 Click-To-Run
+
+- **ProductsToRemove –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên gỡ cài đặt tổ hợp Sản phẩm/ Văn hóa nào
 
 - **SharedComputerLicensing –** Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
 
 - **ShouldActivate–**   Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
+
+- **ShouldUninstallCentennial-** Cờ Boolean cho biết các sản phẩm Office từ Store nên được gỡ cài đặt
 
 - **VersionToInstall–** Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
 
@@ -2651,6 +2694,37 @@ Báo cáo về các hành động gây ảnh hưởng đến máy đã thực hi
 - **VersionToInstall –**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
 
 
+### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
+
+Sự kiện này đã được ghi nhật ký khi cuộc gọi đến các WebService được thực hiện trong phần bổ trợ của Trình quản lý Khả năng bảo trì Hàng tồn kho Click-to-Run, bất kể thành công hay thất bại. Đây là thao tác cuối cùng trong phần bổ trợ để theo dõi trạng thái hoạt động tổng thể.
+
+Các trường sau đây sẽ được thu thập:
+
+-  **WebCallSource** - Một giá trị liệt kê (cụ thể là số nguyên) cho biết phần bổ trợ Trình quản lý Khả năng bảo trì là nguồn gốc của cuộc gọi:
+   - Hàng tồn kho: 0
+   - Cấu hình hàng tồn kho: 1
+   - Chính sách hàng tồn kho: 2
+   - Trạng thái Mạng lưới Hàng tồn kho: 3
+
+- **Result** - Cờ mã số lỗi số được trả về bởi các API cuộc gọi dịch vụ web Office.
+
+### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
+
+Sự kiện này sẽ được ghi nhật ký mỗi khi một cuộc gọi đến một dịch vụ web được thực hiện trong phần bổ trợ Trình quản lý Khả năng bảo trì Click-to-Run thất bại.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Add-on** - Phần bổ trợ Trình quản lý Khả năng bảo trì Click-to-Run mà từ đó cuộc gọi dịch vụ web đã được thực hiện. Phần này có thể có các giá trị như hàng tồn kho, khả năng quản lý, v.v. được mã hóa là giá trị số.
+
+- **Correlation ID** - Một GUID được tạo ngẫu nhiên cụ thể cho phiên bản hiện tại được gửi tới dịch vụ web để kết nối cuộc gọi giữa máy khách và máy chủ.
+
+- **ErrorInfo** - Thông tin mã số lỗi số được trả về bởi các API cuộc gọi dịch vụ web Office.
+
+- **Function** - Hàm trong mã mà cuộc gọi hiện tại đã diễn ra.
+
+- **Status** - Mã trạng thái HTTP được trả về bằng cuộc gọi đến dịch vụ web, ví dụ: 404, 500, v.v.
+
+
 ## <a name="enhanced-configuration-service-ecs-events"></a>Sự kiện Dịch vụ cấu hình nâng cao (ECS)
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
@@ -2688,6 +2762,14 @@ Sự kiện này giúp phân tích phạm vi trong việc sử dụng sản ph�
 Các trường sau đây sẽ được thu thập:
 
   - **FeatureGate -** Xác định tập hợp các tính năng mà có thể áp dụng phân tích kích hoạt.
+
+### <a name="onenoteflightdefault"></a>OneNote.FlightDefault
+ 
+Sự kiện này đã được ghi nhật ký khi OneNote yêu cầu máy chủ ECS Server cung cấp giá trị chuyến bay.  Việc này đã được sử dụng để cho phép các tính năng thử nghiệm đối với những người dùng đã chọn tham gia vào việc nhận những chuyến bay như vậy.
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **ConfigParam** - Cấu hình mà giá trị đó đang được truy nhập
 
 ## <a name="licensing-events"></a>Sự kiện cấp phép
 
@@ -2757,7 +2839,10 @@ Các trường sau đây sẽ được thu thập:
 
 Chúng tôi thu thập điều này khi người dùng đang thiết lập một thiết bị và chúng tôi gọi dịch vụ cấp phép của chúng tôi để phát hiện xem người dùng đã đăng nhập có quyền Office hay không. Điều này báo cáo kết quả của cuộc gọi đó. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
-Sự kiện này không thu thập trường nào.
+Các trường sau đây sẽ được thu thập:
+
+- **EntitlementCount** – Số quyền được hưởng mà người dùng sở hữu
+
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
@@ -2766,6 +2851,26 @@ Trên mỗi phiên, chúng tôi kiểm tra xem đã qua 72 giờ kể từ khi g
 Các trường sau đây sẽ được thu thập:
 
   - **Mode** – Một đại diện bộ liệt kê của ngăn xếp cấp phép Office đang được sử dụng trên máy này
+
+### <a name="officelicensinginclientpinredemptioncallpinredemptionapi"></a>Office.Licensing.InClientPinRedemption.CallPinRedemptionAPI
+
+Phéo đo từ xa này theo dõi các kết quả của dịch vụ gọi điện thoại dịch vụ quy đổi của Office.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ClientTransactionId** - Định danh duy nhất cho cuộc gọi dịch vụ.
+
+- **ErrorCategory** - Từng loại lỗi có thể rơi vào danh mục chung khác, chẳng hạn như "Retryable".
+
+- **ErrorType** - Lý do xảy ra lỗi, chẳng hạn như "AlreadyRedeemedByOther".
+
+- **InAFOFlow** - Một boolean cho biết chúng tôi đang ở trong dòng thu hồi AFO.
+
+- **StatusCode** - Kết quả gồm một từ của cuộc gọi dịch vụ, chẳng hạn như “Created”.
+
+- **StatusMessage** - Thông tin chi tiết về mã trạng thái, như ‘Successfully provisioned."
+
+- **UsingNulApi** - Một Boolean cho biết liệu chúng ta có đang sử dụng ngăn xếp bản quyền mới hay không.
 
 ### <a name="officelicensinginrfm"></a>Office.Licensing.InRFM 
 
@@ -2915,6 +3020,26 @@ Nếu chúng tôi không thể kích hoạt người dùng vì một số lý do
 
 Sự kiện này không thu thập trường nào.
 
+### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
+
+Người dùng có Office được cài đặt sẵn trên máy mới chưa có quyền được hưởng Office đã cho thấy một hộp thoại thông qua đó họ có thể thử, mua hoặc nhập một chìa khóa sản phẩm để đực cấp phép. Sự kiện này ghi lại hành động người dùng trên hộp thoại. Sự kiện này được sử dụng để theo dõi hành động của người dùng được thực hiện trên hộp thoại hiển thị cho người dùng không có quyền được hưởng Office cài đặt sẵn trên máy tính, đồng thời, giúp xác định xem người dùng được cấp phép hay chưa được cấp phép bằng cách thiết kế.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Buy** - Cho biết người dùng đã bấm vào nút mua hay chưa
+
+- **ForceAutoActivate** - Cho biết có cần phải kích hoạt trong ứng dụng hay không
+
+- **GoBackToSignIn** - Cho biết người dùng muốn đăng nhập lại (có thể với một tài khoản khác) hay không
+
+- **IsPin** - Cho biết người dùng đã nhập mã  hay chưa
+
+- **ProductKey** - Cho biết người dùng đã nhập khóa sản phẩm chưa
+
+- **Try** - Cho biết người dùng đã bấm vào nút mua hay chưa
+
+- **UserDismissed** - Điều này cho biết liệu người dùng đã hủy bỏ hộp thoại hay chưa và do đó sẽ nằm trong chế độ ân huệ hoặc cắt giảm tính năng vì họ không chọn mua Office hoặc nhận bản dùng thử
+
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
 
 Chúng tôi có một thử nghiệm cung cấp cho người dùng tùy chọn để thử và thiết lập tự động phát trực tiếp cho Office từ một ứng dụng mà không bao giờ rời khỏi bối cảnh của ứng dụng. Điều này báo cáo sự thành công hay thất bại cùng với mã lỗi. Đây là điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
@@ -2957,6 +3082,149 @@ Các trường sau đây sẽ được thu thập:
 
   - **UninstallProduct** – Cho biết liệu sản phẩm cũ sẽ được gỡ cài đặt như một phần của việc chuyển đổi hay không
 
+### <a name="officelicensingtelemetryflowolsresults"></a>Office.Licensing.TelemetryFlow.OLSResults
+
+Khi người dùng chưa được cấp phép, chúng tôi thực hiện một số cuộc gọi dịch vụ để đưa người dùng vào trạng thái được cấp phép và kích hoạt sản phẩm Office của mình.  Sự kiện này sẽ được kích hoạt khi gọi Dịch vụ cấp phép Office để kiểm tra xem người dùng có quyền được hưởng hay không.  Sự kiện này sẽ được sử dụng để theo dõi trạng thái cấp phép người dùng sau khi gọi Dịch vụ cấp phép Office và sức khỏe Máy khách Office sau khi cố gắng kích hoạt Office.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EntitlementPickerShown** - Cho biết người dùng có nhiều quyền được hưởng và nếu người dùng phải chọn theo cách thủ công để có được cấp phép
+
+- **GetAuthResult** - Cho biết các trạng thái khác nhau mà khách hàng có thể gặp tương tự như khi họ nhận được khóa sản phẩm rỗng từ Dịch vụ Cấp phép Office hoặc khi họ đã có quyền sử dụng đối với một sản phẩm khác và Office cần được chuyển đổi sang sản phẩm mới
+
+- **EntitlementCount** - Cho biết số quyền được hưởng mà người dùng sở hữu
+
+- **GetEntitlementsSucceeded** - Cho biết liệu cuộc gọi đến API Dịch vụ Cấp phép Office để truy xuất quyền được hưởng có thành công hay không.
+
+- **GetKeySucceeded** - Cho biết liệu cuộc gọi đến API Dịch vụ Cấp phép Office để truy xuất chìa khóa có thành công hay không
+
+- **GetNextUserLicenseResult** - Cho biết liệu ngăn xếp cấp phép hiện đại có thể làm việc và nếu người dùng đã được cấp phép hoặc không
+
+- **InstallKeyResult** - Cho biết những lý do khác nhau tại sao người dùng có thể ở trạng thái xấu như khi kích hoạt không thành công hoặc quá trình cài đặt khóa không thành công
+
+- **NotInitializedBeforeWhileAdding** - Đây chỉ là thông tin và cho biết liệu sự kiện đã được thêm vào bản đồ trình quản lý phép đo từ xa mà không cần đăng ký một cách rõ ràng cho nó hay không
+
+- **NotInitializedBeforeWhileSending** - Đây chỉ là thông tin và cho biết liệu sự kiện đã được cố gửi đi mà không cần đăng ký một cách rõ ràng cho nó trong trình quản lý phép đo từ xa trước hay không
+
+- **SentOnDestruction** - Đây chỉ là thông tin và cho biết liệu sự kiện đã được thêm vào bản đồ trình quản lý phép đo từ xa mà chưa được gửi một cách rõ ràng cho nó hay không
+
+- **Tag** - Được sử dụng để cho biết sự kiến được gửi từ vị trí trong mã nào
+
+- **VerifyEntitlementsResult** - Cho biết các trạng thái khác nhau mà người dùng có thể gặp sau khi phê chuẩn quyền được hưởng truy xuất từ Dịch vụ Cấp phép Office
+
+### <a name="officelicensingtelemetryflowsearchforbindingresult"></a>Office.Licensing.TelemetryFlow.SearchForBindingResult
+
+Các máy móc OEM có kèm theo Office (các đăng ký một năm hoặc vĩnh viễn).  Các sản phẩm Office này sẽ được thanh toán khi khách hàng mua máy tính của mình. Máy được thiết lập với một khóa đăng ký cụ thể (OOBEMode: OEMTA) có thể có ràng buộc Office liên kết với nó.  Khi chúng tôi khởi động Office trên các máy như vậy, chúng tôi sẽ thực hiện kiểm tra dịch vụ để xem liệu Office có liên quan đến tương ứng với máy không.
+
+Hoạt động đo từ xa này theo dõi sự thành công cũng như thất bại trong việc tìm kiếm ràng buộc để chúng tôi có thể đảm bảo rằng các máy có ràng buộc có thể thực hiện tải thành công và dịch vụ của chúng tôi vẫn hoạt động tốt.  Hoạt động này không theo dõi máy không có bất kỳ sự kết hợp nào được liên kết với chúng sau khi chúng tôi kiểm tra với các dịch vụ của chúng tôi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **GenuineTicketFailure** - Cho chúng tôi biết KẾT QUẢ thất bại khi cố gắng lấy chìa khóa sản phẩm/vé chính hãng Windows (WPK).
+
+- **PinValidationFailure** - Cho chúng tôi biết lý do tại sao quá trình xác thực mã pin không thành công. Lỗi có thể xảy:
+    - GeoBlocked
+    - InvalidFormat
+    - InvalidPin
+    - InvalidState
+    - InvalidVersion
+    - Không xác định
+    - Đã sử dụng
+
+- **Lệnh PinValidationResult** - Cho chúng tôi biết kết quả xác nhận mã pin của một mã pin mà chúng tôi đã không thể crack.
+
+- **Pkpn** - Dải pkpn chứa mã pin.
+
+- **Success** - Cho biết rằng chúng tôi đã tải thành công một cơ sở Office ràng buộc hợp lệ (mã pin) cho máy.
+
+- **Tag** - Cho chúng tôi biết tại bước nào chúng tôi đã ngừng tìm kiếm ràng buộc. Các thẻ có thể sử dụng:
+  - 0x03113809 Không có lỗi Internet/dịch vụ trong khi phê chuẩn mã pin
+   - 0x0311380a Xác thực mã pin thất bại, đã được gửi kèm trường PinValidationFailure
+  - 0x0310410f Thành công, đã được gửi với trường Thành công
+  - 0x0311380d Lỗi có thể thử lại (các sự cố qua Internet, lỗi không xác định)
+  - 0x0311380e Lỗi không thể thử lại (ưu đãi ràng buộc đã hết hạn)
+  - 0x0311380f Lỗi khác (không thể cấp phép)
+  - 0x03104111 Không thể crack mã pin Office, được gửi kèm trường PinValidationResult
+
+- **WpkBindingFailure** - Cho chúng tôi biết mã lỗi của việc nhận được mã pin Office được liên kết với WPK của máy.
+
+### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
+
+Sau khi nhận thành công một mã pin hợp lệ, bạn sẽ liên kết với một chiếc máy tính bảng cài sẵn Office, chúng tôi sẽ hiển thị một hộp thoại đăng nhập hoặc hộp thoại quy đổi.  Sau khi mã pin được quy đổi, chúng tôi sẽ hiển thị hộp thoại EULA.  Là một phần của tính năng hiện đại hóa AFO của chúng tôi, chúng tôi đã làm mới hai hộp thoại để truyền tải thêm thông tin về sản phẩm Office đi kèm với máy tính.  Phép đo từ xa này là để theo dõi xem liệu tính năng của chúng tôi có thành công trong việc làm giảm sự người dùng ma sát trong quy trình quy đổi sản phẩm của họ bằng cách theo dõi quy trình và các điểm thoát của quy trình quy đổi (hộp thoại bị bác bỏ).
+
+Các trường sau đây sẽ được thu thập:
+
+- **ActionCreateAccount** - Người dùng đã chọn để tạo tài khoản.
+
+- **ActionSignIn** - Người dùng đã chọn để đăng nhập.
+
+- **Dialogredevu** - Hiển thị hộp thoại quy đổi AFO.
+
+- **DialogSignIn** - Hiển thị hộp thoại đăng nhập AFO.
+
+- **OExDetails** - Chi tiết về lỗi mà chúng tôi nhận được khi hộp thoại đăng nhập nhận dạng đã bị bác bỏ.
+
+- **OExType** - Loại lỗi chúng tôi quay trở lại khi nhận dạng hộp thoại đăng nhập bị hủy bỏ.
+
+- **Tag** - Cho chúng tôi biết tại bước nào người dùng thoát ra khỏi quy trình quy đổi AFO. Các thẻ có thể sử dụng:
+    - 0x0311380b    Người dùng bác bỏ nhận dạng hộp thoại đăng nhập từ hộp thoại quy đổi
+    - 0x0311380c    Không tự động tải nhận dạng đăng nhập người dùng từ hộp thoại quy đổi
+    - 0x03113810    Không thể tải thông tin nhân khẩu học của tài khoản (mã quốc gia, ngôn ngữ, tiền tệ, ưu đãi bản dùng thử và các tùy chọn tiếp thị)
+    - 0x03113805    Người dùng bác bỏ nhận dạng hộp thoại đăng nhập từ hộp thoại đăng nhập
+    - 0x03113806    Không tự động tải nhận dạng đăng nhập người dùng từ hộp thoại đăng nhập
+    - 0x03113807    Không tự động tải lên nhận dạng
+    - 0x03113811    Người dùng đóng hộp thoại đăng nhập/quy đổi
+    - 0x03113812   Người dùng đóng hộp thoại chấp nhận EULA
+    - 0x03113808   Người dùng đã chấp nhận EULA
+
+- **UseInAppRedemption** - Cho chúng tôi biết rằng chúng tôi đang giữ người dùng trong ứng dụng để quy đổi hoặc chuyển họ đến web để quy đổi mã pin đã nhận.
+
+- **UseModernAFO** - Cho chúng tôi biết rằng chúng tôi đang sử dụng trải nghiệm AFO mới hay cũ.
+
+### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
+
+Khi máy mới cài đặt sẵn Office và người dùng không có quyền được hưởng, chúng tôi hiển thị hộp thoại cho phép người dùng dùng thử, mua hoặc nhập khóa sản phẩm để người dùng có thể nhận được cấp phép và sự kiện này theo dõi nếu hộp thoại được hiển thị. Sự kiện này sẽ giúp biết được liệu hộp thoại được hiển thị cho người dùng dùng thử, mua hoặc nhập khóa sản phẩm và do đó sẽ giúp chúng tôi xác định xem người dùng có cơ hội để có được cấp phép hay không.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **ActiveView** - Cho biết ID hộp thoại được hiển thị cho người dùng
+
+- **CurrentOOBEMode** - Cho biết chế độ cài đặt sẵn (OOBE Mode, như AFO, OEM v.v.)
+
+- **NotInitializedBeforeWhileAdding** - Đây chỉ là thông tin và cho biết liệu sự kiện đã được thêm vào bản đồ trình quản lý phép đo từ xa mà không cần đăng ký một cách rõ ràng cho nó hay không
+
+- **SentOnDestruction** - Đây chỉ là thông tin và cho biết liệu sự kiện đã được thêm vào bản đồ trình quản lý phép đo từ xa mà chưa được gửi một cách rõ ràng cho nó hay không
+
+- **ShowTryButton** - Cho biết nếu nút Dùng thử được hiển thị cho người dùng trên hộp thoại hay không
+
+- **Tag** - Được sử dụng để cho biết sự kiến được gửi từ vị trí trong mã nào
+
+### <a name="officelicensingtelemetryflowtrialflow"></a>Office.Licensing.TelemetryFlow.TrialFlow
+
+Khi một người dùng chưa được cấp phép của Office được cài đặt sẵn trên máy đang cố gắng lấy bản dùng thử, sự kiện này sẽ được kích hoạt.  Ứng dụng này được sử dụng để xem người dùng sẽ dùng cách nào để nhận bản dùng thử và nếu có bất kỳ lỗi nào khi nhận được bản dùng thử thông qua mua hàng trong ứng dụng.  Tùy theo hành động của người dùng và kết quả của việc mua hàng trong ứng dụng, người dùng có thể sẽ không được cấp phép.
+
+Các trường sau đây sẽ được thu thập:
+
+- **HasConnectivity** - Cho biết người dùng có kết nối Internet hay không và trong trường hợp không có, người dùng có thể phải sử dụng giấy phép ân huệ cho năm ngày hoặc có thể sử dụng trong chế độ cắt giảm tính năng
+
+- **InAppTrialPurchase** - Cho biết liệu chuyến bay được kích hoạt cho việc tung ra Store Purchase SDK để bắt PI và mua bản dùng thử từ bên trong ứng dụng hay không
+
+- **IsRS1OrGreater** - Cho biết liệu phiên bản OS lớn hơn RS1 hay không vì Store Purchase SDK chỉ nên được sử dụng nếu phiên bản OS lớn hơn RS1
+
+- **NotInitializedBeforeWhileAdding** - Đây chỉ là thông tin và cho biết liệu sự kiện đã được thêm vào bản đồ trình quản lý phép đo từ xa mà không cần đăng ký một cách rõ ràng cho nó hay không
+
+- **OEMSendToWebForTrial** - Cho biết liệu bạn đã kích hoạt tính năng sử dụng máy bay để chuyển người dùng đến web để quy đổi bản dùng thử chưa
+
+- **StoreErrorConditions** - Cho biết các điều kiện khác nhau mà các Store Purchase SDK có thể đã không thành công
+
+- **StoreErrorHResult** - Cho biết mã lỗi được trả về từ các Store Purchase SDK
+
+- **StorePurchaseStatusResult** - Cho biết kết quả của việc gọi Store Purchase SDK và liệu người dùng thực hiện mua hàng hay chưa, điều này sẽ giúp xác định xem người dùng có được cấp phép để sử dụng Office hay không
+
+- **Tag** - Được sử dụng để cho biết sự kiến được gửi từ vị trí trong mã nào
+
+- **UserSignedInExplicitly** - Cho biết liệu người dùng đã đăng nhập rõ ràng trong trường hợp nào, chúng tôi sẽ hướng dẫn lại người dùng lên web để lấy bản dùng thử
+
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
 Vì một số lý do nếu chúng tôi không thể cấp phép cho người dùng, chúng tôi sẽ cài đặt khóa gia hạn và gửi tín hiệu này để nhận biết. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
@@ -2966,6 +3234,14 @@ Các trường sau đây sẽ được thu thập:
   - **OpportunisticTokenRenewalAttempted** – Cho biết nếu chúng tôi đã thử gia hạn cho người dùng ở chế độ kích hoạt máy tính được chia sẻ hay chưa
 
   - **ReArmResult** – Cho biết kết quả của việc sắp xếp lại khóa đã cài đặt có thể kéo dài thời hạn của giấy phép hiện tại
+
+### <a name="onenoteenrollmentresult"></a>OneNote.EnrollmentResult
+ 
+Sự kiện này ghi nhật ký tình trạng này khi đăng ký Intune.  Kịch bản này là dành riêng cho các tài khoản được kích hoạt Intune.
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **EnrollmentResult** - Kết quả của việc đăng ký Intune
 
 ## <a name="microsoft-autoupdate-mau-events"></a>Sự kiện Microsoft AutoUpdate (MAU)
 
@@ -10053,6 +10329,33 @@ Các trường sau đây sẽ được thu thập
 
 - **Source** - bộ đếm chỉ ra sự kiện nào kích hoạt giao diện người dùng (UI), nghĩa là tạo ra hình ảnh redx mới, đồng bộ lỗi trong giao diện đồng bộ, hiển thị hộp thoại lỗi, v.v.
 
+### <a name="onenoteappprovisioningmovelocalnotebooktoonlinenotebookfailed"></a>OneNote.App.Provisioning.MoveLocalNotebookToOnlineNotebookFailed
+ 
+Sự kiện này được ghi nhật ký khi di chuyển sổ tay cục bộ vào ổ đĩa không thành công.  Kịch bản này dành riêng cho người dùng đăng nhập trễ. Khi người dùng đăng nhập, sổ tay cục bộ của họ sẽ được chuyển vào dung lượng lưu trữ OneDrive của họ. 
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **ErrorMsg** - Thông báo lỗi tương ứng với sự thất bại.
+
+### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
+ 
+Sự kiện này đã được ghi nhật ký khi tạo sổ tay không thành công.  
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **NetworkConnection** - Ghi nhật ký loại kết nối mà thiết bị hiện đang bật ví dụ: Wi-Fi, ngoại tuyến, 3G 
+
+- **ServerType** - Ghi loại máy chủ mà sổ tay đã được tạo.
+
+### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
+ 
+Sự kiện này đã được ghi nhật ký khi đồng bộ các Ghi chú Nhanh không thành công cho người dùng trong Trải nghiệm Lần đầu trên thiết bị.  Đây là dành riêng cho kịch bản Trải nghiệm Lần đầu.
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **NetworkConnection** - Ghi nhật ký loại kết nối mà thiết bị hiện đang bật ví dụ: Wi-Fi, ngoại tuyến, 3G
+
+- **ServerType** - Ghi nhật ký loại máy chủ mà sổ tay Ghi chú Nhanh được tạo ra
 
 ## <a name="services-configuration-events"></a>Sự kiện Cấu hình dịch vụ
 
