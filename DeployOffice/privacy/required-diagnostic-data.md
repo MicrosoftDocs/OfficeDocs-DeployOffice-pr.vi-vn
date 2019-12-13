@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
-ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
+ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
+ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39837700"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39906634"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -262,7 +262,7 @@ Danh mục này chứa các trường sau đây:
 
   - **IsClickToRunInstall** - Cờ cho biết nếu cài đặt là một thao tác cài đặt click-to-run. Cho phép chúng tôi xác định các sự cố có thể cụ thể đối với cơ chế cài đặt Click-To-Run.
 
-  - **IsDebug** - Cờ cho biết nếu bản dựng office là một bản dựng gỡ lỗi. Cho phép chúng tôi xác định xem các sự cố đến từ các bản dựng Gỡ lỗi có thể hoạt động khác đi hay không.
+  - **IsDebug** - Cờ cho biết bản dựng Office có phải là một bản dựng Gỡ lỗi hay không. Cho phép chúng tôi xác định xem các sự cố đến từ các bản dựng Gỡ lỗi có thể hoạt động khác đi hay không.
 
   - **IsInstalledOnExternalStorage** - Cờ cho biết nếu Office đã được cài đặt trên thiết bị lưu trữ ngoài. Hãy để chúng tôi xác định xem các sự cố có thể được truy tìm đến một vị trí lưu trữ bên ngoài hay không.
 
@@ -538,7 +538,7 @@ Sản phẩm được cài đặt và phiên bản và trạng thái cài đặt
 
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
-Áp dụng cho tất cả các ứng dụng chạy win32. Giúp chúng tôi hiểu được trạng thái của quá trình cập nhật của bộ công cụ (Thành công hay thất bại cùng với các chi tiết lỗi)
+Áp dụng cho tất cả các ứng dụng chạy win32. Giúp chúng tôi hiểu được trạng thái quá trình cập nhật của bộ Office (Thành công hay thất bại kèm theo thông tin lỗi)
 
 Các trường sau đây sẽ được thu thập:
 
@@ -680,6 +680,16 @@ Tín hiệu quan trọng được sử dụng để đảm bảo người dùng 
 
 - **ProvisioningStartedTime** - Cho biết thời điểm bắt đầu khi OneNote bắt đầu cung cấp sổ tay trong trải nghiệm chạy lần đầu tiên.
 
+#### <a name="officeonenotefirstrunmrureadernotebookentries"></a>Office.OneNote.FirstRun.MruReaderNoteBookEntries 
+
+Tín hiệu dùng để ghi lại mọi sự cố gặp phải khi tải Sổ ghi chép trong Lần chạy đầu tiên.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào trong Lần chạy đầu tiên.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **OnPremNBCount** - Số lượng sổ tay trong máy chủ Tại chỗ
+
+- **TotalNBCount** - Tổng số lượng sổ tay liên kết với Tài khoản người dùng
+
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
 Theo dõi nếu một gói cho Bảng tuỳ biến động đã được tải xuống. Được coi là cấu hình phần mềm vì gói phải được tải xuống thành công để cho phép máy khách hiển thị đúng trải nghiệm. Đặc biệt quan trọng trong đăng ký người tiêu dùng nơi chúng tôi sử dụng các bảng tuỳ biến để liên hệ với người dùng rằng giấy phép đã hết hạn. Được sử dụng để theo dõi siêu dữ liệu của gói nội dung động được sản phẩm tải xuống và lưu vào bộ nhớ đệm ẩn cũng như kết quả của các hoạt động được thực hiện trên gói: lỗi tải xuống, lỗi giải nén, kiểm tra tính nhất quán, lỗi bộ đệm ẩn, sử dụng gói, nguồn tải xuống.
@@ -738,6 +748,63 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_VisioSKU**:**integer** - 0 cho SKU tiêu chuẩn và 1 cho SKU chuyên nghiệp
 
+#### <a name="onenoteapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated
+
+Ghi lại thông tin về trạng thái kích hoạt của Ứng dụng.  Dữ liệu được giám sát để đảm bảo rằng chúng tôi có xác định lưu trữ tạm văn bản theo nhóm trong các sự cố về kích hoạt. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **INSTALL_LOCATION** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
+
+#### <a name="onenoteresetstatus"></a>OneNote.ResetStatus 
+
+Tín hiệu dùng để ghi lại mọi sự cố gặp phải khi người dùng cố gắng đặt lại Ứng dụng.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra trong quá trình đặt lại. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **Tài khoản** - Cho biết loại nếu tài khoản dùng để đăng nhập vào Ứng dụng
+
+- **Loại Chuỗi Chung** - Trả về nếu đó là đặt lại toàn bộ của đặt lại notes_light_data
+
+- **LaunchPoint** - Điểm mà Đặt lại được khởi tạo. Các giá trị khả thi: Nút đăng xuất, Đăng xuất thất bại, Đã kích hoạt Intune
+
+- **Pass** - Cho biết có Đặt lại có thành công hay không
+
+#### <a name="onenotesigninsignincompleted"></a>OneNote.SignIn.SignInCompleted 
+
+Tín hiệu quan trọng dùng để đảm bảo đăng nhập có thành công hay không. Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **CompletionState** - Trạng thái cuối cùng của đăng nhập - Đã thành công hoặc thất bại. Và các trường hợp lỗi
+
+- **EntryPoint** - Cho biết nơi Đăng nhập được khởi tạo
+
+- **Hresult** - Mã lỗi
+
+- **ID Gói Nhà cung cấp** - Trong trường hợp đăng nhập tự động
+
+- **Result** - Đã thành công, Thất bại, Không xác định, Đã hủy
+
+- **ServerType** - Trả về loại của máy chủ cung cấp dịch vụ 
+
+- **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
+
+#### <a name="onenotesigninsigninstarted"></a>OneNote.SignIn.SignInStarted 
+
+Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
+
+Các trường sau đây sẽ được thu thập: 
+
+- **EntryPoint** - Cho biết nơi Đăng nhập được khởi tạo
+
+- **Result** - Kết quả của tiến trình đăng nhập
+
+- **ServerType** - Trả về loại của máy chủ cung cấp dịch vụ 
+
+- **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
+
+
 ### <a name="office-add-in-configuration-subtype"></a>*Loại con cấu hình phần bổ trợ Office*
 
 Phần bổ trợ phần mềm và các thiết đặt.
@@ -774,7 +841,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilityappcommandsaddsolution"></a>Office.Extensibility.AppCommands.AddSolution
 
-Thu thập thông tin cài đặt cho phần bổ trợ Office tùy chỉnh dải băng.  Được sử dụng để phát hiện các sự cố đối với cách phần bổ trợ tùy chỉnh sửa đổi dải băng Office.
+Thu thập thông tin cài đặt cho phần bổ trợ Office tùy chỉnh dải băng.  Được sử dụng để phát hiện các sự cố với cách phần bổ trợ tùy chỉnh sửa dải băng Office.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -1721,6 +1788,75 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.StatusCode** - ID kịch bản được xác định bởi API
 
+#### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
+
+Sự kiện này giúp bạn hiểu ứng dụng Microsoft khác trong thiết bị là gì, ứng dụng của chúng tôi có thể đăng nhập một lần im lặng, từ điểm vào nào, v.v. Đồng thời, giúp bạn hiểu lý do không thể đăng nhập một lần im lặng.  Chúng tôi có được những thông tin chuyên sâu tốt hơn như từ ứng dụng Microsoft nào trong thiết bị, chúng tôi đang hoàn thiện trải nghiệm đăng nhập một lần. Hành động khi thất bại, khi đăng nhập một lần không hoạt động như dự kiến.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccountType** - Cho biết loại tài khoản đang diễn ra đăng nhập một lần, chẳng hạn như tài khoản Microsoft cá nhân hay tài khoản cơ quan.
+
+- **EntryPoint** - Cho biết điểm vào của ứng dụng - nơi lần thử đăng nhập một lần được khởi tạo.
+
+- **ErrorCode** - Cho biết mã lỗi của lần thử đăng nhập một lần.
+
+- **ErrorDescription** - Cho biết thông báo lỗi của lần thử đăng nhập một lần.
+
+- **HResult** - Cho biết mã trạng thái kết quả của lần thử đăng nhập một lần.
+
+- **ProviderPackageId** - Ứng dụng Microsoft khác trong thiết bị - nơi đang diễn ra đăng nhập một lần.
+
+#### <a name="officeandroidphonenumbersignins"></a>Office.Android.PhoneNumberSignIns
+
+Sự kiện này giúp bạn hiểu liệu người dùng đăng nhập hoặc đăng ký bằng tài khoản dựa trên số điện thoại hay tài khoản Microsoft cá nhân dựa trên email.  Sự kiện này giúp bạn biết số lượng người dùng đăng nhập hoặc đăng ký bằng tài khoản Microsoft cá nhân dựa trên số điện thoại.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EntryPoint** - Cho biết điểm vào của ứng dụng - nơi lần thử đăng nhập được khởi tạo.
+
+- **IsEmailMissing** - Có phải thiếu email trong thông tin hồ sơ tài khoản?
+
+- **IsPhoneNumberMissing** - Có phải thiếu số điện thoại trong thông tin hồ sơ tài khoản?
+
+- **UserDecision** - Cho biết lựa chọn mà người dùng thực hiện như đăng nhập hoặc đăng ký hoặc đăng nhập sau.
+
+#### <a name="officeandroidusersignindecision"></a>Office.Android.UserSignInDecision
+
+Sự kiện này giúp bạn hiểu người dùng đang bỏ qua giai đoạn nào trong tiến trình đăng nhập, tại sao đăng nhập thất bại, có bao nhiêu người dùng đang đăng nhập thành công từ điểm vào nào của ứng dụng v.v.  Sự kiện này hỗ trợ cho dữ liệu phễu đăng nhập, giúp bạn hiểu người dùng đang bỏ qua giai đoạn nào nhiều hơn và hơn thế nữa.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccountType** - Cho biết loại tài khoản của lần thử đăng nhập như tài khoản cá nhân hoặc tài khoản cơ quan.
+
+- **AfterLicensingState** - Cho biết trạng thái cấp phép ứng dụng sau khi hoàn tất đăng nhập.
+
+- **AllowedEditsWithoutSignIn** - Cho biết có bao nhiêu lần chỉnh sửa tự do đã thất bại trước khi thử đăng nhập.
+
+- **BeforeLicensingState** - Cho biết trạng thái cấp phép ứng dụng trước khi thử đăng nhập.
+
+- **CompletionState** - Cho biết giai đoạn hoàn tất đăng nhập.
+
+- **EntryPoint** - Cho biết điểm vào của ứng dụng - nơi lần thử đăng nhập được khởi tạo.
+
+- **HRDAutoAcceleratedSignUpAttemptCount** - Cho biết số lần đăng nhập gia tốc đã thử.
+
+- **HRDAutoAcceleratedSignUpQuitCount** - Cho biết số lần đăng nhập gia tốc đã hủy.
+
+- **HResult** - Cho biết mã trạng thái kết quả của thao tác đăng nhập.
+
+- **IsPhoneOnlyAuthFeatureEnabled** - Có cho phép đăng nhập dựa trên số điện thoại hay không?
+
+- **LicenseActivationHResult** - Cho biết mã trạng thái của lần thử kích hoạt giấy phép.
+
+- **LicenseActivationMessageCode** - Cho biết mã tin nhắn từ dịch vụ cấp phép.
+
+- **NoFreeEditsTreatmentValue** - Có cho phép chỉnh sửa tự do hay không?
+
+- **SignUpAttemptCount** - Cho biết số lần đăng nhập đã thử.
+
+- **StartMode** - Cho biết lần thử đăng nhập được bắt đầu trong chế độ nào.
+
+- **UserDecision** - Cho biết lựa chọn mà người dùng thực hiện như đăng nhập hoặc đăng ký hoặc đăng nhập sau.
 
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
@@ -1950,6 +2086,102 @@ Các trường sau đây sẽ được thu thập:
 - **Data_Ext** - Phần mở rộng tệp giới hạn ở bốn ký tự đầu tiên của phần mở rộng hoặc ít hơn.
 
 - **Data_ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v.
+
+#### <a name="office_docsui_fileoperations_opendocumentmeasurements"></a>Office_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Sự kiện này được thu thập cho các ứng dụng Office hoạt động trong nền tảng iOS. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp, đặc biệt là thông tin về hiệu suất.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppDuration** - Khoảng thời gian dành cho việc xử lý ứng dụng trong quá trình mở tệp.
+
+- **Data_BootDuration** - Khoảng thời gian trong quá trình khởi động của tệp mở.
+
+- **Data_ClickOrigin** - Một chuỗi cho biết liên kết đến từ phần nào khi người dùng nhấn vào một liên kết trong Outlook iOS để mở tệp trong ứng dụng Office.
+
+- **Data_ClickTime** - Thời gian Unix khi người dùng nhấn vào một liên kết trong Outlook iOS để mở tệp trong ứng dụng Office.
+
+- **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** - Phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Một GUID duy nhất xác định danh tính dùng để mở tệp.
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tệp.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** - Một liệt kê cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** - Một chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tệp tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà URL tệp sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định URL tệp.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** - Một chuỗi cho biết tệp WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ máy chủ nào.
+
+- **Data_InclusiveMeasurements** - Một giá trị chuỗi ghi nhật ký khoảng thời gian dành cho một số cuộc gọi chức năng, theo định dạng kèm thẻ chức năng và khoảng thời gian có bao gồm thời gian của cuộc gọi chức năng phụ.
+
+- **Data_InitializationReason** - Một liệt kê cho biết cách mở tệp, ví dụ: từ phần tử giao diện người dùng nào hoặc do một ứng dụng khác kích hoạt.
+
+- **Data_Measurements** - Một giá trị chuỗi ghi nhật ký khoảng thời gian dành cho một số cuộc gọi chức năng, theo định dạng kèm thẻ chức năng và khoảng thời gian có bao gồm thời gian của cuộc gọi chức năng phụ.
+
+- **Data_OpenInPlace** - Có phải sao chép một tệp vào bộ chứa hộp cát của Office trước khi người dùng có thể mở tệp hay không.
+
+- **Data_OpenStartTime** - Thời gian Unix khi thao tác mở tệp bắt đầu.
+
+- **Data_SilhouetteDuration** - Khoảng thời gian hiển thị của thao tác mở tệp.
+
+- **Data_SourceApplication** - Một chuỗi cho biết ID gói của ứng dụng nguồn khi thao tác mở tệp là do một ứng dụng khác kích hoạt.
+
+- **Data_StopwatchDuration** - Khoảng thời gian từ khi bắt đầu cho đến khi kết thúc sự kiện.
+
+- **Data_TimeSplitMeasurements** - Một giá trị chuỗi ghi nhật ký khoảng thời gian dành cho một số cuộc gọi chức năng, theo định dạng kèm thẻ chức năng, dấu thời gian bắt đầu và khoảng thời gian.
 
 #### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
 
@@ -2999,6 +3231,32 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Log** - Thông báo nhật ký tuỳ chỉnh cho biết sự thành công hay thất bại của việc kiểm tra trước
 
+
+#### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
+
+Sự kiện này được dùng để phát hiện và chẩn đoán một lỗi tần suất cao mà người dùng gặp phải khi sử dụng tính năng Viết tay.  Thao tác này sẽ được dùng để xác định chế độ khắc phục sự cố này thích hợp nhất. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **CurrentCanvasZoomFactor** - Yếu tố thu phóng hiện tại của bức vẽ.
+
+- **CurrentNotebook** - Mã định danh của sổ tay hiện hoạt hiện tại.
+
+- **CurrentPage** - Mã định danh của trang hiện hoạt hiện tại
+
+- **CurrentSection** - Mã định danh của mục hiện hoạt hiện tại.
+
+- **DefaultCanvasZoomFactor** - Yếu tố Thu phóng mặc định của bức vẽ.
+
+- **InkStrokeCount** - Tổng số nét viết tay kể từ lần ghi nhật ký cuối cùng.
+
+- **InkStrokeWithLayerInkEffect** - Số nét viết tay có hiệu ứng viết tay theo lớp kể từ lần ghi nhật ký cuối cùng.
+
+- **InkStrokeWithoutPressureCount** - Số Nét viết tay không có Áp lực kể từ lần ghi nhật ký cuối cùng.
+
+- **InkStrokeWithPencilInkEffect** - Số nét viết tay có hiệu ứng viết tay bằng bút chì kể từ lần ghi nhật ký cuối cùng.
+
+- **InkStrokeWithTilt** - Số nét viết tay có độ nghiêng kể từ lần ghi nhật ký cuối cùng.
 
 #### <a name="officeonenotenavigationcreatepage"></a>Office.OneNote.Navigation.CreatePage
 
@@ -5273,6 +5531,25 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ViewKind-** Kiểu dạng xem Word
 
+#### <a name="onenotecanvaspageopened"></a>OneNote.Canvas.PageOpened 
+
+Tín hiệu dùng để ghi lại khi mở một Trang.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra khi mở một Trang trong OneNote
+
+Các trường sau đây sẽ được thu thập: 
+
+- **JOT_ID** - đối tượng của trang đã mở
+
+- **TIME_TAKEN_IN_MS** - lượng thời gian cho việc mở trang
+
+#### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
+
+Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
+
+Các trường sau đây sẽ được thu thập: 
+
+- **Message_Bar_Type** - Trả về nếu người dùng đang sử dụng thanh thông báo cũ hoặc mới
+
+- **Message_Type** - Trả về ID thông báo lỗi
 
 #### <a name="parselicenseop"></a>ParseLicenseOp
 
@@ -5521,13 +5798,33 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
 
+#### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
+
+Việc ghi lại số liệu hiệu suất ứng dụng đối với thời gian phản hồi của ứng dụng từ khi khởi động là quan trọng.  Microsoft dùng tính năng này để thu thập lượng thời gian cần thiết để ứng dụng có thể phản hồi cũng như phát hiện những kịch bản có thể ảnh hưởng đến thời gian khởi động trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppLaunchResponsiveTimeInMilliSec** - Thời gian phản hồi khởi chạy ứng dụng
+
+- **AppSuspendedDuringBoot** - Boolean để cho biết liệu ứng dụng có bị tạm ngừng trong quá trình khởi động hay không
+
+- **CollectionTime** - Thời gian của sự kiện
+
+- **FileActivationAttempted** - Boolean để cho biết liệu thao tác kích hoạt tệp có là thử hay không
+
+- **FirstIdleOnAppThreadTimeInMilliSec** - Thời gian không hoạt động của chuỗi ứng dụng
+
+- **IsThisFirstLaunch** - Boolean để cho biết liệu đây có phải là lần đầu tiên ứng dụng khởi chạy hay không
+
+- **UserDialogInterruptionDuringBoot** - Boolean để cho biết liệu có hành động chặn giao diện người dùng nào trong quá trình khởi động hay không
+
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
 Ghi lại thông tin về việc tắt không mong muốn của Office. Điều này cho phép chúng tôi xác định sự cố hoặc tạm dừng sản phẩm để có thể xử lý chúng.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_AirspaceInitTime:integer-** Thời gian để khởi tạo cấu phần irspace Office
+  - **Data\_AirspaceInitTime:integer-** thời gian để khởi tạo cấu phần Office Airspace
 
   - **Data\_AllShapes:integer -** Số lượng hình trong tài liệu
 
@@ -5645,17 +5942,17 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_InitAddinsTime:integer -** Thời gian để khởi tạo và tải Thêm COM
 
-  - **Data\_InitBrandTime:integer -** Lượng thời gian cần thiết để khởi tạo màn hình nhấp nháy và thương hiệu các cấu phần Office
+  - **Data\_InitBrandTime:integer -** lượng thời gian cần thiết để khởi tạo màn hình nhấp nháy và các cấu phần thương hiệu Office
 
-  - **Data\_InitGimmeTime:integer -** Thời gian để khởi tạo cấu phần Office
+  - **Data\_InitGimmeTime:integer -** thời gian để khởi tạo cấu phần Office
 
-  - **Data\_InitLicensingTime:integer -** Thời gian để khởi tạo cấp phép cấu phần Office
+  - **Data\_InitLicensingTime:integer -** thời gian để khởi tạo cấu phần Office cấp phép
 
   - **Data\_InitMsoUtilsTime:integer -** Thời gian khởi tạo cấu phần Office MSOUTILS
 
   - **Data\_InitPerfTime:integer -** Thời gian thực hiện khởi tạo cấu phần Office
 
-  - **Data\_InitTCOTime:integer -** Lượng thời gian cần thiết để khởi tạo trình quản lý cấu phần Office
+  - **Data\_InitTCOTime:integer -** lượng thời gian cần thiết để khởi tạo trình quản lý cấu phần Office
 
   - **Data\_InitTrustCenterTime:integer -** Thời gian để khởi tạo trung tâm tin cậy cấu phần Office
 
@@ -5689,7 +5986,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Layers:integer -** Số lớp trong sơ đồ
 
-  - **Data\_LoadProfileTime:integer -** Lượng thời gian cần thiết để tải hồ sơ Office
+  - **Data\_LoadProfileTime:integer -** lượng thời gian cần thiết để tải hồ sơ Office
 
   - **Data\_LoadRichEditTim:integer-** Thời gian tải cấu phần chỉnh sửa đa dạng
 
@@ -5709,9 +6006,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_MsoEndBootTime:integer -** Thời gian kết thúc khởi động MSO
 
-  - **Data\_MsoInitCoreTime:integer -** Thời gian khởi tạo cấu phần MSO Office
+  - **Data\_MsoInitCoreTime:integer -** Thời gian để khởi tạo cấu phần Office MSO
 
-  - **Data\_MsoInitUITime:integer -** Thời gian để khởi tạo giao diện người dùng cấu phần MSO Office
+  - **Data\_MsoInitUITime:integer -** thời gian để khởi tạo giao diện người dùng cấu phần Office MSO
 
   - **Data\_MsoMigrateTime:integer -** Thời gian để di chuyển cài đặt người dùng khi khởi động lần đầu tiên nếu người dùng nâng cấp từ phiên bản trước
 
@@ -5723,9 +6020,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_FileIOBytesWrittenSquared:int-** Giá trị bình phương của NetworkIOBytesWritten
 
-  - **Data\_OartStartupTime:integer -** Thời gian để khởi tạo cấu phần OART Office
+  - **Data\_OartStartupTime:integer -** thời gian để khởi tạo cấu phần Office OART
 
-  - **Data\_OleInitTime:integer -** Thời gian thực hiện khởi tạo cấu phần OLE Office
+  - **Data\_OleInitTime:integer -** thời gian khởi tạo cấu phần Office OLE
 
   - **Data\_OpenDurationTimeInMs:integer -** Khoảng thời gian để mở tệp tính bằng mili giây
 
@@ -5831,6 +6128,126 @@ Các trường sau đây sẽ được thu thập:
 
 - **TotalTime** - Tổng thời gian sử dụng
 
+#### <a name="onenoteappappbootcomplete"></a>OneNote.App.AppBootComplete 
+
+Tín hiệu quan trọng dùng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **ACTIVITY_BOOT_TIME_IN_MS** - Thời gian để hoàn tất thao tác tạo Hoạt động
+
+- **ACTIVITY_NAME** - Tên của Hoạt động đã mở khi được khởi động 
+
+- **ANY_DIALOG_SHOWN** - Cho biết liệu có bất kỳ hộp thoại
+nào đã hiển thị trong thời gian khởi động hay không
+
+- **APP_SUSPEND_DURING_EVENT** - Cho biết liệu lần khởi động có được khởi xướng trước hay không
+
+- **APP_THREAD_CREATION_WAIT_TIME_TIME_FOR_APP_THREAD_CREATION** - Thời gian để tạo chuỗi Ứng dụng
+
+- **AVAILABLE_MEMORY_IN_MB** - Tổng dung lượng bộ nhớ sẵn dùng trong thiết bị 
+
+- **AVG_SNAPSHOT_POPULATION_TIME** - Thời gian trung bình để tìm nạp các cấu trúc sổ tay trong khi sử dụng Ứng dụng
+
+- **BOOT_END_AT_VIEW** - Danh mục con của tên Hoạt động (Tên của Dạng xem)
+
+- **BOOT_SNAPSHOTS** - Thông tin chi tiết về cấu trúc sổ tay tìm nạp cho (các) tài khoản được sử dụng trong Ứng dụng
+
+- **COREAPP_STARTUP_ACCOUNT_SETUP_STARTUP_ACCOUNT_SETUP** - Thời gian để kiểm tra và khởi tạo trải nghiệm SSO
+
+- **CRASH_INTERACTION_DURING_BOOT> 0** - Để cho biết liệu Ứng dụng có gặp sự cố trong phiên cuối cùng hay không
+
+- **DALVIK_HEAP_LIMIT_IN_MB** - Lỗi thời
+
+- **DELAY_LOAD_STICKY_NOTES** - Cho biết liệu Ghi chú dính có bị chậm trễ hay không
+
+- **FISHBOWL_SHOWN_DURING_EVENT** - Cho biết các trường hợp có nội dung chưa được đồng bộ
+
+- **HAS_LOGCAT_LOGGING_IMPACT_ON_BOOT** - Cho biết liệu thời gian khởi động có bị ảnh hưởng vì nhật ký hay không
+
+- **INIT_SNAPSHOT_DURATION** - Thời gian để lấy cấu trúc sổ tay cho (các) tài khoản người dùng
+
+- **IS_COLD_BOOT** - Cho biết liệu Ứng dụng có khởi chạy khi Ứng dụng không hoạt động trong nền hay không
+
+- **IS_FIRST_LAUNCH** - Cho biết liệu đây có phải là lần đầu tiên Ứng dụng được khởi chạy trong thiết bị hay không 
+
+- **IS_PHONE** - Cho biết liệu thiết bị là điện thoại hay máy tính bảng
+
+- **IS_RECENT_PAGES_AVAILABLE_ON_FRAGMENT_CREATION** - Cho biết liệu giao diện người dùng đã sẵn sàng và chờ cho nội dung trở nên khả dụng hay chưa 
+
+- **IS_REHYDRATE_LAUNCH** - Cho biết liệu có phải Ứng dụng bị hệ thống cho dừng hay không
+
+- **IS_UPGRADE** - Cho biết liệu Ứng dụng có được khởi chạy sau khi nâng cấp hay không
+
+- **JOT_MAIN_APP_CREATE_TIME_MAIN_APP_CREATE_TIME** - Thời gian để tạo cấu phần JOT (cấu phần mã chung) 
+
+- **JOT_MAIN_APP_INIT_TIME_MAIN_APP_INIT_TIME** - Thời gian để khởi tạo cấu phần JOT
+
+- **LAUNCH_POINT** - Cho biết liệu Ứng dụng được mở từ Tiện ích, Biểu tượng Ứng dụng, Siêu kết nối hay Chia sẻ để BẬT v.v.
+
+- **MSO_ACTIVATION_TIME_ACTIVATION_TIME** - Thời gian để khởi tạo MSO
+
+- **NATIVE_LIBRARIES_LOAD_TIME** - Thời gian để tải thư viện
+
+- **NAVIGATION_CREATE_TO_NAVIGATION_RESUME_CREATE_TO_NAVIGATION_RESUME** - Thời gian để hoàn tất dẫn hướng
+
+- **NAVIGATION_RESUME_TO_BOOT_END_RESUME_TO_BOOT_END** - Thời gian để đo độ trễ trong việc tải trang sau khi khởi động
+
+- **NAVIGATION_SET_CONTENT_VIEW_TIME_SET_CONTENT_VIEW_TIME** - Thời gian để đưa nội dung vào
+
+- **NUMBER_Of_RUNNING_PROCESSES** - Cho biết số lượng quy trình hiện hoạt đang hoạt động
+
+- **NUMBER_OF_SNAPSHOTS** - Số lượng tìm nạp của cấu trúc sổ tay trong khi khởi động
+
+- **OFFICEASSETMANAGER_INITIALIZATION_TIME** - Thời gian để giải nén và khởi tạo Trình quản lý tài sản
+
+- **PROCESS_BOOT_TIME_IN_MS** - Thời gian để hoàn tất thao tác tạo Quy trình
+
+- **ROOT_ACTIVITY_CREATE_ACTIVITY_CREATE** - Thời gian để chuyển tiếp từ tầng Gốc 
+
+- **ROOT_ACTIVITY_DISK_CHECK_ACTIVITY_DISK_CHECK** - Lỗi thời
+
+- **ROOT_ACTIVITY_LAUNCH_NEXTACTIVITY_ACTIVITY_LAUNCH_NEXTACTIVITY** - Lỗi thời
+
+- **ROOT_ACTIVITY_PROCESS_INTENT_ACTIVITY_PROCESS_INTENT** - Lỗi thời 
+
+- **ROOT_ACTIVITY_SESSION_ACTIVITY_SESSION** - Thời gian để chuyển tiếp từ tầng Gốc 
+
+- **ROOT_TO_NAVIGATION_TRANSITION_TO_NAVIGATION_TRANSITION** - Thời gian để đảm nhận dẫn hướng từ Gốc
+
+- **SNAPSHOT_PUBLISH_TO_RENDERING_END_PUBLISH_TO_RENDERING_END** - Thời gian để to hoàn tất kết xuất nội dung
+
+- **SPLASH_ACTIVITY_SESSION_ACTIVITY_SESSION** - Thời gian để hiển thị màn hình nhấp nháy
+
+- **SPLASH_TO_ROOT_TRANSITION_TO_ROOT_TRANSITION** - Thời gian để chuyển tiếp từ tầng Gốc 
+
+- **TIME_BETWEEN_PROCESS_BOOT_AND_ACTIVITY_BEGIN_IN_MS** - Thời gian giữa quy trình và thao tác tạo hoạt động 
+
+- **TIME_TAKEN_IN_MS** - Thời gian để hoàn tất khởi động
+ 
+- **TOTAL_MEMORY_IN_MB** - Tổng dung lượng bộ nhớ của Thiết bị
+ 
+- **USER_INTERACTED_DURING_EVENT** - Cho biết liệu người dùng có tương tác trong quá trình khởi động hay không
+
+#### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
+
+Tín hiệu dùng để cho biết Ứng dụng OneNote nằm trong nền trước.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
+
+Các trường sau đây sẽ được thu thập: Không có
+
+#### <a name="onenoteapplaunch"></a>OneNote.AppLaunch
+
+Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **FirstLaunchTime** - Ghi lại thời điểm khi Ứng dụng được khởi chạy lần đầu tiên
+
+- **InstallLocation** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
+
+- **is_boot_completed_ever** - Cho biết liệu trước đây Ứng dụng từng được khởi động thành công trên thiết bị hay chưa
+
+- **NewOneNoteUser** - Xác định xem người dùng có phải là người dùng mới hay không
 
 #### <a name="officeoutlookdesktopexchangepuidandtenantcorrelation"></a>Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
@@ -6338,7 +6755,7 @@ Các trường sau đây sẽ được thu thập.
 
 #### <a name="officetelemetryengineisprelaunch"></a>Office.TelemetryEngine.IsPreLaunch
 
-Có thể áp dụng cho các ứng dụng Office UWP.  Sự kiện này được kích hoạt khi một ứng dụng Ofice được bắt đầu để nâng cấp/cài đặt bài lần đầu tiên từ cửa hàng. Đây là một phần của dữ liệu chẩn đoán cơ bản, được sử dụng để theo dõi xem phiên có khởi chạy phiên hay không.
+Có thể áp dụng cho các ứng dụng Office UWP.  Sự kiện này được kích hoạt khi khởi tạo một ứng dụng Office lần đầu tiên sau khi nâng cấp/cài đặt từ cửa hàng. Đây là một phần của dữ liệu chẩn đoán cơ bản, được sử dụng để theo dõi xem phiên có khởi chạy phiên hay không.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -7661,6 +8078,67 @@ Các trường sau đây sẽ được thu thập:
 
 - **Error** - Điều này bao gồm thông báo lỗi mà đối tượng lỗi trả về.
 
+#### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
+
+Việc ghi lại số liệu hiệu suất ứng dụng đối với thời gian phản hồi của ứng dụng từ khi khởi động là quan trọng.  Microsoft dùng tính năng này để thu thập lượng thời gian cần thiết để ứng dụng có thể phản hồi cũng như phát hiện những kịch bản có thể ảnh hưởng đến thời gian khởi động trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+ 
+- **AnyCrashInteractionDuringBoot** - Boolean cho bất kỳ sự cố nào gặp phải trong khi khởi động
+
+- **AppActivationTimeInMs** - Thời gian giai đoạn của ứng dụng
+
+- **AppSuspendedDuringBoot** - Boolean cho việc tạm ngừng ứng dụng trong quá trình khởi động
+
+- **AvailableMemoryInMB** - bộ nhớ sẵn dùng
+
+- **CollectionTime** - thời gian của sự kiện
+
+- **DalvikHeapLimitInMB** - Thông tin khối
+
+- **DocumentRecoveryInvoked** - Boolean để cho biết liệu có bất kỳ tài liệu nào được khôi phục hay không
+
+- **ExtractionDone** - Thời gian khai thác thư viện bản địa
+
+- **FastBootGainTimeInMs** - Thời gian để hoàn tất khởi động nhanh
+
+- **FileActivationAttempted** - Boolean để cho biết liệu ứng dụng có được khởi chạy do Kích hoạt tệp hay không
+
+- **HasLogcatLoggingImpactOnBoot** - Boolean để cho biết liệu logcat có ảnh hưởng đến thời gian khởi động hay không
+
+- **IsThisFirstLaunch** - Boolean để cho biết liệu đây có phải là lần đầu tiên khởi chạy ứng dụng hay không
+
+- **LatencyTimeInMilliSec** - độ trễ tính bằng mili giây
+
+- **LibrarySharingTimeInMs** - thời gian để chia sẻ thư viện
+
+- **LoadMinLibsTimeInMs** - Thời gian tải của bộ các thư viện tối thiểu
+
+- **MruListingTimeInMs** - thời gian để tải MRU
+
+- **NativeLibrariesLoadTime** - thời gian tải thư viện CPP
+
+- **NumberOfRunningProcesses** - số lượng quy trình đang hoạt động
+
+- **NumberOfRunningProcesses** - Số lượng quy trình đang hoạt động
+
+- **NumberOfRunningServices** - Số lượng dịch vụ đang hoạt động
+
+- **OfficeActivityTimeInMs** - Thời gian để kích hoạt OfficeActivity
+
+- **PostAppInitTimeInMs** - thời gian giai đoạn của ứng dụng
+
+- **PreAppInitializationTime** - Thời gian kích hoạt giai đoạn của ứng dụng
+
+- **PreAppInitTimeInMs** - thời gian giai đoạn của ứng dụng
+
+- **TotalMemoryInMB** - tổng bộ nhớ
+
+- **UIRaaSDownloadLanguagePackageBoot** - thông tin liên quan đến việc tải xuống gói ngôn ngữ
+
+- **UserDialogInterruptionDuringBoot** - Boolean cho bất kỳ hộp thoại chặn nào hiển thị trong quá trình khởi động
+
+
 #### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để thu thập thời gian thực hiện khởi động ứng dụng, cũng như một số chi tiết về loại khởi động được thực hiện. Sự kiện này giúp chúng tôi theo dõi hiệu suất của mình và cung cấp cải tiến hiệu suất.
@@ -8120,6 +8598,655 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Timeout** - Thời gian kéo dài sự cố treo
 
+  #### <a name="officeandroidadalsigninuiprompts"></a>Office.Android.ADALSignInUIPrompts
+
+Sự kiện này biểu thị rằng lời nhắc đăng nhập đã đến với người dùng, đối với tài khoản trường học hoặc cơ quan.  Sự kiện này giúp bạn hiểu tình trạng của trạng thái đã đăng nhập đối với các ứng dụng của chúng tôi và từ đó thực hiện những hành động thích hợp, khi chúng tôi nhận thấy có lời nhắc lại đăng nhập ngoài dự kiến. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **LastLoginDelta** - Delta thời gian từ lần đăng nhập thành công gần nhất.
+
+- **PreviousIdentityCredProviderState** - Cho biết trạng thái tài khoản.
+
+- **PreviousIdentityState** - Cho biết trạng thái tài khoản, chẳng hạn như phiên đã hết hạn. 
+
+- **SignInResultCode** - Cho biết mã kết quả của lần kết thúc lời nhắc đăng nhập.
+
+- **UseCache** - Cho biết liệu chúng tôi có buộc người dùng phải cung cấp mật khẩu một lần nữa hay không.
+
+- **UserType** - Cho biết liệu đó là tài khoản hiện có hay tài khoản mới
+
+#### <a name="officeandroidandroidappdocsfileoperationends"></a>Office.Android.AndroidAppDocsFileOperationEnds
+
+Tài liệu Quan trọng Chỉ dành cho Android (AppDocs) dữ liệu đo từ xa cho thao tác kết thúc của Tệp Mới/Mở/Lưu dưới dạng. Dữ liệu này ghi lại mã lỗi cho sự cố của những AppDocsOperations này.  Microsoft dùng dữ liệu này để xác định sự cố trong nhiều thao tác tệp khác nhau và lớp chính xác mà tại đó sự cố xảy ra trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccessMode** - giá trị liệt kê cho chế độ truy nhập đối với tệp. Các giá trị - None, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** - Boolean để cho biết liệu giao diện người dùng bị chặn có được hiển thị ở bất kỳ đâu trong quy trình hay không.
+
+- **ContentUriAuthority** - uỷ quyền của URL nội dung từ SAF
+
+- **Correlation** - GUID cho ID tương quan liên quan đến vận hành
+
+- **DocId** - ID tài liệu do AppDocs tạo 
+
+- **DocInstanceId** - DocInstanceId ID phiên bản tài liệu do AppDocs tạo, ID này được xác định phạm vi tới phiên bản vận hành trên một tài liệu
+
+- **DocIsEnterpriseProtected** - Boolean để cho biết liệu tài liệu có được bảo vệ hay không.
+
+- **DocUserId** - ID người dùng từ lớp MS xác thực
+
+- **DocUserIdProvider** - liệt kê đại diện cho nhà cung cấp ID người dùng, 0 = Không xác định, 1 = LiveId, 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** - thời gian tính bằng mili giây cho thao tác chấm dứt tệp
+
+- **EndReason** - giá trị liệt kê cho lý do kết thúc.  Các giá trị - Không, Thành công, Thất bại, Hủy
+
+- **ErrorCode** - mã lỗi cho thao tác tệp
+
+- **Extension** - phần mở rộng của tệp đang được mở.
+
+- **FileSourceLocation** - giá trị liệt kê cho vị trí tệp. Các giá trị khả thi: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** - Thời gian của sự kiện
+
+- **FirstBCSClientError_Info** - Thông tin mã lỗi liên quan đến thao tác chuyển đổi tệp
+
+- **HttpStatusCode** - mã phản hồi http cho yêu cầu dịch vụ web
+
+- **InitalizationReason** - điểm nhập cho thao tác mở tệp
+
+- **K2FileIOHresult** - Mã hresult cho kết thúc thao tác mở Tệp
+
+- **LastBCSClientError_TagId** - lỗi gần nhất của máy khách BCS (dịch vụ chuyển đổi nhị phân).
+
+- **OfficeWebServiceApiStatusFlag** - cờ trạng thái cho yêu cầu dịch vụ web
+
+- **OpEndEventId** - tag đại diện cho nơi thao tác đã thực sự kết thúc
+
+- **OpFlags** - Cờ tham số của thao tác tài liệu được tầng AppDocs sử dụng.
+
+- **OpSeqNum** - Số đại diện cho việc giải trình tự của thao tác tệp liên quan đến cuộc gọi tại tầng AppDocs
+
+- **OpType** - liệt kê kiểu thao tác. Các giá trị: "None", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** - liệt kê cho trạng thái tiền tìm nạp đối với các mẫu của thao tác tạo tệp mới.
+
+- **ProviderApp** - tên gói của ứng dụng, nơi tệp được mở
+
+- **ScopeInstanceId** - ID phiên bản phạm vi dùng để kết hợp nội dung dữ liệu với các hoạt động
+
+- **Size** - kích cỡ tệp
+
+- **State** - giá trị liệt kê cho trạng thái tệp. Các giá trị: None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **TemplateName** - tên mẫu nhị phân của mẫu tài liệu từ dịch vụ mẫu, ví dụ: TF10002009.dotx
+
+- **UriScheme** - lược đồ URL
+
+#### <a name="officeandroidandroidautherror"></a>Office.Android.AndroidAuthError
+
+Sự kiện này cho biết lỗi xác thực cốt lõi trong quá trình làm mới mã thông báo im lặng, khi đang tải trang đăng nhập từ dịch vụ v.v.  Sự kiện này giúp bạn hiểu tình trạng của trạng thái đã đăng nhập đối với các ứng dụng của chúng tôi và từ đó thực hiện những hành động thích hợp, khi chúng tôi nhận thấy có lỗi ngoài dự kiến. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **ADALErrorCode** - Cho biết mã lỗi trong khi hiển thị lời nhắc đăng nhập hoặc lần thử tìm nạp mã thông báo im lặng cho tài khoản cơ quan.
+
+- **ADALRawErrorCode** - Cho biết mã lỗi thô trong khi hiển thị lời nhắc đăng nhập hoặc lần thử tìm nạp mã thông báo im lặng cho tài khoản cơ quan.
+
+- **ErrorGroup** - Cho biết loại tài khoản như tài khoản cá nhân hay tài khoản cơ quan hay tài khoản cơ quan tại nơi làm việc.
+
+- **IDCRLErrorCode** - Cho biết mã lỗi trong khi hiển thị lời nhắc đăng nhập cho tài khoản cá nhân.
+
+- **IDCRLRawErrorCode** - Cho biết mã lỗi thô trong khi hiển thị lời nhắc đăng nhập cho tài khoản cá nhân.
+
+- **LiveOAuthErrorCode** - Cho biết mã lỗi trong suốt lần thử làm mới mã thông báo im lặng cho tài khoản cá nhân.
+
+- **LiveOAuthRawErrorCode** - Cho biết mã lỗi thô trong suốt lần thử làm mới mã thông báo im lặng cho tài khoản cá nhân.
+
+- **NTLMErrorCode** - Cho biết mã lỗi trong khi hiển thị lời nhắc đăng nhập cho tài khoản cơ quan tại nơi làm việc.
+
+#### <a name="officeandroidandroidfileasyncsavestatus"></a>Office.Android.AndroidFileAsyncSaveStatus
+
+Ghi tại Dữ liệu trạng thái lưu không đồng bộ tệp và nhiều mã lỗi khác nhau từ các cấu phần khác nhau.  Microsoft dùng dữ liệu này để phân tích xem có bất kỳ dữ liệu người dùng nào bị mất trong ứng dụng trong suốt quá trình lưu tệp trong các ứng dụng WXP hay không.
+
+Các trường sau đây sẽ được thu thập:
+
+- **FileExtension** - phần mở rộng tệp
+
+- **FileIOSaveHResult** - HResult cho thao tác lưu tệp
+
+- **FileIOSaveIsCopy** - Boolean để cho biết liệu thao tác có đang lưu một bản sao hay không.
+
+- **FileSize** - kích cỡ tệp
+
+- **FileSourceLocation** - liệt kê cho vị trí nguồn tệp. Các giá trị: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+#### <a name="officeandroidandroidfileopenreliability"></a>Office.Android.AndroidFileOpenReliability
+
+Thao tác này ghi lại Dữ liệu trạng thái mở tệp và các mã lỗi khác nhau để xác định những lỗi mở tệp nào là trong dự kiến so với lỗi ngoài dự kiến và phần mã nào đang báo cáo những lỗi này.  Microsoft dùng dữ liệu này để phân tích các lý do cho sự cố mở tệp và tính toán số liệu quan trọng như tỉ lệ mở tệp thành công trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccessMode** - Liệt kê chế độ truy nhập
+
+- **AppDocsFileOpenErrorCode** - mã lỗi AppDocs cho sự cố mở tệp
+
+- **ContentUriAuthority** - uỷ quyền của URL nội dung từ SAF
+
+- **DownloadCsiError** - thông báo lỗi tải xuống từ CSI
+
+- **FileExtension** - phần mở rộng tệp
+
+- **FileOpenEndErrorCode** - Mã lỗi cho sự cố mở tệp
+
+- **FileOpenStatus** - Liệt kê trạng thái mở tệp
+
+- **FileSize** - kích cỡ tệp
+
+- **FileSourceLocation** - Liệt kê vị trí tệp
+
+- **FirstBCSClientError_Info** - lỗi gần nhất của máy khách BCS (dịch vụ chuyển đổi nhị phân).
+
+- **IfWordFileOpenCancelled** - nếu thao tác mở tệp đã bị người dùng trong Word hủy
+
+- **InitializationReason** - liệt kê cho điểm nhập đối với thao tác mở tệp 
+
+- **IsAutoSaveDisabled** - tự động lưu có bị vô hiệu hóa trong khi mở tệp
+
+- **IsFileEmpty** - Boolean để cho biết tệp có trống hay không
+
+- **K2FileIOHresult** - Hresult cho kết thúc thao tác mở tệp
+
+- **OpenCsiError** - thông báo lỗi mở tệp trong tầng CSI
+
+- **OpEndEventId** - tag tại nơi thao tác đã thực sự kết thúc
+
+- **PPTHresult** - Hresult trong PPT
+
+- **PPTIsExpectedError** - Phân loại lỗi PPT cho sự cố mở tệp trong dự kiến/ngoài dự kiến 
+
+- **PPTTag** - tag lỗi trong PPT
+
+- **ProviderApp** - tên gói của ứng dụng, nơi tệp được mở
+
+- **ProviderFileSize** - kích cỡ tệp được ghi lại trong khi mở tệp thông qua kích hoạt tệp
+
+- **Stae** - Liệt kê trạng thái mở tệp
+
+- **UriScheme** - Lược đồ URL
+
+- **WordErrortag** - tag lỗi trong Word
+
+- **WordFileCorruptionReason** - Lý do hỏng vì tệp Word có thể gặp sự cố trong quá trình mở
+
+- **WordFileOpenErrorCode** - mã lỗi mở tệp Word cụ thể.
+
+- **WordFileTypeFromDod** - Loại tệp được Word xác định dựa trên định dạng tệp thực tế
+
+- **WordFileTypeFromExtension** - Loại tệp được Word xác định dựa trên phần mở rộng tệp
+
+#### <a name="officeandroidandroidfilesavestatus"></a>Office.Android.AndroidFileSaveStatus
+
+Việc ghi tại Dữ liệu trạng thái lưu tệp và nhiều mã lỗi khác nhau từ các cấu phần khác nhau là quan trọng.  Microsoft dùng dữ liệu này để phân tích xem có bất kỳ dữ liệu người dùng nào bị mất trong ứng dụng trong suốt quá trình lưu tệp trong các ứng dụng WXP hay không.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccessMode** - Các giá trị** - None, ReadOnly, ReadOnlyUpgradable, ReadWrite.
+
+- **AppDocsEndReason** - liệt kê cho EndReason Tệp lưu Appdoc.  Các giá trị: Không, Thành công, Thất bại, Hủy.
+
+- **AppDocsErrorCode** - Mã lỗi cuối cùng cho sự cố lưu tệp
+
+- **AppDocsTriggeringSaveDetails** - trường để cho biết liệu AppDocs có đang kích hoạt thao tác lưu hay không
+
+- **DocInstanceId** - DocInstanceId ID phiên bản tài liệu do AppDocs tạo, ID này được xác định phạm vi tới phiên bản vận hành trên một tài liệu
+
+- **ExcelFileSaveResult** - HResult cụ thể của Excel
+
+- **FileExtension** - Phần mở rộng của tệp.
+
+- **FileIOSaveErrorCode** - Mã lỗi trong FileIO
+
+- **FileIOSaveHResult** - Hresult trong FileIO
+
+- **FileIOSaveIsCopy** - Boolean để cho biết liệu đây có phải là một thao tác sao chép
+
+- **FileSize** - Kích cỡ tệp
+
+- **FileSourceLocation** - Liệt kê vị trí tệp.  Các giá trị: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **OpFlags** - Cờ thao tác cho việc lưu
+
+- **PPTFileSaveFailHresult** - hresult PPT cho sự cố lưu
+
+- **PPTFileSaveFailTag** - tag PPT cho sự cố lưu
+
+- **State** - Liệt kê trạng thái Mở tệp. 
+
+- **Values** - None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **WordFileCopyErrorTrackbackTag** - tag lưu ý ngược cho sự cố là giai đoạn CopyDocument trong Word
+
+- **WordFileSaveCancelReason** - tag lưu ý ngược cho các thao tác hủy trong Word
+
+- **WordFileSaveEid** - mã lỗi cụ thể của Word
+
+- **WordFileSaveErrorTrackbackTag** - tag lưu ý ngược cho sự cố lưu
+
+- **WordFileSaveOpResult** - liệt kê cho trạng thái kết quả 0 nếu thành công, 1 nếu thất bại, 2 nếu đã hủy
+
+- **WordFileSaveSuccess** - liệt kê cho Word thông tin cụ thể cho thao tác lưu trữ tệp thành công.
+
+#### <a name="officeandroidandroidofficeactivationlatency"></a>Office.Android.AndroidOfficeActivationLatency
+
+Dữ liệu quan trọng để thu thập thời gian mở tệp đầu cuối cho mọi thao tác mở tệp trong các ứng dụng Windows, Excel, PowerPoint.  Dữ liệu này được Microsoft dùng để tìm hiểu về dữ liệu cho hiệu năng mở tệp của ứng dụng của chúng tôi
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppBootingOccured** - Boolean để kiểm tra xem liệu việc khởi động ứng dụng có hoàn tất hay không
+
+- **ApplicationBootTime** - thời gian bắt buộc trong suốt một giai đoạn cụ thể khi khởi động ứng dụng
+
+- **AppSuspendedDuringBoot** - Boolean để kiểm tra xem ứng dụng có bị tạm ngừng trong quá trình khởi động hay không
+
+- **BlockingUIShownDuringFileOpen** - Boolean để cho biết liệu có bất kỳ hộp thoại chặn nào trong suốt thao tác mở tệp hay không
+
+- **CachedInfoAvailable** - Boolean để tìm thông tin được lưu vào bộ đệm ẩn dành riêng cho thao tác mở tệp
+
+- **DocumentRecoveryInvoked** - Boolean để cho biết liệu có tài liệu nào đang chờ khôi phục hay không
+
+- **EndToEndActivationTime** - thời gian để kết xuất tệp cho các tệp được mở từ bên ngoài ứng dụng
+
+- **EndToEndFileOpenTime** - thời gian để kết xuất tệp cho các tệp được mở từ bên trong ứng dụng
+
+- **FileOpenPhaseDurationInMs** - thời gian thực hiện mở tệp của từng giai đoạn cụ thể
+
+- **FileSourceLocation** - giá trị liệt kê cho Vị trí tệp, chẳng hạn như Không, Cục bộ, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **InitalizationReason** - điểm nhập cho thao tác mở tệp
+
+- **InitialBootPhaseTime** - thời gian bắt buộc trong suốt một giai đoạn khởi động ứng dụng cụ thể
+
+- **IsThisFirstLaunch** - Boolean để cho biết liệu đây có phải là lần khởi chạy đầu tiên của ứng dụng hay không
+
+- **MinimumLibraryLoadPhaseTime** - thời gian bắt buộc trong suốt một giai đoạn khởi động ứng dụng cụ thể
+
+- **MinimumLibraryLoadPhaseTime** - thời gian bắt buộc trong suốt một giai đoạn khởi động ứng dụng cụ thể
+
+- **MinimumLibraryLoadPhaseTime** - thời gian bắt buộc trong suốt một giai đoạn khởi động ứng dụng cụ thể
+
+- **PostAppInitTimeInMs** - thời gian bắt buộc trong suốt một giai đoạn khởi động ứng dụng cụ thể
+
+- **PPTRenderPhase** - thời gian liên quan đến giai đoạn cụ thể trong khi kết xuất PPT
+
+- **PreAppInitTimeInMs** - thời gian bắt buộc trong suốt một giai đoạn khởi động ứng dụng cụ thể
+
+- **ProviderApp** - tên gói của ứng dụng, nơi tệp được mở
+
+- **TelemetryReason** - tương tự như InitialisationReason, nhưng giá trị liệt kê chi tiết hơn về điểm nhập dành cho Tệp đã mở.
+
+- **UserDialogInterruptionDuringBoot** - Boolean để cho biết liệu có hộp thoại chặn nào trong suốt quá trình khởi động hay không
+
+- **XLRenderPhase** - thời gian liên quan đến giai đoạn cụ thể trong khi kết xuất Excel
+
+#### <a name="officeandroidappdocsfileoperationends"></a>Office.Android.AppDocsFileOperationEnds
+
+Tài liệu Quan trọng Chỉ dành cho Android (AppDocs) dữ liệu đo từ xa cho thao tác kết thúc của Tệp Mới/Mở/Lưu dưới dạng. Dữ liệu này ghi lại mã lỗi cho sự cố của những AppDocsOperations này.  Microsoft dùng dữ liệu này để xác định sự cố trong nhiều thao tác tệp khác nhau và lớp chính xác mà tại đó sự cố xảy ra trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AccessMode** - giá trị liệt kê cho chế độ truy nhập đối với tệp.  Các giá trị: None, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** - Boolean để cho biết liệu giao diện người dùng bị chặn có được hiển thị ở bất kỳ đâu trong quy trình hay không.
+
+- **ContentUriAuthority** - uỷ quyền của URL nội dung từ SAF
+
+- **Correlation** - GUID cho ID tương quan liên quan đến vận hành
+
+- **DocId** - ID tài liệu do AppDocs tạo 
+
+- **DocInstanceId** - DocInstanceId ID phiên bản tài liệu do AppDocs tạo, ID này được xác định phạm vi tới phiên bản vận hành trên một tài liệu
+
+- **DocIsEnterpriseProtected** - Boolean để cho biết liệu tài liệu có được bảo vệ hay không.
+
+- **DocUserId** - ID người dùng từ lớp MS xác thực
+
+- **DocUserIdProvider** - liệt kê đại diện cho nhà cung cấp id người dùng, 0 = Không xác định, 1 = LiveId , 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** - thời gian tính bằng mili giây cho thao tác chấm dứt tệp
+
+- **EndReason** - giá trị liệt kê cho lý do kết thúc.  Các giá trị: Không, Thành công, Thất bại, Hủy
+
+- **ErrorCode** - mã lỗi cho thao tác tệp
+
+- **Extension** - bốn ký tự đầu tiên của phần mở rộng tệp đang được mở.
+
+- **FileSourceLocation** - giá trị liệt kê cho vị trí tệp. Các giá trị khả thi: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** - Thời gian của sự kiện
+
+- **FirstBCSClientError_Info** - Thông tin mã lỗi liên quan đến thao tác chuyển đổi tệp
+
+- **HttpStatusCode** - Mã phản hồi HTTP cho yêu cầu dịch vụ web
+
+- **InitalizationReason** - điểm nhập cho thao tác mở tệp
+
+- **K2FileIOHresult** - Mã hresult cho kết thúc thao tác mở Tệp
+
+- **LastBCSClientError_TagId** - lỗi gần nhất của máy khách BCS (dịch vụ chuyển đổi nhị phân).
+
+- **OfficeWebServiceApiStatusFlag** - cờ trạng thái cho yêu cầu dịch vụ web
+
+- **OpEndEventId** - tag đại diện cho nơi thao tác đã thực sự kết thúc
+
+- **OpFlags** - Cờ tham số của thao tác tài liệu được tầng AppDocs sử dụng.
+
+- **OpSeqNum** - Số đại diện cho việc giải trình tự của thao tác tệp liên quan đến cuộc gọi tại tầng AppDocs
+
+- **OpType** - liệt kê kiểu thao tác. Các giá trị: "None", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** - liệt kê cho trạng thái tiền tìm nạp đối với các mẫu của thao tác tạo tệp mới.
+
+- **ProviderApp** - tên gói của ứng dụng, nơi tệp được mở
+
+- **ScopeInstanceId** - ID phiên bản phạm vi dùng để kết hợp nội dung dữ liệu với các hoạt động
+
+- **Size** - kích cỡ tệp
+
+- **State** - giá trị liệt kê cho trạng thái tệp. Các giá trị: None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **TemplateName** - tên mẫu nhị phân của mẫu tài liệu từ dịch vụ mẫu, ví dụ: TF10002009.dotx
+
+- **UriScheme** - lược đồ URL
+
+#### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
+
+Phép đo từ xa Lỗi Chuyển đổi nhị phân cho In và Chia sẻ dưới dạng PDF.  Microsoft dùng phép đo từ xa này để xác định các điểm xảy ra sự cố trong suốt quá trình chuyển đổi BCS trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+
+- **DocumentFileSize** - Kích cỡ tệp.
+
+- **FileExtension** - Bốn ký tự đầu tiên của phần mở rộng tệp.
+
+- **IsFileDirty** - Boolean để cho biết liệu có thay đổi nào chưa được lưu trong tệp hay không.
+
+- **Location** - Liệt kê vị trí tệp.  Các giá trị: OneDrive, SharePoint, Dropbox, Others
+
+- **PDFConversionError** - Tag tại điểm xảy ra lỗi cho quá trình chuyển đổi PDF
+
+- **PdfConversionErrorCode** - mã lỗi chuyển đổi PDF
+
+- **PdfConversionHRStatus** - mã trạng thái chuyển đổi PDF
+
+- **PdfConversionResult** - liệt kê kết quả Chuyển đổi PDF.  Các giá trị: "Thành công", "Thất bại" và "Đã huỷ"
+
+- **PdfFileSize** - Kích cỡ tệp PDF
+
+#### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
+
+Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định các sự cố hỏng hóc DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ClientTransactionId** - GUID được truyền qua DSC cho Yêu cầu quy đổi cụ thể.
+
+- **CollectionTime** - thời gian để hoàn tất thanh toán đăng ký
+
+- **CountryCode** - Mã quốc gia của máy khách được gửi tới DSC để nhận yêu cầu quy đổi của khách
+
+- **GoPremiumEntryPoint** - điểm nhập để kích hoạt thanh toán 
+
+- **IsActivateExistingSubscription** - Boolean để cho biết liệu có thuê bao hiện có nào đã kích hoạt hay không
+
+- **IsErrorRetriable** - Boolean để cho biết liệu có thể thử lại việc quy đổi hay không
+
+- **IsPreviousPurchase** - Boolean để cho biết liệu kích hoạt đã diễn ra với việc thanh toán thuê bao trước đó hay chưa
+
+- **IsProvisioningTriggeredByRetry** - Boolean để cho liệu có diễn ra thao tác thử lại hay không
+
+- **LanguageCode** - Mã ngôn ngữ máy khách được gửi tới DSC để nhận yêu cầu quy đổi của khách
+
+- **ProductIdentifier** - tên SKU mà máy khách đang cố gắng thanh toán
+
+- **ProvisioningHttpStatusCode** - Mã trạng thái HTTP cấp phép
+
+- **ProvisioningStatusCode** - Mã trạng thái cấp phép
+
+- **PurchaseOrderId** - Mã định danh của đơn đặt hàng từ cửa hàng Google/Samsung
+
+- **RedemptionTaskHR** - HResult cho tác vụ quy đổi thuê bao
+
+- **SubscriptionProvisioningSucceeded** - Boolean để có được kết quả cấp phép thuê bao thành công
+
+- **SubscriptionPurchaseHR** - Hresult cho tác vụ thanh toán thuê bao
+
+- **SubscriptionType** - liệt kê cho loại đăng ký hoặc SKUs.
+
+- **TCID** - Biểu tượng quy trình đăng ký nhấn vào trình kích hoạt
+
+#### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
+
+Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định các sự cố hỏng hóc DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong các ứng dụng WXP.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ErrorAt** - Giá trị Tag: Thông tin về vị trí Xảy ra sự cố
+
+- **ExceptionErrorMessage** - thông báo lỗi chi tiết
+
+#### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
+
+Chúng tôi ghi lại sự kiện này trong trường hợp có lỗi xảy ra trong khi tải thư viện chung. Có thể xảy ra lỗi khi tải thư viện vì hai lý do 1) Apk đã cài đặt không tương thích với thiết bị. 2) Thư viện mà chúng tôi đang cố gắng tải có thể bị hỏng, do lỗi trong việc trích xuất khi dung lượng ổ đĩa hoặc bộ nhớ còn ít.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ExceptionMessage** - Thông báo ngoại lệ do System.loadlibrary API Android đưa ra
+
+- **Data_FreeSpaceInMB** - Không gian trống sẵn dùng trên thiết bị
+
+- **Data_nickName** - Tên của thư viện không thể tải được.
+
+#### <a name="officeandroidintuneintunejavacopyfailedattempts"></a>Office.Android.Intune.IntuneJavaCopyFailedAttempts
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để lưu bản sao cục bộ của các tài liệu trên nền điện toán đám mây được Intune bảo vệ.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FileCreationFailedErrorCode** - Mã lỗi liên kết với quy trình
+
+#### <a name="officeandroidintuneintunejavaexceptionadaltokenformam"></a>Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để nhận mã thông báo ADAL cho nguồn lực Intune.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong quá trình ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ErrorCode** - Mã lỗi liên kết với quy trình
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicy"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicy
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến các chính sách tìm nạp cho danh tính của quy trình hiện tại.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+ 
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicyforcontext"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến các quy định tìm nạp cho danh tính của hoạt động hiện tại.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+ 
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionauthenticationcallback"></a>Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến việc đăng ký cuộc gọi lại xác thực cho tài khoản được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptiongetaccountstatesync"></a>Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến tài khoản được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+ 
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptiongetissavetolocationallowed"></a>Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để tìm nạp chính sách liên quan đến thao tác lưu vào cục bộ.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptiongetpolicyforidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến các chính sách tìm nạp cho danh tính.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofromdescriptor"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến Thông tin bảo vệ.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+  
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofrompath"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến Thông tin bảo vệ.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptiongetuipolicyidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến các chính sách giao diện người dùng tìm nạp cho tài khoản được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionisidentitymanaged"></a>Office.Android.Intune.IntuneJavaExceptionIsIdentityManaged
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến việc định danh nếu tài khoản được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan.
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionnullenrollmentmanager"></a>Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến sự đăng ký của cấu phần cho cuộc gọi lại.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionprotect"></a>Office.Android.Intune.IntuneJavaExceptionProtect
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến việc bảo vệ một tài liệu được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan.
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionprotectfromdescriptorifrequired"></a>Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến việc bảo vệ một tài liệu được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến việc đăng ký tài khoản Trình quản lý Intune.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionsetuipolicyidentitysync"></a>Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan đến việc thiết lập các chính sách cho tài khoản được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionunregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan để xoá sạch các tình huống cho Trình quản lý Intune.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidintuneintunejavaexceptionupdatetoken"></a>Office.Android.Intune.IntuneJavaExceptionUpdateToken
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để gọi API Intune liên quan để cập nhật mã thông báo uỷ quyền cho tài khoản được quản lý.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeandroidlicenseactivationfailure"></a>Office.Android.LicenseActivationFailure
+
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố để kích hoạt cấp phép cho các tài khoản O365 trong ứng dụng W/X/P.  Microsoft dùng phép đo từ xa này nhằm phân tích sự cố để kích hoạt cấp phép o365 đã thanh toán.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EntryPoint** - liệt kê Entrypoint để khởi động quy trình kích hoạt giấy phép
+
+- **HResult** - mã lỗi của sự cố
+
+- **IsGallatin** - Boolean để kiểm tra xem liệu đó có phải là tài khoản Gallatin hay không
+
+- **MessageCode** - liệt kê để cho biết điểm xảy ra sự cố kích hoạt.
+
+- **PreviousEntryPoint** - Liệt kê Entrypoint để khởi động quy trình kích hoạt cấp phép
+
+- **StateAfterActivation** - liệt kê để cho biết trạng thái cấp phép của ứng dụng trước khi quy trình kích hoạt bắt đầu
+
+- **StateBeforeActivation** - liệt kê để cho biết trạng thái cấp phép của ứng dụng trước khi quy trình kích hoạt bắt đầu
+
+- **UserAccountType** - liệt kê để cho biết liệu đó là tài khoản cá nhân hay tài khoản doanh nghiệp.
+
+#### <a name="officeandroidmsasigninuiprompts"></a>Office.Android.MSASignInUIPrompts
+
+Sự kiện này biểu thị rằng lời nhắc đăng nhập đã đến với người dùng, đối với tài khoản cá nhân.  Sự kiện này giúp bạn hiểu tình trạng của trạng thái đã đăng nhập đối với các ứng dụng của chúng tôi và từ đó thực hiện những hành động thích hợp, khi chúng tôi nhận thấy có lời nhắc lại đăng nhập ngoài dự kiến. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExternalCacheRefreshError** - Mã lỗi của lần thử làm mới mã thông báo, trước khi hiển thị lời nhắc đăng nhập.
+
+- **LastLoginDelta** - Delta thời gian từ lần đăng nhập thành công gần nhất.
+
+- **MSAserverUAID** - ID tương quan với dữ liệu đo từ xa dịch vụ.
+
+- **PreviousIdentityState** - Cho biết trạng thái tài khoản, chẳng hạn như phiên đã hết hạn. 
+
+- **SignInResultCode** - Cho biết mã kết quả của lần kết thúc lời nhắc đăng nhập.
+
+- **UseCache** - Cho biết liệu chúng tôi có buộc người dùng phải cung cấp mật khẩu một lần nữa hay không.
+
+- **UserType** - Cho biết liệu đó là tài khoản hiện có hay tài khoản mới
+
+- **WasIdentitySignedOut** - Cho biết liệu tài khoản đã ở trạng thái đăng xuất hay chưa.
+
+
 #### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để ghi lại các lỗi kích hoạt dòng kỹ thuật số (sự kiện này ghi lại khóa và sản phẩm đã được sử dụng để kích hoạt, cũng như mã lỗi nhận được).  Sự kiện này được sử dụng để phát hiện và giúp khắc phục sự cố kích hoạt (sự cố Dòng kỹ thuật số).
@@ -8577,3 +9704,13 @@ Thu thập bất cứ khi nào PowerPoint phát hiện không có kết nối in
 Các trường sau đây sẽ được thu thập:
 
 - **Data\_IsNexusDetected:bool** - Cho biết liệu chúng tôi có trạng thái kết nối Internet khi gọi dịch vụ Nexus (giá trị đúng) hay khi gọi lệnh gọi API dịch vụ web chung (giá trị sai)
+
+#### <a name="officeserviceabilitymanagerofficesvcmgrprofile"></a>Office.ServiceabilityManager.OfficeSvcMgrProfile
+
+Sự kiện này được kích hoạt khi Trình quản lý Khả năng phục vụ Office bắt đầu và là một phần quan trọng cho việc cung cấp các thông tin chuyên sâu chính xác liên quan đến Trạng thái triển khải, Ứng dụng và các sự cố của Phần bổ trợ bên trong đối tượng thuê của khách hàng. Điều này được tiến hành bằng cách cho phép chúng tôi tạo ra thông tin chuyên sâu về Người quản trị CNTT để có thể tự tin tiến hành các bản cập nhật cho các máy doanh nghiệp của họ.  
+
+Các trường sau đây sẽ được thu thập:
+
+- **DeviceIdJoinToken** - được dùng để kết hợp với Dữ liệu đo từ xa từ Trạng thái triển khai và Sức khoẻ cùng Dữ liệu chức năng khác được thu thập thông qua đường ống dẫn Dịch vụ.
+
+- **TenantAssociationKeyStamped** - một cờ Boolean dùng để xác định số lượng Thiết bị được quản lý trong hệ sinh thái Office.
