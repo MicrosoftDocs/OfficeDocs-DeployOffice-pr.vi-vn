@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 5bf39e1fbe7e56b77496cfc0756484a9a1c051a0
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: a2f2a951db371336be1b425b0db45e5e72ea9d75
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067579"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024394"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -29,8 +29,10 @@ ms.locfileid: "38067579"
 > - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
 >
 > Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
+>
+> Thông tin này sẽ áp dụng cho phiên bản Outlook for iOS và Outlook for Android dự kiến sẽ được phát hành vào cuối tháng 1 năm 2020.
 
-Office bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn sáng tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
+Office bao gồm các ứng dụng phần mềm máy khách và những trải nghiệm kết nối được thiết kế nhằm cho phép bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Trải nghiệm được kết nối phân tích nội dung của bạn
 
@@ -49,13 +51,16 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang Hình, Văn bản hoặc Toán học trong PowerPoint cho Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Chú thích và phụ đề trực tiếp |  [Trình bày với chú thích theo thời gian thực, tự động hoặc phụ đề trong PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
+| Đề xuất về vị trí | Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, Outlook for iOS và Outlook for Android sẽ thêm địa chỉ đường đầy đủ vào trong trường Vị trí. |
 | Bản đồ trong Power View   | [Bản đồ trong Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Dịch vụ Bản trình bày Office  | [Phát rộng bản trình bày PowerPoint của bạn đến một người xem từ xa](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
 | PowerPoint Designer   | [Tạo bố trí trang chiếu chuyên nghiệp cùng PowerPoint Designer](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Phát hành lên Power BI   | [Phát hành lên Power BI từ Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Phát hành lên Microsoft Stream    | [Chuyển bản trình bày thành video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Nghiên cứu   | [Thêm hoặc thay đổi dịch vụ nghiên cứu](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Quét danh thiếp|  [Quét hoặc nhấn vào để thêm liên hệ vào Outlook for Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 | Tra cứu Thông minh   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
@@ -68,14 +73,19 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 
 | **Name**      | **Xem thêm thông tin**  |
 | ------------- | ------------- |
+| Ứng dụng lịch| [Ứng dụng Lịch là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Phông chữ đám mây                 | [Phông chữ đám mây trong Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
 | Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
+| Câu hỏi thường gặp |Khi bạn chọn **Cài đặt** > **Trợ giúp & Phản hồi** > **Câu hỏi thường gặp** trên Outlook for iOS và Outlook for Android, bạn sẽ được chuyển đến [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Hiệu ứng viết tay                 | [Vẽ và viết bằng tính năng viết tay trong Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Chèn biểu tượng                | [Chèn biểu tượng vào Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Chèn Microsoft Forms      | [Chèn biểu mẫu hoặc bài kiểm tra vào PowerPoint](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
 | Chèn mô hình 3D trực tuyến     | [Sáng tạo với mô hình 3D](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | Chèn ảnh trực tuyến      | [Chèn ảnh](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | Chèn video trực tuyến     | [Chèn video từ YouTube hoặc site khác](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Lịch thú vị| [Đăng ký nhận lịch](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn trên Outlook for iOS và Outlook for Android. |
+| Đề xuất về vị trí | Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, Outlook for iOS và Outlook for Android sẽ thêm địa chỉ đường đầy đủ vào trong trường Vị trí. |
+| Bản đồ trong thông tin chi tiết về sự kiện | Tìm hiểu nơi bạn cần đến với [bản đồ](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) trong thông tin chi tiết về sự kiện trên Outlook for iOS và Outlook for Android. |
 | Trợ giúp Office                 | Khi bạn chọn **Trợ giúp** > **Trợ giúp** trên dải băng hoặc sử dụng F1 trong ứng dụng Office   |
 | Tìm kiếm hình trực tuyến (Visio) | [Tìm thêm các hình và mẫu tô](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | Trình bắt đầu Nhanh PowerPoint     | [Nghiên cứu một chủ đề bằng Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |

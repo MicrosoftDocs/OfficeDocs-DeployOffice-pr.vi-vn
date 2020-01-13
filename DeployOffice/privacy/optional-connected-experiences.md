@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
-ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
+ms.openlocfilehash: ab9404b93157875589f2625be51a9e30cc3d0795
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38276524"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024484"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -37,7 +37,15 @@ Nếu bạn có tài khoản cơ quan hoặc trường học, người quản tr
 
 ## <a name="experiences-that-rely-on-bing"></a>Trải nghiệm dựa trên Bing
 
-Một số dịch vụ dựa trên đám mây được cung cấp bởi Microsoft Bing. Microsoft Bing là một doanh nghiệp riêng biệt với Office 365 ProPlus và được Microsoft quản lý độc lập với Office 365 ProPlus. Những trải nghiệm mà nó mang lại trong các ứng dụng Office 365 ProPlus là: [Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Biểu đồ bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Chèn hình ảnh trực tuyến](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Chèn mô hình 3D trực tuyến](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Trình nghiên cứu](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) và [Tra cứu thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). Những trải nghiệm này được cấp phép cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Office 365 ProPlus trong khi sử dụng các dịch vụ này đều được gửi đến Microsoft Bing. Chúng không được liên kết với bạn bởi tổ chức Bing.
+Một số dịch vụ dựa trên đám mây được cung cấp bởi Microsoft Bing. Microsoft Bing là một doanh nghiệp riêng biệt với Office 365 ProPlus và được Microsoft quản lý độc lập với Office 365 ProPlus. Những trải nghiệm mà nó mang lại trong các ứng dụng Office 365 ProPlus là: [Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Biểu đồ bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Chèn hình ảnh trực tuyến](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Chèn mô hình 3D trực tuyến](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Trình nghiên cứu](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) và [Tra cứu thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+
+Trải nghiệm mà Bing cung cấp trên Outlook for iOS và Outlook for Android như sau:
+
+- **Đề xuất vị trí:**   Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, địa chỉ đường đầy đủ sẽ có trong trường Vị trí.
+- **Lịch thú vị:**   Bạn có thể [đăng ký](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) lịch của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn.
+
+
+ Những trải nghiệm này hoạt động dựa trên Bing được cấp phép cho bạn theo các điều khoản của [Thoả thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Office 365 ProPlus trong khi sử dụng các dịch vụ này đều được gửi đến Microsoft Bing. Chúng không được liên kết với bạn bởi tổ chức Bing.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Trải nghiệm dựa trên LinkedIn
 
@@ -47,9 +55,13 @@ Lưu ý: Thiết đặt quyền riêng tư được mô tả bên dưới không
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Trải nghiệm dựa trên các dịch vụ trực tuyến thuộc sở hữu của Microsoft và/hoặc các dịch vụ thuộc sở hữu của bên thứ ba
 
+### <a name="help--contact-support"></a>Trợ giúp > Liên hệ với Bộ phận hỗ trợ
+
+Trên Outlook for iOS và Outlook for Android, bạn có thể báo cáo sự cố và kết nối với đội ngũ hỗ trợ của chúng tôi thông qua **Cài đặt** > **Trợ giúp & Phản hồi** > **Liên hệ bộ phận Hỗ trợ**. Trải nghiệm này được cung cấp bởi dịch vụ của HelpShift, và [điều khoản dịch vụ](https://www.helpshift.com/legal/terms/) và [chính sách về quyền riêng tư](https://www.helpshift.com/legal/privacy/) của HelpShift sẽ được áp dụng.
+
 ### <a name="help--suggest-a-feature"></a>Trợ giúp > Đề xuất một Tính năng
 
-Đề xuất một Tính năng là một trải nghiệm cho phép bạn gửi ý tưởng của mình về việc sử dụng Outlook. Đề xuất của bạn được cung cấp trực tiếp cho dịch vụ của bên thứ ba có tên là UserVoice. Nếu bạn gửi ý tưởng bằng Đề xuất một Tính năng, các [điều khoản dịch vụ và chính sách quyền riêng tư của UserVoice](https://outlook.uservoice.com/tos) sẽ được áp dụng.
+Đề xuất một Tính năng là một trải nghiệm cho phép bạn gửi ý tưởng của mình về việc sử dụng Outlook. Đề xuất của bạn được cung cấp trực tiếp cho dịch vụ của bên thứ ba có tên là UserVoice. Nếu bạn gửi ý tưởng bằng Đề xuất một Tính năng, các [điều khoản dịch vụ](https://outlook.uservoice.com/tos) và [chính sách về quyền riêng tư](https://outlook.uservoice.com/tos#privacy-policy) của UserVoice sẽ được áp dụng.
 
 ### <a name="insert-online-video"></a>Chèn video trực tuyến
 
