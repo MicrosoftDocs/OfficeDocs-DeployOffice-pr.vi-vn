@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
-ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
+ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
+ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39906634"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41109521"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -2391,6 +2391,139 @@ Các trường sau đây sẽ được thu thập:
 
 - **SolutionId** - ID của giải pháp
 
+#### <a name="officefeedeventsinitializing"></a>Office.Feed.Events.Initializing
+
+Sự kiện này được thu thập khi nguồn cấp dữ liệu bắt đầu khởi tạo. Sự kiện này dùng để cho biết nguồn cấp dữ liệu đang bắt đầu và để chẩn đoán các sự cố về độ tin cậy khi khởi chạy nguồn cấp dữ liệu.
+
+- **AppInfo.Language** - Ngôn ngữ của Ứng dụng dưới dạng thức thẻ ngôn ngữ IETF.
+
+- **AppInfo.Name** - Tên cấu phần được sử dụng (Nguồn cấp Office).
+
+- **AppInfo.Version** - Phiên bản của Ứng dụng.
+
+- **clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên của ứng dụng.
+
+- **clientType** - Ứng dụng mà cấu phần chạy.
+
+- **DeviceInfo.Make** - tên nhà sản xuất Thiết bị hoặc OEM của thiết bị.
+
+- **DeviceInfo.NetworkProvider** - Nhà mạng hay nhà khai thác di động, chẳng hạn như "AT&T".
+
+- **DeviceInfo.NetworkType** - Loại kết nối mạng của thiết bị đang sử dụng, chẳng hạn như "Có dây", "Wifi" hoặc "WWAN" (dữ liệu/di động).
+
+- **DeviceInfo.OsName** - Tên hệ điều hành của thiết bị.
+
+- **DeviceInfo.SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+
+- **eventId** - Đặt tên mã định danh của sự kiện. 
+
+- **EventInfo.SdkVersion** - Phiên bản của SDK từ xa được máy khách sử dụng để tạo sự kiện.
+
+- **eventpriority** - Giá trị liệt kê để ưu tiên gửi sự kiện.
+
+- **feature** - Dùng để nhóm các sự kiện khác nhau của cùng tính năng.
+
+- **hostAppRing** - Tổng số người dùng được ứng dụng phân phối tới.
+
+- **properties** - Chứa các thuộc tính siêu dữ liệu bổ sung thu thập từ mỗi sự kiện.
+        
+    - **ClientTimeStamp** - Dấu thời gian khi sự kiện được ghi lại trong máy khách.
+
+- **publicEventName** - Công chúng thấy tên sự kiện.  
+
+- **region** - Khu vực địa lý của dịch vụ nguồn cấp mà người dùng được kết nối. 
+
+- **tenantAadObjectId** - Mã định danh duy nhất trên toàn cầu cho đối tượng thuê doanh nghiệp của người dùng.
+
+- **type** - Loại sự kiện được ghi nhật ký, ví dụ như Theo dõi, Lỗi, Sự kiện, QoS.
+
+- **userAadObjectId** - Mã định danh duy nhất trên toàn cầu cho tài khoản Microsoft dành cho doanh nghiệp.
+
+- **UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho doanh nghiệp.
+
+- **UserInfo.IdType** - Xác định kiểu ID người dùng. 
+
+- **UserInfo.Language** - Ngôn ngữ của người dùng dưới dạng thức thẻ ngôn ngữ IETF.
+
+- **UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
+
+- **UserInfo.OMSTenantId** - Đối tượng thuê mà gói đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **UserInfo.TimeZone** - Múi giờ của người dùng tương ứng với giờ UTC.
+
+- **userPuid** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
+
+- **version** - Phiên bản máy khách của nguồn cấp dữ liệu.
+
+#### <a name="officefeedeventsofficefeeddidappear"></a>Office.Feed.Events.OfficeFeedDidAppear
+
+Sự kiện này được thu thập khi nguồn cấp dữ liệu được hiển thị cho người dùng. Sự kiện này dùng để xác minh nguồn cấp dữ liệu đã hoàn tất khởi tạo và để chẩn đoán các sự cố về độ tin cậy khi khởi chạy nguồn cấp dữ liệu.
+
+- **AppInfo.Language** - Ngôn ngữ của Ứng dụng dưới dạng thức thẻ ngôn ngữ IETF.
+
+- **AppInfo.Name** - Tên cấu phần được sử dụng (Nguồn cấp Office).
+
+- **AppInfo.Version** - Phiên bản của Ứng dụng.
+
+- **clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên của ứng dụng.
+
+- **clientType** - Ứng dụng mà cấu phần chạy.
+
+- **DeviceInfo.Make** - tên nhà sản xuất Thiết bị hoặc OEM của thiết bị.
+
+- **DeviceInfo.NetworkProvider** - Nhà mạng hay nhà khai thác di động, chẳng hạn như "AT&T".
+
+- **DeviceInfo.NetworkType** - Loại kết nối mạng của thiết bị đang sử dụng, chẳng hạn như "Có dây", "Wifi" hoặc "WWAN" (dữ liệu/di động).
+
+- **DeviceInfo.OsName** - Tên hệ điều hành của thiết bị.
+
+- **DeviceInfo.SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+
+- **eventId** - Đặt tên mã định danh của sự kiện.
+
+- **EventInfo.SdkVersion** - Phiên bản của SDK từ xa được máy khách sử dụng để tạo sự kiện.
+
+- **eventpriority** - Giá trị liệt kê để ưu tiên gửi sự kiện.
+
+- **feature** - Dùng để nhóm các sự kiện khác nhau của cùng tính năng.
+
+- **hostAppRing** - Tổng số người dùng được ứng dụng phân phối tới.
+
+- **properties** - Chứa các thuộc tính siêu dữ liệu bổ sung thu thập từ mỗi sự kiện.
+        
+  - **bridgeWaitingTime** - Số liệu để chẩn đoán hiệu suất khi kết xuất nguồn cấp dữ liệu.
+    
+  - **ClientTimeStamp** - Dấu thời gian khi sự kiện được ghi lại trong máy khách.
+        
+  - **renderTime** - Số liệu để chẩn đoán hiệu suất khi kết xuất nguồn cấp dữ liệu.
+
+- **publicEventName** - Công chúng thấy tên sự kiện.  
+
+- **region** - Khu vực địa lý của dịch vụ nguồn cấp mà người dùng được kết nối. 
+
+- **tenantAadObjectId** - Mã định danh duy nhất trên toàn cầu cho đối tượng thuê doanh nghiệp của người dùng.
+
+- **type** - Loại sự kiện được ghi nhật ký, ví dụ như Theo dõi, Lỗi, Sự kiện, QoS.
+
+- **userAadObjectId** - Mã định danh duy nhất trên toàn cầu cho tài khoản Microsoft dành cho doanh nghiệp.
+
+- **UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho doanh nghiệp.
+
+- **UserInfo.IdType** - Xác định kiểu ID người dùng. 
+
+- **UserInfo.Language** - Ngôn ngữ của người dùng dưới dạng thức thẻ ngôn ngữ IETF.
+
+- **UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
+
+- **UserInfo.OMSTenantId** - Đối tượng thuê mà gói đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **UserInfo.TimeZone** - Múi giờ của người dùng tương ứng với giờ UTC.
+
+- **userPuid** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
+
+- **version** - Phiên bản máy khách của nguồn cấp dữ liệu.
+
+
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Cho phép chúng tôi biết nếu một tệp đã được mở thành công từ Lớp FIO. Sử dụng để giám sát và biết về trạng thái tính năng.
@@ -3131,6 +3264,191 @@ Sự kiện này được thu thập đối với các ứng dụng Office chạ
 Các trường sau đây sẽ được thu thập:
 
 - **Data_FirstRunPanelName** - Tên của bảng điều khiển bắt đầu trải nghiệm
+
+#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
+
+Chúng tôi ghi nhật ký khi người dùng đang ở trong một ứng dụng có tải Thẻ Cá nhân với dự đoán rằng người dùng đó sẽ mở Thẻ Cá nhân Trực tiếp.  Dữ liệu dùng để xác định xem thẻ có được tải đúng hay không. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **Data.appContextId** - Là ID được tạo ngẫu nhiên dùng để xác định các tài khoản khác nhau trong cùng một ứng dụng
+
+- **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
+
+- **Data.AppInfo_Id** - Tên của ứng dụng máy chủ
+
+- **Data.AppInfo_Version** - Phiên bản của ứng dụng máy chủ
+
+- **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
+
+- **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
+
+- **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
+
+- **Data.clientType** - Loại thiết bị ứng dụng chạy trên đó
+
+- **Data.eventId** - Đặt tên mã định danh của sự kiện, ví dụ: "LivePersonaCardRenderedAction"
+
+- **Data.eventpriority** - Giá trị liệt kê để ưu tiên gửi sự kiện.
+
+- **Data.feature** - Dùng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.OTelJS.Version** - Phiên bản của OTel Logger
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
+
+  - **accountType** - Xác định xem người dùng thuộc về một tổ chức hay là người tiêu dùng
+
+  - **cardCorrelationId** - Bản sao của Data.appContextId phía trên
+
+  - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
+
+  - **ClientTimeStamp** - Thời gian trên ứng dụng khi sự kiện được ghi lại
+
+  - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên
+
+  - **contextType** - Xác định bối cảnh (ứng dụng) mà thẻ được khởi chạy
+
+  - **ecsConfigIds** - Mã định danh phiên bản cho các tính năng được kích hoạt trong thẻ
+
+  - **ecsTagId** - ID thẻ cho các tính năng
+
+  - **externalAppSessionCorrelationId** - Mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+
+  - **flights** - Các tính năng được kích hoạt trong thẻ
+
+  - **fromCache** - Xác định xem dữ liệu có được tải từ bộ nhớ không
+
+  - **hasFinePointer** - Xác định xem thiết bị có chức năng con trỏ chuột không
+
+  - **hasHoverEvents** - Xác định xem thiết bị có chức năng di chuột không
+
+  - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+
+  - **offlineResolved** - Xác định xem dữ liệu có được tải khi ngoại tuyến không
+
+  - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
+
+- **Data.tenantAadObjectId** - Người thuê được liên kết với đăng ký của người dùng sẽ bị ràng buộc. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
+
+- **Data.userAadObjectId** -Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho Doanh nghiệp (Bản sao của Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho doanh nghiệp
+
+- **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
+
+- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.userPuid** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
+
+- **Data.version** - Phiên bản của dịch vụ (Thẻ Hồ sơ)
+
+- **Data.workloadCulture** - Thiết lập văn hóa trong ứng dụng máy chủ
+
+- **DeviceInfo_Id** - Mã định danh thiết bị duy nhất trên toàn cầu cho một thiết bị
+
+- **DeviceInfo_Make** - Tên thương hiệu của hệ điều hành
+
+- **DeviceInfo_Model** - Dòng máy thiết bị
+
+- **DeviceInfo_OsName** - Tên hệ điều hành của thiết bị
+
+- **DeviceInfo_OsVersion** - Phiên bản của hệ điều hành
+
+- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+
+#### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
+
+Đã ghi nhật ký khi người dùng mở Thẻ Cá nhân mở rộng. Ứng dụng này được sử dụng để quan sát các bất thường nghiêm trọng trong việc tung ra Thẻ Cá nhân Trực tiếp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo_Id** – Tên của ứng dụng máy chủ
+
+- **AppInfo_Version** – Phiên bản của ứng dụng máy chủ
+
+- **Data.appContextId** - Là ID được tạo ngẫu nhiên được sử dụng để xác định các tài khoản khác nhau trong cùng một ứng dụng
+
+- **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
+
+- **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
+
+- **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
+
+- **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
+
+- **Data.clientType** - Loại thiết bị ứng dụng chạy trên đó
+
+- **Data.eventId** - Đặt tên mã định danh của sự kiện, ví dụ: "LivePersonaCardRenderedAction"
+
+- **Data.exportName** - Tên người có thể đọc được của sự kiện hành động người dùng, ví dụ: "OpenedPersonaCard"
+
+- **Data.exportType** - Danh mục sự kiện cho yêu cầu xuất của GDPR
+
+- **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.hostAppRing** - Vòng mà ứng dụng đã được phân phối
+
+- **Data.OTelJS.Version** - Phiên bản của OTel Logger
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
+
+  - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
+
+  - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
+
+  - **clientScenario** - Để xác định tính năng trong ứng dụng từ nơi mở thẻ cá nhân
+
+  - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
+
+  - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+
+  - **hasPersonalInsightRing** - Thông tin chuyên sâu từ Office hoặc LinkedIn có thể có sẵn cho người dùng
+
+  - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+
+  - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+  - **section** – Phiên hoạt động của thẻ đã mở rộng
+
+- **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
+
+- **Data.tenantAadObjectId** - Người thuê được liên kết với đăng ký của người dùng sẽ bị ràng buộc. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
+
+- **Data.userAadObjectId** -Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho Doanh nghiệp (Bản sao của Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho doanh nghiệp 
+
+- **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
+
+- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
+
+- **Data.version** - Phiên bản của dịch vụ (Thẻ Hồ sơ)
+
+- **DeviceInfo_Id** – Mã định danh thiết bị duy nhất trên toàn cầu cho một thiết bị
+
+- **DeviceInfo_Make** – Tên thương hiệu của hệ điều hành
+
+- **DeviceInfo_Model** – Dòng máy thiết bị
+
+- **DeviceInfo_OsName** - Tên hệ điều hành của thiết bị
+
+- **DeviceInfo_OsVersion** – Phiên bản của hệ điều hành
+
+- **DeviceInfo_SDKUid** – Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+
+- **NetworkCost** - Cho biết chi phí/loại mạng (gói dữ liệu theo lưu lượng sử dụng, giới hạn trên của kết nối bằng gói dữ liệu theo lưu lượng sử dụng, v.v.)
+
+- **NetworkCountry** - Mã Quốc gia của Người gửi, dựa trên Địa chỉ IP không sạch của Máy khách
+
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -4174,7 +4492,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_SrcDoc_ServerType:long** - Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
 
-- **Data_SrcDoc_ServerVersion:long** - Xác minh nếu máy chủ dựa trên Office14, Office15 hoặc Office 16Data_SrcDoc_SessionId:long GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
+- **Data_SrcDoc_ServerVersion:long** - Xác minh xem máy chủ có dựa trên Office14, Office15, Office 16 hay không
+
+- **Data_SrcDoc_SessionId:long** - GUID được tạo xác định phiên bản của tài liệu trong cùng một phiên quy trình
 
 - **Data_SrcDoc_SharePointServiceContext:string** - Một chuỗi mờ, điển hình là GridManagerID.FarmID. Hữu ích cho việc kết hợp nhật ký phía máy khách và phía máy chủ
 
@@ -7690,6 +8010,8 @@ Các trường sau đây sẽ được thu thập:
 - **AssetId** - ID tài sản của ứng dụng
 
 - **ErrorCode** - Tổng thời gian sử dụng
+
+- **IsAugmentationScenario** – cho biết nếu vòng lặp tăng cường có trách nhiệm khởi tạo điều khiển Khung giải pháp Office
 
 - **IsDebug** - cho biết phiên có phải là phiên gỡ lỗi hay không
 
