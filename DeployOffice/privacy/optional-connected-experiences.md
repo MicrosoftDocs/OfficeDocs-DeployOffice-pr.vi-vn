@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: ab9404b93157875589f2625be51a9e30cc3d0795
-ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
+ms.openlocfilehash: 3cba95a89c0a1f108485565101d10deea5a70a38
+ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41024484"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41917735"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -30,6 +30,8 @@ Nếu bạn có tài khoản cơ quan hoặc trường học, người quản tr
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 > - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
+>
+> Hầu hết các trải nghiệm được kết nối tùy chọn cũng có thể được quản lý bởi kiểm soát quyền riêng tư cho trải nghiệm kết nối Ví dụ: Chèn ảnh trực tuyến cũng có thể được quản lý bởi cài đặt chính sách *Cho phép sử dụng trải nghiệm được kết nối tải nội dung trực tuyến trong Office*.
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Nếu bạn sử dụng các dịch vụ này, bạn cần đồng ý với những điều khoản sử dụng nào?
 

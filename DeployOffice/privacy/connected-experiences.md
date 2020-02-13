@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: a2f2a951db371336be1b425b0db45e5e72ea9d75
-ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
+ms.openlocfilehash: 6dc32a1456402624ab28e0acbe9c3ef85b6add9d
+ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41024394"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41917645"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -42,8 +42,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 
 | **Tên**   | **Xem thêm thông tin**   |
 | ----------- | ------------------ |
-| Bản đồ 2D    | [Tạo Biểu đồ dạng Bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
-| Bản đồ 3D    | [Bắt đầu với Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| Bản đồ 3D\*    | [Bắt đầu với Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Đọc chính tả  | [Đọc chính tả bằng giọng nói của bạn trong Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Biên tập viên    | [Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
@@ -51,19 +50,22 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang Hình, Văn bản hoặc Toán học trong PowerPoint cho Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Chú thích và phụ đề trực tiếp |  [Trình bày với chú thích theo thời gian thực, tự động hoặc phụ đề trong PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
-| Đề xuất về vị trí | Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, Outlook for iOS và Outlook for Android sẽ thêm địa chỉ đường đầy đủ vào trong trường Vị trí. |
+| Biểu đồ dạng bản đồ\*    | [Tạo Biểu đồ dạng bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Bản đồ trong Power View   | [Bản đồ trong Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Dịch vụ Bản trình bày Office  | [Phát rộng bản trình bày PowerPoint của bạn đến một người xem từ xa](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
 | PowerPoint Designer   | [Tạo bố trí trang chiếu chuyên nghiệp cùng PowerPoint Designer](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Phát hành lên Power BI   | [Phát hành lên Power BI từ Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Phát hành lên Microsoft Stream    | [Chuyển bản trình bày thành video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Nghiên cứu   | [Thêm hoặc thay đổi dịch vụ nghiên cứu](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Nghiên cứu\*   | [Thêm hoặc thay đổi dịch vụ nghiên cứu](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Quét danh thiếp|  [Quét hoặc nhấn vào để thêm liên hệ vào Outlook for Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
-| Tra cứu Thông minh   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| Tra cứu thông minh\*   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+
+> [!NOTE]
+> \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối này là không bắt buộc và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
 
 ## <a name="connected-experiences-that-download-online-content"></a>Trải nghiệm được kết nối tải xuống nội dung trực tuyến
 
@@ -80,19 +82,22 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Hiệu ứng viết tay                 | [Vẽ và viết bằng tính năng viết tay trong Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Chèn biểu tượng                | [Chèn biểu tượng vào Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Chèn Microsoft Forms      | [Chèn biểu mẫu hoặc bài kiểm tra vào PowerPoint](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
-| Chèn mô hình 3D trực tuyến     | [Sáng tạo với mô hình 3D](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
-| Chèn ảnh trực tuyến      | [Chèn ảnh](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
-| Chèn video trực tuyến     | [Chèn video từ YouTube hoặc site khác](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| Lịch thú vị| [Đăng ký nhận lịch](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn trên Outlook for iOS và Outlook for Android. |
-| Đề xuất về vị trí | Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, Outlook for iOS và Outlook for Android sẽ thêm địa chỉ đường đầy đủ vào trong trường Vị trí. |
+| Chèn mô hình 3D trực tuyến\*     | [Sáng tạo với mô hình 3D](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
+| Chèn ảnh trực tuyến\*      | [Chèn ảnh](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
+| Chèn video trực tuyến\*     | [Chèn video từ YouTube hoặc trang web khác](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Lịch thú vị\*| [Đăng ký nhận lịch](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn trên Outlook cho iOS và Outlook cho Android. |
+| Đề xuất về vị trí\* | Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, Outlook for iOS và Outlook for Android sẽ thêm địa chỉ đường đầy đủ vào trong trường Vị trí. |
 | Bản đồ trong thông tin chi tiết về sự kiện | Tìm hiểu nơi bạn cần đến với [bản đồ](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) trong thông tin chi tiết về sự kiện trên Outlook for iOS và Outlook for Android. |
 | Trợ giúp Office                 | Khi bạn chọn **Trợ giúp** > **Trợ giúp** trên dải băng hoặc sử dụng F1 trong ứng dụng Office   |
 | Tìm kiếm hình trực tuyến (Visio) | [Tìm thêm các hình và mẫu tô](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
-| Trình bắt đầu Nhanh PowerPoint     | [Nghiên cứu một chủ đề bằng Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
-| Trình nghiên cứu    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
+| Trình bắt đầu nhanh PowerPoint\*     | [Nghiên cứu một chủ đề với Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
+| Trình nghiên cứu\*    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Cho Tôi Biết    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-| Thanh Thời tiết (Outlook)| [Thay đổi thành phố được dự báo trên Thanh Thời tiết của lịch](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+| Thanh thời tiết\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+
+> [!NOTE]
+>\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối này là không bắt buộc và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
 
 ## <a name="other-connected-experiences"></a>Trải nghiệm được kết nối khác
 
@@ -117,12 +122,12 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Thẻ liên hệ LinkedIn |[Kết nối tài khoản LinkedIn và Microsoft của bạn](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
 | Phản hồi về Office |[Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Bộ phận hỗ trợ của Office (Liên hệ với chúng tôi) |Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng |
-| Phần bổ trợ Office 365 | [Quản lý việc triển khai các phần bổ trợ Office 365 trong Trung tâm quản trị Microsoft 365](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
+| Phần bổ trợ Office 365\* | [Quản lý việc triển khai các phần bổ trợ Office 365 trong Trung tâm quản trị Microsoft 365](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức Viso](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Trình kết nối Xã hội Outlook | [Bật Trình kết nối Xã hội Outlook](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
-| Outlook UserVoice | [Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+| UserVoice Outlook\* | [Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Tài liệu gần đây |[Mở tệp từ menu Tệp](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
-| Trợ lý Sơ yếu lý lịch (hoặc Trợ lý CV) |[Viết sơ yếu lý lịch đẹp nhất của bạn với sự trợ giúp từ LinkedIn và Trợ lý Sơ yếu lý lịch](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
+| Trợ lý Sơ yếu lý lịch (hoặc Trợ lý CV)\* |[Viết sơ yếu lý lịch đẹp nhất của bạn với sự trợ giúp từ LinkedIn và Trợ lý Sơ yếu lý lịch](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Bộ tìm phòng (Outlook)|[Cách kiểm soát Bộ tìm phòng trong Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
 | Liên kết an toàn |[Liên kết an toàn Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
 | Nhãn độ nhạy cảm |[Áp dụng nhãn nhạy cảm cho tài liệu và email của bạn trong Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
@@ -133,6 +138,8 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Lịch sử phiên bản |[Xem các phiên bản trước đó của tệp Office](https://support.office.com/article/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
 | Khi bạn vắng mặt |[Nhận thông báo khi các thành viên trong nhóm của bạn cập nhật tệp chia sẻ của bạn](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
+> [!NOTE]
+>\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối này là không bắt buộc và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
 
 ## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Chọn xem những trải nghiệm được kết nối này có sẵn để sử dụng không
 
