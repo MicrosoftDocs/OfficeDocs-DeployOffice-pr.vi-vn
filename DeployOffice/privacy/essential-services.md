@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
-ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
+ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
+ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962867"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225014"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -78,6 +78,17 @@ Bạn có thể xem các sự kiện này bằng cách sử dụng Trình xem d�
 
 Các sự kiện dữ liệu chẩn đoán này được thu thập khi Office cố gắng lấy mã thông báo xác thực, bằng cách âm thầm hoặc thông qua nhắc nhở.
 
+### <a name="officeandroidmsaguesttoaad"></a>Office.Android.MSAGuestToAAD
+
+Sự kiện này giúp biết rõ số lượng người dùng đang nhận được lời nhắc cung cấp mật khẩu cho tài khoản cá nhân trong khi truy nhập vào tài nguyên công việc, vì tài khoản cá nhân của họ có thể là khách hợp lệ để trở thành đối tượng thuê tài khoản cơ quan.
+
+Dữ liệu này giúp chúng tôi biết được số lượng người dùng đang có trải nghiệm khó chịu vì mỗi khi đăng nhập, lại bị nhắc phải ưu tiên mua lại mã thông báo AAD âm thầm dựa trên xác nhận SAML (Ngôn ngữ Đánh dấu Xác nhận Bảo mật) tài khoản Microsoft.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Thẻ** - Biểu thị người dùng nhận được lời nhắc đăng nhập dành cho tài khoản cá nhân trong khi truy nhập tài nguyên của tài khoản cơ quan.
+
+
 ### <a name="officeidentityfbapromptwin32"></a>Office.Identity.FbaPromptWin32
 
 Được thu thập khi Office hiển thị cho người dùng lời nhắc đăng nhập xác thực dựa trên biểu mẫu.
@@ -86,9 +97,9 @@ Cùng với việc tiếp nhận mã thông báo tĩnh, lời nhắc xác thực
 
 Lời nhắc đăng nhập dựa trên biểu mẫu (FBA) được sử dụng cho một số tình huống xác thực tại chỗ và thông thường chúng tôi muốn đảm bảo điều này không xảy ra, vì mọi người sẽ sử dụng Xác thực hiện đại do các lỗ hổng bảo mật liên quan đến FBA.
 
-**Các trường sau đây sẽ được thu thập:**
+Các trường sau đây sẽ được thu thập:
 
-  - **AuthScheme** - lược đồ xác thực được sử dụng
+  - **AuthScheme** - Lược đồ xác thực được sử dụng
 
   - **DocumentUrlHash** - Yêu cầu URL được mã hóa
 
@@ -402,7 +413,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Microsoft\_ADAL\_ui\_event\_count** - Số lượng các lời nhắc được hiển thị cho người dùng. Có thể là tĩnh.
 
-  - **Microsoft\_ADAL\_user\_cancel** - Cho biết việc cửa sổ giao diện người dùng đã được hủy bỏ là đúng hay sai.
+  - **Microsoft\_ADAL\_user\_cancel** - Cho biết cửa sổ giao diện người dùng đã được hủy bỏ là đúng hay sai.
 
   - **Microsoft\_ADAL\_x\_ms\_request\_id** – ID yêu cầu bổ sung được cung cấp trong tiêu đề HTTP cho dịch vụ của ADAL.
 
@@ -2433,7 +2444,7 @@ Báo cáo về hành động tải xuống tệp để xác định vận hành 
 
 - **BytesFromLanPeers -**   Byte từ các mạng LAN ngang hàng, chỉ dành cho các bản tải xuống sử dụng Tối ưu hóa Phân phối 
 
-- **CancelledJobs -**    Số lượng yêu cầu bị hủy trong phiên
+- **cancelledJobs -** Số lượng yêu cầu bị hủy trong phiên
 
 - **Connected -**   Liệu đã được kết nối với nguồn chưa
 
@@ -2693,6 +2704,11 @@ Báo cáo về các hành động gây ảnh hưởng đến máy đã thực hi
 
 - **VersionToInstall –**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
 
+### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
+
+Sự kiện này dùng để thu thập siêu dữ liệu tiêu chuẩn về mỗi lần chạy phần bổ trợ Hàng tồn kho, nằm trong Trình quản lý Khả năng bảo trì Office và dùng để thu thập thông tin kiểm kê Office về những máy mà người quản trị CNTT đã chọn. Siêu dữ liệu về nội dung đáng quan tâm cụ thể tại đây là mã ID phiên và dùng để liên kết đến các dữ liệu khác được lưu trữ trong một dịch vụ đám mây cho mỗi đối tượng thuê.
+
+Sự kiện này không chứa trường bổ sung vì chỉ siêu dữ liệu có liên quan.
 
 ### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
 
@@ -3042,7 +3058,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
 
-Chúng tôi có một thử nghiệm cung cấp cho người dùng tùy chọn để thử và thiết lập tự động phát trực tiếp cho Office từ một ứng dụng mà không bao giờ rời khỏi bối cảnh của ứng dụng. Điều này báo cáo sự thành công hay thất bại cùng với mã lỗi. Đây là điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Chúng tôi có một thử nghiệm cung cấp cho người dùng tùy chọn để thử và thiết lập tự động phát trực tiếp cho Office từ một ứng dụng mà không bao giờ rời khỏi bối cảnh của ứng dụng. Qua đó, báo cáo sự thành công hay thất bại của thử nghiệm cùng với mã lỗi. Báo cáo này rất quan trọng trong việc phát hiện xem người dùng ở trạng thái tốt và không thiếu chức năng hay không. Báo cáo này dùng cho trạng thái hệ thống và cho mục đích chẩn đoán nếu người dùng báo cáo sự cố xảy ra với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3050,7 +3066,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingsearchforsessiontoken"></a>Office.Licensing.SearchForSessionToken
 
-Nếu người dùng đang chạy trong chế độ kích hoạt máy tính được chia sẻ, chúng tôi sẽ cố gắng tìm kiếm mã thông báo phiên trên máy cho phép người dùng sử dụng ứng dụng. Sự kiện này báo cáo sự thành công hay thất bại cùng với mã lỗi. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Nếu người dùng đang chạy trong chế độ kích hoạt máy tính được chia sẻ, chúng tôi sẽ cố gắng tìm kiếm mã thông báo phiên trên máy cho phép người dùng sử dụng ứng dụng. Sự kiện này báo cáo sự thành công hay thất bại của tình huống cùng với mã lỗi. Báo cáo này rất quan trọng trong việc phát hiện xem người dùng ở trạng thái tốt và không thiếu chức năng hay không. Báo cáo này dùng cho trạng thái hệ thống và cho mục đích chẩn đoán nếu người dùng báo cáo sự cố xảy ra với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3076,7 +3092,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **DestinationSku** – Tên của SKU mà sản phẩm hiện được cài đặt sẽ được chuyển đổi thành
 
-  - **PendingAcid** – ID sản phẩm mà một chuyển đổi SKU đang chờ xử lý
+  - **PendingAcid** – Mã ID sản phẩm mà một chuyển đổi SKU đang chờ xử lý
 
   - **SourceSku** – Tên của SKU ban đầu đã được cài đặt trên máy
 
@@ -3187,7 +3203,7 @@ Khi máy mới cài đặt sẵn Office và người dùng không có quyền đ
 
 Các trường sau đây sẽ được thu thập: 
 
-- **ActiveView** - Cho biết ID hộp thoại được hiển thị cho người dùng
+- **ActiveView** - Cho biết mã ID hộp thoại được hiển thị cho người dùng
 
 - **CurrentOOBEMode** - Cho biết chế độ cài đặt sẵn (OOBE Mode, như AFO, OEM v.v.)
 
@@ -4150,7 +4166,7 @@ Các trường sau đây sẽ được thu thập:
     
 ### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
 
-Sự kiện này cho biết người dùng đã huỷ quá trình tải xuống.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
+Sự kiện này cho biết người dùng đã hủy quá trình tải xuống.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5298,7 +5314,7 @@ Các trường sau đây sẽ được thu thập:
     
 ### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
 
-Sự kiện này cho biết người dùng đã hủy sau khi chúng tôi hiển thị trang tính danh sách bản cập nhật mới nhất. Chúng tôi dùng sự kiện này để giải thích lý do không cập nhật (nghĩa là người dùng sẵn lòng hủy). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Sự kiện này cho biết người dùng đã hủy sau khi chúng tôi hiển thị trang tính mới liệt kê những thông tin cập nhật. Chúng tôi dùng sự kiện này để giải thích lý do không cập nhật (nghĩa là người dùng sẵn lòng hủy). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -8445,7 +8461,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa danh sách ID các ứng dụng sẽ cập nhật.
+- **Payload** - Chứa danh sách mã ID các ứng dụng sẽ cập nhật.
     
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -10321,11 +10337,11 @@ Các trường sau đây sẽ được thu thập
 
 - **IsUsingRealtimeHierarchySync** - có đang sử dụng đồng bộ phân cấp hiện đại hay không
 
-- **NotebookId** - ID sổ tay
+- **NotebookId** - Mã ID sổ tay
 
 - **PageSyncUIState** - chuỗi trạng thái đồng bộ hoá trang, ví dụ: UpToDate, Syncing, SaveOffline, SyncError, v.v. 
 
-- **ServerGosid** - ID tài nguyên cho trang xung đột mới tạo
+- **ServerGosid** - Mã ID tài nguyên cho trang xung đột mới tạo
 
 - **Source** - bộ đếm chỉ ra sự kiện nào kích hoạt giao diện người dùng (UI), nghĩa là tạo ra hình ảnh redx mới, đồng bộ lỗi trong giao diện đồng bộ, hiển thị hộp thoại lỗi, v.v.
 
@@ -11472,7 +11488,7 @@ Xác thực rằng người tiêu dùng có thể xem dữ liệu khi nó rời 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **DialogCancelled** - Hộp thoại Trình xem dữ liệu chẩn đoán có bị hủy bỏ hay không
+  - **Dialogcanceled** - Hộp thoại Trình xem dữ liệu chẩn đoán có bị hủy bỏ hay không
 
   - **NewState** - Trạng thái Trình xem dữ liệu chẩn đoán mới
 
