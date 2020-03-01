@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: 3cba95a89c0a1f108485565101d10deea5a70a38
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
+ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917735"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42340905"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -59,7 +59,7 @@ Lưu ý: Thiết đặt quyền riêng tư được mô tả bên dưới không
 
 ### <a name="help--contact-support"></a>Trợ giúp > Liên hệ với Bộ phận hỗ trợ
 
-Trên Outlook for iOS và Outlook for Android, bạn có thể báo cáo sự cố và kết nối với đội ngũ hỗ trợ của chúng tôi thông qua **Cài đặt** > **Trợ giúp & Phản hồi** > **Liên hệ bộ phận Hỗ trợ**. Trải nghiệm này được cung cấp bởi dịch vụ của HelpShift, và [điều khoản dịch vụ](https://www.helpshift.com/legal/terms/) và [chính sách về quyền riêng tư](https://www.helpshift.com/legal/privacy/) của HelpShift sẽ được áp dụng.
+Trên Outlook for iOS và Outlook for Android, bạn có thể báo cáo sự cố và kết nối với đội ngũ hỗ trợ của chúng tôi thông qua **Cài đặt** > **Trợ giúp & Phản hồi** > **Liên hệ bộ phận Hỗ trợ**. Trải nghiệm này yêu cầu dịch vụ thuộc sở hữu của Microsoft có tên PowerLift và áp dụng các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [Điều khoản về quyền riêng tư của Microsoft](https://privacy.microsoft.com/).
 
 ### <a name="help--suggest-a-feature"></a>Trợ giúp > Đề xuất một Tính năng
 
