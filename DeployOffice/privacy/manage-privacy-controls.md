@@ -16,11 +16,11 @@ ms.custom:
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các cài đặt chính sách.
 hideEdit: true
 ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
-ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
+ms.sourcegitcommit: bec0b4de9d1e5444a5418d2c9d1434ee5489199a
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639364"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556010"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
 
