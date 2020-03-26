@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
-ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
+ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
+ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225014"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42939784"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -30,7 +30,7 @@ ms.locfileid: "42225014"
 >
 > Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
-Office bao gồm các ứng dụng phần mềm máy khách và những trải nghiệm kết nối được thiết kế nhằm cho phép bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối có sẵn cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không thể bị vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình. Bạn có thể xem dữ liệu này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Office bao gồm các ứng dụng phần mềm máy khách và những trải nghiệm kết nối được thiết kế nhằm cho phép bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối sẵn dùng cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình. Bạn có thể xem dữ liệu này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
 Để biết thêm thông tin, hãy xem các nguồn sau:
 
@@ -38,7 +38,7 @@ Office bao gồm các ứng dụng phần mềm máy khách và những trải n
 - [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 - [Các trải nghiệm kết nối trong Office](connected-experiences.md)
 
-Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng có thể quan tâm đến những điều sau:
+Nếu bạn là người quản trị cho tổ chức, bạn cũng có thể quan tâm đến những điều sau:
 
 - [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
@@ -95,7 +95,7 @@ Các trường sau đây sẽ được thu thập:
 
 Cùng với việc tiếp nhận mã thông báo tĩnh, lời nhắc xác thực được sử dụng để xác định xem người dùng có ở trạng thái xác thực bị lỗi hay không, đối với người dùng, điều này dẫn đến trạng thái Máy khách ngoại tuyến hoặc trong trường hợp xấu nhất, xác thực bị lỗi có thể ngăn chặn việc mua lại giấy phép và dẫn đến việc máy khách hoàn toàn không sử dụng được.
 
-Lời nhắc đăng nhập dựa trên biểu mẫu (FBA) được sử dụng cho một số tình huống xác thực tại chỗ và thông thường chúng tôi muốn đảm bảo điều này không xảy ra, vì mọi người sẽ sử dụng Xác thực hiện đại do các lỗ hổng bảo mật liên quan đến FBA.
+Lời nhắc đăng nhập xác thực dựa trên biểu mẫu (FBA) được sử dụng cho một số tình huống xác thực tại chỗ và thông thường chúng tôi muốn đảm bảo điều này không xảy ra, vì mọi người sẽ sử dụng Xác thực hiện đại do các lỗ hổng bảo mật liên quan đến FBA.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -490,7 +490,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_PrereqFailure\_Type** – Lỗi điều kiện tiên quyết mà chúng tôi gặp phải, ví dụ: hệ điều hành không được hỗ trợ
 
-  - **Data\_ProductReleaseId** - Sản phẩm chúng tôi đang cài đặt, ví dụ: Office 365 ProPlus
+  - **Data\_ProductReleaseId-** Sản phẩm chúng tôi đang cài đặt, ví dụ: Office 365 ProPlus
 
 ### <a name="officeclicktoruncorruptioncheck"></a>Office.ClickToRun.CorruptionCheck
 
@@ -510,7 +510,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_CompressionLevel -** Cách các tệp được nén
 
-  - **Data\_CorruptionCheckLevel -** Cách chúng tôi đang kiểm tra cho lỗi hỏng, giai đoạn một cách kỹ lưỡng
+  - **Data\_CorruptionCheckLevel -** Cách chúng tôi đang kiểm tra cho lỗi hỏng, giai đoạn
 
   - **Data\_CorruptSizeCount -** Số lượng tệp có kích cỡ hỏng
 
@@ -540,11 +540,11 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_KeepFileFiles -** Mẫu các tệp chúng tôi đang duy trì
 
-  - **Dữ liệu\_KeepIncompleteFileCount -** Số lượng tệp chúng tôi đang không thay đổi dù chúng đang không đầy đủ
+  - **Data\_KeepIncompleteFileCount -** Số lượng tệp chúng tôi đang không thay đổi dù chúng đang không đầy đủ
 
-  - **Data\_KeepIncompleteFileFiles -** Mẫu của các tệp mà chúng tôi đang giữ không đầy đủ
+  - **Data\_KeepIncompleteFileFiles -** Mẫu của các tệp không đầy đủ chúng tôi đang duy trì
 
-  - **Dữ liệu\_MismatchSizeCount -** Số lượng tệp có kích cỡ không khớp với tệp kê khai của chúng tôi
+  - **Data\_MismatchSizeCount -** Số lượng tệp có kích cỡ không khớp với tệp kê khai của chúng tôi
 
   - **Data\_MismatchSizeFiles -** Mẫu của các tệp không khớp về kích cỡ
 
@@ -701,9 +701,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ProductsToRemove-** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
@@ -853,7 +853,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
 
   - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
@@ -1345,7 +1345,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**   Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
 
   - **Data\_15\_Version -** Phiên bản Office 15 
 
@@ -1421,7 +1421,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -**   Phiên bản Office 15 chúng tôi đang cập nhật 
 
   - **Data\_15\_Version -** Phiên bản Office 15 
 
@@ -1573,7 +1573,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**   Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
 
   - **Data\_15\_Version -** Phiên bản Office 15 
 
@@ -2277,7 +2277,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -**   Phiên bản Office 15 chúng tôi đang cập nhật 
 
   - **Data\_15\_Version -** Phiên bản Office 15 
 
@@ -2365,7 +2365,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**   Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
 
   - **Data\_15\_Version -** Phiên bản Office 15 
 
@@ -2454,9 +2454,9 @@ Báo cáo về hành động tải xuống tệp để xác định vận hành 
 
 - **ErrorMessage -**    Thông báo về lỗi gần nhất 
 
-- **ErrorSource -** Nguồn gốc của lỗi gần nhất, ví dụ như Connection, LoadFile hoặc LoadRange
+- **ErrorSource -**    Nguồn gốc của lỗi gần nhất, ví dụ như Connection, LoadFile hoặc LoadRange
 
-- **FailedJob -**   Số lượng yêu cầu không thành công trong phiên
+- **FailedJob -**    Số lượng yêu cầu không thành công trong phiên
 
 - **FileSize -**    Kích thước của tài nguyên
 
@@ -2513,13 +2513,13 @@ Các trường sau đây sẽ được thu thập:
 
 Báo cáo kết quả thử nghiệm cài đặt từ đầu đến cuối
 
- - **ErrorCode –**  Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
+ - **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
 
- - **ErrorDetails –**   Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+ - **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
 
- - **ErrorMessage –**   Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+ - **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
 
- - **ErrorType –**  Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+ - **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
 
  - **ExitCode –**   Giá trị nguyên liên kết với kết quả của việc chạy trình khởi động, biểu thị sự so sánh phương thức thành công và không thành công cụ thể
 
@@ -2531,59 +2531,59 @@ Báo cáo về hành động giải thích lý do cho việc đầu vào đượ
 
 - **ChannelID –**   Số nguyên đại diện cho giá trị bộ đếm của kênh cài đặt/cập nhật đã chọn (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu, Không hợp lệ)
 
-- **CMDMode –** Chuỗi thân thiện tương ứng với thao tác chuyển đổi chế độ tổng thể phát hiện trong đối số cmd được chuyển sang cho exe.
+- **CMDMode –** Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe.
 
 - **C2RClientUICulture –**  Văn hóa của Máy khách C2R để cài đặt
 
-- **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
+- **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
 
 - **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
 
 - **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
 
-- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
 
 - **ExcludedApps –**    Chuỗi liệt kê tên các ứng dụng Office riêng lẻ được yêu cầu loại trừ khỏi bộ Office đã cài đặt
 
-- **InstalledCabVersion –** Phiên bản "16.0.xxxxx.yyyyy" của Máy khách Office C2R đã được cài đặt
+- **InstalledCabVersion –**    Phiên bản "16.0.xxxxx.yyyyy" của Máy khách Office C2R đã được cài đặt
 
-- **InstalledProductVersion –** Phiên bản "16.0.xxxxx.yyyyy" của sản phẩm Office C2R đã được cài đặt
+- **InstalledProductVersion –**    Phiên bản "16.0.xxxxx.yyyyy" của sản phẩm Office C2R đã được cài đặt
 
-- **IsC2RServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách C2R hiện đại có đang được thiết lập và hoạt động trên thiết bị hay không
+- **IsC2RServiceRunning –**    Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách C2R hiện đại có đang được thiết lập và hoạt động trên thiết bị hay không
 
-- **IsElevatedFlagSet –**   Cờ Boolean cho biết liệu trình khởi động đã thử nâng quyền của quản trị viên hay chưa
+- **IsElevatedFlagSet –**    Cờ Boolean cho biết liệu trình khởi động đã thử nâng quyền của quản trị viên hay chưa
 
-- **IsFireFlyInstalled –**  Cờ Boolean cho biết liệu Máy khách Office 2013 RTM C2R hiện được cài đặt hay chưa
+- **IsFireFlyInstalled –**    Cờ Boolean cho biết liệu Máy khách Office 2013 RTM C2R hiện được cài đặt hay chưa
 
-- **IsFireflyServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách 2013 RTM C2R có đang được thiết lập và hoạt động trên thiết bị hay không
+- **IsFireflyServiceRunning –**    Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách 2013 RTM C2R có đang được thiết lập và hoạt động trên thiết bị hay không
 
-- **IsOfficeInstalled –**   Cờ Boolean cho biết liệu Máy khách Office hiện đại đã được cài đặt hay chưa
+- **IsOfficeInstalled –**    Cờ Boolean cho biết liệu Máy khách Office hiện đại đã được cài đặt hay chưa
 
-- **OfficeCultures –**  Danh sách một chuỗi những văn hóa Office để cài đặt
+- **OfficeCultures –**    Danh sách một chuỗi những văn hóa Office để cài đặt
 
 - **OfficeSourceType –**    Chuỗi thân thiện liên kết với giá trị bộ đếm của nguồn cài đặt (CDN, HTTP, UNC, CMBITS, DVD, CỤC BỘ)
 
-- **Origin –**  Giá trị chuỗi cho chúng ta biết nguồn gốc được hỗ trợ nào (Puerto Rico [PR], Singapore [SG], Dublin [DB]) nên được sử dụng cho việc phát trực tuyến cài đặt ban đầu
+- **Origin –**    Giá trị chuỗi cho chúng ta biết nguồn gốc được hỗ trợ nào (Puerto Rico [PR], Singapore [SG], Dublin [DB]) nên được sử dụng cho việc phát trực tuyến cài đặt ban đầu
 
 - **PlatformFromLink –**    Chuỗi cho biết hệ thống bit x86|x64|mặc định mà Office yêu cầu từ dịch vụ thiết lập C2R
 
-- **PlatformOfExistingInstallation –**  Chuỗi cho biết liệu Office x86 hay X64 đã được cài đặt trên thiết bị
+- **PlatformOfExistingInstallation –**    Chuỗi cho biết liệu Office x86 hay X64 đã được cài đặt trên thiết bị
 
-- **PlatformToInstall –**   Chuỗi cho biết quyết định cuối cùng về việc liệu Office x86 hay X64 nên được cài đặt. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
+- **PlatformToInstall –**    Chuỗi cho biết quyết định cuối cùng về việc liệu Office x86 hay X64 nên được cài đặt. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
 
 - **PRID –**    Giá trị chuỗi đại diện cho ID Bản phát hành sản phẩm được yêu cầu trong một tình huống cài đặt dành cho người tiêu dùng (ví dụ: "O365ProPlusRetail")
 
-- **PridsToMigrateFromCentennial-** Chuỗi các sản phẩm Office để di chuyển từ bản cài đặt Store sang Click-to-Run
+- **PridsToMigrateFromCentennial-**    Chuỗi các sản phẩm Office để di chuyển từ bản cài đặt Store sang Click-to-Run
 
-- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/Văn hóa nào
+- **ProductsToAdd –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/Văn hóa nào
 
 - **ProductsToMigrateFromO15C2R -**  Chuỗi các sản phẩm và văn hóa Office để chuyển từ một bản cài đặt Office 2013 Click-To-Run
 
 - **ProductsToRemove –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên gỡ cài đặt tổ hợp Sản phẩm/ Văn hóa nào
 
-- **SharedComputerLicensing –** Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
+- **SharedComputerLicensing –**    Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
 
-- **ShouldActivate –**  Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
+- **ShouldActivate–**    Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
 
 - **ShouldUninstallCentennial-** Cờ Boolean cho biết các sản phẩm Office từ Store nên được gỡ cài đặt
 
@@ -2594,7 +2594,7 @@ Báo cáo về hành động giải thích lý do cho việc đầu vào đượ
 
 Báo cáo về hành động đọc đầu vào đã gắn thẻ từ chữ ký nhúng của exe.  Đây là một khái niệm chưa được chứng minh, việc lặp lại trước đó của setup.exe đã không diễn ra và là những gì chúng tôi đang dựa vào để truyền tải những lựa chọn về sản phẩm/ ngôn ngữ/ bitness của người dùng từ trang web tới quá trình bên trong setup.exe.
  
-- **ErrorCode –**   Số nguyên được liên kết với một ngoại lệ chưa được xử lý
+- **ErrorCode –**    Số nguyên được liên kết với một ngoại lệ chưa được xử lý
 
 - **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
 
@@ -2610,79 +2610,79 @@ Báo cáo các tham số được sử dụng cho cài đặt Office
 
 - **ChannelID –**   Số nguyên đại diện cho giá trị bộ đếm của kênh cài đặt/cập nhật đã chọn (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu, Không hợp lệ)
 
-- **CMDMode –** Chuỗi thân thiện tương ứng với thao tác chuyển đổi chế độ tổng thể phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
+- **CMDMode –** Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
 
 - **C2RClientUICulture –**  Văn hóa của Máy khách C2R để cài đặt
 
-- **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
+- **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
 
 - **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
 
 - **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
 
-- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
+- **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
 
 - **ExcludedApps –**    Chuỗi liệt kê tên các ứng dụng Office riêng lẻ được yêu cầu loại trừ khỏi bộ Office đã cài đặt
 
-- **InstalledCabVersion –** Phiên bản "16.0.xxxxx.yyyyy" của Máy khách Office C2R đã được cài đặt
+- **InstalledCabVersion –**    Phiên bản "16.0.xxxxx.yyyyy" của Máy khách Office C2R đã được cài đặt
 
-- **InstalledProductVersion –** Phiên bản "16.0.xxxxx.yyyyy" của sản phẩm Office C2R đã được cài đặt
+- **InstalledProductVersion –**    Phiên bản "16.0.xxxxx.yyyyy" của sản phẩm Office C2R đã được cài đặt
 
-- **IsC2RServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách C2R hiện đại có đang được thiết lập và hoạt động trên thiết bị hay không
+- **IsC2RServiceRunning –**    Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách C2R hiện đại có đang được thiết lập và hoạt động trên thiết bị hay không
 
-- **IsElevatedFlagSet –**   Cờ Boolean cho biết liệu trình khởi động đã thử nâng quyền của quản trị viên hay chưa
+- **IsElevatedFlagSet –**    Cờ Boolean cho biết liệu trình khởi động đã thử nâng quyền của quản trị viên hay chưa
 
-- **IsFireFlyInstalled –**  Cờ Boolean cho biết liệu Máy khách Office 2013 RTM C2R hiện được cài đặt hay chưa
+- **IsFireFlyInstalled –**    Cờ Boolean cho biết liệu Máy khách Office 2013 RTM C2R hiện được cài đặt hay chưa
 
-- **IsFireflyServiceRunning –** Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách 2013 RTM C2R có đang được thiết lập và hoạt động trên thiết bị hay không
+- **IsFireflyServiceRunning –**    Cờ Boolean cho biết liệu dịch vụ máy cục bộ của một Máy khách 2013 RTM C2R có đang được thiết lập và hoạt động trên thiết bị hay không
 
-- **IsOfficeInstalled –**   Cờ Boolean cho biết liệu Máy khách Office hiện đại đã được cài đặt hay chưa
+- **IsOfficeInstalled –**    Cờ Boolean cho biết liệu Máy khách Office hiện đại đã được cài đặt hay chưa
 
-- **OfficeCultures –**  Danh sách một chuỗi những văn hóa Office để cài đặt
+- **OfficeCultures –**    Danh sách một chuỗi những văn hóa Office để cài đặt
 
 - **OfficeSourceType –**    Chuỗi thân thiện liên kết với giá trị bộ đếm của nguồn cài đặt (CDN, HTTP, UNC, CMBITS, DVD, CỤC BỘ)
 
-- **Origin –**  Giá trị chuỗi cho chúng ta biết nguồn gốc được hỗ trợ nào (Puerto Rico [PR], Singapore [SG], Dublin [DB]) nên được sử dụng cho việc phát trực tuyến cài đặt ban đầu
+- **Origin –**    Giá trị chuỗi cho chúng ta biết nguồn gốc được hỗ trợ nào (Puerto Rico [PR], Singapore [SG], Dublin [DB]) nên được sử dụng cho việc phát trực tuyến cài đặt ban đầu
 
 - **PlatformFromLink –**    Chuỗi cho biết hệ thống bit x86|x64|mặc định mà Office yêu cầu từ dịch vụ thiết lập C2R
 
-- **PlatformOfExistingInstallation –**  Chuỗi cho biết liệu Office x86 hay X64 đã được cài đặt trên thiết bị
+- **PlatformOfExistingInstallation –**    Chuỗi cho biết liệu Office x86 hay X64 đã được cài đặt trên thiết bị
 
-- **PlatformToInstall –**   Chuỗi cho biết quyết định cuối cùng về việc liệu Office x86 hay X64 nên được cài đặt
+- **PlatformToInstall –**    Chuỗi cho biết quyết định cuối cùng về việc liệu Office x86 hay X64 nên được cài đặt
 
 - **PRID –**    Giá trị chuỗi đại diện cho ID Bản phát hành sản phẩm được yêu cầu trong một tình huống cài đặt dành cho người tiêu dùng (ví dụ: "O365ProPlusRetail")
 
 - **PridsToMigrateFromCentennial-** Chuỗi các sản phẩm Office để di chuyển từ bản cài đặt Store sang Click-to-Run
 
-- **ProductsToAdd –**   Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/Văn hóa nào
+- **ProductsToAdd –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên cài đặt tổ hợp Sản phẩm/Văn hóa nào
 
 - **ProductsToMigrateFromO15C2R -** Chuỗi các sản phẩm và văn hóa Office để chuyển từ một bản cài đặt Office 2013 Click-To-Run
 
 - **ProductsToRemove –**    Chuỗi đã xê-ri hoá sẽ hướng dẫn Máy khách C2R về việc nên gỡ cài đặt tổ hợp Sản phẩm/ Văn hóa nào
 
-- **SharedComputerLicensing –** Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
+- **SharedComputerLicensing –**    Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thiết lập để bật tính năng "SharedComputerLicensing" hay không
 
-- **ShouldActivate–**   Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
+- **ShouldActivate–**    Boolean cho biết liệu Quản trị viên CNTT có yêu cầu thử kích hoạt cấp phép tự động trong tệp configuration.xml của họ hay không
 
 - **ShouldUninstallCentennial-** Cờ Boolean cho biết các sản phẩm Office từ Store nên được gỡ cài đặt
 
-- **VersionToInstall–** Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
+- **VersionToInstall–**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
 
 ### <a name="officeclicktorununiversalbootstrapperexecute"></a>Office.ClickToRun.UniversalBootstrapper.Execute
 
 Báo cáo về các hành động gây ảnh hưởng đến máy đã thực hiện, như từng được dữ liệu lấy lý do từ "CalculateParameters" xác định
 
-- **AvailableClientVersionText –**  Giá trị chuỗi của phiên bản Máy khách C2R "16.0.xxxxx.yyyyy" được tìm thấy trong Trình mô tả phiên bản XML, giá trị này được sử dụng để xác định xem Máy khách C2R hiện cài đặt có nên cập nhật hay không
+- **AvailableClientVersionText –**    Giá trị chuỗi của phiên bản Máy khách C2R "16.0.xxxxx.yyyyy" được tìm thấy trong Trình mô tả phiên bản XML, giá trị này được sử dụng để xác định xem Máy khách C2R hiện cài đặt có nên cập nhật hay không
 
-- **CleanFireflyAction –**  "đúng" nếu tác vụ CleanFireFlyAction được lên lịch hoạt động trong quá trình cài đặt này
+- **CleanFireflyAction –**    "đúng" nếu tác vụ CleanFireFlyAction được lên lịch hoạt động trong quá trình cài đặt này
 
-- **CleanO15Action –**  "đúng" nếu tác vụ CleanO15Action được lên lịch hoạt động trong quá trình cài đặt này
+- **CleanO15Action –**    "đúng" nếu tác vụ CleanO15Action được lên lịch hoạt động trong quá trình cài đặt này
 
-- **CMDMode –** Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
+- **CMDMode –**    Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
 
-- **DeliveryMechanism –**   Guid "FFNRoot" được trích xuất từ Trình mô tả phiên bản XML (đóng dấu bởi RDX), điều này cho chúng ta biết nguồn dựng đến từ khán giả/ kênh nào
+- **DeliveryMechanism –**    Guid "FFNRoot" được trích xuất từ Trình mô tả phiên bản XML (đóng dấu bởi RDX), điều này cho chúng ta biết nguồn dựng đến từ khán giả/ kênh nào
 
-- **DownloadC2RClientAction –** "đúng" nếu tác vụ DownloadC2RClientAction được lên lịch hoạt động trong quá trình cài đặt này
+- **DownloadC2RClientAction –**    "đúng" nếu tác vụ DownloadC2RClientAction được lên lịch hoạt động trong quá trình cài đặt này
 
 - **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
 
@@ -2696,7 +2696,7 @@ Báo cáo về các hành động gây ảnh hưởng đến máy đã thực hi
 
 - **LaunchAction –**    "đúng" nếu tác vụ LaunchAction được lên lịch hoạt động trong quá trình cài đặt này
 
-- **LaunchUpdateAction –**  "đúng" nếu tác vụ LaunchUpdateAction được lên lịch hoạt động trong quá trình cài đặt này
+- **LaunchUpdateAction –**    "đúng" nếu tác vụ LaunchUpdateAction được lên lịch hoạt động trong quá trình cài đặt này
 
 - **PreReqResult –**    Giá trị nguyên bộ đếm của kết quả khi thực hiện kiểm tra PreReq (đạt/ không đạt/ khởi chạy lại)
 
@@ -2705,6 +2705,8 @@ Báo cáo về các hành động gây ảnh hưởng đến máy đã thực hi
 - **VersionToInstall –**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
 
 ### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
+
+*[Sự kiện này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 Sự kiện này dùng để thu thập siêu dữ liệu tiêu chuẩn về mỗi lần chạy phần bổ trợ Hàng tồn kho, nằm trong Trình quản lý Khả năng bảo trì Office và dùng để thu thập thông tin kiểm kê Office về những máy mà người quản trị CNTT đã chọn. Siêu dữ liệu về nội dung đáng quan tâm cụ thể tại đây là mã ID phiên và dùng để liên kết đến các dữ liệu khác được lưu trữ trong một dịch vụ đám mây cho mỗi đối tượng thuê.
 
@@ -2726,7 +2728,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
-Sự kiện này sẽ được ghi nhật ký mỗi khi một cuộc gọi đến một dịch vụ web được thực hiện trong phần bổ trợ Trình quản lý Khả năng bảo trì Click-to-Run thất bại.
+Bất cứ khi nào cuộc gọi đến dịch vụ web trong một trong các phần bổ trợ Trình quản lý khả năng bảo trì Office không thành công, câu lệnh này sẽ được ghi lại. Thát bại có thể là do lỗi nội bộ hoặc không thể kết nối với dịch vụ web.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2735,6 +2737,8 @@ Các trường sau đây sẽ được thu thập:
 - **Correlation ID** - Một GUID được tạo ngẫu nhiên cụ thể cho phiên bản hiện tại được gửi tới dịch vụ web để kết nối cuộc gọi giữa máy khách và máy chủ.
 
 - **ErrorInfo** - Thông tin mã số lỗi số được trả về bởi các API cuộc gọi dịch vụ web Office.
+
+- **ErrorMessage** - Một thông báo cung cấp thêm thông tin chuyên sâu về thất bại. Mỗi loại lỗi ánh xạ tới một chuỗi được mã hóa cứng, với một số loại lỗi ánh xạ tới nhiều chuỗi có thể tùy thuộc vào tính chất cụ thể của lỗi.
 
 - **Function** - Hàm trong mã mà cuộc gọi hiện tại đã diễn ra.
 
@@ -3136,7 +3140,7 @@ Hoạt động đo từ xa này theo dõi sự thành công cũng như thất b�
 
 Các trường sau đây sẽ được thu thập:
 
-- **GenuineTicketFailure** - Cho chúng tôi biết KẾT QUẢ thất bại khi cố gắng lấy chìa khóa sản phẩm/vé chính hãng Windows (WPK).
+- **GenuineTicketFailure** - Cho chúng tôi biết KẾT QUẢ thất bại khi cố gắng lấy khóa sản phẩm/phiếu chính hãng Windows (WPK).
 
 - **PinValidationFailure** - Cho chúng tôi biết lý do tại sao quá trình xác thực mã pin không thành công. Lỗi có thể xảy:
     - GeoBlocked
@@ -3154,13 +3158,13 @@ Các trường sau đây sẽ được thu thập:
 - **Success** - Cho biết rằng chúng tôi đã tải thành công một cơ sở Office ràng buộc hợp lệ (mã pin) cho máy.
 
 - **Tag** - Cho chúng tôi biết tại bước nào chúng tôi đã ngừng tìm kiếm ràng buộc. Các thẻ có thể sử dụng:
-  - 0x03113809 Không có lỗi Internet/dịch vụ trong khi phê chuẩn mã pin
-   - 0x0311380a Xác thực mã pin thất bại, đã được gửi kèm trường PinValidationFailure
-  - 0x0310410f Thành công, đã được gửi với trường Thành công
-  - 0x0311380d Lỗi có thể thử lại (các sự cố qua Internet, lỗi không xác định)
-  - 0x0311380e Lỗi không thể thử lại (ưu đãi ràng buộc đã hết hạn)
-  - 0x0311380f Lỗi khác (không thể cấp phép)
-  - 0x03104111 Không thể crack mã pin Office, được gửi kèm trường PinValidationResult
+  - 0x03113809    Không có lỗi Internet/dịch vụ trong khi xác thực mã pin
+   - 0x0311380a    Xác thực mã pin thất bại, đã được gửi kèm trường PinValidationFailure
+  - 0x0310410f    Thành công, đã được gửi với trường Thành công
+  - 0x0311380d    Lỗi có thể thử lại (sự cố internet, lỗi không xác định)
+  - 0x0311380e    Lỗi không thể thử lại (ưu đãi ràng buộc đã hết hạn)
+  - 0x0311380f    Các lỗi khác (không thể cấp phép)
+  - 0x03104111    Không thể bẻ khóa mã pin Office, được gửi kèm trường PinValidationResult
 
 - **WpkBindingFailure** - Cho chúng tôi biết mã lỗi của việc nhận được mã pin Office được liên kết với WPK của máy.
 
@@ -3178,22 +3182,22 @@ Các trường sau đây sẽ được thu thập:
 
 - **DialogSignIn** - Hiển thị hộp thoại đăng nhập AFO.
 
-- **OExDetails** - Chi tiết về lỗi mà chúng tôi nhận được khi hộp thoại đăng nhập nhận dạng đã bị bác bỏ.
+- **OExDetails** - Chi tiết về lỗi chúng tôi nhận được khi hộp thoại đăng nhập danh tính đã bị bỏ qua.
 
-- **OExType** - Loại lỗi chúng tôi quay trở lại khi nhận dạng hộp thoại đăng nhập bị hủy bỏ.
+- **OExType** - Loại lỗi chúng tôi quay trở lại khi hộp thoại đăng nhập danh tính bị bỏ qua.
 
 - **Tag** - Cho chúng tôi biết tại bước nào người dùng thoát ra khỏi quy trình quy đổi AFO. Các thẻ có thể sử dụng:
-    - 0x0311380b    Người dùng bác bỏ nhận dạng hộp thoại đăng nhập từ hộp thoại quy đổi
-    - 0x0311380c    Không tự động tải nhận dạng đăng nhập người dùng từ hộp thoại quy đổi
-    - 0x03113810    Không thể tải thông tin nhân khẩu học của tài khoản (mã quốc gia, ngôn ngữ, tiền tệ, ưu đãi bản dùng thử và các tùy chọn tiếp thị)
-    - 0x03113805    Người dùng bác bỏ nhận dạng hộp thoại đăng nhập từ hộp thoại đăng nhập
+    - 0x0311380b    Người dùng bỏ qua hộp thoại đăng nhập nhận dạng khỏi hộp thoại đổi quà
+    - 0x0311380c    Không thể tự động tải đăng nhập danh tính người dùng từ hộp thoại đổi quà
+    - 0x03113810    Không thể tải thông tin nhân khẩu học của tài khoản (mã quốc gia, ngôn ngữ, tiền tệ, ưu đãi bản dùng thử và tùy chọn tiếp thị)
+    - 0x03113805    Người dùng bỏ qua hộp thoại đăng nhập danh tính khỏi hộp thoại đăng nhập
     - 0x03113806    Không tự động tải nhận dạng đăng nhập người dùng từ hộp thoại đăng nhập
     - 0x03113807    Không tự động tải lên nhận dạng
     - 0x03113811    Người dùng đóng hộp thoại đăng nhập/quy đổi
     - 0x03113812   Người dùng đóng hộp thoại chấp nhận EULA
     - 0x03113808   Người dùng đã chấp nhận EULA
 
-- **UseInAppRedemption** - Cho chúng tôi biết rằng chúng tôi đang giữ người dùng trong ứng dụng để quy đổi hoặc chuyển họ đến web để quy đổi mã pin đã nhận.
+- **UseInAppRedemption** - Cho chúng tôi biết nếu chúng tôi giữ người dùng trong ứng dụng để đổi quà hoặc gửi họ đến web để đổi mã pin đã được tải (được điền trước).
 
 - **UseModernAFO** - Cho chúng tôi biết rằng chúng tôi đang sử dụng trải nghiệm AFO mới hay cũ.
 
@@ -3221,7 +3225,7 @@ Khi một người dùng chưa được cấp phép của Office được cài �
 
 Các trường sau đây sẽ được thu thập:
 
-- **HasConnectivity** - Cho biết người dùng có kết nối Internet hay không và trong trường hợp không có, người dùng có thể phải sử dụng giấy phép ân huệ cho năm ngày hoặc có thể sử dụng trong chế độ cắt giảm tính năng
+- **HasConnectivity** - Cho biết nếu người dùng có kết nối internet và trong trường hợp không có người dùng có thể phải sử dụng giấy phép gia hạn trong năm ngày hoặc có thể sử dụng ở chế độ chức năng bị giảm bớt
 
 - **InAppTrialPurchase** - Cho biết liệu chuyến bay được kích hoạt cho việc tung ra Store Purchase SDK để bắt PI và mua bản dùng thử từ bên trong ứng dụng hay không
 
@@ -3347,7 +3351,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết đã xảy ra lỗi khi kết nối với Trình trợ giúp MAU (một cấu phần thực hiện cài đặt ứng dụng).  Sự kiện này biểu hiện ứng dụng MAU có dấu hiệu hỏng hóc. Thiết bị sẽ không thể cài đặt các bản cập nhật.
 
-Các trường sau đây sẽ được thu thập: 
+Các trường sau đây sẽ được thu thập:    
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -8718,7 +8722,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="optinnotificationaction"></a>Optinnotificationaction
 
-Sự kiện này sẽ ghi lại phản hồi của người dùng vào hộp thoại chọn tham gia để đăng ký cập nhật tự hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Sự kiện này ghi lại phản hồi của người dùng vào hộp thoại chọn tham gia để đăng ký vào các bản cập nhật tự hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -10462,7 +10466,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **ProcessFileName -** Tên thực thi của ứng dụng đang chạy.
 
-  - **ProcessorArchitecture -** Kiến trúc bộ vi xử lý mà Office đang chạy trên.
+  - **ProcessorArchitecture -** Kiến trúc bộ vi xử lý Office đang chạy trên đó.
 
   - **ProcessorFrequency -** Tốc độ của bộ vi xử lý trên các thiết bị Office đang chạy trên Megahertz.
 
@@ -10652,7 +10656,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **ProcessFileName -** Tên thực thi của ứng dụng đang chạy.
 
-  - **ProcessorCount -** Số lượng bộ vi xử lý trên thiết bị mà Office đang chạy.
+  - **ProcessorCount -** Số lượng bộ vi xử lý trên thiết bị mà Office đang chạy trên đó.
 
   - **RamMB -** Dung lượng RAM khả dụng trong thiết bị Office đang chạy trên đó.
 
@@ -11282,6 +11286,8 @@ Sự kiện được kích hoạt do hành động chấm dứt ứng dụng b�
 
 Các trường sau đây sẽ được thu thập:
 
+  - **BootCompleted –** Đã hoàn tất khởi động Office tại thời điểm gặp sự cố hay chưa.
+
   - **CrashedAppBuild -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
 
   - **CrashedAppMajor -** Mã định danh phiên bản chính cho quá trình bị ảnh hưởng.
@@ -11298,6 +11304,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **CrashedSessionInitTime -** thời gian khi bắt đầu quy trình bị ảnh hưởng.
 
+  - **CrashTime –** Thời gian cho biết máy khách bị chấm dứt một cách không đáng tin cậy.
+
   - **CrashType -** Mã định danh bucketing cho loại gặp sự cố.
 
   - **DetectionTime -** thời gian khi việc thoát không mong muốn đã được phát hiện.
@@ -11305,6 +11313,12 @@ Các trường sau đây sẽ được thu thập:
   - **ExceptionAddress -** địa chỉ trong chương trình nơi lỗi xảy ra.
 
   - **ExceptionCode -** Mã định danh bucketing cho trường hợp ngoại lệ.
+
+  - **HandOff –** Người dùng đã tạo và chuyển quy trình Office sang một phiên mới hay chưa.
+
+  - **HasEdit –** Người dùng có đang chỉnh sửa tài liệu trong máy khách gặp sự cố hay không.
+
+  - **HasOpen –** Có tài liệu đã mở trong máy khách gặp sự cố hay không.
 
   - **HexCrashTag -**  Mã định danh duy nhất cho mã của sự cố.
 
@@ -11330,13 +11344,17 @@ Các trường sau đây sẽ được thu thập:
 
   - **ModuleSize -** Kích cỡ mô-đun lỗi theo byte.
 
+  - **OfficeUiLang -** Ngôn ngữ giao diện người dùng cho bản dựng Office.
+
   - **PreviousBuild** - Phiên bản bản dựng đã được cài đặt trước đó
+
+  - **SafeMode –** Phiên có được khởi động ở chế độ an toàn hay không.
 
   - **UAEOSEnvironment -** Mã định danh môi trường của hệ điều hành.
 
   - **UninitLibletId –** Mã định danh duy nhất cho cấu phần lỗi của sự cố.
 
-  - **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố.
+  - **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 ### <a name="officesystemungracefulapplicationexitdesktopappexit"></a>Office.System.UngracefulApplicationExit.DesktopAppExit
 
