@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
-ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
+ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42340905"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166315"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -26,7 +26,7 @@ Nếu bạn có tài khoản cơ quan hoặc trường học, người quản tr
 
 > [!NOTE]
 > Nếu bạn là người quản trị, hãy xem các bài viết sau đây để tìm hiểu cách cho phép hoặc hạn chế khả năng sử dụng của người dùng của bạn trong việc sử dụng trải nghiệm được kết nối tùy chọn:
-> - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+> - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 > - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
@@ -63,7 +63,7 @@ Trên Outlook for iOS và Outlook for Android, bạn có thể báo cáo sự c�
 
 ### <a name="help--suggest-a-feature"></a>Trợ giúp > Đề xuất một Tính năng
 
-Đề xuất một Tính năng là một trải nghiệm cho phép bạn gửi ý tưởng của mình về việc sử dụng Outlook. Đề xuất của bạn được cung cấp trực tiếp cho dịch vụ của bên thứ ba có tên là UserVoice. Nếu bạn gửi ý tưởng bằng Đề xuất một Tính năng, các [điều khoản dịch vụ](https://outlook.uservoice.com/tos) và [chính sách về quyền riêng tư](https://outlook.uservoice.com/tos#privacy-policy) của UserVoice sẽ được áp dụng.
+Đề xuất tính năng là trải nghiệm cho phép bạn gửi ý tưởng của mình về việc sử dụng Outlook hoặc Excel. Đề xuất của bạn được cung cấp trực tiếp cho dịch vụ của bên thứ ba có tên là UserVoice. Nếu bạn gửi ý tưởng bằng Đề xuất một Tính năng, các [điều khoản dịch vụ](https://outlook.uservoice.com/tos) và [chính sách về quyền riêng tư](https://outlook.uservoice.com/tos#privacy-policy) của UserVoice sẽ được áp dụng.
 
 ### <a name="insert-online-video"></a>Chèn video trực tuyến
 
@@ -75,7 +75,7 @@ MERP kết nối với dịch vụ Watson.microsoft.com để gửi dữ liệu 
 
 ### <a name="office-store"></a>Office Store 
 
-Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đó được cấp phép bởi [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Tuy nhiên, mọi [phần bổ trợ Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) mà bạn tải xuống thông qua Office Store đều được bảo vệ theo các điều khoản sử dụng của nhà cung cấp phần bổ trợ. Đây có thể là các tổ chức hoặc doanh nghiệp khác nhau và một số có thể tính phí sử dụng. Bạn sẽ cần kiểm tra các quyền, điều khoản về quyền riêng tư và điều khoản cấp phép của từng phần bổ trợ để biết điều khoản nào được áp dụng và quyết định xem bạn có muốn đồng ý với các điều khoản sử dụng mà tổ chức đó cung cấp hay không.
+Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đó được cấp phép bởi [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Tuy nhiên, mọi [tiện ích bổ trợ Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) mà bạn tải xuống thông qua Office Store đều được bảo vệ theo các điều khoản sử dụng của nhà cung cấp tiện ích bổ trợ. Đây có thể là các tổ chức hoặc doanh nghiệp khác nhau và một số có thể tính phí sử dụng. Bạn sẽ cần kiểm tra các quyền, điều khoản về quyền riêng tư và điều khoản cấp phép của từng phần bổ trợ để biết điều khoản nào được áp dụng và quyết định xem bạn có muốn đồng ý với các điều khoản sử dụng mà tổ chức đó cung cấp hay không.
 
 ### <a name="research"></a>Nghiên cứu
 
@@ -91,7 +91,7 @@ Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đ
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Cách xác định xem người quản trị của bạn có cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn không
 
-Để xác định xem người quản trị của bạn có cung cấp cho bạn khả năng sử dụng bất kỳ trải nghiệm được kết nối tùy chọn nào trong ứng dụng Office 365 ProPlus trên thiết bị Windows hay không, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết : “Người quản trị tổ chức của bạn quản lý các cài đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
+Để xác định xem người quản trị của bạn có cung cấp cho bạn khả năng sử dụng bất kỳ trải nghiệm được kết nối tùy chọn nào trong ứng dụng Office 365 ProPlus trên thiết bị Windows hay không, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết: “Người quản trị tổ chức của bạn quản lý các cài đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
 
 Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 

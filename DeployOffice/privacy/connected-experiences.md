@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 6dc32a1456402624ab28e0acbe9c3ef85b6add9d
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 8939bb1f3a3be8cf256f3bd6912abc95c8b09d2a
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917645"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166405"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -44,6 +44,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | ----------- | ------------------ |
 | Bản đồ 3D\*    | [Bắt đầu với Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+| Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Đọc chính tả  | [Đọc chính tả bằng giọng nói của bạn trong Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Biên tập viên    | [Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Ý tưởng     | [Các ý tưởng trong Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -77,7 +78,6 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | ------------- | ------------- |
 | Ứng dụng lịch| [Ứng dụng Lịch là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Phông chữ đám mây                 | [Phông chữ đám mây trong Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Câu hỏi thường gặp |Khi bạn chọn **Cài đặt** > **Trợ giúp & Phản hồi** > **Câu hỏi thường gặp** trên Outlook for iOS và Outlook for Android, bạn sẽ được chuyển đến [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Hiệu ứng viết tay                 | [Vẽ và viết bằng tính năng viết tay trong Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Chèn biểu tượng                | [Chèn biểu tượng vào Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
@@ -109,7 +109,6 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | ------------- | ------------- |
 | @đề cập đến | [Sử dụng @đề cập đến trong chú thích để gắn thẻ người khác để nhận phản hồi](https://support.office.com/article/644bf689-31a0-4977-a4fb-afe01820c1fd). |
 |Sơ đồ hội ý (Visio)|[Tạo sơ đồ hội ý](https://support.office.com/article/642706c0-7e63-463b-8aa8-a9aa67367989)|
-| Chat | [Tăng cường cộng tác với tính năng Chat trong Microsoft Office](https://support.office.com/article/1ecc6c7f-0b02-4baa-b9d9-c9d67023bedd)  |
 | Sắp ra mắt (Outlook)  |[Sắp ra mắt](https://support.office.com/article/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Liên hệ Bộ phận hỗ trợ (Outlook) | Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng|
 | Nhập tùy chỉnh (Visio)  | [Nhập dữ liệu vào hình trong bản vẽ của bạn](https://support.office.com/article/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
@@ -161,7 +160,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn có th�
 
 Nếu bạn chọn tắt một số loại trải nghiệm được kết nối, lệnh dải băng hoặc menu cho những trải nghiệm được kết nối đó sẽ chuyển sang màu xám hoặc bạn sẽ nhận được thông báo lỗi khi bạn cố gắng sử dụng những trải nghiệm được kết nối đó.
 
-Ngay cả khi bạn quyết định tắt các trải nghiệm được kết nối này, một số chức năng Office nhất định sẽ vẫn khả dụng, chẳng hạn như đồng bộ hóa hộp thư trong Outlook và Teams và Skype for Business sẽ tiếp tục hoạt động. Ngoài ra, có một tập hợp các dịch vụ rất cần thiết cho cách các chức năng Office không thể bị tắt, chẳng hạn như dịch vụ cấp phép xác nhận rằng bạn được cấp phép sử dụng Office đúng cách.
+Ngay cả khi bạn quyết định tắt các trải nghiệm được kết nối này, một số chức năng Office nhất định sẽ vẫn khả dụng, chẳng hạn như đồng bộ hóa hộp thư trong Outlook và Teams và Skype for Business sẽ tiếp tục hoạt động. Ngoài ra, có một tập hợp các dịch vụ cần thiết cho cách các chức năng Office không thể bị tắt, chẳng hạn như dịch vụ cấp phép xác nhận rằng bạn được cấp phép sử dụng Office đúng cách.
 
 ## <a name="related-topics"></a>Chủ đề liên quan
 
