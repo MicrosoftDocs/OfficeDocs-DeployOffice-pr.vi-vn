@@ -160,7 +160,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn có th�
 
 Nếu bạn chọn tắt một số loại trải nghiệm được kết nối, lệnh dải băng hoặc menu cho những trải nghiệm được kết nối đó sẽ chuyển sang màu xám hoặc bạn sẽ nhận được thông báo lỗi khi bạn cố gắng sử dụng những trải nghiệm được kết nối đó.
 
-Ngay cả khi bạn quyết định tắt các trải nghiệm được kết nối này, một số chức năng Office nhất định sẽ vẫn khả dụng, chẳng hạn như đồng bộ hóa hộp thư trong Outlook và Teams và Skype for Business sẽ tiếp tục hoạt động. Ngoài ra, có một tập hợp các dịch vụ cần thiết cho cách các chức năng Office không thể bị tắt, chẳng hạn như dịch vụ cấp phép xác nhận rằng bạn được cấp phép sử dụng Office đúng cách.
+Ngay cả khi bạn quyết định tắt các trải nghiệm được kết nối này, một số chức năng Office nhất định sẽ vẫn khả dụng, chẳng hạn như đồng bộ hóa hộp thư trong Outlook và Teams và Skype for Business sẽ tiếp tục hoạt động. Ngoài ra, không thể tắt một số dịch vụ cần thiết cho hoạt động của Office, chẳng hạn như dịch vụ cấp phép xác nhận rằng bạn được cấp phép sử dụng Office đúng cách.
 
 ## <a name="related-topics"></a>Chủ đề liên quan
 

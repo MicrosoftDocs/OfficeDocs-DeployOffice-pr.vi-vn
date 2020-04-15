@@ -20,9 +20,9 @@ ms.contentlocale: vi-VN
 ms.lasthandoff: 04/07/2020
 ms.locfileid: "43166315"
 ---
-# <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
+# <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tùy chọn trong Office
 
-Nếu bạn có tài khoản cơ quan hoặc trường học, người quản trị tổ chức của bạn có thể cung cấp cho bạn khả năng sử dụng một hoặc nhiều dịch vụ được hỗ trợ trên nền tảng đám mây (còn được gọi là “trải nghiệm được kết nối tùy chọn”) trong khi sử dụng các ứng dụng Office 365 ProPlus. Các dịch vụ dựa trên đám mây này là tùy chọn. Việc bạn có sử dụng chúng hay không là tuỳ thuộc vào bạn. Chúng được cung cấp cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Trong một số trường hợp, các điều khoản khác cũng có thể áp dụng. Bài viết này liệt kê các dịch vụ được hỗ trợ bởi đám mây, giải thích thêm về các điều khoản sử dụng của chúng và mô tả cách bạn có thể tắt hoặc bật dịch vụ bất cứ lúc nào.
+Nếu bạn có tài khoản cơ quan hoặc trường học, người quản trị của tổ chức bạn có thể cung cấp cho bạn khả năng sử dụng một hoặc nhiều dịch vụ được hỗ trợ trên nền tảng đám mây (còn được gọi là “trải nghiệm được kết nối tùy chọn”) trong khi sử dụng các ứng dụng Office 365 ProPlus. Các dịch vụ dựa trên đám mây này là tùy chọn. Việc bạn có sử dụng chúng hay không là tuỳ thuộc vào bạn. Chúng được cung cấp cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Trong một số trường hợp, các điều khoản khác cũng có thể áp dụng. Bài viết này liệt kê các dịch vụ được hỗ trợ bởi đám mây, giải thích thêm về các điều khoản sử dụng của chúng và mô tả cách bạn có thể tắt hoặc bật dịch vụ bất cứ lúc nào.
 
 > [!NOTE]
 > Nếu bạn là người quản trị, hãy xem các bài viết sau đây để tìm hiểu cách cho phép hoặc hạn chế khả năng sử dụng của người dùng của bạn trong việc sử dụng trải nghiệm được kết nối tùy chọn:
@@ -75,7 +75,7 @@ MERP kết nối với dịch vụ Watson.microsoft.com để gửi dữ liệu 
 
 ### <a name="office-store"></a>Office Store 
 
-Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đó được cấp phép bởi [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Tuy nhiên, mọi [tiện ích bổ trợ Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) mà bạn tải xuống thông qua Office Store đều được bảo vệ theo các điều khoản sử dụng của nhà cung cấp tiện ích bổ trợ. Đây có thể là các tổ chức hoặc doanh nghiệp khác nhau và một số có thể tính phí sử dụng. Bạn sẽ cần kiểm tra các quyền, điều khoản về quyền riêng tư và điều khoản cấp phép của từng phần bổ trợ để biết điều khoản nào được áp dụng và quyết định xem bạn có muốn đồng ý với các điều khoản sử dụng mà tổ chức đó cung cấp hay không.
+Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đó được cấp phép bởi [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Tuy nhiên, mọi [phần bổ trợ Office](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) mà bạn tải xuống thông qua Office Store đều được bảo vệ theo các điều khoản sử dụng của nhà cung cấp phần bổ trợ. Đây có thể là các tổ chức hoặc doanh nghiệp khác nhau và một số có thể tính phí sử dụng. Bạn sẽ cần kiểm tra các quyền, điều khoản về quyền riêng tư và điều khoản cấp phép của từng phần bổ trợ để biết điều khoản nào được áp dụng và quyết định xem bạn có muốn đồng ý với các điều khoản sử dụng mà tổ chức đó cung cấp hay không.
 
 ### <a name="research"></a>Nghiên cứu
 
@@ -91,7 +91,7 @@ Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đ
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Cách xác định xem người quản trị của bạn có cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn không
 
-Để xác định xem người quản trị của bạn có cung cấp cho bạn khả năng sử dụng bất kỳ trải nghiệm được kết nối tùy chọn nào trong ứng dụng Office 365 ProPlus trên thiết bị Windows hay không, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết: “Người quản trị tổ chức của bạn quản lý các cài đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
+Để xác định xem người quản trị của bạn có cung cấp cho bạn khả năng sử dụng bất kỳ trải nghiệm được kết nối tùy chọn nào trong ứng dụng Office 365 ProPlus trên thiết bị Windows hay không, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết: “Người quản trị của tổ chức bạn quản lý các cài đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
 
 Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
