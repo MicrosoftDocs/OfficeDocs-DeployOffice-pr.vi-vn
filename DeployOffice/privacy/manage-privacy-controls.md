@@ -1,5 +1,5 @@
 ---
-title: Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
+title: Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trong Office 365 ProPlus bằng cách sử dụng các cài đặt chính sách.
+description: Cung cấp cho người quản trị Office những thông tin về cách quản lý kiểm soát quyền riêng tư trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 Proplus) bằng cách sử dụng các thiết đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
-ms.sourcegitcommit: 6a091ca7e72cd7ce97793ebd0fdcfa2a6fa1a098
+ms.openlocfilehash: 284b9b8a2b0231f5079e34ec2b09e35dfd0d07ca
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42687251"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993001"
 ---
-# <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus
+# <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
-Microsoft cam kết cung cấp cho bạn thông tin và kiểm soát mà bạn cần để đưa ra lựa chọn về cách thu thập và sử dụng dữ liệu của bạn khi bạn sử dụng Office 365 ProPlus.
+Microsoft cam kết cung cấp cho bạn thông tin và quyền kiểm soát cần thiết để lựa chọn cách thu thập và sử dụng dữ liệu khi bạn dùng Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus).
 
-Bắt đầu với Phiên bản 1904 của Office 365 ProPlus, các thiết đặt chính sách mới sẽ cho phép bạn kiểm soát các thiết đặt liên quan đến các mục sau:
+Bắt đầu với Phiên bản 1904 của Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, các thiết đặt chính sách mới sẽ cho phép bạn kiểm soát các thiết đặt liên quan đến những mục sau:
 
 - ***Dữ liệu chẩn đoán*** được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng
 
@@ -50,9 +50,9 @@ Các thiết đặt chính sách này có thể được thực hiện bằng c�
 
 Nếu bạn sử dụng công cụ quản lý chính sách nhóm, tất cả các cài đặt chính sách này đều được đặt trong Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.
 
-Các thiết đặt chính sách mới này cũng áp dụng cho các phiên bản Project và Visio trên máy tính để bàn đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2. Chúng cũng áp dụng cho Office 365 Business.
+Các thiết đặt chính sách mới này cũng áp dụng cho các phiên bản Project và Visio trên máy tính để bàn đi kèm với một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2. Thiết đặt này cũng áp dụng cho Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
 
-Ngoài ra, còn có một số thiết đặt chính sách hiện tại sẽ không còn áp dụng cho Office 365 ProPlus và có một số thay đổi giao diện người dùng (UI) cho thiết đặt bảo mật mà bạn nên biết vì người dùng của bạn có thể nhận thấy những thay đổi đó và hỏi về chúng.
+Ngoài ra, một số thiết đặt chính sách hiện tại sẽ không còn áp dụng cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn và có một số thay đổi giao diện người dùng (UI) đối với thiết đặt bảo mật. Bạn nên hiểu rõ những thay đổi này vì người dùng của bạn có thể nhận ra và thắc mắc về những thay đổi đó.
 
 Cũng giống như bất kỳ thiết đặt chính sách mới nào, bạn nên kiểm tra cẩn thận trong môi trường được kiểm soát, hạn chế để đảm bảo các thiết đặt bạn cấu hình có hiệu quả mong muốn trước khi bạn triển khai thiết đặt chính sách rộng rãi hơn trong tổ chức của mình.
 
@@ -74,14 +74,14 @@ Nếu bạn vô hiệu hóa hoặc không cấu hình thiết đặt chính sác
 
 Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các mục sau:
 
-- [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
+- [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Dữ liệu chẩn đoán bắt buộc cho Office](required-diagnostic-data.md)
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
 - [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="policy-settings-for-connected-experiences"></a>Thiết đặt chính sách cho các trải nghiệm được kết nối
 
-Office 365 ProPlus bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
+Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn bao gồm các ứng dụng phần mềm máy khách cùng những trải nghiệm kết nối được thiết kế nhằm hỗ trợ bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
 Chúng tôi hiểu rằng bạn có thể muốn chọn loại trải nghiệm được kết nối có sẵn cho người dùng của mình khi làm việc trong các ứng dụng Office. Vì vậy, chúng tôi đã cung cấp bốn thiết đặt chính sách mới cho bạn:
 
@@ -90,11 +90,11 @@ Chúng tôi hiểu rằng bạn có thể muốn chọn loại trải nghiệm �
 - Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office
 - Cho phép sử dụng các trải nghiệm được kết nối trong Office
 
-Nếu bạn không cấu hình các thiết đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn. Điều này cung cấp cho người dùng của bạn tất cả các tính năng và chức năng có thể truy cập thông qua Office 365 ProPlus. Nhưng chúng tôi hiểu rằng bạn có thể cần phải tắt một số hoặc tất cả những trải nghiệm được kết nối này để đáp ứng các yêu cầu nhất định của tổ chức của bạn.
+Nếu bạn không cấu hình các thiết đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn. Qua đó, người dùng của bạn sẽ sử dụng được tất cả các tính năng và chức năng có thể truy cập thông qua Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn. Nhưng chúng tôi hiểu rằng bạn có thể cần phải tắt một số hoặc tất cả những trải nghiệm được kết nối này để đáp ứng các yêu cầu nhất định của tổ chức của bạn.
 
 Nếu bạn chọn không cung cấp cho người dùng của mình một số loại trải nghiệm được kết nối nhất định, lệnh ruy băng hoặc menu cho những trải nghiệm được kết nối đó sẽ bị mờ đi hoặc người dùng sẽ nhận được thông báo lỗi khi họ cố gắng sử dụng những trải nghiệm được kết nối đó. Trong trường hợp đó, sẽ không có [dữ liệu dịch vụ bắt buộc](required-service-data.md) cho những trải nghiệm được kết nối nào được gửi đến Microsoft.
 
-Người dùng của bạn sẽ không thể chọn bật hoặc tắt các trải nghiệm được kết nối này với Office 365 ProPlus nếu họ đã đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ, đôi khi được gọi là tài khoản cơ quan hoặc trường học.
+Người dùng của bạn sẽ không thể chọn bật hoặc tắt các trải nghiệm được kết nối này với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn sau khi đăng nhập vào Office bằng thông tin đăng nhập tổ chức, đôi khi được gọi là tài khoản cơ quan hoặc trường học.
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Thiết đặt chính sách cho các trải nghiệm được kết nối phân tích nội dung của bạn
 
@@ -114,7 +114,7 @@ Lưu ý rằng nếu bạn vô hiệu hóa thiết đặt chính sách *Cho phé
 
 ### <a name="policy-setting-for-optional-connected-experiences"></a>Thiết đặt chính sách cho các trải nghiệm được kết nối tuỳ chọn
 
-Ngoài các trải nghiệm được kết nối được đề cập ở trên được bao gồm trong Office 365 ProPlus, có một số trải nghiệm được kết nối tùy chọn mà bạn có thể chọn để cho phép người dùng của bạn truy cập bằng tài khoản tổ chức của họ. Ví dụ: các tính năng LinkedIn của Trợ lý Sơ yếu lý lịch trong Word hoặc các tính năng bản đồ 3D trong Excel mà sử dụng Bing. Để biết thêm về các ví dụ, hãy xem mục [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md).
+Ngoài các trải nghiệm được kết nối được đề cập ở trên có mặt trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, còn có một số trải nghiệm được kết nối tùy ý mà bạn có thể chọn để cho phép người dùng truy cập bằng tài khoản tổ chức. Ví dụ: các tính năng LinkedIn của Trợ lý Sơ yếu lý lịch trong Word hoặc các tính năng bản đồ 3D trong Excel mà sử dụng Bing. Để biết thêm về các ví dụ, hãy xem mục [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md).
 
 Các trải nghiệm được kết nối này là khác nhau vì chúng không nằm trong thỏa thuận thương mại của tổ chức của bạn với Microsoft. Các trải nghiệm được kết nối tùy chọn do Microsoft cung cấp trực tiếp cho người dùng của bạn và chịu sự điều chỉnh của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) thay vì [Điều khoản Dịch vụ Trực tuyến](https://www.microsoft.com/licensing/product-licensing/products). Trong một số trường hợp, nội dung hoặc chức năng của bên thứ ba được cung cấp thông qua các trải nghiệm được kết nối tùy chọn này và các điều khoản khác cũng có thể được áp dụng. Để biết thêm thông tin, hãy xem mục [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md).
 
@@ -138,7 +138,7 @@ Có một ngoại lệ cần lưu ý. Thiết đặt chính sách *Cho phép s�
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Thiết đặt chính sách cho hầu hết các trải nghiệm được kết nối
 
-Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối* để kiểm soát xem hầu hết các trải nghiệm được kết nối có thể truy cập thông qua Office 365 ProPlus có sẵn cho người dùng của bạn hay không. Nếu bạn tắt thiết đặt chính sách, các loại trải nghiệm được kết nối sau đây sẽ không có sẵn cho người dùng của bạn:
+Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối trong Office* để kiểm soát xem người dùng của bạn có thể sử dụng hầu hết các trải nghiệm được kết nối và truy cập thông qua Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn hay không. Nếu bạn tắt thiết đặt chính sách, các loại trải nghiệm được kết nối sau đây sẽ không có sẵn cho người dùng của bạn:
 
 - Trải nghiệm phân tích nội dung của bạn
 - Trải nghiệm tải xuống nội dung trực tuyến
@@ -150,13 +150,13 @@ Nhưng ngay cả khi bạn tắt thiết đặt chính sách này, chức năng 
 
 ## <a name="existing-policy-settings-that-are-replaced-by-new-policy-settings"></a>Các thiết đặt chính sách hiện tại được thay thế bằng các thiết đặt chính sách mới
 
-Có hai thiết đặt chính sách hiện tại không còn áp dụng được cho Office 365 ProPlus, bắt đầu với Phiên bản 1904. Các thiết đặt chính sách đó bao gồm:
+Có hai thiết đặt chính sách hiện tại không còn áp dụng được cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, bắt đầu từ Phiên bản 1904. Các thiết đặt chính sách đó bao gồm:
 
 - **Gửi thông tin cá nhân**, có thể tìm thấy trong Chính sách người dùng \\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.
 
 - **Tùy chọn nội dung trực tuyến** có thể được tìm thấy bên dưới Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Công cụ | Tuỳ chọn | Chung | Tuỳ chọn dịch vụ...\\Nội dung trực tuyến.
 
-Bắt đầu với Phiên bản 1904, việc cấu hình hai thiết đặt chính sách hiện tại này sẽ không có hiệu lực đối với Office 365 ProPlus. Chúng không còn được áp dụng vì chức năng của chúng được thay thế bởi các thiết đặt chính sách mới sau:
+Bắt đầu từ Phiên bản 1904, việc cấu hình hai thiết đặt chính sách hiện tại này sẽ không có hiệu lực đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn. Chúng không còn được áp dụng vì chức năng của chúng được thay thế bởi các thiết đặt chính sách mới sau:
 
 - Cho phép sử dụng trải nghiệm được kết nối phân tích nội dung trong Office
 - Cho phép sử dụng trải nghiệm được kết nối tải nội dung trực tuyến trong Office
@@ -183,7 +183,7 @@ Nói chung, nếu một cài đặt chính sách được cấu hình để bậ
 
 ## <a name="privacy-related-changes-to-the-office-ui"></a>Thay đổi liên quan đến quyền riêng tư đối với giao diện người dùng Office
 
-Có một số thay đổi đối với giao diện người dùng (UI) của Office 365 ProPlus liên quan đến quyền riêng tư mà người dùng của bạn có thể nhận thấy và đặt câu hỏi. Những thay đổi này là kết quả trực tiếp của các kiểm soát quyền riêng tư và thiết đặt chính sách mới có sẵn bắt đầu từ Phiên bản 1904.
+Có một số thay đổi đối với giao diện người dùng (UI) của Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn liên quan đến quyền riêng tư mà người dùng của bạn có thể nhận thấy và thắc mắc. Những thay đổi này là kết quả trực tiếp của các kiểm soát quyền riêng tư và thiết đặt chính sách mới có sẵn bắt đầu từ Phiên bản 1904.
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Hộp thoại về trải nghiệm được kết nối tùy chọn
 
