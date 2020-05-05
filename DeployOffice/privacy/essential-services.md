@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
-ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
+ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42939784"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992859"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
 > [!IMPORTANT]
 > Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Office 365 Business và Office 365 ProPlus.
-> - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
-> - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 ProPlus)
+> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
+> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
+> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
 >
 > Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
@@ -40,8 +41,8 @@ Office bao gồm các ứng dụng phần mềm máy khách và những trải n
 
 Nếu bạn là người quản trị cho tổ chức, bạn cũng có thể quan tâm đến những điều sau:
 
-- [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
-- [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
@@ -490,7 +491,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_PrereqFailure\_Type** – Lỗi điều kiện tiên quyết mà chúng tôi gặp phải, ví dụ: hệ điều hành không được hỗ trợ
 
-  - **Data\_ProductReleaseId-** Sản phẩm chúng tôi đang cài đặt, ví dụ: Office 365 ProPlus
+  - **Data\_ProductReleaseId** - Sản phẩm chúng tôi đang cài đặt, ví dụ: Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
 ### <a name="officeclicktoruncorruptioncheck"></a>Office.ClickToRun.CorruptionCheck
 
@@ -588,7 +589,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_OfficeVersion** - Phiên bản Office được cài đặt
 
-  - **Data\_Sku** - SKU đã được cài đặt, ví dụ: Office 365 ProPlus.en-us
+  - **Data\_Sku** - Đã cài đặt SKU, nghĩa là Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
   - **Data\_SqmMachineID** – ID máy duy nhất được sử dụng bơi dữ liệu Windows SQM\_SusClientID - Mã định danh cập nhật Office trên máy
 
@@ -628,7 +629,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_PrereqFailure\_Type-** Lỗi tiên quyết mà chúng tôi gặp phải
 
-  - **Data\_ProductReleaseId-** Sản phẩm chúng tôi đang cài đặt, ví dụ: Office 365 ProPlus
+  - **Data\_ProductReleaseId-** Sản phẩm chúng tôi đang cài đặt, ví dụ: Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
 ### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
 
@@ -3061,6 +3062,8 @@ Các trường sau đây sẽ được thu thập:
 - **UserDismissed** - Điều này cho biết liệu người dùng đã hủy bỏ hộp thoại hay chưa và do đó sẽ nằm trong chế độ ân huệ hoặc cắt giảm tính năng vì họ không chọn mua Office hoặc nhận bản dùng thử
 
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
+
+*[Sự kiện này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 Chúng tôi có một thử nghiệm cung cấp cho người dùng tùy chọn để thử và thiết lập tự động phát trực tiếp cho Office từ một ứng dụng mà không bao giờ rời khỏi bối cảnh của ứng dụng. Qua đó, báo cáo sự thành công hay thất bại của thử nghiệm cùng với mã lỗi. Báo cáo này rất quan trọng trong việc phát hiện xem người dùng ở trạng thái tốt và không thiếu chức năng hay không. Báo cáo này dùng cho trạng thái hệ thống và cho mục đích chẩn đoán nếu người dùng báo cáo sự cố xảy ra với máy của họ.
 
@@ -6144,6 +6147,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
+- **AppID** – Mã định danh của ứng dụng đã không thể được tải xuống.
+
 - **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
 
 - **AppVersionLong** - Phiên bản ứng dụng
@@ -6160,6 +6165,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
 
+- **Error** – Các lỗi quan sát trong quá trình tải xuống.
+
 - **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
 
 - **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
@@ -6168,13 +6175,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa tên của bản cập nhật đang được tải xuống và lỗi chúng tôi quan sát được.
+- **Payload** - Chứa tên của bản cập nhật đang được tải xuống và lỗi chúng tôi quan sát được. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
 - **SessionId** - Mã định danh cho phiên
+
+- **UpdateID** – Mã định danh của bản cập nhật đang được tải xuống.
 
 
 ### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
@@ -6184,6 +6193,8 @@ Tải xuống tệp gói thành công. Chúng tôi đã ghi lại đường dẫ
 Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppID** – Mã định danh của ứng dụng.
 
 - **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
 
@@ -6216,6 +6227,8 @@ Các trường sau đây sẽ được thu thập:
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
 - **SessionId** - Mã định danh cho phiên
+
+- **UpdateID** – Mã định danh của bản cập nhật đã được tải xuống.
 
 
 ### <a name="fba_checkforupdate"></a>fba_checkforupdate
@@ -6324,6 +6337,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
 
+- **Error** – Chứa trạng thái của hệ điều hành (mã trạng thái của Apple) phản ánh trạng thái khởi chạy.
+
 - **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
 
 - **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
@@ -6332,7 +6347,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa trạng thái OS (mã trạng thái của Apple) phản ánh trạng thái khởi chạy.
+- **Payload** - Chứa trạng thái OS (mã trạng thái của Apple) phản ánh trạng thái khởi chạy. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -6340,6 +6355,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh cho phiên
 
+- **Success** – Chuỗi Boolean cho biết liệu quy trình MAU daemon có được khởi chạy thành công hay không.
 
 ### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
 
@@ -6636,6 +6652,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
+- **AppID** – Mã định danh của ứng dụng.
+
 - **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
 
 - **AppVersionLong** - Phiên bản ứng dụng
@@ -6652,6 +6670,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
 
+- **Error** – Chi tiết về lỗi xảy ra trong quá trình khởi chạy ứng dụng sau khi cập nhật.
+
 - **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
 
 - **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
@@ -6660,7 +6680,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của ứng dụng sẽ khởi chạy.
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của ứng dụng sẽ khởi chạy. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
     
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
     
@@ -6759,6 +6779,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
+- **AppID** – Mã định danh của ứng dụng.
+
 - **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
 
 - **AppVersionLong** - Phiên bản ứng dụng
@@ -6775,6 +6797,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
 
+- **Error** – Chi tiết về lỗi xảy ra trong quá trình chấm dứt ứng dụng.
+
 - **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
 
 - **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
@@ -6783,13 +6807,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và ID của gói ứng dụng. Ngoài ra, cũng có thể chứa một chuỗi lỗi nếu Microsoft Autoupdate xác định ứng dụng vẫn chạy ngay cả khi đã nhận sự kiện chấm dứt.
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và ID của gói ứng dụng. Ngoài ra, cũng có thể chứa một chuỗi lỗi nếu Microsoft Autoupdate xác định ứng dụng vẫn chạy ngay cả khi đã nhận sự kiện chấm dứt. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
 - **SessionId** - Mã định danh cho phiên
+
+- **UpdateID** – Mã định danh của bản cập nhật ứng dụng.
 
 
 ### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
@@ -6882,6 +6908,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
+- **AppID** – Mã định danh của ứng dụng.
+
 - **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
 
 - **AppVersionLong** - Phiên bản ứng dụng
@@ -6898,6 +6926,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
 
+- **Error** – Chi tiết về lỗi xảy ra trong quá trình tải xuống bản cập nhật của ứng dụng.
+
 - **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
 
 - **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
@@ -6906,13 +6936,17 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của bản cập nhật.
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật và tên của bản cập nhật. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
 - **SessionId** - Mã định danh cho phiên
+
+- **UpdateID** – Mã định danh của bản cập nhật ứng dụng.
+
+- **UpdateName** – Tên của bản cập nhật ứng dụng.
 
 
 ### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
@@ -10550,6 +10584,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **InstallMethod** - Bản dựng hiện tại của Office đã được nâng cấp từ, quay lại hay cài đặt mới.
 
+  - **OfficeArchitectureText** - Kiến trúc của sản phẩm Office dưới dạng chuỗi (ví dụ: x86, arm).
+
   - **PreviousBuild** - Phiên bản Office mà bản dựng này được nâng cấp lên hoặc quay lại từ đó.
 
   - **State** - Trạng thái mà phiên thay đổi thành.
@@ -11286,6 +11322,8 @@ Sự kiện được kích hoạt do hành động chấm dứt ứng dụng b�
 
 Các trường sau đây sẽ được thu thập:
 
+  - **AddinExecution -** Cờ thông báo nếu phần bổ trợ đang thực thi và không hoàn thành trong quá trình thoát ứng dụng không đáng tin cậy.
+
   - **BootCompleted –** Đã hoàn tất khởi động Office tại thời điểm gặp sự cố hay chưa.
 
   - **CrashedAppBuild -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
@@ -11343,6 +11381,8 @@ Các trường sau đây sẽ được thu thập:
   - **ModuleOffset -** Bù trừ theo byte từ địa chỉ cơ sở nơi lỗi xảy ra.
 
   - **ModuleSize -** Kích cỡ mô-đun lỗi theo byte.
+
+  - **OfficeArchitectureText -** Kiến trúc của sản phẩm Office dưới dạng chuỗi (ví dụ: x86, arm).
 
   - **OfficeUiLang -** Ngôn ngữ giao diện người dùng cho bản dựng Office.
 
