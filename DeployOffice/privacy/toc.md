@@ -1,4 +1,4 @@
-# Quyền riêng tư dành cho Office 365 ProPlus
+# Quyền riêng tư cho ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
 ## [Tổng quan về kiểm soát quyền riêng tư](overview-privacy-controls.md)
 
