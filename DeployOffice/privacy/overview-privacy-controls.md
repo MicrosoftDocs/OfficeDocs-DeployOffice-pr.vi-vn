@@ -1,5 +1,5 @@
 ---
-title: Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
+title: Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus, bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
+description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus), bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: 784bbf08626e6dc8571c416a74511c9f5feeceec
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067399"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993176"
 ---
-# <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus
+# <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
-Microsoft cam kết cung cấp cho bạn thông tin và kiểm soát mà bạn cần để đưa ra lựa chọn về cách thu thập và sử dụng dữ liệu của bạn khi bạn sử dụng Office 365 ProPlus.
+Microsoft cam kết cung cấp cho bạn thông tin và quyền kiểm soát cần thiết để lựa chọn cách thu thập và sử dụng dữ liệu khi bạn dùng Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus).
 
-Bắt đầu với Phiên bản 1904 của Office 365 ProPlus (được phát hành trên Kênh hàng tháng vào ngày 29/4/2019), chúng tôi sẽ cung cấp cho bạn các kiểm soát quyền riêng tư mới, cập nhật và được cải thiện cho các khu vực sau:
+Bắt đầu với Phiên bản 1904 của Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, chúng tôi sẽ cung cấp cho bạn các kiểm soát quyền riêng tư mới, cập nhật và được cải thiện cho các khu vực sau:
 - ***Dữ liệu chẩn đoán*** được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng trên các máy tính chạy Windows trong tổ chức của bạn.
 - ***Trải nghiệm được kết nối*** sử dụng chức năng dựa trên đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
 
@@ -36,20 +36,20 @@ Là một phần của những thay đổi này, có các cài đặt chính sá
 > - Những thay đổi này áp dụng cho Access, Excel, OneNote, Outlook, PowerPoint, Publisher và Word.
 > - Những thay đổi này cũng được áp dụng cho những phiên bản sau đây:
 >   - Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
->   - Phiên bản 1904 trở lên của Project và Visio trên máy tính đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
-> - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh nửa năm một lần (Nhóm mục tiêu) được phát hành vào ngày 10/9/2019. Dự kiến, chúng sẽ sẵn dùng trong các Kênh nửa năm một lần vào tháng 01/2020.
+>   - Phiên bản 1904 trở lên trong phiên bản Project và Visio trên máy tính đi kèm với một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
+> - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh nửa năm một lần (Nhóm mục tiêu) và Kênh nửa năm một lần.
 > - Các biện pháp kiểm soát quyền riêng tư này sẵn dùng đối với Phiên bản 2.30 trở lên của những phiên bản iOS của Excel, OneNote, PowerPoint và Word cũng như Phiên bản 1.17 trở lên của Visio Viewer for iOS.
 > - Các biện pháp kiểm soát quyền riêng tư này sẵn dùng đối với Phiên bản 16.0.12226.10000 trở lên của những phiên bản Android của Excel, PowerPoint và Word cũng như Phiên bản 16.0.12228.20004 trở lên của OneNote for Android.
 > - Hầu hết các ứng dụng Office dành cho web sử dụng biện pháp kiểm soát quyền riêng tư mới cho [các trải nghiệm được kết nối tuỳ chọn](optional-connected-experiences.md). Các ứng dụng đó được liệt kê sau đây: Excel dành cho web, OneNote dành cho web, PowerPoint dành cho web, Visio dành cho web và Word dành cho web. Bạn có thể sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md) để đặt cấu hình cho [cài đặt chính sách](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences) thích hợp.
-> - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được tăng cường này cho các máy khách Office bổ sung, bao gồm cả Teams và ứng dụng dành cho di động của chúng tôi. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365.
+> - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được tăng cường này cho các máy khách Office bổ sung, bao gồm cả Teams và ứng dụng dành cho di động của chúng tôi. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365 (và Microsoft 365).
 
-## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Dữ liệu chẩn đoán được gửi từ Office 365 ProPlus đến Microsoft
+## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Dữ liệu chẩn đoán được gửi từ Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
 Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng trên các máy tính chạy Windows trong tổ chức của bạn.
 
-Có ba cấp dữ liệu chẩn đoán cho phần mềm máy khách Office 365 ProPlus mà bạn có thể chọn:
+Có ba cấp dữ liệu chẩn đoán cho phần mềm máy khách Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn mà bạn có thể chọn:
 
 - **Bắt buộc**: Dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị mà nó được cài đặt.
 
@@ -73,15 +73,15 @@ Dữ liệu chẩn đoán này không bao gồm tên của người dùng, đị
 
 - [Dữ liệu chẩn đoán bắt buộc cho Office](required-diagnostic-data.md)
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
-- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
 - [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-## <a name="connected-experiences-for-office-365-proplus"></a>Các trải nghiệm được kết nối cho Office 365 ProPlus
+## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Trải nghiệm được kết nối đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
-Office 365 ProPlus bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
+Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn bao gồm các ứng dụng phần mềm máy khách cùng những trải nghiệm kết nối được thiết kế nhằm hỗ trợ bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
 Chúng tôi hiểu rằng bạn có thể muốn chọn loại trải nghiệm được kết nối có sẵn cho người dùng của mình khi làm việc trong các ứng dụng Office. Là người quản trị cho tổ chức của bạn, bạn sẽ có thiết đặt chính sách cho phép bạn chọn có cung cấp các loại trải nghiệm được kết nối sau cho người dùng của mình hay không:
 
@@ -100,14 +100,14 @@ Người dùng của bạn sẽ không thể chọn bật các trải nghiệm �
 Để biết thêm thông tin, hãy xem các nguồn sau:
 
 - [Các trải nghiệm kết nối trong Office](connected-experiences.md)
-- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
 
-## <a name="optional-connected-experiences-for-office-365-proplus"></a>Các trải nghiệm được kết nối tùy chọn cho Office 365 ProPlus
+## <a name="optional-connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Trải nghiệm được kết nối tùy chọn đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
-Ngoài các trải nghiệm được kết nối được đề cập ở trên được bao gồm trong Office 365 ProPlus, có những trải nghiệm được kết nối tùy chọn mà bạn có thể chọn để cho phép người dùng của bạn truy cập bằng tài khoản tổ chức của họ. Ví dụ: các tính năng LinkedIn của Trợ lý Sơ yếu lý lịch trong Word hoặc các tính năng bản đồ 3D trong Excel mà sử dụng Bing.
+Ngoài các trải nghiệm được kết nối được đề cập ở trên có mặt trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, còn có trải nghiệm được kết nối tùy ý mà bạn có thể chọn để cho phép người dùng truy cập bằng tài khoản tổ chức. Ví dụ: các tính năng LinkedIn của Trợ lý Sơ yếu lý lịch trong Word hoặc các tính năng bản đồ 3D trong Excel mà sử dụng Bing.
 
 Đây là những trải nghiệm được kết nối tùy chọn không nằm trong thỏa thuận thương mại của tổ chức của bạn với Microsoft nhưng bị chi phối bởi các điều khoản và điều kiện riêng biệt. Các trải nghiệm được kết nối tùy chọn do Microsoft cung cấp trực tiếp cho người dùng của bạn chịu sự điều chỉnh của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) thay vì [Điều khoản Dịch vụ Trực tuyến](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -118,7 +118,7 @@ Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối 
 Để biết thêm thông tin, hãy xem các nguồn sau:
 
 - [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md)
-- [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
@@ -143,9 +143,9 @@ Nếu bạn chọn không cung cấp cho người dùng của bạn loại trả
 
 Để biết thêm thông tin, hãy xem mục [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md).
 
-## <a name="essential-services-for-office-365-proplus"></a>Các dịch vụ cần thiết cho Office 365 ProPlus
+## <a name="essential-services-for-microsoft-365-apps-for-enterprise"></a>Các dịch vụ cần thiết cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
-Ngoài ra còn có một tập hợp các dịch vụ rất cần thiết cho cách thức Office 365 ProPlus hoạt động và không thể bị tắt. Ví dụ: dịch vụ cấp phép xác nhận rằng bạn được cấp phép sử dụng Office 365 ProPlus đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft, không phụ thuộc vào việc bạn đã đặt cấu hình thiết đặt chính sách nào.
+Ngoài ra còn có một tập hợp các dịch vụ rất cần thiết cho cách thức Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn hoạt động và không thể bị tắt. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft, không phụ thuộc vào việc bạn đã đặt cấu hình thiết đặt chính sách nào.
 
 Để biết thêm thông tin, hãy xem mục [Các dịch vụ cần thiết cho Office](essential-services.md).
 

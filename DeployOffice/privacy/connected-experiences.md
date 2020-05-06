@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 8939bb1f3a3be8cf256f3bd6912abc95c8b09d2a
-ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
+ms.openlocfilehash: bcf28caae666900deacbd0effe83a2fae383c41d
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166405"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993061"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
 > [!IMPORTANT]
 > Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Office 365 Business và Office 365 ProPlus.
-> - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
-> - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
+> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
+> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
+> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
 >
 > Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 >
@@ -48,7 +49,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Đọc chính tả  | [Đọc chính tả bằng giọng nói của bạn trong Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Biên tập viên    | [Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Ý tưởng     | [Các ý tưởng trong Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-| Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang Hình, Văn bản hoặc Toán học trong PowerPoint cho Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Chú thích và phụ đề trực tiếp |  [Trình bày với chú thích theo thời gian thực, tự động hoặc phụ đề trong PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Biểu đồ dạng bản đồ\*    | [Tạo Biểu đồ dạng bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
@@ -119,16 +120,16 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Hộp thư đến Ưu tiên (Outlook) |[Hộp thư đến Ưu tiên dành cho Outlook](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Quản lý Quyền Thông tin |[Quản lý quyền thông tin trong Office](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | Thẻ liên hệ LinkedIn |[Kết nối tài khoản LinkedIn và Microsoft của bạn](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
+| Phần bổ trợ dành cho Office\* | [Quản lý việc triển khai các phần bổ trợ trong Trung tâm quản trị Microsoft 365](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Phản hồi về Office |[Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Bộ phận hỗ trợ của Office (Liên hệ với chúng tôi) |Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng |
-| Phần bổ trợ Office 365\* | [Quản lý việc triển khai các phần bổ trợ Office 365 trong Trung tâm quản trị Microsoft 365](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức Viso](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Trình kết nối Xã hội Outlook | [Bật Trình kết nối Xã hội Outlook](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | UserVoice Outlook\* | [Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Tài liệu gần đây |[Mở tệp từ menu Tệp](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | Trợ lý Sơ yếu lý lịch (hoặc Trợ lý CV)\* |[Viết sơ yếu lý lịch đẹp nhất của bạn với sự trợ giúp từ LinkedIn và Trợ lý Sơ yếu lý lịch](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Bộ tìm phòng (Outlook)|[Cách kiểm soát Bộ tìm phòng trong Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-| Liên kết an toàn |[Liên kết an toàn Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
+| Liên kết an toàn |[Liên kết an toàn ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
 | Nhãn độ nhạy cảm |[Áp dụng nhãn nhạy cảm cho tài liệu và email của bạn trong Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Chia sẻ  |[Chia sẻ tài liệu (Excel)](https://support.office.com//article/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Chia sẻ tài liệu (PowerPoint)](https://support.office.com//article/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Chia sẻ tài liệu (Word)](https://support.office.com//article/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Được chia sẻ với tôi |[Xem tệp những người khác đã chia sẻ với bạn](https://support.office.com/article/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
@@ -153,7 +154,7 @@ Nếu bạn đã đăng nhập bằng tài khoản cơ quan hoặc trường h�
 
 Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng cài đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để tìm hiểu thêm thông tin về cách sử dụng các thiết đặt chính sách này, hãy xem những bài viết sau đây: 
 
-- [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md).
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
@@ -164,7 +165,7 @@ Ngay cả khi bạn quyết định tắt các trải nghiệm được kết n�
 
 ## <a name="related-topics"></a>Chủ đề liên quan
 
-- [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
+- [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md)
 - [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
 - [Các dịch vụ cần thiết cho Office](essential-services.md)

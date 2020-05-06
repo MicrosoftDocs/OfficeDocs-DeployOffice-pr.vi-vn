@@ -13,20 +13,20 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
-ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
+ms.openlocfilehash: ecfe38bc6dbedd57ff1eb2ab4851c8e4dddab730
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166315"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993266"
 ---
-# <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tùy chọn trong Office
+# <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
-Nếu bạn có tài khoản cơ quan hoặc trường học, người quản trị của tổ chức bạn có thể cung cấp cho bạn khả năng sử dụng một hoặc nhiều dịch vụ được hỗ trợ trên nền tảng đám mây (còn được gọi là “trải nghiệm được kết nối tùy chọn”) trong khi sử dụng các ứng dụng Office 365 ProPlus. Các dịch vụ dựa trên đám mây này là tùy chọn. Việc bạn có sử dụng chúng hay không là tuỳ thuộc vào bạn. Chúng được cung cấp cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Trong một số trường hợp, các điều khoản khác cũng có thể áp dụng. Bài viết này liệt kê các dịch vụ được hỗ trợ bởi đám mây, giải thích thêm về các điều khoản sử dụng của chúng và mô tả cách bạn có thể tắt hoặc bật dịch vụ bất cứ lúc nào.
+Nếu bạn có tài khoản cơ quan hoặc trường học, người quản trị của tổ chức bạn có thể cung cấp cho bạn khả năng sử dụng một hoặc nhiều dịch vụ được hỗ trợ trên nền tảng đám mây (còn được gọi là “trải nghiệm được kết nối tùy chọn”) trong khi sử dụng các ứng dụng Office, như Word hoặc Excel, được bao gồm trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đó là Office 365 ProPlus). Các dịch vụ dựa trên đám mây này là tùy chọn. Việc bạn có sử dụng chúng hay không là tuỳ thuộc vào bạn. Chúng được cung cấp cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Trong một số trường hợp, các điều khoản khác cũng có thể áp dụng. Bài viết này liệt kê các dịch vụ được hỗ trợ bởi đám mây, giải thích thêm về các điều khoản sử dụng của chúng và mô tả cách bạn có thể tắt hoặc bật dịch vụ bất cứ lúc nào.
 
 > [!NOTE]
 > Nếu bạn là người quản trị, hãy xem các bài viết sau đây để tìm hiểu cách cho phép hoặc hạn chế khả năng sử dụng của người dùng của bạn trong việc sử dụng trải nghiệm được kết nối tùy chọn:
-> - [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+> - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 > - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 > - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
@@ -39,7 +39,7 @@ Nếu bạn có tài khoản cơ quan hoặc trường học, người quản tr
 
 ## <a name="experiences-that-rely-on-bing"></a>Trải nghiệm dựa trên Bing
 
-Một số dịch vụ dựa trên đám mây được cung cấp bởi Microsoft Bing. Microsoft Bing là một doanh nghiệp riêng biệt với Office 365 ProPlus và được Microsoft quản lý độc lập với Office 365 ProPlus. Những trải nghiệm mà nó mang lại trong các ứng dụng Office 365 ProPlus là: [Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Biểu đồ bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Chèn hình ảnh trực tuyến](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Chèn mô hình 3D trực tuyến](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Trình nghiên cứu](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) và [Tra cứu thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Một số dịch vụ dựa trên đám mây được cung cấp bởi Microsoft Bing. Microsoft Bing là một doanh nghiệp riêng biệt cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn và được Microsoft quản lý độc lập với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn. Những trải nghiệm mà nó mang lại trong các ứng dụng Office có trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn là: [Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Biểu đồ bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Chèn hình ảnh trực tuyến](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Chèn mô hình 3D trực tuyến](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Trình nghiên cứu](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) và [Tra cứu thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
 
 Trải nghiệm mà Bing cung cấp trên Outlook for iOS và Outlook for Android như sau:
 
@@ -47,11 +47,11 @@ Trải nghiệm mà Bing cung cấp trên Outlook for iOS và Outlook for Androi
 - **Lịch thú vị:**   Bạn có thể [đăng ký](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) lịch của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn.
 
 
- Những trải nghiệm này hoạt động dựa trên Bing được cấp phép cho bạn theo các điều khoản của [Thoả thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Office 365 ProPlus trong khi sử dụng các dịch vụ này đều được gửi đến Microsoft Bing. Chúng không được liên kết với bạn bởi tổ chức Bing.
+ Những trải nghiệm này hoạt động dựa trên Bing được cấp phép cho bạn theo các điều khoản của [Thoả thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trong khi sử dụng các dịch vụ này đều được gửi đến Microsoft Bing. Chúng không được liên kết với bạn bởi tổ chức Bing.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Trải nghiệm dựa trên LinkedIn
 
-[Trợ lý Sơ yếu lý lịch](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) mang đến trải nghiệm trong Word được cung cấp bởi LinkedIn. Công cụ này sẽ cung cấp ý tưởng cho sơ yếu lý lịch của bạn. LinkedIn là một công ty khác do Microsoft sở hữu. Nếu bạn sử dụng Trợ lý Sơ yếu lý lịch, [Thỏa thuận người dùng và Chính sách quyền riêng tư của LinkedIn](https://www.linkedin.com/legal/user-agreement) sẽ được áp dụng cùng với [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [ điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Office 365 ProPlus trong khi sử dụng các dịch vụ này đều được gửi đến LinkedIn. Chúng không được liên kết với bạn bởi tổ chức LinkedIn. Bạn không cần phải có tài khoản LinkedIn để sử dụng dịch vụ dựa trên đám mây này.
+[Trợ lý Sơ yếu lý lịch](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) mang đến trải nghiệm trong Word được cung cấp bởi LinkedIn. Công cụ này sẽ cung cấp ý tưởng cho sơ yếu lý lịch của bạn. LinkedIn là một công ty khác do Microsoft sở hữu. Nếu bạn sử dụng Trợ lý Sơ yếu lý lịch, [Thỏa thuận người dùng và Chính sách quyền riêng tư của LinkedIn](https://www.linkedin.com/legal/user-agreement) sẽ được áp dụng cùng với [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [ điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trong khi sử dụng các dịch vụ này đều được gửi đến LinkedIn. Chúng không được liên kết với bạn bởi tổ chức LinkedIn. Bạn không cần phải có tài khoản LinkedIn để sử dụng dịch vụ dựa trên đám mây này.
 
 Lưu ý: Thiết đặt quyền riêng tư được mô tả bên dưới không kiểm soát các trải nghiệm yêu cầu bạn kết nối tài khoản LinkedIn với tài khoản cơ quan hoặc trường học Microsoft của bạn. Để kiểm soát các loại trải nghiệm này (chẳng hạn như thông tin LinkedIn trên [thẻ hồ sơ](https://support.office.com/article/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) trong Outlook), hãy xem [Kết nối tài khoản LinkedIn và Microsoft của bạn](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
@@ -91,23 +91,23 @@ Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đ
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Cách xác định xem người quản trị của bạn có cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn không
 
-Để xác định xem người quản trị của bạn có cung cấp cho bạn khả năng sử dụng bất kỳ trải nghiệm được kết nối tùy chọn nào trong ứng dụng Office 365 ProPlus trên thiết bị Windows hay không, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý thiết đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết: “Người quản trị của tổ chức bạn quản lý các cài đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
+Để xác định xem người quản trị của bạn cung cấp cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn trong ứng dụng Office có trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trên thiết bị Windows, hãy đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý cài đặt**. Nếu người quản trị của bạn không trao quyền kiểm soát cho bạn, bạn sẽ thấy một thông báo cho biết: “Người quản trị của tổ chức bạn quản lý các cài đặt quyền riêng tư của bạn và đã quyết định vô hiệu hóa các trải nghiệm được kết nối tùy chọn”.
 
 Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
 ## <a name="your-privacy-settings"></a>Cài đặt quyền riêng tư của bạn
 
-Nếu người quản trị của bạn cung cấp cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn trong ứng dụng Office 365 ProPlus trên thiết bị Windows, bạn có thể đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý cài đặt** để quản lý cài đặt của mình bất cứ lúc nào. Khi các cài đặt này được bật, bạn sẽ có tùy chọn sử dụng các dịch vụ được mô tả trong bài viết này khi bạn muốn sử dụng chúng. Các cài đặt này sẽ không thể truy cập được khi bị tắt.
+Nếu người quản trị của bạn cung cấp cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn trong ứng dụng Office có trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trên thiết bị Windows, bạn có thể đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** và chọn **Quản lý cài đặt** để quản lý cài đặt của mình bất cứ lúc nào. Khi các cài đặt này được bật, bạn sẽ có tùy chọn sử dụng các dịch vụ được mô tả trong bài viết này khi bạn muốn sử dụng chúng. Các cài đặt này sẽ không thể truy cập được khi bị tắt.
 
 Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
 ## <a name="diagnostic-data"></a>Dữ liệu chẩn đoán
 
-Khi bạn sử dụng bất kỳ dịch vụ tùy chọn dựa trên đám mây nào được mô tả trong bài viết này, Microsoft có thể thu thập dữ liệu chẩn đoán (như dữ liệu sử dụng, lỗi và dữ liệu hiệu suất) về hiệu suất của trải nghiệm khi bạn sử dụng. Dữ liệu chẩn đoán này có thể chứa "dữ liệu cá nhân" theo quy định tại Điều 4 của GDPR của Châu Âu.Tất cả dữ liệu chẩn đoán mà Microsoft thu thập trong quá trình sử dụng ứng dụng và dịch vụ Office 365 ProPlus đều được biệt hiệu hóa như đã nêu trong tiêu chuẩn ISO/IEC 19944:2017, (phần 8.3.3).
+Khi bạn sử dụng bất kỳ dịch vụ tùy chọn dựa trên đám mây nào được mô tả trong bài viết này, Microsoft có thể thu thập dữ liệu chẩn đoán (như dữ liệu sử dụng, lỗi và dữ liệu hiệu suất) về hiệu suất của trải nghiệm khi bạn sử dụng. Dữ liệu chẩn đoán này có thể chứa "dữ liệu cá nhân" theo quy định tại Điều 4 của GDPR của Châu Âu.Tất cả dữ liệu chẩn đoán mà Microsoft thu thập trong quá trình sử dụng ứng dụng và dịch vụ Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn đều được biệt hiệu hóa như đã nêu trong tiêu chuẩn ISO/IEC 19944:2017, (phần 8.3.3).
 
 
 ## <a name="related-topics"></a>Chủ đề liên quan
 
-- [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
+- [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
 - [Cài đặt Quyền riêng tư Tài khoản](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office cái nhìn tổng quan về dữ liệu dịch vụ bắt buộc được thu thập về các trải nghiệm được kết nối trong Office.
 hideEdit: true
-ms.openlocfilehash: b4cc25ae1c2a34082bff623ad630db664050effb
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 4b5008d1750de655601dafaa381502e708f9f9d6
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067263"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992801"
 ---
 # <a name="required-service-data-for-office"></a>Dữ liệu dịch vụ bắt buộc cho Office 
 
 > [!IMPORTANT]
 > Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Office 365 Business và Office 365 ProPlus.
-> - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
-> - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
+> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
+> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
+> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
 >
 > Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
@@ -64,8 +65,8 @@ Dữ liệu dịch vụ bắt buộc cũng được thu thập và gửi tới M
 
 Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng có thể quan tâm đến những điều sau:
 
-- [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
-- [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
