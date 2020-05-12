@@ -13,28 +13,29 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
-ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
+ms.openlocfilehash: f08061e77e5757d61108e2eb4539986b90902bef
+ms.sourcegitcommit: 06da4eff4b399367017fc68fadb13df29e577e64
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41109521"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43998849"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
 > [!IMPORTANT]
 > Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Office 365 Business và Office 365 ProPlus.
-> - Office 365 Personal, Office 365 Home hoặc các phiên bản Office khác là một phần của đăng ký Office 365.
-> - Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như gói Project Online Professional hoặc Visio Online Plan 2.
+> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
+> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
+> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
+> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
 >
 > Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 
-Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
+Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
 Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng trên các máy tính chạy Windows. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
-***Dữ liệu chẩn đoán bắt buộc*** là ữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị mà nó được cài đặt.
+***Dữ liệu chẩn đoán bắt buộc*** là dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị cài đặt Office.
 
 Dữ liệu chẩn đoán bắt buộc giúp xác định các sự cố với Office có thể liên quan đến cấu hình thiết bị hoặc phần mềm. Ví dụ: nó có thể giúp xác định xem một tính năng Office có gặp sự cố thường xuyên hơn trên một phiên bản hệ điều hành cụ thể không, với các tính năng mới được giới thiệu hoặc khi một số tính năng Office nhất định bị tắt. Dữ liệu chẩn đoán bắt buộc giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố này nhanh hơn để giảm tác động đối với người dùng hoặc tổ chức.
 
@@ -43,10 +44,10 @@ Dữ liệu chẩn đoán bắt buộc giúp xác định các sự cố với O
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
 - [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng có thể quan tâm đến những điều sau:
+Nếu bạn là người quản trị cho tổ chức, có thể bạn cũng quan tâm đến những vấn đề sau:
 
-- [Tổng quan về kiểm soát quyền riêng tư cho Office 365 ProPlus](overview-privacy-controls.md)
-- [Sử dụng thiết đặt chính sách để quản lý kiểm soát quyền riêng tư cho Office 365 ProPlus](manage-privacy-controls.md)
+- [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
@@ -55,7 +56,7 @@ Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng c
 
 Dữ liệu chẩn đoán bắt buộc được sắp xếp thành các danh mục và những loại dữ liệu con. Trong mỗi loại dữ liệu con là các sự kiện, chứa các trường dữ liệu dành riêng cho sự kiện đó.
 
-Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đoán bắt buộc. Các loại dữ liệu con trong mỗi danh mục được liệt kê, cùng với một mô tả về tiêu điểm cho kiểu dữ liệu con đó. Có các liên kết đến từng phần loại dữ liệu con nơi bạn sẽ tìm thấy thông tin sau:
+Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đoán bắt buộc. Các loại dữ liệu con trong mỗi danh mục được liệt kê, cùng với một mô tả về tiêu điểm cho kiểu dữ liệu con đó. Có các liên kết đến từng mục loại dữ liệu con nơi bạn sẽ tìm thấy thông tin sau:
 
 - Danh sách các sự kiện trong loại dữ liệu con đó
 - Mô tả về từng sự kiện
@@ -136,13 +137,13 @@ Danh mục này chứa các trường sau đây:
 
   - **ControllerConnectedServicesState** – Cho biết người dùng đã có quyền truy cập vào các trải nghiệm được kết nối tùy chọn hay không
 
-  - **ControllerConnectedServicesStateSourceLocation** – Cho biết cách lựa chọn của người dùng cho các trải nghiệm được kết nối tùy chọn đã được thực hiện
+  - **ControllerConnectedServicesStateSourceLocation** - Cho biết cách lựa chọn của người dùng cho các trải nghiệm được kết nối tùy chọn được thực hiện
 
   - **ControllerConnectedServicesStateConsentTime** – Cho biết thời điểm người dùng chọn trạng thái trải nghiệm được kết nối tùy chọn. Ngày tháng sẽ xuất hiện dưới dạng ngày có thể đọc được hoặc ngày được mã hóa trông giống như một số lớn.
 
   - **UserContentDependentState** – Cho biết người dùng đã chọn bật hay tắt các trải nghiệm được kết nối để phân tích nội dung
 
-  - **UserContentDependentStateSourceLocation** – Cho biết cách lựa chọn bật hoặc tắt của người dùng được tạo cho các trải nghiệm được kết nối phân tích nội dung
+  - **UserContentDependentStateSourceLocation** - Cho biết cách lựa chọn bật hay tắt của người dùng được thực hiện cho các trải nghiệm được kết nối để phân tích nội dung
 
   - **UserContentDependentStateConsentTime** – Cho biết thời điểm người dùng chọn bật hoặc tắt trải nghiệm được kết nối để phân tích nội dung được thực hiện. Ngày tháng sẽ xuất hiện dưới dạng ngày có thể đọc được hoặc ngày được mã hóa trông giống như một số lớn.
 
@@ -218,7 +219,7 @@ Danh mục này chứa các trường sau đây:
 
   - **TenantGroup** - Loại đối tượng thuê mà đăng ký thuộc về. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hay không.
 
-  - **TenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+  - **TenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 ### <a name="information-that-specifically-supports-diagnostic-data-collection"></a>*Thông tin hỗ trợ đặc biệt việc thu thập dữ liệu chẩn đoán*
 
@@ -252,7 +253,7 @@ Thông tin về việc cài đặt ứng dụng mà từ đó các sự kiện s
 
 Danh mục này chứa các trường sau đây:
 
-  - **Architecture** - Kiến trúc của ứng dụng. Hãy để chúng tôi phân loại các lỗi có thể đặc trưng cho kiến trúc của ứng dụng.
+  - **Architecture** - Kiến trúc của ứng dụng. Hãy để chúng tôi phân loại các lỗi có thể cụ thể đối với kiến trúc của ứng dụng.
 
   - **Click2RunPackageVersion** - Số phiên bản của gói Click-To-Run đã cài đặt ứng dụng. Cho phép chúng tôi xác định phiên bản nào của trình cài đặt đã được sử dụng để cài đặt Office để chúng tôi có thể xác định các sự cố liên quan đến thiết lập.
 
@@ -264,9 +265,9 @@ Danh mục này chứa các trường sau đây:
 
   - **IsDebug** - Cờ cho biết bản dựng Office có phải là một bản dựng Gỡ lỗi hay không. Cho phép chúng tôi xác định xem các sự cố đến từ các bản dựng Gỡ lỗi có thể hoạt động khác đi hay không.
 
-  - **IsInstalledOnExternalStorage** - Cờ cho biết nếu Office đã được cài đặt trên thiết bị lưu trữ ngoài. Hãy để chúng tôi xác định xem các sự cố có thể được truy tìm đến một vị trí lưu trữ bên ngoài hay không.
+  - **IsInstalledOnExternalStorage** - Cờ cho biết nếu Office đã được cài đặt trên thiết bị lưu trữ ngoài. Hãy để chúng tôi xác định xem có thể theo dõi các sự cố ở vị trí lưu trữ bên ngoài hay không.
 
-  - **IsOEMInstalled** - Cờ cho biết nếu Office được cài đặt bởi nhà sản xuất thiết bị gốc (OEM). Hãy để chúng tôi xác định xem ứng dụng đã được cài đặt bởi OEM có thể giúp chúng tôi phân loại và xác định sự cố.
+  - **IsOEMInstalled** - Cờ cho biết nếu Office đã được cài đặt bởi nhà sản xuất thiết bị gốc (OEM). Hãy để chúng tôi xác định xem ứng dụng đã được cài đặt bởi OEM có thể giúp chúng tôi phân loại và xác định sự cố hay không.
 
   - **PreviousVersion** - Phiên bản Office đã được cài đặt trước đó trên máy. Cho phép chúng tôi để quay trở lại phiên bản trước đó nếu phiên bản hiện tại gặp sự cố.
 
@@ -384,7 +385,7 @@ Danh mục này chứa các trường sau đây:
 
   - **SessionId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
 
-  - **Version** - Mã định danh phiên bản của tệp chính thực thi của máy chủ.
+  - **Version** - Mã định danh phiên bản của tệp thực thi chính của máy chủ.
 
 #### <a name="legacy"></a>Kế thừa
 
@@ -519,11 +520,133 @@ Các trường dữ liệu sau là phổ biến cho tất cả các sự kiện 
 
 - **UserInfo_IdType** - Chuỗi cho biết loại tài khoản của người dùng
 
-- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **UserInfo_OtherId** - Danh sách các mã định danh giả không phải là chính đại diện cho tài khoản của người dùng.
 
 - **UserInfo_OtherIdType** - Danh sách các loại tài khoản không phải là chính.
+
+## <a name="data-fields-that-are-common-for-outlook-mobile-events"></a>Các trường dữ liệu phổ biến đối với các sự kiện của Outlook trên thiết bị di động
+
+Outlook trên thiết bị di động thu thập trường phổ biến cho từng sự kiện của chúng tôi để chúng tôi có thể đảm bảo ứng dụng này cập nhật, an toàn và hoạt động như mong đợi. 
+
+Các trường dữ liệu sau phổ biến đối với tất cả các sự kiện cho Outlook trên iOS và Android.
+
+- **aad_tenant_id** - Id đối tượng thuê của khách hàng nếu có
+
+- **account_cid** - Mã định danh giả đại diện cho người dùng hiện tại
+
+- **account_domain** - Tên miền của tài khoản
+
+- **account_puid** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng
+
+- **account_type** - Theo dõi loại tài khoản như Office 365, Google Cloud Cache, Outlook.com, v.v.
+
+- **action** - Tên của sự kiện hành động (chẳng hạn như lưu trữ, xóa, v.v.) để chúng tôi có thể phát hiện các sự cố với hành động cụ thể được thực hiện
+
+- **ad_id** - Mã định danh quảng cáo duy nhất
+
+- **app_version** - Phiên bản hiện tại của ứng dụng được cài đặt giúp chúng tôi phát hiện các sự cố ảnh hưởng đến phiên bản ứng dụng hiện tại
+
+- **AppInfo.ETag** - Mã định danh duy nhất cho việc quản lý phát hành tính năng giúp chúng tôi phát hiện các sự cố ảnh hưởng đến tính năng nhất định đang được phát hành
+
+- **AppInfo.Language** - Cài đặt ngôn ngữ hiện tại của thiết bị giúp chúng tôi phát hiện các sự cố ảnh hưởng đến ngôn ngữ hiện tại
+
+- **AppInfo.Version** - Phiên bản hiện tại của ứng dụng được cài đặt giúp chúng tôi phát hiện các sự cố ảnh hưởng đến phiên bản ứng dụng nhất định
+
+- **ci** - mã định danh giả duy nhất của thiết bị dành riêng cho ứng dụng
+
+- **cid_type** - cho biết loại tài khoản là gì, chẳng hạn như tài khoản thuơng mại hay tài khoản Outlook.com.
+
+- **cloud** - Nơi hộp thư nằm trong tài khoản trên thiết bị này giúp phát hiện các sự cố cụ thể đối với đám mây hộp thư cụ thể như Office 365 hay GCC.
+
+- **customer_type** - Cho biết loại khách hàng (người tiêu dùng, người hoạt động thương mại, bên thứ ba, v.v.) để giúp chúng tôi phát hiện các sự cố ảnh hưởng đến loại khách hàng cụ thể
+
+- **device_category** - Cho biết loại thiết bị là gì (điện thoại, máy tính bảng, v.v.) để giúp chúng tôi phát hiện các sự cố cụ thể của danh mục thiết bị
+
+- **DeviceInfo.Id** - Mã định danh thiết bị duy nhất giúp chúng tôi phát hiện các sự cố cụ thể của thiết bị
+
+- **DeviceInfo.Make** - Nhà sản xuất của thiết bị (như Apple, Samsung, v.v.) giúp chúng tôi phát hiện các sự cố cụ thể của cấu tạo thiết bị
+
+- **DeviceInfo.Model** - Kiểu máy (như iPhone 6s) giúp chúng tôi phát hiện các sự cố cụ thể của kiểu máy
+
+- **DeviceInfo.NetworkType** - Mạng hiện tại đang được sử dụng trên thiết bị (WiFi, di động, v.v.) giúp chúng tôi phát hiện sự cố cụ thể của mạng trên thiết bị
+
+- **DeviceInfo.OsBuild** - Bản dựng hệ điều hành hiện tại của thiết bị giúp chúng tôi phát hiện các sự cố ảnh hưởng đến bản dựng hệ điều hành nhất định
+
+- **DeviceInfo.OsName** - Tên của hệ điều hành (ví dụ: iOS) giúp chúng tôi phát hiện các sự cố ảnh hưởng đến nền tảng nhất định
+
+- **DeviceInfo.OsVersion** - Phiên bản hệ điều hành hiện tại của thiết bị giúp chúng tôi phát hiện các sự cố ảnh hưởng đến phiên bản hệ điều hành nhất định
+
+- **DeviceInfo.SDKUid** - Mã định danh duy nhất của thiết bị (tương tự như DeviceInfo.Id)
+
+- **EventInfo.InitId** - Id được sử dụng làm một phần của trình tự sắp xếp sự kiện qua quy trình phép đo từ xa giúp chúng tôi phát hiện nguyên nhân gốc của sự cố quy trình
+
+- **EventInfo.SdkVersion** - Phiên bản SDK chúng tôi đang sử dụng để gửi phép đo từ xa giúp chúng tôi phát hiện ra nguyên nhân gốc của sự cố quy trình
+
+- **EventInfo.Sequence** - Trình tự để sắp xếp sự kiện qua quy trình phép đo từ xa giúp chúng tôi phát hiện nguyên nhân gốc của sự cố quy trình
+
+- **EventInfo.Source** - Cho chúng tôi biết phần nào của mã đã gửi sự kiện để giúp chúng tôi phát hiện nguyên nhân gốc của sự cố
+
+- **EventInfo.Time** - Ngày và giờ của sự kiện do thiết bị phát ra nên hệ thống của chúng tôi có thể thành công trong quản lý các sự kiện sắp tới
+
+- **eventpriority** - Mức độ ưu tiên của sự kiện phép đo từ xa liên quan đến các sự kiện khác nên hệ thống của chúng tôi có thể thành công trong quản lý các sự kiện sắp tới
+
+- **first_launch_date** - Lần đầu khởi chạy ứng dụng giúp chúng tôi hiểu được thời điểm sự cố bắt đầu
+
+- **hashed_email** - Mã định danh giả đại diện cho email người dùng hiện tại
+
+- **is_first_session** - Theo dõi xem đây có phải là phiên đầu tiên của ứng dụng cho mục đích gỡ lỗi
+
+- **origin** - Nguồn gốc của hành động. Ví dụ: việc đánh dấu thư đã đọc có thể bắt nguồn từ danh sách thư hoặc thông báo thư mới, điều này giúp chúng tôi phát hiện các sự cố dựa trên nguồn gốc hành động
+
+- **PipelineInfo.AccountId** - Mã định danh giả đại diện cho người dùng hiện tại
+
+- **PipelineInfo.ClientCountry** - Quốc gia hiện tại của thiết bị để phát hiện các sự cố và vấn đề cụ thể của quốc gia hoặc khu vực
+
+- **PipelineInfo.ClientIp** - Kết nối địa chỉ IP của thiết bị để gỡ lỗi sự cố kết nối
+
+- **PipelineInfo.IngestionTime** - Dấu thời gian khi việc nhập phép đo từ xa diễn ra cho sự kiện này
+
+- **Session.Id** - Mã định danh duy nhất cho phiên ứng dụng giúp xác định các sự cố liên quan đến phiên
+
+- **Session.ImpressionId** - Mã định danh duy nhất cho việc quản lý phát hành tính năng để đảm bảo tính năng được phát hành thành công cho tất cả người dùng và thiết bị
+
+- **ui_mode** - Là người dùng trong chế độ sáng hoặc tối, giúp chúng tôi xử lý các lỗi UX của chế độ tối
+
+- **UserInfo.Language** - Ngôn ngữ của người dùng giúp gỡ lỗi các sự cố về văn bản dịch
+
+- **UserInfo.TimeZone** - Múi giờ của người dùng giúp gỡ lỗi các sự cố về lịch
+
+
+Ngoài ra, các trường sau phổ biến đối với tất cả các sự kiện cho Outlook trên iOS.
+
+- **DeviceInfo.NetworkProvider** - Nhà cung cấp mạng của thiết bị (như Verizon)
+
+- **gcc_restrictions_enabled** - Cho chúng tôi biết liệu các hạn chế GCC có được áp dụng cho ứng dụng hay không để chúng tôi có thể đảm bảo khách hàng GCC sử dụng ứng dụng của chúng tôi một cách an toàn
+
+- **office_session_id** - Id duy nhất theo dõi phiên cho các dịch vụ Office được kết nối giúp phát hiện các sự cố tích hợp dịch vụ Office cụ thể trong Outlook như Word
+
+- **state** - Xem liệu ứng dụng có hoạt động khi sự kiện này được gửi giúp phát hiện các sự cố cụ thể đối với trạng thái ứng dụng hoạt động hay không hoạt động
+
+
+Ngoài ra, các trường sau phổ biến đối với tất cả các sự kiện cho Outlook trên Android.
+
+- **aad_id** - mã định danh giả cho Azure Active Directory
+
+- **DeviceInfo.NetworkCost** - Việc cho biết chi phí mạng hiện tại trên thiết bị phản ánh trạng thái của WiFi/Di động/Chuyển vùng giúp phát hiện các sự cố cụ thể đối với mạng trên thiết bị
+
+- **is_app_in_duo_split_view_mode** - Tính năng này cho chúng tôi biết liệu ứng dụng có ở chế độ Chia đôi màn hình.  Thuộc tính này chỉ dành cho các thiết bị có tính năng Duo (chỉ có ở Android).
+
+- **is_dex_mode_enabled** - Xem liệu chế độ DeX của Samsung có bật không giúp phát hiện các sự cố cụ thể đối với chế độ DeX trên thiết bị Samsung
+
+- **is_sliding_drawer_enabled** - Xem liệu giao diện Ngăn kéo trượt có bật không giúp phát hiện các sự cố do giao diện ngăn kéo trượt của chúng tôi gây ra
+
+- **orientation** - Hướng vật lý của màn hình (dọc/ngang) giúp phát hiện các sự cố cụ thể đối với hướng thiết bị
+
+- **os_arch** - Kiến trúc hệ điều hành của thiết bị giúp phát hiện các sự cố cụ thể đối với hệ điều hành của thiết bị
+
+- **process_bitness** - Xử lý bitness (32 hoặc 64 bit) cho ứng dụng giúp phát hiện các sự cố cụ thể đối với bitness của thiết bị
 
 ## <a name="software-setup-and-inventory-data-events"></a>Sự kiện thiết lập và kiểm kê phần mềm
 
@@ -560,7 +683,7 @@ Cho biết hộp thoại lựa chọn Định dạng tệp Office đã được 
 
 Các trường sau đây sẽ được thu thập.
 
-- **CountryRegion** – Thiết đặt vùng quốc gia của người dùng trong hệ thống Windows
+- **CountryRegion** - Cài đặt vùng quốc gia của người dùng trong hệ thống Windows
 
 - **FileFormatBallotBoxAppIDBootedOnce** – Trong ứng dụng nào (Word, Excel, PPT), logic hiển thị phiếu định dạng tệp đã được xử lý.
 
@@ -613,7 +736,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **osArchitecture** - Kiến trúc hệ điều hành
 
-- **osEnvironment** - Một số nguyên cho biết về hệ điều hành (Windows, Android, iOS, Mac, v.v.).
+- **osEnvironment** - Số nguyên cho biết hệ điều hành (Windows, Android, iOS, Mac, v.v.).
 
 - **osVersionString** Mã định danh hệ điều hành.
 
@@ -623,7 +746,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
 
-Tín hiệu quan trọng được sử dụng để đảm bảo người dùng mới có thể khởi động thành công và chạy OneNote lần đầu tiên.  Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+Tín hiệu quan trọng được sử dụng để đảm bảo người dùng mới có thể khởi động thành công và chạy OneNote lần đầu tiên.  Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
 - **AfterOneDriveFrozenAccountError** - Cho biết lỗi từ OneDrive khi một tài khoản bị đóng băng.
 
@@ -638,7 +761,7 @@ Tín hiệu quan trọng được sử dụng để đảm bảo người dùng 
 #### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
 
 Tín hiệu quan trọng được sử dụng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.
-Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -664,7 +787,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeonenotefirstrunfirstrunfororgid"></a>Office.OneNote.FirstRun.FirstRunForOrgId
 
-Tín hiệu quan trọng được sử dụng để đảm bảo người dùng doanh nghiệp mới (AAD/OrgID) đều có thể khởi động thành công và chạy OneNote lần đầu tiên.  Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+Tín hiệu quan trọng được sử dụng để đảm bảo người dùng doanh nghiệp mới (AAD/OrgID) đều có thể khởi động thành công và chạy OneNote lần đầu tiên.  Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
 - **Attempt** - Số lần mà trải nghiệm chạy lần đầu tiên cần thử lại.
 
@@ -708,11 +831,11 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_GetFileStreamFailedToCreateLocalFolder -** Sự kiện đĩa cục bộ gây ra lỗi trong việc tạo thư mục
 
-  - **Data\_GetFileStreamFromPackageFailed -** Cờ cho biết nếu gói đã được tải xuống, nhưng máy khách không thể đọc nó
+  - **Data\_GetFileStreamFromPackageFailed -** cờ cho biết nếu đã tải xuống gói, nhưng máy khách không thể đọc
 
   - **Data\_GetFileStreamFromPackageSuccess -** nỗ lực thành công để đọc gói
 
-  - **Data\_GetFileStreamSuccess -** Không có sự cố về đĩa cũng như sự cố về cấu hình mà không cho phép luồng tệp được đọc
+  - **Data\_GetFileStreamSuccess -** không có sự cố về đĩa cũng như sự cố về cấu hình không cho phép đọc luồng tệp
 
   - **Data\_GetRelativePathsFailed -** đường dẫn tương đối không trỏ đến vị trí có thể truy nhập
 
@@ -748,7 +871,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_VisioSKU**:**integer** - 0 cho SKU tiêu chuẩn và 1 cho SKU chuyên nghiệp
 
-#### <a name="onenoteapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated
+#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(tên cũ)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Ghi lại thông tin về trạng thái kích hoạt của Ứng dụng.  Dữ liệu được giám sát để đảm bảo rằng chúng tôi có xác định lưu trữ tạm văn bản theo nhóm trong các sự cố về kích hoạt. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện.
 
@@ -756,7 +879,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **INSTALL_LOCATION** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
 
-#### <a name="onenoteresetstatus"></a>OneNote.ResetStatus 
+#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(tên cũ)*, Office.OneNote.Android.ResetStatus
 
 Tín hiệu dùng để ghi lại mọi sự cố gặp phải khi người dùng cố gắng đặt lại Ứng dụng.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra trong quá trình đặt lại. 
 
@@ -770,7 +893,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Pass** - Cho biết có Đặt lại có thành công hay không
 
-#### <a name="onenotesigninsignincompleted"></a>OneNote.SignIn.SignInCompleted 
+#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInCompleted
 
 Tín hiệu quan trọng dùng để đảm bảo đăng nhập có thành công hay không. Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.
 
@@ -790,7 +913,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
 
-#### <a name="onenotesigninsigninstarted"></a>OneNote.SignIn.SignInStarted 
+#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInStarted
 
 Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
 
@@ -851,8 +974,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **StoreType** - Cho biết nguồn gốc của ứng dụng
 
-- **TelemetryId** - ID phép đo từ xa dựa trên danh tính đã đăng nhập
-
 
 #### <a name="officeextensibilitycatalogexchangegetentitlements"></a>Office.Extensibility.Catalog.ExchangeGetEntitlements
 
@@ -880,7 +1001,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Dữ liệu liên quan đến thành công khi không truy xuất dữ liệu quyền phần bổ trợ cho người quản trị viên đối tượng thuê Office 365 gán phần bổ trợ. Được sử dụng cho các số liệu về trạng thái, biểu đồ và phân tích các vấn đề của khách hàng. ExchangeGetLastUpdate sẽ luôn chạy khi khởi động như một phần của mã máy chủ và xác định xem hoạt động gán phần bổ trợ đã thay đổi cho người dùng hay chưa. Nếu vậy thì osf.DLL sẽ được tải để chúng tôi có thể gọi ExchangeGetEntitlements để nhận các hoạt động gán cụ thể (và ExchangeGetManifests sẽ được gọi để truy xuất bất kỳ bản kê mới nào cần thiết). ExchangeGetEntitlements (và ExchangeGetManifests) cũng có thể được gọi theo yêu cầu sau khi ứng dụng máy chủ đã chạy. Tốt nhất là không tải DLL lớn nếu chúng tôi không cần đến. Nếu không có sự kiện này trong phần Bắt buộc, chúng tôi sẽ không thể biết nếu người dùng không nhận được phần bổ trợ được gán cho họ nếu cuộc gọi dịch vụ đầu tiên đó không thành công. Đó cũng là tín hiệu chính cho bất kỳ vấn đề xác thực nào mà chúng tôi gặp phải khi giao tiếp với dịch vụ của chúng tôi.
+Dữ liệu liên quan đến thành công khi không truy xuất dữ liệu quyền phần bổ trợ cho người quản trị viên đối tượng thuê Office 365 gán phần bổ trợ. Được sử dụng cho các số liệu về trạng thái, biểu đồ và phân tích các vấn đề của khách hàng. ExchangeGetLastUpdate sẽ luôn chạy khi khởi động như một phần của mã máy chủ và xác định xem hoạt động gán phần bổ trợ đã thay đổi cho người dùng hay chưa. Nếu vậy thì osf.DLL sẽ được tải để chúng tôi có thể gọi ExchangeGetEntitlements để nhận các hoạt động gán cụ thể (và ExchangeGetManifests sẽ được gọi để truy xuất bất kỳ bản kê mới nào cần thiết). ExchangeGetEntitlements (và ExchangeGetManifests) cũng có thể được gọi theo yêu cầu sau khi ứng dụng máy chủ đã chạy.  Tốt nhất là không tải DLL lớn nếu chúng tôi không cần đến. Nếu không có sự kiện này trong phần Bắt buộc, chúng tôi sẽ không thể biết nếu người dùng không nhận được phần bổ trợ được gán cho họ nếu cuộc gọi dịch vụ đầu tiên đó không thành công.  Đó cũng là tín hiệu chính cho bất kỳ vấn đề xác thực nào mà chúng tôi gặp phải khi giao tiếp với dịch vụ của chúng tôi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1010,7 +1131,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilityvbatelemetrydeclare"></a>Office.Extensibility.VBATelemetryDeclare 
 
-Thu thập thông tin về việc gọi API Win32 hoặc giải pháp VBA. Được sử dụng để hiểu sự tương tác giữa VBA và việc sử dụng và để bổ sung cho các cuộc điều tra bảo mật.
+Thu thập thông tin về việc gọi API Win32 trong giải pháp VBA. Được sử dụng để hiểu sự tương tác giữa VBA và việc sử dụng và để bổ sung cho các cuộc điều tra bảo mật.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1305,6 +1426,361 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 
 Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác).
 
+#### <a name="account_action"></a>account_action
+
+Cần thiết để đảm bảo cấu hình tài khoản vận hành thành công và được dùng để giám sát trạng thái tạo tài khoản, khả năng thêm tài khoản email mới và giám sát các lần đặt lại tài khoản tạm thời 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **account_calendar_count** – số lượng lịch mà tài khoản sở hữu
+ 
+- **action** – kiểu hành động được thực hiện, ví dụ: create_account, delete_account.
+ 
+- **duration_seconds** – thời lượng diễn ra hành động
+ 
+- **entry_point** – điểm vào của hành động, cách người dùng bắt đầu hành động
+ 
+- **has_hx** – liệu thiết bị có tài khoản nào đang sử dụng dịch vụ đồng bộ thư mới của chúng tôi hay không, không nhất thiết phải là tài khoản mà hành động đã được thực hiện theo đó
+ 
+- **is_hx** – tài khoản có sử dụng dịch vụ đồng bộ thư mới của chúng tôi không
+ 
+- **is_shared_mailbox** – liệu hành động có liên quan đến hộp thư chung hay không
+ 
+- **number_of_accounts** – tổng số tài khoản mà trên đó thực hiện hành động
+ 
+- **result** – kết quả của hành động, ví dụ: thành công, thất bại.
+   
+- **server_type** – loại máy chủ cho tài khoản, tương tự như account_type
+ 
+- **shared_type** – loại tài khoản chung (nếu tài khoản được dùng chung)
+ 
+- **scope** – phạm vi hành động; để xóa tài khoản, this_device hoặc all_devices
+ 
+- **total_calendar_accounts** – số lượng tài khoản lịch trong ứng dụng tại thời điểm xảy ra hành động
+ 
+- **total_email_accounts** – số lượng tài khoản email trong ứng dụng tại thời điểm xảy ra hành động
+ 
+- **total_file_accounts** - số lượng tài khoản tệp trong ứng dụng tại thời điểm xảy ra hành động
+
+#### <a name="account_lifecycle"></a>account_lifecycle
+
+Sự kiện này được thu thập để đảm bảo cấu hình tài khoản vận hành thành công và được dùng để giám sát trạng thái tạo tài khoản, khả năng thêm tài khoản email mới và giám sát những lần đặt lại tài khoản tạm thời.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **action** - Loại hành động được thực hiện trên tài khoản, chẳng hạn như thêm, loại bỏ hoặc đặt lại
+
+#### <a name="add_new_account_step"></a>add_new_account_step
+
+Sự kiện này giúp chúng tôi phát hiện người dùng đã đến bước nào trong biểu mẫu tạo tài khoản mới.  Sự kiện này cho thấy thời điểm người dùng đã di chuyển sang bước khác hoặc thời điểm họ đã bỏ bước.  Chúng tôi cần thông tin này để phát hiện xem có bất kỳ bước nào chưa hoàn tất và để đảm bảo rằng việc tạo tài khoản người dùng đã thành công. 
+
+Trường sau sẽ được thu thập: 
+
+- **OTAddAccountCurrentStep** - Có thể có các giá trị sau: profile_form, redirect_mobile_check, mobile_check_success
+
+#### <a name="app_error"></a>app_error
+
+Theo dõi các lỗi ứng dụng quan trọng đã dùng để chúng tôi ngăn được các vấn đề có thể khiến ứng dụng của bạn gặp sự cố hoặc làm bạn đọc không đọc được email.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **clientName** – Tên của máy khách đối với tệp trên nền điện toán đám mây mà ở đó đã xảy ra lỗi, nếu áp dụng.
+
+- **cloudfile_error_type** – Loại lỗi đã xảy ra đối với tệp trên nền điện toán đám mây, nếu áp dụng.
+
+- **cloudfile_response_name** – Tên phản hồi cho lỗi đã xảy ra đối với tệp trên nền điện toán đám mây, nếu áp dụng.
+
+- **component_name** – Tên cấu phần của ứng dụng mà ở đó đã xảy ra lỗi, chẳng hạn như thư hoặc lịch.
+
+- **debug_info** – Thông tin về lỗi đã xảy ra đối với tệp trên nền điện toán đám mây để có thể xác định nguyên nhân xảy ra lỗi.
+
+- **error_origin_identifier** – Nguồn gốc của lỗi đã xảy ra trên bản nháp rằng đã xảy ra lỗi, nếu áp dụng.
+
+- **error_type** – Loại lỗi đã xảy ra. Một số ví dụ bao gồm lưu bản nháp, gửi bản nháp và lỗi tệp trên nền điện toán đám mây.
+
+- **exrule** – giá trị quy tắc mở rộng (chỉ áp dụng với các lỗi lặp lại cuộc hẹn)
+
+- **exdate** – ngày quy tắc mở rộng (chỉ áp dụng với các lỗi lặp lại cuộc hẹn)
+
+- **has_attachments** – Phản ánh liệu bản nháp đã xảy ra lỗi có tệp đính kèm hay không, nếu áp dụng.
+
+- **is_IRM_protected** – Phản ánh liệu bản nháp đã xảy ra lỗi có được quản lý quyền thông tin bảo vệ hay không, nếu áp dụng.
+
+- **is_legitimate** – Phản ánh xem lỗi có xuất phát từ lỗi lập trình hay không. Lỗi lập trình được coi là không hợp lệ.
+
+- **is_local** – Phản ánh xem liệu bản nháp đã xảy ra lỗi đã đồng bộ với máy chủ hay chưa, nếu có thể áp dụng.
+
+- **is_recoverable** – Phản ánh liệu lỗi này có thể được khôi phục được hay không hay đó là lỗi nghiêm trọng.
+
+- **rdate** – ngày diễn ra quy tắc lặp lại (chỉ áp dụng với các lỗi lặp lại cuộc hẹn) 
+
+- **rrule** – chính quy tắc lặp lại (chỉ áp dụng với các lỗi lặp lại cuộc hẹn) 
+
+- **rrule_error_message** – thông báo lỗi phân tích quy tắc lặp lại (chỉ áp dụng với các lỗi lặp lại cuộc hẹn)
+
+- **rrule_error_type** – loại lỗi phân tích quy tắc lặp lại (chỉ áp dụng với các lỗi lặp lại cuộc hẹn)
+
+- **status_code** – Mã trạng thái của lỗi đã xảy ra. Mã này sẽ giúp chúng tôi hiểu nguyên nhân gây ra lỗi.
+
+Mọi ký tự cũng đều có thể là thuộc tính. Điều này giúp chúng tôi hiểu được các ký tự trong phần nội dung của thư nháp khi xảy ra lỗi. Ví dụ: "a", "b", "c" đề có thể là thuộc tính.
+
+#### <a name="app_launch_report"></a>app_launch_report
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó Outlook khởi động chậm hoặc không hoàn toàn, khiến người dùng khó sử dụng ứng dụng của chúng tôi. Sự kiện bao gồm thông tin về các tính năng cụ thể đã được bật và thời lượng các phần khởi động diễn ra.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **is_agenda_widget_active** – Cho chúng tôi biết liệu tiện ích lịch công tác có đang hoạt động hay không.
+
+- **is_alert_available** – Cho chúng tôi biết liệu ứng dụng đã được đặt cấu hình để cho phép cảnh báo trong thông báo hay chưa.
+
+- **is_background_refresh_available** – Cho biết liệu ứng dụng đã được đặt cấu hình để có thể làm mới trong nền hay chưa.
+
+- **is_badge_available** - Cho chúng tôi biết liệu ứng dụng đã được đặt cấu hình để cho phép huy hiệu trong thông báo hay chưa.
+
+- **is_intune_managed** – Cho chúng tôi biết liệu ứng dụng có được Intune quản lý hay không.
+
+- **is_registered_for_remote_notifications** – Cho chúng tôi biết liệu ứng dụng đã được đăng ký để nhận thông báo từ xa hay chưa.
+
+- **is_sound_available** – Cho chúng tôi biết liệu ứng dụng đã được đặt cấu hình để cho phép âm thanh trong thông báo hay chưa.
+
+- **is_watch_app_installed** – Cho chúng tôi biết liệu ứng dụng Outlook trên đồng hồ đã được cài đặt hay chưa.
+
+- **is_watch_paired** – Cho chúng tôi biết liệu ứng dụng Outlook trên đồng hồ đã được ghép nối với ứng dụng Outlook chính hay chưa.
+
+- **launch_to_db_ready_ms** – Cho chúng tôi biết thời lượng ứng dụng Outlook đã sử dụng từ khi khởi chạy đến khi cơ sở dữ liệu đã sẵn sàng.
+
+- **num_calendar_accounts** – Cho chúng tôi biết số lượng tài khoản lịch trong ứng dụng.
+
+- **num_cloud_file_accounts** – Cho chúng tôi biết số lượng tài khoản lưu trữ trong ứng dụng.
+
+- **num_hx_calendar_accounts** – Cho chúng tôi biết số lượng tài khoản lịch kết nối với dịch vụ đồng bộ thư mới của chúng tôi trong ứng dụng.
+
+- **num_hx_mail_accounts** – Cho chúng tôi biết số lượng tài khoản thư kết nối với dịch vụ đồng bộ thư mới của chúng tôi trong ứng dụng.
+
+- **num_mail_accounts** – Cho chúng tôi biết số lượng tài khoản thư trong ứng dụng.
+
+#### <a name="calendar_action"></a>calendar_action
+
+Được dùng để giám sát mọi tác động tiêu cực có thể xảy ra với khả năng thực hiện các hành động quan trọng trên lịch của bạn như tạo hoặc chỉnh sửa các sự kiện.  Sự kiện còn có thể bao gồm một loạt tên thuộc tính và liệu các tên này đã thay đổi hay chưa. Ví dụ: "title_changed", "online_meeting_changed" và "description_changed" đều là tên thuộc tính được đưa vào để giúp chúng tôi hiểu được liệu có sự cố nào khi chỉnh sửa một số thuộc tính nhất định hay không.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **account_sfb_enabled** – Giúp chúng tôi đảm bảo rằng Skype for Business được đặt cấu hình đúng cách. 
+
+- **action** – Loại hành động đã được thực hiện trên lịch. Hành động này bao gồm các thao tác như mở, chỉnh sửa, thêm phím tắt, tạm ngưng v.v. Giúp chúng tôi đảm bảo trải nghiệm lịch của chúng tôi đang hoạt động như dự kiến và không có trục trặc gì 
+
+- **action_result** – Kết quả của hành động được thực hiện trên các cấu phần lịch. Kết quả này có thể bao gồm các giá trị như thành công, thất bại, chưa xác định và hết thời gian chờ. Được dùng để theo dõi tỉ lệ thành công của các hành động và xác định xem có sự cố phổ biến nào với các hành động lịch hay không. 
+
+- **attendee_busy_status** – Trạng thái rảnh/bận của người dự có liên quan đến hành động. Giá trị này có thể là rảnh, bận hoặc dự định. Giúp chúng tôi hiểu được có sự cố nào với hành động liên quan đến một trạng thái bận nhất định hay không. 
+
+- **availability** – Giá trị tính sẵn sàng nếu giá trị rảnh/bận đã thay đổi trong cuộc họp. Giúp chúng tôi hiểu được có sự cố nào trong việc thiết lập một giá trị tính sẵn sàng nhất định hay không. 
+
+- **calendar_onlinemeeting_default_provider** – Bao gồm nhà cung cấp cuộc họp trực tuyến mặc định để sử dụng với việc tạo cuộc họp trực tuyến được máy chủ hỗ trợ. Điều này bao gồm các loại Skype, Skype for Business, Hangout và Teams for Business. Giúp chúng tôi chẩn đoán các sự cố tiềm ẩn bằng cách tạo cuộc họp trực tuyến trên một số nhà cung cấp nhất định. 
+
+- **calendar_onlinemeeting_enabled** – True nếu lịch hỗ trợ việc tạo cuộc họp trực tuyến được máy chủ hỗ trợ của dựa trên một nhà cung cấp cuộc họp trực tuyến mặc định. Giúp chúng tôi hiểu được có sự cố nào với lịch cuộc họp trực tuyến đã kích hoạt hay không. 
+
+- **calendar_type** – Loại lịch sự kiện đã bật sau khi người dùng chỉnh sửa cuộc họp. Các giá trị khả thi bao gồm sơ cấp, thứ cấp, chung và nhóm. Giúp chúng tôi hiểu được có sự cố nào với một loại lịch nhất định hay không. 
+
+- **delete_action_origin** – Nguồn gốc của hành động xóa đã thực hiện. Điều này bao gồm các giá trị như thanh dẫn hướng, thanh công cụ và thanh công cụ dạng hộp.  Giúp chúng tôi hiểu xem liệu có sự cố nào với việc xóa cuộc họp khỏi một vị trí nhất định hay không. 
+
+- **distribution_list_count** – Số người dự trên danh sách phân phối. Giúp chúng tôi theo dõi xem có sự cố nào với người dự trên danh sách phân phối hay không. 
+
+- **guest_count** – Số lượng khách trong cuộc họp.  Giúp chúng tôi đảm bảo rằng các khách đang được thêm vào là chính xác. 
+
+- **is_all_day** - Được sử dụng cùng với "meeting_duration" để xác định xem đây có phải là cuộc họp cả ngày hay không. Giúp chúng tôi hiểu được có sự cố nào với các hành động được thực hiện trên các cuộc họp cả ngày hay không. 
+
+- **is_organizer** – Giúp chúng tôi hiểu được người tổ chức có thể chỉnh sửa và tạo cuộc họp một cách chính xác hay không. 
+
+- **is_recurring** – Giúp chúng tôi hiểu được có sự cố nào ảnh hưởng đặc biệt đến các cuộc họp định kỳ hay không. 
+
+- **launch_point** – Điểm khởi chạy của hành động. Có thể là các giá trị như đầu đề tiện ích, chân trang tiện ích, tiện ích chạy cả ngày và lối tắt lịch. Giúp chúng tôi hiểu được ngữ cảnh mà hành động đã bắt đầu. 
+
+- **location_count** – Số lượng vị trí được đặt trên mục tạo và chỉnh sửa sự kiện. Giúp chúng tôi hiểu xem được có bất kỳ sự cố nào với việc tạo hoặc chỉnh sửa các sự kiện với một số vị trí nhất định hay không. 
+
+- **location_selection_source_type** – Kiểu nguồn lựa chọn vị trí. Điều này có thể bao gồm các giá trị như đề xuất vị trí, tùy chỉnh và hiện có. Giúp chúng tôi chẩn đoán mọi sự cố khi chọn một vị trí từ nguồn nhất định. 
+
+- **location_session_id** – ID của phiên bộ chọn của vị trí cuộc họp. Giúp chúng tôi chẩn đoán mọi sự cố khi chọn một vị trí để thêm vào cuộc họp. 
+
+- **location_type** – Loại vị trí đã chọn.  Chứa các loại như vị trí tùy chỉnh, phòng hội thảo và Bing. Giúp chúng tôi tìm hiểu được các sự cố khi thêm một số kiểu vị trí nhất định vào cuộc họp. 
+
+- **meeting_duration** – Thời lượng cuộc họp.  Giúp chúng tôi đảm bảo cuộc họp đang được đặt cấu hình theo thời gian chính xác. 
+
+- **meeting_insights_type** – Dạng thông tin chuyên sâu về cuộc họp trong chi tiết sự kiện.  Dạng thông này bao gồm tệp và thư. Giúp chúng tôi hiểu được số lượng thông tin chuyên sâu về cuộc họp đang được hiển thị. 
+
+- **meeting_type** – Kiểu cuộc họp trực tuyến liên kết với hành động.  Điều này bao gồm các loại Skype, Skype for Business, Hangout và Teams for Business. Giúp chúng tôi hiểu được cuộc họp trực tuyến đã được đặt cấu hình đúng cách hay chưa. 
+
+- **origin** – Nguồn gốc của hành động lịch. Nguồn gốc này bao gồm các loại như lịch công tác, lịch, lịch công tác tiện ích, v.v. Giúp chúng tôi đảm bảo hơn về việc tương tác trong các cấu phần lịch đang hoạt động đúng cách 
+
+- **recurrence_scope** – Loại lặp lại của cuộc họp, là trường hợp hoặc chuỗi.  Giúp chúng tôi hiểu được có bất kỳ sự cố nào khi chỉnh sửa các loại lặp lại cuộc họp khác nhau hay không. 
+
+- **reminder_time** – Thời gian nhắc cuộc họp nếu thời gian đã thay đổi.  Được dùng để đảm bảo thời gian nhắc cuộc họp được lưu đúng cách. 
+
+- **reminders_count** – Số lời nhắc về sự kiện nếu lời nhắc đã thay đổi. Giúp chúng tôi chẩn đoán mọi sự cố khi có nhiều lời nhắc về một sự kiện. 
+
+- **sensitivity** – Độ nhạy cảm của cuộc họp. Thông tin này bao gồm các loại là thông thường, cá nhân, riêng tư và tuyệt mật. Giúp chúng tôi hiểu được độ nhạy cảm của cuộc họp đang được đặt cấu hình đúng cách hay chưa. 
+
+- **session_duration** – Thời lượng phiên làm việc tính bằng mili giây. Giúp chúng tôi hiểu được có sự cố nào đang gia tăng thời lượng cần thiết để thực hiện hành động lịch hay không. 
+
+- **shared_calendar_result** – Kết quả hành động được thực hiện trên lịch chung. Các giá trị khả thi bao gồm OK, không có quyền, không xác định, chủ sở hữu tại chỗ và chủ sở hữu là nhóm. Giúp chúng tôi hiểu được tính tin cậy của hành động đã thực hiện trên lịch chung. 
+
+- **time_picker_origin** – Nguồn gốc của bộ chọn thời gian cho một hành động lưu. Bao gồm các giá trị như thêm tùy chọn và giảm tùy chọn. Giúp chúng tôi hiểu được cách người dùng điều hướng quy trình lưu cuộc họp và đảm bảo hoạt động đúng cách 
+
+- **title** - Tiêu đề được đề xuất tự động từ các giá trị do ứng dụng xác định. Bao gồm các giá trị như "Cuộc gọi", "Ăn trưa" và "Skype". Giúp chúng tôi hiểu được tiêu đề được đề xuất tự động có được đặt cấu hình đúng cách hay không. 
+
+- **txp** – Loại đặt chỗ hoặc đặt trước sự kiện, nếu có. Điều này bao gồm các loại như đặt sự kiện, đặt chuyến bay, đặt thuê ô tô, v.v. Giúp chúng tôi hiểu được thẻ đặt chỗ/đặt trước có đang hoạt động đúng cách hay không. 
+
+- **upcoming_event_count** – Số lượng sự kiện sắp diễn ra được hiển thị trong dạng xem sự kiện sắp diễn ra. Giúp chúng tôi hiểu được có sự cố với dạng xem sự kiện sắp diễn ra hay không. 
+
+- **upcoming_event_seconds_until_event** – Số giây cho đến khi sự sắp tới tiếp theo bắt đầu. Giúp chúng tôi hiểu được các sự kiện điển hình hiển thị trong dạng xem sự kiện sắp diễn ra. 
+
+- **value** – Thông tin cụ thể về hành động như thời lượng độ trễ cảnh báo hoặc danh mục lặp lại cho đến. Giúp chúng tôi hiểu được ngữ cảnh mà hành động đã thực hiện. 
+
+#### <a name="combined_search_use"></a>combined_search_use
+
+Được dùng để giám sát tác động tiêu cực có thể xảy ra với khả năng thực hiện chức năng tìm kiếm chính của bạn như tìm kiếm thư, liên hệ hoặc sự kiện.
+
+Các trường sau đây sẽ được thu thập:  
+
+- **account_switcher_action_type** – Loại hành động này theo dõi nếu người dùng sử dụng trình chuyển đổi tài khoản trong quá trình chỉ đơn giản là khám phá hoặc nếu họ đã quyết định chuyển đổi tài khoản
+
+- **action** – loại hành động đã được thực hiện cho tìm kiếm. Điều này xác định liệu một tìm kiếm đã bắt đầu, xảy ra hoặc kết thúc hay chưa và những hành động nào đã xảy ra trong quá trình tìm kiếm, tức là đã sử dụng mic chưa. Đây là công cụ trong việc đảm bảo các tìm kiếm là chính xác và hữu ích.
+
+- **action_type** – Loại hành động đã được thực hiện cho tìm kiếm. Điều này xác định liệu một tìm kiếm đã bắt đầu, xảy ra hoặc kết thúc hay chưa và những hành động nào đã xảy ra trong quá trình tìm kiếm, tức là đã sử dụng mic chưa. Đây là công cụ trong việc đảm bảo các tìm kiếm là chính xác và hữu ích. 
+
+- **answer_result_selected_count** - theo dõi số lần tìm kiếm "thành công", như người dùng đã tìm thấy người mà họ muốn hay chưa? Bạn đã soạn thảo một email? Bạn đã đánh dấu thư? 
+
+- **contact_result_in_full_list_selected_count** - theo dõi số lần người dùng yêu cầu "xem tất cả liên hệ" trong danh sách đầy đủ được chọn trong phiên tìm kiếm kết hợp
+
+- **contact_result_selected_count** – theo dõi số lượng kết quả liên hệ được chọn trong phiên tìm kiếm kết hợp
+
+- **conversation_result_selected_count** – theo dõi số lượng cuộc hội thoại được chọn trong phiên tìm kiếm kết hợp
+
+- **entrance_type** – Điều này sẽ xác định cách người dùng bắt đầu truy vấn tìm kiếm, từ tab tìm kiếm, truy vấn bằng không, đầu đề tìm kiếm hay kết quả tìm kiếm. 
+
+- **has_contact_results** – Đơn giản cho dù kết quả liên hệ có được hiển thị trong truy vấn tìm kiếm hay không
+
+- **include_deleted** – liệu tìm kiếm có hiển thị các tùy chọn đã xóa trong kết quả tìm kiếm hay không 
+
+- **re_enter_search_tab** – Boolean cho biết liệu người dùng đã chuyển đổi tab trước khi chọn một kết quả tìm kiếm hay chưa.
+
+- **result_selected_type** – Loại dữ liệu nào được hiển thị là người dùng tương tác cùng, tức là xem tất cả các liên hệ, cuộc trò chuyện, sự kiện, v.v 
+
+- **search_conversation_result_data** – Điều này chứa dữ liệu về cuộc hội thoại được chọn từ kết quả tìm kiếm, trong đó có loại tài khoản (hx, ac, v.v), liệu thư có bị một dịch vụ điện toán đám mây giữ và liệu phần bù trang được hiển thị có tương tự như thư đầu tiên hay không. 
+
+- **search_origin** – Tìm kiếm bắt nguồn từ đâu, tức là trợ lý giọng nói, Cortana, nhập từ bàn phím, v.v 
+
+- **search_request_reason** – Cho biết lý do yêu cầu tìm kiếm được gửi từ ứng dụng, có hiệu lực chỉ ra thành phần hoặc hành động người dùng đã gọi tìm kiếm.
+
+- **search_result_filter_type** – Cho biết loại bộ lọc đã được áp dụng để tìm kiếm, hiển thị tất cả hay chỉ tệp đính kèm
+
+- **search_scope** – Chuỗi cho biết người dùng đã tìm kiếm khi sử dụng loại tài khoản nào (tức là Exchange, Gmail, v.v) hoặc nếu tìm kiếm diễn ra trong Tất cả các tài khoản. 
+
+- **search_session_ended_type** – Cho biết vị trí tìm kiếm kết thúc vì tìm kiếm bị hủy hoặc tìm kiếm được cập nhật là truy vấn
+
+- **search_suggestion_type** – cho biết điều gì xảy ra đằng sau đề xuất tìm kiếm, tức là sửa lỗi chính tả? Dựa trên lịch sử? Tự động hoàn tất?
+
+- **see_all_contacts_selected_count** – theo dõi số lần "xem tất cả liên hệ" được chọn trong phiên tìm kiếm kết hợp
+
+- **subtab_type** –  theo dõi nơi người dùng đã chọn kết quả từ tab kết quả
+
+- **top_mail_result_selected_count** – theo dõi số lần người dùng chọn các kết quả hàng đầu được cung cấp cho họ. 
+
+#### <a name="compose_mail_accessory"></a>compose_mail_accessory
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố với hành động soạn thư chính để giúp bạn tránh gặp sự cố khi đính kèm tệp, chụp ảnh dưới dạng tệp đính kèm hoặc gửi tính sẵn sàng của bạn.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **action** – Cho chúng tôi biết hành động đã được thử khi hành động được ghi nhật ký lại. Một số ví dụ bao gồm đính kèm tệp và trình bày thêm các tùy chọn.
+
+- **icon_name** – Cho chúng tôi biết tên của biểu tượng đang hiển thị khi hành động được ghi nhật ký lại.
+
+#### <a name="conversation_view_action"></a>conversation_view_action
+
+Được dùng để giám sát tác động tiêu cực có thể xảy ra với khả năng xem và trả lời thư email của bạn
+
+Các trường sau đây sẽ được thu thập:
+
+- **contains_mention** – Cho chúng tôi biết liệu cuộc hội thoại có áp dụng lượt @đề cập đến nào để giúp chúng tôi phát hiện sự cố với thao tác đề cập email hay không
+
+- **conversation_type** – Cho chúng tôi biết loại dạng xem email nào đã được kết xuất, chẳng hạn như dạng xem thư đơn hay dạng xem nhiều thư. Giúp chúng tôi phát hiện các sự cố liên quan đến một loại thư cụ thể trong dạng xem trò chuyện email của chúng tôi.
+
+- **suggested_reply_char_count** – Cho chúng tôi biết có bao nhiêu ký tự khi chúng tôi cung cấp câu trả được đề xuất (nếu có) để giúp chúng tôi phát hiện các bất thường và sự cố liên quan đến đề xuất của chúng tôi
+
+- **suggested_reply_click_pos** – Cho chúng tôi biết vị trí câu trả lời được đề xuất (nếu có) sẽ kết xuất để chúng tôi có thể phát hiện sự cố với đề xuất cụ thể
+
+- **use_default_quick_reply_mode** – Cho chúng tôi biết liệu chế độ trả lời nhanh mặc định có được sử dụng để giúp chúng tôi phát hiện các sự cố liên quan đến trải nghiệm trả lời nhanh cho email hay không
+
+#### <a name="draft_action"></a>draft_action
+
+Được dùng để giám sát tác động tiêu cực có thể xảy ra với khả năng tạo và lưu thư nháp của bạn.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **action** – loại hành động, ví dụ: lưu, bỏ qua.
+ 
+- **draft_message_id** – ID thư của bản nháp
+
+- **is_groups** – liệu bản nháp có đang được gửi đến/gửi từ thư mục nhóm
+ 
+- **origin** – nơi khởi tạo bản nháp, ví dụ: thông tin chi tiết của thư, soạn thảo.
+
+- **smart_compose_model_version** - theo dõi phiên bản kiểu máy soạn thảo thông minh đang được sử dụng
+
+- **suggestions_requested** - cho biết số lượng đề xuất soạn thảo thông minh theo yêu cầu
+
+- **suggestions_results** - kết quả của đề xuất soạn thảo thông minh, như được chấp nhận, bị từ chối
+
+- **suggestions_returned** - cho biết số lượng đề xuất soạn thảo thông minh được trả về từ máy chủ
+
+- **suggestions_shown** - cho biết số lượng đề xuất soạn thảo thông minh hiển thị cho người dùng
+ 
+- **thread_id** – ID chuỗi của bản nháp cuộc trò chuyện được liên kết cùng
+
+#### <a name="drag_and_drop"></a>drag_and_drop
+
+Sự kiện này giúp chúng tôi phát hiện ra hành động kéo và thả có thành công hay không.  Sự kiện này được sử dụng để đảm bảo trải nghiệm kéo và thả đang hoạt động đúng cách trên các ứng dụng cả dưới dạng sự kiện thả vào Outlook và sự kiện kéo rời khỏi Outlook.  Với dữ liệu này, chúng tôi có thể đảm bảo rằng trải nghiệm đầu cuối với các ứng dụng khác đang hoạt động như mong đợi.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **action** – Hành động có thể là kéo hoặc thả
+
+- **location** – Trong trường hợp là hành động kéo, thuộc tính này sẽ cho chúng tôi biết vị trí người dùng đã bắt đầu kéo.  Trong trường hợp là hành động thả, thuộc tính này sẽ cho chúng tôi biết vị trí người dùng đã thả tệp đang được kéo. 
+
+- **source** – Trong trường hợp là hành động thả, thuộc tính này sẽ cho chúng tôi biết vị trí người dùng đã bắt đầu kéo. Thuộc tính này giúp chúng tôi tìm hiểu các sự cố với nguồn cụ thể như OneDrive hoặc Tệp trong một vị trí thả cụ thể, chẳng hạn như email mới.
+
+#### <a name="drawer_event"></a>drawer_event
+
+Được dùng để giám sát tác động tiêu cực có thể xảy ra với khả năng truy nhập vào các thư mục trong hộp thư đến của bạn
+
+Các trường sau đây sẽ được thu thập:
+
+- **add_calendar_option** – Cho biết loại lịch đang được thêm từ ngăn kéo, tức là lịch thú vị, lịch thư, lịch chung để giúp chúng tôi phát hiện các sự cố liên quan đến các loại lịch cụ thể
+
+- **calendar_accounts_count** – Cho biết số lượng tài khoản lịch để giúp chúng tôi phát hiện các sự cố liên quan đến số lượng tài khoản bạn có
+
+- **calendar_apps_count** – Cho biết số lượng ứng dụng lịch có mặt trên thiết bị của người dùng để giúp chúng tôi phát hiện các sự cố liên quan đến ứng dụng lịch
+
+- **drawer_type** – Cho biết loại ngăn kéo: lịch, thư hoặc truy vấn bằng không để giúp chúng tôi phát hiện các sự cố liên quan đến loại ngăn kéo
+
+- **from_favorites** – Cho biết liệu hành động có được bắt đầu từ mục yêu thích hay không để giúp chúng tôi phát hiện các sự cố liên quan đến mục yêu thích
+
+- **group_calendar_count** – Cho biết số lượng lịch cho tài khoản để giúp chúng tôi phát hiện các sự cố liên quan đến lịch nhóm
+
+- **inbox_unread_count** – Cho biết số lượng thư chưa đọc trong hộp thư đến để giúp chúng tôi phát hiện các sự cố khi hiển thị số lượng thư chưa đọc trong hộp thư.
+
+- **interesting_calendar_accounts_count** – Cho biết số lượng tài khoản đủ điều kiện cho lịch thú vị trên thiết bị để giúp chúng tôi phát hiện các sự cố liên quan đến lịch thú vị
+
+- **is_group_calendar** – Cho biết liệu lịch có phải là lịch nhóm hay không để giúp chúng tôi phát hiện các sự cố liên quan đến lịch nhóm
+
+- **mail_folder_type** – Cho biết loại thư mục thư có, tức là hộp thư đến, bản nháp, v.v để giúp chúng tôi phát hiện các sự cố liên quan đến các loại thư mục.
+
+- **mail_accounts_count** – cho biết số lượng tài khoản thư để giúp chúng tôi phát hiện các sự cố liên quan đến tài khoản thư.
+
+- **selected_group_calendar_count** – Cho biết số lượng lịch nhóm được chọn và đang hoạt động trong giao diện người dùng
+
+- **visibility_toggle** – cho biết liệu người dùng có đang bật hay tắt một lịch cho trước để giúp chúng tôi phát hiện các sự cố liên quan đến thao tác hiển thị hoặc ẩn lịch
 
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
@@ -1738,6 +2214,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
 
+- **RMS.PL.KeyType** – Giá trị 'Đơn' hay 'Kép'. Cho biết liệu PL được bảo vệ bằng Khóa bảo vệ đơn hay Khóa bảo vệ kép.
+
 - **RMS.RACType** - Loại Chứng nhận tài khoản quyền
 
 - **RMS.Result** -Thành công hay thất bại của cuộc gọi API
@@ -1787,6 +2265,313 @@ Các trường sau đây sẽ được thu thập:
 - **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
 
 - **RMS.StatusCode** - ID kịch bản được xác định bởi API
+
+
+#### <a name="link_clicked_action"></a>link_clicked_action
+
+Sự kiện được sử dụng để theo dõi thành công của người dùng trong việc xem URL trong chế độ xem web của Microsoft Edge và hoàn tất các kịch bản web chuẩn trong dạng xem web mà không gặp phải lỗi
+
+Các trường sau đây sẽ được thu thập:
+
+- **account_type** - nếu chế độ xem web của Microsoft Edge được khởi chạy từ email hoặc sự kiện trong Outlook, loại tài khoản nguồn của URL
+
+- **action** - hành động người dùng thực hiện trong Outlook từ thời điểm họ nhấn vào URL đến thời điểm họ thoát khỏi luồng đó (mở liên kết trong chế độ xem web của Microsoft Edge, trang không tải được trong chế độ xem web, thực hiện tìm kiếm trong chế độ xem web, thoát khỏi chế độ xem web của Microsoft Edge để mở liên kết trong ứng dụng trình duyệt web v.v.)
+
+- **duration** – thời lượng của phiên người dùng
+
+- **launch_type** - nếu chế độ xem web của Microsoft Edge được khởi chạy là từ Outlook, từ tiện ích hoặc từ cấu phần của hệ điều hành
+
+- **origin** - nếu người dùng thực hiện hành động trong chế độ xem web của Microsoft Edge, nguồn gốc của hành động
+
+- **referrer** - vị trí của URL mà người dùng đã nhấn vào (email, sự kiện lịch, thẻ TXP, v.v.)
+
+- **search_scope** - nếu người dùng thực hiện tìm kiếm trong chế độ xem web của Microsoft Edge, phạm vi của tìm kiếm (Tất cả, Hình ảnh, Video, v.v.)
+
+- **search_subtype** - nếu người dùng thực hiện tìm kiếm trong chế độ xem web của Microsoft Edge là tìm kiếm ban đầu hoặc tìm kiếm tinh chỉnh
+
+- **session_summary_page_loaded_count** - số trang người dùng tải xuống trong phiên làm việc của họ ở chế độ xem web của Microsoft Edge
+
+- **session_summary_search_count** - số lượng tìm kiếm trên Bing mà người dùng đã thực hiện trong phiên làm việc của họ ở chế độ xem web của Microsoft Edge
+
+- **session_summary_session_id** - mã định danh cho phiên làm việc của người dùng hiện tại ở chế độ xem web của Microsoft Edge
+
+- **txp** - nếu chế độ xem web của Microsoft Edge được cài đặt từ thẻ TXP, loại sự kiện cho thẻ (bữa ăn, chuyến bay, v.v.)
+
+- **txp_component** - nếu chế độ xem web của Microsoft Edge được cài đặt từ thẻ TXP, loại cấu phần UI cho thẻ đó
+
+
+#### <a name="mail_action"></a>mail_action
+
+Được dùng để giám sát tác động tiêu cực có thể xảy ra với khả năng thực hiện các hành động thư quan trọng của bạn (như chạy chế độ luồng thư, đảm bảo hành động phân loại thư có hiệu quả) nhằm đảm bảo ứng dụng của chúng tôi đang hoạt động chính xác đối với thư.
+
+Các trường sau đây sẽ được thu thập:
+
+- **account** – tài khoản đã thực hiện hành động *[Trường này đã bị loại bỏ khỏi bản dựng Office hiện tại, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+- **action** - theo dõi loại hành động nào đang diễn ra, như lưu trữ, xóa, đánh dấu là đã đọc, v.v. 
+
+- **attachment_content_type** – loại nội dung của tệp đính kèm đã tải xuống 
+
+- **attachment_content_type_with_count** – theo dõi số lượng tệp đính kèm trong email
+
+- **attachment_download_result** – kết quả (tức là thành công/thất bại) đối với hành động tải xuống tệp đính kèm
+
+- **attachment_download_time** – thời gian cho hành động tải xuống tệp đính kèm
+
+- **attachment_extn** – phần mở rộng tệp của tệp đính kèm đã tải xuống
+
+- **attachment_id** – mã định danh hệ thống cho tệp đính kèm đã tải xuống 
+
+- **attachment_size** – kích cỡ tệp đính kèm đã tải xuống
+
+- **domain** – miền của tài liệu đang được mở
+
+- **duration** – theo dõi thời lượng hành động diễn ra dưới dạng chuỗi tiếng Anh mà con người có thể đọc được (ví dụ: 1s, 4h)
+
+- **error** – thông báo lỗi được liên kết với hành động 
+
+- **event_mode** – hành động thuộc loại chế độ sự kiện nào, nhóm hay một số khác. 
+
+- **Extension** – phần mở rộng tệp của liên kết hoặc tệp đính kèm liên kết với hành động này 
+
+- **internet_message_id** – theo dõi ID thư
+
+- **is_group_escalation** – cho biết liệu thư mà hành động được thực hiện có được gửi đến hộp thư của người dùng do sự leo thang hay không (đã đăng ký với nhóm)
+
+- **is_rule** – cho biết liệu hành động thư đã hoàn tất có đang đặt lại phân loại ưu tiên/khác hay không
+
+- **is_threaded_mode** – cho biết liệu thư có ở chế độ luồng hay không, tức là các thư được nhóm như thế nào
+
+- **is_unread** – cho biết liệu thư có là chưa đọc hay không mà hành động đã được thực hiện
+
+- **left_swipe_setting** – cho biết hành động nào đã được đặt thành trượt nhanh sang trái
+
+- **message_id** – ID thư máy chủ được nhắm mục tiêu cho hành động hoặc danh sách được phân tách bằng dấu phẩy, nếu có nhiều mục đang hoạt động.
+
+- **message_type** – cho biết loại nhập thư mà hành động được thực hiện ** – nhóm hoặc khác
+
+- **number_selected** – số lượng mặt hàng người dùng đã chọn trong danh sách thư, rồi thực hiện hành động trong nhiều chế độ lựa chọn.
+
+- **origin** - nguồn của hành động, ví dụ: trượt nhanh ô, truy vấn bằng không, liên kết sâu, dạng xem email, danh sách email, v.v.
+
+- **reported_to_msft** – sau khi gửi email tới thư rác (spam) hoặc thùng rác (lừa đảo qua mạng), họ có thể chọn báo cáo hành động của họ với Microsoft.
+
+- **retry** – hành động đã được thử lại hay chưa
+
+- **right_swipe_setting** – cho biết hành động nào được đã đặt thành trượt nhanh sang phải 
+
+- **shortcut** – cho biết liệu một lối tắt có được sử dụng và lối tắt nào đã được sử dụng để lên lịch cho thư, tức là sau này, ngày mai, chọn thời gian, v.v
+
+- **size** – kích cỡ của liên kết hoặc tệp đính kèm liên kết với hành động này
+
+- **source_folder** – theo dõi loại thư mục nguồn khi hành động được chỉ định di chuyển từ một thư mục sang thư mục khác, tức là: đến hộp thư đến, thùng rác v.v 
+
+- **source_inbox** – cho biết hộp thư đến nào đang diễn ra hành động thư (tức là ưu tiên, khác, v.v) trạng thái – trạng thái của hành động, tức là thành công hay điểm thất bại
+
+- **target_folder** – cho biết loại thư mục đích khi di chuyển email từ một thư mục sang thư mục khác
+
+- **thread_id** – ID chuỗi của cuộc trò chuyện được nhắm mục tiêu cho hành động hoặc danh sách được phân tách bằng dấu phẩy, nếu có nhiều mục được nhắm mục tiêu.
+
+- **time_taken_to_fetch_access_token** – thời gian cần thiết để tải mã thông báo truy nhập hệ thống nhằm mở liên kết
+
+- **time_taken_to_fetch_drive_item** – thời gian cần thiết để tải xuống một tài nguyên OneDrive khi nhấp vào
+
+- **time_taken_to_fetch_embed_viewer_resource** – thời gian cần thiết để khởi tạo trình xem nhúng khi mở liên kết
+
+- **time_taken_to_load_embed_viewer** – thời gian cần thiết để khởi tạo trình xem nhúng khi mở liên kết
+
+- **time_taken_to_load_link** – thời gian một hành động tải liên kết cần để hoàn thành
+
+- **time_taken_to_tap_attachment** – thời lượng từ khi mở thư đến khi nhấp vào tệp đính kèm
+
+- **time_taken_to_tap_link** – thời gian người dùng cần từ khi xem thư đến khi nhấp vào liên kết
+
+- **txp** – cho biết liệu có loại mục txp nào được liên kết với thư mà hành động đã được thực hiện hay không, tức là đặt sự kiện, đặt chuyến bay, v.v. 
+
+- **type** – loại tài liệu đang được mở thông qua liên kết
+
+#### <a name="mail_compose"></a>mail_compose
+
+Được dùng để giám sát tác động tiêu cực có thể xảy ra với khả năng soạn và trả lời email của bạn, như gặp vấn đề khi trả lời tất cả, định dạng cho email của bạn hoặc gửi email.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **draft_message_id** – ID nháp của cuộc trò chuyện đang được tạo làm bản nháp để giúp chúng tôi phát hiện các sự cố liên quan đến email nháp
+
+- **message_id** – ID thư của cuộc trò chuyện đang được trả lời hoặc được chuyển tiếp để giúp chúng tôi phát hiện các sự cố liên quan đến một thư cụ thể
+
+- **origin** – Cho chúng tôi biết nguồn gốc soạn thư, chẳng hạn như từ trả lời tất cả, thư mới hoặc trả lời nhanh. Giúp chúng tôi phát hiện sự cố liên kết với một loại nguồn trả lời cụ thể.
+
+- **is_group_escalation** – Liệu thư có phải là một thư nhóm leo thang hay không để chúng tôi có thể phát hiện các sự cố soạn thư liên quan đến các nhóm.
+
+- **is_link** – Cho chúng tôi biết liệu bản nháp mới đã tạo có được thực hiện từ một liên kết hay không. Giúp chúng tôi phát hiện các sự cố liên kết với bản nháp được tạo từ các liên kết.
+
+- **is_force_touch** – Cho chúng tôi biết liệu bản nháp mới đã tạo có được thực hiện từ một hành động cảm ứng lực hay không. Giúp chúng tôi phát hiện các sự cố liên kết với bản nháp được tạo từ hành động cụ thể này.
+
+- **is_groups** – Liệu sự kiện có được bắt đầu từ không gian nhóm hay không để chúng tôi có thể phát hiện các sự cố soạn thư liên quan đến các nhóm.
+
+- **source_inbox** – Cho chúng tôi biết hộp thư nguồn, như đó là hộp thư đến ưu tiên hay khác
+
+- **thread_id** – ID luồng của cuộc trò chuyện đang được trả lời hoặc được chuyển tiếp để giúp chúng tôi phát hiện các sự cố liên quan đến một luồng cụ thể
+
+#### <a name="meeting_call_to_action"></a>meeting_call_to_action
+
+Được dùng để giám sát tác động tiêu cực có thể xảy ra với khả năng thực hiện các hành động cuộc họp quan trọng như tạo, chỉnh sửa và phản hồi cuộc họp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **event_mode** – Cho biết liệu sự kiện này có bắt đầu từ một nhóm hay không để giúp chúng tôi phát hiện các sự cố với sự kiện nhóm
+
+- **meeting_id** – ID cuộc họp giúp chúng tôi theo dõi các sự cố trong suốt quá trình diễn ra cuộc họp để chúng tôi có thể phát hiện các sự cố với một số cuộc họp cụ thể
+
+- **meeting_provider** – Cho biết nhà cung cấp cuộc họp trực tuyến, ví dụ: Teams, Skype for Business để giúp chúng tôi phát hiện các sự cố với nhà cung cấp cuộc họp trực tuyến cụ thể
+
+- **notify_type** – Cho biết loại phản hồi đối với các loại tài khoản khác để giúp chúng tôi phát hiện sự cố với các loại tài khoản khác nhau
+
+- **recurrence** – Cho biết tần suất diễn ra cuộc họp này, tức là trường hợp hoặc chuỗi để giúp chúng tôi phát hiện các sự cố với chuỗi cuộc họp tái diễn
+
+- **response** – Cho biết loại phản hồi, chẳng hạn như chấp nhận hoặc từ chối đối với một số loại tài khoản để giúp chúng tôi phát hiện các sự cố với thao tác phản hồi sự kiện
+
+- **response_message_length** – Cho biết thời lượng thư để giúp chúng tôi phát hiện sự cố với phản hồi về cuộc họp
+
+- **review_time_proposal_action_type** – Cho biết người dùng phản hồi lại đề xuất thời gian mới để giúp chúng tôi phát hiện các sự cố với thao tác đề xuất thời gian mới
+
+- **send_response** – Cho biết liệu phản hồi đã được gửi hay chưa để giúp chúng tôi phát hiện các sự cố với thao tác gửi phản hồi cho lời mời họp
+
+- **txp** – Cho biết loại cuộc họp nào được tạo từ đặt chuyến bay và những kết quả chuyển giao giúp chúng tôi phát hiện các sự cố với kiểu cuộc họp này
+
+- **with_message_enabled** – Cho biết liệu người dùng có thể phản hồi với thư hay không để giúp chúng tôi phát hiện các sự cố với thao tác phản hồi cho lời mời họp
+
+#### <a name="office_android_docsui_fileoperations_opendocumentmeasurements"></a>Office_Android_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Sự kiện này được thu thập cho các ứng dụng Office chạy trong nền tảng Android và sẽ ghi lại khi hoạt động mở tệp diễn ra. Sự kiện này giúp giữ cho hoạt động mở tệp được an toàn, cập nhật và hoạt động chính xác. Mục tiêu của việc thu thập dữ liệu này là để liên tục cải thiện hiệu năng mở tệp. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppDocsOperationDuration** – Thời lượng dành cho lớp con trong một hoạt động mở tệp.
+
+- **Data_AppDuration** – Thời lượng dành cho việc xử lý ứng dụng trong quá trình mở tệp. 
+
+- **Data_AppWarmUpGain** – Chúng tôi có thêm thời lượng khởi động ứng dụng nhờ khởi động sẵn một phần của ứng dụng trước.
+
+- **Data_BootDuration** – Thời lượng khởi động ứng dụng trong quá trình mở tệp.
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** - Phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** – Mã định danh Duy nhất toàn cầu (GUID) xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Một GUID duy nhất xác định danh tính dùng để mở tệp. 
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tệp.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** – Phép đếm cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** – Chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tệp tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà URL tệp sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định URL tệp.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Liệu tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** – Chuỗi cho biết tệp Giao thức Giao diện Nền tảng Mở Ứng dụng Web (WOPI) là từ máy chủ nào.
+
+- **Data_ErrorId_Code** – Mã lỗi chỉ ra lỗi trong hoạt động thu thập dữ liệu
+
+- **Data_ErrorId_Tag** – Thẻ trong mã để giúp tìm điểm xảy ra lỗi
+
+- **Data_InclusiveMeasurements** – Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ. 
+
+- **Data_InitializationReason** - Phép đếm cho biết cách mở tệp, ví dụ: từ phần tử giao diện người dùng hoặc do một ứng dụng khác kích hoạt, v.v.
+
+- **Data_Measurements** – Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng không bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_OfficeMobileInitReason** – Phép đếm cho biết điểm nhập của tệp đang mở. 
+
+- **Data_SilhouetteDuration** – Thời lượng kết xuất tệp mở.
+
+- **Data_TimeSplitMeasurements** – Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng, dấu thời gian bắt đầu và thời lượng. 
+
+#### <a name="office_android_earlytelemetry_expansionfilesavailability"></a>Office_Android_EarlyTelemetry_ExpansionFilesAvailability
+
+Chúng tôi đang bật các tệp mở rộng trong Gói Công cụ Android (APK) cho ứng dụng Office mobile. Các tệp mở rộng APK được bổ sung các tệp nguồn cho các nhà phát triển ứng dụng Android có thể phát hành cùng với ứng dụng của họ. Để hiểu rõ độ tin cậy của các tệp mở rộng, chúng tôi ghi nhật ký cờ cho biết các tệp mở rộng có sẵn dùng hay không mỗi lần khởi động.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ExpansionFilesAvailable** - Cờ Boolean cho biết tệp mở rộng APK có sẵn dùng trên thiết bị tại thời điểm khởi động ứng dụng hay không.
+
+#### <a name="office_android_earlytelemetry_expansionfilesdownloader"></a>Office_Android_EarlyTelemetry_ExpansionFilesDownloader
+
+Chúng tôi đang bật các tệp mở rộng trong Gói Công cụ Android (APK) cho ứng dụng Office mobile. Các tệp mở rộng APK bổ sung các tệp nguồn nhà phát triển ứng dụng Android có thể phát hành cùng với ứng dụng của họ.  Để hiểu rõ độ tin cậy của cơ chế tải xuống tệp mở rộng của chúng tôi, chúng tôi đang ghi nhật ký cờ cho biết chúng tôi có thể thành công tải xuống các tệp mở rộng.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **Data_DownloadSuccess** - Cờ Boolean cho biết Tệp mở rộng APK tải xuống cố thành công hay không bất cứ khi nào chúng tôi cố gắng tải xuống khi ứng dụng khởi động.
+
+
+#### <a name="office_android_intune_intunecompliancerequest"></a>Office_Android_Intune_IntuneComplianceRequest
+
+Sự kiện này được thu thập cho các ứng dụng Office chạy trên Android, bao gồm Office Mobile, Word, Excel, PowerPoint và OneNote. Sự kiện cho thấy nỗ lực đăng nhập vào tài khoản tổ chức được cấp phép Intune mà người quản trị của tổ chức đã đặt cấu hình chính sách để thực thi quyền truy nhập có điều kiện cho ứng dụng. Sự kiện này được dùng để hiểu số lượng người dùng cuối đang cố gắng sử dụng ứng dụng theo cấu hình chính sách này và được kết hợp với một sự kiện khác – Office_Android_Intune_IntuneComplianceStatus – để đảm bảo chính sách đã đặt cấu hình được thực thi. 
+
+Không có trường dữ liệu nào được thu thập.
+
+#### <a name="office_android_intune_intunecompliancestatus"></a>Office_Android_Intune_IntuneComplianceStatus
+
+Sự kiện này được thu thập cho các ứng dụng Office chạy trên Android, bao gồm Office Mobile, Word, Excel, PowerPoint và OneNote. Sự kiện cho thấy nỗ lực đăng nhập vào tài khoản tổ chức được cấp phép Intune mà người quản trị của tổ chức đã đặt cấu hình chính sách để thực thi quyền truy nhập có điều kiện cho ứng dụng. Sự kiện này cho biết trạng thái tuân thủ của ứng dụng mà người dùng đã đăng nhập và được dùng để điều tra về lỗi. Sự kiện này được kết hợp với một sự kiện khác – Office_Android_Intune_IntuneComplianceRequest – để đảm bảo chính sách đã đặt cấu hình được thực thi.
+  
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ComplianceStatus** – Cho biết trạng thái tuân thủ của ứng dụng trong khi đăng nhập bằng mã lỗi thành công hoặc thất bại.
+  - -1 – Lỗi không xác định
+  -    0 – Ứng dụng này tương thích với các chính sách của tổ chức
+  - 1 – Ứng dụng không tương thích với các chính sách của tổ chức
+  - 2 – Lỗi liên quan đến dịch vụ
+  - 3 – Lỗi liên quan đến mạng
+  - 4 – Ứng dụng không thể truy xuất mã thông báo xác thực 
+  - 5 – Phản hồi chưa nhận được từ dịch vụ
+  - 6 – Ứng dụng cổng thông tin của công ty cần được cài đặt
 
 #### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
 
@@ -1903,7 +2688,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_ActivatingPrimaryIdentity** - Giá trị true/false biểu thị nếu danh tính chính được sử dụng. 
 
-- **Data_NULSubscriptionLicensed** - Giá trị true/false biểu thị trạng thái đăng ký
+- **Data_NULSubscriptionLicensed** - Giá trị true/false biểu thị trạng thái gói đăng ký
 
 #### <a name="office_apple_cisauthticketwithidentity"></a>Office_Apple_CISAuthTicketWithIdentity
 
@@ -1929,7 +2714,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. 
 
-Chúng tôi thu thập thông tin liên quan đến các giao dịch mua sản phẩm trên AppStore. Chúng tôi theo dõi kết quả của giao dịch mua hàng (Thất bại, thành công, vấn đề thanh toán, v.v.), loại yêu cầu mua hàng (khôi phục, mua hàng) và SKU/sản phẩm được mua (Office 365 Home, v.v.).  Dữ liệu này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng.
+Chúng tôi thu thập thông tin liên quan đến các giao dịch mua sản phẩm trên AppStore. Chúng tôi theo dõi kết quả của giao dịch mua hàng (Thất bại, thành công, vấn đề thanh toán, v.v.), loại yêu cầu mua hàng (khôi phục, mua hàng) và SKU/sản phẩm được mua (Microsoft 365 Family, v.v.).  Dữ liệu này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1973,7 +2758,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
 
-- **Activity_Name** = Tên của hoạt động “ConnectDevice”
+- **Activity_Name** = Tên của hoạt động "Kết_nối_thiết_bị"
 
 - **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
 
@@ -1991,7 +2776,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
 
-- **Activity_Name** = Tên của hoạt động “ConnectDevice”
+- **Activity_Name** - Tên của hoạt động "Kết_nối_thiết_bị"
 
 - **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
 
@@ -2001,21 +2786,21 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="office_docs_apple_docsuxiossaveasthroughfilemenu"></a>Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác “Lưu dưới dạng” diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác tệp như danh mục vị trí.  Thao tác “Lưu dưới dạng” xảy ra khi người dùng tạo một tệp mới và lưu lại lần đầu tiên hoặc lưu bản sao của tệp hiện có vào một vị trí mới.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác “Lưu dưới dạng” diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác tệp như danh mục vị trí.  Thao tác "Lưu dưới dạng" xảy ra khi người dùng tạo một tệp mới và lưu lại lần đầu tiên hoặc lưu bản sao của tệp hiện có vào một vị trí mới.
 
 Các trường sau đây sẽ được thu thập:
 
-- **Data_OriginServiceType** - Cách phân loại trừu tượng về vị trí ban đầu của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_OriginServiceType** - Việc phân mục trừu tượng vị trí ban đầu của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
-- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí mới của một tệp sau khi hoàn thành việc lưu như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_ServiceType** - Việc phân mục trừu tượng vị trí mới của một tệp sau khi hoàn tất lưu như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
 #### <a name="office_docs_apple_docsuxmacatmentioninsertedatmention"></a>Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi một người dùng “@” đề cập đến một người dùng khác và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên cách người dùng cộng tác với những người dùng khác.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại thời điểm một người dùng "@" đề cập đến một người dùng khác và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên cách người dùng cộng tác với những người dùng khác.
 
 Các trường sau đây sẽ được thu thập:
 
-- **Data_CharactersTyped** - Giá trị bằng số cho biết tổng số ký tự được nhập trong văn bản đề cập “@”.
+- **Data_CharactersTyped** - Giá trị bằng số cho biết tổng số ký tự được nhập trong văn bản đề cập "@".
 
 #### <a name="office_docs_apple_docsuxmacodspsharingwebviewsharingcompleted"></a>Office_Docs_Apple_DocsUXMacODSPSharingWebViewSharingCompleted 
 
@@ -2023,9 +2808,9 @@ Sự kiện này được thu thập đối với các ứng dụng Office chạ
 
 Các trường sau đây sẽ được thu thập:
 
-- **Data_ShareType** - Chuỗi được mã hóa cứng cho biết về loại thao tác chia sẻ đã được hoàn thành bao gồm nhưng không giới hạn ở “Sao chép liên kết”, “Ứng dụng khác”, “Nhóm”.
+- **Data_ShareType** - Chuỗi được mã hóa cứng cho biết về loại thao tác chia sẻ đã được hoàn tất gồm một hay các loại thao tác "Sao chép liên kết", "Ứng dụng khác", "Nhóm".
 
-- **Data_ShareWebViewMode** - Chuỗi được mã hóa cứng cho biết về loại chế độ chia sẻ đã hoạt động khi hoàn thành việc chia sẻ bao gồm nhưng không giới hạn ở “Quản_lý_truy_nhập”, “Đề_cập”, “Chia_sẻ”.
+- **Data_ShareWebViewMode** - Chuỗi được mã hóa cứng cho biết về loại chế độ chia sẻ đang hoạt động khi hoàn tất việc chia sẻ gồm một hay các chế độ "ManageAccess", "AtMentions", "Share".
 
 #### <a name="office_docsui_collaboration_coauthorgalleryrowtapped"></a>Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
 
@@ -2049,11 +2834,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_OldCoauthorCount** - Số lượng trước đó của đồng tác giả hiện hoạt trước khi cập nhật.
 
-- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_ ServiceType** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
 #### <a name="office_docsui_docstage_docstagecreatenewfromtemplate"></a>Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại khi một tệp mới được tạo từ trải nghiệm “Mới từ mẫu” và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên thông tin tạo tài liệu.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại khi một tệp mới được tạo từ trải nghiệm "Mới từ mẫu" và được dùng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên thông tin tạo tài liệu.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2063,11 +2848,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_IsHomeTabEnabled** - Giá trị Boolean cho biết nếu tab Trang đầu hiện sẵn dùng cho người dùng.
 
-- **Data_IsRecommendedEnabled** - Giá trị Boolean cho biết liệu trải nghiệm “Được đề xuất” hiện có sẵn dùng cho người dùng hay không.
+- **Data_IsRecommendedEnabled** - Giá trị Boolean cho biết liệu trải nghiệm "Được đề xuất" hiện có sẵn cho người dùng hay không.
 
-- **Data_TemplateIndex** - Chỉ mục số của tệp mẫu khi được hiển thị trực quan cho người dùng.
+- **Data_TemplateIndex** - Chỉ mục số của tệp mẫu khi hiển thị trực quan cho người dùng.
 
-- **Data_TemplateType** - Phân loại để giúp phân biệt loại mẫu, nhưng không giới hạn, mẫu “Trực tuyến”, mẫu “Tìm kiếm trực tuyến”, mẫu “Cục bộ”.
+- **Data_TemplateType** - Phân loại để giúp phân biệt loại mẫu, gồm một hay nhiều loại mẫu “Trực tuyến”, mẫu “Tìm kiếm trực tuyến”, mẫu “Cục bộ”.
 
 #### <a name="office_docsui_docstage_recommendedopen"></a>Office_DocsUI_DocStage_RecommendedOpen
 
@@ -2079,13 +2864,13 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="office_docsui_fileoperations_docsuifileopenmacrequired"></a>Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí “Loại_dịch_vụ” và bốn ký tự đầu tiên của phần mở rộng.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí "Loại_dịch_vụ" và bốn ký tự đầu tiên trong phần mở rộng.
 
 Các trường sau đây sẽ được thu thập:
 
 - **Data_Ext** - Phần mở rộng tệp giới hạn ở bốn ký tự đầu tiên của phần mở rộng hoặc ít hơn.
 
-- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v.
+- **Data_ServiceType** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v.
 
 #### <a name="office_docsui_fileoperations_opendocumentmeasurements"></a>Office_DocsUI_FileOperations_OpenDocumentMeasurements
 
@@ -2100,6 +2885,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_ClickOrigin** - Một chuỗi cho biết liên kết đến từ phần nào khi người dùng nhấn vào một liên kết trong Outlook iOS để mở tệp trong ứng dụng Office.
 
 - **Data_ClickTime** - Thời gian Unix khi người dùng nhấn vào một liên kết trong Outlook iOS để mở tệp trong ứng dụng Office.
+
+- **Data_ClosePreviouslyOpenedMarkers** – Một giá trị chuỗi ghi nhật ký khoảng thời gian giữa một số lệnh chức năng, theo định dạng kèm id chức năng và khoảng thời gian.
 
 - **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
 
@@ -2165,13 +2952,19 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_WopiServiceId** - Một chuỗi cho biết tệp WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ máy chủ nào.
 
+- **Data_HWModel** – Một giá trị chuỗi ghi nhật ký dòng máy thiết bị iPad hoặc iPhone.
+
 - **Data_InclusiveMeasurements** - Một giá trị chuỗi ghi nhật ký khoảng thời gian dành cho một số cuộc gọi chức năng, theo định dạng kèm thẻ chức năng và khoảng thời gian có bao gồm thời gian của cuộc gọi chức năng phụ.
 
-- **Data_InitializationReason** - Một liệt kê cho biết cách mở tệp, ví dụ: từ phần tử giao diện người dùng nào hoặc do một ứng dụng khác kích hoạt.
+- **Data_InitializationReason** - Một liệt kê cho biết cách mở tệp, ví dụ: từ phần tử giao diện người dùng hoặc do một ứng dụng khác kích hoạt.
+
+- **Data_IsDocumentAlreadyOpen** – Tệp đã mở hay chưa.
+
+- **Data_IsInterrupted** – Thao tác mở tệp có bị gián đoạn do ứng dụng chuyển sang nền hay không.
 
 - **Data_Measurements** - Một giá trị chuỗi ghi nhật ký khoảng thời gian dành cho một số cuộc gọi chức năng, theo định dạng kèm thẻ chức năng và khoảng thời gian có bao gồm thời gian của cuộc gọi chức năng phụ.
 
-- **Data_OpenInPlace** - Có phải sao chép một tệp vào bộ chứa hộp cát của Office trước khi người dùng có thể mở tệp hay không.
+- **Data_OpenInPlace** - Có bắt buộc sao chép một tệp vào bộ chứa hộp cát của Office trước khi người dùng mở tệp hay không.
 
 - **Data_OpenStartTime** - Thời gian Unix khi thao tác mở tệp bắt đầu.
 
@@ -2185,21 +2978,21 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí “Loại_dịch_vụ” và từ vị trí trong Ứng dụng mà người dùng yêu cầu mở tệp.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí "Loại_dịch_vụ" và từ vị trí trong Ứng dụng mà người dùng yêu cầu mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
-- **Data_IsCandidateDropboxFile** - Đây là giá trị Boolean được ghi lại nếu bằng cách kiểm tra đường dẫn của tệp mà chúng tôi nghĩ rằng nó có thể từ một thư mục được đồng bộ hóa bằng Drop Box.
+- **Data_IsCandidateDropboxFile** - Đây là giá trị Boolean được ghi lại khi kiểm tra đường dẫn của tệp mà chúng tôi cho rằng có thể tệp đó từ một thư mục được đồng bộ hóa bằng Drop Box. 
 
-- **Data_IsSignedIn** - Người dùng có đăng nhập hay không khi lưu tệp.
+- **Data_IsSignedIn** - Người dùng có đăng nhập khi lưu tệp hay không.
 
 - **Data_OpenReason** - Lý do mở là một giá trị số cho biết vị trí người dùng đã mở tệp trong ứng dụng.
 
-- **Data_ServiceType** - Cách phân loại dạng số trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_ServiceType** - Việc phân mục dạng số vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
 #### <a name="office_docsui_fileoperations_savetourl"></a>Office_DocsUI_FileOperations_SaveToURL
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác “lưu dưới dạng” diễn ra và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác tệp như danh mục vị trí và bốn ký tự đầu tiên của phần mở rộng.  Thao tác “Lưu dưới dạng” xảy ra khi người dùng tạo một tệp mới và lưu lại lần đầu tiên hoặc lưu bản sao của tệp hiện có vào một vị trí mới.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm diễn ra thao tác "lưu dưới dạng" và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác tệp như danh mục vị trí và bốn ký tự đầu tiên của phần mở rộng.  Thao tác "Lưu dưới dạng" xảy ra khi người dùng tạo một tệp mới và lưu tệp đó lần đầu hoặc lưu bản sao của tệp hiện có vào vị trí mới.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2211,11 +3004,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_SaveErrorCode** - Giá trị số được thiết lập nếu có lỗi để giúp xác định loại lỗi.
 
-- **Data_SaveErrorDomain** - Xác định miền của SaveErrorCode như Apple SaveErrorDomains xác định, “là các chuỗi tùy ý được sử dụng để phân biệt các nhóm mã”.
+- **Data_SaveErrorDomain** - Xác định miền của Mã_lỗi_lưu như Miền_lỗi_lưu của Apple xác định “là các chuỗi tùy ý dùng để phân biệt các nhóm mã”.
 
-- **Data_SaveLocation** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_SaveLocation** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
-- **Data_SaveOperationType** - Giá trị số do nhóm các giá trị NSSaveOperationType của Apple xác định.
+- **Data_SaveOperationType** - Giá trị số do nhóm các giá trị Loại_thao_tác_lưu_NS của Apple xác định.
 
 #### <a name="office_docsui_sharingui_cloudupsellshown"></a>Office_DocsUI_SharingUI_CloudUpsellShown 
 
@@ -2255,11 +3048,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_IsSheetModal** - Boolean cho biết liệu trải nghiệm bán hàng gia tăng có được trình bày theo mô thức hay không.
 
-- **Data_LocationServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_LocationServiceType** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
-- **Data_UploadAction** - Chuỗi mã hóa cứng cho biết việc tải lên là một sự di chuyển hay thao tác sao chép.
+- **Data_UploadAction** - Chuỗi mã hóa cứng cho biết việc tải lên là thao tác di chuyển hay thao tác sao chép.
 
-- **Data_UploadResult** - Chuỗi được mã hóa cứng cho biết kết quả của nỗ lực tải lên bao gồm nhưng không giới hạn ở ‘’Success”, “UserCancelledUpload” và “PreAuthFailed”.
+- **Data_UploadResult** - Chuỗi được mã hóa cứng cho biết kết quả của nỗ lực tải lên gồm một hay các kết quả ''Thành_công", "Người_dùng_hủy_tải_lên" và "Hỏng_xác_thực_trước".
 
 #### <a name="office_docsui_sharingui_copylinkoperation"></a>Office_DocsUI_SharingUI_CopyLinkOperation
 
@@ -2267,11 +3060,11 @@ Sự kiện này được thu thập đối với các ứng dụng Office chạ
 
 Các trường sau đây sẽ được thu thập:
 
-- **Data_ ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_ ServiceType** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
-- **Data_LinkType** - Chuỗi được mã hóa cứng mô tả loại thao tác mời được thực hiện như “ViewOnly” và “ViewAndEdit”.
+- **Data_LinkType** - Chuỗi được mã hóa cứng mô tả loại thao tác mời được thực hiện như "Chỉ_xem" và "Xem_và_chỉnh_sửa".
 
-- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ bao gồm nhưng không giới hạn ở, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ gồm một hay các vị trí "Menu_tệp", "Menu_thao_tác_chia_sẻ_thanh_mở", "Menu_thao_tác_chia_sẻ_thanh_gần_đây".
 
 #### <a name="office_docsui_sharingui_docsuionedriveshare"></a>Office_DocsUI_SharingUI_DocsUIOneDriveShare 
 
@@ -2295,15 +3088,15 @@ Sự kiện này được thu thập đối với các ứng dụng Office chạ
 
 Các trường sau đây sẽ được thu thập:
 
-- **Data_ ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_ ServiceType** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
 - **Data_InviteeCount** - Tổng số liên hệ được mời đến tài liệu trong một thao tác mời.
 
-- **Data_LinkType** - Chuỗi được mã hóa cứng mô tả loại thao tác mời được thực hiện như “ViewOnly” và “ViewAndEdit”.
+- **Data_LinkType** - Chuỗi được mã hóa cứng mô tả loại thao tác mời được thực hiện như "Chỉ_xem" và "Xem_và_chỉnh_sửa".
 
-- **Data_MessageLength** - Số đếm tổng số ký tự được gửi trong tin nhắn mời.
+- **Data_MessageLength** - Số lượng tổng số ký tự được gửi trong tin nhắn mời.
 
-- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ bao gồm nhưng không giới hạn ở, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ gồm một hay các vị trí "Menu_tệp", "Menu_thao_tác_chia_sẻ_thanh_mở", "Menu_thao_tác_chia_sẻ_thanh_gần_đây".
 
 #### <a name="office_docsui_sharingui_sendacopyoperation"></a>Office_DocsUI_SharingUI_SendACopyOperation
 
@@ -2313,15 +3106,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_IsHomeTabEnabled** - Giá trị Boolean cho biết nếu tab Trang đầu hiện sẵn dùng cho người dùng.
 
-- **Data_IsRecommendedEnabled** - Giá trị Boolean cho biết liệu trải nghiệm “Được đề xuất” hiện có sẵn dùng cho người dùng hay không.
+- **Data_IsRecommendedEnabled** - Giá trị Boolean cho biết liệu trải nghiệm "Được đề xuất" hiện có sẵn cho người dùng hay không.
 
-- **Data_OperationType** - Giá trị số cho biết loại thao tác gửi bản sao sẽ xảy ra như gửi bản sao trong email hoặc gửi bản sao thông qua kiểm soát chia sẻ của Apple.
+- **Data_OperationType** - Giá trị số cho biết loại thao tác gửi bản sao sẽ xảy ra theo kiểu gửi bản sao trong email hoặc gửi bản sao thông qua kiểm soát chia sẻ của Apple.
 
-- **Data_ServiceType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_ ServiceType** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
-- **Data_ShareFileType** - Mô tả chuỗi mã hóa cứng về loại đối tượng sẽ được chia sẻ bao gồm nhưng không giới hạn ở, “Tài liệu”, “PDF”, “Hình ảnh”.
+- **Data_ShareFileType** - Mô tả chuỗi mã hóa cứng về loại đối tượng sẽ được chia sẻ gồm một hay các loại tệp "Tài liệu", "PDF", "Hình ảnh".
 
-- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ bao gồm nhưng không giới hạn ở, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+- **Data_ShareScenario** - Mô tả chuỗi mã hóa cứng về vị trí trong giao diện người dùng của ứng dụng mà tệp đang được chia sẻ gồm một hay các vị trí "Menu_tệp", "Menu_thao_tác_chia_sẻ_thanh_mở", "Menu_thao_tác_chia_sẻ_thanh_gần_đây".
 
 - **Data_SharingService** - Boolean cho biết liệu tệp đã được tạo khi người dùng đang tìm kiếm mẫu hay chưa.
 
@@ -2337,9 +3130,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_isLocalCopyOn** - Boolean cho biết liệu việc sử dụng có chọn giữ một bản sao cục bộ của tài liệu đang được tải lên vị trí trên đám mây hay di chuyển tài liệu hiện có sang vị trí trên đám mây hay không.
 
-- **Data_NewFileType** - Cách phân loại trừu tượng về vị trí của vị trí mới của tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_NewFileType** - Việc phân mục trừu tượng vị trí của vị trí mới của tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
-- **Data_OriginalFileType** - Cách phân loại trừu tượng về vị trí của một tệp như: “SharePoint”, “OneDrive”, “Local”, “WOPI”, v.v, và rõ ràng không phải là vị trí thực tế của tệp.
+- **Data_OriginalFileType** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
 - **Data_UploadButtonPressed** - Boolean cho biết liệu người dùng có chọn tải tài liệu hiện tại lên một vị trí trên đám mây hay không.
 
@@ -2413,7 +3206,7 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu bắt đầu 
 
 - **DeviceInfo.OsName** - Tên hệ điều hành của thiết bị.
 
-- **DeviceInfo.SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
 
 - **eventId** - Đặt tên mã định danh của sự kiện. 
 
@@ -2447,7 +3240,7 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu bắt đầu 
 
 - **UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
 
-- **UserInfo.OMSTenantId** - Đối tượng thuê mà gói đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **UserInfo.TimeZone** - Múi giờ của người dùng tương ứng với giờ UTC.
 
@@ -2465,7 +3258,13 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 
 - **AppInfo.Version** - Phiên bản của Ứng dụng.
 
+- **bridgeWaitingTime** - Số liệu để chẩn đoán hiệu suất khi kết xuất nguồn cấp dữ liệu.
+
 - **clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên của ứng dụng.
+
+- **clientScenario** - Bộ phân biệt kịch bản các biến thể khác nhau của nguồn cấp dữ liệu.
+
+- **ClientTimeStamp** - Dấu thời gian khi sự kiện được ghi lại trong máy khách.
 
 - **clientType** - Ứng dụng mà cấu phần chạy.
 
@@ -2477,7 +3276,7 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 
 - **DeviceInfo.OsName** - Tên hệ điều hành của thiết bị.
 
-- **DeviceInfo.SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
 
 - **eventId** - Đặt tên mã định danh của sự kiện.
 
@@ -2489,17 +3288,14 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 
 - **hostAppRing** - Tổng số người dùng được ứng dụng phân phối tới.
 
-- **properties** - Chứa các thuộc tính siêu dữ liệu bổ sung thu thập từ mỗi sự kiện.
-        
-  - **bridgeWaitingTime** - Số liệu để chẩn đoán hiệu suất khi kết xuất nguồn cấp dữ liệu.
-    
+- **properties** - Chứa các thuộc tính siêu dữ liệu bổ sung thu thập từ mỗi sự kiện. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
   - **ClientTimeStamp** - Dấu thời gian khi sự kiện được ghi lại trong máy khách.
-        
-  - **renderTime** - Số liệu để chẩn đoán hiệu suất khi kết xuất nguồn cấp dữ liệu.
 
 - **publicEventName** - Công chúng thấy tên sự kiện.  
 
 - **region** - Khu vực địa lý của dịch vụ nguồn cấp mà người dùng được kết nối. 
+
+- **renderTime** - Số liệu để chẩn đoán hiệu suất khi kết xuất nguồn cấp dữ liệu.
 
 - **tenantAadObjectId** - Mã định danh duy nhất trên toàn cầu cho đối tượng thuê doanh nghiệp của người dùng.
 
@@ -2515,7 +3311,7 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 
 - **UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
 
-- **UserInfo.OMSTenantId** - Đối tượng thuê mà gói đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **UserInfo.TimeZone** - Múi giờ của người dùng tương ứng với giờ UTC.
 
@@ -2694,13 +3490,13 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.IsStubFile -** Tài liệu này chưa được lưu vào dịch vụ đám mây
 
-  - **Data.IsSyncBackedStateDifferentThanOnLastOpen -** Trạng thái tài liệu đã thay đổi, những thay đổi có thể đã đến trong khi tài liệu không được mở
+  - **Data.IsSyncBackedStateDifferentThanOnLastOpen -** Trạng thái tài liệu đã thay đổi, những thay đổi có thể xảy ra khi tài liệu đang đóng
 
   - **Data.isTaskCanceledAfterOpenComplete -** Đã lỗi thời
 
   - **Data.IsWorkingBranchAvailableOnOpen -** Thay đổi chẩn đoán theo dõi để đảm bảo chúng tôi có phiên bản mới nhất của tệp dùng chung
 
-  - **Data.LicenseStatus** - Trạng thái giấy phép sản phẩm chẩn đoán được sử dụng để xác thực rằng các tính năng sản phẩm phù hợp được bật cho loại giấy phép người dùng 
+  - **Data.LicenseStatus** - Trạng thái giấy phép sản phẩm chẩn đoán được dùng để xác thực việc các tính năng sản phẩm phù hợp đã được bật cho loại giấy phép người dùng 
 
   - **Data.LicenseType -** Cho biết trạng thái của giấy phép (miễn phí/trả tiền/dùng thử, v.v.)
 
@@ -2918,13 +3714,13 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.DstDoc.FileFormat -** Giao thức định dạng tệp của tài liệu mới
 
-  - **Data.Doc.Fqdn -** Tên miền của OneDrive hoặc SharePoint Online của tài liệu mới
+  - **Data.Doc.Fqdn -** Tên miền trong OneDrive hoặc SharePoint Online của tài liệu mới
 
   - **Data.DstDoc.FqdnHash -** Hàm băm một chiều của tên miền có thể nhận dạng khách hàng của tài liệu mới
 
   - **Data.DstDoc.IdentityUniqueId -** Đã lỗi thời
 
-  - **Data.DstDoc.IOFlags -** Cờ tuỳ chọn được lưu vào bộ đệm ẩn của tài liệu mới được sử dụng khi mở
+  - **Data.DstDoc.IOFlags -** Sử dụng cờ tuỳ chọn lưu vào bộ đệm ẩn của tài liệu mới khi mở tài liệu
 
   - **Data.DstDoc.IsOpeningOfflineCopy -** Cờ cho biết rằng bản sao ngoại tuyến của tài liệu mới đã được mở
 
@@ -2994,9 +3790,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.IsStubFile -** Tài liệu này chưa được chia sẻ lên dịch vụ đám mây
 
-  - **Data.IsSyncBackedFile -** Tài liệu nằm trong thư mục đồng bộ hóa tự động cập nhật
+  - **Data.IsSyncBackedFile -** tài liệu nằm trong thư mục đồng bộ hóa tự động cập nhật
 
-  - **Data.IsSyncBackedStateDifferentThanOnLastOpen -** Trạng thái tài liệu đã thay đổi, những thay đổi có thể đã đến trong khi tài liệu không được mở
+  - **Data.IsSyncBackedStateDifferentThanOnLastOpen -** Trạng thái tài liệu đã thay đổi, những thay đổi có thể xảy ra khi tài liệu đang đóng
 
   - **Data.IsWorkingBranchAvailableOnOpen -** Thay đổi chẩn đoán theo dõi để đảm bảo chúng tôi có phiên bản mới nhất của tệp dùng chung
 
@@ -3075,7 +3871,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="office_firstrun_apple_activationresult"></a>Office_FirstRun_Apple_ActivationResult
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để tìm ra kết quả của việc kích hoạt đăng ký O365 cùng với dòng được sử dụng để kích hoạt (First Run Experience, In-App-Flow, Purchase, v.v.).
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để theo dõi trạng thái của dòng kích hoạt ứng dụng của chúng tôi. Chúng tôi thu thập dữ liệu để tìm được kết quả của việc kích hoạt gói đăng ký Office 365 cùng với dòng được dùng để kích hoạt (First Run Experience, In-App-Flow, Purchase, v.v.).
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3087,7 +3883,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="office_firstrun_apple_activationstatus"></a>Office_FirstRun_Apple_ActivationStatus
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được sử dụng để tìm ra kết quả của việc kích hoạt đăng ký O365 cùng với dòng được sử dụng để kích hoạt (FRE, InApp, Purchase, v.v.). Chúng tôi thu thập dữ liệu chứa loại Kích hoạt, loại dòng (FRE/DocStage/Purchase) và ID dịch vụ cấp phép Office.
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này được dùng để tìm ra kết quả của việc kích hoạt gói đăng ký Office 365 cùng với dòng được sử dụng để kích hoạt (FRE, InApp, Purchase, v.v.). Chúng tôi thu thập dữ liệu chứa loại Kích hoạt, loại dòng (FRE/DocStage/Purchase) và ID dịch vụ cấp phép Office.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3265,6 +4061,67 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_FirstRunPanelName** - Tên của bảng điều khiển bắt đầu trải nghiệm
 
+#### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
+
+Chúng tôi ghi nhật ký khi người dùng đóng Thẻ Cá nhân.  Dữ liệu được dùng để xác định xem thẻ có được đóng đúng cách hay không. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **BatchId** – Mã định danh duy nhất trên toàn cầu nếu một bộ yêu cầu đã được thực hiện
+
+- **Data.appContextId** - Là ID được tạo ngẫu nhiên được sử dụng để xác định các tài khoản khác nhau trong cùng một ứng dụng
+
+- **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
+
+- **Data.AppInfo_Id** - Tên của ứng dụng máy chủ
+
+- **Data.AppInfo_Version** - Phiên bản của ứng dụng máy chủ
+
+- **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
+
+- **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
+
+- **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
+
+- **Data.clientType** - Loại thiết bị ứng dụng chạy trên đó
+
+- **Data.eventId** - Đặt tên mã định danh của sự kiện, ví dụ: "LivePersonaCardRenderedAction"
+
+- **Data.feature** - Dùng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.OTelJS.Version** - Phiên bản của OTel Logger
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
+  - **ClientTimeStamp** – Thời gian trên ứng dụng khi sự kiện được ghi lại
+  - **cardCorrelationId** - Bản sao của Data.appContextId phía trên
+  - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
+  - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên
+  - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+  - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+  - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
+
+- **Data.tenantAadObjectId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
+
+- **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
+
+- **Data.userAadObjectId** -Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho Doanh nghiệp (Bản sao của Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho doanh nghiệp
+
+- **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
+
+- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
+
+- **Data.version** - Phiên bản của dịch vụ (Thẻ Hồ sơ)
+
+- **Data_hostAppRing** – Vòng triển khai của thẻ cá nhân
+
+- **Event_ReceivedTime** – Thời điểm sự kiện đăng nhập vào dịch vụ
+
 #### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
 
 Chúng tôi ghi nhật ký khi người dùng đang ở trong một ứng dụng có tải Thẻ Cá nhân với dự đoán rằng người dùng đó sẽ mở Thẻ Cá nhân Trực tiếp.  Dữ liệu dùng để xác định xem thẻ có được tải đúng hay không. 
@@ -3331,7 +4188,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
 
-- **Data.tenantAadObjectId** - Người thuê được liên kết với đăng ký của người dùng sẽ bị ràng buộc. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **Data.tenantAadObjectId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
 
 - **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
 
@@ -3341,7 +4198,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
 
-- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **Data.userPuid** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
 
@@ -3359,7 +4216,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsVersion** - Phiên bản của hệ điều hành
 
-- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa
 
 #### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
@@ -3417,7 +4274,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
 
-- **Data.tenantAadObjectId** - Người thuê được liên kết với đăng ký của người dùng sẽ bị ràng buộc. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **Data.tenantAadObjectId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
 
 - **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
 
@@ -3427,7 +4284,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
 
-- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
 
 - **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
 
@@ -3443,7 +4300,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsVersion** – Phiên bản của hệ điều hành
 
-- **DeviceInfo_SDKUid** – Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa.
+- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa
 
 - **NetworkCost** - Cho biết chi phí/loại mạng (gói dữ liệu theo lưu lượng sử dụng, giới hạn trên của kết nối bằng gói dữ liệu theo lưu lượng sử dụng, v.v.)
 
@@ -3482,7 +4339,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
 
-- **Data.tenantAadObjectId** - Người thuê được liên kết với đăng ký của người dùng sẽ bị ràng buộc. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **Data.tenantAadObjectId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
 
 - **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
 
@@ -3492,7 +4349,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
 
-- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
 
@@ -3518,7 +4375,7 @@ Các trường sau đây sẽ được thu thập:
 
     - **immersiveProfileCorrelationId** - Một mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
 
-    - **networkEffectiveType**- Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có được kết nối với Internet vào thời điểm hiển thị thẻ cá nhân hay không
+    - **networkEffectiveType**- Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có kết nối Internet vào thời điểm hiển thị thẻ cá nhân hay không
 
     - **networkType** - Loại kết nối mạng của thiết bị đang được sử dụng
 
@@ -3549,6 +4406,94 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Log** - Thông báo nhật ký tuỳ chỉnh cho biết sự thành công hay thất bại của việc kiểm tra trước
 
+#### <a name="office_officemobile_pdfviewer_pdffileopenmeasurements"></a>Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
+
+Sự kiện này được thu thập dành cho Nhóm iOS, sự kiện ghi lại thời điểm thao tác mở tệp diễn ra. Chúng tôi thu thập dữ liệu này để đảm bảo hiệu năng tốt cho tất cả tệp mở trong ứng dụng. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Doc_ActivationFQDN** - Tên miền của ứng dụng Nhà cung cấp cho kịch bản kích hoạt tệp (chỉ ghi nhật ký thông tin về ứng dụng của bên thứ nhất).
+
+- **Data_Doc_DownloadDurationms** - Thời gian để tải xuống một tệp PDF trên nền điện toán đám mây.
+
+- **Data_Doc_DownloadEndTime** - Dấu thời gian lúc kết thúc tải xuống một tệp trên nền điện toán đám mây.
+
+- **Data_Doc_DownloadStartTime** - Dấu thời gian lúc bắt đầu tải xuống một tệp trên nền điện toán đám mây.
+
+- **Data_Doc_FileOpSessionID** - Id duy nhất cho Phiên tài liệu.
+
+- **Data_Doc_Location** - Vị trí của tệp (Cục bộ, ODSP, iCloud, ứng dụng tệp của bên thứ ba, wopi
+
+- **Data_Doc_OpenCompletionTime** - Dấu thời gian lúc kết thúc mở tệp PDF.
+
+- **Data_Doc_OpenDurationms** - Thời gian để mở tệp PDF tính bằng mili giây.
+
+- **Data_Doc_OpenStartTime** - Dấu thời gian lúc bắt đầu mở tệp PDF.
+
+- **Data_Doc_TelemetryReason** - Nguyên nhân từ xa cho sự kiện mở (ví dụ:mở từ MRU hoặc duyệt, Kích hoạt tệp, Kích hoạt giao thức, v.v.).
+
+- **Doc_RenderDurationms** - Thời gian để kiết xuất tệp pdf
+
+
+#### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
+
+Sự kiện được thu thập cho ứng dụng Office dành cho Android. Ghi lại thời điểm thao tác mở, đóng hoặc lưu tệp PDF diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin hoạt động của tệp PDF. Sự kiện giúp chúng tôi hỗ trợ thao tác mở, đóng và lưu tệp PDF hiệu quả như mong đợi đồng thời cải thiện hiệu suất hoạt động của tệp PDF.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Doc_FileOpSessionID** - ID duy nhất cho Phiên tài liệu
+
+- **Data_ErrorCode** - lỗi trong trường hợp không thể mở tệp/không thể tải xuống/ tải xuống bị hủy bỏ
+
+- **Data_ErrorMessage** - mã thông-báo-về-lỗi liên quan
+
+- **Data_FailureReason** - Trường hợp không thể mở, các enum này xác định nguyên nhân không thể mở.
+
+- **Data_FileLocation** - Vị trí của tệp, ví dụ: Cục bộ, ODSP, iCloud, v.v.
+
+- **Data_FileOpenEntryPoint** - điểm nhập để mở tệp
+
+- **Data_FileSize** - Kích cỡ tệp đang thực hiện thao tác
+
+- **Data_OpenMode** - Chế độ mở PDF, ví dụ: 0: Chế độ xem, 2: Chế độ ký
+
+- **Data_PageCount** - Số trang trong tệp PDF.
+
+- **Data_PasswordProtected** - Vạch dấu cho biết mật khẩu có bảo vệ tệp hay không.
+
+- **Data_ProviderApp** - hiện chỉ cung cấp ứng dụng nhà cung cấp trong trường hợp chỉ kích hoạt tệp 
+
+- **Data_ReadOnly** - Vạch dấu cho biết có phải là tệp chỉ đọc hay không.
+
+- **Data_Result** - Trạng thái của thao tác đang được thực hiện, ví dụ: true: thành công, false: thất bại
+
+- **Data_Type** - Kiểu thao tác tệp (mở, đóng hoặc lưu) 
+
+#### <a name="officeonenoteandroidappnavigationnavigationuistatechanged-onenoteappnavigationnavigationuistatechanged-previous-name"></a>Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(tên cũ)*
+
+Sự kiện này thu thập tín hiệu quan trọng dùng để đảm bảo người dùng OneNote có thể dẫn hướng thành công qua ứng dụng.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **IS_SPANNED** - Cho biết ứng dụng có trong chế độ mở rộng hay không. Trường này đặc biệt được ghi lại với các thiết bị có thể gập.
+
+- **NEW_STATE** - Cho biết trạng thái của các ứng dụng ngay sau khi dẫn hướng
+
+- **OLD_STATE** - Cho biết trạng thái của các ứng dụng ngay trước khi dẫn hướng
+
+#### <a name="officeonenoteandroidlenssdkofficelenslaunched-onenotelenssdkofficelenslaunched-previous-name"></a>Office.OneNote.Android.LensSDK.OfficeLensLaunched, OneNote.LensSDK.OfficeLensLaunched *(tên cũ)*
+
+Sự kiện này thu thập những tín hiệu quan trọng dùng để đảm bảo OfficeLens sẽ khởi động đúng cách.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **CAPTURE_MODE** - Cho biết chế độ khởi động OfficeLens.  Có thể là mặc định, chỉnh sửa, chèn nhanh hoặc nhập video.
+
+- **ERROR_CODE** - Cho biết mã lỗi khởi động trong trường hợp xảy ra lỗi khi khởi động.
+
+- **IMAGE_COUNT** - Cho biết số hình ảnh đã chụp
+
+- **LAUNCH_REASON** - Cho biết dòng khởi động OfficeLens. Dòng đó có thể nằm trên màn hình khóa hoặc thông qua các tùy chọn Camera hoặc Bộ sưu tập trong StickyNotes hoặc OneNote Canvas, v.v.
 
 #### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
 
@@ -3618,7 +4563,7 @@ Các trường sau đây sẽ được thu thập
 
 #### <a name="officeonenotenavigationnavigate"></a>Office.OneNote.Navigation.Navigate
 
-Tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote để dẫn hưỡng giữa các trang trong OneNote.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không dẫn hướng, điều này sẽ gây ra sự cố nghiêm trọng.
+Tín hiệu quan trọng được sử dụng để theo dõi khả năng người dùng OneNote để dẫn hưỡng giữa các trang trong OneNote.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể dẫn hướng, điều này sẽ gây ra sự cố nghiêm trọng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3805,7 +4750,7 @@ Các trường sau đây sẽ được thu thập
 
 #### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công. Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng có thể khởi chạy ứng dụng trong cửa sổ hiệu suất của chúng tôi, điều này sẽ gây ra sự cố nghiêm trọng.
+Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công. Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi động ứng dụng trong cửa sổ hiệu suất của chúng tôi, điều này sẽ gây ra sự cố nghiêm trọng.
 
 Các trường sau đây sẽ được thu thập: Không có
 
@@ -4042,7 +4987,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_OCSClosingDlgExpired:bool -** Có phải hộp thoại tự hết hạn (sau 1 phút) không?
 
-  - **Data\_OCSClosingStatus:long -** Trạng thái cuối cùng của OCS (Trong CSI, Có thể được đóng, Trong chuyển tiếp OCS, Trong chuyển tiếp CSI, v.v.)
+  - **Data\_OCSClosingStatus:long -** Trạng thái cuối cùng của OCS (Trong CSI, Có thể đóng, Trong chuyển tiếp OCS, Trong chuyển tiếp CSI, v.v.)
 
   - **Data\_OCSClosingWaitDurationMS:long -** Thời gian người dùng phải đợi để OCS tải lên
 
@@ -4052,7 +4997,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_StopwatchDuration:long -** Tổng thời gian cho Hoạt động
 
-  - **Data\_UserContinuedZRTClose:bool -** Khi đóng hộp thoại hiển thị, người dùng đã chọn “Tiếp tục” đóng chưa?
+  - **Data\_UserContinuedZRTClose:bool -** Khi đóng hộp thoại hiển thị, người dùng có chọn “Tiếp tục” đóng không?
 
 #### <a name="officepowerpointdocoperationnewdocument"></a>Office.PowerPoint.DocOperation.NewDocument
 
@@ -4164,7 +5109,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_FailureComponent:long -** Tập hợp các giá trị được xác định trước của cấu phần khiến giao thức này bị lỗi? (Xung đột, CSI, Nội bộ, v.v..)
 
-  - **Data\_FailureReason:long -** Tập hợp các giá trị được xác định trước về nguyên nhân lỗi (FileIsCorrupt, BlockedByAntillin, v.v.)
+  - **Data\_FailureReason:long -** Tập hợp các giá trị được xác định trước về nguyên nhân lỗi (Hỏng_tệp_ls, Bị_chặn_do_chống_virút, v.v.)
 
   - **Data_FullDownloadRoundTripCount:long -** Số lượng vòng tròn đến máy chủ được thực hiện để tải xuống toàn bộ tài liệu.
   
@@ -4286,11 +5231,11 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_DurationUAEOnSaveStartedMs:long -** Thời gian để Thoát ứng dụng không xác định trong khi lưu
 
-  - **Data\_EnsureSaveTransactionTimeMS:long -** Thời gian thực hiện để đảm bảo giao tác lưu được tạo nếu không tồn tại.
+  - **Data\_EnsureSaveTransactionTimeMS:long -** Thời gian thực hiện để đảm bảo tạo giao tác lưu chưa có tệp
 
   - **Data\_FailureComponent:long -** Tập hợp các giá trị được xác định trước của cấu phần khiến giao thức này bị lỗi? (Xung đột, CSI, Nội bộ, v.v..)
 
-  - **Data\_FailureReason:long -** Tập hợp các giá trị được xác định trước về nguyên nhân lỗi (FileIsCorrupt, BlockedByAntillin, v.v.)
+  - **Data\_FailureReason:long -** Tập hợp các giá trị được xác định trước về nguyên nhân lỗi (Hỏng_tệp_ls, Bị_chặn_do_chống_virút, v.v.)
 
   - **Data\_fLifeguarded:bool -** Tài liệu đã được bảo vệ chưa (tính năng tự sửa lỗi tài liệu mà không cần nhắc người dùng)?
 
@@ -4842,7 +5787,7 @@ Cho phép chúng tôi biết khi nào một phiên phát trực tuyến dữ li�
 
 Các trường sau đây sẽ được thu thập:
 
-- **Activity_Name** = Tên của hoạt động “Session”
+- **Activity_Name** - Tên của hoạt động "Phiên"
 
 - **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
 
@@ -4856,9 +5801,9 @@ Cho phép chúng tôi biết khi nào một phiên phát trực tuyến dữ li�
 
 Các trường sau đây sẽ được thu thập:
 
-- **Activity_Name** = Tên của hoạt động “Session”
+- **Activity_Name** - Tên của hoạt động "Phiên"
 
-- **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
+- **Activity_CV** - ID để kết hợp các sự kiện trong phiên kết nối
 
 - **Activity_StartStopType** - Stop
 
@@ -4874,7 +5819,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
 
-- **Activity_Name** - Tên của hoạt động "StreamDeviceData" hoặc "StreamFileData"
+- **Activity_Name** - Tên của hoạt động "Dữ_liệu_thiết_bị_trực_tuyến" hoặc "Dữ_liệu_tệp_trực_tuyến"
 
 - **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
 
@@ -4892,9 +5837,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
 
-- **Activity_Name** - Tên của hoạt động "StreamDeviceData" hoặc "StreamFileData"
+- **Activity_Name** - Tên của hoạt động "Dữ_liệu_thiết_bị_trực_tuyến" hoặc "Dữ_liệu_tệp_trực_tuyến"
 
-- **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
+- **Activity_CV** - ID để kết hợp các sự kiện trong phiên kết nối
 
 - **Activity_StartStopType** - Stop
 
@@ -5263,9 +6208,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp 
 
-- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy. 
+- **Data_BytesUnknown** - Số lượng byte trong phần tài liệu chúng tôi không muốn tìm thấy. 
 
-- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc/có thể sửa được 
+- **Data_Doc_AccessMode** - Tài liệu ở chế độ chỉ đọc 
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ 
 
@@ -5851,7 +6796,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ViewKind-** Kiểu dạng xem Word
 
-#### <a name="onenotecanvaspageopened"></a>OneNote.Canvas.PageOpened 
+#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(tên cũ)*, Office.OneNote.Android.Canvas.PageOpened
 
 Tín hiệu dùng để ghi lại khi mở một Trang.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra khi mở một Trang trong OneNote
 
@@ -5861,7 +6806,13 @@ Các trường sau đây sẽ được thu thập:
 
 - **TIME_TAKEN_IN_MS** - lượng thời gian cho việc mở trang
 
-#### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
+#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(tên cũ)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+
+Tín hiệu này được đùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng Android OneNote, sổ tay được cung cấp đúng cách và người dùng đã tạo ghi chú mới thành công.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
+
+Không có trường nào khác được thu thập.
+
+#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(tên cũ)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
 Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
 
@@ -5911,6 +6862,218 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.VerifySignatureDuration** - Thời gian để xác minh chữ ký
 
+#### <a name="read_conversation"></a>read_conversation
+
+Được dùng để giám sát tác động tiêu cực có thể có đối với tình trạng và hiệu năng khi kết xuất email
+
+Các trường sau đây sẽ được thu thập: 
+
+- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
+ 
+- **above_50fps** – số lượng khung hình được hiển thị trên 50 fps
+ 
+- **above_55fps** - số lượng khung hình được hiển thị trên 55 fps
+
+- **adal_id** - ID xác thực thư mục đang hoạt động của tài khoản, mã định danh duy nhất trong hệ thống xác thực Microsoft 
+
+- **component_name** - tên của cấu phần/chế độ xem hiện đang hoạt động trong quá trình lọc
+
+- **event_mode** – nơi người dùng nhập cuộc trò chuyện (nhóm hoặc khác) trong ứng dụng
+
+- **internet_message_id** – ID theo dõi cho thư gần nhất trong cuộc trò chuyện
+      
+- **orientation** – hướng màn hình tại thời điểm sự kiện (dọc hoặc ngang)
+
+- **recent_message_id** – ID của thư gần nhất trong cuộc trò chuyện
+
+- **suggested_reply_state** – trạng thái của câu trả lời được đề xuất cho cuộc trò chuyện này (không sẵn sàng, sẵn sàng, hiển thị, được sử dụng hoặc bỏ)
+  
+- **total_count** – tổng số khung được hiển thị theo cấu phần
+ 
+- **view_duration** – thời lượng cấu phần được người dùng xem
+
+#### <a name="save_attempt"></a>save_attempt
+
+Cho phép chúng tôi xác định tác động của các sự cố do người dùng cố gắng lưu tệp bằng cách đánh giá số lượng phiên bị ảnh hưởng và liệu có các tính năng phổ biến của các phiên đó hay không.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **file_type** - Loại tệp mà người dùng đã cố gắng lưu (chẳng hạn như .doc)
+
+- **origin** – Vị trí lần thử lưu tệp xuất phát (như từ email) để chúng tôi có thể phát hiện các sự cố liên quan đến thao tác lưu tệp từ một vị trí cụ thể trong ứng dụng
+
+- **token_type** - loại mã thông báo được dùng nhằm xác thực tài khoản để lưu tệp, từ đó giúp chúng tôi phát hiện các sự cố xác thực liên quan đến việc lưu tệp
+
+#### <a name="search_subtab_selected"></a>search_subtab_selected
+
+Sự kiện này cho phép chúng tôi theo dõi loại mục thực thể (tất cả, thư, danh bạ và lịch) người dùng đang sử dụng khi họ thực hiện tìm kiếm để chúng tôi có thể đảm bảo các cơ chế bộ lọc tìm kiếm đang hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **properties_general** -Những thuộc tính chung tất cả sự kiện Aria đang thu thập
+
+- **selected_reason** - Nguyên nhân loại mục được chọn, có thể là một trong ba giá trị sau: nhấn_vào_đầu_đề, nhấn_vào_xem_tất_cả, nhập_chế_độ_tìm_kiếm
+
+- **subtab_type** - Loại mục được chọn, có thể là một trong bốn giá trị: tất cả, thư, danh bạ, sự kiện.
+
+#### <a name="send_message"></a>send_message
+
+Được dùng để giám sát tác động tiêu cực có thể có đối với hiệu năng và tình trạng khi gửi thư email.
+
+Các trường sau đây sẽ được thu thập:
+  
+- **account** – theo dõi tài khoản thực hiện hành động
+
+- **compose_duration** – theo dõi tổng số thời gian người dùng cần để soạn thảo thư, trong đó bao gồm nhiều phiên nháp
+
+- **draft_message_id** - theo dõi ID thư soạn thảo của thư đang được gửi
+
+- **event_mode** - theo dõi chế độ sự kiện (nếu có) cho thư ("nhóm" hoặc "khác")
+
+- **has_attachment** - cho biết thư có tệp đính kèm nào hay không
+
+- **has_mip_label** - cho biết nhãn MIP có được đóng dấu trên thư hay không
+
+- **is_group_escalation** - đây có phải là thư tăng cấp trong nhóm không, "thư tăng cấp" là thư được gửi đến hộp thư của người dùng do sự tăng cấp (đã đăng ký với nhóm)
+
+- **is_groups** - theo dõi xem thư đã gửi có là thư nhóm hay không
+
+- **key_stroke_count** – theo dõi số tổ hợp phím cho thư đang được gửi
+
+- **message_id** – theo dõi ID thư đang được trả lời/chuyển tiếp
+
+- **origin** – cho biết nơi soạn thảo được khởi tạo, tức là mới, trả lời, trả lời nhanh, v.v
+
+- **send_draft_origin** - cho biết vị trí khởi tạo thao tác gửi, ví dụ: soạn hoặc trả lời nhanh
+
+- **smart_compose_model_version** - theo dõi phiên bản kiểu máy soạn thảo thông minh đang được sử dụng
+
+- **source_inbox** - cho biết loại hộp thư nguồn cho thư tham chiếu, 
+
+- **suggested_reply_state** - nắm được trạng thái câu trả lời được đề xuất, ví dụ: không sẵn dùng, sẵn dùng, hiển thị, được sử dụng, bỏ đối với thư đã gửi này
+
+- **suggestions_requested** - cho biết số lượng đề xuất soạn thảo thông minh theo yêu cầu
+
+- **suggestions_results** - kết quả của đề xuất soạn thảo thông minh, như chấp thuận, từ chối
+
+- **suggestions_returned** - cho biết số lượng đề xuất soạn thảo thông minh được trả về từ máy chủ
+
+- **suggestions_shown** - cho biết số lượng đề xuất soạn thảo thông minh hiển thị cho người dùng
+
+- **thread_id** - cho biết chuỗi ID của cuộc hội thoại đang được trả lời/chuyển tiếp
+
+#### <a name="session"></a>phiên
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, chúng tôi đang sử dụng quá nhiều năng lượng pin trên thiết bị của bạn và giúp chúng tôi xác định nguyên nhân có thể là gì.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **battery_level** - cho chúng tôi biết mức pin trên thiết bị để giúp chúng tôi phát hiện thời điểm ứng dụng của chúng tôi tác động gây hại đến mức pin trên thiết bị của bạn
+
+- **has_hx** - Cho biết tài khoản đang sử dụng dịch vụ đồng bộ mới của chúng tôi để giúp chúng tôi phát hiện các sự cố do dịch vụ đồng bộ
+
+#### <a name="settings_action"></a>settings_action
+
+Cho phép chúng tôi phát hiện các trường hợp có thể gây tác động tiêu cực đến khả năng đặt cấu hình thiết đặt ứng dụng của bạn, như cài đặt thông báo, tài khoản email chính và đặt cấu hình chữ ký thư của bạn.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **account_order_changed** – Để kiểm tra xem bạn có thay đổi thứ tự cho tài khoản của mình hay không nhằm đảm bảo cấu hình này hoạt động đúng cách 
+
+- **action** – các hành động có thể được thực hiện trong cài đặt, như xóa tài khoản để giúp chúng tôi chẩn đoán các sự cố và đảm bảo không có tác động tiêu cực nào
+
+- **auth_type** – Loại xác thực đang được tài khoản sử dụng, vì vậy, chúng tôi sẽ hiểu được chúng tôi đang dùng lớp đồng bộ phụ trợ nào để giúp chẩn đoán sự cố 
+
+- **auth_type** – cho biết loại xác thực phụ trợ cho phép chúng tôi biết khi có sự cố với một loại tài khoản cụ thể
+
+- **badge_count_state** – cho biết loại số lượng thông báo người dùng yêu cầu, tức là không có thông báo, chỉ ưu tiên hộp thư đến, v.v 
+
+- **changed_folder** – Chụp lại xem thư mục đã được thay đổi để giúp chúng tôi chẩn đoán sự cố hay chưa. 
+
+- **changed_folder** – xác định liệu hành động này đã được lưu trữ, lên lịch hay hành động khác hay chưa.
+
+- **delete_scope** – Trong quá trình xóa tài khoản, liệu bạn đã xóa tài khoản khỏi thiết bị này hay từ tất cả các thiết bị có Outlook hay chưa.  
+
+- **delete_scope** – theo dõi xem hành động này có liên quan đến thao tác xóa người khác chỉ trên thiết bị này hoặc trên tất cả các thiết bị (nếu có) hay không. 
+
+- **enabled_state** – Liệu cài đặt trả lời tự động, lưu liên hệ và chặn các hình ảnh bên ngoài của bạn có được đặt cấu hình đúng cách hay không  
+
+- **enabled_state** – liệu trạng thái liên quan đến hành động đã được bật hay chưa
+
+- **notification_state** – cho biết loại số lượng thông báo mà người dùng yêu cầu, tức là không thông báo, chỉ ưu tiên hộp thư đến, v.v
+
+- **server_type** – Tương tự như auth_type, cho chúng tôi biết loại tài khoản bạn sở hữu để giúp chúng tôi chẩn đoán sự cố tốt hơn. Ví dụ** – Office365, Gmail, Outlook
+
+- **server_type** – cho biết loại máy chủ phụ trợ cho phép chúng tôi biết khi có sự cố với một loại máy chủ cụ thể
+
+- **setting_properties** – Theo dõi các thuộc tính liên quan đến thao tác thiết lập hành động 
+
+- **signature_setting** – cho biết liệu cài đặt được áp dụng cho tất cả tài khoản hay tài khoản riêng lẻ
+
+- **source** – cho biết nguồn thông báo (nếu có) từ cài đặt hoặc cài đặt không làm phiền
+
+- **state_changed_to** – Để kiểm tra xem cài đặt bật/tắt hộp thư ưu tiên của bạn có được đặt cấu hình đúng cách hay không 
+
+- **swipe_action** – Để kiểm tra xem liệu bạn đã đặt cấu hình bất kỳ hành động trượt nhanh nào cho việc đồng bộ email hay chưa để giúp chúng tôi đảm bảo cài đặt này hoạt động thành công 
+
+- **swipe_action** – cho biết người dùng đã tìm cách thực hiện điều gì, tức là: gắn cờ, xóa, lưu trữ, thông tin này cho phép chúng tôi xác định người dùng muốn hành động gì và liệu hành động có thất bại hay không. 
+
+- **swipe_direction** – Để kiểm tra xem hướng trượt nhanh của bạn (trái hay phải) có được đặt cấu hình chính xác hay không
+
+- **swipe_direction** – xác định cách người dùng thiết lập hướng trượt nhanh, tức là từ trái sang phải hay phải sang trái. Điều này cho phép chúng tôi xác định xem liệu có sự cố nào với một hướng trượt nhanh cụ thể hay không.
+
+- **swipe_setting** – cho biết thông tin về cài đặt trượt nhanh liên quan đến hành động này (nếu có)
+
+- **ui_mode_setting** – chế độ giao diện người dùng được chọn (tối, sáng, mặc định theo hệ thống, pin yếu, v.v)
+
+#### <a name="sidebar_action"></a>sidebar_action
+
+Cho phép chúng tôi phát hiện các trường hợp có thể gây tác động tiêu cực đến khả năng đặt cấu hình thiết đặt ứng dụng của bạn, như cài đặt thông báo, tài khoản email chính và đặt cấu hình chữ ký thư của bạn.
+
+Trường dữ liệu phổ biến cho Outlook Mobile đối với sự kiện này trên iOS và Android:
+
+- **Acount** - theo dõi tài khoản và dữ liệu liên kết với sự kiện này, các giá trị được theo dõi trong dữ liệu này đều nằm trong tài liệu trường om thông thường *[Trường này đã bị loại bỏ khỏi bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng trước.]*
+
+- **action** - theo dõi kiểu hành động thanh bên đã xảy ra, ví dụ: bỏ, chọn nút trợ giúp, thanh bên thư, v.v 
+
+- **from_favorites** – theo dõi xem hành động có đến từ một mục trong mục yêu thích hay không 
+
+- **mail_folder_type** – loại thư mục nào được chọn trong hành động thanh bên (nếu có).
+
+- **sidebar_type** – theo dõi kiểu thanh bên liên kết với sự kiện này, tức là thư hoặc lịch để giúp chúng tôi đảm bảo dẫn hướng từ thiết đặt mục yêu thích hoạt động đúng cách
+
+Các trường sau đây sẽ được thu thập: 
+
+- **account_type** – cho biết loại xác thực cho tài khoản này là gì, tức là Gmail, Outlook, v.v 
+
+- **account_has_groups** – Giúp chúng tôi đảm bảo nếu tài khoản có nhóm thì tài khoản được đặt cấu hình đúng cách
+
+- **calendar_accounts_count** – Số tài khoản lịch bạn có để giúp chúng tôi đảm bảo tài khoản lịch của bạn được đặt cấu hình đúng cách 
+
+- **calendar_apps_count** – Số ứng dụng lịch bạn có để giúp chúng tôi đảm bảo các ứng dụng lịch bạn thích được đặt cấu hình đúng cách 
+
+- **calendar_type** - Kiểu lịch bạn có (Lịch chính, Lịch nhóm, v.v) 
+
+- **has_favorite_folders** - Giúp chúng tôi đảm bảo các thư mục yêu thích được đặt cấu hình đúng cách 
+
+- **has_favorite_people** – Giúp chúng tôi đảm bảo những người/liên hệ yêu thích được đặt cấu hình đúng cách 
+
+- **has_group_calendar** – Giúp chúng tôi đảm bảo rằng nếu bạn có lịch nhóm thì các lịch này được đặt cấu hình đúng cách 
+
+- **has_group_calendar_account** – Giúp chúng tôi đảm bảo rằng nếu bạn có lịch nhóm thì các lịch này được đặt cấu hình đúng cách 
+
+- **has_group_toggled** – Giúp chúng tôi đảm bảo rằng nếu bạn có lịch nhóm chuyển đổi thì cài đặt này được đặt cấu hình đúng cách 
+
+- **interesting_calendars_accounts_count** – Số tài khoản lịch thú vị bạn có để giúp chúng tôi đảm bảo tài khoản lịch thú vị của bạn được đặt cấu hình đúng cách 
+
+- **mail_accounts_count** - Tổng số tài khoản thư trong thanh bên để đảm bảo mục này được đặt cấu hình đúng cách 
+
+- **mail_folder_type** - Loại thư mục người dùng đã nhấn vào để đảm bảo mục này được đặt cấu hình đúng cách. Thư mục này có thể bao gồm Thư mục đã xóa, Thư rác hoặc Thư mục đã gửi của bạn. 
+
+- **mail_inbox_unread_count** - Giúp chúng tôi đảm bảo số lượng chưa đọc được hiển thị và đặt cấu hình đúng cách 
+
+- **mail_subfolder_depth** - Giúp chúng tôi đảm bảo có thể hiển thị thành công cấu hình thư mục con thư của người dùng
+
 #### <a name="storeop"></a>StoreOp
 
 Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán đúng sự cố xảy ra khi hoạt động của Dịch vụ Quản lý quyền giấy phép được thực hiện. 
@@ -5953,10 +7116,72 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.Url** - URL của máy chủ Dịch vụ Quản lý Quyền
 
+#### <a name="watchappv2"></a>watchAppV2
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố có thể xảy ra trong các khả năng trên Apple Watch của bạn như nhận thông báo và phản hồi email.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **app_action** - Cho chúng tôi biết loại hành động người dùng đã thực hiện trên Apple Watch, chẳng hạn như “lưu_trữ_thư” để giúp chúng tôi phát hiện các sự cố liên quan đến một hành động cụ thể như không thể lưu trữ thư thành công trên Apple Watch
+
+- **is_watch_app_installed** - Cho chúng tôi biết liệu người dùng đã cài đặt ứng dụng Apple Watch của chúng tôi trên thiết bị của họ hay chưa
+
+- **is_complication_enabled** – Cho chúng tôi biết liệu người dùng đã thêm Outlook vào màn hình Apple Watch của họ để giúp chúng tôi phát hiện các sự cố liên quan đến màn hình Apple Watch hay chưa
+
+- **watch_os** – Cho chúng tôi biết phiên bản hệ điều hành của Apple Watch họ đã cài đặt để giúp chúng tôi phát hiện các sự cố liên quan đến các phiên bản hệ điều hành cụ thể của Apple Watch
+
 
 ### <a name="application-status-and-boot-subtype"></a>*Trạng thái ứng dụng và kiểu con khởi động*
 
 Xác định xem các sự kiện tính năng cụ thể đã xảy ra hay chưa, chẳng hạn như bắt đầu hoặc dừng và tính năng có đang hoạt động hay không.
+
+#### <a name="app_startup"></a>app_startup
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó Outlook khởi động chậm hoặc không hoàn toàn, khiến người dùng khó sử dụng ứng dụng của chúng tôi.  Sự kiện bao gồm thông tin về các tính năng cụ thể đã được bật và thời lượng các phần khởi động diễn ra.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **attach_base_context_millis** – thời gian giữa Ngữ cảnh nền bắt đầu và onCreate() bắt đầu
+
+- **device_ram_in_mb** – RAM sẵn dùng trên thiết bị
+
+- **has_company_portal** – liệu ứng dụng cổng thông tin của công ty đã được cài đặt hay chưa
+
+- **hx_okhttp_mode** – liệu cấu phần dịch vụ đồng bộ email mới có đang sử dụng OKHttp để gửi và nhận các yêu cầu mạng dựa trên HTTP hay không
+
+- **initial_activity_name** – Hoạt động Android khởi chạy ứng dụng
+
+- **manufacturer** – nhà sản xuất thiết bị
+
+- **model** – kiểu máy
+
+- **on_create_millis** – thời gian cần thiết trong phương pháp onCreate()
+
+- **on_resume_millis** – thời gian cần thiết trong phương pháp onResume()
+
+- **time_until_attach** – thời gian giữa khi lớp học tải và Ngữ cảnh nền bắt đầu
+
+- **total_millis** – tổng thời gian từ khi bắt đầu tải lớp đến khi hoàn thành tiếp tục Hoạt động Android
+
+#### <a name="boot_time"></a>boot_time 
+
+Sự kiện này cho phép chúng tôi phát hiện lỗi ứng dụng nghiêm trọng đã xảy ra khi nào khiến ứng dụng của bạn gặp sự cố hoặc gặp vấn đề nghiêm trọng như khiến bạn thấy các hàng trống trong hộp thư đến của mình. Sự kiện này thu thập thông tin cho phép chúng tôi phân mục và phân loại các sự cố nhằm giúp ưu tiên tác động của sự cố đối với khách hàng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **black_list_reason** – Cho chúng tôi biết liệu có lý do tại sao chúng tôi nên bỏ qua dữ liệu này hay không. Một số ví dụ bao gồm khởi động do thông báo từ xa và khởi động do tải nạp trong nền.
+
+- **step0_main** - Cho chúng tôi biết thời lượng cần thiết để Outlook đến được bước "chính", bước do Apple xác định.
+
+- **step1_appWillFinishLaunching** - Cho chúng tôi biết thời lượng cần thiết để Outlook đi từ bước "chính" đến bước "ứng_dụng_sẽ_hoàn_thành_khởi_động", bước do Apple xác định.
+
+- **step2_appDidFinishLaunching** - Cho chúng tôi biết thời lượng cần thiết để Outlook đi từ bước "ứng_dụng_sẽ_hoàn_thành_khởi_động" đến bước "ứng_dụng_đã_hoàn_thành_khởi_động", bước do Apple xác định.
+
+- **step3_engineStarted** - Cho chúng tôi biết thời lượng cần thiết để Outlook đi từ bước "ứng_dụng_đã_hoàn_thành_khởi_động" đến khi khởi động công cụ của ứng dụng, bước sẽ xử lý việc lưu trữ và đồng bộ hóa dữ liệu.
+
+- **step4_runLoopFirstIdle** - Cho chúng tôi biết thời lượng cần thiết để Outlook đi từ bước “công_cụ_khởi_động” đến hoàn tất mọi công việc.
+
+- **total_time** - Cho chúng tôi biết tổng thời gian cần thiết để Outlook hoàn tất quy trình khởi động.
 
 #### <a name="dnslookupop"></a>DnsLookupOp
 
@@ -5984,7 +7209,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
 
-- **RMS.NoOfDomainsSearched** - Số miền được tìm kiếm  
+- **RMS.NoOfDomainsSearched** - Số miền được tìm kiếm    
 
 - **RMS.NoOfDomainsSkipped** - Số miền đã bỏ qua 
 
@@ -5997,6 +7222,22 @@ Các trường sau đây sẽ được thu thập:
 - **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền 
 
 - **RMS.StatusCode** - Mã trạng thái của kết quả vận hành
+
+#### <a name="first_visible"></a>first_visible
+
+Sự kiện này cho phép chúng tôi phát hiện lần đầu người dùng chủ động khởi động ứng dụng. Sự kiện này phải đảm bảo ứng dụng sẽ hoạt động thành công trong các bản dựng Nhà sản xuất Thiết bị Gốc (OEM).
+
+Các trường sau đây sẽ được thu thập:
+
+- **is_oem** - một trường theo dõi cho biết ứng dụng có đang chạy trên một biến thể OEM không
+
+- **is_system_install** - một trường theo dõi trạng thái hiện diện của tệp thuộc tính cài sẵn trước có thể cho biết bản cài đặt này là OEM 
+
+- **manufacturer** - nhà sản xuất thiết bị
+
+- **model** - kiểu máy của thiết bị
+
+- **systemFlagSet** - giá trị của cờ hệ thống của Android (ApplicationInfo.FLAG_SYSTEM) cho biết ứng dụng đã được cài đặt như một phần trong hình ảnh hệ thống của thiết bị hay chưa
 
 #### <a name="getuserop"></a>GetUserOp
 
@@ -6088,6 +7329,14 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.WinhttpCallbackStatus** - Trạng thái của winhttp kết quả của cuộc gọi trở lại
 
+#### <a name="initialized"></a>Đã khởi tạo
+
+Cho phép chúng tôi phân tích trạng thái giao diện cho phép các ứng dụng dành cho thiết bị di động tải các thiết đặt người dùng và quyền riêng tư từ những dịch vụ của Office và chẩn đoán sự cố về kết nối và dịch vụ thiết đặt quyền riêng tư.
+
+Các trường sau đây sẽ được thu thập:
+
+- **roamingSettingType** – xác định vị trí mà ở đó chúng tôi cố gắng đọc thiết đặt
+
 #### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
 
 Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán chính xác các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcCreateOauth2Token.
@@ -6118,9 +7367,25 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
 
+
+#### <a name="officeandroidaccountstorageinfo"></a>Office.Android.AccountStorageInfo
+
+Sự kiện này xác định số lượng tài khoản MSA và ADAL trong sổ đăng ký và các tùy chọn chia sẻ. Sự kiện này cho phép phân tích tính không nhất quán trong việc lưu trữ dữ liệu và giúp chúng tôi ổn định hiệu suất của ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **RegistryADALCount**- Cho biết số lượng tài khoản ADAL trong sổ đăng ký.
+
+- **RegistryLiveIdCount**- Cho biết số lượng tài khoản MSA trong sổ đăng ký.
+
+- **SharedPrefADALCount**- Cho biết số lượng tài khoản ADAL trong tùy chọn chia sẻ.
+
+- **SharedPrefLiveIdCount**- Cho biết số lượng tài khoản MSA trong tùy chọn chia sẻ.
+
+
 #### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
 
-Việc ghi lại số liệu hiệu suất ứng dụng đối với thời gian phản hồi của ứng dụng từ khi khởi động là quan trọng.  Microsoft dùng tính năng này để thu thập lượng thời gian cần thiết để ứng dụng có thể phản hồi cũng như phát hiện những kịch bản có thể ảnh hưởng đến thời gian khởi động trong các ứng dụng WXP.
+Việc ghi lại số liệu hiệu suất ứng dụng đối với thời gian phản hồi của ứng dụng từ khi khởi động là quan trọng.  Microsoft dùng tính năng này để thu thập lượng thời gian cần thiết để ứng dụng có thể phản hồi cũng như phát hiện những kịch bản có thể ảnh hưởng đến thời gian khởi động trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -6150,9 +7415,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_APIInitTime:integer -** Thời gian để khởi tạo mô-đun Visio API
 
-  - **Data\_AppSizeHeight –** **-** Chiều dài cửa sổ bổ trợ
+  - **Data\_AppSizeHeight -** **-** Chiều dài cửa sổ bổ trợ
 
-  - **Data\_AppSizeWidth –** **-** Chiều rộng cửa sổ bổ trợ
+  - **Data\_AppSizeWidth -** **-** Chiều rộng cửa sổ bổ trợ
 
   - **Data\_AppURL -** URL của phần bổ trợ; Ghi nhật ký URL đầy đủ cho phần bổ trợ lưu trữ và tên miền URL cho phần bổ trợ không lưu trữ
 
@@ -6366,7 +7631,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_SchemeMgrStartupTime:integer -** Thời gian để khởi tạo trình quản lý lược đồ
 
-  - **Data\_SDX\_AssetId -** CHỈ tồn tại cho các phần bổ trợ lưu trữ. OMEX cung cấp phần bổ trợ trong một AssetId khi nhập vào Store
+  - **Data\_SDX\_AssetId -** CHỈ tồn tại cho các phần Bổ trợ lưu trữ. OMEX cung cấp phần bổ trợ trong một AssetId khi nhập vào Store
 
   - **Data\_SDX\_BrowserToken -** Mã định danh nằm trong bộ đệm ẩn của trình duyệt
 
@@ -6434,6 +7699,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **AssetId** - ID tài sản của ứng dụng
 
+- **IsPreload** - cho biết phần bổ trợ có đang được tải trước trong nền để cải thiện hiệu suất kích hoạt không
+
 - **NumberOfAddinsActivated** - Bộ đếm phần bổ trợ được kích hoạt
 
 - **RemoterType** - Xác định loại điều khiển từ xa (Đáng tin cậy, không đáng tin cậy, Win32webView, UDF đáng tin cậy, v.v.) được sử dụng để kích hoạt phần bổ trợ
@@ -6448,9 +7715,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **TotalTime** - Tổng thời gian sử dụng
 
-#### <a name="onenoteappappbootcomplete"></a>OneNote.App.AppBootComplete 
+- **UsesSharedRuntime** - cho biết ứng dụng có sử dụng thời_gian_chạy_chia_sẻ hay không.
 
-Tín hiệu quan trọng dùng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi động ứng dụng lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete"></a>OneNote.App.AppBootComplete *(tên cũ)*, Office.OneNote.Android.App.AppBootComplete 
+
+Tín hiệu quan trọng dùng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -6489,7 +7758,9 @@ nào đã hiển thị trong thời gian khởi động hay không
 
 - **IS_COLD_BOOT** - Cho biết liệu Ứng dụng có khởi chạy khi Ứng dụng không hoạt động trong nền hay không
 
-- **IS_FIRST_LAUNCH** - Cho biết liệu đây có phải là lần đầu tiên Ứng dụng được khởi chạy trong thiết bị hay không 
+- **IS_FIRST_LAUNCH** - Cho biết liệu đây có phải là lần đầu tiên Ứng dụng được khởi chạy trong thiết bị hay không
+
+- **IS_FOLDABLE_TYPE** - Cho biết thiết bị có phải là thiết bị có thể gập hay không
 
 - **IS_PHONE** - Cho biết liệu thiết bị là điện thoại hay máy tính bảng
 
@@ -6549,23 +7820,27 @@ nào đã hiển thị trong thời gian khởi động hay không
  
 - **USER_INTERACTED_DURING_EVENT** - Cho biết liệu người dùng có tương tác trong quá trình khởi động hay không
 
-#### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
+#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(tên cũ)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
 
 Tín hiệu dùng để cho biết Ứng dụng OneNote nằm trong nền trước.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
 Các trường sau đây sẽ được thu thập: Không có
 
-#### <a name="onenoteapplaunch"></a>OneNote.AppLaunch
+#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(tên cũ)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
 
 Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
 Các trường sau đây sẽ được thu thập: 
+
+- **ANDROID_SDK_VERSION** - Nắm được phiên bản Android SDK
 
 - **FirstLaunchTime** - Ghi lại thời điểm khi Ứng dụng được khởi chạy lần đầu tiên
 
 - **InstallLocation** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
 
 - **is_boot_completed_ever** - Cho biết liệu trước đây Ứng dụng từng được khởi động thành công trên thiết bị hay chưa
+
+- **IS_DARK_MODE_ENABLED** - Một Boolean cho biết ứng dụng có đang trong chế độ tối hay không
 
 - **NewOneNoteUser** - Xác định xem người dùng có phải là người dùng mới hay không
 
@@ -6652,7 +7927,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_DetermineFileType -** Khoảng thời gian thực hiện phương pháp DetermineFileType tính theo mili giây
 
-  - **Data\_Doc\_AccessMode:long -** Cách tài liệu này đã được mở (Chỉ đọc/đọc ghi)
+  - **Data\_Doc\_AccessMode:long -** Cách mở tài liệu này (Chỉ đọc / đọc ghi)
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
@@ -6668,11 +7943,11 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_FileFormat:long -** Tập hợp các giá trị định dạng của tệp được xác định trước (chi tiết hơn so với phần mở rộng)
 
-  - **Data\_Doc\_Fqdn:string – -** Nơi tài liệu được lưu trữ (SharePoint.com, live.net), chỉ khả dụng cho các tên miền của Office 365
+  - **Data\_Doc\_Fqdn:string - -** Nơi lưu trữ tài liệu (SharePoint.com, live.net), chỉ khả dụng cho miền của Office 365
 
-  - **Data\_Doc\_FqdnHash:string – -** Hàm băm của tài liệu được lưu trữ
+  - **Data\_Doc\_FqdnHash:string - -** Hàm băm của tài liệu được lưu trữ
 
-  - **Data\_Doc\_IdentityTelemetryId:string – -** GUID duy nhất của người dùng
+  - **Data\_Doc\_IdentityTelemetryId:string - -** GUID duy nhất của người dùng
 
   - **Data\_Doc\_IdentityUniqueId:string -** Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
@@ -6682,7 +7957,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Dữ liệu\_tài liệu\_IsCloudCollabEnabled:bool -** True nếu tiêu đề HTTP "IsCloudCollabEnables" đã được nhận từ yêu cầu TÙY CHỌN.
 
-  - **Data\_Doc\_IsIncrementalOpen:bool – -** : Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
+  - **Data\_Doc\_IsIncrementalOpen:bool - -** : Tài liệu đã được mở tăng dần (tính năng mới mở tài liệu mà không cần tải xuống toàn bộ tài liệu)
 
   - **Data\_Doc\_IsOcsSupported:bool -** Tài liệu có hỗ trợ đồng tác giả bằng dịch vụ OCS mới hay không
 
@@ -6698,7 +7973,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_PasswordFlags:long -** Tập hợp các giá trị được xác định trước về cách tài liệu được mã hóa bằng mật khẩu (Không có, mật khẩu để đọc, mật khẩu để chỉnh sửa)
 
-  - **Data\_Doc\_ReadOnlyReasons:long –-** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
+  - **Data\_Doc\_ReadOnlyReasons:long --** Tập hợp giá trị được xác định trước về lý do tại sao tài liệu này được đánh dấu là chỉ đọc (Được khóa trên máy chủ, tài liệu cuối cùng, mật khẩu được bảo vệ để chỉnh sửa, v.v.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
 
@@ -6707,7 +7982,7 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
   - **Data\_Doc\_ServerProtocol:long -** Tập hợp các giá trị được xác định trước của giao thức được sử dụng để giap tiếp với máy chủ (http, Cobalt, WOPI, v.v.)
-
+ 
   - **Data\_Doc\_ServerType:long -** Tập hợp các giá trị được xác định trước của loại máy chủ (SharePoint, DropBox, WOPI)
 
   - **Data\_Doc\_ServerVersion:long -** Máy chủ có dựa trên Office14, Office15, Office 16 không?
@@ -6722,7 +7997,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_StorageProviderId:string -** Chuỗi xác định nhà cung cấp lưu trữ của tài liệu, như "DropBox”
 
-  - **Data\_Doc\_StreamAvailability:long-** Tập hợp các giá trị trạng thái của luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
+  - **Data\_Doc\_StreamAvailability:long-** Tập hợp các giá trị trạng thái của Luồng tài liệu được xác định trước (có sẵn, bị vô hiệu hóa vĩnh viễn, không khả dụng)
 
   - **Data\_Doc\_UrlHash:string -** Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
 
@@ -6750,7 +8025,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_FailureComponent:long -** Tập hợp các giá trị được xác định trước của cấu phần khiến giao thức này bị lỗi? (Xung đột, CSI, Nội bộ, v.v..)
 
-  - **Data\_FailureReason:long -** Tập hợp các giá trị được xác định trước về nguyên nhân lỗi (FileIsCorrupt, BlockedByAntillin, v.v.)
+  - **Data\_FailureReason:long -** Tập hợp các giá trị được xác định trước về nguyên nhân lỗi (Hỏng_tệp_ls, Bị_chặn_do_chống_virút, v.v.)
 
   - **Data\_FCreateNew -** Đây có phải là tài liệu trống mới không
 
@@ -6761,6 +8036,8 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_FileUrlLocation -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Network Share, Local Drive, ServerOther, v.v.)
 
   - **Data\_FirstSlideCompressedSize -** kích cỡ được nén của phần zip trang chiếu đầu tiên (thường là Slide1.xml)
+
+  - **Data_FIsAutoBackupFile-** Tệp này có là tệp sao lưu tự động không?
 
   - **Data\_FIsDownloadFileInBgThreadEnabled -** Tải xuống trong chuỗi hội thoại nền có được bật không?
 
@@ -6835,6 +8112,10 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_NotRequiredExcludedParts -** Tổng số phần zip không được yêu cầu cho lần kết xuất đầu tiên và bị loại trừ
 
   - **Data\_NotRequiredExcludedPartsSize -** Tổng số phần zip không được yêu cầu cho lần kết xuất đầu tiên và bị loại trừ
+
+  - **Data_OngoingBlockingOpenCount -** Đây là số giao thức chặn mở hiện đang chạy.
+  
+  - **Data_OngoingOpenCount -** Đây là số lượng giao thức mở đang chạy.
 
   - **Data\_OpenCompleteFailureHR -** Kết quả về lý do tại sao giao thức OpenComplete không thành công
 
@@ -7137,7 +8418,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
 
-- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy. 
+- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu chúng tôi không muốn tìm thấy. 
 
 - **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
@@ -7231,7 +8512,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-- **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
+- **Data_PartsUnknown** - số phần tài liệu mà chúng tôi không thể lấy dữ liệu
 
 - **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở
 
@@ -7262,7 +8543,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
     
-- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy.
+- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu chúng tôi không muốn tìm thấy.
 
 - **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
@@ -7358,7 +8639,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-- **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
+- **Data_PartsUnknown** - số phần tài liệu mà chúng tôi không thể lấy dữ liệu
 
 - **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở.
 
@@ -7387,7 +8668,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_BytesSynchronous -** Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
 
-  - **Data\_BytesUnknown -** Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy.
+  - **Data\_BytesUnknown -** Số lượng byte trong các phần tài liệu chúng tôi không mong tìm thấy.
 
   - **Data\_Doc\_AccessMode -** Tài liệu đích chỉ đọc/có thể chỉnh sửa
 
@@ -7481,7 +8762,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_MoveFlightEnabled -** Liệu thao tác chống lại tính năng di chuyển có được bật hay không
 
-  - **Dữ liệu\_PartsUnknown -** Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
+  - **Data\_PartsUnknown -** số phần tài liệu chúng tôi không thể lấy dữ liệu
 
   - **Data\_RecoverableFailureInitiationLocationTag -** Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở
 
@@ -7510,7 +8791,7 @@ Các trường sau đây sẽ được thu thập:
     
 - **Data_BytesSynchronous** - Số byte (đã nén) mà chúng ta phải có trước khi có thể bắt đầu mở tệp
 
-- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu mà chúng tôi không mong muốn tìm thấy.
+- **Data_BytesUnknown** - Số lượng byte trong các phần tài liệu chúng tôi không muốn tìm thấy.
 
 - **Data_DetachedDuration** - Thời gian hoạt động được tách ra từ chuỗi
 
@@ -7604,7 +8885,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_MoveFlightEnabled** - Liệu chuyến bay cho tính năng di chuyển có được bật hay không
 
-- **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu
+- **Data_PartsUnknown** - số phần tài liệu mà chúng tôi không thể lấy dữ liệu
 
 - **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở
 
@@ -7796,23 +9077,11 @@ Sự kiện này cho biết Office Word đọc to văn bản trong tài liệu. 
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_CharacterCount -** Số ký tự của tài liệu
-
-  - **Data\_CharactersWithSpaceCount -** Số lượng ký tự và dấu cách của tài liệu
-
-  - **Data\_IsPageCountInProgress -** là số trang đang được thực hiện
-
-  - **Data\_LineCount -** Số dòng của tài liệu
-
-  - **Data\_PageCount -** Số trang của tài liệu
-
   - **Data\_ParagraphCount -** Số đoạn của tài liệu
 
   - **Data\_Play -** Đây có phải là lần đầu tiên Word đọc to hay không
 
   - **Data\_ViewKind -** Loại dạng xem tài liệu
-
-  - **Data\_WordCount -** Số từ trong tài liệu
 
 #### <a name="officewordaccessibilitylearningtoolsreadaloudstopreadaloud"></a>Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
 
@@ -7877,6 +9146,119 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 
 Ứng dụng bất ngờ thoát và trạng thái của ứng dụng khi điều đó xảy ra.
 
+#### <a name="app_startup_reason"></a>app_startup_reason
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó, Outlook gặp sự cố khi khởi động ứng dụng.  Sự kiện này bao gồm thông tin về lý do xảy ra sự cố để chúng tôi có thể khắc phục sự cố này một cách nhanh chóng.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **app_background_time** – thời lượng ứng dụng chạy trong nền trong phiên gần nhất
+
+- **startup_reason_type** – cho biết lý do tại sao ứng dụng khởi động, điều này sẽ chỉ ra liệu đó là do bắt buộc thoát hay lý do khác. 
+
+- **watch_status_info** – theo dõi các thông tin sau đây (nếu có). 
+
+  - **is_watch_app_installed** – xác định xem người dùng đã cài đặt ứng dụng Watch hay chưa
+
+  - **is_watch_paired** – xác định xem thiết bị chạy iOS có được kết nối với đồng hồ hay không
+
+  - **is_watch_supported_and_active** – cho biết liệu đồng hồ có được hỗ trợ và hiện hoạt trong phiên hay không
+
+Các trường sau chỉ được thu thập cho Outlook Mobile for iOS:
+
+- **clean_exit_reason** – Chuỗi các từ cho biết tại sao nếu có một lý do cho việc ứng dụng dừng lại
+
+- **is_agenda_user** – Cho biết liệu người dùng gần đây có mở lịch công tác hay không, điều này cho biết liệu chúng tôi có đang viết đĩa khi khởi động không
+
+- **is_watch_supported_and_active** – cho biết liệu đồng hồ có được hỗ trợ và hiện hoạt trong phiên hay không
+
+
+#### <a name="application_crash"></a>application_crash
+
+Được dùng để giám sát các sự cố nghiêm trọng đối với ứng dụng và giúp chúng tôi thu thập thông tin về lý do tại sao ứng dụng gặp sự cố và cách ngăn chặn.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **android.hardware.** – (VD: android.hardware.bluetooth) Giá trị cấu hình phần cứng do nền tảng Android cung cấp
+
+- **android.software.** – (VD: android.software.device_admin) Giá trị cấu hình phần mềm do nền tảng Android cung cấp
+
+- **android_version** – Tên phiên bản thiết bị Android theo chỉ định của android.os.Build.VERSION#RELEASE
+
+- **application_package_name** – Tên gói ứng dụng theo chỉ định của android.content.Context#getPackageName()
+
+- **application_stack_trace** – dấu vết xếp chồng của sự cố
+
+- **application_version_code** – Mã phiên bản ứng dụng do ứng dụng Outlook xác định
+
+- **application_version_name** – Tên phiên bản ứng dụng do ứng dụng Outlook xác định 
+
+- **com.** (ví dụ: com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Giá trị cấu hình nhà sản xuất cụ thể do nền tảng Android cung cấp
+
+- **crash_report_sdk** - SDK gửi nhật ký sự cố. Hockey hoặc Trung tâm ứng dụng
+
+- **crash_type** - loại_sự_cố dưới dạng java, native, non-fatal.
+
+     - java - nếu sự cố được ghi lại trên ứng dụng Tầng.
+
+     - native - nếu sự cố được ghi lại trên tầng riêng trong ứng dụng. 
+
+     - non-fatal - nếu sự cố được ghi lại để gỡ lỗi mọi tính năng. Ứng dụng sẽ không gặp sự cố nhưng sẽ tải lên nhật ký sự cố non-fatal để trợ giúp gỡ lỗi tính năng.
+
+- **device_brand** - Thương hiệu của thiết bị (nhà sản xuất hoặc nhà cung cấp) theo chỉ định của android.os.Build#BRAND
+
+- **device_ID** – ID duy nhất của thiết bị (IMEI)
+
+- **device_manufacturer** – Nhà sản xuất thiết bị theo chỉ định của android.os.Build#MANUFACTURER
+
+- **device_model** – Kiểu máy theo chỉ định của android.os.Build#MODEL
+
+- **device_name** – Tên thiết bị theo chỉ định của android.os.Build#DEVICE
+
+- **device_total_memory** – Ước tính tổng kích cỡ bộ nhớ thiết bị dựa trên thống kê về hệ thống tệp.
+
+- **glEsVersion** – Khoá phiên bản Hệ thống nhúng OpenGL
+
+
+#### <a name="crash_event"></a>crash_event
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, xảy ra sự cố ứng dụng nghiêm trọng và giúp chúng tôi thu thập thông tin về lý do tại sao ứng dụng gặp sự cố và cách ngăn chặn.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **crashTime** – Thời gian sự cố xảy ra để hỗ trợ điều tra
+
+- **exceptionName** – Tên của ngoại lệ đã gây ra sự cố để hỗ trợ điều tra
+
+- **hasHx** – Cho chúng tôi biết tài khoản đang sử dụng dịch vụ đồng bộ mới của chúng tôi để giúp chúng tôi phát hiện các sự cố do dịch vụ đồng bộ gây ra
+
+- **incidentIdentifier** – ID duy nhất cho báo cáo sự cố để chúng tôi có thể tìm được sự cố tương ứng
+
+- **isAppKill** – Giúp chúng tôi hiểu được liệu ứng dụng đó bị buộc dừng hay đóng trên thiết bị
+
+- **reportKey** – ID duy nhất cho việc cài đặt ứng dụng trên thiết bị để điều tra về vấn đề
+
+- **signal** – Tín hiệu gây ra sự cố nhằm cung cấp cho chúng tôi thêm thông tin chi tiết để điều tra sự cố này
+
+
+#### <a name="error"></a>Lỗi
+
+Cho phép chúng tôi hiểu các vấn đề mà ứng dụng di động đang gặp phải khi cố gắng tìm nạp cài đặt quyền riêng tư từ máy chủ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **correlationId** – mã định danh duy nhất cho kết nối dịch vụ dẫn đến lỗi, cho phép chúng tôi chẩn đoán những gì có thể đã sai
+
+- **errorCode** – xác định mã lỗi liên quan đã nhận được từ dịch vụ và có thể dùng để chẩn đoán sự cố
+
+- **exceptionType** – loại lỗi mà thư viện gặp phải khi tải thiết đặt
+
+- **message** – xác định thông báo lỗi nhận được từ dịch vụ
+
+- **roamingSettingType** – xác định vị trí mà ở đó chúng tôi cố gắng đọc thiết đặt
+
+- **settingId** – cài đặt đã tìm cách tải
+
 #### <a name="officeappdomainunhandledexceptionhandlerfailed"></a>Office.AppDomain.UnhandledExceptionHandlerFailed
 
 Thu thập thông tin cho bất kỳ trường hợp ngoại lệ nào chưa được xử lý bằng Ứng dụng Data Streamer. Dữ liệu này được dùng để theo dõi tình trạng của ứng dụng. Sự kiện này được tạo bởi Microsoft Data Streamer cho phần bổ trợ Excel.
@@ -7937,7 +9319,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố trong phiên bản dành cho người tiêu dùng của các ứng dụng Office. 
 
-Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được sử dụng trên các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
+Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp sử dụng phần bổ trợ mà sau đó, sẽ được sử dụng trên các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong tổ chức của mình có tương thích với các phiên bản mới nhất của Ứng dụng Microsoft 365 dành cho doanh nghiệp hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -7969,7 +9351,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện được tạo ra khi phần bổ trợ COM gặp sự cố trong phiên bản dành cho doanh nghiệp của các ứng dụng Office.
 
-Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Office 365 ProPlus trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp đối với phần bổ trợ mà sau đó sẽ được sử dụng trên các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong những tổ chức của mình có tương thích với các phiên bản mới nhất của Office 365 ProPlus hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
+Cách sử dụng: sự kiện này được dùng để tính toán mức độ "tiếp nhận" Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trên phạm vi toàn cầu, không chỉ dành riêng cho doanh nghiệp sử dụng phần bổ trợ mà sau đó, sẽ được sử dụng trên các công cụ khác như Công cụ đánh giá tính sẵn sàng. Điều này cho phép khách hàng doanh nghiệp xác nhận xem các phần bổ trợ họ đã triển khai trong tổ chức của mình có tương thích với các phiên bản mới nhất của Ứng dụng Microsoft 365 dành cho doanh nghiệp hay không và từ đó lập kế hoạch nâng cấp phù hợp. 
 
 - **ScopeId** – Phạm vi chuỗi hội thoại hiện tại
 
@@ -7997,7 +9379,7 @@ Cách sử dụng: sự kiện này được dùng để tính toán mức độ
 
 #### <a name="officeextensibilitysandboxodpactivationheartbeat"></a>Office.Extensibility.Sandbox.ODPActivationHeartbeat
 
-Các phần bổ trợ dành cho Office chạy trong một hộp cát. Sự kiện này thu thập thông tin nhịp tim về kích hoạt. Khi một phần bổ trợ gặp sự cố, sự kiện này thu thập lý do tại sao nó gặp sự cố trong trường hợp nó có liên quan đến hộp cát của chúng tôi. Được sử dụng để điều tra khi khách hàng tăng sự cố
+Các phần bổ trợ dành cho Office chạy trong một hộp cát. Sự kiện này thu thập thông tin nhịp tim về kích hoạt. Khi một phần bổ trợ gặp sự cố, sự kiện này thu thập lý do tại sao phần này gặp sự cố trong trường hợp có liên quan đến hộp cát của chúng tôi. Được sử dụng để điều tra khi khách hàng tăng sự cố
  
 Các trường sau đây sẽ được thu thập:
 
@@ -8014,6 +9396,8 @@ Các trường sau đây sẽ được thu thập:
 - **IsAugmentationScenario** – cho biết nếu vòng lặp tăng cường có trách nhiệm khởi tạo điều khiển Khung giải pháp Office
 
 - **IsDebug** - cho biết phiên có phải là phiên gỡ lỗi hay không
+
+- **IsPreload** - cho biết phần bổ trợ có đang được tải trước trong nền để cải thiện hiệu suất kích hoạt.
 
 - **NumberOfAddinsActivated** - Bộ đếm phần bổ trợ được kích hoạt
 
@@ -8243,7 +9627,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeprogrammabilitytelemetrymacrofileopened"></a>Office.Programmability.Telemetry.MacroFileOpened 
 
-Khi mở tệp có kèm theo macro (VBA) trên một thiết bị đã được onup sang các ứng dụng Office dưới dạng dịch vụ (OAAS) bởi người quản trị CNTT, đồng thời, Office 365 ProPlus đã được kích hoạt bằng giấy phép Enterprise. Sự kiện được sử dụng để tìm hiểu về sức khỏe của macro (VBA)-chứa các tệp trong một đối tượng thuê và được so sánh với Office.Programmability.Telemetry.VbaTelemetryBreak theo dõi lỗi trên các tệp có chứa VBA. 
+Khi mở tệp có kèm theo macro (VBA) trên một thiết bị đã được nhập sang Ứng dụng Office dưới dạng dịch vụ (OAAS) bởi người quản trị CNTT, đồng thời, Ứng dụng Microsoft 365 dành cho doanh nghiệp đã được kích hoạt bằng giấy phép doanh nghiệp trên thiết bị này. Sự kiện được sử dụng để tìm hiểu về sức khỏe của macro (VBA)-chứa các tệp trong một đối tượng thuê và được so sánh với Office.Programmability.Telemetry.VbaTelemetryBreak theo dõi lỗi trên các tệp có chứa VBA. 
 
 Không có trường nào được thu thập.
 
@@ -8285,11 +9669,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **ReportingOSVerStr** – Phiên bản hệ điều hành
 
-- **SessionBuildNumber** – Phiên bản ứng dụng bị sự cố
+- **SessionBuildNumber** - Phiên bản Ứng dụng gặp sự cố
 
-- **SessionIDSMatch** – Boolean để xác minh xem ID phiên báo cáo có giống như được chọn bởi Merp không
+- **SessionIDSMatch** - Boolean để xác minh ID phiên báo cáo có giống như được chọn bởi Merp không
 
-- **SessionVersion** – Phiên bản ứng dụng bị sự cố – **StackHash** – Hàm băm của ứng dụng bị sự cố
+- **SessionVersion** - Phiên bản Ứng dụng gặp sự cố - **StackHash** - Hàm băm của ứng dụng gặp sự cố
 
 - **UAEType** – Enum cung cấp cho chúng tôi thông tin về loại sự cố.
 
@@ -8303,10 +9687,171 @@ Các trường sau đây sẽ được thu thập:
 
 - **Tên sự kiện** - Tên sự kiện là Danh mục sự kiện và Nhãn sự kiện.
 
+#### <a name="telemetry_error"></a>telemetry_error
+
+Sự kiện này cho phép chúng tôi chẩn đoán và khắc phục các sự cố đang ngăn dữ liệu chẩn đoán cần thiết được tạo hoặc gửi. Những sự kiện này cho chúng tôi hiểu được liệu chúng tôi có đang thiếu dữ liệu quan trọng cần có để xác định các sự cố về bảo mật hay vấn đề chính với cách ứng dụng của bạn đang hoạt động hay không.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **timer_name** – Cho biết vị trí sự cố đo từ xa xảy ra, chẳng hạn như: trong cấu phần hộp thư hoặc lịch. Điều này giúp chúng tôi phát hiện và giải quyết các sự cố về đo từ xa xảy ra từ một phần cụ thể trong ứng dụng
+
+- **type** – cho chúng tôi biết loại lỗi của bộ hẹn giờ để giúp chúng tôi phát hiện khi nào ứng dụng của chúng tôi đang gặp sự cố khi gửi dữ liệu chẩn đoán đo từ xa
+
+
+#### <a name="watchdog_anr"></a>watchdog_anr
+
+Cần thiết cho việc giám sát lỗi hiệu năng ứng dụng để ngăn chặn các trường hợp trong đó, ứng dụng ngừng phản hồi và màn hình của bạn bị treo trong ứng dụng (được gọi là ANR – ứng dụng không phản hồi).
+
+Các trường sau đây sẽ được thu thập: 
+
+- **callstack** – ngăn xếp cuộc gọi mã nơi ANR xảy ra
+ 
+- **caused_restart** – liệu ứng dụng có bị buộc khởi động lại vì ANR hay không
+ 
+- **duration** – thời lượng thiết bị bị treo
+ 
+- **id** – mã định danh duy nhất cho ANR
+ 
+- **Interval** – ngưỡng được đặt cấu hình để kích hoạt một ANR
+ 
+- **is_application_object_initialized** – liệu ANR xảy ra sau khi ứng dụng được khởi tạo đầy đủ hay trước đó
+ 
+- **last_known_is_in_foreground** – ứng dụng gần đây nhất ở trang mặt trước hay trong nền
+
 
 ### <a name="application-feature-performance-subtype"></a>*Loại con hiệu suất tính năng ứng dụng *
 
 Thời gian phản hồi hoặc hiệu suất kém cho các tình huống như ứng dụng khởi động hoặc mở tệp.
+
+#### <a name="android_frame_metrics"></a>android_frame_metrics
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, các cấu phần ứng dụng Android của chúng tôi đang gây ra sự cố về hiệu năng. Ví dụ: nếu hộp thư đến của bạn đang không thể cuộn lên xuống mượt mà.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **animation_duration** – thời lượng kết xuất hoạt hình tính bằng mili giây
+
+- **command_issue_duration** – thời lượng để phát lệnh cho nền tảng tính bằng mili giây 
+
+- **draw_duration** – thời lượng vẽ giao diện người dùng tính bằng mili giây 
+
+- **input_handling_duration** – thời lượng xử lý đầu vào tính bằng mili giây 
+
+- **layout_measure_duration** – thời lượng đo lường bố trí tính bằng mili giây
+
+- **origin** – cấu phần ứng dụng đang được đo lường, ví dụ: lịch hoặc thư
+
+- **sync_duration** – thời lượng đồng bộ khung tính bằng mili giây
+
+- **swap_buffers_duration** – thời lượng trao đổi bộ đệm tính bằng mili giây
+
+- **total_duration** – tổng thời lượng kết xuất khung tính bằng mili giây
+
+- **unknown_delay** – độ trễ do các nguồn chưa xác định gây ra khác với thời lượng được theo dõi rõ ràng
+
+#### <a name="cal_component"></a>cal_component
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó có tác động rõ rệt đến các cấu phần giao diện người dùng của lịch của chúng tôi sẽ khiến lịch của bạn gặp sự cố khi cuộn lên xuống.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **account_counter** - theo dõi số lượng tài khoản được liên kết cho từng kiểu lịch, ví dụ: 2 cho lịch Gmail và liệu tài khoản đó có đang sử dụng dịch vụ đồng bộ mới của chúng tôi hay không
+
+- **app_instance** - Outlook có 2 điểm nhập vào dành cho Duo, một với Lịch và một với Thư và có thể khởi động cả hai đồng thời trong môi trường nhiều phiên bản. Sự kiện này sẽ cho chúng tôi biết phiên bản nào thực hiện cuộc gọi báo cáo này, phiên bản Thư hoặc Lịch
+
+- **component_name** - Cho chúng tôi biết tên của cấu phần lịch, như Dạng xem lịch công tác hay Dạng xem ngày để giúp chúng tôi phát hiện các sự cố về hiệu năng tác động đến một cấu phần cụ thể trong lịch
+
+- **display_frame_data** – Theo dõi thời gian dành cho việc hiển thị cứ mỗi 60 khung hình để xác định xem có vấn đề về hiệu năng nào không. 
+
+- **orientation** - Cho chúng tôi biết liệu thiết bị đang ở chế độ dọc hay ngang để giúp chúng tôi phát hiện ra các sự cố về hiệu năng tác động đến một hướng thiết bị cụ thể
+
+- **taskId** - TaskId sẽ cung cấp cho chúng tôi taskld trong phiên bản hiện tại. Bắt buộc trong môi trường nhiều phiên bản nếu người dùng muốn khởi động song song các phiên bản tương tự (Lịch, Lịch hoặc Thư, Thư)
+
+- **view_duration** - Cho chúng tôi biết phải mất bao lâu để hiển thị các cấu phần lịch giao diện người dùng khác nhau để giúp chúng tôi phát hiện các sự cố về hiệu năng tác động đến trải nghiệm lịch của bạn
+
+#### <a name="conversation_load_time"></a>conversation_load_time
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó có tác động rõ rệt đến việc tải các cuộc hội thoại trên email của bạn để đảm bảo email của bạn được tải như dự kiến.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **time** - Cho chúng tôi biết lượng thời gian cần thiết để cuộc trò chuyện email hoàn tất tải.
+
+#### <a name="core_data_migration"></a>core_data_migration
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, đã xảy ra lỗi khi cập nhật dữ liệu email trên thiết bị của bạn sang một phiên bản mới hơn.
+
+Các trường sau đây sẽ được thu thập:
+
+- **db_size_megabytes** – theo dõi kích cỡ của cơ sở dữ liệu lõi được làm tròn đến 25 megabyte gần nhất và với tối đa là 500 megabyte
+
+- **db_wal_size_megabytes** – theo dõi kích cỡ cơ sở dữ liệu lõi khi tệp lưu trữ chính không được làm tròn đến 1 megabyte gần nhất và với tối đa là 10 megabyte
+
+- **free_space_megabytes** – theo dõi dung lượng trống có sẵn trong các xô 10, 100, 1000, 10.000 và rồi 100.000. 
+
+- **migration_duration_seconds** – theo dõi thời lượng di chuyển được làm tròn đến một trong những dấu thời gian sau – 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180 (180 trở lên thì chỉ nên là 180)
+
+#### <a name="core_data_performance"></a>core_data_performance
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, dữ liệu email chúng tôi đang lưu trữ trên thiết bị của bạn gây ra sự cố về hiệu năng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Caller** – theo dõi tên của thực thể gọi thao tác lưu
+
+- **db_size_megabytes** – theo dõi kích cỡ của cơ sở dữ liệu lõi được làm tròn đến 25 megabyte gần nhất và với tối đa là 500 megabyte
+
+- **duration** – theo dõi thời lượng cần thiết để hoàn tất thao tác
+
+- **entity** - theo dõi tên của thực thể đã gọi là thao tác nạp
+
+- **operation** - giá trị thô của thao tác lưu, tìm nạp hoặc “đọc ghi xếp hàng bị chặn”
+
+#### <a name="inbox_component"></a>inbox_component
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó có tác động rõ rệt đến các cấu phần giao diện người dùng của hộp thư đến của bạn, điều này sẽ khiến email, ảnh đại diện, trạng thái đọc/chưa đọc không tải được hoặc không hiển thị đúng cách.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
+
+- **above_50fps** – số lượng khung hình được hiển thị trên 50 fps
+
+- **above_55fps** – số lượng khung hình được hiển thị trên 55 fps
+
+- **account_counter** – số lượng mỗi loại tài khoản có trên thiết bị, ví dụ: tài khoản Office 365 = 1 tài khoản, tài khoản Outlook.com = 1 tài khoản.
+
+- **ad_not_shown_reason** – lý do tại sao quảng cáo không được hiển thị
+
+- **ad_shown** – liệu quảng cáo đã được hiển thị hay chưa (nếu bật quảng cáo)
+
+- **age** - tuổi của người dùng (được dùng để xác nhận tính tuân thủ các hạn chế về độ tuổi đối với quảng cáo)
+
+- **app_instance** - Outlook có 2 điểm nhập vào dành cho Duo, một với Lịch và một với Thư và có thể khởi động cả hai đồng thời trong môi trường nhiều phiên bản. Sự kiện này sẽ cho chúng tôi biết phiên bản nào thực hiện cuộc gọi báo cáo này, phiên bản Thư hoặc Lịch
+
+- **component_name** - tên của cấu phần/chế độ xem hiện đang hoạt động trong quá trình lọc
+
+- **has_hx** – liệu thiết bị có ít nhất một tài khoản Hx (dịch vụ đồng email mới của chúng tôi) hay không
+
+- **has_subscription** - thiết bị có gói đăng ký quảng cáo hay không
+
+- **is_all_accounts_inbox** - hộp thư đến hiện tại có là thư mục “mọi tài khoản” hay không
+
+- **is_current_account** - tài khoản đang hoạt động hiện tại có là tài khoản quảng cáo hay không
+
+- **load_error_code** – mã lỗi khi tải quảng cáo
+
+- **network_error_code** – mã lỗi mạng khi yêu cầu quảng cáo
+
+- **orientation** – hướng màn hình tại thời điểm sự kiện (dọc hoặc ngang)
+
+- **sub_error_type** - loại lỗi chi tiết
+
+- **taskId** - TaskId sẽ cung cấp cho chúng tôi taskld trong phiên bản hiện tại. Bắt buộc trong môi trường nhiều phiên bản nếu người dùng muốn khởi động song song các phiên bản tương tự (Lịch, Lịch hoặc Thư, Thư)
+
+- **total_count** - tổng số khung được hiển thị theo cấu phần
+
+- **view_duration** – thời lượng cấu phần được người dùng xem
 
 #### <a name="initial_page_landing"></a>Initial_page_landing 
  
@@ -8392,6 +9937,86 @@ Các trường sau đây sẽ được thu thập:
 
 - **UserInfo.UserObjectId** - ID đối tượng người dùng
 
+#### <a name="ipcpgetkey"></a>IpcpGetKey
+
+Được thu thập khi người dùng nỗ lực mở tài liệu được bảo vệ bởi Quyền Quản lý Thông tin (IRM) được quản lý hoặc áp dụng tính năng bảo vệ IRM. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở khi thực hiện cuộc gọi API IpcpGetKey.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo.ClientHierarchy** - Mức độ phân cấp máy khách cho biết ứng dụng sẽ chạy trong môi trường sản xuất hay môi trường nhà phát triển
+
+- **AppInfo.Name** - Tên ứng dụng.
+
+- **AppInfo.Version** - Phiên bản ứng dụng
+
+- **iKey** - Dịch vụ ghi nhật ký ID máy chủ
+
+- **RMS.ApplicationScenarioId** - ID kịch bản được ứng dụng cung cấp
+
+- **RMS.AuthCallbackProvided** - Cho biết liệu có cung cấp cuộc gọi lại xác thực như đầu vào của cuộc gọi API hay không
+
+- **RMS.ConnectionMode** - Chế độ kết nối giữa máy khách và máy chủ của Dịch vụ Quản lý Quyền: Trực tuyến hay ngoại tuyến
+
+- **RMS.ContentId** - ID nội dung của tài liệu
+
+- **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
+
+- **RMS.DurationWithoutExternalOps** - Tổng thời gian trừ các thao tác bên ngoài, chẳng hạn như độ trễ mạng.
+
+- **RMS.ErrorCode** - Mã lỗi được trả về nếu có từ cuộc gọi API
+
+- **RMS.EulId** - ID Giấy phép người dùng cuối
+
+- **RMS.EulProvided** - Cho biết có cung cấp Giấy phép người dùng cuối là dữ liệu đầu vào của cuộc gọi API hay không
+
+- **RMS.GuestTenant** - ID đối tượng thuê khách cho người dùng 
+
+- **RMS.HomeTenant** - ID đối tượng thuê chủ dành cho người dùng
+
+- **RMS.HttpCall** - Cho biết có hoạt động http hay không
+
+- **RMS.Identity.ExtranetUrl** - URL extranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.IntranetUrl** - URL intranet của máy chủ Dịch vụ Quản lý Quyền đối với người dùng, được thu thập khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.Identity.Status** - Lần đầu tiên nhận Chứng nhận tài khoản quyền từ máy chủ hoặc gia hạn chứng nhận tài khoản quyền 
+
+- **RMS.Identity.Type** - Loại tài khoản người dùng, chẳng hạn như tài khoản Windows hoặc tài khoản trực tiếp
+
+- **RMS.Identity.UserProvided** - Cho biết địa chỉ email của người dùng được cung cấp hay không khi nhận Chứng nhận tài khoản quyền mới từ máy chủ
+
+- **RMS.IssuerId** - ID của máy chủ Dịch vụ quản lý quyền cấp Chứng nhận tài khoản quyền 
+
+- **RMS.KeyHandle** - Địa chỉ bộ nhớ của điều khiển phím
+
+- **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
+
+- **RMS.PL.ExtranetUrl** - URL từ bên ngoài trong Giấy phép phát hành
+
+- **RMS.PL.IntranetUrl** - URL nội bộ trong Giấy phép phát hành
+
+- **RMS.PL.KeyType** - Giá trị "Đơn" hoặc "Kép" Cho biết PL được bảo vệ bằng Khóa bảo vệ đơn hay Khóa bảo vệ kép
+
+- **RMS.RACType** - Loại Chứng nhận tài khoản quyền
+
+- **RMS.Result** -Thành công hay thất bại của cuộc gọi API
+
+- **RMS.ScenarioId** - ID kịch bản được xác định bởi API
+
+- **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
+
+- **RMS.ServerType** - Loại máy chủ Dịch vụ Quản lý Quyền
+
+- **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
+
+- **RMS.TemplatesCount** - Số mẫu
+
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
+
+- **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
+
+- **UserInfo.UserObjectId** - ID đối tượng người dùng
+
 #### <a name="json_parse_error"></a>json_parse_error 
  
 Sự kiện này biểu thị rằng lỗi được đưa ra bởi trình phân tích cú pháp json.  Chúng tôi sẽ có thể gỡ lỗi chuỗi đăng ký đã đọc được gửi đến trình phân tích cú pháp json, giúp mang đến trải nghiệm mượt mà cho người dùng của chúng tôi.
@@ -8400,9 +10025,57 @@ Các trường sau đây sẽ được thu thập:
 
 - **Error** - Điều này bao gồm thông báo lỗi mà đối tượng lỗi trả về.
 
+#### <a name="mail_filter_component"></a>mail_filter_component
+
+Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó có tác động rõ rệt đến hiệu năng trên trải nghiệm lọc thư của bạn, điều này sẽ khiến bộ lọc của bạn không tải hoặc hiển thị đúng cách.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
+ 
+- **above_50fps** – số lượng khung hình được hiển thị trên 50 fps
+ 
+- **above_55fps** – số lượng khung hình được hiển thị trên 55 fps
+ 
+- **account_counter** – số lượng mỗi loại tài khoản có trên thiết bị, ví dụ: tài khoản Office 365 = 1 tài khoản, tài khoản Outlook.com = 1 tài khoản.
+ 
+- **ad_not_shown_reason** – lý do tại sao quảng cáo không được hiển thị
+ 
+- **ad_shown** – liệu quảng cáo đã được hiển thị hay chưa (nếu bật quảng cáo)
+ 
+- **age** - tuổi của người dùng (được dùng để xác nhận tính tuân thủ các hạn chế về độ tuổi đối với quảng cáo)
+
+- **app_instance** - Outlook có 2 điểm nhập vào dành cho Duo, một với Lịch và một với Thư và có thể khởi động cả hai đồng thời trong môi trường nhiều phiên bản. Sự kiện này sẽ cho chúng tôi biết phiên bản nào thực hiện cuộc gọi báo cáo này, phiên bản Thư hoặc Lịch
+ 
+- **component_name** - tên của cấu phần/chế độ xem hiện đang hoạt động trong quá trình lọc
+ 
+- **folder_type** – loại thư mục đang được lọc (ví dụ: Hộp thư đến, Thùng rác, Phi hệ thống)
+ 
+- **has_hx** – liệu thiết bị có ít nhất một tài khoản Hx (dịch vụ đồng email mới) hay không
+ 
+- **has_subscription** - thiết bị có gói đăng ký quảng cáo hay không
+ 
+- **is_all_accounts_inbox** - hộp thư đến hiện tại có là thư mục “mọi tài khoản” hay không
+ 
+- **is_current_account** - tài khoản đang hoạt động hiện tại có là tài khoản quảng cáo hay không
+ 
+- **load_error_code** – mã lỗi khi tải quảng cáo
+ 
+- **network_error_code** – mã lỗi mạng khi yêu cầu quảng cáo
+ 
+- **orientation** – hướng màn hình tại thời điểm sự kiện (dọc hoặc ngang)
+ 
+- **sub_error_type** - loại lỗi chi tiết
+
+- **taskId** - TaskId sẽ cung cấp cho chúng tôi taskld trong phiên bản hiện tại. Bắt buộc trong môi trường nhiều phiên bản nếu người dùng muốn khởi động song song các phiên bản tương tự (Lịch, Lịch hoặc Thư, Thư)
+ 
+- **total_count** - tổng số khung được hiển thị theo cấu phần
+ 
+- **view_duration** – thời lượng cấu phần được người dùng xem
+
 #### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
-Việc ghi lại số liệu hiệu suất ứng dụng đối với thời gian phản hồi của ứng dụng từ khi khởi động là quan trọng.  Microsoft dùng tính năng này để thu thập lượng thời gian cần thiết để ứng dụng có thể phản hồi cũng như phát hiện những kịch bản có thể ảnh hưởng đến thời gian khởi động trong các ứng dụng WXP.
+Việc ghi lại số liệu hiệu suất ứng dụng đối với thời gian phản hồi của ứng dụng từ khi khởi động là quan trọng.  Microsoft dùng tính năng này để thu thập lượng thời gian cần thiết để ứng dụng có thể phản hồi cũng như phát hiện những kịch bản có thể ảnh hưởng đến thời gian khởi động trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
  
@@ -8690,6 +10363,33 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Last Error** - Một trong năm giá trị chuỗi (bộ liệt kê) để ghi lại giai đoạn của ứng dụng chính sách được thực thi khi xảy ra ngoại lệ
 
+#### <a name="officeonenoteandroidsyncprovisioningerror"></a>Office.OneNote.Android.Sync.ProvisioningError
+
+Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng. Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppSuspendedDuringEvent** - Trả về Boolean cho biết ứng dụng có bị tạm ngừng trong quá trình cung cấp hay không
+
+- **ErrorCode** - Trả về mã lỗi liên quan đến việc không thể cung cấp 
+
+- **NetworkConnection**: Loại kết nối mạng của thiết bị đang sử dụng
+
+- **NetworkDataExchange** - Bản ghi số lượng byte được trao đổi trong quá trình cung cấp.
+
+- **ServerType** - Trả về loại máy chủ cung cấp dịch vụ
+
+- **TimeTakenInMilliSeconds**: Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
+
+
+#### <a name="officeonenotesystembootdialogssafebootdialogpending"></a>Office.OneNote.System.BootDialogs.SafeBootDialogPending 
+
+Tín hiệu quan trọng được dùng để theo dõi khi chúng tôi quyết định hiển thị hộp thoại khởi động an toàn cho người dùng ở lần khởi động tiếp theo vì chúng tôi đã gặp sự cố khi khởi động nhiều lần liên tục. Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote. Nếu người dùng đang nhìn thấy hộp thoại khởi động an toàn thì chúng tôi đã gặp phải lỗi sự cố khởi động quan trọng và thông tin này sẽ giúp chúng tôi biết có bao nhiêu người dùng đang gặp phải sự cố này và bao nhiêu người dùng khởi động lại ứng dụng để thực sự nhìn thấy hộp thoại khởi động an toàn so với số lượng không quay lại.
+
+Các trường sau đây sẽ được thu thập:
+
+ - Không có
+
 #### <a name="officeoutlookdesktopbootperfmetrics"></a>Office.Outlook.Desktop.BootPerfMetrics
 
 Thu thập thời gian được thực hiện để khởi động Outlook. Thời gian khởi động của Outlook được theo dõi tích cực để phát hiện và chẩn đoán hồi quy. Nó cũng được sử dụng để chẩn đoán sự nâng cấp của khách hàng cũng như cải thiện hiệu suất khởi động theo thời gian.
@@ -8749,7 +10449,13 @@ Các trường sau đây sẽ được thu thập:
   
   - **BootToStart** - Liệu người dùng có chọn hiển thị màn hình bắt đầu khi ứng dụng này khởi chạy hay không.
 
+  - **ColdBoot** - Đây là lần đầu ứng dụng Office chạy sau khi khởi động lại hệ thống hay phải tải nhị phân ứng dụng từ đĩa.
+
+  - ** DeviceModel** - Model của thiết bị.
+
   - **DocLocation** -  Khi mở tài liệu, cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v).
+
+  - **DurationUntilMso20Initialization** - Khoảng thời gian tính bằng mili giây giữa quá trình khởi tạo Office và tải mso20win32client.dll.
 
   - **FirstBoot** - Đây có phải là lần khởi động đầu tiên của ứng dụng hay không.
 
@@ -8762,6 +10468,47 @@ Các trường sau đây sẽ được thu thập:
   - **VirtualSetMB** - Dung lượng bộ nhớ tính bằng megabyte trong bộ ảo của quy trình. (Chỉ dành cho MacOS/iOS)
 
   - **WorkingSetPeakMB** - Dung lượng bộ nhớ lớn nhất tính bằng megabyte đã từng có từ trước đến nay trong bộ làm việc của quy trình.
+
+
+#### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
+
+Sự kiện này được kích hoạt khi Dừng phiên bản thử nghiệm. Kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ResumeRehearsingCount** - Đếm số lần người dùng bấm vào tiếp tục thử nghiệm
+
+- **PauseRehearsingCount** - Đếm số lần người dùng đã bấm vào ngừng thử nghiệm
+
+
+#### <a name="officepowerpointpptandroidrehearseviewerrors"></a>Office.PowerPoint.PPT.Android.RehearseView.Errors
+
+Sự kiện được kích hoạt khi bất kỳ lỗi nào xảy ra. Sự kiện này sẽ giúp chúng tôi biết lỗi người dùng đã gặp phải và đảm bảo Huấn luyện trình bày hiệu quả trên thiết bị di động.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Session id:string** - id phiên bản thử nghiệm
+
+- **RehearsalEventCode:int** - mã lỗi phiên bản thử nghiệm
+
+
+#### <a name="officepowerpointpptandroidrehearseviewrehearsalsummarypage"></a>Office.PowerPoint.PPT.Android.RehearseView.RehearsalSummaryPage 
+
+Sự kiện được kích hoạt khi tải trang tổng hợp. Sự kiện này sẽ giúp chúng tôi nắm được hiệu suất của trang tổng hợp. Sự kiện này cho biết thời lượng trang dịch vụ tổng hợp thử nghiệm tải trên máy khách. Phải đảm bảo tính năng này hiệu quả. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **SummaryPageLoadTime: int** - Thời gian (theo ms) để tải trang tổng hợp. Thời lượng này bao gồm thời gian tạo tải trang 
+
+
+#### <a name="officepowerpointpptandroidrehearseviewstartsession"></a>Office.PowerPoint.PPT.Android.RehearseView.StartSession
+
+Sự kiện được kích hoạt khi người dùng bấm vào bắt đầu phiên bản. Sự kiện này sẽ giúp chúng tôi nắm được số người dùng đang sử dụng tính năng của Huấn luyện trình bày trên Android. Khi kết hợp với Office.PowerPoint.PPT.Android.RehearseView sự kiện này sẽ cho chúng tôi biết số người dùng đã hoàn tất thành công phiên bản thử nghiệm và số người dùng không thể hoàn tất. Đây là chỉ báo đầu tiên về sự cố hoặc lỗi trong tính năng này.
+ 
+Các trường sau đây sẽ được thu thập:
+
+ - Không có
+
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
@@ -8801,15 +10548,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_AcceptedContactMeNew** - Cho biết nếu người dùng đã chấp nhận để được Microsoft liên hệ khi tham gia chương trình Người dùng nội bộ Office
 
-- **Data_InsiderLevel** - Cấp độ Người dùng nội bộ khi mở hộp thoại “Tham gia Người dùng nội bộ Office”
+- **Data_InsiderLevel** - Cấp độ Người dùng nội bộ khi mở hộp thoại "Tham gia Người dùng nội bộ Office"
 
-- **Data_InsiderLevelNew** - Cấp độ người dùng nội bộ khi đóng hộp thoại “Tham gia Người dùng nội bộ Office”
+- **Data_InsiderLevelNew** - Cấp độ người dùng nội bộ khi đóng hộp thoại "Tham gia Người dùng nội bộ Office"
 
 - **Data_IsInternalUser** - Cho biết ứng dụng có chạy dưới thông tin đăng nhập của tài khoản công ty của Microsoft hay không.
 
 - **Data_IsInternalUserInit** - Cho biết liệu mã có thể xác định liệu ứng dụng có chạy dưới thông tin đăng nhập của tài khoản công ty của Microsoft hay không.
 
-- **Data_OpenNewsletterWebpage** - Cho biết liệu liên kết Đăng ký Bản tin của Người dùng nội bộ có được kích hoạt trong điều kiện người dùng đã tham gia chương trình Người dùng nội bộ Office, tính năng Đăng ký Bản tin được bật và người dùng chưa hủy mở trang web Đăng ký Bản tin Người dùng nội bộ Office hay không.
+- **Data_OpenNewsletterWebpage** - Cho biết liệu liên kết Đăng ký Bản tin của Người dùng nội bộ có được kích hoạt trong điều kiện người dùng đã tham gia chương trình Người dùng Nội bộ Office, đã bật tính năng Đăng ký Bản tin và người dùng chưa hủy mở trang web Đăng ký Bản tin Người dùng nội bộ Office hay không.
     
 - **Data_RegisterInsider** - Trạng thái đăng ký Người dùng nội bộ Office
 
@@ -8818,8 +10565,6 @@ Các trường sau đây sẽ được thu thập:
 - **Data_RegistrationStateCurrent** - Trạng thái đăng ký hiện tại
 
 - **Data_RegistrationStateDesired** - Trạng thái đăng ký đã yêu cầu
-
-
 
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender
@@ -8837,6 +10582,7 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_FirstRenderTime: long** - Khoảng thời gian để kết xuất tệp khi khởi chạy lần đầu tiên tính bằng mili giây
 
   - **Data\_AvgTime: integer** - Thời gian trung bình để hiển thị hình vẽ Visio trong một phiên
+
 
 #### <a name="officevisiovisiofileopenreliability"></a>Office.Visio.VisioFileOpenReliability
 
@@ -8906,9 +10652,139 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_WasSuccessful: bool -** True nếu quá trình mở dưới dạng được thực hiện thành công
 
+
+#### <a name="onenoteappsafebootdialogactiontaken-officeonenoteandroidsafebootdialogactiontaken-officeandroidearlytelemetrysafebootdialogactiontaken"></a>OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
+
+Tín hiệu quan trọng được sử dụng để theo dõi phản hồi người dùng khi thấy một hộp thoại khởi động an toàn. Hộp thoại khởi động an toàn được hiển thị khi chúng tôi không thể khởi động lặp lại. Người dùng lựa chọn dùng quyền khởi động an toàn để xóa dữ liệu ứng dụng để khởi động thành công. Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote. Người dùng nhìn thấy khi gặp lỗi sự cố khởi động quan trọng. Thông tin này sẽ giúp bạn theo dõi nguyên nhân gây ra sự cố đã được khắc phục chưa và người dùng có thể khởi động ứng dụng thành công hay không.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **DIALOG_ACTION** - Nút hộp thoại người dùng bấm vào - Nút cộng hoặc nút trừ
+
+
+#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningCompleted
+
+Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng. Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
+
+Các trường sau đây sẽ được thu thập: 
+
+- **AppSuspendedDuringEvent** – Trả về Boolean để cho biết liệu ứng dụng có bị tạm ngừng trong quá trình cung cấp hay không
+
+- **NetworkConnection** – Loại kết nối mạng của thiết bị đang sử dụng
+
+- **NetworkDataExchange** – Bản ghi số lượng byte được trao đổi trong quá trình cung cấp.
+
+- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ
+
+- **TimeTakenInMilliSeconds** - Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
+
+#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningStarted
+
+Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng.  Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
+
+Các trường sau đây sẽ được thu thập: 
+
+- **NetworkConnection** – Loại kết nối mạng của thiết bị đang sử dụng
+
+- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ
+
+#### <a name="perf_event"></a>perf_event
+
+Được dùng để giám sát tác động tiêu cực có thể có đối với hiệu năng tải các phần khác nhau trong ứng dụng, ví dụ: để đảm bảo hộp thư đến của bạn tải nhanh nhất có thể trong lần đầu tiên bạn mở ứng dụng.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **app_start_show_message_list** – điều đó có nghĩa là đã xảy ra sự cố về hiệu năng khi khởi động ứng dụng khiến danh sách tin nhắn trong hộp thư đến của bạn mất nhiều thời gian để tải
+
+- **event_type** – cho chúng tôi biết loại sự kiện hiệu năng gây ra sự cố về hiệu năng để giúp chúng tôi phát hiện ra các sự cố liên quan đến một loại cụ thể.   
+
+- **extra_params** - Nhà phát triển có thể thêm các tham số khác tại đây để giúp cung cấp thêm thông tin chi tiết cho chúng tôi về những điều có thể gây ra sự cố hiệu năng này, ví dụ: hành động này bắt đầu và kết thúc khi nào, v.v. 
+
+- **profiling_summary** - cung cấp thông tin về nhóm tác vụ, số lượng tác vụ và thời gian trung bình các nhóm đó để giúp hiểu rõ hồi quy tiềm tàng trong từng khu vực cụ thể khi tải ứng dụng
+
+- **total_time_elapsed** - Cho chúng tôi biết thời lượng sự kiện hiệu năng đã diễn ra để giúp chúng tôi hiểu rõ mức độ nghiêm trọng của sự cố về hiệu năng
+
+#### <a name="performance_record"></a>performance_record
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, mức sử dụng bộ nhớ ứng dụng và mức sử dụng CPU trở nên cực kỳ nghiêm trọng, có thể khiến thiết bị của bạn bị chậm
+
+Các trường sau đây sẽ được thu thập: 
+
+- **category** – Cho chúng tôi biết liệu ứng dụng ở trang mặt trước hay trong nền tại thời điểm đó. Các giá trị khả thi bao gồm foreground và background.
+
+- **cpu_usage** – Cho chúng tôi biết ứng dụng đã sử dụng bao nhiêu CPU để chúng tôi có dữ liệu cho việc so sánh, từ đó giúp chúng tôi hiểu được tác động tiêu cực đến hiệu năng
+
+- **is_watch_app_installed** – Cho chúng tôi biết liệu người dùng hiện có đang sử dụng Apple Watch hay không và đồng hồ đã được cài đặt chưa để giúp chúng tôi hiểu được tác động tiêu cực đến hiệu năng do Watch gây ra
+
+- **is_watch_paired** – Cho chúng tôi biết liệu người dùng hiện có đang sử dụng Apple Watch hay không và đồng hồ đã được ghép nối với thiết bị chưa để giúp chúng tôi hiểu được tác động hiệu năng tiêu cực do Watch gây ra
+
+- **is_watch_supported_and_active** – Cho chúng tôi biết liệu người dùng hiện có đang sử dụng Apple Watch hay không và đồng hồ có đang hoạt động không để giúp chúng tôi hiểu được tác động hiệu năng tiêu cực do Watch gây ra
+
+- **memoAry_used_percentage** – Cho chúng tôi biết ứng dụng đã sử dụng bao nhiêu phần trăm bộ nhớ để chúng tôi có dữ liệu cho việc so sánh, từ đó giúp chúng tôi hiểu được tác động tiêu cực đến hiệu năng
+
+- **memory_used** – Cho chúng tôi biết ứng dụng đã sử dụng bao nhiêu bộ nhớ để chúng tôi có dữ liệu cho việc so sánh, từ đó giúp chúng tôi hiểu được tác động tiêu cực đến hiệu năng
+
+
 ### <a name="application-activity-error-subtype"></a>*Loại con lỗi hoạt động ứng dụng*
 
 Lỗi về chức năng của một tính năng hoặc trải nghiệm người dùng.
+
+#### <a name="assertion"></a>khẳng định
+
+Sự kiện này cho phép chúng tôi phát hiện lỗi ứng dụng nghiêm trọng đã xảy ra khi nào khiến ứng dụng của bạn gặp sự cố hoặc gặp vấn đề nghiêm trọng như khiến bạn thấy các hàng trống trong hộp thư đến của mình.
+
+Các trường sau đây sẽ được thu thập:
+
+- **count** – Tổng số mục được liên kết với lỗi; ví dụ: số lượng lịch có lỗi
+
+- **has_hx** – Cho biết tài khoản đang sử dụng dịch vụ đồng bộ mới của chúng tôi để giúp chúng tôi phát hiện các sự cố do dịch vụ đồng bộ
+
+- **host_name** – tên của máy chủ dịch vụ có liên quan đến lỗi để giúp chúng tôi phát hiện các sự cố liên quan đến một máy chủ cụ thể
+
+- **host_type** – loại máy chủ có liên quan đến lỗi để giúp chúng tôi phát hiện các sự cố liên quan đến một loại máy chủ cụ thể
+
+- **message** – thông báo tùy chỉnh cho khẳng định được dùng để chẩn đoán sự cố 
+
+- **origin** – nguồn gốc lỗi trong mã để giúp chúng tôi phát hiện các sự cố liên quan đến một phần nhất định trong mã
+
+- **stacktrace** – theo dõi dấu vết ngăn xếp trong đó, khẳng định đã xảy ra để giúp chúng tôi phát hiện các sự cố liên quan đến một phần nhất định trong mã
+
+- **type** – loại lỗi khẳng định đã xảy ra, ví dụ: null_folder_name, compose_selected_null_account để giúp chúng tôi phát hiện các sự cố liên quan đến một phần nhất định trong mã
+
+#### <a name="edit_contact_error"></a>edit_contact_error
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, sự cố xảy ra khi bạn đang cố gắng xem hoặc chỉnh sửa liên hệ thông qua ứng dụng của chúng tôi.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **errorType** – loại lỗi đã xảy ra để giúp chúng tôi chẩn đoán sự cố
+
+- **field** – Trường liên hệ mà người dùng đã tìm cách chỉnh sửa để giúp chúng tôi chẩn đoán sự cố
+
+- **version** – Phiên bản của dịch vụ thẻ liên hệ mà chúng tôi đang sử dụng để giúp chúng tôi chẩn đoán sự cố
+
+#### <a name="error_report"></a>error_report
+
+Sự kiện này cho phép chúng tôi phát hiện thời điểm xảy ra lỗi ứng dụng nghiêm trọng để chúng tôi có thể ngăn chặn các sự cố có thể khiến ứng dụng của bạn bị sập hoặc khiến bạn không thể đọc email. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **client-request-id** – mã định dạng yêu cầu máy khách cho yêu cầu gây ra lỗi
+ 
+- **date** – dấu ngày của yêu cầu gây ra lỗi
+
+- **error** – loại lỗi, ví dụ: get_mailbox_location_failed
+ 
+- **error_body** – nội dung thông báo lỗi
+ 
+- **is_x_mailbox_anchor_set** – liệu thuộc tính X-AnchorMailbox đã được đặt theo yêu cầu hay chưa
+ 
+- **reason** – nguyên nhân gây ra lỗi, tức là thông báo lỗi
+ 
+- **request-id** – mã định danh yêu cầu của máy chủ cho yêu cầu gây ra lỗi
+ 
+- **source** – nguồn của lỗi trong cơ sở hạ tầng OM, thường là một trong ‘BE’ hoặc ‘FE'
+
 
 #### <a name="officeairspacebackendwin32graphicsdriversofthang"></a>Office.AirSpace.Backend.Win32.GraphicsDriverSoftHang 
 
@@ -8940,7 +10816,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidandroidappdocsfileoperationends"></a>Office.Android.AndroidAppDocsFileOperationEnds
 
-Tài liệu Quan trọng Chỉ dành cho Android (AppDocs) dữ liệu đo từ xa cho thao tác kết thúc của Tệp Mới/Mở/Lưu dưới dạng. Dữ liệu này ghi lại mã lỗi cho sự cố của những AppDocsOperations này.  Microsoft dùng dữ liệu này để xác định sự cố trong nhiều thao tác tệp khác nhau và lớp chính xác mà tại đó sự cố xảy ra trong các ứng dụng WXP.
+Tài liệu Quan trọng Chỉ dành cho Android (AppDocs) dữ liệu đo từ xa cho thao tác kết thúc của Tệp Mới/Mở/Lưu dưới dạng. Dữ liệu này ghi lại mã lỗi cho sự cố của những AppDocsOperations này.  Microsoft dùng dữ liệu này để xác định sự cố trong nhiều thao tác tệp khác nhau và lớp chính xác xảy ra sự cố trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9032,7 +10908,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidandroidfileasyncsavestatus"></a>Office.Android.AndroidFileAsyncSaveStatus
 
-Ghi tại Dữ liệu trạng thái lưu không đồng bộ tệp và nhiều mã lỗi khác nhau từ các cấu phần khác nhau.  Microsoft dùng dữ liệu này để phân tích xem có bất kỳ dữ liệu người dùng nào bị mất trong ứng dụng trong suốt quá trình lưu tệp trong các ứng dụng WXP hay không.
+Ghi tại Dữ liệu trạng thái lưu không đồng bộ tệp và nhiều mã lỗi khác nhau từ các cấu phần khác nhau.  Microsoft dùng dữ liệu này để phân tích xem có bất kỳ dữ liệu người dùng nào bị mất trong ứng dụng khi lưu tệp trong Word, Excel hoặc PowerPoint hay không.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9048,7 +10924,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidandroidfileopenreliability"></a>Office.Android.AndroidFileOpenReliability
 
-Thao tác này ghi lại Dữ liệu trạng thái mở tệp và các mã lỗi khác nhau để xác định những lỗi mở tệp nào là trong dự kiến so với lỗi ngoài dự kiến và phần mã nào đang báo cáo những lỗi này.  Microsoft dùng dữ liệu này để phân tích các lý do cho sự cố mở tệp và tính toán số liệu quan trọng như tỉ lệ mở tệp thành công trong các ứng dụng WXP.
+Thao tác này ghi lại Dữ liệu trạng thái mở tệp và các mã lỗi khác nhau để xác định những lỗi mở tệp nào là trong dự kiến so với lỗi ngoài dự kiến và phần mã nào đang báo cáo những lỗi này.  Microsoft dùng dữ liệu này để phân tích các lý do cho sự cố mở tệp và tính toán số liệu quan trọng như tỉ lệ mở tệp thành công trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9072,7 +10948,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **FirstBCSClientError_Info** - lỗi gần nhất của máy khách BCS (dịch vụ chuyển đổi nhị phân).
 
-- **IfWordFileOpenCancelled** - nếu thao tác mở tệp đã bị người dùng trong Word hủy
+- **IfWordFileOpenCancelled** - người dùng đã hủy thao tác mở tệp trong Word hay chưa
 
 - **InitializationReason** - liệt kê cho điểm nhập đối với thao tác mở tệp 
 
@@ -9096,7 +10972,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **ProviderFileSize** - kích cỡ tệp được ghi lại trong khi mở tệp thông qua kích hoạt tệp
 
-- **Stae** - Liệt kê trạng thái mở tệp
+- **State** - Liệt kê trạng thái mở tệp.
 
 - **UriScheme** - Lược đồ URL
 
@@ -9112,7 +10988,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidandroidfilesavestatus"></a>Office.Android.AndroidFileSaveStatus
 
-Việc ghi tại Dữ liệu trạng thái lưu tệp và nhiều mã lỗi khác nhau từ các cấu phần khác nhau là quan trọng.  Microsoft dùng dữ liệu này để phân tích xem có bất kỳ dữ liệu người dùng nào bị mất trong ứng dụng trong suốt quá trình lưu tệp trong các ứng dụng WXP hay không.
+Việc ghi tại Dữ liệu trạng thái lưu tệp và nhiều mã lỗi khác nhau từ các cấu phần khác nhau là quan trọng.  Microsoft dùng dữ liệu này để phân tích xem có bất kỳ dữ liệu người dùng nào bị mất trong ứng dụng khi lưu tệp trong Word, Excel hoặc PowerPoint hay không.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9158,7 +11034,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **WordFileSaveErrorTrackbackTag** - tag lưu ý ngược cho sự cố lưu
 
-- **WordFileSaveOpResult** - liệt kê cho trạng thái kết quả 0 nếu thành công, 1 nếu thất bại, 2 nếu đã hủy
+- **WordFileSaveOpResult** - liệt kê cho trạng thái kết quả là 0 nếu thành công, 1 nếu thất bại, 2 nếu đã hủy
 
 - **WordFileSaveSuccess** - liệt kê cho Word thông tin cụ thể cho thao tác lưu trữ tệp thành công.
 
@@ -9216,7 +11092,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidappdocsfileoperationends"></a>Office.Android.AppDocsFileOperationEnds
 
-Tài liệu Quan trọng Chỉ dành cho Android (AppDocs) dữ liệu đo từ xa cho thao tác kết thúc của Tệp Mới/Mở/Lưu dưới dạng. Dữ liệu này ghi lại mã lỗi cho sự cố của những AppDocsOperations này.  Microsoft dùng dữ liệu này để xác định sự cố trong nhiều thao tác tệp khác nhau và lớp chính xác mà tại đó sự cố xảy ra trong các ứng dụng WXP.
+Tài liệu Quan trọng Chỉ dành cho Android (AppDocs) dữ liệu đo từ xa cho thao tác kết thúc của Tệp Mới/Mở/Lưu dưới dạng. Dữ liệu này ghi lại mã lỗi cho sự cố của những AppDocsOperations này.  Microsoft dùng dữ liệu này để xác định sự cố trong nhiều thao tác tệp khác nhau và lớp chính xác xảy ra sự cố trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9286,7 +11162,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
 
-Phép đo từ xa Lỗi Chuyển đổi nhị phân cho In và Chia sẻ dưới dạng PDF.  Microsoft dùng phép đo từ xa này để xác định các điểm xảy ra sự cố trong suốt quá trình chuyển đổi BCS trong các ứng dụng WXP.
+Phép đo từ xa Lỗi Chuyển đổi nhị phân cho In và Chia sẻ dưới dạng PDF.  Microsoft dùng phép đo từ xa này để xác định các điểm xảy ra sự cố trong suốt quá trình chuyển đổi BCS trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9310,7 +11186,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
 
-Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định các sự cố hỏng hóc DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong các ứng dụng WXP.
+Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định sự cố hỏng DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9352,13 +11228,29 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
 
-Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định các sự cố hỏng hóc DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong các ứng dụng WXP.
+Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định sự cố hỏng DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
 - **ErrorAt** - Giá trị Tag: Thông tin về vị trí Xảy ra sự cố
 
 - **ExceptionErrorMessage** - thông báo lỗi chi tiết
+
+#### <a name="office_android_earlytelemetry_expansionfileserrors"></a>Office_Android_EarlyTelemetry_ExpansionFilesErrors
+
+Các tệp mở rộng trong Gói Công cụ Android (APK) cho ứng dụng Office mobile là tệp nguồn bổ sung mà nhà phát triển ứng dụng Android có thể phát hành cùng với ứng dụng của họ. Để Cơ chế tải xuống tệp mở rộng của chúng tôi đáng tin cậy hơn, chúng tôi đang ghi lại nguyên nhân gây ra lỗi khi tải xuống các tệp mở rộng hoặc khi đọc các tệp mở rộng được tải xuống.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ClassName** - Văn bản biểu thị tên tệp mã nguồn có lỗi.
+
+- **Data_ErrorMessage** - Văn bản biểu thị thao tác thất bại.
+
+- **Data_ExceptionMessage** - Một trường văn bản tùy chọn biểu thị nguyên nhân gây ra ngoại lệ.
+
+- **Data_ExceptionType** - Một trường văn bản tùy chọn biểu thị tên của ngoại lệ bị loại khỏi mã nguồn.
+
+- **Data_MethodName** - Văn bản biểu thị tên phương pháp trong mã nguồn có lỗi.
 
 #### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
@@ -9382,7 +11274,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidintuneintunejavaexceptionadaltokenformam"></a>Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
 
-Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để nhận mã thông báo ADAL cho nguồn lực Intune.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong quá trình ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
+Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố cho các API Intune riêng lẻ. Phép đo từ xa này sẽ được ghi nhật ký lại trong trường hợp xảy ra sự cố để nhận mã thông báo ADAL cho nguồn lực Intune.  Microsoft dùng dữ liệu này để xác định lỗi xảy ra trong và sau khi ghi Intune vào trong ứng dụng, sau khi đăng nhập vào ứng dụng bằng tài khoản cơ quan
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9526,7 +11418,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidlicenseactivationfailure"></a>Office.Android.LicenseActivationFailure
 
-Phép đo từ xa Lỗi nghiêm trọng để theo dõi sự cố để kích hoạt cấp phép cho các tài khoản O365 trong ứng dụng W/X/P.  Microsoft dùng phép đo từ xa này nhằm phân tích sự cố để kích hoạt cấp phép o365 đã thanh toán.
+Phép đo từ xa lỗi nghiêm trọng để theo dõi sự cố giúp kích hoạt giấy phép cho các tài khoản Office 365 trong Word, Excel hoặc PowerPoint.  Microsoft dùng phép đo từ xa này để phân tích sự cố giúp kích hoạt cấp phép Office 365 đã thanh toán.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9891,7 +11783,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **AppInfo.Version** - Phiên bản ứng dụng
 
-- **Failure.Category** - Danh mục hỏng "UnhandledError"
+- **Failure.Category** - Danh mục hỏng "Lỗi_chưa_được_xử_lý"
 
 - **Failure.Detail** - Thông tin chi tiết về sự hỏng
 
@@ -9907,6 +11799,20 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.SDKVersion** - Phiên bản Khách hàng Dịch vụ Quản lý Quyền
 
+#### <a name="save_error"></a>save_error
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, xảy ra lỗi khi bạn cố gắng lưu tệp.  Nó theo dõi các lỗi gây ra do lỗi không thể lưu tệp, bao gồm thông báo lỗi mô tả giúp chúng tôi giải quyết vấn đề.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **error** – Loại lỗi đã xảy ra để giúp chúng tôi phát hiện và giải quyết các sự cố liên quan đến một loại lỗi cụ thể
+
+- **file_type** - Loại tệp mà người dùng đã cố gắng lưu (chẳng hạn như .doc)
+
+- **origin** – Vị trí lần thử lưu tệp xuất phát (như từ email) để chúng tôi có thể phát hiện các sự cố liên quan đến thao tác lưu tệp từ một vị trí cụ thể trong ứng dụng
+
+- **token_type** - loại mã thông báo được dùng nhằm xác thực tài khoản để lưu tệp, từ đó giúp chúng tôi phát hiện các sự cố xác thực liên quan đến việc lưu tệp
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Sự kiện dữ liệu cấu hình và kết nối thiết bị
 
@@ -9918,6 +11824,124 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 ### <a name="device-connectivity-and-configuration-subtype"></a>*Loại con của hả năng kết nối và cấu hình thiết bị*
 
 Trạng thái kết nối mạng và cài đặt thiết bị, chẳng hạn như bộ nhớ.
+
+#### <a name="application_did_receive_memory_warning"></a>application_did_receive_memory_warning
+
+Sự kiện này sẽ được gửi khi Apple cho chúng tôi biết rằng ứng dụng sắp hết bộ nhớ. Sự kiện cho chúng tôi biết rằng chúng tôi đã giới thiệu một vấn đề với quản lý bộ nhớ trên thiết bị của bạn.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **current_memory_used** – Cho chúng tôi biết lượng bộ nhớ do ứng dụng sử dụng tại thời điểm ứng dụng hết bộ nhớ.
+
+- **current_memory_used_percentage** – Cho chúng tôi biết tỷ lệ phần trăm bộ nhớ do ứng dụng sử dụng trên tổng dung lượng bộ nhớ sẵn dùng tại thời điểm ứng dụng hết bộ nhớ.
+
+- **currentVC** – Cho chúng tôi biết dạng xem hiện đang hiển thị khi ứng dụng hết bộ nhớ.
+
+- **has_hx** – Cho biết tài khoản đang sử dụng dịch vụ đồng bộ mới của chúng tôi để giúp chúng tôi phát hiện các sự cố do dịch vụ đồng bộ
+
+- **is_watch_app_installed** – Cho chúng tôi biết liệu người dùng hiện có đang sử dụng Apple Watch hay không và đồng hồ đã được cài đặt chưa để giúp chúng tôi hiểu được tác động tiêu cực đến hiệu năng do Watch gây ra
+
+- **is_watch_paired** – Cho chúng tôi biết liệu người dùng hiện có đang sử dụng Apple Watch hay không và đồng hồ đã được ghép nối với thiết bị chưa để giúp chúng tôi hiểu được tác động hiệu năng tiêu cực do Watch gây ra
+
+- **is_watch_supported_and_active** – Cho chúng tôi biết liệu người dùng hiện có đang sử dụng Apple Watch hay không và đồng hồ có đang hoạt động không để giúp chúng tôi hiểu được tác động hiệu năng tiêu cực do Watch gây ra
+
+- **rn_initialized** – Cho chúng tôi biết liệu React Native có được khởi tạo tại điểm ứng dụng hết bộ nhớ hay không.
+
+- **running_time** – Hãy cho chúng tôi biết thời lượng ứng dụng đã dùng để vận hành vào thời điểm ứng dụng hết bộ nhớ.
+
+#### <a name="conversation_memory_leak"></a>conversation_memory_leak
+
+Cho phép chúng tôi phát hiện các trường hợp trong đó, dạng xem cuộc trò chuyện email của chúng tôi đang khiến chúng tôi sử dụng nhiều bộ nhớ trên thiết bị của bạn hơn dự kiến.
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có trường hay dữ liệu được thêm vào nào được thu thập. Chỉ nhật ký được thu thập nếu có rò rỉ bộ nhớ liên quan đến chuỗi hội thoại.
+
+#### <a name="core_data_corruption"></a>core_data_corruption
+
+Cho phép chúng tôi phát hiện các trường hợp trong đó, chúng tôi không thể hiển thị cho bạn email hoặc lịch của bạn vì vị trí chúng tôi lưu trữ email trên thiết bị của bạn đã hỏng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **lỗi** – cho biết liệu nguồn gốc là từ một hành động lưu hay tạo
+
+- **sqlError** – mã lỗi số được liệt kê tại https://www.sqlite.org/c3ref/c_abort.html
+
+#### <a name="core_data_corruption_user_reset"></a>core_data_corruption_user_reset
+
+Cho phép chúng tôi phát hiện các trường hợp trong đó, bạn đã xóa hoặc đặt lại tài khoản của mình trong ứng dụng của chúng tôi và nguyên nhân là do lỗi dữ liệu email mà chúng tôi lưu trữ trên thiết bị của bạn.
+
+Các trường sau đây sẽ được thu thập:
+
+- **errorSource** – đọc chính tả vị trí xảy ra lỗi cho dù là trong quá trình lưu hay tạo
+
+#### <a name="core_data_diagnostics"></a>core_data_diagnostics 
+
+Cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, dung lượng lưu trữ email của chúng tôi đang sử dụng quá nhiều dung lượng lưu trữ trên thiết bị của bạn
+
+Các trường sau đây sẽ được thu thập:
+
+- **db_size_megabytes** – theo dõi kích cỡ của cơ sở dữ liệu lõi được làm tròn đến 25 megabyte gần nhất và với tối đa là 500 megabyte
+
+#### <a name="general_properties_log"></a>general_properties_log
+
+Sự kiện này thu thập thông tin cho phép chúng tôi phân mục và phân loại các sự cố trong ứng dụng Outlook có liên quan đến trợ năng và thiết đặt thiết bị.  Việc phân mục này là cần thiết để ưu tiên tác động của sự cố đối với khách hàng.
+
+Các trường sau chỉ được thu thập cho iOS:
+
+- **bold_text** – Cho chúng tôi biết liệu thiết bị có bật văn bản in đậm để giúp chúng tôi phát hiện các sự cố liên quan đến văn bản in đậm hay không
+
+- **closed_captioning** – Cho chúng tôi biết liệu người dùng có bật phụ đề chi tiết trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến phụ đề chi tiết hay không
+
+- **darker_system_colors** – Cho chúng tôi biết liệu người dùng có bật chế độ làm tối của màu hệ thống trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **gray_scale** – Cho chúng tôi biết liệu người dùng có bật thang xám trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **guided_access** – Cho chúng tôi biết liệu người dùng có bật quyền truy nhập có hướng dẫn trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **invert_colors** – Cho chúng tôi biết liệu người dùng có bật cài đặt đảo màu trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **mono_audio** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho đơn âm trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **reduce_motion** – Cho chúng tôi biết liệu người dùng có bật cài đặt giảm chuyển động trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **reduce_transparency** – Cho chúng tôi biết liệu người dùng có bật cài đặt giảm độ trong suốt trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **speak_screen** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho đơn âm trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến thiết đặt này hay không
+
+- **speak_selection** – Cho chúng tôi biết liệu người dùng có bật cài đặt Lựa chọn đọc trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **switch_control** – Cho chúng tôi biết liệu người dùng có bật cài đặt Điều khiển chuyển đổi trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **voice_over** – Cho chúng tôi biết liệu người dùng có bật cài đặt Voiceover trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+Các trường sau chỉ được thu thập cho Android:
+
+- **braille** – Cho chúng tôi biết liệu người dùng có bật cài đặt đảo màu trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **caption** – Cho chúng tôi biết liệu người dùng có bật phụ đề chi tiết trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến phụ đề chi tiết hay không
+
+- **color_inversion** – Cho chúng tôi biết liệu người dùng có bật cài đặt đảo màu trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **high_contrast** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho độ tương phản cao trên thiết bị của mình để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **large_text** – Cho chúng tôi biết liệu người dùng có bật cài đặt văn bản lớn để giúp chúng tôi phát hiện ra các sự cố liên quan đến cài đặt này hay không
+
+- **oem_preinstall** – Cho chúng tôi biết liệu ứng dụng của chúng tôi đã được cài đặt sẵn trên thiết bị hay chưa (chỉ áp dụng cho các thiết bị Samsung)
+
+- **supported_abis** – Cho chúng tôi biết loại giao diện nhị phân ứng dụng (ABIs) nào được nền tảng thiết bị hỗ trợ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này
+
+- **switch_access** – Cho chúng tôi biết liệu người dùng có bật cài đặt Truy cập chuyển đổi trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **talkback** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho TalkBack trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+#### <a name="low_storage_warning"></a>low_storage_warning
+
+Việc này là cần thiết để giám sát liệu ứng dụng của chúng tôi có đột ngột chiếm hầu hết dung lượng lưu trữ thiết bị của bạn do mức sử dụng bộ nhớ cao hay không bằng cách cho biết khi nào thiết bị ở trạng thái dung lượng lưu trữ thấp
+
+Các trường sau đây sẽ được thu thập: 
+
+- **free_bytes** – lượng dung lượng lưu trữ miễn phí sẵn dùng trên thiết bị
 
 #### <a name="officeairspaceairspacelocalblocklistdriverupdated"></a>Office.AirSpace.AirSpaceLocalBlocklistDriverUpdated
 
@@ -9959,7 +11983,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeairspacebackendwin32graphicsdriverhangdetectorblocklistapp"></a>Office.AirSpace.Backend.Win32.GraphicsDriverHangDetectorBlocklistApp
 
-Card màn hình của người dùng đã được phát hiện là nguyên nhân gây sự cố treo lâu hoặc không thể phục hồi. Office sẽ không sử dụng card màn hình này trong phiên Office này (thay vào đó sử dụng kết xuất phần mềm) cho đến khi trình điều khiển được cập nhật. Thông báo cho Microsoft về trình điều khiển card màn hình đang gây ra sự cố trong Office để có thể xác định xu hướng và người dùng có thể phân tích tác động của các trình điều khiển đó. Đồng thời giúp thông báo số lượng người dùng ở trạng thái tối ưu phụ này.
+Phát hiện card màn hình của người dùng là nguyên nhân gây ra sự cố treo lâu hoặc không thể phục hồi. Office sẽ không sử dụng card màn hình này trong phiên Office này (thay vào đó sử dụng kết xuất phần mềm) cho đến khi trình điều khiển được cập nhật. Thông báo cho Microsoft về trình điều khiển card màn hình đang gây ra sự cố trong Office để có thể xác định xu hướng và người dùng có thể phân tích tác động của các trình điều khiển đó. Đồng thời giúp thông báo số lượng người dùng ở trạng thái tối ưu phụ này.
 
 Các trường sau đây sẽ được thu thập:
 
