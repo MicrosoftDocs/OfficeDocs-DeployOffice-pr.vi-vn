@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office những thông tin về cách quản lý kiểm soát quyền riêng tư trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 Proplus) bằng cách sử dụng các thiết đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: 284b9b8a2b0231f5079e34ec2b09e35dfd0d07ca
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: ca076099be15a5a4cd19ac7c99660bfe26de8eed
+ms.sourcegitcommit: edd1190877db7996206147ad1d691fd8e84f23b1
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993001"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44589050"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
@@ -225,7 +225,7 @@ Một số người quản trị muốn thay đổi các thiết đặt trực t
 
 Để tạo tệp .reg cho cài đặt quyền riêng tư, hãy mở Notepad và sao chép vào các dòng sau. Điều chỉnh các giá trị cho phù hợp với nhu cầu của bạn, rồi lưu tệp. Hãy đảm bảo rằng tên tệp có phần mở rộng là .reg
 
-```
+```console
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\office\16.0\common\privacy]
