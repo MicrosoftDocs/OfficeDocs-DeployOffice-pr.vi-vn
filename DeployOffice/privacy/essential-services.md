@@ -13,18 +13,18 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992859"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663195"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
 > [!IMPORTANT]
 > Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 ProPlus)
+> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
 > - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
 > - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
 > - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
@@ -2528,9 +2528,9 @@ Báo cáo kết quả thử nghiệm cài đặt từ đầu đến cuối
 
 Báo cáo về hành động giải thích lý do cho việc đầu vào được thu thập bằng cách sử dụng CollectParameters
 
-- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu)
+- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước) hoặc Kênh Enterprise nửa năm một lần.
 
-- **ChannelID –**   Số nguyên đại diện cho giá trị bộ đếm của kênh cài đặt/cập nhật đã chọn (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu, Không hợp lệ)
+- **ChannelID –** Số nguyên thể hiện giá trị enum của kênh cập nhật/cài đặt đã chọn. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước), Kênh Enterprise nửa năm một lần, hoặc Không hợp lệ.
 
 - **CMDMode –** Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe.
 
@@ -2607,9 +2607,9 @@ Báo cáo về hành động đọc đầu vào đã gắn thẻ từ chữ ký 
 
 Báo cáo các tham số được sử dụng cho cài đặt Office
 
-- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu)
+- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước) hoặc Kênh Enterprise nửa năm một lần.
 
-- **ChannelID –**   Số nguyên đại diện cho giá trị bộ đếm của kênh cài đặt/cập nhật đã chọn (Hàng tháng, Người dùng nội bộ chậm, Người dùng nội bộ nhanh, Nửa năm một lần, Nửa năm một lần - Nhóm mục tiêu, Không hợp lệ)
+- **ChannelID –** Số nguyên thể hiện giá trị enum của kênh cập nhật/cài đặt đã chọn. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước), Kênh Enterprise nửa năm một lần, hoặc Không hợp lệ.
 
 - **CMDMode –** Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
 

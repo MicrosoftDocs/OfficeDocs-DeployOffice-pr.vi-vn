@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus), bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993176"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663583"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
@@ -37,7 +37,7 @@ Là một phần của những thay đổi này, có các cài đặt chính sá
 > - Những thay đổi này cũng được áp dụng cho những phiên bản sau đây:
 >   - Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
 >   - Phiên bản 1904 trở lên trong phiên bản Project và Visio trên máy tính đi kèm với một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
-> - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh nửa năm một lần (Nhóm mục tiêu) và Kênh nửa năm một lần.
+> - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh Enterprise nửa năm một lần (Xem trước) và Kênh Enterprise nửa năm một lần.
 > - Các biện pháp kiểm soát quyền riêng tư này sẵn dùng đối với Phiên bản 2.30 trở lên của những phiên bản iOS của Excel, OneNote, PowerPoint và Word cũng như Phiên bản 1.17 trở lên của Visio Viewer for iOS.
 > - Các biện pháp kiểm soát quyền riêng tư này sẵn dùng đối với Phiên bản 16.0.12226.10000 trở lên của những phiên bản Android của Excel, PowerPoint và Word cũng như Phiên bản 16.0.12228.20004 trở lên của OneNote for Android.
 > - Hầu hết các ứng dụng Office dành cho web sử dụng biện pháp kiểm soát quyền riêng tư mới cho [các trải nghiệm được kết nối tuỳ chọn](optional-connected-experiences.md). Các ứng dụng đó được liệt kê sau đây: Excel dành cho web, OneNote dành cho web, PowerPoint dành cho web, Visio dành cho web và Word dành cho web. Bạn có thể sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md) để đặt cấu hình cho [cài đặt chính sách](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences) thích hợp.
