@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
+ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663195"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800410"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -2719,13 +2719,22 @@ Sự kiện này đã được ghi nhật ký khi cuộc gọi đến các WebSe
 
 Các trường sau đây sẽ được thu thập:
 
+- **ActionDetail** -  Chi tiết bổ sung khi thất bại xảy ra.
+   - Nếu yêu cầu HTTP thành công, ActionDetail sẽ bằng 0.
+   - Nếu trường Kết quả không phải là OK (tức là không phải bằng 0), nghĩa là yêu cầu chưa được gửi, trường này sẽ ghi lại mã lỗi nội bộ tương tự như trường Kết quả.
+   - Nếu trường Kết quả là OK (từc là bằng 0), nghĩa là mã phản hồi HTTP >= 300, trường sẽ ghi lại mã phản hồi HTTP (ví dụ: 404).
+
+- **Result** - Cờ mã lỗi số được trả về bởi các API cuộc gọi dịch vụ web Office. – ví dụ: 3 nghĩa là có sự cố xảy ra trong khi khởi tạo đầu đề HTTP.
+
+- **Type** - Thông tin loại bổ sung. Trong trường hợp Tồn kho, thông tin này cho biết loại tải trọng đang được gửi – ví dụ: đầy đủ hoặc chỉ chênh lệch thay đổi. 
+
 -  **WebCallSource** - Một giá trị liệt kê (cụ thể là số nguyên) cho biết phần bổ trợ Trình quản lý Khả năng bảo trì là nguồn gốc của cuộc gọi:
    - Hàng tồn kho: 0
    - Cấu hình hàng tồn kho: 1
    - Chính sách hàng tồn kho: 2
    - Trạng thái Mạng lưới Hàng tồn kho: 3
-
-- **Result** - Cờ mã số lỗi số được trả về bởi các API cuộc gọi dịch vụ web Office.
+   - Trình quản lý khả năng dịch vụ: 4
+   - Khả năng quản lý: 5
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
@@ -3143,6 +3152,8 @@ Hoạt động đo từ xa này theo dõi sự thành công cũng như thất b�
 
 Các trường sau đây sẽ được thu thập:
 
+- **DexShouldRetry** - Tín hiệu cho biết chúng tôi đã gặp sự cố có thể thử lại (không có internet hoặc máy chủ bị hỏng)
+
 - **GenuineTicketFailure** - Cho chúng tôi biết KẾT QUẢ thất bại khi cố gắng lấy khóa sản phẩm/phiếu chính hãng Windows (WPK).
 
 - **PinValidationFailure** - Cho chúng tôi biết lý do tại sao quá trình xác thực mã pin không thành công. Lỗi có thể xảy:
@@ -3177,13 +3188,27 @@ Sau khi nhận thành công một mã pin hợp lệ, bạn sẽ liên kết v�
 
 Các trường sau đây sẽ được thu thập:
 
-- **ActionCreateAccount** - Người dùng đã chọn để tạo tài khoản.
+- **ActionActivate** - Tín hiệu cho biết người dùng đã bấm vào nút “Kích hoạt”.
 
-- **ActionSignIn** - Người dùng đã chọn để đăng nhập.
+- **ActionChangeAccount** -  Tín hiệu cho biết người dùng đã bấm vào siêu liên kết “Sử dụng tài khoản khác”.
 
-- **Dialogredevu** - Hiển thị hộp thoại quy đổi AFO.
+- **ActionCreateAccount** - Tín hiệu cho biết người dùng đã bấm vào nút “Tạo tài khoản”.
 
-- **DialogSignIn** - Hiển thị hộp thoại đăng nhập AFO.
+- **ActionSignIn** - Tín hiệu cho biết người dùng đã bấm vào nút “Đăng nhập”.
+
+- **CurrentView** - Loại hộp thoại người dùng đã đóng.
+
+- **DialogEULA** -  Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại “Chấp nhận EULA”. 
+
+- **DialogRedemption** - Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại quy đổi AFO.
+
+- **DialogSignIn** - Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại đăng nhập AFO.
+
+- **EmptyRedemptionDefaults** - Tín hiệu cho biết chúng tôi không thể tải thông tin quy đổi mặc định.
+ 
+- **GetRedemptionInfo** - Tín hiệu cho biết chúng tôi đang tải thông tin nhân khẩu học để quy đổi mã pin.
+
+- **MalformedCountryCode** - Tín hiệu cho biết mã quốc gia cần để quy đổi mã pin không đúng.
 
 - **OExDetails** - Chi tiết về lỗi chúng tôi nhận được khi hộp thoại đăng nhập danh tính đã bị bỏ qua.
 
@@ -3199,6 +3224,14 @@ Các trường sau đây sẽ được thu thập:
     - 0x03113811    Người dùng đóng hộp thoại đăng nhập/quy đổi
     - 0x03113812   Người dùng đóng hộp thoại chấp nhận EULA
     - 0x03113808   Người dùng đã chấp nhận EULA
+    - 0x03113811      Người dùng đã đóng hộp thoại
+    - 0x2370e3a0      Người dùng đã đóng hộp thoại
+    - 0x2370e3c1      Đi đến web để quy đổi mã pin
+    - 0x2370e3a1      Đi đến web để quy đổi mã pin
+    - 0x2370e3c0      Chuỗi hộp thoại lặp do người dùng gây ra di chuyển qua lại trong luồng hộp thoại
+    - 0x2370e3a3      Người dùng đã bấm vào siêu liên kết “Không phải bây giờ” sẽ bỏ qua khả năng cung cấp AFO cho phiên này
+    - 0x2370e3a2      Người dùng đã bấm vào siêu liên kết “Đừng hiển thị cho tôi nữa” sẽ tắt khả năng cung cấp AFO
+
 
 - **UseInAppRedemption** - Cho chúng tôi biết nếu chúng tôi giữ người dùng trong ứng dụng để đổi quà hoặc gửi họ đến web để đổi mã pin đã được tải (được điền trước).
 
@@ -3230,7 +3263,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HasConnectivity** - Cho biết nếu người dùng có kết nối internet và trong trường hợp không có người dùng có thể phải sử dụng giấy phép gia hạn trong năm ngày hoặc có thể sử dụng ở chế độ chức năng bị giảm bớt
 
-- **InAppTrialPurchase** - Cho biết liệu chuyến bay được kích hoạt cho việc tung ra Store Purchase SDK để bắt PI và mua bản dùng thử từ bên trong ứng dụng hay không
+- **InAppTrialPurchase** - Cho biết xem chuyến bay đã được kích hoạt để khởi chạy Store Purchase SDK nhằm bắt lấy PI và mua bản dùng thử trong ứng dụng hay không *[Trường này đã bị loại bỏ khỏi bản dựng Office hiện tại, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **IsRS1OrGreater** - Cho biết liệu phiên bản OS lớn hơn RS1 hay không vì Store Purchase SDK chỉ nên được sử dụng nếu phiên bản OS lớn hơn RS1
 
@@ -3238,15 +3271,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **OEMSendToWebForTrial** - Cho biết liệu bạn đã kích hoạt tính năng sử dụng máy bay để chuyển người dùng đến web để quy đổi bản dùng thử chưa
 
-- **StoreErrorConditions** - Cho biết các điều kiện khác nhau mà các Store Purchase SDK có thể đã không thành công
+- **StoreErrorConditions** - Cho biết các điều kiện khác nhau khi Store Purchase SDK có thể thất bại *[Trường này đã bị loại bỏ khỏi bản dựng Office hiện tại, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-- **StoreErrorHResult** - Cho biết mã lỗi được trả về từ các Store Purchase SDK
+- **StoreErrorHResult** - Cho biết mã lỗi được trả về từ the Store Purchase SDK *[Trường này đã bị loại bỏ khỏi bản dựng Office hiện tại, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-- **StorePurchaseStatusResult** - Cho biết kết quả của việc gọi Store Purchase SDK và liệu người dùng thực hiện mua hàng hay chưa, điều này sẽ giúp xác định xem người dùng có được cấp phép để sử dụng Office hay không
+- **StorePurchaseStatusResult** - Cho biết kết quả khi gọi Store Purchase SDK và xem người dùng đã thực hiện mua hàng hay chưa, điều này sẽ giúp xác định xem người dùng có được cấp phép để sử dụng Office hay không *[Trường này đã bị loại bỏ khỏi bản dựng Office hiện tại, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-- **Tag** - Được sử dụng để cho biết sự kiến được gửi từ vị trí trong mã nào
+- **Tag** - Dùng để cho biết sự kiện được gửi từ vị trí trong mã nào
 
-- **UserSignedInExplicitly** - Cho biết liệu người dùng đã đăng nhập rõ ràng trong trường hợp nào, chúng tôi sẽ hướng dẫn lại người dùng lên web để lấy bản dùng thử
+- **UserSignedInExplicitly** - Cho biết xem người dùng đã đăng nhập rõ ràng trong trường hợp nào, chúng tôi sẽ chuyển hướng lại người dùng đến web để lấy bản dùng thử *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 

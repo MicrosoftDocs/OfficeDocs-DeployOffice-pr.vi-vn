@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: f08061e77e5757d61108e2eb4539986b90902bef
-ms.sourcegitcommit: 06da4eff4b399367017fc68fadb13df29e577e64
+ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
+ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43998849"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811492"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -624,6 +624,8 @@ Ngoài ra, các trường sau phổ biến đối với tất cả các sự ki�
 - **DeviceInfo.NetworkProvider** - Nhà cung cấp mạng của thiết bị (như Verizon)
 
 - **gcc_restrictions_enabled** - Cho chúng tôi biết liệu các hạn chế GCC có được áp dụng cho ứng dụng hay không để chúng tôi có thể đảm bảo khách hàng GCC sử dụng ứng dụng của chúng tôi một cách an toàn
+ 
+- **multi_window_mode** – Hãy cho chúng tôi biết nếu người dùng trên iPad đang sử dụng nhiều cửa sổ để giúp chúng tôi phát hiện các sự cố liên quan đến việc sử dụng nhiều cửa sổ.
 
 - **office_session_id** - Id duy nhất theo dõi phiên cho các dịch vụ Office được kết nối giúp phát hiện các sự cố tích hợp dịch vụ Office cụ thể trong Outlook như Word
 
@@ -659,6 +661,20 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 
 Sản phẩm được cài đặt và phiên bản và trạng thái cài đặt.
 
+#### <a name="add_sso_account"></a>add_sso_account
+
+Thao tác này sẽ cảnh báo Microsoft về khả năng thành công hay thất bại khi người dùng thêm tài khoản bằng đăng nhập một lần (SSO).
+
+Các trường sau đây sẽ được thu thập: 
+
+- **account_type** – loại tài khoản đã được thêm vào bằng SSO.
+
+- **action_origin** – nơi sự kiện này đã được tạo. (ví dụ: values: sso_drawer, sso_add_account, sso_add_account_prompt, sso_settings, sso_oobe).
+
+- **provider** - mã định danh dành cho gói phần mềm của nhà cung cấp đối với SSO.
+
+- **state** – trạng thái hiện tại của tài khoản (giá trị ví dụ: KHÔNG THÀNH CÔNG, ĐANG CHỜ XỬ LÝ, ĐÃ THÊM,...)
+ 
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
 Áp dụng cho tất cả các ứng dụng chạy win32. Giúp chúng tôi hiểu được trạng thái quá trình cập nhật của bộ Office (Thành công hay thất bại kèm theo thông tin lỗi)
@@ -1249,6 +1265,34 @@ Các trường sau đây sẽ được thu thập:
 
 Tài liệu, tính năng và các điều kiện lỗi phần bổ trợ có thể ảnh hưởng đến bảo mật, bao gồm tính sẵn sàng cập nhật sản phẩm.
 
+#### <a name="office_appguard_createcontainer"></a>Office_AppGuard_CreateContainer
+
+Chúng tôi thu thập mã lỗi và xem bộ chứa đã tồn tại hay chưa. Chúng tôi cũng thu thập mã lỗi cho sự kiện đặt lại trong trường hợp chúng tôi không thể tạo bộ chứa trong lần thử đầu tiên. Dữ liệu sẽ được dùng để xác định tỷ lệ phần trăm của các phiên chúng tôi tạo bộ chứa để khởi chạy các ứng dụng Office Application Guard thành công. Dữ liệu cũng sẽ cho phép Microsoft xác định và xử lý mã lỗi từ quá trình tạo bộ chứa.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ErrorCode1** - Loại mã lỗi thiết lập bộ chứa.  
+
+- **ErrorCode2** - Mã lỗi trong khi thực hiện quá trình tạo. 
+
+- **ErrorCode3** - Mã lỗi bổ sung. 
+
+- **Id** - Mã định danh duy nhất (GUID) để tạo bộ chứa.
+
+- **ResetError** - Mã lỗi khi thử đặt lại bộ chứa sau một lần thử thất bại.
+
+- **ResetErrorCode1** - Loại mã lỗi thiết lập bộ chứa sau lệnh đặt lại. 
+
+- **ResetErrorCode2** - Mã lỗi trong khi thực hiện quá trình tạo sau lệnh đặt lại.
+
+- **ResetErrorCode3** - Mã lỗi bổ sung sau lệnh đặt lại.
+
+- **ResetErrorType** - Loại lỗi trong khi đặt lại: Tạo, Chuẩn bị tệp hoặc Khởi chạy.
+
+- **WarmBoot** - Xác định xem bộ chứa đã được tạo hay chưa.
+
+
+
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
 
 Theo dõi khi Mã định danh lớp cụ thể (Flash, Silverlight, v.v.) được kích hoạt trong Office. Được sử dụng để theo dõi tác động của việc chặn các điều khiển Flash, Silverlight và Shockwave đối với người dùng cuối.
@@ -1684,7 +1728,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **subtab_type** –  theo dõi nơi người dùng đã chọn kết quả từ tab kết quả
 
-- **top_mail_result_selected_count** – theo dõi số lần người dùng chọn các kết quả hàng đầu được cung cấp cho họ. 
+- **top_mail_result_selected_count** - theo dõi số lần người dùng chọn các kết quả hàng đầu được cung cấp cho họ.
+
+- **ui_reload_result_count** - ghi lại số lần tải lại UI vì cập nhật tập kết quả (trong truy vấn tương ứng)
+
+- **ui_reload_result_time** - ghi lại tổng thời gian tải lại UI vì cập nhật tập kết quả (trong truy vấn tương ứng)
+
+- **ui_reload_status_count** - ghi lại số lần tải lại UI vì cập nhật trạng thái (trong truy vấn tương ứng)
+
+- **ui_reload_status_time** - ghi lại tổng thời gian tải lại UI vì cập nhật trạng thái (trong truy vấn tương ứng)
 
 #### <a name="compose_mail_accessory"></a>compose_mail_accessory
 
@@ -3320,6 +3372,118 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 - **version** - Phiên bản máy khách của nguồn cấp dữ liệu.
 
 
+#### <a name="officefeedbacksurveyfloodgateclientsurveytracked"></a>Office.Feedback.Survey.FloodgateClient.SurveyTracked
+
+Theo dõi khi thiết bị đủ điều kiện thực hiện khảo sát sẽ khởi động ứng dụng. Dùng để đánh giá tình trạng của quá trình chọn người dùng tham gia khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
+#### <a name="officefeedbacksurveyfloodgateclienttriggermet"></a>Office.Feedback.Survey.FloodgateClient.TriggerMet
+
+Theo dõi khi thiết bị đã đáp ứng các tiêu chí để hiển thị khảo sát. Dùng để đánh giá tình trạng của quá trình kích hoạt khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
+#### <a name="officefeedbacksurveyfloodgateclientuserselected"></a>Office.Feedback.Survey.FloodgateClient.UserSelected
+
+Theo dõi khi thiết bị đã được chọn cho khảo sát. Dùng để đánh giá tình trạng của quá trình chọn người dùng tham gia khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
+#### <a name="officefeedbacksurveyuiandroid"></a>Office.Feedback.Survey.UI.Android
+
+Trên thiết bị chạy Android, mục này sẽ theo dõi khi người dùng trên thiết bị tương tác với lời nhắc khảo sát và giao diện khảo sát. Dùng để đánh giá tình trạng trải nghiệm khảo sát toàn diện cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
+#### <a name="officefeedbacksurveyuiios"></a>Office.Feedback.Survey.UI.IOS
+
+Trên thiết bị chạy iOS, mục này sẽ theo dõi khi người dùng trên thiết bị tương tác với lời nhắc khảo sát và giao diện khảo sát. Dùng để đánh giá tình trạng trải nghiệm khảo sát toàn diện cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
+#### <a name="officefeedbacksurveyuimac"></a>Office.Feedback.Survey.UI.Mac
+
+Trên thiết bị máy Mac, mục này sẽ theo dõi khi người dùng trên thiết bị tương tác với lời nhắc khảo sát và giao diện khảo sát. Dùng để đánh giá tình trạng trải nghiệm khảo sát toàn diện cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
+#### <a name="officefeedbacksurveyuiwin32"></a>Office.Feedback.Survey.UI.Win32
+
+Trên thiết bị chạy Win32, mục này sẽ theo dõi khi người dùng trên thiết bị tương tác với lời nhắc khảo sát và giao diện khảo sát. Dùng để đánh giá tình trạng trải nghiệm khảo sát toàn diện cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
+#### <a name="officefeedbacksurveyuiwin32toast"></a>Office.Feedback.Survey.UI.Win32.Toast
+
+Theo dõi khi hiển thị lời nhắc khảo sát. Dùng để đánh giá tình trạng của quá trình nhắc thực hiện khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExpirationTimeUTC** – ngày/thời gian khảo sát sẽ hết hạn
+
+- **SurveyName** – tên khảo sát đã được hiển thị
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **UniqueId** – ID dùng để xác định các phần riêng lẻ của phép đo từ xa
+
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Cho phép chúng tôi biết nếu một tệp đã được mở thành công từ Lớp FIO. Sử dụng để giám sát và biết về trạng thái tính năng.
@@ -4061,6 +4225,81 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_FirstRunPanelName** - Tên của bảng điều khiển bắt đầu trải nghiệm
 
+#### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
+
+Đã ghi nhật ký khi người dùng đóng Thẻ Cá nhân mở rộng. Mục này dùng để quan sát các bất thường nghiêm trọng trong khi đóng Thẻ cá nhân trực tiếp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppInfo_Id** – Tên của ứng dụng máy chủ
+
+- **AppInfo_Version** – Phiên bản của ứng dụng máy chủ
+
+- **Data.appContextId** - Là ID được tạo ngẫu nhiên được sử dụng để xác định các tài khoản khác nhau trong cùng một ứng dụng
+
+- **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
+
+- **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
+
+- **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
+
+- **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
+
+- **Data.clientType** - Loại thiết bị mà ứng dụng đang chạy trên, ví dụ như “Outlook_Win32”
+
+- **Data.eventId** - Mã định danh tên của sự kiện, ví dụ như "LivePersonaCardRenderedAction"
+
+- **Data.exportName** - Tên sự kiện hành động người dùng mà người có thể đọc được, ví dụ như "ClosedExpandedPersonaCard"
+
+- **Data.exportType** - Danh mục sự kiện cho yêu cầu xuất của GDPR
+
+- **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.OTelJS.Version** - Phiên bản của OTel Logger
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
+
+   - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
+   - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
+   - **ClientTimeStamp** - thời gian sự kiện diễn ra trong thời gian Unix
+   - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
+   - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+   - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+   - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
+
+- **Data.tenantAadObjectId** - Người thuê được liên kết với đăng ký của người dùng sẽ bị ràng buộc. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
+
+- **Data.userAadObjectId** -Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho Doanh nghiệp (Bản sao của Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho doanh nghiệp 
+
+- **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
+
+- **UserInfo_OMSTenantId** - Đối tượng thuê mà một đăng ký của người dùng được liên kết. Cho phép chúng tôi phân loại các sự cố và xác định xem vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
+
+- **Data.version** - Phiên bản của dịch vụ (Thẻ Hồ sơ)
+
+- **DeviceInfo_Id** – Mã định danh thiết bị duy nhất trên toàn cầu cho một thiết bị
+
+- **DeviceInfo_Make** – Tên thương hiệu của hệ điều hành
+
+- **DeviceInfo_Model** – Dòng máy thiết bị
+
+- **DeviceInfo.NetworkCost** - Cho biết chi phí/loại mạng (gói dữ liệu theo lưu lượng sử dụng, giới hạn trên của kết nối bằng gói dữ liệu theo lưu lượng sử dụng,...)
+
+- **DeviceInfo_OsName** - Tên hệ điều hành của thiết bị
+
+- **DeviceInfo_OsVersion** – Phiên bản của hệ điều hành
+
+- **PipelineInfo.ClientCountry** - Mã quốc gia của người gửi, dựa trên địa chỉ IP không sạch của máy khách
+
+
 #### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
 Chúng tôi ghi nhật ký khi người dùng đóng Thẻ Cá nhân.  Dữ liệu được dùng để xác định xem thẻ có được đóng đúng cách hay không. 
@@ -4112,7 +4351,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
 
-- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
 
 - **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
 
@@ -4349,7 +4588,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
 
-- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
 
 - **Data.userPuid** -Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
 
@@ -6796,6 +7035,14 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ViewKind-** Kiểu dạng xem Word
 
+#### <a name="onenoteappnavigationratingreminderdialogshown"></a>OneNote.App.Navigation.RatingReminderDialogShown
+
+Các tín hiệu quan trọng dùng để đo lường mức độ hiệu quả của logic kích hoạt lời nhắc Xếp hạng. Hộp thoại này hiển thị khi người dùng đã đáp ứng tất cả các điều kiện để xem lời nhắc xếp hạng (số ngày hoạt động, đã xếp hạng trước đây hay chưa,...). Mục này dùng để đảm bảo logic kích hoạt lời nhắc Xếp hạng. Nếu người dùng đang nhìn thấy hộp thoại này, mục này sẽ cung cấp cho chúng tôi cách nhận phản hồi từ khách hàng vào đúng thời điểm và cải thiện trạng thái ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
 #### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(tên cũ)*, Office.OneNote.Android.Canvas.PageOpened
 
 Tín hiệu dùng để ghi lại khi mở một Trang.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra khi mở một Trang trong OneNote
@@ -6999,6 +7246,8 @@ Các trường sau đây sẽ được thu thập:
 - **enabled_state** – Liệu cài đặt trả lời tự động, lưu liên hệ và chặn các hình ảnh bên ngoài của bạn có được đặt cấu hình đúng cách hay không  
 
 - **enabled_state** – liệu trạng thái liên quan đến hành động đã được bật hay chưa
+
+- **in_app_language** - ngôn ngữ đã chọn trong ứng dụng, kiểu chuỗi (mặc định, en-US, fa, ru,...)  
 
 - **notification_state** – cho biết loại số lượng thông báo mà người dùng yêu cầu, tức là không thông báo, chỉ ưu tiên hộp thư đến, v.v
 
@@ -7717,9 +7966,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **UsesSharedRuntime** - cho biết ứng dụng có sử dụng thời_gian_chạy_chia_sẻ hay không.
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete"></a>OneNote.App.AppBootComplete *(tên cũ)*, Office.OneNote.Android.App.AppBootComplete 
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
-Tín hiệu quan trọng dùng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+Tín hiệu quan trọng được sử dụng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
 Các trường sau đây sẽ được thu thập: 
 
