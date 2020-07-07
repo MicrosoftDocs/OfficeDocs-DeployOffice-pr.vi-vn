@@ -13,12 +13,11 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 4ec1ffef4b8bc0e82a7a1ce96061a9c715636bea
-ms.sourcegitcommit: 7adeab733277e6ed3eafddcc1d4df20e2743a752
-ms.translationtype: HT
+ms.openlocfilehash: ed42864d90c0ec8f50e28248720ffc8c2f569713
+ms.sourcegitcommit: 85c6ac9351a9305b774fb2a63cb895f952b433d6
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44930445"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048583"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -37,7 +36,7 @@ Office bao gồm các ứng dụng phần mềm máy khách và những trải n
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Trải nghiệm được kết nối phân tích nội dung của bạn
 
-Các trải nghiệm được kết nối phân tích nội dung của bạn là các trải nghiệm sử dụng nội dung Office của bạn để cung cấp cho bạn các đề xuất thiết kế, đề xuất chỉnh sửa, thông tin chi tiết và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Trình soạn thảo trong Word.
+Các trải nghiệm được kết nối phân tích nội dung của bạn là các trải nghiệm sử dụng nội dung Office của bạn để cung cấp cho bạn các đề xuất thiết kế, đề xuất chỉnh sửa, thông tin chi tiết và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Bộ dịch.
 
 Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối để phân tích nội dung của bạn và cũng cung cấp các liên kết đến nhiều thông tin hơn về chúng.
 
@@ -47,7 +46,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Đọc chính tả  | [Đọc chính tả bằng giọng nói của bạn trong Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-| Biên tập viên    | [Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
+|Biên tập viên|[Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ý tưởng     | [Các ý tưởng trong Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -60,6 +59,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Phát hành lên Microsoft Stream    | [Chuyển bản trình bày thành video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Nghiên cứu*\*   | [Thêm hoặc thay đổi dịch vụ nghiên cứu](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Quét danh thiếp|  [Quét hoặc nhấn vào để thêm liên hệ vào Outlook for Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|*Tính năng kiểm tra tính tương đồng*\* (tính năng của Trình soạn thảo)|[Kiểm tra tính tương đồng trong tài liệu của bạn với các nguồn trực tuyến](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Tra cứu thông minh*\*   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
