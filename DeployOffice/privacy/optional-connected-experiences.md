@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: ecfe38bc6dbedd57ff1eb2ab4851c8e4dddab730
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: d5de9a7a1eb2f2a825feb28798e8f0d195476696
+ms.sourcegitcommit: 9e44d65a5d59339df7d6a2f1116462c0fb774f83
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993266"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068745"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -39,7 +39,7 @@ Nếu bạn có tài khoản cơ quan hoặc trường học, người quản tr
 
 ## <a name="experiences-that-rely-on-bing"></a>Trải nghiệm dựa trên Bing
 
-Một số dịch vụ dựa trên đám mây được cung cấp bởi Microsoft Bing. Microsoft Bing là một doanh nghiệp riêng biệt cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn và được Microsoft quản lý độc lập với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn. Những trải nghiệm mà nó mang lại trong các ứng dụng Office có trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn là: [Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Biểu đồ bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Chèn hình ảnh trực tuyến](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Chèn mô hình 3D trực tuyến](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Trình bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Trình nghiên cứu](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) và [Tra cứu thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Một số dịch vụ dựa trên đám mây được cung cấp bởi Microsoft Bing. Microsoft Bing là một doanh nghiệp riêng biệt cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn và được Microsoft quản lý độc lập với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn. Những trải nghiệm mà các ứng dụng Office mang lại có trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn gồm: [Bản đồ 3D](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Biểu đồ dạng Bản đồ](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Chèn Ảnh Trực tuyến](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Chèn Mô hình 3D Trực tuyến](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [Trình Bắt đầu nhanh PowerPoint](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Trình nghiên cứu](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f), [Tra cứu Thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) và [bộ kiểm tra độ tương tự](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) (một tính năng của Trình soạn thảo).
 
 Trải nghiệm mà Bing cung cấp trên Outlook for iOS và Outlook for Android như sau:
 
