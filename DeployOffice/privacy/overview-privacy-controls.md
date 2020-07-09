@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus), bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663583"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087731"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
@@ -85,7 +85,7 @@ Dữ liệu chẩn đoán này không bao gồm tên của người dùng, đị
 
 Chúng tôi hiểu rằng bạn có thể muốn chọn loại trải nghiệm được kết nối có sẵn cho người dùng của mình khi làm việc trong các ứng dụng Office. Là người quản trị cho tổ chức của bạn, bạn sẽ có thiết đặt chính sách cho phép bạn chọn có cung cấp các loại trải nghiệm được kết nối sau cho người dùng của mình hay không:
 
-- **Trải nghiệm phân tích nội dung của bạn** Đây là trải nghiệm sử dụng nội dung Office của bạn để cung cấp đề xuất thiết kế, đề xuất điều chỉnh, dữ liệu thông tin chuyên sâu và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Trình soạn thảo trong Word.
+- **Trải nghiệm phân tích nội dung của bạn** Đây là trải nghiệm sử dụng nội dung Office của bạn để cung cấp đề xuất thiết kế, đề xuất điều chỉnh, dữ liệu thông tin chuyên sâu và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Bộ dịch.
 
 - **Trải nghiệm tải xuống nội dung trực tuyến** Đây là trải nghiệm giúp bạn tìm kiếm và tải xuống nội dung trực tuyến, bao gồm các mẫu, hình ảnh, mô hình 3D, video và các tài liệu tham khảo để cải thiện tài liệu của bạn. Ví dụ: mẫu Office hoặc Trình Bắt đầu Nhanh PowerPoint.
 

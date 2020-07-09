@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office những thông tin về cách quản lý kiểm soát quyền riêng tư trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 Proplus) bằng cách sử dụng các thiết đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: ca076099be15a5a4cd19ac7c99660bfe26de8eed
-ms.sourcegitcommit: edd1190877db7996206147ad1d691fd8e84f23b1
+ms.openlocfilehash: 5f9cafff0f7baf12ed8f0f57d7561bc356fbb98b
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44589050"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087231"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
@@ -40,7 +40,7 @@ Sau đây là 5 thiết đặt chính sách mới:
 - Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office
 - Cho phép sử dụng các trải nghiệm được kết nối trong Office
 
-Các thiết đặt chính sách này có thể được thực hiện bằng cách sử dụng Chính sách nhóm hoặc [dịch vụ chính sách đám mây Office](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Nếu bạn sử dụng Chính sách nhóm, bạn cần tải xuống phiên bản mới nhất của tệp Mẫu quản trị (ADMX/ADML) từ [Trung tâm tải xuống Microsoft](https://www.microsoft.com/download/details.aspx?id=49030).
+Các thiết đặt chính sách này có thể được thực hiện bằng cách sử dụng Chính sách nhóm hoặc [dịch vụ chính sách đám mây Office](../overview-office-client-policy-service.md). Nếu bạn sử dụng Chính sách nhóm, bạn cần tải xuống phiên bản mới nhất của tệp Mẫu quản trị (ADMX/ADML) từ [Trung tâm tải xuống Microsoft](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
 > - Để biết thông tin về cách quản lý kiểm soát quyền riêng tư đối với Office cho Mac, hãy xem mục [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md).
@@ -98,7 +98,7 @@ Người dùng của bạn sẽ không thể chọn bật hoặc tắt các tr�
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Thiết đặt chính sách cho các trải nghiệm được kết nối phân tích nội dung của bạn
 
-Đây là trải nghiệm sử dụng nội dung Office của bạn để cung cấp đề xuất thiết kế, đề xuất chỉnh sửa, dữ liệu thông tin chuyên sâu và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Trình soạn thảo trong Word. Để biết danh sách về các trải nghiệm được kết nối này, hãy xem mục [Trải nghiệm được kết nối trong Office](connected-experiences.md).
+Đây là trải nghiệm sử dụng nội dung Office của bạn để cung cấp đề xuất thiết kế, đề xuất chỉnh sửa, dữ liệu thông tin chuyên sâu và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Bộ dịch. Để biết danh sách về các trải nghiệm được kết nối này, hãy xem mục [Trải nghiệm được kết nối trong Office](connected-experiences.md).
 
 Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối phân tích nội dung trong Office* để kiểm soát xem các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối này sẽ có sẵn cho người dùng của bạn.
 
