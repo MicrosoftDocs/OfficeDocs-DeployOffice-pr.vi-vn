@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trên thiết bị iOS.
 hideEdit: true
-ms.openlocfilehash: 40fc1ec1f5b2abc587e1b5224dc7fe0a5a656f33
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 6465a5b5e2103070170bdec8cd64b8bc044d46a3
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992128"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087869"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS
 
@@ -33,7 +33,9 @@ Sẽ có các cài đặt tùy chọn mới cho Office trên thiết bị iOS ch
 
 Các cài đặt tùy chọn này sẽ áp dụng cho các ứng dụng sau đây:
 - Phiên bản 2.30 trở lên trong Word for iOS, Excel for iOS và PowerPoint for iOS.
+- Phiên bản 4.30.0 trở lên trong Outlook for iOS
 - Phiên bản 16.30 trở lên trong OneNote for iOS.
+- Phiên bản 11.19.11 trở lên trong OneDrive for iOS.
 - Phiên bản 1.17 trở lên của Visio Viewer for iOS.
 
 > [!NOTE]
@@ -60,6 +62,8 @@ Sau khi được gửi tới thiết bị, từ điển cấu hình sẽ nằm b
 > - Cho phép sử dụng trải nghiệm được kết nối phân tích nội dung trong Office
 > - Cho phép sử dụng trải nghiệm được kết nối tải nội dung trực tuyến trong Office
 > - Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office
+>
+> Cài đặt quyền riêng tư cho Outlook for iOS và OneDrive for iOS chỉ có thể được cấu hình bằng cách sử dụng dịch vụ chính sách điện toán đám mây của Office.
 >
 > Để biết thêm thông tin về việc sử dụng dịch vụ chính sách đám mây Office, hãy xem mục [Tổng quan về dịch vụ chính sách đám mây Office](../overview-office-cloud-policy-service.md).
 
