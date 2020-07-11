@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: d5de9a7a1eb2f2a825feb28798e8f0d195476696
-ms.sourcegitcommit: 9e44d65a5d59339df7d6a2f1116462c0fb774f83
+ms.openlocfilehash: 729329eeaa301cbb7bda61c0ec8d08ec9124729f
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068745"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087831"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -45,7 +45,7 @@ Trải nghiệm mà Bing cung cấp trên Outlook for iOS và Outlook for Androi
 
 - **Đề xuất vị trí:**   Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, địa chỉ đường đầy đủ sẽ có trong trường Vị trí.
 - **Lịch thú vị:**   Bạn có thể [đăng ký](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) lịch của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn.
-
+- **Thời gian di chuyển trong Up Next: ** Sự kiện sắp diễn ra tiếp theo của bạn sẽ được tóm tắt ở đầu hộp thư đến trong email của bạn trong một thẻ có tên [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) Trong Outlook cho Android, trải nghiệm này yêu cầu Bing Maps cung cấp thời gian di chuyển ước tính.
 
  Những trải nghiệm này hoạt động dựa trên Bing được cấp phép cho bạn theo các điều khoản của [Thoả thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trong khi sử dụng các dịch vụ này đều được gửi đến Microsoft Bing. Chúng không được liên kết với bạn bởi tổ chức Bing.
 
@@ -83,6 +83,10 @@ Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đ
 
 > [!NOTE]
 > Nghiên cứu khác với Trình nghiên cứu. Trong các phiên bản mới hơn của Office, một trải nghiệm khác gọi là Trình nghiên cứu sẽ sẵn dùng bên cạnh trải nghiệm Nghiên cứu. Trình nghiên cứu là một dịch vụ mới hơn, được hỗ trợ bởi Bing và được thảo luận ở phía trên bên dưới phần [Trải nghiệm dựa trên Bing](#experiences-that-rely-on-bing).
+
+### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Thời gian di chuyển trong Up Next trong Outlook cho iOS
+
+Trên Outlook cho iOS, sự kiện sắp diễn ra tiếp theo của bạn sẽ được tóm tắt ở đầu hộp thư đến trong email của bạn trong thẻ được gọi là [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Trải nghiệm này yêu cầu một dịch vụ được sở hữu bởi Apple có tên là Apple Maps để cung cấp thời gian di chuyển ước tính. [Các điều khoản sử dụng](https://www.apple.com/legal/internet-services/maps/) của Apple Maps và [chính sách bảo mật ](https://www.apple.com/legal/privacy)của Apple được áp dụng.
 
 ### <a name="weather-bar-in-outlook"></a>Thanh Thời tiết trong Outlook
 

@@ -13,11 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: ed42864d90c0ec8f50e28248720ffc8c2f569713
-ms.sourcegitcommit: 85c6ac9351a9305b774fb2a63cb895f952b433d6
+ms.openlocfilehash: 8910b00d5201e70131eb1eb0e696d9ce048eabad
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048583"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087171"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -46,7 +47,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Đọc chính tả  | [Đọc chính tả bằng giọng nói của bạn trong Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-|Biên tập viên|[Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
+|Trình soạn thảo <sup> 1 </sup> |[Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ý tưởng     | [Các ý tưởng trong Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -65,6 +66,8 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+
+<sup>1</sup> Ngay cả khi không có kết nối Internet, bạn vẫn có thể dùng chức năng cơ bản của bộ soạn thảo. Các chức năng cơ bản cũng vẫn khả dụng nếu bạn chọn vô hiệu hóa việc sử dụng các trải nghiệm đã được kết nối để phân tích nội dung của mình. Trong cả hai trường hợp, Microsoft sẽ không nhận được bất kì dữ liệu nào về việc sử dụng trình soạn thảo.
 
 > [!NOTE]
 > \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
@@ -95,6 +98,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Trình nghiên cứu*\*    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Cho Tôi Biết    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
+|*Ước tính thời gian di chuyển trong Up Next *\*|Khi bạn chọn cho phép Outlook cho iOS và Android để truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) thẻ ở đầu hộp thư đến của bạn.|
 | *Thanh thời tiết*\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
