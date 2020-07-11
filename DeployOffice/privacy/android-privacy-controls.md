@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư cho Office trên thiết bị Android.
 hideEdit: true
-ms.openlocfilehash: 38d68df0d3a12e6858568906a60973bad9d76709
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: 6086ecd1b2cd55bbf6cb4577879714f1d20a2f93
+ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
 ms.translationtype: HT
 ms.contentlocale: vi-VN
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087905"
+ms.locfileid: "45092140"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android
 
@@ -35,11 +35,7 @@ Các thiết đặt chính sách này sẽ áp dụng cho các ứng dụng sau 
 - Phiên bản 4.1.71 trở lên trong Outlook for Android.
 - Phiên bản 16.0.12228.20004 trở lên trong OneNote for Android.
 - Phiên bản 5.47 trở lên trong OneDrive for Android.
-
-> [!NOTE]
->- Các thiết đặt chính sách này cũng áp dụng cho phiên bản 16.0.12130.20272 trở lên của bản xem trước công khai của [ứng dụng Office dành cho thiết bị di động](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/Introducing-Office-Your-new-go-to-mobile-app-for-getting-work/ba-p/977172) Android.
->- Việc sử dụng bản xem trước công khai của ứng dụng Office dành cho thiết bị di động Android sẽ thu thập các nhật ký sự cố có thể có trong một số trường hợp chứa nội dung.
->- Nếu bạn quan tâm đến việc thu thập dữ liệu từ bản xem trước công khai của ứng dụng Office dành cho thiết bị di động Android, bạn nên thông báo cho người dùng của mình không đăng nhập vào ứng dụng bằng tài khoản cơ quan hoặc trường học của họ.
+- Phiên bản 16.0.12430.20254 trở lên của ứng dụng Office dành cho Android.
 
 ## <a name="policy-settings-available-for-office-on-android-devices"></a>Các thiết đặt chính sách sẵn dùng cho Office trên các thiết bị chạy Android
 

@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trên thiết bị iOS.
 hideEdit: true
-ms.openlocfilehash: 6465a5b5e2103070170bdec8cd64b8bc044d46a3
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: ac8b3428734649981f20a82be2f0793c857e09ee
+ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
 ms.translationtype: HT
 ms.contentlocale: vi-VN
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087869"
+ms.locfileid: "45092176"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS
 
@@ -37,6 +37,7 @@ Các cài đặt tùy chọn này sẽ áp dụng cho các ứng dụng sau đâ
 - Phiên bản 16.30 trở lên trong OneNote for iOS.
 - Phiên bản 11.19.11 trở lên trong OneDrive for iOS.
 - Phiên bản 1.17 trở lên của Visio Viewer for iOS.
+- Phiên bản 2.34 trở lên của ứng dụng Office dành cho iOS.
 
 > [!NOTE]
 > Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên các máy tính chạy macOS, xem mục [Sử dụng tuỳ chọn để quản lý các biện pháp kiểm soát quyền riêng tư cho Office for Mac](mac-privacy-preferences.md).
