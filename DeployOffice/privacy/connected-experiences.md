@@ -33,7 +33,7 @@ ms.locfileid: "45087171"
 >
 > Thông tin này sẽ áp dụng cho phiên bản Outlook for iOS và Outlook for Android dự kiến sẽ được phát hành vào cuối tháng 1 năm 2020.
 
-Office bao gồm các ứng dụng phần mềm máy khách và những trải nghiệm kết nối được thiết kế nhằm cho phép bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
+Office bao gồm các ứng dụng phần mềm máy khách và trải nghiệm được kết nối được thiết kế để hỗ trợ bạn sáng tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Cộng tác với những người khác trên một tài liệu được lưu trữ trên OneDrive hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Trải nghiệm được kết nối phân tích nội dung của bạn
 
@@ -47,7 +47,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Đọc chính tả  | [Đọc chính tả bằng giọng nói của bạn trong Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-|Trình soạn thảo <sup> 1 </sup> |[Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
+|Trình soạn thảo<sup> 1 </sup> |[Trình soạn thảo là trợ lý viết của bạn](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ý tưởng     | [Các ý tưởng trong Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -67,10 +67,10 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
-<sup>1</sup> Ngay cả khi không có kết nối Internet, bạn vẫn có thể dùng chức năng cơ bản của bộ soạn thảo. Các chức năng cơ bản cũng vẫn khả dụng nếu bạn chọn vô hiệu hóa việc sử dụng các trải nghiệm đã được kết nối để phân tích nội dung của mình. Trong cả hai trường hợp, Microsoft sẽ không nhận được bất kì dữ liệu nào về việc sử dụng trình soạn thảo.
+<sup>1</sup> Ngay cả khi không có kết nối Internet, bạn vẫn có thể dùng chức năng cơ bản của Trình soạn thảo. Các chức năng cơ bản cũng vẫn khả dụng nếu bạn chọn vô hiệu hóa việc sử dụng trải nghiệm được kết nối để phân tích nội dung của mình. Trong cả hai trường hợp, Microsoft sẽ không nhận được bất kỳ dữ liệu nào về việc sử dụng Trình soạn thảo.
 
 > [!NOTE]
-> \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
+> \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm được kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
 
 ## <a name="connected-experiences-that-download-online-content"></a>Trải nghiệm được kết nối tải xuống nội dung trực tuyến
 
@@ -89,7 +89,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Chèn mô hình 3D trực tuyến*\*     | [Sáng tạo với mô hình 3D](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | *Chèn ảnh trực tuyến*\*      | [Chèn ảnh](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | *Chèn video trực tuyến*\*     | [Chèn video từ YouTube hoặc trang web khác](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| *Lịch thú vị*\*| [Đăng ký nhận lịch](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn trên Outlook cho iOS và Outlook cho Android. |
+| *Lịch thú vị*\*| [Đăng ký nhận lịch](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn trên Outlook for iOS và Outlook for Android. |
 | *Đề xuất về vị trí*\* | Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, Outlook for iOS và Outlook for Android sẽ thêm địa chỉ đường đầy đủ vào trong trường Vị trí. |
 | Bản đồ trong thông tin chi tiết về sự kiện | Tìm hiểu nơi bạn cần đến với [bản đồ](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) trong thông tin chi tiết về sự kiện trên Outlook for iOS và Outlook for Android. |
 | Trợ giúp Office                 | Khi bạn chọn **Trợ giúp** > **Trợ giúp** trên dải băng hoặc sử dụng F1 trong ứng dụng Office   |
@@ -98,7 +98,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Trình nghiên cứu*\*    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Cho Tôi Biết    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-|*Ước tính thời gian di chuyển trong Up Next *\*|Khi bạn chọn cho phép Outlook cho iOS và Android để truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) thẻ ở đầu hộp thư đến của bạn.|
+|*Ước tính thời gian di chuyển trong Up Next *\*|Khi bạn chọn cho phép Outlook for iOS và Android truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) thẻ ở đầu hộp thư đến của bạn.|
 | *Thanh thời tiết*\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
