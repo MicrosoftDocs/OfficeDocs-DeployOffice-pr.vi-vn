@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
-ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
+ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
+ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800410"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117222"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -2851,11 +2851,13 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingfullvalidation"></a>Office.Licensing.FullValidation 
 
-Điều này được thu thập trên mỗi phiên báo cáo trạng thái cấp phép của máy và báo cáo các lỗi mà người dùng đang gặp phải do họ không thể sử dụng ứng dụng. Sự kiện này cho biết nếu máy của người dùng có trạng thái tốt hay không. Chúng tôi có phát hiện bất thường được thiết lập cho sự kiện này để cho biết liệu hồi quy có gây ra hành vi xấu của người dùng hay không. Điều này cũng rất quan trọng khi chẩn đoán các vấn đề của người dùng và theo dõi trạng thái hệ thống
+Điều này được thu thập trên mỗi phiên báo cáo trạng thái cấp phép của máy và báo cáo các lỗi mà người dùng đang gặp phải do họ không thể sử dụng ứng dụng. Sự kiện này cho biết nếu máy của người dùng có trạng thái tốt hay không. Chúng tôi đã phát hiện sự bất thường được thiết lập cho sự kiện này để cho biết liệu cơ chế hồi quy hoặc kích hoạt có gây ra hành vi xấu của người dùng hay không. Điều này cũng rất quan trọng khi chẩn đoán các vấn đề của người dùng và theo dõi trạng thái hệ thống.
 
 Các trường sau đây sẽ được thu thập:
 
   - **Acid** - Mã định danh GUID đại diện cho sản phẩm Office mà người dùng được cấp phép 
+  
+  - **ActivationAttributes**- Loại cơ chế kích hoạt mà người dùng đang sử dụng.
 
   - **IsSessionLicensing** – Chúng tôi hiện có đang chạy dưới chế độ kích hoạt máy tính dùng chung hay không 
 
@@ -10458,6 +10460,27 @@ Các trường sau đây sẽ được thu thập:
 
  - **Data_EventId** – Mã cho biết tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
 
+### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
+
+Sự kiện này được kích hoạt bằng cách chấm dứt ứng dụng duyên dáng cho các ứng dụng khách không giới hạn của Office như Word, Excel, PowerPoint và Outlook. Chúng tôi dùng Graceful Exit để đo lường tình trạng sức khoẻ của sản phẩm máy khách Office. Đây là một tín hiệu quan trọng trong kinh doanh được sử dụng bởi các kĩ sư Office để suy ra độ bền của sản phẩm.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppBuild** - Mã định danh phiên bản Build cho quá trình bị ảnh hưởng.
+- **AppMajor** - Mã định danh phiên bản Major cho quá trình bị ảnh hưởng.
+- **AppMinor** - Mã định danh phiên bản Minor cho quá trình bị ảnh hưởng.
+- **AppRevision** - Mã định danh phiên bản Revision cho quá trình bị ảnh hưởng.
+- **BootCompleted** – Là quá trình Office hoàn thành khởi động.
+- **DetectionTime** - Thời điểm khi việc thoát ra không mong muốn được phát hiện.
+- **ecsETag** - Mã định danh thử nghiệm cho quy trình.
+- **HasEdit** – Là tài liệu đang chỉnh sửa đã xảy ra trong quá trình Office.
+- **HasOpen** – Là tài liệu đã được mở trong quá trình Office.
+- **InstallMethod** - Phiên bản dựng hiện tại của Office đã được nâng cấp từ, quay lại hay cài đặt mới.
+- **OfficeUILang** – Ngôn ngữ của quá trình Office.
+- **PreviousBuild** - Phiên bản xây dựng đã được cài đặt trước đó.
+- **SafeMode** – Là quá trình Office ở chế độ an toàn.
+- **SessionId-** - Một định danh duy nhất của quá trình.
+- **SessionInitTime**- Thời gian khi quy trình bị ảnh hưởng bắt đầu. 
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 
