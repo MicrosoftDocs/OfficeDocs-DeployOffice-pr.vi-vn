@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 6e5ea5a865acb893c92af12e68e7815fcf2fee65
-ms.sourcegitcommit: 5a4d3419d5ff4c8008ad3cf894a8f03ec170504b
+ms.openlocfilehash: 6638ac773e4b39f17648161421548f445d2194e7
+ms.sourcegitcommit: 0654f421d001168605f936dc54c9ee0a26fca844
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45128588"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45156063"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -2767,7 +2767,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.CollectionTime** - Dấu thời gian khi sự kiện sự cố được ghi lại
 
-#### <a name="office_appdocs_appdocs_operationopenfrommrubypath"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+#### <a name="office_docs_appdocs_operationopenfrommrubypath"></a>Office_Docs_AppDocs_OperationOpenFromMruByPath
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ phần tệp được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
@@ -2879,7 +2879,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
 
-#### <a name="office_appdocs_appdocs_operationopenfrommrubyurl"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+#### <a name="office_docs_appdocs_operationopenfrommrubyurl"></a>Office_Docs_AppDocs_OperationOpenFromMruByUrl
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ URL được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp. 
 
@@ -2992,7 +2992,7 @@ Các trường sau đây sẽ được thu thập:
 - **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
 
 
-#### <a name="office_appdocs_appdocs_operationopenfrompath"></a>Office_AppDocs_AppDocs_OperationOpenFromPath
+#### <a name="office_docs_appdocs_operationopenfrompath"></a>Office_Docs_AppDocs_OperationOpenFromPath
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
@@ -3104,7 +3104,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
 
-#### <a name="office_appdocs_appdocs_operationopenfromprotocolhandler"></a>Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+#### <a name="office_docs_appdocs_operationopenfromprotocolhandler"></a>Office_Docs_AppDocs_OperationOpenFromProtocolHandler
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một ứng dụng khác sử dụng giao diện bộ xử lý giao thức và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
@@ -3216,7 +3216,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
 
-#### <a name="office_appdocs_appdocs_operationopenfromshell"></a>Office_AppDocs_AppDocs_OperationOpenFromShell
+#### <a name="office_docs_appdocs_operationopenfromshell"></a>Office_Docs_AppDocs_OperationOpenFromShell
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ vỏ và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
@@ -3318,7 +3318,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Giá trị Data_LinksOpenRightScenario** – Liệt kê các liên kết mở kịch bản phù hợp.
 
-- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc..
+- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
 - **Data_RelatedPrevOpTelemetryReason** – Là thao tác liên quan đến thao tác trước đó.
 
@@ -3329,7 +3329,7 @@ Các trường sau đây sẽ được thu thập:
 - **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
 
 
-#### <a name="office_appdocs_appdocs_operationopenfromurl"></a>Office_AppDocs_AppDocs_OperationOpenFromUrl
+#### <a name="office_docs_appdocs_operationopenfromurl"></a>Office_Docs_AppDocs_OperationOpenFromUrl
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một URL và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
