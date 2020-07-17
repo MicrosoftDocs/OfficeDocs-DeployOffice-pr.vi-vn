@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
-ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
+ms.openlocfilehash: 6e5ea5a865acb893c92af12e68e7815fcf2fee65
+ms.sourcegitcommit: 5a4d3419d5ff4c8008ad3cf894a8f03ec170504b
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811492"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45128588"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -1291,6 +1291,36 @@ Các trường sau đây sẽ được thu thập:
 
 - **WarmBoot** - Xác định xem bộ chứa đã được tạo hay chưa.
 
+#### <a name="office_appguard_launchfile"></a>Office_AppGuard_LaunchFile
+
+Sự kiện này biểu thị kết quả thực hiện tệp khởi chạy Bảo vệ Ứng dụng. Chúng tôi sẽ có thể xác định tỷ lệ phần trăm phiên mà chúng tôi đã khởi chạy thành công một tệp Word, Excel hoặc PowerPoint và mã lỗi cho những lần không thành công.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AppId** – Xác định ứng dụng nào đang được khởi chạy.
+
+- **DetachedDuration** – Xác định tổng thời gian hoạt động đã hợp nhất đã diễn ra. 
+
+- **ErrorCode1** – Loại mã lỗi thiết lập bộ chứa.  
+
+- **ErrorCode2** – Mã lỗi trong khi thực hiện quá trình tạo. 
+
+- **ErrorCode3** – Mã lỗi bổ sung. 
+
+- **FileId** - Một mã định danh duy nhất (GUID) được trả về từ API Windows sau khi khởi chạy tệp.
+
+- **Id** - Một mã định danh duy nhất (GUID) đối với việc khởi chạy và tạo tệp. ID này được sử dụng để liên kết các sự kiện đến từ Office và Windows.
+
+- **ResetError** - Mã lỗi khi thử đặt lại bộ chứa sau một lần thử thất bại.
+
+- **ResetErrorCode1** - Loại mã lỗi thiết lập bộ chứa sau lệnh đặt lại. 
+
+- **ResetErrorCode2** - Mã lỗi trong khi thực hiện quá trình tạo sau lệnh đặt lại.
+
+- **ResetErrorCode3** - Mã lỗi bổ sung sau lệnh đặt lại.  
+
+- **Nhập lại** - Loại lỗi: Tạo, Chuẩn bị tệp hoặc Khởi chạy.
+
 
 
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
@@ -1747,6 +1777,11 @@ Các trường sau đây sẽ được thu thập:
 - **action** – Cho chúng tôi biết hành động đã được thử khi hành động được ghi nhật ký lại. Một số ví dụ bao gồm đính kèm tệp và trình bày thêm các tùy chọn.
 
 - **icon_name** – Cho chúng tôi biết tên của biểu tượng đang hiển thị khi hành động được ghi nhật ký lại.
+ 
+- **origin** – Cho chúng tôi biết nguồn gốc của hành động. Các giá trị có thể là quick_reply và full_screen.
+
+- **toolbar_type** – Cho chúng tôi biết loại thanh công cụ nào được trình bày trên trang soạn thảo. Các giá trị có thể là compose_actions và định dạng.
+
 
 #### <a name="conversation_view_action"></a>conversation_view_action
 
@@ -1761,6 +1796,8 @@ Các trường sau đây sẽ được thu thập:
 - **suggested_reply_char_count** – Cho chúng tôi biết có bao nhiêu ký tự khi chúng tôi cung cấp câu trả được đề xuất (nếu có) để giúp chúng tôi phát hiện các bất thường và sự cố liên quan đến đề xuất của chúng tôi
 
 - **suggested_reply_click_pos** – Cho chúng tôi biết vị trí câu trả lời được đề xuất (nếu có) sẽ kết xuất để chúng tôi có thể phát hiện sự cố với đề xuất cụ thể
+
+- **suggested_reply_type** - cho biết câu trả lời được đề xuất cho hành động này. Các giá trị có thể là văn bản, send_avail và create_meeting.
 
 - **use_default_quick_reply_mode** – Cho chúng tôi biết liệu chế độ trả lời nhanh mặc định có được sử dụng để giúp chúng tôi phát hiện các sự cố liên quan đến trải nghiệm trả lời nhanh cho email hay không
 
@@ -2506,7 +2543,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_AppWarmUpGain** – Chúng tôi có thêm thời lượng khởi động ứng dụng nhờ khởi động sẵn một phần của ứng dụng trước.
 
-- **Data_BootDuration** – Thời lượng khởi động ứng dụng trong quá trình mở tệp.
+- **Data_BootDuration** - Thời lượng khởi động ứng dụng trong quá trình mở tệp.
+
+- **Data_ClosePreviouslyOpenedMarkers** – Trong một số kịch bản mở tệp, việc đóng tài liệu đã mở trước đó diễn ra trước khi mở tài liệu hiện tại. Khoảng thời gian này giữa một số thao tác diễn ra trong trường hợp này sẽ được lưu trữ trong một giá trị chuỗi có định dạng \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
 - **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
 
@@ -2574,7 +2613,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_ErrorId_Tag** – Thẻ trong mã để giúp tìm điểm xảy ra lỗi
 
-- **Data_InclusiveMeasurements** – Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ. 
+- **Data_FileOpenFlowMarkers** – trước khi quá trình mở tệp bắt đầu, sẽ có một số việc xử lý sẵn liên quan. Lần này đã được thực hiện cho việc xử lý trước được lưu trữ trong một giá trị chuỗi có định dạng \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
+- **Data_InclusiveMeasurements** - Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ. 
 
 - **Data_InitializationReason** - Phép đếm cho biết cách mở tệp, ví dụ: từ phần tử giao diện người dùng hoặc do một ứng dụng khác kích hoạt, v.v.
 
@@ -2582,7 +2623,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_OfficeMobileInitReason** – Phép đếm cho biết điểm nhập của tệp đang mở. 
 
-- **Data_SilhouetteDuration** – Thời lượng kết xuất tệp mở.
+- **Data_RenderToInSpaceDuration** – khoảng thời gian giữa kết xuất cuối cùng và hoạt hình bóng/bức vẽ.
+
+- **Data_SilhouetteDuration** - Khoảng thời gian hiển thị của thao tác mở tệp.
 
 - **Data_TimeSplitMeasurements** – Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng, dấu thời gian bắt đầu và thời lượng. 
 
@@ -2723,6 +2766,681 @@ Chỉ được thu thập khi Bảng điều khiển đo từ xa cho Office đã
 Các trường sau đây sẽ được thu thập:
 
   - **Data.CollectionTime** - Dấu thời gian khi sự kiện sự cố được ghi lại
+
+#### <a name="office_appdocs_appdocs_operationopenfrommrubypath"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ phần tệp được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppIdForReportEndBeforeAppKnown** - ID Ứng dụng khi chưa được biết trước khi báo cáo kết thúc được gọi trên thao tác này.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Trạng thái CanContinue, trước khi bắt đầu xử lý được kích hoạt.
+
+- **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** – 4 ký tự đầu tiên trong phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở.
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tập tin.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** - Một liệt kê cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tập tin trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** - Một chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tập tin tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà tập tin URL sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định tập tin URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** - Một chuỗi cho biết tập tin WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ dịch vụ nào.
+
+- **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
+
+- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+
+- **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Giá trị Data_DocumentOperation_EndReason** - Giá trị liệt kê đại diện cho lý do kết thúc.
+
+- **Data_DocumentOperation_IsReinitialized** – Đang bắt đầu lại tài liệu đang mở.
+
+- **Data_DocumentOperation_ParamsFlags** – Cờ liệt kê được sử dụng để bắt đầu thao tác này.
+
+- **Data_DocumentOperation_TelemetryReason** – Liệt kê đại diện điểm nhập đối với sự kiện mở. VD- mở từ MRU hoặc duyệt, kích hoạt tệp, v.v.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – là ngữ cảnh thực hiện đích tương tự như ngữ cảnh đã mở.
+
+- **Data_FileIOInclusiveMeasurements** - Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_FileIOMeasurements** - Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng không bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
+
+- **Data_IsPathMissingForLocalFile** – Chỉ ra rằng đây là một tệp cục bộ mà không có đường dẫn.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Chỉ ra liệu liên kết có thể giải nén có được hỗ trợ mở không.
+
+- **Giá trị Data_LinksOpenRightScenario** – Liệt kê các liên kết mở kịch bản phù hợp.
+
+- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Data_RelatedPrevOpTelemetryReason** – Là thao tác liên quan đến thao tác trước đó.
+
+- **Data_StopwatchDuration** - Tổng thời gian cho sự kiện.
+
+- **Data_UnpackLinkHint** – Liệt kê đại diện cho hành động người dùng tiềm ẩn dựa trên liên kết giải nén.
+
+- **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
+
+#### <a name="office_appdocs_appdocs_operationopenfrommrubyurl"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ URL được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppIdForReportEndBeforeAppKnown** - ID Ứng dụng khi chưa được biết trước khi báo cáo kết thúc được gọi trên thao tác này.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Trạng thái CanContinue, trước khi bắt đầu xử lý được kích hoạt.
+
+- **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** – 4 ký tự đầu tiên trong phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở.
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tập tin.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** - Một liệt kê cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tập tin trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** - Một chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tập tin tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà tập tin URL sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định tập tin URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** - Một chuỗi cho biết tập tin WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ dịch vụ nào.
+
+- **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
+
+- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+
+- **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Giá trị Data_DocumentOperation_EndReason** - Giá trị liệt kê đại diện cho lý do kết thúc.
+
+- **Data_DocumentOperation_IsReinitialized** – Đang bắt đầu lại tài liệu đang mở.
+
+- **Data_DocumentOperation_ParamsFlags** – Cờ liệt kê được sử dụng để bắt đầu thao tác này.
+
+- **Data_DocumentOperation_TelemetryReason** – Liệt kê đại diện điểm nhập đối với sự kiện mở. VD- mở từ MRU hoặc duyệt, kích hoạt tệp, v.v.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – là ngữ cảnh thực hiện đích tương tự như ngữ cảnh đã mở.
+
+- **Data_FileIOInclusiveMeasurements** - Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_FileIOMeasurements** - Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng không bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
+
+- **Data_IsPathMissingForLocalFile** – Chỉ ra rằng đây là một tệp cục bộ mà không có đường dẫn.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Chỉ ra liệu liên kết có thể giải nén có được hỗ trợ mở không.
+
+- **Giá trị Data_LinksOpenRightScenario** – Liệt kê các liên kết mở kịch bản phù hợp.
+
+- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Data_RelatedPrevOpTelemetryReason** – Là thao tác liên quan đến thao tác trước đó.
+
+- **Data_StopwatchDuration** - Tổng thời gian cho sự kiện.
+
+- **Data_UnpackLinkHint** – Liệt kê đại diện cho hành động người dùng tiềm ẩn dựa trên liên kết giải nén.
+
+- **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
+
+
+#### <a name="office_appdocs_appdocs_operationopenfrompath"></a>Office_AppDocs_AppDocs_OperationOpenFromPath
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppIdForReportEndBeforeAppKnown** - ID Ứng dụng khi chưa được biết trước khi báo cáo kết thúc được gọi trên thao tác này.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Trạng thái CanContinue, trước khi bắt đầu xử lý được kích hoạt.
+
+- **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** – 4 ký tự đầu tiên trong phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở.
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tập tin.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** - Một liệt kê cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tập tin trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** - Một chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tập tin tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà tập tin URL sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định tập tin URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** - Một chuỗi cho biết tập tin WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ dịch vụ nào.
+
+- **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
+
+- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+
+- **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Giá trị Data_DocumentOperation_EndReason** - Giá trị liệt kê đại diện cho lý do kết thúc.
+
+- **Data_DocumentOperation_IsReinitialized** – Đang bắt đầu lại tài liệu đang mở.
+
+- **Data_DocumentOperation_ParamsFlags** – Cờ liệt kê được sử dụng để bắt đầu thao tác này.
+
+- **Data_DocumentOperation_TelemetryReason** – Liệt kê đại diện điểm nhập đối với sự kiện mở. VD- mở từ MRU hoặc duyệt, kích hoạt tệp, v.v.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – là ngữ cảnh thực hiện đích tương tự như ngữ cảnh đã mở.
+
+- **Data_FileIOInclusiveMeasurements** - Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_FileIOMeasurements** - Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng không bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
+
+- **Data_IsPathMissingForLocalFile** – Chỉ ra rằng đây là một tệp cục bộ mà không có đường dẫn.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Chỉ ra liệu liên kết có thể giải nén có được hỗ trợ mở không.
+
+- **Giá trị Data_LinksOpenRightScenario** – Liệt kê các liên kết mở kịch bản phù hợp.
+
+- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Data_RelatedPrevOpTelemetryReason** – Là thao tác liên quan đến thao tác trước đó.
+
+- **Data_StopwatchDuration** - Tổng thời gian cho sự kiện.
+
+- **Data_UnpackLinkHint** – Liệt kê đại diện cho hành động người dùng tiềm ẩn dựa trên liên kết giải nén.
+
+- **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
+
+#### <a name="office_appdocs_appdocs_operationopenfromprotocolhandler"></a>Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một ứng dụng khác sử dụng giao diện bộ xử lý giao thức và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppIdForReportEndBeforeAppKnown** - ID Ứng dụng khi chưa được biết trước khi báo cáo kết thúc được gọi trên thao tác này.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Trạng thái CanContinue, trước khi bắt đầu xử lý được kích hoạt.
+
+- **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** – 4 ký tự đầu tiên trong phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở.
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tập tin.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** - Một liệt kê cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tập tin trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** - Một chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tập tin tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà tập tin URL sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định tập tin URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** - Một chuỗi cho biết tập tin WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ dịch vụ nào.
+
+- **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
+
+- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+
+- **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Giá trị Data_DocumentOperation_EndReason** - Giá trị liệt kê đại diện cho lý do kết thúc.
+
+- **Data_DocumentOperation_IsReinitialized** – Đang bắt đầu lại tài liệu đang mở.
+
+- **Data_DocumentOperation_ParamsFlags** – Cờ liệt kê được sử dụng để bắt đầu thao tác này.
+
+- **Data_DocumentOperation_TelemetryReason** – Liệt kê đại diện điểm nhập đối với sự kiện mở. VD- mở từ MRU hoặc duyệt, kích hoạt tệp, v.v.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – là ngữ cảnh thực hiện đích tương tự như ngữ cảnh đã mở.
+
+- **Data_FileIOInclusiveMeasurements** - Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_FileIOMeasurements** - Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng không bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
+
+- **Data_IsPathMissingForLocalFile** – Chỉ ra rằng đây là một tệp cục bộ mà không có đường dẫn.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Chỉ ra liệu liên kết có thể giải nén có được hỗ trợ mở không.
+
+- **Giá trị Data_LinksOpenRightScenario** – Liệt kê các liên kết mở kịch bản phù hợp.
+
+- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Data_RelatedPrevOpTelemetryReason** – Là thao tác liên quan đến thao tác trước đó.
+
+- **Data_StopwatchDuration** - Tổng thời gian cho sự kiện.
+
+- **Data_UnpackLinkHint** – Liệt kê đại diện cho hành động người dùng tiềm ẩn dựa trên liên kết giải nén.
+
+- **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
+
+#### <a name="office_appdocs_appdocs_operationopenfromshell"></a>Office_AppDocs_AppDocs_OperationOpenFromShell
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ vỏ và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppIdForReportEndBeforeAppKnown** - ID Ứng dụng khi chưa được biết trước khi báo cáo kết thúc được gọi trên thao tác này.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Trạng thái CanContinue, trước khi bắt đầu xử lý được kích hoạt.
+
+- **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** – 4 ký tự đầu tiên trong phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở.
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tập tin.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** - Một liệt kê cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tập tin trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** - Một chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tập tin tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà tập tin URL sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định tập tin URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** - Một chuỗi cho biết tập tin WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ dịch vụ nào.
+
+- **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
+
+- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+
+- **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Giá trị Data_DocumentOperation_EndReason** - Giá trị liệt kê đại diện cho lý do kết thúc.
+
+- **Data_DocumentOperation_IsReinitialized** – Đang bắt đầu lại tài liệu đang mở.
+
+- **Data_DocumentOperation_ParamsFlags** – Cờ liệt kê được sử dụng để bắt đầu thao tác này.
+
+- **Data_DocumentOperation_TelemetryReason** – Liệt kê đại diện điểm nhập đối với sự kiện mở. VD- mở từ MRU hoặc duyệt, kích hoạt tệp, v.v.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – là ngữ cảnh thực hiện đích tương tự như ngữ cảnh đã mở.
+
+- **Data_FileIOInclusiveMeasurements** - Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_FileIOMeasurements** - Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng không bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
+
+- **Data_IsPathMissingForLocalFile** – Chỉ ra rằng đây là một tệp cục bộ mà không có đường dẫn.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Chỉ ra liệu liên kết có thể giải nén có được hỗ trợ mở không.
+
+- **Giá trị Data_LinksOpenRightScenario** – Liệt kê các liên kết mở kịch bản phù hợp.
+
+- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc..
+
+- **Data_RelatedPrevOpTelemetryReason** – Là thao tác liên quan đến thao tác trước đó.
+
+- **Data_StopwatchDuration** - Tổng thời gian cho sự kiện.
+
+- **Data_UnpackLinkHint** – Liệt kê đại diện cho hành động người dùng tiềm ẩn dựa trên liên kết giải nén.
+
+- **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
+
+
+#### <a name="office_appdocs_appdocs_operationopenfromurl"></a>Office_AppDocs_AppDocs_OperationOpenFromUrl
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một URL và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_AppIdForReportEndBeforeAppKnown** - ID Ứng dụng khi chưa được biết trước khi báo cáo kết thúc được gọi trên thao tác này.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – Trạng thái CanContinue, trước khi bắt đầu xử lý được kích hoạt.
+
+- **Data_DetachedDuration** - Khoảng thời gian của quá trình tách ra của một sự kiện. 
+
+- **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
+
+- **Data_Doc_AsyncOpenKind** - Một liệt kê cho biết kiểu tiến trình không đồng thời được sử dụng để mở tệp.
+
+- **Data_Doc_ChunkingType** - Một liệt kê cho biết loại thuật toán khúc dữ liệu của tệp.
+
+- **Data_Doc_EdpState** - Một liệt kê cho biết trạng thái bảo vệ dữ liệu doanh nghiệp của tệp.
+
+- **Data_Doc_Ext** – 4 ký tự đầu tiên trong phần mở rộng của tệp.
+
+- **Data_Doc_Fqdn** - Tên máy chủ lưu trữ của tệp.
+
+- **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
+
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở.
+
+- **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
+
+- **Data_Doc_IOFlags** - Một liệu kê cho biết cờ IO của thao tác mở tệp, ví dụ: liệu tệp có được lưu vào bộ đệm ẩn hay không.
+
+- **Data_Doc_IsCloudCollabEnabled** - Cộng tác trên nền điện toán đám mây có được bật cho tệp hay không.
+
+- **Data_Doc_IsIncrementalOpen** - Tệp có được mở thông qua thao tác mở tăng dần hay không.
+
+- **Data_Doc_IsOcsSupported** - Tệp có hỗ trợ Dịch vụ cộng tác Office hay không.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Tệp có được mở từ một bản sao được lưu vào bộ đệm ẩn ngoại tuyến hay không.
+
+- **Data_Doc_IsPrefetched** - Tệp có được tìm nạp trước khi diễn ra thao tác mở hay không.
+
+- **Data_Doc_IsSyncBacked** - Tệp trên nền điện toán đám mây có tồn tại cục bộ và được đồng bộ hóa với máy chủ hay không.
+
+- **Data_Doc_Location** - Một liệt kê cho biết vị trí của tệp, ví dụ: cục bộ hoặc trên nền điện toán đám mây.
+
+- **Data_Doc_ReadOnlyReasons** - Một liệt kê cho biết lý do trạng thái chỉ đọc của tập tin.
+
+- **Data_Doc_ResourceIdHash** - Một GUID duy nhất xác định ID nguồn lực máy chủ của tệp.
+
+- **Data_Doc_RtcType** - Một liệt kê cho biết kiểu kênh theo thời gian thực (RTC) được tệp sử dụng.
+
+- **Data_Doc_ServerDocId** - Một GUID duy nhất xác định ID tài liệu máy chủ.
+
+- **Data_Doc_ServerProtocol** - Một liệt kê cho biết giao thức máy chủ của tập tin trên nền điện toán đám mây.
+
+- **Data_Doc_ServerType** - Một liệt kê cho biết loại máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_ServerVersion** - Một liệt kê cho biết phiên bản máy chủ của tệp trên nền điện toán đám mây.
+
+- **Data_Doc_SessionId** - Một số nguyên được tăng lên thành 1 cho từng thao tác mở tệp trong phiên.
+
+- **Data_Doc_SharePointServiceContext** - Một chuỗi dùng để liên kết nhật ký bên máy khách và bên máy chủ, đó thường là một loại ID.
+
+- **Data_Doc_SizeInBytes** - Kích cỡ tập tin tính bằng byte.
+
+- **Data_Doc_SpecialChars** - Một liệt kê cho biết loại ký tự đặc biệt mà tập tin URL sở hữu.
+
+- **Data_Doc_UrlHash** - Một GUID duy nhất xác định tập tin URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Tệp có được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước vào bộ đệm ẩn hay không.
+
+- **Data_Doc_WopiServiceId** - Một chuỗi cho biết tập tin WOPI (Giao thức Giao diện Nền tảng Mở Ứng dụng Web) là từ dịch vụ nào.
+
+- **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
+
+- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+
+- **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Giá trị Data_DocumentOperation_EndReason** - Giá trị liệt kê đại diện cho lý do kết thúc.
+
+- **Data_DocumentOperation_IsReinitialized** – Đang bắt đầu lại tài liệu đang mở.
+
+- **Data_DocumentOperation_ParamsFlags** – Cờ liệt kê được sử dụng để bắt đầu thao tác này.
+
+- **Data_DocumentOperation_TelemetryReason** – Liệt kê đại diện điểm nhập đối với sự kiện mở. VD- mở từ MRU hoặc duyệt, kích hoạt tệp, v.v.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – là ngữ cảnh thực hiện đích tương tự như ngữ cảnh đã mở.
+
+- **Data_FileIOInclusiveMeasurements** - Giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_FileIOMeasurements** - Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng và thời lượng không bao gồm thời lượng của lệnh chức năng phụ.
+
+- **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
+
+- **Data_IsPathMissingForLocalFile** – Chỉ ra rằng đây là một tệp cục bộ mà không có đường dẫn.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Chỉ ra liệu liên kết có thể giải nén có được hỗ trợ mở không.
+
+- **Giá trị Data_LinksOpenRightScenario** – Liệt kê các liên kết mở kịch bản phù hợp.
+
+- **Data_OpEndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
+
+- **Data_RelatedPrevOpTelemetryReason** – Là thao tác liên quan đến thao tác trước đó.
+
+- **Data_StopwatchDuration** - Tổng thời gian cho sự kiện.
+
+- **Data_UnpackLinkHint** – Liệt kê đại diện cho hành động người dùng tiềm ẩn dựa trên liên kết giải nén.
+
+- **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
+
 
 #### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
 
@@ -4225,6 +4943,99 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_FirstRunPanelName** - Tên của bảng điều khiển bắt đầu trải nghiệm
 
+#### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
+
+Chúng tôi ghi nhật ký khi người dùng đang ở trong một ứng dụng có tải Thẻ Cá nhân với dự đoán rằng người dùng đó sẽ mở Thẻ Cá nhân Trực tiếp.  Dữ liệu dùng để xác định xem thẻ có được tải đúng hay không. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **Data.accountType** - Xác định xem người dùng thuộc về một tổ chức hay là người tiêu dùng
+
+- **Data.appContextId** - Là ID được tạo ngẫu nhiên dùng để xác định các tài khoản khác nhau trong cùng một ứng dụng
+
+- **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
+
+- **Data.AppInfo_Id** - Tên của ứng dụng máy chủ
+
+- **Data.AppInfo_Version** - Phiên bản của ứng dụng máy chủ
+
+- **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
+
+- **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
+
+- **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
+
+- **Data.clientType** - Loại thiết bị ứng dụng chạy trên đó
+
+- **Data.contextType** - Xác định bối cảnh (ứng dụng) mà thẻ được khởi chạy
+
+- **Data.ecsConfigIds** - Mã định danh phiên bản cho các tính năng được kích hoạt trong thẻ
+
+- **Data.ecsTagId** - ID thẻ cho các tính năng
+
+- **Data.eventId** - Mã định danh tên của sự kiện, ví dụ như "LivePersonaCardRenderedAction"
+
+- **Data.eventpriority** - Giá trị liệt kê để ưu tiên gửi sự kiện.
+
+- **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.flights** - Các tính năng được kích hoạt trong thẻ
+
+- **Data.fromCache** - Xác định xem dữ liệu có được tải từ bộ nhớ không
+
+- **Data.hasFinePointer** - Xác định xem thiết bị có chức năng con trỏ chuột không
+
+- **Data.hasHoverEvents** - Xác định xem thiết bị có chức năng di chuột không
+
+- **Data.immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+
+- **Data.offlineResolved** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+
+- **Data.OTelJS.Version** - Phiên bản của OTel Logger
+
+- **Data.personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau: *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+  - **cardCorrelationId** - Bản sao của Data.appContextId phía trên
+  - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
+  - **ClientTimeStamp** - Thời gian trên ứng dụng khi sự kiện được ghi lại
+  - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên
+
+  - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+
+- **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
+
+- **Data.tenantAadObjectId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
+
+- **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
+
+- **Data.userAadObjectId** -Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho Doanh nghiệp (Bản sao của Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho doanh nghiệp
+
+- **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
+
+- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+
+- **Data.userPuid** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
+
+- **Data.version** - Phiên bản của dịch vụ (Thẻ Hồ sơ)
+
+- **Data.workloadCulture** - Thiết lập văn hóa trong ứng dụng máy chủ
+
+- **DeviceInfo_Id** - Mã định danh thiết bị duy nhất trên toàn cầu cho một thiết bị
+
+- **DeviceInfo_Make** - Tên thương hiệu của hệ điều hành
+
+- **DeviceInfo_Model** - Dòng máy thiết bị
+
+- **DeviceInfo_OsName** - Tên hệ điều hành của thiết bị
+
+- **DeviceInfo_OsVersion** - Phiên bản của hệ điều hành
+
+- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa
+
 #### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
 
 Đã ghi nhật ký khi người dùng đóng Thẻ Cá nhân mở rộng. Mục này dùng để quan sát các bất thường nghiêm trọng trong khi đóng Thẻ cá nhân trực tiếp.
@@ -4253,19 +5064,22 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.exportType** - Danh mục sự kiện cho yêu cầu xuất của GDPR
 
+- **Data.externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+
 - **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
 
 - **Data.OTelJS.Version** - Phiên bản của OTel Logger
 
-- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
+- **Data.personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau: *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
    - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
    - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
    - **ClientTimeStamp** - thời gian sự kiện diễn ra trong thời gian Unix
    - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
-   - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
-   - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
-   - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
 
 - **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
 
@@ -4324,20 +5138,24 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.clientType** - Loại thiết bị ứng dụng chạy trên đó
 
-- **Data.eventId** - Đặt tên mã định danh của sự kiện, ví dụ: "LivePersonaCardRenderedAction"
+- **Data.eventId** - Mã định danh tên của sự kiện, ví dụ như "LivePersonaCardRenderedAction"
 
-- **Data.feature** - Dùng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+- **Data.externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ.
+
+- **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
+
+- **Data.immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
 
 - **Data.OTelJS.Version** - Phiên bản của OTel Logger
 
-- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
-  - **ClientTimeStamp** – Thời gian trên ứng dụng khi sự kiện được ghi lại
+- **Data.personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau: *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+  - **ClientTimeStamp** - Thời gian trên ứng dụng khi sự kiện được ghi lại
   - **cardCorrelationId** - Bản sao của Data.appContextId phía trên
   - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
   - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên
-  - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
-  - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
-  - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
 
 - **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
 
@@ -4361,102 +5179,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **Event_ReceivedTime** – Thời điểm sự kiện đăng nhập vào dịch vụ
 
-#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
-
-Chúng tôi ghi nhật ký khi người dùng đang ở trong một ứng dụng có tải Thẻ Cá nhân với dự đoán rằng người dùng đó sẽ mở Thẻ Cá nhân Trực tiếp.  Dữ liệu dùng để xác định xem thẻ có được tải đúng hay không. 
-
-Các trường sau đây sẽ được thu thập: 
-
-- **Data.appContextId** - Là ID được tạo ngẫu nhiên dùng để xác định các tài khoản khác nhau trong cùng một ứng dụng
-
-- **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
-
-- **Data.AppInfo_Id** - Tên của ứng dụng máy chủ
-
-- **Data.AppInfo_Version** - Phiên bản của ứng dụng máy chủ
-
-- **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
-
-- **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
-
-- **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
-
-- **Data.clientType** - Loại thiết bị ứng dụng chạy trên đó
-
-- **Data.eventId** - Đặt tên mã định danh của sự kiện, ví dụ: "LivePersonaCardRenderedAction"
-
-- **Data.eventpriority** - Giá trị liệt kê để ưu tiên gửi sự kiện.
-
-- **Data.feature** - Dùng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
-
-- **Data.OTelJS.Version** - Phiên bản của OTel Logger
-
-- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
-
-  - **accountType** - Xác định xem người dùng thuộc về một tổ chức hay là người tiêu dùng
-
-  - **cardCorrelationId** - Bản sao của Data.appContextId phía trên
-
-  - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
-
-  - **ClientTimeStamp** - Thời gian trên ứng dụng khi sự kiện được ghi lại
-
-  - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên
-
-  - **contextType** - Xác định bối cảnh (ứng dụng) mà thẻ được khởi chạy
-
-  - **ecsConfigIds** - Mã định danh phiên bản cho các tính năng được kích hoạt trong thẻ
-
-  - **ecsTagId** - ID thẻ cho các tính năng
-
-  - **externalAppSessionCorrelationId** - Mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
-
-  - **flights** - Các tính năng được kích hoạt trong thẻ
-
-  - **fromCache** - Xác định xem dữ liệu có được tải từ bộ nhớ không
-
-  - **hasFinePointer** - Xác định xem thiết bị có chức năng con trỏ chuột không
-
-  - **hasHoverEvents** - Xác định xem thiết bị có chức năng di chuột không
-
-  - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
-
-  - **offlineResolved** - Xác định xem dữ liệu có được tải khi ngoại tuyến không
-
-  - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
-
-- **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
-
-- **Data.tenantAadObjectId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
-
-- **Data.type** - Loại sự kiện đã được ghi lại, ví dụ như Theo dõi, Lỗi, Sự kiện
-
-- **Data.userAadObjectId** -Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho Doanh nghiệp (Bản sao của Data.UserInfo.Id)
-
-- **Data.UserInfo.Id** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho doanh nghiệp
-
-- **Data.UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu đối với một tài khoản Microsoft dành cho người tiêu dùng
-
-- **UserInfo_OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
-
-- **Data.userPuid** - Mã định danh người dùng duy nhất trên toàn cầu đối với tài khoản Microsoft dành cho người tiêu dùng (bản sao của Data.UserInfo.MsaId)
-
-- **Data.version** - Phiên bản của dịch vụ (Thẻ Hồ sơ)
-
-- **Data.workloadCulture** - Thiết lập văn hóa trong ứng dụng máy chủ
-
-- **DeviceInfo_Id** - Mã định danh thiết bị duy nhất trên toàn cầu cho một thiết bị
-
-- **DeviceInfo_Make** - Tên thương hiệu của hệ điều hành
-
-- **DeviceInfo_Model** - Dòng máy thiết bị
-
-- **DeviceInfo_OsName** - Tên hệ điều hành của thiết bị
-
-- **DeviceInfo_OsVersion** - Phiên bản của hệ điều hành
-
-- **DeviceInfo_SDKUid** - Xác định duy nhất thiết bị từ góc phối cảnh của SDK từ xa
-
 #### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
 Đã ghi nhật ký khi người dùng mở Thẻ Cá nhân mở rộng. Ứng dụng này được sử dụng để quan sát các bất thường nghiêm trọng trong việc tung ra Thẻ Cá nhân Trực tiếp.
@@ -4477,9 +5199,13 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.clientCorrelationId** - Mã định danh duy nhất trên toàn cầu cho phiên làm việc của máy chủ.
 
+- **Data.clientScenario** - Để xác định tính năng trong ứng dụng từ nơi mở thẻ cá nhân
+
 - **Data.clientType** - Loại thiết bị ứng dụng chạy trên đó
 
-- **Data.eventId** - Đặt tên mã định danh của sự kiện, ví dụ: "LivePersonaCardRenderedAction"
+- **Data.eventId** - Mã định danh tên của sự kiện, ví dụ như "LivePersonaCardRenderedAction"
+
+- **Data.externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ.
 
 - **Data.exportName** - Tên người có thể đọc được của sự kiện hành động người dùng, ví dụ: "OpenedPersonaCard"
 
@@ -4487,31 +5213,25 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
 
+- **Data.hasPersonalInsightRing** - Thông tin chuyên sâu từ Office hoặc LinkedIn có thể có sẵn cho người dùng
+
 - **Data.hostAppRing** - Vòng mà ứng dụng đã được phân phối
+
+- **Data.immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
 
 - **Data.OTelJS.Version** - Phiên bản của OTel Logger
 
-- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau:
+- **Data.personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau: *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
   - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
-
   - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
-
-  - **clientScenario** - Để xác định tính năng trong ứng dụng từ nơi mở thẻ cá nhân
-
   - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
 
-  - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
-
-  - **hasPersonalInsightRing** - Thông tin chuyên sâu từ Office hoặc LinkedIn có thể có sẵn cho người dùng
-
-  - **immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
-
-  - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
-
-  - **section** – Phiên hoạt động của thẻ đã mở rộng
-
 - **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
+
+- **Data.section** – Phiên hoạt động của thẻ đã mở rộng
 
 - **Data.tenantAadObjectId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không
 
@@ -4556,6 +5276,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.AppInfo.Name** - Tên dịch vụ đang được sử dụng (Thẻ hồ sơ)
 
+- **Data.bandwidthEstimateMbps** - Ước tính băng thông có hiệu lực theo đơn vị Mbps
+
 - **Data.cardCorrelationId** - Mã định danh duy nhất trên toàn cầu cho thẻ cá nhân
 
 - **Data.cardPersonaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho một Cá nhân cụ thể được hiển thị trong thẻ
@@ -4570,11 +5292,26 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.exportType** - Danh mục sự kiện cho yêu cầu xuất của GDPR
 
+- **Data.externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
+
 - **Data.feature** - Được sử dụng để nhóm các sự kiện khác nhau của cùng một tính năng (Thẻ hồ sơ)
 
 - **Data.hostAppRing** - Vòng mà ứng dụng đã được phân phối
 
+- **Data.immersiveProfileCorrelationId** - Mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
+
 - **Data.OTelJS.Version** - Phiên bản của OTel Logger
+
+- **Data.personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
+
+- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+    - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
+    - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
+    - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
+    - **networkEffectiveType**- Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có kết nối Internet vào thời điểm hiển thị thẻ cá nhân hay không
+    - **networkType** - Loại kết nối mạng của thiết bị đang được sử dụng
+    - **roundTripEstimateMs** - Vòng hành trình ước tính có hiệu lực của kết nối hiện tại theo mili giây
 
 - **Data.region** - Khu vực địa lý của dịch vụ phụ trợ thẻ hồ sơ mà người dùng đã kết nối
 
@@ -4596,34 +5333,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data.viewType** -Xác định loại thẻ Hồ sơ hiển thị
 
+- **Data.wasOpenedAsCompactCard** - Được sử dụng để xác định xem thẻ đã được mở làm dạng xem gọn đầu hay chưa
+
 - **NetworkCost** - Cho biết chi phí/loại mạng (gói dữ liệu theo lưu lượng sử dụng, giới hạn trên của kết nối bằng gói dữ liệu theo lưu lượng sử dụng, v.v.)
 
 - **NetworkCountry** - Mã Quốc gia của người gửi, dựa trên địa chỉ IP không sạch của máy khách.
-
-- **Data.properties** - Siêu dữ liệu bổ sung được thu thập cho từng sự kiện như sau.
-
-    - **bandwidthEstimateMbps** - Ước tính băng thông có hiệu lực theo đơn vị Mbps
-
-    - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
-
-    - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
-
-    - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
-
-    - **externalAppSessionCorrelationId** - Một mã định danh duy nhất trên toàn cầu cho ứng dụng để xác định tất cả các thẻ cá nhân đã mở ở cùng phiên phụ
-
-    - **immersiveProfileCorrelationId** - Một mã định danh duy nhất trên toàn cầu dành cho phiên dạng xem hồ sơ mở rộng
-
-    - **networkEffectiveType**- Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có kết nối Internet vào thời điểm hiển thị thẻ cá nhân hay không
-
-    - **networkType** - Loại kết nối mạng của thiết bị đang được sử dụng
-
-    - **personaCorrelationId** - Mã định danh duy nhất trên toàn cầu cho các cá nhân duy nhất trong một phiên
-
-    - **roundTripEstimateMs** - Vòng hành trình ước tính có hiệu lực của kết nối hiện tại theo mili giây
-
-    - **wasOpenedAsCompactCard** - Được sử dụng để xác định xem thẻ đã được mở làm dạng xem gọn đầu hay chưa
-
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -5699,6 +6413,10 @@ Các trường sau đây sẽ được thu thập:
 - **Data_StopwatchDuration:long** - Tổng thời gian cho Hoạt động
 
 - **Data_TypeOfSaveDialog:long** - Tập hợp các giá trị được xác định trước của Hộp thoại (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG, v.v.)
+
+- **Data_WaitForSaveOrMergeSuccess:bool** - SaveAs đã thành công khi chờ nền hoặc phối.
+ 
+- **Data_WaitForSaveOrMergeTimeout:long** - SaveAs đã hết thời gian khi chờ nền hoặc phối.
 
 - **DstDoc** - Vị trí mới của tài liệu 
 
@@ -7055,9 +7773,11 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(tên cũ)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
-Tín hiệu này được đùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng Android OneNote, sổ tay được cung cấp đúng cách và người dùng đã tạo ghi chú mới thành công.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
+Tín hiệu này được đùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng Android OneNote, sổ tay được cung cấp đúng cách và người dùng đã tạo ghi chú mới thành công.  Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
 
-Không có trường nào khác được thu thập.
+Các trường sau đây sẽ được thu thập:
+
+- Không có
 
 #### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(tên cũ)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
@@ -7134,8 +7854,10 @@ Các trường sau đây sẽ được thu thập:
 - **recent_message_id** – ID của thư gần nhất trong cuộc trò chuyện
 
 - **suggested_reply_state** – trạng thái của câu trả lời được đề xuất cho cuộc trò chuyện này (không sẵn sàng, sẵn sàng, hiển thị, được sử dụng hoặc bỏ)
+
+- **suggested_reply_types** - cho biết loại và số lượng trả lời được đề xuất được hiển thị/được sử dụng cho cuộc hội thoại này. Đó là một từ điển. Ví dụ {Text: 2, send_avail: 1}.
   
-- **total_count** – tổng số khung được hiển thị theo cấu phần
+- **total_count** - tổng số khung được hiển thị theo cấu phần
  
 - **view_duration** – thời lượng cấu phần được người dùng xem
 
@@ -7198,6 +7920,8 @@ Các trường sau đây sẽ được thu thập:
 - **source_inbox** - cho biết loại hộp thư nguồn cho thư tham chiếu, 
 
 - **suggested_reply_state** - nắm được trạng thái câu trả lời được đề xuất, ví dụ: không sẵn dùng, sẵn dùng, hiển thị, được sử dụng, bỏ đối với thư đã gửi này
+
+- **suggested_reply_types** - cho biết loại và số lượng trả lời được đề xuất được hiển thị/được sử dụng cho email đã gửi này. Đó là một từ điển. Ví dụ: {Text: 2, send_avail: 1}.
 
 - **suggestions_requested** - cho biết số lượng đề xuất soạn thảo thông minh theo yêu cầu
 
@@ -7419,6 +8143,8 @@ Sự kiện này cho phép chúng tôi phát hiện lỗi ứng dụng nghiêm t
 Các trường sau đây sẽ được thu thập:
 
 - **black_list_reason** – Cho chúng tôi biết liệu có lý do tại sao chúng tôi nên bỏ qua dữ liệu này hay không. Một số ví dụ bao gồm khởi động do thông báo từ xa và khởi động do tải nạp trong nền.
+
+- **step_premain** - Cho chúng tôi biết khoảng thời gian Outlook dùng để truy nhập vào người dùng sẽ gõ nhẹ vào biểu tượng step0_main "chính" được xác định trong tài liệu này.
 
 - **step0_main** - Cho chúng tôi biết thời lượng cần thiết để Outlook đến được bước "chính", bước do Apple xác định.
 
@@ -7965,6 +8691,16 @@ Các trường sau đây sẽ được thu thập:
 - **TotalTime** - Tổng thời gian sử dụng
 
 - **UsesSharedRuntime** - cho biết ứng dụng có sử dụng thời_gian_chạy_chia_sẻ hay không.
+
+#### <a name="officeofficemobilefirstrunsetup"></a>Office.OfficeMobile.FirstRunSetup
+
+Lần chạy đầu tiên của ứng dụng sau khi cài đặt sẽ kích hoạt sự kiện nhịp tim này. Việc này sẽ giúp xác định các bản cài đặt và nâng cấp tự động từ các phiên bản cũ hơn của ứng dụng và cho phép chúng tôi xác định các lỗi trong quá trình tự động nâng cấp, bao gồm tải xuống các gói thư viện và mở rộng/ngôn ngữ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **IsFlightAssigned** - Boolean được xác định nếu người dùng là một phần của bất kỳ nhóm được gán nào mà bạn có thể tạo ra tiếp xúc với một số trải nghiệm nhất định hay không.
+
+- **IsFRELoadSuccessful** - số nguyên biểu thị trạng thái kết quả
 
 #### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
@@ -9485,6 +10221,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **isAppKill** – Giúp chúng tôi hiểu được liệu ứng dụng đó bị buộc dừng hay đóng trên thiết bị
 
+- **is_crashloop** – Giúp chúng tôi hiểu xem sự cố có thể lặp lại hay không.
+
 - **reportKey** – ID duy nhất cho việc cài đặt ứng dụng trên thiết bị để điều tra về vấn đề
 
 - **signal** – Tín hiệu gây ra sự cố nhằm cung cấp cho chúng tôi thêm thông tin chi tiết để điều tra sự cố này
@@ -9647,6 +10385,8 @@ Các trường sau đây sẽ được thu thập:
 - **IsDebug** - cho biết phiên có phải là phiên gỡ lỗi hay không
 
 - **IsPreload** - cho biết phần bổ trợ có đang được tải trước trong nền để cải thiện hiệu suất kích hoạt.
+
+- **IsWdagContainer** – Chỉ ra rằng liệu kích hoạt phần bổ trợ có được thực hiện trong một bộ chứa Bảo vệ ứng dụng Windows Defender.
 
 - **NumberOfAddinsActivated** - Bộ đếm phần bổ trợ được kích hoạt
 
@@ -9935,6 +10675,15 @@ Các trường sau đây sẽ được thu thập:
 - **Ngoại lệ** - Ngăn xếp lệnh gọi cho Ngoại lệ
 
 - **Tên sự kiện** - Tên sự kiện là Danh mục sự kiện và Nhãn sự kiện.
+
+#### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetry-safebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+
+Tín hiệu quan trọng sẽ được gửi đến khi chúng tôi đã đặt lại sự cố truy cập vào ứng dụng đình chỉ trước khi hiển thị hộp thoại khởi động an toàn. Đánh dấu này sẽ được yêu cầu để theo dõi và chẩn đoán trạng thái của ứng dụng. Hộp thoại khởi động an toàn được hiển thị khi ứng dụng gặp sự cố nhiều lần liên tục. Ứng dụng này cung cấp cho người dùng tùy chọn đặt lại ứng dụng. Đánh dấu này sẽ giúp bạn tìm hiểu xem hộp thoại Khởi động an toàn không được hiển thị cho một người dùng dù đã nhấn vào tiêu chí kích hoạt. 
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
 
 #### <a name="telemetry_error"></a>telemetry_error
 
@@ -10725,9 +11474,17 @@ Sự kiện này được kích hoạt khi Dừng phiên bản thử nghiệm. K
 
 Các trường sau đây sẽ được thu thập:
 
-- **ResumeRehearsingCount** - Đếm số lần người dùng bấm vào tiếp tục thử nghiệm
+- **CritiqueSummary**- Tóm tắt về tất cả những phê bình mà người dùng thấy với số lượng của họ.
 
-- **PauseRehearsingCount** - Đếm số lần người dùng đã bấm vào ngừng thử nghiệm
+- **PauseRehearsingCount** - Đếm số lần người dùng đã bấm vào ngừng thử nghiệm.
+
+- **RehearsalInitTime** - Thời gian diễn tập để khởi tạo.
+
+- **ResumeRehearsingCount** - Đếm số lần người dùng bấm vào tiếp tục thử nghiệm.
+
+- **Sessionid** - Đây là ID phiên trước cửa. Chúng tôi có thể sử dụng nhật ký dịch vụ vá lỗi.
+
+- ding**SlideshowViewLoadTime** – thời gian thực hiện bởi trình chiếu để tải.
 
 
 #### <a name="officepowerpointpptandroidrehearseviewerrors"></a>Office.PowerPoint.PPT.Android.RehearseView.Errors
@@ -10747,6 +11504,10 @@ Sự kiện được kích hoạt khi tải trang tổng hợp. Sự kiện này
 
 Các trường sau đây sẽ được thu thập:
 
+- **PageURL:string** - Đây là URL của trang mà chúng tôi có thể sử dụng để xác định phiên thành công hoặc đã xảy ra lỗi.
+
+- **Sessionid:string** - Đây là ID phiên trước cửa. Chúng tôi có thể sử dụng nhật ký dịch vụ vá lỗi.
+
 - **SummaryPageLoadTime: int** - Thời gian (theo ms) để tải trang tổng hợp. Thời lượng này bao gồm thời gian tạo tải trang 
 
 
@@ -10757,6 +11518,44 @@ Sự kiện được kích hoạt khi người dùng bấm vào bắt đầu phi
 Các trường sau đây sẽ được thu thập:
 
  - Không có
+
+#### <a name="officepowerpointrehearsalsessionmetrics"></a>Office.PowerPoint.Rehearsal.SessionMetrics 
+
+Sự kiện được kích hoạt khi phiên phát biểu bị dừng cho Huấn luyện cho Diễn giả. Sự kiện này sẽ giúp chúng tôi có được một số số liệu cho phiên diễn tập trong trình Huấn luyện cho Diễn giả. Việc này sẽ giúp đảm bảo chất lượng dịch vụ cao cho tính năng này.
+
+Các trường sau đây sẽ được thu thập:
+
+- **AuthDurationInMs** – Đây là thời gian thực hiện theo mili giây để xác thực (làm mới mã thông báo Auth).
+
+- **AuthError** - Điều này mô tả đã xảy ra lỗi xác thực (nếu có).
+
+- **AvgFragmentLatencyInMs** – Đây là thời gian phản hồi trung bình dành cho thông điệp ngôn ngữ mạng.
+
+- **ConnectDurationInMs** – Đây là thời gian thực hiện theo mili giây để phiên làm việc hoàn tất kết nối. 
+
+- **Cuộc thanh kiếm Firstaudio** – Đây là thời gian thực hiện theo mili giây để nhận được dữ liệu âm thanh đầu tiên.
+
+- **InitMediaCaptureLayerDurationInMs** – Đây là thời gian thực hiện theo mili giây để khởi tạo lớp thu phương tiện/âm thanh.
+
+- **LocallyDroppedMessageCount** – Đây là tổng số thư bị giảm cục bộ.
+
+- **OpenFrontDoorConnectionDurationInMs** – Đây là thời gian theo mili giây, thực hiện để mở kết nối tới dịch vụ FrontDoor.
+
+- **SendAdaptationTextDurationInMs** – đây là thời gian thực hiện theo mili giây để gửi văn bản thích ứng đến dịch vụ.
+
+- **ServiceDroppedMessageCount** – Đây là tổng số thư bị giảm do dịch vụ.
+
+- **SessionId** - Đây là ID phiên trước cửa. Chúng tôi có thể sử dụng nhật ký dịch vụ vá lỗi.
+
+- **SpeechClientResultEventsWithTimestamps** – Đây là một loạt mã lỗi đã nhận được cùng với dấu thời gian có thể hỗ trợ trong việc gỡ lỗi.
+
+- **SpeechHResultsWithTimestamps** – Đây là một loạt mã lỗi đã nhận được cùng với dấu thời gian có thể hỗ trợ trong việc gỡ lỗi.
+
+- **StartSpeechCaptureDurationInMs** – Đây là thời gian thực hiện theo mili giây để bắt đầu bắt đầu thuyết rình.
+
+- **TotalMessageCount** – Đây là tổng số thư âm thanh được gửi đến dịch vụ.
+
+- **WebSocketConnectDurationInMs** – Đây là thời gian thực hiện theo mili giây để hoàn tất kết nối socket web.
 
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
@@ -11500,6 +12299,18 @@ Các trường sau đây sẽ được thu thập:
 - **Data_ExceptionType** - Một trường văn bản tùy chọn biểu thị tên của ngoại lệ bị loại khỏi mã nguồn.
 
 - **Data_MethodName** - Văn bản biểu thị tên phương pháp trong mã nguồn có lỗi.
+
+#### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
+
+Sự kiện này tổng hợp bất kỳ lỗi nào gặp phải trong khi truy nhập vào đăng ký Android. Dữ liệu sự kiện này sẽ giúp chúng tôi tìm hiểu về các lỗi người dùng và thực hiện tính năng đăng ký mạnh mẽ hơn.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện.
+
+- **AppVersionLong** - Phiên bản ứng dụng.
+
+- **Data_StackTrace** – Lỗi stacktrace.
 
 #### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
