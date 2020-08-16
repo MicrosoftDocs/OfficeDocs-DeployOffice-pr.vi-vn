@@ -11,14 +11,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Cung cấp cho người quản trị Office thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số ví dụ về các sự kiện.
+description: Cung cấp cho người quản trị Office những thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số sự kiện ví dụ.
 hideEdit: true
-ms.openlocfilehash: 0190c29a017b35d945e6a1d540e1560dfab47a4c
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 6769c7a0bf254b5a33f92c5410ec517b7d568d8e
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993211"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683214"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán tuỳ chọn cho Office
 
@@ -37,7 +37,7 @@ Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phầ
 
 ***Dữ liệu chẩn đoán tuỳ chọn*** là dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố.
 
-Nếu bạn chọn gửi cho chúng tôi dữ liệu chẩn đoán tùy chọn, dữ liệu chẩn đoán bắt buộc cũng sẽ được bao gồm.
+Nếu bạn chọn gửi cho chúng tôi dữ liệu chẩn đoán tùy chọn, dữ liệu chẩn đoán bắt buộc cũng sẽ được bao gồm. Ngoài ra, các tệp nhật ký chẩn đoán của Office có chứa thông tin giống với dữ liệu chẩn đoán tùy chọn cũng có thể được gửi. Để biết thêm thông tin về các tệp nhật ký này, xem [Tổng quan về các tệp nhật ký chẩn đoán của Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
 Ví dụ về dữ liệu chẩn đoán tùy chọn bao gồm dữ liệu chúng tôi thu thập về hình người dùng chèn vào tài liệu Word để chúng tôi có thể cung cấp tùy chọn tốt hơn và dữ liệu chúng tôi thu thập về thời gian để trang chiếu PowerPoint xuất hiện trên màn hình của bạn để chúng tôi có thể cải thiện trải nghiệm nếu quá trình đó diễn ra chậm.
 

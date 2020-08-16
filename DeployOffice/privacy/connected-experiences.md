@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 8910b00d5201e70131eb1eb0e696d9ce048eabad
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: dec86a00fb6037976f29668534d59b4f99fb9093
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087171"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46682962"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -64,6 +64,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Tra cứu thông minh*\*   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
+|Bản chép lại |[Chép lại bản ghi của bạn](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
