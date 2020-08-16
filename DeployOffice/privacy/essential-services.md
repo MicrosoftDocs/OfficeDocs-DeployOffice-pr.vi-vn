@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
-ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
+ms.openlocfilehash: 1485ef7bdcfdf945ba2c9dd0e751cbe6b84dde5c
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117222"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683252"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -10425,6 +10425,140 @@ Sự kiện này được ghi nhật ký khi di chuyển sổ tay cục bộ và
 Các trường sau đây sẽ được thu thập:
  
 - **ErrorMsg** - Thông báo lỗi tương ứng với sự thất bại.
+
+### <a name="onenotestorageconnectivitychanged"></a>OneNote.Storage.ConnectivityChanged
+
+Sự kiện ghi nhận nếu người dùng có khả năng kết nối Internet hay không. Thao tác này được sử dụng để tương quan với sự đồng bộ hóa số liệu hiệu suất sức khỏe khác bằng cách cho phép chúng tôi bỏ qua các sự kiện xảy ra trong khi người dùng không có kết nối Internet vì chúng tôi không mong đợi độ trễ dịch vụ của chúng tôi để có thể chấp nhận được mà không cần kết nối Internet. Điều này cho phép chúng tôi tính toán số phiên chính xác cho các chỉ số về khách hàng (theo đối tượng thuê, theo mỗi ngành). Chúng tôi cũng sử dụng nó để lọc báo cáo bị lỗi vì có rất nhiều lỗi đồng bộ mà chúng tôi hy vọng sẽ xảy ra khi mà không có kết nối mạng thì việc điều tra vẫn có thể diễn ra. 
+
+Nếu chúng tôi không nhận được dữ liệu này, chúng tôi sẽ không thể theo dõi chính xác hiệu suất sản phẩm của chúng tôi hoặc xác định xem lỗi mà người dùng gặp phải có nên được điều tra thêm hay không.
+
+Các lĩnh vực sau đây sẽ được thu thập:
+
+- **InternetConnectivityNowAvailable** -  Nếu trạng thái kết nối đã được thay đổi nên bây giờ nó là Internet
+
+### <a name="onenotestoragelegacyinboundlatency"></a>OneNote.Storage.LegacyInboundLatency
+
+Các tín hiệu quan trọng được sử dụng để theo dõi hiệu suất của các hoạt động đồng bộ hóa trong nước liên lạc trực tiếp với SharePoint bao gồm thông tin có liên quan cho phép chúng tôi giám sát và điều tra hiệu suất của việc tải dữ liệu lên dịch vụ của chúng tôi. Tín hiệu này chỉ được thu thập đối với các bản tải xuống hoạt động kém nhất trong 300 giây cuối (số giây đều được đặt cấu hình bởi Microsoft dựa theo hiệu suất và điều kiện dịch vụ).
+
+Điều này được sử dụng để đảm bảo tình trạng của dịch vụ bằng cách cho phép chúng tôi xem những người thuê nào đang gặp phải tình trạng dữ liệu gửi đến dịch vụ của chúng tôi chậm đến mức không thể chấp nhận được, thông tin về dữ liệu họ đang tải lên khi họ gặp phải vấn đề về độ trễ đó và độ phổ biến về sự chậm trễ này đối với đối tượng thuê. Nó cũng được sử dụng để báo cáo tình trạng dịch vụ và hiệu suất cho các khách hàng của chúng tôi để đo lường xu hướng theo thời gian và tự động cảnh báo về các vấn đề nhằm giảm thiểu kỹ thuật. Nếu chúng tôi không có dữ liệu này, nó sẽ ngăn chúng tôi đảm bảo hiệu suất đầy đủ khi người dùng đồng bộ hóa các thay đổi từ SharePoint với máy tính của họ.
+
+Các lĩnh vực sau đây sẽ được thu thập: 
+
+- **IsEducationNotebook** - Một bool cho biết sổ ghi chép có phải là sổ ghi chép giáo dục hay không
+
+- **NotebookId** - ID của sổ ghi chép mà tải lên này là một phần của
+
+- **TimeToConfirmSyncedWithServerInMs** - Thời gian tính bằng mili giây để thực hiện tải lên
+
+### <a name="onenotestoragelegacyoutboundlatency"></a>OneNote.Storage.LegacyOutboundLatency
+
+Tín hiệu quan trọng được sử dụng để theo dõi hiệu suất của các hoạt động đồng bộ hóa gửi đi mà giao tiếp trực tiếp với SharePoint bao gồm thông tin tương quan cho phép chúng tôi theo dõi và điều tra hiệu suất của việc tải dữ liệu lên dịch vụ của mình. Tín hiệu này chỉ được thu thập đối với các bản tải xuống hoạt động kém nhất trong 300 giây cuối (số giây đều được đặt cấu hình bởi Microsoft dựa theo hiệu suất và điều kiện dịch vụ).
+
+Điều này được sử dụng để đảm bảo sức khỏe của dịch vụ bằng cách cho phép chúng tôi xem những người thuê nào đang gặp phải tình trạng dữ liệu gửi đến dịch vụ của chúng tôi chậm đến mức không thể chấp nhận được, thông tin về dữ liệu mà họ đã tải lên khi họ gặp phải sự cố đi chậm và mức độ phổ biến của vấn đề độ trễ trong đối tượng thuê. Nó cũng được sử dụng để báo cáo tình trạng dịch vụ và hiệu suất cho các khách hàng của chúng tôi để đo lường xu hướng theo thời gian và tự động cảnh báo về các vấn đề nhằm giảm thiểu kỹ thuật. Nếu chúng tôi không có dữ liệu này, nó sẽ ngăn chúng tôi đảm bảo hiệu suất tải xuống đầy đủ khi người dùng đồng bộ hóa các thay đổi từ SharePoint với máy tính của họ. 
+
+Các lĩnh vực sau đây sẽ được thu thập: 
+
+- **IsEducationNotebook** - Một bool cho biết sổ ghi chép có phải là sổ ghi chép giáo dục hay không
+
+- **NotebookId** - ID của sổ ghi chép mà tải lên này là một phần của
+
+- **TimeToConfirmSyncedWithServerInMs** - Thời gian tính bằng mili giây để thực hiện tải lên
+
+### <a name="onenotestoragerealtimefiledataobjectdownload"></a>OneNote.Storage.RealTime.FileDataObjectDownload 
+
+Tín hiệu quan trọng được sử dụng để theo dõi hiệu suất khi người dùng truyền vào đối tượng dữ liệu tệp (tức là tệp hoặc hình ảnh được nhúng) được tải xuống trực tiếp từ dịch vụ của chúng tôi và không phải là một phần của hoạt động đồng bộ hóa trên một trang, phần hoặc sổ ghi chép. Tín hiệu này chỉ được thu thập đối với các bản tải xuống hoạt động kém nhất trong 300 giây cuối (số giây đều được đặt cấu hình bởi Microsoft dựa theo hiệu suất và điều kiện dịch vụ).
+
+Điều này được sử dụng để đảm bảo tình trạng và hiệu suất của dịch vụ bằng cách cho phép chúng tôi xem những người thuê nào đang gặp phải tình trạng tải dữ liệu chậm đến mức không thể chấp nhận được từ dịch vụ của chúng tôi và mức độ phổ biến của vấn đề về độ trễ trong người thuê và báo cáo về hành vi của chúng tôi theo thời gian cho phép chúng tôi đo lường các xu hướng của hiệu suất dịch vụ. Nếu chúng tôi thấy độ trễ không thể chấp nhận được đối với đối tượng tệp, chúng tôi cũng sẽ sử dụng dữ liệu này để tương quan dữ liệu đó với các tín hiệu khác từ khách hàng và dịch vụ liên quan đến đối tượng đó để cải thiện quy trình tải xuống của chúng tôi. Chúng tôi cũng phân chia dữ liệu dựa trên phần mở rộng của đối tượng tệp được tải xuống vì chúng tôi có các kỳ vọng khác nhau dựa trên việc tệp được trình bày nội tuyến trong bức vẽ của chúng tôi (ví dụ: hình ảnh) hay là tệp không nội tuyến (chẳng hạn như tài liệu văn bản). Nếu chúng tôi không nhận được dữ liệu này, nó sẽ ngăn chúng tôi theo dõi hiệu suất của các nội dung tải xuống này
+
+Các lĩnh vực sau đây sẽ được thu thập: 
+
+- **FileSizeInBytes** - Kích thước của tệp được tải xuống tính bằng byte 
+
+- **IsImage** - Một bool xác định xem tệp đang được tải xuống có phần mở rộng khớp với danh sách định dạng hình ảnh phổ biến được xác định trước (.bmp, .emf, .gif, .jpe, .jpeg, .jpg, .png) mà chúng tôi hiển thị nội tuyến trong bức vẽ
+
+- **TimeToDownload** - Khoảng thời gian để tải xuống thành công FDO từ bộ nhớ blob của chúng tôi vào thiết bị 
+
+### <a name="onenotestoragerealtimewebsocketdownload"></a>OneNote.Storage.RealTime.WebSocketDownload
+
+Tín hiệu quan trọng được sử dụng để theo dõi hiệu suất của các hoạt động đồng bộ hóa trong nước bao gồm thông tin tương quan cho phép chúng tôi theo dõi và điều tra hiệu suất tải dữ liệu từ dịch vụ của chúng tôi (onenote.com). Tín hiệu này chỉ được thu thập đối với các bản tải xuống hoạt động kém nhất trong 300 giây cuối (số giây đều được đặt cấu hình bởi Microsoft dựa theo hiệu suất và điều kiện dịch vụ).
+
+Điều này được sử dụng để đảm bảo tình trạng dịch vụ bằng cách cho phép chúng tôi xem những đối tượng thuê nào đang gặp phải tình trạng dữ liệu đến chậm đến mức không thể chấp nhận được từ dịch vụ của chúng tôi, thông tin về dữ liệu họ đã tải xuống khi họ gặp phải vấn đề về độ trễ đó, và độ phổ biến về sự chậm trễ này đối với đối tượng thuê. Nó cũng được sử dụng để báo cáo tình trạng dịch vụ và hiệu suất cho các khách hàng của chúng tôi để đo lường xu hướng theo thời gian và tự động cảnh báo về các vấn đề nhằm giảm thiểu kỹ thuật. 
+
+Nếu chúng tôi thấy độ trễ không thể chấp nhận được cho một phần hoặc sổ ghi chép, chúng tôi cũng sẽ sử dụng dữ liệu này để tương quan dữ liệu đó với các tín hiệu khác từ máy khách và dịch vụ liên quan đến cùng một tài liệu để xác định các hồi quy hiệu suất phía máy khách, để từ đó cho phép chúng tôi cung cấp dịch vụ hiệu quả hơn.
+
+Nếu chúng tôi không nhận được dữ liệu này, chúng tôi sẽ không thể theo dõi hiệu suất của khía cạnh này trong dịch vụ của mình hoặc tác động của những thay đổi phía máy chủ mà chúng tôi có thể thấy cần thiết do việc sử dụng hoặc các yếu tố khác.
+
+Các lĩnh vực sau đây sẽ được thu thập:
+
+- **DeviceSessionId** -  ID của phiên thiết bị
+
+- **IsEducationNotebook** - Một bool cho biết sổ ghi chép có phải là sổ ghi chép giáo dục hay không
+
+- **IsHierarchyResource** - Một bool cho biết tài nguyên có phải là tài nguyên phân cấp hay không
+
+- **NotebookId** - ID của sổ ghi chép mà tải lên này là một phần của
+
+- **ResourceId** - ID của tài nguyên mà chúng tôi đang tải lên
+
+- **SectionId** - ID của phần mà tải lên này là một phần của
+
+- **ServerSessionId** - ID của phần mà tải lên này là một phần của
+
+- **TimeToConfirmSyncedWithServerInMs** - Thời gian tính bằng mili giây giữa một người dùng điều hướng đến một trang và ngăn xếp bản sao xác nhận rằng trang đó đồng bộ với máy chủ.
+
+- **TimeToFirstUpdateInMs** - Thời gian tính bằng mili giây giữa công cụ đồng bộ hóa bắt đầu sao chép nội bộ của một trang và hoạt động sao chép đó đạt đến trạng thái đồng bộ hóa với trạng thái máy chủ.
+
+### <a name="onenotestoragerealtimewebsocketupload"></a>OneNote.Storage.RealTime.WebSocketUpload
+
+Tín hiệu quan trọng được sử dụng để theo dõi hiệu suất của các hoạt động đồng bộ hóa bên ngoài bao gồm thông tin tương quan cho phép chúng tôi theo dõi và điều tra hiệu suất của việc tải dữ liệu lên dịch vụ của chúng tôi (onenote.com)
+
+Điều này được sử dụng để đảm bảo sức khỏe của dịch vụ bằng cách cho phép chúng tôi xem những người thuê nào đang gặp phải tình trạng dữ liệu gửi đến dịch vụ của chúng tôi chậm đến mức không thể chấp nhận được, thông tin về dữ liệu mà họ đã tải lên khi họ gặp phải sự cố đi chậm và mức độ phổ biến của vấn đề độ trễ trong đối tượng thuê. Nó cũng được sử dụng để báo cáo tình trạng dịch vụ và hiệu suất cho các khách hàng của chúng tôi để đo lường xu hướng theo thời gian và tự động cảnh báo về các vấn đề nhằm giảm thiểu kỹ thuật. Chúng tôi cũng sẽ sử dụng dữ liệu này để theo dõi tác động và hiệu quả của những cải tiến mà chúng tôi thực hiện đối với khách hàng và dịch vụ của mình. 
+
+Nếu chúng tôi thấy độ trễ không thể chấp nhận được cho một phần hoặc sổ ghi chép, chúng tôi cũng sẽ sử dụng dữ liệu này để tương quan dữ liệu đó với các tín hiệu khác từ khách hàng và dịch vụ liên quan đến cùng một tài liệu để xác định các hồi quy hiệu suất cho phép chúng tôi mang lại trải nghiệm hiệu quả hơn.
+
+Nếu chúng tôi không nhận được dữ liệu này, chúng tôi sẽ không thể theo dõi hiệu suất của khía cạnh này trong dịch vụ của mình hoặc tác động của những thay đổi phía máy chủ mà chúng tôi có thể thấy cần thiết do việc sử dụng hoặc các yếu tố khác.
+
+Các lĩnh vực sau đây sẽ được thu thập: 
+
+- **DeviceSessionId** - ID của phiên thiết bị
+
+- **IsEducationNotebook** - Một bool cho biết sổ ghi chép có phải là sổ ghi chép giáo dục hay không
+
+- **IsHierarchyResource** - Một bool cho biết tài nguyên có phải là tài nguyên phân cấp hay không
+
+- **IsWorstTime** - Một bool cho biết liệu thời gian là một kiện tải lên thông thường hay là thời gian tồi tệ nhất mà chúng tôi thấy trên máy khách này trong 300 giây vừa rồi (số giây có thể được cấu hình bởi Microsoft tùy thuộc vào hiệu suất và điều kiện dịch vụ).
+
+- **NotebookId** - ID của sổ ghi chép mà tải lên này là một phần của
+
+- **RecommendedPutIntervalInMs** - Thời gian mà dịch vụ đã giao tiếp với khách hàng như khoảng thời gian được đề xuất
+
+- **ResourceId** - ID của tài nguyên mà chúng tôi đang tải lên
+
+- **SectionId** - ID của phần mà tải lên này là một phần của
+
+- **SenderRequestId** - ID của người gửi thực hiện tải lên
+
+- **ServerSessionId** - ID của phần mà tải lên này là một phần của
+
+- **UploadNonSuspendedTimeInMs** - Thời gian tính bằng mili giây để thực hiện tải lên không kể thời gian ứng dụng bị tạm ngưng
+
+- **UploadTimeInMs** - Thời gian tính bằng mili giây để thực hiện tải lên
+
+- **WaitTimeInMs** - Thời gian tính bằng mili giây từ khi có yêu cầu tải lên đến khi quá trình tải lên bắt đầu
+
+- **WebUrl** - WebUrl của quá trình tải lên (Được đăng nhập dưới dạng PiiWz)
+
+### <a name="onenotestoragesynchealth"></a>OneNote.Storage.SyncHealth
+
+Tín hiệu quan trọng được sử dụng để theo dõi các lỗi và ngoại lệ đã xảy ra bên trong ngăn xếp đồng bộ trong OneNote của khách cho phép chúng tôi theo dõi và giảm thiểu các điều kiện không mong muốn này.
+
+Điều này được sử dụng để đảm bảo trạng thái dịch vụ bằng cách cho phép chúng tôi xem các báo cáo lỗi từ khách hàng trong thời gian gần thực tế, cho phép chúng tôi phản hồi các vấn đề đồng bộ khi chúng phát sinh. Nó cũng được sử dụng để xác định mức độ phổ biến của một vấn đề và mức độ nghiêm trọng bằng cách tham chiếu chéo thẻ lỗi với mã của máy khách để xác định nguồn gốc của lỗi. Chúng tôi cũng tổng hợp dữ liệu này để có thông tin về hiệu suất của chúng tôi theo thời gian cũng như tác động và hiệu quả của những cải tiến mà chúng tôi thực hiện đối với khách hàng và dịch vụ của mình. Nếu chúng tôi không có dữ liệu này, chúng tôi sẽ không thể chủ động phản hồi các tình trạng lỗi trong dịch vụ đồng bộ hóa của mình mà không cần khách hàng báo cáo.
+
+Các lĩnh vực sau đây sẽ được thu thập: 
+
+- **Service** - Dịch vụ đồng bộ hóa mà khách hàng đang sử dụng khi xảy ra lỗi (Đồng bộ hóa kế thừa hoặc hiện đại)
+
+- **Tag** - Thẻ (giá trị nhận dạng) đại diện cho lỗi khách hàng gặp phải trong quá trình đồng bộ hóa
 
 ### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
  
