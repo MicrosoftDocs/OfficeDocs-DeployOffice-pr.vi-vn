@@ -13,76 +13,66 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office cái nhìn tổng quan về dữ liệu dịch vụ bắt buộc được thu thập về các trải nghiệm được kết nối trong Office.
 hideEdit: true
-ms.openlocfilehash: 4b5008d1750de655601dafaa381502e708f9f9d6
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: faa3507708b4768ee3b2b0f51257273c31ad2de7
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992801"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440221"
 ---
-# <a name="required-service-data-for-office"></a>Dữ liệu dịch vụ bắt buộc cho Office 
+# <a name="required-service-data-for-office"></a>Dữ liệu dịch vụ bắt buộc cho Office
 
-> [!IMPORTANT]
-> Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
-> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
-> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
-> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
->
-> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office nằm trong thông tin về quyền riêng tư này, hãy xem [Kiểm soát về quyền riêng tư sẵn có cho các sản phẩm Office](products-versions-privacy-controls.md).
 
-Office bao gồm các ứng dụng phần mềm máy khách và các trải nghiệm được kết nối được thiết kế để cho phép bạn tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
+Office bao gồm các ứng dụng phần mềm máy khách và [trải nghiệm được kết nối](connected-experiences.md) đã được thiết kế để hỗ trợ bạn sáng tạo, giao tiếp và cộng tác hiệu quả hơn. Làm việc với những người khác trên một tài liệu được lưu trữ trên OneDrive for Business hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
-Dữ liệu dịch vụ bắt buộc là dữ liệu cho phép chúng tôi cung cấp các trải nghiệm được kết nối dựa trên đám mây này và giúp làm cho các trải nghiệm này trở nên an toàn và hoạt động như mong đợi dành cho các khách hàng của chúng tôi. Dữ liệu dịch vụ bắt buộc gồm ba loại thông tin.
+Khi bạn sử dụng trải nghiệm được kết nối, dữ liệu sẽ được gửi đến và xử lý bởi Microsoft để cung cấp cho bạn trải nghiệm được kết nối. Dữ liệu này rất quan trọng vì thông tin này cho phép chúng tôi cung cấp các trải nghiệm được kết nối dựa trên nền điện toán đám mây. Chúng tôi gọi các dữ liệu này là dữ liệu dịch vụ bắt buộc.
 
-- **Nội dung khách hàng** là nội dung bạn tạo bằng cách sử dụng Office, chẳng hạn như văn bản đã được nhập trong tài liệu Word và được sử dụng kết hợp với trải nghiệm được kết nối.
-- **Dữ liệu chức năng** bao gồm thông tin mà trải nghiệm được kết nối cần để thực hiện nhiệm vụ của mình, chẳng hạn như thông tin cấu hình về ứng dụng.
-- **Dữ liệu chẩn đoán dịch vụ** là dữ liệu cần thiết để giữ an toàn cho dịch vụ, cập nhật và hoạt động như mong đợi. Vì dữ liệu này liên quan chặt chẽ đến trải nghiệm được kết nối, nên nó tách biệt với các mức độ dữ liệu chẩn đoán bắt buộc hoặc tùy chọn.
+Dữ liệu dịch vụ bắt buộc có thể bao gồm các thông tin liên quan đến hoạt động của trải nghiệm được kết nối cần thiết để đảm bảo dịch vụ cơ sở an toàn, luôn được cập nhật và hoạt động như mong đợi. Nếu bạn chọn sử dụng trải nghiệm được kết nối sẽ phân tích nội dung của bạn như Dịch trong Word, văn bản bạn đã nhập và đã chọn để dịch trong tài liệu cũng sẽ được gửi đi và xử lý để cung cấp trải nghiệm được kết nối cho bạn. Dữ liệu dịch vụ bắt buộc cũng có thể bao gồm các thông tin mà trải nghiệm được kết nối cần để thực hiện tác vụ của mình như thông tin về cấu hình của ứng dụng Office.
 
 ## <a name="example-of-required-service-data-for-a-connected-experience"></a>Ví dụ về dữ liệu dịch vụ bắt buộc cho trải nghiệm được kết nối
 
-Để giúp bạn hiểu về dữ liệu dịch vụ bắt buộc, sau đây là một kịch bản ví dụ, sử dụng PowerPoint Designer - một trải nghiệm được kết nối mà bạn có thể sử dụng khi tạo các trang chiếu cho bản trình bày. PowerPoint Designer giúp cải thiện các trang chiếu của bạn bằng cách tự động tạo các ý tưởng thiết kế mà bạn có thể chọn. Khi bạn dự định đưa nội dung vào một trang chiếu, Trình thiết kế sẽ hoạt động trong nền để khớp nội dung đó với các bố trí được thiết kế chuyên nghiệp.
+Hãy xem PowerPoint Designer là một ví dụ khác để cho thấy loại dữ liệu dịch vụ bắt buộc mà trải nghiệm được kết nối gửi đến Microsoft. PowerPoint Designer giúp cải thiện các trang chiếu của bạn bằng cách tự động tạo các ý tưởng thiết kế mà bạn có thể chọn. Khi bạn dự định đưa nội dung vào một trang chiếu, Trình thiết kế sẽ hoạt động trong nền để khớp nội dung đó với các bố trí được thiết kế chuyên nghiệp.
 
-Dữ liệu dịch vụ bắt buộc được gửi tới Microsoft để cho phép trải nghiệm được kết nối dành cho bạn này có thể bao gồm các thông tin sau:
+Dữ liệu dịch vụ bắt buộc mà PowerPoint Designer gửi đến Microsoft có thể bao gồm các thông tin sau:
+- Văn bản hoặc hình ảnh mà bạn đã thêm vào trang chiếu của mình.
+- Trang chiếu bạn đang làm việc và bố cục của trang chiếu.
+- Xác minh xem ý tưởng thiết kế có được áp dụng chính xác vào trang chiếu của bạn không.
+- Xác minh xem tương tác giữa PowerPoint và dịch vụ Dịch vụ có hoạt động như mong đợi không.
 
-- *Nội dung khách hàng*, chẳng hạn như văn bản hoặc hình ảnh mà bạn đã thêm vào trang chiếu của mình.
-- *Dữ liệu chức năng*, chẳng hạn như trang chiếu mà bạn đang làm việc và bố trí.
-- *Dữ liệu chẩn đoán dịch vụ*, chẳng hạn như các sự kiện cho chúng tôi biết nếu ý tưởng thiết kế được áp dụng chính xác trang chiếu của bạn và các cuộc gọi dịch vụ đang thực hiện một cách chính xác.
+Dữ liệu dịch vụ bắt buộc này sẽ giúp đảm bảo PowerPoint Designer hoạt động như mong đợi.
 
-## <a name="view-and-manage-required-service-data"></a>Xem và quản lý dữ liệu dịch vụ bắt buộc
+## <a name="manage-required-service-data"></a>Quản lý dữ liệu dịch vụ bắt buộc
 
-Bạn có thể xem dữ liệu chẩn đoán dịch vụ bằng cách sử dụng Trình xem dữ liệu chẩn đoán. Để biết thêm thông tin, hãy xem mục [Ví dụ về các sự kiện dành cho dữ liệu chẩn đoán dịch vụ](#examples-of-events-for-service-diagnostic-data).
+Chúng tôi tạo điều kiện để bạn có thể lựa chọn loại trải nghiệm được kết nối mà bạn muốn sử dụng trong Office, từ đó xác định dữ liệu dịch vụ bắt buộc nào sẽ được gửi đến Microsoft. Ví dụ: Tính năng Đọc chính tả trong Word là một trong số ít trải nghiệm được kết nối sẽ phân tích nội dung của bạn. Nếu bạn chọn tắt trải nghiệm được kết nối có phân tích nội dung, không có dữ liệu dịch vụ bắt buộc nào về tính năng Đọc chính tả trong Word sẽ được gửi đến Microsoft vì tính năng Đọc chính tả trong Word sẽ không thể sử dụng được. Để biết thêm thông tin, hãy xem [Chọn xem các trải nghiệm được kết nối này có thể sử dụng được không](connected-experiences.md#choose-whether-these-connected-experiences-are-available-to-use).
 
-Chúng tôi tạo điều kiện để bạn có thể lựa chọn loại trải nghiệm được kết nối mà bạn muốn sử dụng trong Office, từ đó xác định loại dữ liệu dịch vụ bắt buộc nào sẽ được gửi cho chúng tôi. Ví dụ, PowerPoint Designer là một trong một số trải nghiệm được kết nối sẽ phân tích nội dung của bạn. Nếu bạn chọn tắt trải nghiệm được kết nối có phân tích nội dung, sẽ không có dữ liệu dịch vụ bắt buộc nào về PowerPoint Designer được gửi cho chúng tôi vì tính năng này không được kích hoạt trong PowerPoint Designer.
+Dữ liệu dịch vụ bắt buộc khác với [dữ liệu chẩn đoán](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) tùy chọn hoặc bắt buộc, đây là các dữ liệu liên quan đến thông tin về việc sử dụng phần mềm Office đang chạy trên thiết bị của bạn. Vì vậy, các cài đặt quyền riêng tư mà bạn chọn cho dữ liệu chẩn đoán tùy chọn hoặc bắt buộc không ảnh hưởng đến dữ liệu dịch vụ bắt buộc nào sẽ được gửi đến Microsoft.
 
-Dữ liệu dịch vụ bắt buộc cũng được thu thập và gửi tới Microsoft để hỗ trợ các dịch vụ thiết yếu của Office, chẳng hạn như dịch vụ cấp phép để xác nhận rằng bạn được cấp phép sử dụng Office đúng theo quy trình. Dữ liệu này dành cho các dịch vụ thiết yếu được gửi bất kể các thiết đặt liên quan đến quyền riêng tư khác mà bạn đã cấu hình.
+Dữ liệu dịch vụ bắt buộc cũng sẽ được thu thập và gửi đến Microsoft để hỗ trợ các [dịch vụ thiết yếu](essential-services.md) của Office như dịch vụ cấp phép sẽ xác nhận bạn đã được cấp phép hợp lệ để sử dụng Office. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối sẵn dùng đối với bạn hoặc đối với người dùng của bạn nếu bạn là người quản trị trong tổ chức của bạn nhưng bộ dịch vụ này vẫn rất quan trọng đối với cách hoạt động của Office và do đó không thể bị tắt được. Dữ liệu của các dịch vụ thiết yếu luôn được gửi đến và xử lý bởi Microsoft khi sử dụng Office dù đã đặt cấu hình cho các cài đặt khác liên quan đến quyền riêng tư như thế nào.
 
-Để biết thêm thông tin, hãy xem các nguồn sau:
+Dữ liệu dịch vụ bắt buộc có sẵn thông qua các Yêu cầu dịch vụ dữ liệu (DSR). Để biết thêm thông tin, hãy xem [Điều khoản về quyền riêng tư của Microsoft](https://privacy.microsoft.com/privacystatement) và [Yêu cầu chủ thể dữ liệu Office 365 đối với GDPR và CCPA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
 
-- [Các trải nghiệm kết nối trong Office](connected-experiences.md)
-- [Các dịch vụ cần thiết cho Office](essential-services.md)
-- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
-
-Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng có thể quan tâm đến những điều sau:
+Nếu bạn là người quản trị cho tổ chức của bạn và muốn quản lý trải nghiệm được kết nối, hãy xem các bài viết sau:
 
 - [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
+- [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với các ứng dụng Office trên web](office-web-privacy-controls.md)
 
-## <a name="examples-of-events-for-service-diagnostic-data"></a>Ví dụ về các sự kiện dành cho dữ liệu chẩn đoán dịch vụ.
+## <a name="categories-of-required-service-data"></a>Danh mục dữ liệu dịch vụ bắt buộc
 
-Dữ liệu chẩn đoán dịch vụ xuất hiện trong Trình xem dữ liệu chẩn đoán và được sắp xếp thành các danh mục cần sử dụng và sử dụng dữ liệu chẩn đoán tùy chọn. Ví dụ: *Sử dụng sản phẩm và dịch vụ* hoặc *Hiệu suất sản phẩm và dịch vụ.*
+Dữ liệu dịch vụ bắt buộc được phân chia thành các danh mục sau:
 
-Các sự kiện dành cho dữ liệu chẩn đoán dịch vụ cung cấp cho chúng tôi thông tin cần thiết về việc liệu trải nghiệm được kết nối có hoạt động như khách hàng mong đợi hay không. Ví dụ: liệu dịch vụ được sử dụng bởi trải nghiệm được kết nối có khởi động thành công và có sẵn khi cần hay không, liệu có xảy ra lỗi hoặc sự cố không mong muốn khác (sự cố) khi tương tác với dịch vụ và khả năng đáp ứng hoặc hiệu suất của dịch vụ.
+- Thiết lập phần mềm và hàng tồn kho
+- Sử dụng sản phẩm và dịch vụ
+- Hiệu suất sản phẩm và dịch vụ
+- Khả năng kết nối và cấu hình thiết bị
 
-Bảng sau đây cung cấp một số ví dụ về các sự kiện dành cho dữ liệu chẩn đoán dịch vụ.
+Thông tin trong các danh mục này cho phép Microsoft đánh giá xem trải nghiệm được kết nối hoặc dịch vụ thiết yếu có an toàn, đã được cập nhật và hoạt động như mong đợi không.
 
-| **Name**      | **Mô tả**    |
-| ---------- | --------------------- |
-| Office.Excel.Coauth.SaveXrr     | Một sự kiện được kích hoạt trong Excel khi sử dụng dịch vụ cộng tác sẽ báo cáo chi tiết về các bản hiệu đính riêng lẻ được ghi vào nhật ký hiệu đính. Điều này cung cấp khả năng giám sát độ trễ và chỉ ra các lỗi trong Excel có liên quan đến sự cộng tác  |
-| Office.Excel.Coauth.CloseWorkbook  | Một sự kiện được kích hoạt trong Excel khi sử dụng dịch vụ cộng tác sẽ báo cáo khi sổ làm việc đã được đóng. Điều này là cần thiết trong việc xác định các lỗi khi tải lại và tự động làm mới. Sự kiện này cung cấp sự đo lường mức độ thành công cho các hoạt động dịch vụ cộng tác.   |
-| Office.Security.OCX.NonTrustedEncounter    | Một sự kiện được kích hoạt trong các ứng dụng Office (bao gồm Word, Excel, Outlook, PowerPoint và Visio) khi người dùng mở một tài liệu không đáng tin cậy bằng điều khiển ActiveX. Sự kiện này được sử dụng để đánh giá rộng rãi việc sử dụng các điều khiển ActiveX được nhúng trong tài liệu Office và để giảm thiểu bảo mật nhằm đối phó với các sự cố bảo mật.  |
-| Office.Security.UrlReputation.GetUrlReputation | Một sự kiện được kích hoạt trong các ứng dụng Office (bao gồm Word, Excel, PowerPoint, Visio và Publisher) theo dõi sự thành công hay thất bại của các cuộc gọi Liên kết an toàn. Sự kiện này được sử dụng để đảm bảo rằng dịch vụ Liên kết an toàn hoạt động tốt và chẩn đoán được mọi sự cố.  |
-| Office.Voice.VoiceManager.StreamingAudio   | Một sự kiện được kích hoạt trong các ứng dụng Office (bao gồm Word, Outlook và PowerPoint) cung cấp thông tin về trạng thái của âm thanh truyền đến dịch vụ giọng nói. Sự kiện này chứa thông tin về kích thước của âm thanh được truyền và bất kỳ lỗi nào có thể xảy ra. Thông tin này được sử dụng để theo dõi trạng thái dịch vụ và để chẩn đoán bất kỳ sự cố nào có thể được khách hàng báo cáo. |
+Ví dụ: Thông tin trong danh mục hiệu suất sản phẩm và dịch vụ có thể bao gồm các sự cố không mong muốn (lỗi không hoạt động), thời gian hoặc hiệu suất phản hồi chậm chạp hoặc lỗi chức năng.
+
+Đối với danh mục mức sử dụng sản phẩm và dịch vụ, thông tin có thể được thu thập để cho biết xem dịch vụ dùng bởi trải nghiệm được kết nối đã khởi động thành công và sẵn dùng khi cần thiết chưa.

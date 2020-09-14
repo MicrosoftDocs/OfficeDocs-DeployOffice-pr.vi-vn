@@ -15,14 +15,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office những thông tin về cách quản lý kiểm soát quyền riêng tư trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 Proplus) bằng cách sử dụng các thiết đặt chính sách.
 hideEdit: true
-ms.openlocfilehash: 5f9cafff0f7baf12ed8f0f57d7561bc356fbb98b
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: f02714428dd580d79a3fc8f160b00d6df95c4237
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087231"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440259"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
+
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office nằm trong thông tin về quyền riêng tư này, hãy xem [Kiểm soát về quyền riêng tư sẵn có cho các sản phẩm Office](products-versions-privacy-controls.md).
 
 Microsoft cam kết cung cấp cho bạn thông tin và quyền kiểm soát cần thiết để lựa chọn cách thu thập và sử dụng dữ liệu khi bạn dùng Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus).
 
@@ -46,6 +49,7 @@ Các thiết đặt chính sách này có thể được thực hiện bằng c�
 > - Để biết thông tin về cách quản lý kiểm soát quyền riêng tư đối với Office cho Mac, hãy xem mục [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md).
 > - Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên thiết bị iOS, xem mục [Sử dụng tuỳ chọn để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị chạy iOS](ios-privacy-preferences.md).
 > - Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên thiết bị Android, xem mục [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md).
+> - Để biết thông tin về các biện pháp kiểm soát quyền riêng tư đối với Office cho các ứng dụng web, hãy xem mục [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên các ứng dụng web](office-web-privacy-controls.md).
 
 
 Nếu bạn sử dụng công cụ quản lý chính sách nhóm, tất cả các cài đặt chính sách này đều được đặt trong Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.
@@ -77,7 +81,7 @@ Nếu bạn vô hiệu hóa hoặc không cấu hình thiết đặt chính sác
 - [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Dữ liệu chẩn đoán bắt buộc cho Office](required-diagnostic-data.md)
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
-- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="policy-settings-for-connected-experiences"></a>Thiết đặt chính sách cho các trải nghiệm được kết nối
 
@@ -116,25 +120,15 @@ Lưu ý rằng nếu bạn vô hiệu hóa thiết đặt chính sách *Cho phé
 
 Ngoài các trải nghiệm được kết nối được đề cập ở trên có mặt trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, còn có một số trải nghiệm được kết nối tùy ý mà bạn có thể chọn để cho phép người dùng truy cập bằng tài khoản tổ chức. Ví dụ: các tính năng LinkedIn của Trợ lý Sơ yếu lý lịch trong Word hoặc các tính năng bản đồ 3D trong Excel mà sử dụng Bing. Để biết thêm về các ví dụ, hãy xem mục [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md).
 
-Các trải nghiệm được kết nối này là khác nhau vì chúng không nằm trong thỏa thuận thương mại của tổ chức của bạn với Microsoft. Các trải nghiệm được kết nối tùy chọn do Microsoft cung cấp trực tiếp cho người dùng của bạn và chịu sự điều chỉnh của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) thay vì [Điều khoản Dịch vụ Trực tuyến](https://www.microsoft.com/licensing/product-licensing/products). Trong một số trường hợp, nội dung hoặc chức năng của bên thứ ba được cung cấp thông qua các trải nghiệm được kết nối tùy chọn này và các điều khoản khác cũng có thể được áp dụng. Để biết thêm thông tin, hãy xem mục [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md).
+Các trải nghiệm được kết nối này là khác nhau vì chúng không nằm trong thỏa thuận thương mại của tổ chức của bạn với Microsoft. Các trải nghiệm được kết nối tùy chọn do Microsoft cung cấp trực tiếp cho người dùng của bạn và chịu sự điều chỉnh của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) thay vì [Điều khoản Dịch vụ Trực tuyến](https://www.microsoft.com/licensing/product-licensing/products). Trong một số trường hợp, nội dung hoặc chức năng của bên thứ ba được cung cấp thông qua các trải nghiệm được kết nối tùy chọn này và các điều khoản khác cũng có thể được áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md).
 
 Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* để kiểm soát xem các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối tuỳ chọn này sẽ có sẵn cho người dùng của bạn.
 
-> [!NOTE]
-> Bạn cũng có thể đặt cấu hình cho cài đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* để áp dụng cho các ứng dụng Office dành cho web sau đây:
-> - Excel dành cho web
-> - OneNote dành cho web
-> - PowerPoint dành cho web
-> - Visio dành cho web
-> - Word dành cho web
->
-> Để đặt cấu hình thiết đặt chính sách này cho các ứng dụng Office dành cho web, bạn cần sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md).
-
-Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tuỳ chọn này cho người dùng của mình, họ vẫn sẽ có tùy chọn tắt các trải nghiệm này đi với tư cách một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
+Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, họ sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
 Ngoài ra, một số trải nghiệm được kết nối tùy chọn này cũng được coi là trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến. Ví dụ: Chèn ảnh trực tuyến là một trải nghiệm được kết nối tùy chọn, được cung cấp bởi Microsoft Bing, nhưng nó cũng được coi là một trải nghiệm được kết nối tải xuống nội dung trực tuyến. Lưu ý rằng nếu bạn vô hiệu hóa thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tải xuống nội dung trực tuyến trong Office*, tính năng Chèn ảnh trực tuyến sẽ không có sẵn cho người dùng của bạn. Tính năng này sẽ không có sẵn ngay cả khi bạn đã bật thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office*. Để biết thêm thông tin về trải nghiệm được kết nối phân tích nội dung hoặc tải xuống nội dung trực tuyến, hãy xem mục [Trải nghiệm được kết nối trong Office](connected-experiences.md).
 
-Có một ngoại lệ cần lưu ý. Thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* không kiểm soát các trải nghiệm yêu cầu bạn kết nối tài khoản LinkedIn với tài khoản cơ quan hoặc trường học Microsoft của bạn. Để kiểm soát các loại trải nghiệm này, chẳng hạn như thông tin LinkedIn trên [thẻ hồ sơ](https://support.office.com/article/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) trong Outlook, hãy xem mục [Kết nối tài khoản LinkedIn và Microsoft của bạn](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381) và [Đồng ý kết nối tài khoản LinkedIn với Azure Active Directory tổ chức](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
+Có một ngoại lệ cần lưu ý. Thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* không kiểm soát các trải nghiệm yêu cầu bạn kết nối tài khoản LinkedIn với tài khoản cơ quan hoặc trường học Microsoft của bạn. Để kiểm soát các loại trải nghiệm này (chẳng hạn như thông tin LinkedIn trên [thẻ hồ sơ](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) trong Outlook), hãy xem [LinkedIn trong các ứng dụng và dịch vụ của Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) và [Kết nối tài khoản LinkedIn với Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Thiết đặt chính sách cho hầu hết các trải nghiệm được kết nối
 
@@ -207,7 +201,7 @@ Sau đây là thành phần mới được thêm vào giao diện người dùng
 
 - Bên dưới **Tệp** > **Tài khoản**, người dùng sẽ thấy một sự lựa chọn mới cho **Quyền riêng tư tài khoản** > **Quản lý thiết đặt**. Lựa chọn đó nằm trong phần **Quản lý thiết đặt** nơi người dùng có thể tắt các trải nghiệm được kết nối tùy chọn, nếu bạn đã cung cấp cho họ tùy chọn đó.
 
-- Bên dưới **Tệp** > **Tuỳ chọn** > **Trung tâm Tin cậy** > **Thiết đặt Trung tâm Tin cậy…** > **Tuỳ chọn quyền riêng tư**, có một tùy chọn để cho phép sử dụng [Trình xem dữ liệu chẩn đoán](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855) trên thiết bị.
+- Bên dưới **Tệp** > **Tuỳ chọn** > **Trung tâm Tin cậy** > **Thiết đặt Trung tâm Tin cậy…** > **Tuỳ chọn quyền riêng tư**, có một tùy chọn để cho phép sử dụng [Trình xem dữ liệu chẩn đoán](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) trên thiết bị.
 
  
 ## <a name="control-privacy-settings-by-editing-the-registry"></a>Kiểm soát cài đặt quyền riêng tư bằng cách chỉnh sửa sổ đăng ký

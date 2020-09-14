@@ -13,30 +13,23 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 81694daded27994d5026d923acd36302a79acc9f
-ms.sourcegitcommit: 5fc8194df704f79d340d9e8872a03ab2b0ebc62b
+ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815343"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440511"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
-> [!IMPORTANT]
-> Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
-> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
-> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
-> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
->
-> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office nằm trong thông tin về quyền riêng tư này, hãy xem [Kiểm soát về quyền riêng tư sẵn có cho các sản phẩm Office](products-versions-privacy-controls.md).
 
-Office bao gồm các ứng dụng phần mềm máy khách và những trải nghiệm kết nối được thiết kế nhằm cho phép bạn khởi tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối sẵn dùng cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình. Bạn có thể xem dữ liệu này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Office bao gồm các ứng dụng phần mềm máy khách và trải nghiệm được kết nối được thiết kế để hỗ trợ bạn sáng tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối sẵn dùng cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình.
 
 Để biết thêm thông tin, hãy xem các nguồn sau:
 
 - [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
-- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 - [Các trải nghiệm kết nối trong Office](connected-experiences.md)
 
 Nếu bạn là người quản trị cho tổ chức, bạn cũng có thể quan tâm đến những điều sau:
@@ -46,6 +39,7 @@ Nếu bạn là người quản trị cho tổ chức, bạn cũng có thể qua
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
+- [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên ứng dụng web](office-web-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Danh sách các dịch vụ cần thiết cho Office 
 
@@ -60,7 +54,7 @@ Bảng sau đây cung cấp danh sách các dịch vụ cần thiết cho Office
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) là công nghệ dùng để cập nhật các ứng dụng Microsoft được làm ra dành cho MacOS, chẳng hạn như Office. MAU sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật ứng dụng, bao gồm cả các bản cập nhật bảo mật.|
 |[Đồng bộ OneNote](#onenote-sync-events)|OneNote cho Mac chỉ hỗ trợ sổ tay được lưu trữ trên Internet trong OneDrive hoặc SharePoint Online. OneNote cho Mac sẽ liên tục đồng bộ hoá mọi ghi chú của người dùng bằng OneDrive hoặc SharePoint Online. Ứng dụng này cho phép người dùng mở, xem và chỉnh sửa sổ tay trên tất cả các thiết bị của mình, nhờ vậy sổ tay luôn được cập nhật.
  [Cấu hình dịch vụ](#services-configuration-events)  | Cấu hình dịch vụ cung cấp khả năng cập nhật các cài đặt cấu hình Office để bật hoặc tắt các tính năng của máy khách. Nó được gọi mỗi khi ứng dụng Office được khởi động và cung cấp chi tiết về các cấu hình và dịch vụ khác của Office. Cấu hình dịch vụ cũng kiểm soát các dịch vụ được chỉ định là dịch vụ cần thiết.  |
-| [Phép đo từ xa](#telemetry-events)  | Dịch vụ phép đo từ xa được dùng để thu thập dữ liệu chẩn đoán từ ứng dụng Office. Dịch vụ này cho phép thu thập dữ liệu chẩn đoán do Office tạo ra, gồm cả dữ liệu chẩn đoán bắt buộc lẫn tùy chọn. Nó cũng chịu trách nhiệm thu thập phần dữ liệu chẩn đoán dịch vụ của dữ liệu dịch vụ bắt buộc cho Office.  |
+| [Phép đo từ xa](#telemetry-events)  | Dịch vụ phép đo từ xa được dùng để thu thập dữ liệu chẩn đoán từ ứng dụng Office. Dịch vụ này cho phép thu thập dữ liệu chẩn đoán do Office tạo ra, gồm cả dữ liệu chẩn đoán bắt buộc lẫn tùy chọn. Nó cũng chịu trách nhiệm thu thập một số dữ liệu dịch vụ bắt buộc cho Office.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Các sự kiện và trường dữ liệu cho các dịch vụ cần thiết cho Office
 
@@ -70,9 +64,6 @@ Phần tiếp theo sẽ cung cấp các thông tin sau đây:
 - Mô tả về từng sự kiện
 - Danh sách các trường dữ liệu trong mỗi sự kiện
 - Mô tả về từng trường dữ liệu
-
-Bạn có thể xem các sự kiện này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
-
 
 
 ## <a name="authentication-events"></a>Sự kiện xác thực
@@ -3175,7 +3166,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Tag** - Cho chúng tôi biết tại bước nào chúng tôi đã ngừng tìm kiếm ràng buộc. Các thẻ có thể sử dụng:
   - 0x03113809    Không có lỗi Internet/dịch vụ trong khi xác thực mã pin
-   - 0x0311380a    Xác thực mã pin thất bại, đã được gửi kèm trường PinValidationFailure
+  - 0x0311380a    Xác thực mã pin thất bại, đã được gửi kèm trường PinValidationFailure
   - 0x0310410f    Thành công, đã được gửi với trường Thành công
   - 0x0311380d    Lỗi có thể thử lại (sự cố internet, lỗi không xác định)
   - 0x0311380e    Lỗi không thể thử lại (ưu đãi ràng buộc đã hết hạn)
@@ -9391,7 +9382,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết sự bắt đầu của quy trình cài đặt một bản cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật ứng dụng mà chúng tôi sử dụng để xác định tình trạng của bản cập nhật.
  
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -11140,7 +11131,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết một bản cập nhật bắt buộc đã hoàn thành thành công. Sự kiện này là một phần của phễu cập nhật bắt buộc và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -11382,7 +11373,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này cho biết người dùng đã chọn trì hoãn cập nhật bắt buộc. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
-Các trường sau đây sẽ được thu thập:
+Các lĩnh vực sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -11720,7 +11711,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này được báo cáo khi trạng thái thiết bị của khách hàng thay đổi, khiến Bộ trợ giúp Microsoft Update tạm dừng hoặc tiếp tục quy trình cập nhật. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -11806,7 +11797,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này cho biết giai đoạn tải xuống bản cập nhật ứng dụng đã hoàn thành. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.  
 
-Các trường sau đây sẽ được thu thập:
+Các lĩnh vực sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -11938,7 +11929,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết đã hoàn thành cài đặt cập nhật và Microsoft Auto Update (MAU) đang dọn dẹp.  Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12114,7 +12105,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này cho biết nhiều bản cập nhật ứng dụng đang chạy trong nền. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12154,7 +12145,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện cho biết gói cập nhật sửa chữa đang được tải xuống nhưng không có thông tin tải xuống trước đó. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo. 
 
-Các trường sau đây sẽ được thu thập:
+Các lĩnh vực sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12242,7 +12233,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết ứng dụng đã hoàn tất cập nhật và đang khởi chạy lại. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12772,7 +12763,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này báo cáo lỗi gặp phải trong khi kiểm tra bản cập nhật. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -13020,7 +13011,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này báo cáo lỗi trong khi cố gắng đánh giá một bản cập nhật có áp dụng được hay không. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.  
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -13306,7 +13297,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này báo cáo lỗi trong khi cố gắng thêm một ứng dụng vào bộ. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -14567,7 +14558,7 @@ Các trường sau đây sẽ được thu thập:
 
 ## <a name="services-configuration-events"></a>Sự kiện Cấu hình dịch vụ
 
-Không có sự kiện dữ liệu chẩn đoán dịch vụ bắt buộc được thu thập bởi Cấu hình dịch vụ.
+Không có sự kiện dữ liệu dịch vụ bắt buộc được thu thập bởi Cấu hình dịch vụ.
 
 ## <a name="telemetry-events"></a>Sự kiện phép đo từ xa
 
@@ -15003,7 +14994,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **ProcTypeText -** Loại bộ vi xử lý trên thiết bị mà Office đang chạy trên đó.
 
-  - **RamMB -** Dung lượng RAM khả dụng trong thiết bị Office đang chạy trên đó.
+  - **RamMB -** Dung lượng RAM khả dụng trong thiết bị mà Office đang chạy trên đó.
 
   - **SusClientId -** ID bản cập nhật Windows của thiết bị mà Office đang chạy trên đó.
 
