@@ -15,14 +15,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus), bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087731"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440599"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
+
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office nằm trong thông tin về quyền riêng tư này, hãy xem [Kiểm soát về quyền riêng tư sẵn có cho các sản phẩm Office](products-versions-privacy-controls.md).
 
 Microsoft cam kết cung cấp cho bạn thông tin và quyền kiểm soát cần thiết để lựa chọn cách thu thập và sử dụng dữ liệu khi bạn dùng Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus).
 
@@ -31,17 +34,6 @@ Bắt đầu với Phiên bản 1904 của Ứng dụng Microsoft 365 dành cho 
 - ***Trải nghiệm được kết nối*** sử dụng chức năng dựa trên đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
 
 Là một phần của những thay đổi này, có các cài đặt chính sách và thành phần giao diện người dùng (UI) mới và được cập nhật.
-
-> [!IMPORTANT]
-> - Những thay đổi này áp dụng cho Access, Excel, OneNote, Outlook, PowerPoint, Publisher và Word.
-> - Những thay đổi này cũng được áp dụng cho những phiên bản sau đây:
->   - Phiên bản 16.28 trở lên của các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
->   - Phiên bản 1904 trở lên trong phiên bản Project và Visio trên máy tính đi kèm với một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
-> - Các điều khiển về quyền riêng tư này được tích hợp trong phiên bản 1908 của Kênh Enterprise nửa năm một lần (Xem trước) và Kênh Enterprise nửa năm một lần.
-> - Các biện pháp kiểm soát quyền riêng tư này sẵn dùng đối với Phiên bản 2.30 trở lên của những phiên bản iOS của Excel, OneNote, PowerPoint và Word cũng như Phiên bản 1.17 trở lên của Visio Viewer for iOS.
-> - Các biện pháp kiểm soát quyền riêng tư này sẵn dùng đối với Phiên bản 16.0.12226.10000 trở lên của những phiên bản Android của Excel, PowerPoint và Word cũng như Phiên bản 16.0.12228.20004 trở lên của OneNote for Android.
-> - Hầu hết các ứng dụng Office dành cho web sử dụng biện pháp kiểm soát quyền riêng tư mới cho [các trải nghiệm được kết nối tuỳ chọn](optional-connected-experiences.md). Các ứng dụng đó được liệt kê sau đây: Excel dành cho web, OneNote dành cho web, PowerPoint dành cho web, Visio dành cho web và Word dành cho web. Bạn có thể sử dụng [dịch vụ chính sách trên nền điện toán đám mây Office](../overview-office-cloud-policy-service.md) để đặt cấu hình cho [cài đặt chính sách](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences) thích hợp.
-> - Chúng tôi sẽ mở rộng các biện pháp kiểm soát quyền riêng tư mới và được tăng cường này cho các máy khách Office bổ sung, bao gồm cả Teams và ứng dụng dành cho di động của chúng tôi. Chúng tôi sẽ cung cấp thêm thông tin về những thay đổi đó trong những tháng sắp tới. Chúng tôi sẽ tiếp tục thận trọng lắng nghe phản hồi của bạn và cải thiện tất cả các ứng dụng máy khách và dịch vụ của Office 365 (và Microsoft 365).
 
 ## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Dữ liệu chẩn đoán được gửi từ Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
@@ -77,7 +69,7 @@ Dữ liệu chẩn đoán này không bao gồm tên của người dùng, đị
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
-- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Trải nghiệm được kết nối đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
@@ -113,7 +105,7 @@ Ngoài các trải nghiệm được kết nối được đề cập ở trên 
 
 Do những trải nghiệm được kết nối tùy chọn này bị chi phối bởi các điều khoản và điều kiện riêng biệt, nên bạn quản lý chúng tách biệt với các trải nghiệm được kết nối được đề cập ở trên. Là người quản trị cho tổ chức của bạn, bạn sẽ có thể sử dụng cài đặt chính sách để chọn có cung cấp các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, tất cả những trải nghiệm được kết nối tuỳ chọn này sẽ có sẵn cho người dùng của bạn.
 
-Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, họ sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
+Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, họ sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
 Để biết thêm thông tin, hãy xem các nguồn sau:
 
@@ -122,24 +114,13 @@ Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối 
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
+- [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với các ứng dụng Office trên web](office-web-privacy-controls.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Dữ liệu dịch vụ bắt buộc cho trải nghiệm được kết nối
 
-Dữ liệu dịch vụ bắt buộc là dữ liệu cho phép chúng tôi mang lại các trải nghiệm được kết nối trên nền điện toán đám mây này và giúp làm cho các trải nghiệm này an toàn và hoạt động như mong đợi. Dữ liệu dịch vụ bắt buộc gồm ba loại thông tin sau:
+Khi bạn sử dụng trải nghiệm được kết nối, dữ liệu sẽ được gửi đến và xử lý bởi Microsoft để cung cấp cho bạn trải nghiệm được kết nối. Dữ liệu này rất quan trọng vì thông tin này cho phép chúng tôi cung cấp các trải nghiệm được kết nối dựa trên nền điện toán đám mây. Chúng tôi gọi các dữ liệu này là dữ liệu dịch vụ bắt buộc.
 
-- **Nội dung khách hàng** là nội dung bạn tạo bằng cách sử dụng Office, chẳng hạn như văn bản đã được nhập trong tài liệu Word.
-- **Dữ liệu chức năng** bao gồm thông tin mà trải nghiệm được kết nối cần để thực hiện nhiệm vụ của mình, chẳng hạn như thông tin cấu hình về ứng dụng.
-- **Dữ liệu chẩn đoán dịch vụ** là dữ liệu cần thiết để giữ an toàn cho dịch vụ, cập nhật và hoạt động như mong đợi. Vì dữ liệu này liên quan chặt chẽ đến trải nghiệm được kết nối, nên nó tách biệt với các mức độ dữ liệu chẩn đoán bắt buộc hoặc tùy chọn.
-
-Để giúp bạn hiểu về dữ liệu dịch vụ bắt buộc, sau đây là một kịch bản ví dụ, sử dụng PowerPoint Designer, đây là trải nghiệm được kết nối mà bạn có thể sử dụng khi tạo các trang chiếu cho bản trình bày. PowerPoint Designer giúp cải thiện các trang chiếu của bạn bằng cách tự động tạo các ý tưởng thiết kế mà bạn có thể chọn. Khi bạn dự định đưa nội dung vào một trang chiếu, Trình thiết kế sẽ hoạt động trong nền để khớp nội dung đó với các bố trí được thiết kế chuyên nghiệp.
-
-Dữ liệu dịch vụ bắt buộc được gửi tới Microsoft để cho phép trải nghiệm được kết nối dành cho bạn này có thể bao gồm các thông tin sau:
-
-- *Nội dung khách hàng*, chẳng hạn như văn bản hoặc hình ảnh mà bạn đã thêm vào trang chiếu của mình.
-- *Dữ liệu chức năng*, chẳng hạn như trang chiếu mà bạn đang làm việc và bố trí.
-- *Dữ liệu chẩn đoán dịch vụ*, chẳng hạn như các sự kiện cho chúng tôi biết nếu ý tưởng thiết kế được áp dụng chính xác trang chiếu của bạn và các cuộc gọi dịch vụ đang thực hiện một cách chính xác.
-
-Nếu bạn chọn không cung cấp cho người dùng của bạn loại trải nghiệm được kết nối trong đó có PowerPoint Designer, tính năng sẽ bị tắt và sẽ không có dữ liệu dịch vụ bắt buộc nào được gửi cho chúng tôi.
+Dữ liệu dịch vụ bắt buộc có thể bao gồm các thông tin liên quan đến hoạt động của trải nghiệm được kết nối cần thiết để đảm bảo dịch vụ cơ sở an toàn, luôn được cập nhật và hoạt động như mong đợi. Nếu bạn chọn sử dụng trải nghiệm được kết nối sẽ phân tích nội dung của bạn như Dịch trong Word, văn bản bạn đã nhập và đã chọn để dịch trong tài liệu cũng sẽ được gửi đi và xử lý để cung cấp trải nghiệm được kết nối cho bạn. Dữ liệu dịch vụ bắt buộc cũng có thể bao gồm các thông tin mà trải nghiệm được kết nối cần để thực hiện tác vụ của mình như thông tin về cấu hình của Ứng dụng Office.
 
 Để biết thêm thông tin, hãy xem mục [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md).
 
