@@ -25,7 +25,7 @@ ms.locfileid: "47440259"
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
 > [!NOTE]
-> Để biết danh sách các sản phẩm Office nằm trong thông tin về quyền riêng tư này, hãy xem [Kiểm soát về quyền riêng tư sẵn có cho các sản phẩm Office](products-versions-privacy-controls.md).
+> Để biết danh sách các sản phẩm Office trong phạm vi thông tin về quyền riêng tư này, hãy xem [Các biện pháp kiểm soát quyền riêng tư dành cho các sản phẩm Office](products-versions-privacy-controls.md).
 
 Microsoft cam kết cung cấp cho bạn thông tin và quyền kiểm soát cần thiết để lựa chọn cách thu thập và sử dụng dữ liệu khi bạn dùng Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus).
 
@@ -49,7 +49,7 @@ Các thiết đặt chính sách này có thể được thực hiện bằng c�
 > - Để biết thông tin về cách quản lý kiểm soát quyền riêng tư đối với Office cho Mac, hãy xem mục [Sử dụng tùy chọn để quản lý các biện pháp kiểm soát quyền riêng tư đối với Office cho Mac](mac-privacy-preferences.md).
 > - Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên thiết bị iOS, xem mục [Sử dụng tuỳ chọn để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị chạy iOS](ios-privacy-preferences.md).
 > - Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên thiết bị Android, xem mục [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md).
-> - Để biết thông tin về các biện pháp kiểm soát quyền riêng tư đối với Office cho các ứng dụng web, hãy xem mục [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên các ứng dụng web](office-web-privacy-controls.md).
+> - Để tìm hiểu thông tin về các biện pháp kiểm soát quyền riêng tư đối với các ứng dụng Office cho web, hãy xem mục [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với các ứng dụng Office cho web](office-web-privacy-controls.md).
 
 
 Nếu bạn sử dụng công cụ quản lý chính sách nhóm, tất cả các cài đặt chính sách này đều được đặt trong Cấu hình người dùng\\Chính sách\\Mẫu quản trị\\Microsoft Office 2016\\Quyền riêng tư\\Trung tâm Tin cậy.
@@ -74,7 +74,7 @@ Nếu bạn bật thiết đặt chính sách này, bạn phải chọn mức đ
 
 - Nếu bạn chọn ***Không có lựa chọn nào***, thì không có dữ liệu chẩn đoán nào về phần mềm máy khách Office chạy trên thiết bị người dùng được thu thập và gửi cho Microsoft. Tuy nhiên, tùy chọn này hạn chế đáng kể khả năng phát hiện, chẩn đoán và khắc phục các sự cố của Microsoft mà người dùng của bạn có thể gặp phải khi sử dụng Office.
 
-Nếu bạn vô hiệu hóa hoặc không cấu hình thiết đặt chính sách này, cả dữ liệu chẩn đoán tùy chọn và bắt buộc sẽ được gửi đến Microsoft.
+Nếu bạn vô hiệu hóa hoặc không cấu hình thiết đặt chính sách này, cả dữ liệu chẩn đoán bắt buộc và không bắt buộc đều sẽ được gửi đến Microsoft.
 
 Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các mục sau:
 
