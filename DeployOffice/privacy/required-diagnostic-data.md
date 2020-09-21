@@ -13,23 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 777c0bdb8651a046022e8078820870b67e99f2f7
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: 5772f8b3c105f56833a34f12f7d0e212fc4d55c5
+ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46683288"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47941014"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
-> [!IMPORTANT]
-> Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
-> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
-> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
-> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
->
-> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office trong phạm vi thông tin về quyền riêng tư này, hãy xem [Các biện pháp kiểm soát quyền riêng tư dành cho các sản phẩm Office](products-versions-privacy-controls.md).
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
@@ -42,7 +36,7 @@ Dữ liệu chẩn đoán bắt buộc giúp xác định các sự cố với O
 Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các mục sau:
 
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
-- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 Nếu bạn là người quản trị cho tổ chức, có thể bạn cũng quan tâm đến những vấn đề sau:
 
@@ -237,7 +231,7 @@ Danh mục này chứa các trường sau đây:
 
   - **CV** - Một giá trị xác định mối quan hệ giữa các hoạt động và hoạt động con. Cho phép chúng tôi để xây dựng lại mối quan hệ giữa các hoạt động lồng nhau.
 
-  - **Duration** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm người dùng.
+  - **Duration** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm của người dùng.
 
   - **Result**.**Code** - Một ứng dụng xác định mã để xác định một kết quả nhất định. Cho phép chúng tôi xác định chi tiết cụ thể hơn về một lỗi cụ thể, chẳng hạn như mã lỗi có thể được sử dụng để phân loại và khắc phục các sự cố.
 
@@ -417,7 +411,7 @@ Danh mục này chứa các trường sau đây:
 
   - **SamplingMethod** - Phương pháp được sử dụng để xác định chính sách lấy mẫu. Cho phép chúng tôi hiểu dữ liệu nào đến từ một phiên.
 
-  - **Sequence** - Mã định danh số duy nhất cho phiên. Cho phép sắp xếp các phiên để phân tích các sự cố sau đó có thể đã xảy ra.
+  - **Sequence** - Mã định danh số duy nhất cho phiên. Cho phép sắp xếp các phiên để phân tích các sự cố có thể đã xảy ra.
 
   - **Start** - Thời gian khởi động của phiên quy trình. Cho phép chúng tôi thiết lập khi phiên bắt đầu.
 
@@ -450,7 +444,7 @@ Các trường dữ liệu sau là phổ biến cho tất cả các sự kiện 
 
 - **Activity_DetachedDurationInMicroseconds** - Khoảng thời gian một hoạt động không hoạt động và không thực hiện bất kỳ công việc thực tế nào, nhưng thời gian vẫn được tính vào tổng thời gian của hoạt động.
 
-- **Activity_DurationInMicroseconds** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm người dùng.
+- **Activity_DurationInMicroseconds** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm của người dùng.
 
 - **Activity_Expiration** - Ngày ở định dạng số cho biết thời điểm sự kiện này sẽ ngừng gửi từ máy khách
 
@@ -731,7 +725,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **abFlights** - "NoNL:NoFlights" khi chuyến bay tính năng không được thiết lập. Nếu không thì "holdoutinfo=unknown".
 
-- **AppSessionGuid** - Mã định danh của một phiên ứng dụng cụ thể bắt đầu tại thời điểm tạo quy trình và tồn tại cho đến khi quy trình kết thúc. Nó được định dạng là GUID 128 bit tiêu chuẩn nhưng được cấu tạo gồm 4 phần. Bốn phần theo thứ tự là (1) ID quy trình 32 bit (2) ID phiên 16 bit (3) ID khởi động 16 bit (4) Thời gian tạo quy trình trong UTC 100ns 64 bit
+- **AppSessionGuid** - Mã định danh của một phiên ứng dụng cụ thể bắt đầu tại thời điểm tạo quy trình và tồn tại cho đến khi quy trình kết thúc. Nó được định dạng là GUID 128 bit tiêu chuẩn nhưng được cấu tạo gồm 4 phần. Bốn phần theo thứ tự là (1) ID quy trình 32-bit (2) ID phiên 16-bit (3) ID khởi động 16 bit (4) Thời gian tạo quy trình trong UTC 100ns 64-bit
 
 - **appVersionBuild** - Số phiên bản bản dựng ứng dụng.
 
@@ -784,13 +778,14 @@ Tín hiệu quan trọng được sử dụng để đảm bảo người dùng 
 #### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
 
 Tín hiệu quan trọng được sử dụng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.
-Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+
+Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
 Các trường sau đây sẽ được thu thập:
 
 - **Attempt** - Số lần mà trải nghiệm chạy lần đầu tiên cần thử lại.
 
-- **Error A** - Đối tượng lỗi của OneNote cho biết lỗi trong khi chạy lần đầu tiên.
+- **Error A** - Đối tượng lỗi OneNote cho biết lỗi trong quá trình chạy đầu tiên nếu có.
 
 - **FAllowAddingGuide** - Cho biết OneNote sẽ cho phép tạo sổ tay hay không.
 
@@ -810,7 +805,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeonenotefirstrunfirstrunfororgid"></a>Office.OneNote.FirstRun.FirstRunForOrgId
 
-Tín hiệu quan trọng được sử dụng để đảm bảo người dùng doanh nghiệp mới (AAD/OrgID) đều có thể khởi động thành công và chạy OneNote lần đầu tiên.  Cách Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
+Tín hiệu quan trọng được sử dụng để đảm bảo người dùng doanh nghiệp mới (AAD/OrgID) đều có thể khởi động thành công và chạy OneNote lần đầu tiên.  Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
 - **Attempt** - Số lần mà trải nghiệm chạy lần đầu tiên cần thử lại.
 
@@ -2656,7 +2651,17 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_SilhouetteDuration** - Khoảng thời gian hiển thị của thao tác mở tệp.
 
-- **Data_TimeSplitMeasurements** – Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng, dấu thời gian bắt đầu và thời lượng. 
+- **Data_TimeSplitMeasurements** - Một giá trị chuỗi ghi nhật ký thời lượng dành cho một số lệnh chức năng, theo định dạng kèm thẻ chức năng, dấu thời gian bắt đầu và thời lượng. 
+
+#### <a name="officeandroiddocsuipaywallcontrolskuchoosertoggled"></a>Office.Android.DocsUI.PaywallControl.SkuChooserToggled
+
+Phép đo từ xa mức sử dụng để xem số lần người dùng chuyển đổi giữa các SKU khác nhau trước khi thử mua hàng. Được sử dụng để hiểu về mức sử dụng bộ chọn SKU và tối ưu hóa trong trải nghiệm mua trong ứng dụng trong các phiên bản tương lai.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EventDate** – Dấu thời gian xảy ra sự kiện 
+
+- **SessionID** – GUID để kết nối các sự kiện theo phiên
 
 #### <a name="office_android_earlytelemetry_expansionfilesavailability"></a>Office_Android_EarlyTelemetry_ExpansionFilesAvailability
 
@@ -4206,7 +4211,6 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 - **hostAppRing** - Tổng số người dùng được ứng dụng phân phối tới.
 
 - **properties** - Chứa các thuộc tính siêu dữ liệu bổ sung thu thập từ mỗi sự kiện. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
-  - **ClientTimeStamp** - Dấu thời gian khi sự kiện được ghi lại trong máy khách.
 
 - **publicEventName** - Công chúng thấy tên sự kiện.  
 
@@ -5090,6 +5094,57 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_FirstRunPanelName** - Tên của bảng điều khiển bắt đầu trải nghiệm
 
+#### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
+
+Phép đo từ xa mức sử dụng quan trọng này được thu thập khi điều khiển Paywall được hiển thị cho người dùng và được sử dụng để hiểu trải nghiệm mua trong ứng dụng cho người dùng và tối ưu hóa điều tương tự cho các phiên bản tương lai.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Paywall được hiển thị Nút/Dòng này. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu"
+
+- **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
+
+#### <a name="officeiospaywallpaywallstats"></a>Office.iOS.Paywall.Paywall.Stats
+
+Siêu dữ liệu theo phiên này được thu thập khi giao diện người dùng Paywall được hiển thị cho người dùng, thời gian tương tác và liệu bạn đã tìm cách mua hàng và thành công hay thất bại.  Dữ liệu được sử dụng để hiểu mức sử dụng và tình trạng của toàn bộ trải nghiệm thanh toán và gỡ lỗi, tối ưu hóa và khắc phục trải nghiệm mua trong ứng dụng trong các phiên bản tương lai.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Paywall được hiển thị Nút/Dòng này. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu".
+
+- **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
+
+- **status** - Chuỗi – Trạng thái thoát của Paywall. Như "đã khởi tạo", "Thanhtoánxong", "cungcấpThấtbại"
+
+- **userDuration** - Kép – Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho Paywall
+
+#### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
+
+Sự kiện này thu thập các tính năng và ứng dụng người dùng mở rộng từ "Xem Thêm Lợi Ích” và khoảng thời gian đã dành ra.  Dữ liệu được sử dụng để hiểu mức sử dụng tính năng "Xem mọi lợi ích" và tối ưu hóa hơn nữa trải nghiệm trong các phiên bản tương lai.
+
+Các trường sau đây sẽ được thu thập:
+
+- **appsExpanded** - Chuỗi - Các lợi ích đã được bung rộng cho danh sách các dịch vụ/ứng dụng phân tách bằng dấu phẩy này.
+
+- **productId** - Chuỗi - Người dùng đang xem thêm lợi ích được cung cấp cho App Store ID của sản phẩm này
+
+- **userDuration** - Kép - Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho Màn hình Lợi ích.
+
+#### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
+
+Phép đo từ xa mức sử dụng này được thu thập để xem cách người dùng nhập vào bộ chọn SKU, người dùng đã dành bao nhiêu thời gian vào màn hình Bộ chọn SKU và lý do tại sao họ thoát Bộ chọn SKU.  Dữ liệu được sử dụng để hiểu về mức sử dụng bộ chọn SKU và tối ưu hóa trong trải nghiệm mua trong ứng dụng trong các phiên bản tương lai.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Paywall được hiển thị Nút/Dòng này. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu".
+
+- **exitReason** - Chuỗi – Nguyên nhân thoát của Bộ chọn SKU. Như "NútMua", “NútĐóng
+
+- **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
+
+- **userDuration** - Kép - Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho bộ chọn SKU
+
+
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
 
 Chúng tôi ghi nhật ký khi người dùng đang ở trong một ứng dụng có tải Thẻ Cá nhân với dự đoán rằng người dùng đó sẽ mở Thẻ Cá nhân Trực tiếp.  Dữ liệu dùng để xác định xem thẻ có được tải đúng hay không. 
@@ -5541,7 +5596,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
 
-Sự kiện được thu thập cho ứng dụng Office dành cho Android. Ghi lại thời điểm thao tác mở, đóng hoặc lưu tệp PDF diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin hoạt động của tệp PDF. Sự kiện giúp chúng tôi hỗ trợ thao tác mở, đóng và lưu tệp PDF hiệu quả như mong đợi đồng thời cải thiện hiệu suất hoạt động của tệp PDF.
+Sự kiện được thu thập cho ứng dụng Office dành cho Android. Ghi lại thời điểm thao tác mở, đóng hoặc lưu một tệp .pdf được thực hiện và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin tháo tác của tệp .pdf. Sự kiện giúp chúng tôi hỗ trợ thao tác mở, đóng và lưu tệp .pdf diễn ra như mong đợi và cải thiện hiệu suất của thao tác tệp .pdf.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5584,8 +5639,6 @@ Các trường sau đây sẽ được thu thập:
 Sự kiện được thu thập cho ứng dụng Office dành cho iOS. Ghi lại thời điểm thao tác mở, đóng hoặc lưu một tệp .pdf được thực hiện và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin tháo tác của tệp .pdf. Sự kiện giúp chúng tôi hỗ trợ thao tác mở, đóng và lưu tệp .pdf diễn ra như mong đợi và cải thiện hiệu suất của thao tác tệp .pdf. 
 
 - **Data_Doc_FileOpSessionID** - ID duy nhất của một Phiên Tài liệu 
-
-- **Data_Doc_URLHash** - Một GUID của url tệp 
 
 - **Data_ErrorCode** – sự cố trong trường hợp không thể mở/tải xuống tệp / hủy bỏ tải xuống 
 
@@ -8139,7 +8192,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="settings_action"></a>settings_action
 
-Cho phép chúng tôi phát hiện các trường hợp có thể gây tác động tiêu cực đến khả năng đặt cấu hình thiết đặt ứng dụng của bạn, như cài đặt thông báo, tài khoản email chính và đặt cấu hình chữ ký thư của bạn.
+Sự kiện này thu thập thông tin cấu hình trong thiết đặt. Dữ liệu cho phép chúng tôi phát hiện các trường hợp có thể gây tác động tiêu cực đến khả năng đặt cấu hình thiết đặt ứng dụng của người dùng, như cài đặt thông báo, tài khoản email chính và đặt cấu hình chữ ký thư.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -8149,49 +8202,44 @@ Các trường sau đây sẽ được thu thập:
 
 - **auth_type** – Loại xác thực đang được tài khoản sử dụng, vì vậy, chúng tôi sẽ hiểu được chúng tôi đang dùng lớp đồng bộ phụ trợ nào để giúp chẩn đoán sự cố 
 
-- **auth_type** – cho biết loại xác thực phụ trợ cho phép chúng tôi biết khi có sự cố với một loại tài khoản cụ thể
-
-- **badge_count_state** – cho biết loại số lượng thông báo người dùng yêu cầu, tức là không có thông báo, chỉ ưu tiên hộp thư đến, v.v 
-
 - **changed_folder** – Chụp lại xem thư mục đã được thay đổi để giúp chúng tôi chẩn đoán sự cố hay chưa. 
-
-- **changed_folder** – xác định liệu hành động này đã được lưu trữ, lên lịch hay hành động khác hay chưa.
 
 - **delete_scope** – Trong quá trình xóa tài khoản, liệu bạn đã xóa tài khoản khỏi thiết bị này hay từ tất cả các thiết bị có Outlook hay chưa.  
 
-- **delete_scope** – theo dõi xem hành động này có liên quan đến thao tác xóa người khác chỉ trên thiết bị này hoặc trên tất cả các thiết bị (nếu có) hay không. 
-
 - **enabled_state** – Liệu cài đặt trả lời tự động, lưu liên hệ và chặn các hình ảnh bên ngoài của bạn có được đặt cấu hình đúng cách hay không  
 
-- **enabled_state** – liệu trạng thái liên quan đến hành động đã được bật hay chưa
+- **notification_action** – Để kiểm tra xem liệu bạn đã đặt cấu hình bất kỳ hành động thông báo nào cho việc đồng bộ email hay chưa để giúp chúng tôi đảm bảo cài đặt này hoạt động thành công 
 
-- **in_app_language** - ngôn ngữ đã chọn trong ứng dụng, kiểu chuỗi (mặc định, en-US, fa, ru,...)  
+- **notification_action_number** - Để kiểm tra xem liệu hành động thông báo của bạn (hành động một hoặc hành động hai) được đặt cấu hình đúng cách hay chưa
 
-- **notification_state** – cho biết loại số lượng thông báo mà người dùng yêu cầu, tức là không thông báo, chỉ ưu tiên hộp thư đến, v.v
+- **server_type** – Tương tự như auth_type, cho chúng tôi biết loại tài khoản bạn sở hữu để giúp chúng tôi chẩn đoán sự cố tốt hơn.  Ví dụ: Office365, Gmail, Outlook
 
-- **server_type** – Tương tự như auth_type, cho chúng tôi biết loại tài khoản bạn sở hữu để giúp chúng tôi chẩn đoán sự cố tốt hơn. Ví dụ** – Office365, Gmail, Outlook
+- **setting_properties** – Theo dõi các thuộc tính liên quan đến thao tác thiết lập hành động chi tiết bên dưới: 
+   - **alternate_app_icon_setting** - biểu tượng ứng dụng thay thế được chọn (ánh, tối)
+   - **auth_type** – cho biết loại xác thực phụ trợ cho phép chúng tôi biết khi có sự cố với một loại tài khoản cụ thể
+   - **badge_count_state** – cho biết loại số lượng thông báo người dùng yêu cầu, tức là không có thông báo, chỉ ưu tiên hộp thư đến, v.v. 
+   - **changed_folder** – xác định liệu hành động này đã được lưu trữ, lên lịch hay hành động khác hay chưa.
+   - **delete_scope** – theo dõi xem hành động này có liên quan đến thao tác xóa người khác chỉ trên thiết bị này hoặc trên tất cả các thiết bị (nếu có) hay không. 
+  - **enabled_state** – liệu trạng thái liên quan đến hành động đã được bật hay chưa
+  - **in_app_language** - ngôn ngữ đã chọn trong ứng dụng, kiểu chuỗi (mặc định, en-US, fa, ru,...)
+  - **notification_action_setting** – cho biết thông tin về cài đặt hành động thông báo liên quan đến hành động này (nếu có)
+    - **notification_action** – cho biết người dùng đã tìm cách thực hiện điều gì, tức là: gắn cờ, xóa, lưu trữ, thông tin này cho phép chúng tôi xác định hành động thư gì người dùng muốn thực hiện trên thông báo và liệu hành động có thất bại hay không. 
+    - **notification_action_number** - cho biết số hành động nào (hai trong ba hành động tùy chỉnh được) đã được gán hành động thông báo, tức là hành động một, hành động hai. Điều này cho phép chúng tôi xác định xem liệu có sự cố nào với một hành động cụ thể hay không.
+   - **notification_state** – cho biết loại số lượng thông báo mà người dùng yêu cầu, tức là không thông báo, chỉ ưu tiên hộp thư đến, v.v.
+   - **server_type** – cho biết loại máy chủ phụ trợ cho phép chúng tôi biết khi có sự cố với một loại máy chủ cụ thể
+   - **source** – cho biết nguồn thông báo (nếu có) từ cài đặt hoặc cài đặt không làm phiền
+   - **swipe_setting** – cho biết thông tin về cài đặt trượt nhanh liên quan đến hành động này (nếu có)
+     - **swipe_action** – cho biết người dùng đã tìm cách thực hiện điều gì, tức là: gắn cờ, xóa, lưu trữ, thông tin này cho phép chúng tôi xác định người dùng muốn hành động gì và liệu hành động có thất bại hay không. 
+     - **swipe_direction** – xác định cách người dùng thiết lập hướng trượt nhanh, tức là từ trái sang phải hay phải sang trái. Điều này cho phép chúng tôi xác định xem liệu có sự cố nào với một hướng trượt nhanh cụ thể hay không.
+   - **ui_mode_setting** – chế độ giao diện người dùng được chọn (tối, sáng, mặc định theo hệ thống, pin yếu, v.v)
+   - **signature_setting** – cho biết liệu cài đặt được áp dụng cho tất cả tài khoản hay tài khoản riêng lẻ
 
-- **server_type** – cho biết loại máy chủ phụ trợ cho phép chúng tôi biết khi có sự cố với một loại máy chủ cụ thể
-
-- **setting_properties** – Theo dõi các thuộc tính liên quan đến thao tác thiết lập hành động 
-
-- **signature_setting** – cho biết liệu cài đặt được áp dụng cho tất cả tài khoản hay tài khoản riêng lẻ
-
-- **source** – cho biết nguồn thông báo (nếu có) từ cài đặt hoặc cài đặt không làm phiền
-
-- **state_changed_to** – Để kiểm tra xem cài đặt bật/tắt hộp thư ưu tiên của bạn có được đặt cấu hình đúng cách hay không 
+- **state_changed_to** – Để kiểm tra xem cài đặt Bật/Tắt hộp thư ưu tiên của bạn có được đặt cấu hình đúng cách hay không 
 
 - **swipe_action** – Để kiểm tra xem liệu bạn đã đặt cấu hình bất kỳ hành động trượt nhanh nào cho việc đồng bộ email hay chưa để giúp chúng tôi đảm bảo cài đặt này hoạt động thành công 
 
-- **swipe_action** – cho biết người dùng đã tìm cách thực hiện điều gì, tức là: gắn cờ, xóa, lưu trữ, thông tin này cho phép chúng tôi xác định người dùng muốn hành động gì và liệu hành động có thất bại hay không. 
-
 - **swipe_direction** – Để kiểm tra xem hướng trượt nhanh của bạn (trái hay phải) có được đặt cấu hình chính xác hay không
 
-- **swipe_direction** – xác định cách người dùng thiết lập hướng trượt nhanh, tức là từ trái sang phải hay phải sang trái. Điều này cho phép chúng tôi xác định xem liệu có sự cố nào với một hướng trượt nhanh cụ thể hay không.
-
-- **swipe_setting** – cho biết thông tin về cài đặt trượt nhanh liên quan đến hành động này (nếu có)
-
-- **ui_mode_setting** – chế độ giao diện người dùng được chọn (tối, sáng, mặc định theo hệ thống, pin yếu, v.v)
 
 #### <a name="sidebar_action"></a>sidebar_action
 
@@ -10961,6 +11009,24 @@ Các trường sau đây sẽ được thu thập:
 
 - **view_duration** - Cho chúng tôi biết phải mất bao lâu để hiển thị các cấu phần lịch giao diện người dùng khác nhau để giúp chúng tôi phát hiện các sự cố về hiệu năng tác động đến trải nghiệm lịch của bạn
 
+#### <a name="contact_action"></a>contact_action
+
+Sự kiện này được kích hoạt trên các hành động khác nhau trên liên hệ - xem, cập nhật và xóa liên hệ cũng như xem danh sách liên hệ. Nó được sử dụng để xác định xem có bất kỳ hồi quy hiệu suất nào liên quan đến các liên hệ hay không.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **accounts_with_filters** - số lượng tài khoản có áp dụng bộ lọc cho danh sách liên hệ
+
+- **action** - hành động đã được thực hiện, ví dụ: xem một liên hệ
+ 
+- **duration_initial_view_load** - khoảng thời gian từ khi mở dạng xem đến khi bước đầu tải danh sách liên hệ
+
+- **duration_show_contacts** - khoảng thời gian từ khi mở dạng xem đến hiển thị các liên hệ trong danh sách liên hệ
+ 
+- **total_contacts** - số liên hệ không áp dụng bộ lọc
+ 
+- **total_filtered_contacts** số liên hệ có áp dụng bộ lọc
+
 #### <a name="conversation_load_time"></a>conversation_load_time
 
 Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố mà ở đó có tác động rõ rệt đến việc tải các cuộc hội thoại trên email của bạn để đảm bảo email của bạn được tải như dự kiến.
@@ -11542,6 +11608,16 @@ Các trường sau đây sẽ được thu thập:
 
 - **TypeId** - GUID cho giao diện mà phương thức này được gọi
 
+#### <a name="officeiospaywallfailedscreenretrybuttontap"></a>Office.iOS.Paywall.FailedScreen.RetryButtonTap
+
+Phép đo từ xa mức sử dụng này được thu thập để biết thời gian Mua/Cung cấp/Kích hoạt không thành công, và người dùng gõ nhẹ nút "Thử lại".  Được sử dụng để khắc phục sự cố về các tình huống lỗi khi mua dẫn đến việc thử lại và cải thiện độ tin cậy của quy trình.
+
+Các trường sau đây sẽ được thu thập:
+
+- **failureReason** - Chuỗi – Cho biết sự cố mà người dùng đang thử lại. Như “cungcấpThấtbại”, “muaThấtbại”, “kíchhoạtThấtbại”.
+
+- **productId** - Chuỗi - Người dùng đang xem thêm lợi ích được thử lại yêu cầu không thành công
+
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -11664,13 +11740,23 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
 
-Sự kiện này được kích hoạt khi Dừng phiên bản thử nghiệm. Kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.
+Sự kiện này biểu thị người dùng đã ngừng phiên bản thử nghiệm. Kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.
 
 Các trường sau đây sẽ được thu thập:
+
+- **ConnectionCreationTime** thực gian để tạo kết nối bên dịch vụ.
+
+- **CountDownAlertTime** – Thời gian để hiển thị cảnh báo đếm ngược.
+
+- **CountdownInitTime–** Thời gian từ khi hoàn thành tải trình chiếu đến khi bắt đầu đếm ngược.
 
 - **CritiqueSummary**- Tóm tắt về tất cả những phê bình mà người dùng thấy với số lượng của họ.
 
 - **ExitEventCode** – Mã để xác định trường hợp người dùng thoát khỏi phiên duyệt, dù là trường hợp sự cố hay thoát thành công. 
+
+- **FRETime** - Thời gian từ khi màn hình trải nghiệm sử dụng lần đầu bắt đầu hiển thị cho đến khi người dùng loại bỏ nó. 
+
+- **MicrophonePermissionTime** - Thời gian để hiển thị cảnh báo quyền đối với micrô cho đến khi người dùng chọn một trong các tùy chọn.
 
 - **PauseRehearsingCount** - Đếm số lần người dùng đã bấm vào ngừng thử nghiệm.
 
@@ -12404,6 +12490,25 @@ Các trường sau đây sẽ được thu thập:
 
 - **UriScheme** - lược đồ URL
 
+#### <a name="officeandroidauthaceerrors"></a>Office.Android.AuthACEErrors
+
+Sự kiện này sử dụng Tài khoản Microsoft (MSA) để xác định người dùng nào đang tìm cách đăng nhập vào ứng dụng và trong khi đó dữ liệu đo từ xa nào được thảo luận sẽ được kích hoạt như là một phần của một nỗ lực không thành công.  
+
+Sự kiện này giúp phân tích phân bố lỗi đăng nhập, điều này sẽ giúp tìm hiểu lý do đằng sau việc kết thúc tiến trình đăng nhập MSA không thành công.
+
+Các trường sau đây sẽ được thu thập:
+
+- **ExceptionsName** - cho biết các lớp ngoại lệ đối với các thẻ ngoại lệ xảy ra trong tiến trình đăng nhập tài khoản Microsoft.
+
+- **ExceptionsTag** - cho biết trường hợp ngoại lệ dòng vào nào có mặt trong truy vấn hợp đang xảy ra đối với dòng đăng nhập MSA.
+
+- **IDCRLACEErrorCode** - Đưa ra mã lỗi đã xảy ra trong tiến trình đăng nhập MSA. Các mã lỗi khác nhau được nêu tại %SRCROOT%\identity\coreapi\public\IdentityData.h
+
+- **IDCRLAuthenticationStatusErrorCode** - Cho biết mã lỗi cho trạng thái không hợp lệ của kết quả Xác thực đến từ Tài khoản Microsoft (MSA).
+
+- **IDCRLUserInteractionMissingError** - Cho biết liệu tiến trình đăng nhập Tài khoản Microsoft (MSA) được thu hồi với cờ showUI là false gây ra sự cố.
+
+
 #### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
 
 Phép đo từ xa Lỗi Chuyển đổi nhị phân cho In và Chia sẻ dưới dạng PDF.  Microsoft dùng phép đo từ xa này để xác định các điểm xảy ra sự cố trong suốt quá trình chuyển đổi BCS trong Word, Excel hoặc PowerPoint.
@@ -12495,6 +12600,37 @@ Các trường sau đây sẽ được thu thập:
 - **Data_ExceptionType** - Một trường văn bản tùy chọn biểu thị tên của ngoại lệ bị loại khỏi mã nguồn.
 
 - **Data_MethodName** - Văn bản biểu thị tên phương pháp trong mã nguồn có lỗi.
+
+#### <a name="office_android_earlytelemetry_extractionerror"></a>Office_Android_EarlyTelemetry_ExtractionError
+
+Để giảm kích cỡ của các ứng dụng Office Android, chúng tôi áp dụng nén đối với các tài nguyên trong gói cuối cùng. Trong thời gian chạy, trước tiên, chúng tôi trích xuất các tài nguyên này trước khi sử dụng. Đôi khi, có lỗi ngoài dự kiến trong khi thực hiện trích xuất, dẫn đến sự cố ứng dụng. 
+
+Thông qua sự kiện này, chúng tôi đang thu thập một số thông tin chẩn đoán liên quan đến việc trích xuất, chẳng hạn như tên của tài nguyên đang được trích xuất, đường dẫn nơi tài nguyên được trích xuất v.v., đã trích xuất, dung lượng đĩa trống sẵn dùng v.v. Dữ liệu này chỉ được thu thập khi có lỗi trích xuất.
+
+Chúng tôi sử dụng dữ liệu này để hiểu nguyên nhân gây ra sự cố trích xuất, và cải thiện trải nghiệm người dùng trong các ứng dụng của chúng tôi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ArchiveName** - Tên của tài nguyên đang được trích xuất.
+
+- **Data_ArchivePath con đường** - Đường dẫn nơi nguồn tài nguyên tạm thời được lưu trữ.
+
+- **Data_ArchiveSizeKB** - Kích cỡ của tài nguyên đang được trích xuất.
+ 
+- **Data_ClassName** - Tên tệp trong mã nguồn nơi gặp lỗi.
+
+- **Data_ErrorDetail** - Văn bản mô tả chi tiết hơn về nguyên nhân gây ra lỗi, chẳng hạn như mã lỗi v.v.
+
+- **Data_ErrorMessage** - Văn bản mô tả loại lỗi gặp phải.
+
+- **Data_ExtractionDestinationPath** - Đường dẫn nơi tài nguyên được lưu sau khi trích xuất.
+
+- **Data_FreeDiskSpaceMB** - Dung lượng đĩa trống sẵn dùng trên thiết bị được đo bằng Mega Byte. 
+
+- **Data_ItemToExtract** - Tên của tài nguyên đang được trích xuất.
+
+- **Data_MethodName** - Tên phương pháp trong mã nguồn nơi gặp lỗi.
+
 
 #### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
 
