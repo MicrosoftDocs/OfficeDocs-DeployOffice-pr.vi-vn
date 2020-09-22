@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
+ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440511"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47941050"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -426,6 +426,461 @@ Các trường sau đây sẽ được thu thập:
   - **Wamapi** - Xác định WAM API được gọi
 
   - **Wamtelemetrybatch** - Hiện chưa sử dụng. Trong tương lai, cho phép cấu phần WAM gửi thông tin bổ sung về sự kiện xác thực.
+
+
+### <a name="officematsoneauthactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
+
+Hệ thống phép đo từ xa xác thực Microsoft (Microsoft Auth Telemetry System - MATS) được thu thập khi Office cố gắng lấy mã thông báo xác thực, bằng cách âm thầm hoặc thông qua nhắc nhở. Khi nỗ lực tiếp nhận thất bại, thông tin lỗi sẽ được bao gồm. Các sự kiện này giúp người dùng của chúng tôi không phải nhập trạng thái xác thực lỗi bằng cách:
+
+1) Xác định xem máy khách có thể nhận được mã thông báo xác thực từ dịch vụ thành công hay đã nhập trạng thái xác thực bị lỗi.
+
+2) Đánh giá xem các thay đổi đã xảy ra trên máy khách hoặc dịch vụ hay không, cho dù chúng có dẫn đến quá trình hồi quy quan trọng trong trải nghiệm xác thực và độ tin cậy của người dùng
+
+3) Khi xảy ra lỗi, các tín hiệu này phát ra các mã lỗi quan trọng từ cấu phần chịu trách nhiệm (mã máy khách Office, thư viện xác thực hoặc dịch vụ ủy quyền) có thể được sử dụng để phân loại, chẩn đoán và giảm thiểu
+
+4) Các tín hiệu này cung cấp tính sẵn sàng và trạng thái màn hình khởi chạy cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Accounttype** - Loại tài khoản dùng cho sự kiện xác thực này, ví dụ: người tiêu dùng hoặc tổ chức.
+
+- **Actionname** - Tên thân thiện cho sự kiện này nếu được cung cấp.
+
+- **Actiontype** - Chỉ định loại thư viện xác thực được sử dụng.
+
+- **Appaudience** - Bản dựng ứng dụng dành cho mục đích sử dụng nội bộ hay bên ngoài
+
+- **Appforcedprompt** - Ứng dụng có ghi đè lên bộ đệm ẩn và buộc lời nhắc được hiển thị hay không
+
+- **Appname** - Tên ứng dụng thực hiện xác thực
+
+- **Appver** - Phiên bản ứng dụng thực hiện xác thực
+
+- **Askedforcreds** - Ứng dụng yêu cầu người dùng nhập thông tin đăng nhập cho hành động này hay không
+
+- **Authoutcome** - Nỗ lực xác thực thành công, không thành công hay đã bị hủy
+
+- **Blockingprompt** - Ứng dụng có thực hiện loại bỏ lời nhắc yêu cầu tương tác người dùng hay không
+
+- **Correlationid** - Mã định danh dùng để kết hợp thông tin liên quan đến sự kiện riêng lẻ này với dữ liệu dịch vụ
+
+- **Count** - Tổng số hành động tổng hợp được báo cáo trong một sự kiện dữ liệu này.
+
+- **Devicenetworkstate** - Thiết bị có được kết nối với Internet không.
+
+- **Deviceprofiletelemetryid** - ID thiết bị ẩn danh dùng để đo lường trải nghiệm và độ tin cậy của quá trình xác thực trên toàn thiết bị.
+
+- **Duration** - Khoảng thời gian diễn ra quá trình xác thực
+
+- **duration_max** - Khoảng thời gian tối đa của một sự kiện tổng hợp bất kỳ
+
+- **duration_min** - Khoảng thời gian tối thiểu của một sự kiện tổng hợp bất kỳ
+
+- **duration_sum** - Tổng thời gian của tất cả sự kiện tổng hợp
+
+- **endtime** - Thời điểm sự kiện xác thực kết thúc
+
+- **error** - Mã lỗi nếu xác thực không thành công
+
+- **errordescription** - Mô tả ngắn về lỗi
+
+- **errorsource** - Lỗi đến từ dịch vụ, thư viện xác thực hay ứng dụng
+
+- **eventtype** - Sự kiện này báo cáo một điểm dữ liệu xác thực hay một sự kiện lỗi chất lượng dữ liệu. Dùng để đo lường chất lượng dữ liệu.
+
+- **from_cache** - Boolean cho biết bản ghi từ bộ đệm ẩn WAM chính hoặc từ phần bổ trợ
+
+- **hasadaltelemetry** - Cho biết Thư viện xác thực Azure Active Directory (ADAL) có cung cấp dữ liệu từ xa cho sự kiện này hay không.
+
+- **Identityservice** - Tài khoản dịch vụ Microsoft (MSA) hoặc dịch vụ Azure Active Directory (AAD) có bị thu hồi hay không
+
+- **Interactiveauthcontainer** - Loại lời nhắc được hiển thị
+
+- **Issilent** - Đây là lời nhắc sẽ hiển thị hay đây là sự kiện xác thực tự hành (chạy nền). 
+
+- **Microsoft_ADAL_adal_version** - Phiên bản thư viện xác thực Azure Active Directory (ADAL)
+
+- **Microsoft_ADAL_api_error_code** - Mã lỗi được phát bởi thư viện xác thực cho nỗ lực xác thực này
+
+- **Microsoft_ADAL_api_id** - API được thu hồi cho nỗ lực xác thực này
+
+- **Microsoft_ADAL_application_name** - Tên ứng dụng/quy trình bằng ADAL.
+
+- **Microsoft_ADAL_application_version** - Phiên bản ứng dụng bằng ADAL.
+
+- **Microsoft_ADAL_authority** - URL xác thực Azure Active Directory chịu trách nhiệm xác thực người dùng
+
+- **Microsoft_ADAL_authority_type** - Người tiêu dùng/Thỏa thuận dịch vụ Microsoft (MSA) so với Azure Active Directory (AAD) tổ chức; hiện luôn là AAD
+
+- **Microsoft_ADAL_authority_validation_status** - Cho biết liệu việc xác thực đã hoàn thành ở bên dịch vụ hay chưa
+
+- **Microsoft_ADAL_broker_app** - Cho biết liệu ADAL có sử dụng một trình cung cấp để xác thực hay không
+
+- **Microsoft_ADAL_broker_app_used** - Cho biết tên của trình cung cấp (ví dụ: Quản lý tài khoản Windows)
+
+- **Microsoft_ADAL_broker_version** - Cho biết phiên bản của trình cung cấp nếu được sử dụng
+
+- **Microsoft_ADAL_cache_event_count** - Số lượng sự kiện bộ đệm ẩn mà ADAL đã thực hiện trong khi truy xuất mã thông báo
+
+- **Microsoft_ADAL_cache_event_count_max** - Nếu tổng hợp tín hiệu này thì các sự kiện bộ đệm ẩn của bất kỳ một sự kiện tổng hợp nào là tối đa.
+
+- **Microsoft_ADAL_cache_event_count_min** - Nếu tổng hợp tín hiệu này thì các sự kiện bộ đệm ẩn của bất kỳ một sự kiện tổng hợp nào là tối thiểu.
+
+- **Microsoft_ADAL_cache_event_count_sum** - Nếu tổng hợp tín hiệu này thì các sự kiện bộ đệm ẩn của bất kỳ một sự kiện tổng hợp nào là tổng cộng.
+
+- **Microsoft_ADAL_cache_read_count** - Số lần API đọc từ bộ đệm đĩa. Hiện diện nếu có ít nhất một lần đọc
+
+- **Microsoft_ADAL_cache_read_count** - Số lần đọc bộ đệm đĩa không thành công. Hiện diện nếu có ít nhất một lần không thành công
+
+- **Microsoft_ADAL_cache_read_last_error** - Mã lỗi ADAL. Hiện diện nếu có ít nhất một lần đọc không thành công
+
+- **Microsoft_ADAL_cache_read_last_system_error** - Mã lỗi hệ thống.  Hiện diện nếu có ít nhất một lần đọc không thành công
+
+- **Microsoft_ADAL_cache_write_count** - Số lần API ghi cho bộ đệm đĩa. Hiện diện nếu có ít nhất một lần ghi
+
+- **Microsoft_ADAL_cache_write_error_count** - Số lần ghi bộ đệm đĩa không thành công. Hiện diện nếu có ít nhất một lần không thành công
+
+- **Microsoft_ADAL_cache_write_last_error** - Mã lỗi ADAL. Hiện diện nếu có ít nhất một lần ghi không thành công
+
+- **Microsoft_ADAL_cache_write_last_system_error** - Mã lỗi hệ thống. Hiện diện nếu có ít nhất một lần ghi không thành công
+
+- **Microsoft_ADAL_client_id** - ID ứng dụng Azure Active Directory dạng băm
+
+- **Microsoft_ADAL_device_id** - ID thiết bị cục bộ tạo bởi ADAL.
+
+- **Microsoft_ADAL_error_domain** - Tên miền/cấu phần đã tạo mã lỗi.
+
+- **Microsoft_ADAL_error_protocol_code** - Mã lỗi giao thức OAuth do dịch vụ trả về và được ADAL ghi lại.
+
+- **Microsoft_ADAL_extended_expires_on_setting** - Cho biết việc mã thông báo có một thời hạn mở rộng là đúng hay sai.
+
+- **Microsoft_ADAL_http_event_count** - Số yêu cầu HTTP tạo bởi ADAL.
+
+- **Microsoft_ADAL_idp** - Nhà cung cấp danh tính (IDP) được ADAL sử dụng.
+
+- **Microsoft_ADAL_network_event_count** - Số lần gọi mạng do ADAL thực hiện
+
+- **Microsoft_ADAL_http_event_count_max** - Nếu tổng hợp tín hiệu này thì số lần gọi http bởi ADAL là tối đa
+
+- **Microsoft_ADAL_http_event_count_min** - Nếu tổng hợp tín hiệu này thì số lần gọi http bởi ADAL là tối thiểu
+
+- **Microsoft_ADAL_http_event_count_sum** - Nếu tổng hợp tín hiệu này thì số lần gọi http bởi ADAL là tổng cộng
+
+- **Microsoft_ADAL_network_event_count_max** - Nếu tổng hợp tín hiệu này thì số lần gọi mạng bởi ADAL của bất kỳ sự kiện nào đã được tổng hợp là tối đa
+
+- **Microsoft_ADAL_network_event_count_min** - Nếu tổng hợp tín hiệu này thì số lần gọi mạng bởi ADAL của bất kỳ sự kiện nào đã được tổng hợp là tối thiểu
+
+- **Microsoft_ADAL_network_event_count_sum** - Nếu tổng hợp tín hiệu này thì số lần gọi mạng bởi ADAL của bất kỳ sự kiện nào đã được tổng hợp là tổng cộng.
+
+- **Microsoft_ADAL_is_silent_ui** - Việc giao diện người dùng được hiển thị (lời nhắc) bằng ADAL là đúng hay sai
+
+- **Microsoft_ADAL_is_successfull** - Việc API ADAL đã thành công là đúng hay sai (MacOS)
+
+- **Microsoft_ADAL_is_successfull** - Việc API ADAL đã thành công là đúng hay sai
+
+- **Microsoft_ADAL_logging_pii_enabled** - Cho biết việc bật chế độ ghi nhật ký ADAL đầy đủ là đúng hay sai. Dữ liệu này chỉ được ghi vào nhật ký cục bộ, không được phát trong dữ liệu từ xa.
+
+- **Microsoft_ADAL_ntlm** - Cho biết việc xác thực cơ bản sử dụng ADAL (NTLM) là đúng hay sai.
+
+- **Microsoft_ADAL_oauth_error_code** - Mã lỗi giao thức OAuth trả về bởi dịch vụ
+
+- **Microsoft_ADAL_prompt_behavior** - Đăng nhập hoặc không có tham số mạng nào được chuyển đến dịch vụ để chỉ định nếu giao diện người dùng có thể được hiển thị
+
+- **Microsoft_ADAL_request_id** - GUID giao dịch cho yêu cầu do ADAL phát cho dịch vụ
+
+- **Microsoft_ADAL_response_code** - Mã phản hồi mạng từ dịch vụ
+
+- **Microsoft_ADAL_response_time** - Khoảng thời gian dịch vụ trở về ADAL
+
+- **Microsoft_ADAL_response_time_max** - Nếu tổng hợp tín hiệu thì thời gian để ADAL trả về từ API trong bất kỳ sự kiện nào đã được tổng hợp là tối đa
+
+- **Microsoft_ADAL_response_time_min** - Nếu tổng hợp tín hiệu thì thời gian để ADAL trả về từ API trong bất kỳ sự kiện nào đã được tổng hợp là tối thiểu
+
+- **Microsoft_ADAL_response_time_sum** - Nếu tổng hợp tín hiệu thì thời gian để ADAL trả về từ API trong bất kỳ sự kiện nào đã được tổng hợp là tổng cộng
+
+- **Microsoft_ADAL_rt_age** - Tuổi của mã thông báo làm mới
+
+- **Microsoft_ADAL_server_error_code** - Mã lỗi do máy chủ trả về
+
+- **Microsoft_ADAL_server_sub_error_code** - Mã lỗi phụ do máy chủ trả về để giúp định hướng tại sao yêu cầu không thành công
+
+- **Microsoft_ADAL_spe_info** - Cho biết việc người dùng đã sử dụng vòng cập nhật nội bộ của Secure Production Enterprise (chỉ dành cho nhân viên của Microsoft) là đúng hay sai
+
+- **Microsoft_ADAL_spe_ring** - Cho biết việc người dùng đã sử dụng vòng cập nhật nội bộ của Secure Production Enterprise (chỉ dành cho nhân viên của Microsoft) là đúng hay sai
+
+- **Microsoft_ADAL_start_time** - Thời gian thực hiện cuộc gọi API ADAL
+
+- **Microsoft_ADAL_status** - Trạng thái thành công/thất bại về việc gọi ADAL tổng quan
+
+- **Microsoft_ADAL_stop_time** - Thời gian trả về cuộc gọi API ADAL
+
+- **Microsoft_ADAL_telemetry_pii_enabled** - Cho biết việc bật chế độ dữ liệu từ xa ADAL đầy đủ là đúng hay sai. Tên này là một cách gọi sai, vì không có phát PII/EUII
+
+- **Microsoft_ADAL_tenant_id** - GUID xác định đối tượng thuê mà người dùng đã được xác thực thuộc về
+
+- **Microsoft_ADAL_token_acquisition_from_context** - Mô tả hành vi ADAL dựa trên mã thông báo trong ngữ cảnh xác thực
+
+- **Microsoft_ADAL_token_frt_status** - Trạng thái của mã thông báo làm mới: đã thử, không cần thiết, không tìm thấy hay bị xóa.
+
+- **Microsoft_ADAL_token_mrrt_status** - Trạng thái của mã thông báo làm mới đa tài nguyên: đã thử, không cần thiết, không tìm thấy hay bị xóa.
+
+- **Microsoft_ADAL_token_rt_status** - Trạng thái của mã thông báo làm mới: đã thử, không cần thiết, không tìm thấy hay bị xóa.
+
+- **Microsoft_ADAL_token_type** - Mã thông báo làm mới (RT) hoặc mã thông báo làm mới đa tài nguyên (MRRT)
+
+- **Microsoft_ADAL_ui_event_count** - Số lời nhắc hiển thị cho người dùng. Có thể tự hành
+
+- **Microsoft_ADAL_user_cancel** - Cho biết cửa sổ giao diện người dùng bị hủy bỏ là đúng hay sai
+
+- **Microsoft_ADAL_x_ms_request_id** - ID yêu cầu bổ sung được cung cấp trong tiêu đề HTTP cho dịch vụ của ADAL
+
+- **Microsoft_ADAL_x_client_cpu** - Thông tin liên quan đến Kiến trúc CPU của thiết bị
+
+- **Microsoft_ADAL_x_client_os** - Phiên bản HĐH của thiết bị.
+
+- **Microsoft_ADAL_x_client_sku** - Tên SKU HĐH của thiết bị.
+
+- **Microsoft_ADAL_x_client_ver** - Phiên bản thư viện ADAL.
+
+- **MSAL_all_error_tags** - Tất cả các thẻ lỗi mà Thư viện xác thực Microsoft (MSAL) gặp phải trong dòng xác thực.
+
+- **MSAL_api_error_code** - Nếu MSAL gặp lỗi phát sinh từ HĐH, mã lỗi nền tảng được lưu trữ tại đây.
+
+- **MSAL_api_error_context** - Chuỗi chứa các chi tiết bổ sung mà con người có thể đọc được về lỗi cuối cùng mà MSAL gặp phải. 
+
+- **MSAL_api_error_tag** - Chuỗi duy nhất cho vị trí trong mã xảy ra lỗi này.
+
+- **MSAL_api_name** - Tên của API cấp cao nhất MSAL được gọi để bắt đầu dòng xác thực này.
+
+- **MSAL_api_status_code** - Mã trạng thái MSAL được trả về cho kết quả dòng xác thực này.
+
+- **MSAL_auth_flow** - Các bước MSAL đã thử trong dòng xác thực này (AT, PRT, LRT, FRT, ART, IRT). Được phân tách bằng dấu "|" để phân tích dễ dàng.
+
+- **MSAL_auth_flow_last_error** - Mã lỗi chúng tôi nhận được từ máy chủ từ mục thứ 2 đến mục cuối cùng trong AuthFlow. (Ví dụ: nếu AuthFlow = "PRT|LRT", lỗi của PRT sẽ là ở trong AuthFlowLastError).
+
+- **MSAL_authority_type** - Có phải là yêu cầu cho người dùng trong: AAD, Federated hoặc MSA.
+
+- **MSAL_broker_app_used** - Có phải là một ứng dụng cung cấp dùng trong dòng xác thực này.
+
+- **MSAL_client_id** - ID máy khách của ứng dụng gọi
+
+- **MSAL_correlation_id** - GUID duy nhất cho sự kiện này dùng để tham gia các hành động trên máy khách, máy chủ và nhật ký ứng dụng.
+
+- **MSAL_delete_token** - Danh sách các mã thông báo đã bị xóa khỏi bộ đệm ẩn trong dòng xác thực này.
+
+- **MSAL_http_call_count** - Số lượng cuộc gọi HTTP mà MSAL đã thực hiện trong dòng xác thực.
+
+- **MSAL_is_successful** - Dòng xác thực có thành công không.
+
+- **MSAL_last_http_response_code** - Nếu MSAL thực hiện một hoặc nhiều lệnh gọi HTTP thì đây là mã phản hồi HTTP cuối cùng mà chúng tôi nhận được.
+
+- **MSAL_msal_version** - Chuỗi phiên bản của MSAL có định dạng X.X.X+ (“OneAuth”, “cục bộ” hoặc commit hash).
+
+- **MSAL_read_token** - Các mã thông báo đã được đọc từ bộ đệm ẩn (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT hết hạn đã được đọc, nhưng bị loại bỏ]).
+
+- **MSAL_read_token_last_error** - Nếu MSAL gặp lỗi khi đọc từ bộ đệm ẩn, chúng tôi sẽ lưu trữ thông tin tại đây. (Ví dụ: Lỗi đọc đĩa phát sinh từ HĐH, Lỗi chuỗi khóa trên MacOS).
+
+- **MSAL_request_duration** - Yêu cầu mất bao lâu kể từ khi gọi API cấp cao nhất của MSAL cho đến khi chúng tôi trả về kết quả.
+
+- **MSAL_request_id** - Yêu cầu ID cho cuộc gọi cuối cùng mà chúng tôi đã thực hiện tới dịch vụ mã thông báo bảo mật của Microsoft.
+
+- **MSAL_server_error_code** - Mã lỗi số dịch vụ mã thông báo an toàn cụ thể của Microsoft nếu chúng tôi nhận được.
+
+- **MSAL_server_spe_ring** - Thông tin vòng cập nhật Secure Production Enterprise của dịch vụ mã thông báo an toàn của Microsoft nếu chúng tôi nhận được.
+
+- **MSAL_server_suberror_code** - Chuỗi mã lỗi phụ dịch vụ mã thông báo an toàn cụ thể của Microsoft nếu chúng tôi nhận được.
+
+- **MSAL_start_time** - Thời gian yêu cầu MSAL bắt đầu ở API công khai cấp cao nhất.
+
+- **MSAL_stop_time** - Thời gian MSAL xử lý xong yêu cầu và trả về kết quả cho người gọi.
+
+- **MSAL_tenant_id** - Microsoft GUID xác định đối tượng thuê mà người dùng tồn tại.
+
+- **MSAL_ui_event_count** - Số lời nhắc giao diện người dùng MSAL đã hiển thị trên màn hình.
+
+- **MSAL_wam_telemetry** - Chứa một lô dữ liệu từ xa WAM trong một chuỗi JSON sẽ được phân tích cú pháp và chuyển đổi thành các trường trong tài liệu này có nguồn từ WAM.
+
+- **MSAL_was_request_throttled** - Đúng nếu MSAL chặn yêu cầu này và ngăn không cho yêu cầu truy cập mạng. Nếu điều này đúng, rất có thể có một vòng lặp trong ứng dụng gọi điện.
+
+- **MSAL_write_token** - Các mã thông báo đã được ghi vào bộ đệm ẩn (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT hết hạn đã được đọc, nhưng bị loại bỏ]).
+
+- **MSAL_write_token_last_error** - Nếu MSAL gặp lỗi ghi vào bộ đệm ẩn, chúng tôi sẽ lưu trữ thông tin tại đây. (Ví dụ: Lỗi đọc đĩa phát sinh từ HĐH, Lỗi chuỗi khóa trên MacOS).
+
+- **oneauth_api** - API OneAuth đã được gọi cho nỗ lực xác thực này.
+
+- **oneauth_transactionuploadid** - GUID chỉ định một lệnh gọi riêng lẻ tới API OneAuth.
+
+- **oneauth_version** - Phiên bản của SDK OneAuth.
+
+- **Platform** - Nền tảng HĐH (0: Windows Desktop, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
+
+- **Promptreasoncorrelationid** - Mã định danh tương quan có thể dùng để tra cứu sự kiện xác thực trước đó để giải thích lý do tại sao người dùng đã được nhắc để xác thực.
+
+- **Resource** - Tài nguyên mà mã thông báo được yêu cầu.
+
+- **Scenarioid** - Nhiều sự kiện có thể thuộc về một kịch bản như tình huống có thể thêm tài khoản mới nhưng có nhiều lời nhắc xảy ra như một phần của tình huống đó. Mã định danh này cho phép mối tương quan của các sự kiện liên quan đó.
+
+- **Scenarioname** - Tên của tình huống ứng dụng yêu cầu xác thực, ví dụ: lần khởi động đầu tiên, kiểm tra cấp phép, v.v.
+
+- **Scope** - Phạm vi mã thông báo được yêu cầu.
+
+- **Sdkver** - Phiên bản thư viện Hệ thống đo từ xa Microsoft Auth dùng để tạo dữ liệu này
+
+- **Sessionid** - Mã định danh cho phiên khởi động
+
+- **Starttime** - Thời gian bắt đầu sự kiện xác thực.
+
+- **Tenantid** - GUID xác định đối tượng thuê mà người dùng đã xác thực thuộc về (trong các trường hợp không phải ADAL)
+
+- **Uploadid** - GUID duy nhất cho sự kiện này dùng để loại trừ
+
+- **wamapi** - Xác định gọi API quản lý tài khoản web (WAM) của Windows nào
+
+- **wamtelemetrybatch** - Hiện không sử dụng. Trong tương lai, cho phép cấu phần WAM gửi thông tin bổ sung về sự kiện xác thực
+
+- **WAM_account_join_on_end** - Trạng thái tham gia tài khoản khi kết thúc hoạt động WAM.  Giá trị có thể xuất hiện: “primary” (chính), “secondary” (phụ), “not_joined” (không tham gia)
+
+- **WAM_account_join_on_start** - Trạng thái tham gia tài khoản khi bắt đầu hoạt động WAM.  Giá trị có thể xuất hiện: “primary” (chính), “secondary” (phụ), “not_joined” (không tham gia)
+
+- **WAM_api_error_code** - Nếu phản hồi lỗi đến từ phần bổ trợ AAD WAM, trường này sẽ tồn tại và sẽ chứa mã lỗi đó
+
+- **WAM_authority** - Chuỗi chứa url ủy quyền — đây phải là điểm cuối login.windows.net được sử dụng
+
+- **WAM_broker_version** - Hiện diện nếu WAM đã được sử dụng, đây là chuỗi phiên bản trình cung cấp
+
+- **WAM_cache_event_count** - Số lượng sự kiện bộ đệm ẩn WAM trong hoạt động
+
+- **WAM_client_id** - Mã định danh để kết hợp với dữ liệu dịch vụ, mã này xác định ứng dụng máy khách.
+
+- **WAM_correlation_id** - Mã định danh để tham gia các sự kiện với dữ liệu dịch vụ
+
+- **WAM_device_join** - Trạng thái tham gia thiết bị; giá trị có thể là “aadj”, “haadj”
+
+- **WAM_network_event_count** - Hiện diện nếu có ít nhất một cuộc gọi mạng đã xảy ra; số lượng cuộc gọi mạng tới dịch vụ cho hoạt động WAM đó
+
+- **WAM_network_status** - Hiện diện nếu ít nhất một cuộc gọi mạng đã xảy ra, có chứa mã lỗi HTTP nếu yêu cầu mạng không thành công.
+
+- **WAM_idp** - Cho biết xem phần bổ trợ xác thực người dùng hoặc tổ chức WAM đã được sử dụng hay chưa.
+
+- **WAM_is_cached** - Cho biết phản hồi do WAM cung cấp có được truy xuất từ bộ đệm ẩn hay không.
+
+- **WAM_oauth_error_code** - Chứa mã lỗi do dịch vụ trả về như một phần của giao thức oauth.
+
+- **WAM_prompt_behavior** - Cho biết lời nhắc này có bị ứng dụng ép buộc hay không, hoặc nếu yêu cầu này có thể bỏ qua lời nhắc nếu có thể xác thực tự hành.
+
+- **WAM_provider_id** - Chỉ định điểm cuối của Microsoft để cấp quyền sử dụng cho tình huống xác thực.
+
+- **WAM_redirect_uri** - URI chuyển hướng đã đăng ký cho ứng dụng trong Azure Active Directory.
+
+- **WAM_resource**  - Tài nguyên mà mã thông báo được yêu cầu.
+
+- **WAM_server_error_code** - Mã lỗi do dịch vụ trả về cho WAM.
+
+- **WAM_server_sub_code** - Mã lỗi bổ sung dùng để phân tích thêm các nguyên nhân gây ra lỗi do dịch vụ trả về.
+
+- **WAM_silent_code** - Mã lỗi gặp phải do nỗ lực nội bộ tự hành mà WAM thực hiện trước khi nhắc người dùng.
+
+- **WAM_silent_mats** - Không sử dụng.
+
+- **WAM_silent_message** - Thông báo lỗi liên quan đến nỗ lực nội bộ tự hành mà WAM thực hiện trước khi nhắc người dùng.
+
+- **WAM_silent_status** - Trạng thái thành công/thất bại của nỗ lực nội bộ tự hành mà WAM thực hiện trước khi nhắc người dùng.
+
+- **WAM_tenant_id** - Mã định danh cho đối tượng thuê mà người dùng AAD đã xác thực thuộc về nếu được dịch vụ trả lại
+
+- **WAM_ui_visible** - Hiện diện nếu có ít nhất một cửa sổ giao diện người dùng được hiển thị cho người dùng là “true” (đúng) hoặc “false” (sai)
+
+- **WAM_x_ms_clitelem** - Hiện diện nếu dịch vụ trả về tiêu đề “x-ms-clitelem"
+
+
+### <a name="officematsoneauthtransactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
+
+Hệ thống phép đo từ xa xác thực Microsoft (Microsoft Auth Telemetry System - MATS) được thu thập khi Office cố gắng lấy mã thông báo xác thực, bằng cách âm thầm hoặc thông qua nhắc nhở. Sự kiện này là phần tử cha của một hoặc nhiều sự kiện ActionMicrosoftOffice, cho phép nhóm các sự kiện liên quan lại với nhau. Các sự kiện này giúp người dùng của chúng tôi không phải nhập trạng thái xác thực lỗi bằng cách:
+
+1) Xác định xem máy khách có thể nhận được mã thông báo xác thực từ dịch vụ thành công hay đã nhập trạng thái xác thực bị lỗi.
+
+2) Đánh giá xem các thay đổi đã xảy ra trên máy khách hoặc dịch vụ hay không, cho dù chúng có dẫn đến quá trình hồi quy quan trọng trong trải nghiệm xác thực và độ tin cậy của người dùng
+
+3) Khi xảy ra lỗi, các tín hiệu này phát ra các mã lỗi quan trọng từ cấu phần chịu trách nhiệm (mã máy khách Office, thư viện xác thực hoặc dịch vụ ủy quyền) có thể được sử dụng để phân loại, chẩn đoán và giảm thiểu
+
+4) Các tín hiệu này cung cấp tính sẵn sàng và trạng thái màn hình khởi chạy cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Actiontype** - "oneauthtransaction" là giá trị duy nhất.
+
+- **Appaudience** - Đối tượng ứng dụng (Tự động hóa, Tiền sản xuất hoặc Sản xuất)
+
+- **Appname** - Tên ứng dụng
+
+- **Appver** - Phiên bản ứng dụng
+
+- **Authoutcome** - Nỗ lực xác thực thành công, không thành công hay đã bị hủy
+
+- **Correlationid** - Mã định danh dùng để kết hợp thông tin liên quan đến sự kiện riêng lẻ này với dữ liệu dịch vụ
+
+- **Count** - Số lần lỗi xảy ra
+
+- **Devicenetworkstate** - Trạng thái mạng thiết bị
+
+- **Deviceprofiletelemetryid** - ID đo từ xa của cấu hình thiết bị (chuỗi được MATS sử dụng để xác định một thiết bị cụ thể)
+
+- **duration_max** - Thời lượng tối thiểu của các giao dịch được tổng hợp trên tín hiệu này tính bằng mili giây.
+
+- **duration_min** - Thời lượng tối đa của các giao dịch được tổng hợp trên tín hiệu này tính bằng mili giây.
+
+- **duration_sum** - Tổng thời lượng của các giao dịch được tổng hợp trên tín hiệu này tính bằng mili giây.
+
+- **Endtime** - Thời gian mà giao dịch OneAuth kết thúc.
+
+- **Error** - Lỗi trạng thái OneAuth.
+
+- **Eventtype** - Loại sự kiện
+
+- **Issilent** - Sai nếu hiển thị giao diện người dùng; đúng nếu đó là sự kiện nền.
+
+- **oneauth_api** - Cho biết API công khai của OneAuth đã được gọi.
+
+- **oneauth_Domain** - Nếu lệnh gọi API dẫn đến lỗi, đây là miền hệ thống của lỗi đó.
+
+- **oneauth_ErrorCode** - Mã lỗi biểu thị trạng thái lỗi nội bộ cho OneAuth. Thay thế trường oneauth_errortag cũ.
+
+- **oneauth_errortag** - Số định danh cho một dòng mã chịu trách nhiệm tạo ra lỗi.
+
+- **oneauth_ExecutionFlow** - Một chuỗi thẻ xác định đường dẫn mã mà lệnh gọi API này đã sử dụng.
+
+- **oneauth_internalerror** - Mã lỗi biểu thị trạng thái lỗi nội bộ cho OneAuth.
+
+- **oneauth_ServerErrorCode** - Lỗi máy chủ đã trả về OneAuth khi kết thúc lệnh gọi API này nếu gặp phải.
+
+- **oneauth_SystemErrorCode** - Lỗi hệ thống đã trả về OneAuth khi kết thúc lệnh gọi API này nếu gặp phải.
+
+- **oneauth_Tag** - Thẻ OneAuth chỉ định vị trí cuối cùng trong mã đạt được khi kết thúc lệnh gọi API này.
+
+- **oneauth_transactionuploadid** - Chỉ định GUID nội bộ được tạo ngẫu nhiên ánh xạ tới lệnh gọi cụ thể của API OneAuth.
+
+- **oneauth_version** - Phiên bản của SDK OneAuth.
+
+- **Platform** - Nền tảng HĐH (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+
+- **Scenarioname** - Tên của kịch bản cần thiết để xác thực được chỉ định bởi ứng dụng gọi.
+
+- **Schemaver** - Phiên bản sơ đồ
+
+- **Sdkver** - Phiên bản SDK MATS
+
+- **Sessionid** - ID phiên
+
+- **severityError** - Mức độ nghiêm trọng
+
+- **starttime** - Thời gian bắt đầu giao dịch OneAuth.
+
+- **Timestamp** - Dấu thời gian
+
+- **Type** - Loại lỗi
+
+- **Uploaded** - Mã định danh duy nhất cho sự kiện cụ thể này cho mục đích loại trừ.
+
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
@@ -2794,6 +3249,101 @@ Các trường sau đây sẽ được thu thập:
 
 ## <a name="licensing-events"></a>Sự kiện cấp phép
 
+### <a name="officeandroiddocsuipaywallcontrolautoredeempendingpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.AutoRedeemPendingPurchaseResult
+
+Phép đo từ xa kỹ thuật quan trọng để ghi lại kết quả của nỗ lực tự động tìm cách đổi các giao dịch mua đang chờ xử lý của người dùng. Phép đo từ xa của sản phẩm được sử dụng để đối chiếu thông tin giao dịch mua hàng với hệ thống thương mại của Microsoft nhằm hỗ trợ các lợi ích đăng ký liên quan.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EventDate** – Dấu thời gian xảy ra sự kiện 
+
+- **Result** – Int biểu thị kết quả enum của hoạt động. 
+
+- **SessionID** – GUID để kết nối các sự kiện theo phiên
+
+### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
+
+Phép đo từ xa mức sử dụng quan trọng khi hiển thị quyền kiểm soát của Paywall cho người dùng. Được sử dụng để hiểu trải nghiệm mua hàng trong ứng dụng cho người dùng và tối ưu hóa trải nghiệm tương tự cho các phiên bản trong tương lai.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EventDate** – Dấu thời gian xảy ra sự kiện 
+
+- **IsModeFRE** – Boolean để chỉ ra loại trải nghiệm, hộp thoại Bán thêm hoặc Bộ chọn SKU
+
+- **SessionID** – GUID để kết nối các sự kiện theo phiên
+
+### <a name="officeandroiddocsuipaywallcontrolpurchasebuttonclicked"></a>Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
+
+Phép đo từ xa mức sử dụng quan trọng để biết khi nào người dùng nhấp vào nút Mua. Được sử dụng để suy ra mẫu hình sử dụng và chỉ số chuyển đổi cho những người dùng cố gắng mua gói đăng ký trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EventDate** – Dấu thời gian xảy ra sự kiện
+
+- **IsDefaultSku** – Boolean cho biết nếu người dùng đang cố gắng mua Sku được hiển thị đầu tiên/mặc định
+
+- **ProductID** – Chuỗi xác định gói đăng ký nào người dùng đang cố gắng mua như được định cấu hình trong cửa hàng
+
+- **SessionID** – GUID để kết nối các sự kiện theo phiên
+
+### <a name="officeandroiddocsuipaywallcontrolpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.PurchaseResult
+
+Phép đo từ xa kỹ thuật quan trọng để ghi lại kết quả của nỗ lực mua hàng do người dùng kích hoạt thủ công. Phép đo từ xa của sản phẩm được sử dụng để đối chiếu thông tin giao dịch mua hàng với hệ thống thương mại của Microsoft nhằm hỗ trợ các lợi ích đăng ký liên quan.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EventDate** – Dấu thời gian xảy ra sự kiện 
+
+- **IsModeFre** – Boolean cho biết liệu giao dịch mua được thực hiện từ màn hình FRE bán thêm hoặc Bộ chọn Sku
+
+- **Result** – Int biểu thị kết quả enum của hoạt động.
+
+- **SessionID** – GUID để kết nối các sự kiện theo phiên
+
+
+### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
+
+Chúng tôi thu thập phép đo từ xa mức sử dụng này để xem người dùng dành bao nhiêu thời gian trên màn hình "Xem thêm lợi ích".  Dữ liệu được sử dụng để hiểu mức sử dụng tính năng "Xem thêm lợi ích" và tối ưu hóa hơn nữa trải nghiệm trong các phiên bản tương lai.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Duration** - Số nguyên dài cho biết thời gian người dùng dành cho màn hình “Xem tất cả tính năng” tính bằng mili giây
+
+- **EventDate** - Dấu thời gian xảy ra sự kiện 
+
+- **MostExplored** - Số nguyên biểu thị chỉ số của mục được chuyển đổi nhiều nhất trong danh sách các ứng dụng M365 và các tính năng của chúng
+
+- **SessionID** - Mã nhận dạng duy nhất toàn cầu (GUID) để kết nối các sự kiện theo phiên
+
+### <a name="officeandroiddocsuipaywallcontrolskuchooseranalytics"></a>Office.Android.DocsUI.PaywallControl.SkuChooserAnalytics
+
+Phép đo từ xa mức sử dụng để xem người dùng dành bao nhiêu thời gian trên màn hình Bộ chọn SKU. Phép đo từ xa mức sử dụng để xem người dùng dành bao nhiêu thời gian trên màn hình Bộ chọn Sku.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Duration** – Số nguyên dài cho biết thời gian người dùng dành cho màn hình Bộ chọn Sku tính bằng mili giây
+
+- **EventDate** – Dấu thời gian xảy ra sự kiện
+
+- **SessionID** – GUID để kết nối các sự kiện theo phiên
+
+
+### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Phép đo từ xa mức sử dụng quan trọng được thu thập để cho biết khi nào người dùng nhấn vào nút Mua.  Dữ liệu được sử dụng để suy ra mẫu hình sử dụng và chỉ số chuyển đổi cho những người dùng cố gắng mua gói đăng ký trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
+
+- **isDefaultSKU** - Bool – Nếu người dùng đang mua sản phẩm, chúng tôi đề xuất cho họ bằng cách hiển thị sản phẩm theo mặc định.
+
+- **productId** - Chuỗi – Id sản phẩm trong cửa hàng ứng dụng của sản phẩm mà nút Mua được nhấn vào
+
+- **toggleCount** - Int – Số lần người dùng chuyển đổi giữa việc xem các sản phẩm khác nhau trước khi họ nhấn vào Nút Mua trong phiên hiện tại của Paywall.
+
+
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
 Điều này được thu thập khi người dùng được cấp phép và chấp nhận EULA cho giấy phép hiện tại
@@ -2810,7 +3360,7 @@ Các trường sau đây sẽ được thu thập:
 
 Đăng thiết đặt giấy phép trên máy, chúng tôi cố gắng kích hoạt giấy phép bằng cách gọi điện cho dịch vụ AVS. Điều này báo cáo kết quả của cuộc gọi kích hoạt
 
-Quan trọng là phát hiện số người dùng đang phải đối mặt với các vấn đề về kích hoạt. Chúng tôi có bất thường phát hiện để phát hiện bất kỳ hồi quy. Điều này là rất quan trọng vì chúng tôi có sự phụ thuộc bên ngoài vào AVS và tín hiệu này cho biết tình tạng của các đối tác bên ngoài của chúng tôi có tốt hay không. Nó cũng được sử dụng cho mục đích chẩn đoán và trạng thái hệ thống nếu người dùng báo cáo sự cố với các máy tính của họ
+Quan trọng là phát hiện số người dùng đang phải đối mặt với các vấn đề về kích hoạt. Chúng tôi có bất thường phát hiện để phát hiện bất kỳ hồi quy. Điều này là rất quan trọng vì chúng tôi có sự phụ thuộc bên ngoài vào AVS và tín hiệu này cho biết tình trạng của các đối tác bên ngoài của chúng tôi có tốt hay không. Nó cũng được sử dụng cho mục đích chẩn đoán và trạng thái hệ thống nếu người dùng báo cáo sự cố với các máy tính của họ
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2834,7 +3384,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Điều này được thu thập khi chúng tôi hiển thị hộp thoại hết hạn cho người dùng thông báo rằng giấy phép của họ đã hết hạn. Đây là điều quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
+Điều này được thu thập khi chúng tôi hiển thị hộp thoại hết hạn cho người dùng nói rằng giấy phép của họ đã hết hạn. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2923,7 +3473,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-Trong trường hợp chúng tôi thấy có vấn đề với quy trình kích hoạt, chúng tôi sẽ kích hoạt trình hướng dẫn giấy phép và gửi tín hiệu này để chỉ ra điều tương tự. Đây là điều quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
+Trong trường hợp chúng tôi gặp sự cố với dòng công việc Kích hoạt, chúng tôi sẽ kích hoạt trình hướng dẫn cấp phép và gửi tín hiệu này để chỉ ra điều tương tự. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2955,7 +3505,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingloadidentityticket"></a>Office.Licensing.LoadIdentityTicket
 
-Trong quá trình tìm cách giấy phép của thiết bị, ứng dụng sẽ thử tải danh tính của người dùng để xem người dùng có quyền Office hay không. Sự kiện này báo cáo sự thành công hay thất bại cùng với mã lỗi. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Trong quá trình tìm cách giấy phép của thiết bị, ứng dụng sẽ thử tải danh tính của người dùng để xem người dùng có quyền Office hay không. Sự kiện này báo cáo trạng thái thành công hay thất bại cùng với mã lỗi. Điều quan trọng là cần phát hiện xem người dùng có đang trong trạng thái tốt và không bị thiếu chức năng hay không, kết quả này được dùng cho tình trạng hệ thống và mục đích chẩn đoán trong trường hợp người dùng báo cáo có sự cố với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2981,7 +3531,7 @@ Sự kiện này không thu thập trường nào.
 
 ### <a name="officelicensingnulfetcherfetchmodelfromols"></a>Office.Licensing.Nul.Fetcher.FetchModelFromOls
 
-Khi thiết bị nằm trong ngăn cấp phép hiện đại, chúng tôi sẽ cố gắng lấy tệp giấy phép trực tiếp từ dịch vụ. Sự kiện này báo cáo sự thành công hay thất bại cùng với mã lỗi cuộc gọi của dịch vụ đó. Điều quan trọng là phát hiện xem người dùng có ở trạng thái tốt trong ngăn xếp cấp phép hiện đại, được sử dụng cho sức khỏe hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Khi thiết bị nằm trong ngăn cấp phép hiện đại, chúng tôi sẽ cố gắng lấy tệp giấy phép trực tiếp từ dịch vụ. Sự kiện này báo cáo sự thành công hay thất bại cùng với mã lỗi cuộc gọi của dịch vụ đó. Điều quan trọng là phát hiện xem người dùng có ở trạng thái tốt trong ngăn xếp cấp phép hiện đại, được sử dụng cho tình trạng hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2991,7 +3541,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingnulvalidationfullvalidation"></a>Office.Licensing.Nul.Validation.FullValidation 
 
-Điều này được thu thập trên mỗi phiên một thiết bị đang chạy trên theo ngăn xếp cấp phép hiện đại. Nó báo cáo trạng thái cấp phép của máy và báo cáo các lỗi mà người dùng đang gặp do họ không thể sử dụng ứng dụng. Sự kiện này cho biết máy của người dùng có đang ở trạng thái tốt trong ngăn xếp cấp phép hiện đại hay không. Chúng tôi có phát hiện bất thường được thiết lập cho sự kiện này để cho biết liệu hồi quy có gây ra hành vi xấu của người dùng hay không. Điều này cũng rất quan trọng khi chẩn đoán các vấn đề của người dùng và theo dõi trạng thái hệ thống.
+Điều này được thu thập trên mỗi phiên một thiết bị đang chạy trên theo ngăn xếp cấp phép hiện đại. Điều này báo cáo trạng thái cấp phép của máy và báo cáo các lỗi mà người dùng đang gặp phải do họ không thể sử dụng ứng dụng. Sự kiện này cho biết máy của người dùng có hoạt động tốt trên ngăn xếp cấp phép hiện đại hay không. Chúng tôi có phát hiện bất thường được thiết lập cho sự kiện này để cho biết liệu hồi quy có gây ra hành vi xấu của người dùng hay không. Điều này cũng rất quan trọng khi chẩn đoán các vấn đề của người dùng và theo dõi trạng thái hệ thống.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3067,7 +3617,7 @@ Các trường sau đây sẽ được thu thập:
 
 *[Sự kiện này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-Chúng tôi có một thử nghiệm cung cấp cho người dùng tùy chọn để thử và thiết lập tự động phát trực tiếp cho Office từ một ứng dụng mà không bao giờ rời khỏi bối cảnh của ứng dụng. Qua đó, báo cáo sự thành công hay thất bại của thử nghiệm cùng với mã lỗi. Báo cáo này rất quan trọng trong việc phát hiện xem người dùng ở trạng thái tốt và không thiếu chức năng hay không. Báo cáo này dùng cho trạng thái hệ thống và cho mục đích chẩn đoán nếu người dùng báo cáo sự cố xảy ra với máy của họ.
+Chúng tôi thử cung cấp cho người dùng một tùy chọn để thử và thiết lập tự động thanh toán cho Office trực tiếp từ một ứng dụng mà không cần rời khỏi bối cảnh của ứng dụng. Qua đó, báo cáo sự thành công hay thất bại của thử nghiệm cùng với mã lỗi. Báo cáo này rất quan trọng trong việc phát hiện xem người dùng ở trạng thái tốt và không thiếu chức năng hay không. Báo cáo này dùng cho trạng thái hệ thống và cho mục đích chẩn đoán nếu người dùng báo cáo sự cố xảy ra với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3075,7 +3625,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingsearchforsessiontoken"></a>Office.Licensing.SearchForSessionToken
 
-Nếu người dùng đang chạy trong chế độ kích hoạt máy tính được chia sẻ, chúng tôi sẽ cố gắng tìm kiếm mã thông báo phiên trên máy cho phép người dùng sử dụng ứng dụng. Sự kiện này báo cáo sự thành công hay thất bại của tình huống cùng với mã lỗi. Báo cáo này rất quan trọng trong việc phát hiện xem người dùng ở trạng thái tốt và không thiếu chức năng hay không. Báo cáo này dùng cho trạng thái hệ thống và cho mục đích chẩn đoán nếu người dùng báo cáo sự cố xảy ra với máy của họ.
+Nếu người dùng đang chạy trong chế độ kích hoạt máy tính được chia sẻ, chúng tôi sẽ cố gắng tìm kiếm mã thông báo phiên trên máy cho phép người dùng sử dụng ứng dụng. Sự kiện này báo cáo trạng thái thành công hay thất bại của kịch bản cùng với mã lỗi. Điều quan trọng là cần phát hiện xem người dùng có đang trong trạng thái tốt và không bị thiếu chức năng hay không, kết quả này được dùng cho tình trạng hệ thống và mục đích chẩn đoán trong trường hợp người dùng báo cáo có sự cố với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4113,7 +4663,7 @@ Các trường sau đây sẽ được thu thập:
     
 ### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
 
-Sự kiện này cho biết không tìm thấy bản cập nhật nào khi kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
+Sự kiện này cho biết việc kiểm tra các bản cập nhật dẫn đến không tìm thấy bản cập nhật nào. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5864,7 +6414,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **EventInfo_Time** - Thời điểm ghi lại sự kiện 
 
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+- **HowTocheck** - Tùy chọn kiểm tra cập nhật
 
 - **Payload** - Chứa URL tải xuống và mã lỗi trong trường hợp không thành công. URL tải xuống là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
 
@@ -8021,7 +8571,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **ScreenLocked** – Cho biết liệu quá trình tải xuống có được bắt đầu sau màn hình bị khóa hay không
+
+- **SessionId** - Mã định danh của phiên
 
 
 ### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
@@ -8152,7 +8704,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **ScreenLocked** – Cho biết liệu quá trình tải xuống có được bắt đầu sau màn hình bị khóa hay không
+
+- **SessionId** - Mã định danh của phiên
 
 
 ### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
@@ -9806,7 +10360,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="installstatus_daemon"></a>installstatus_daemon
 
-Sự kiện này ghi lại trạng thái của tình trạng đối với daemon Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Sự kiện này ghi lại trạng thái của daemon Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -9847,7 +10401,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="installstatus_helper"></a>installstatus_helper
 
-Sự kiện này ghi lại trạng thái của tình trạng đối với công cụ trình trợ giúp Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Sự kiện này ghi lại trạng thái của công cụ trình trợ giúp Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -14562,13 +15116,60 @@ Không có sự kiện dữ liệu dịch vụ bắt buộc được thu thập 
 
 ## <a name="telemetry-events"></a>Sự kiện phép đo từ xa
 
+### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+
+Microsoft sử dụng dữ liệu này để có được tình trạng của tính năng, tỷ lệ thành công hoặc lỗi cho người dùng khi mua hàng, nhằm đảm bảo các khoản đầu tư thích hợp nhằm cải thiện trải nghiệm mua hàng của khách hàng trên các nền tảng di động.
+
+Các trường sau đây sẽ được thu thập:
+
+- **OperationTimeInMs** - Thời gian cần thiết để hoạt động mua hàng hoàn tất (long - mili giây)
+
+- **PaywallOperationResult** - Thành công/Mã lỗi/Người dùng bị hủy (Enum/int - hữu hạn)
+
+- **PaywallOperationType** - Loại hoạt động Paywall (enum/ int - hữu hạn)
+
+
 ### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để giám sát trạng thái của dòng chọn tham gia phép đo từ xa của chúng tôi trong trải nghiệm chạy lần đầu tiên. Chúng tôi thu thập mã biểu thị loại tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
 
 Các trường sau đây sẽ được thu thập:
 
- - **Data_EventId** – Mã cho biết tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
+- **Data_EventId** – Mã cho biết tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
+
+### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Phép đo từ xa của sản phẩm được sử dụng để đối chiếu thông tin giao dịch mua hàng với hệ thống thương mại của Microsoft nhằm hỗ trợ các lợi ích đăng ký liên quan. Được sử dụng để tạo điều kiện thuận lợi cho việc ghi nhật ký giao dịch và cấp phép đăng ký để tham khảo trong tương lai và đối chiếu nội bộ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
+
+- **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (không thành công). Chỉ ra phản hồi lỗi do phản hồi Cấp phép RFS đưa ra.
+
+- **productId** - Chuỗi – ID cửa hàng ứng dụng của sản phẩm mà yêu cầu được thực hiện
+
+- **status** - Chuỗi – Thành công hay thất bại, cho biết yêu cầu thành công hay thất bại
+
+
+### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
+
+Dữ liệu được thu thập làm phép đo từ xa kỹ thuật quan trọng để ghi lại kết quả của nỗ lực mua hàng do người dùng kích hoạt thủ công. Phép đo từ xa của sản phẩm được sử dụng để đối chiếu thông tin giao dịch mua hàng với hệ thống thương mại của Microsoft nhằm hỗ trợ các lợi ích đăng ký liên quan.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
+
+- **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (không thành công). Chỉ ra phản hồi lỗi do phản hồi Cửa hàng ứng dụng đưa ra.
+
+- **productId** - Chuỗi – Chỉ dành cho “MakePurchase”, “PendingPurchase”, ID cửa hàng ứng dụng của sản phẩm mà yêu cầu được thực hiện.
+
+- **productsCount** - Int – Chỉ dành cho “ProductsFetch”, số lượng sản phẩm được Cửa hàng trả về.
+
+- **requestType** - Chuỗi – Loại yêu cầu StoreKit. Như “ProductsFetch”, “PendingPurchase”
+
+- **status** - Chuỗi – Thành công hay thất bại, cho biết yêu cầu thành công hay thất bại
+
 
 ### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
 
