@@ -13,23 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office những thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số sự kiện ví dụ.
 hideEdit: true
-ms.openlocfilehash: 6769c7a0bf254b5a33f92c5410ec517b7d568d8e
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: 2183863e1f7050d7d6ba838b639debf2b53ac9bd
+ms.sourcegitcommit: e1e4c309d62d0708404b7838c96416ce89f1b8b7
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46683214"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328341"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán tuỳ chọn cho Office
 
-> [!IMPORTANT]
-> Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
-> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
-> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
-> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
->
-> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office trong phạm vi thông tin về quyền riêng tư này, hãy xem [Các biện pháp kiểm soát quyền riêng tư dành cho các sản phẩm Office](products-versions-privacy-controls.md).
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
@@ -41,12 +35,12 @@ Nếu bạn chọn gửi cho chúng tôi dữ liệu chẩn đoán tùy chọn, 
 
 Ví dụ về dữ liệu chẩn đoán tùy chọn bao gồm dữ liệu chúng tôi thu thập về hình người dùng chèn vào tài liệu Word để chúng tôi có thể cung cấp tùy chọn tốt hơn và dữ liệu chúng tôi thu thập về thời gian để trang chiếu PowerPoint xuất hiện trên màn hình của bạn để chúng tôi có thể cải thiện trải nghiệm nếu quá trình đó diễn ra chậm.
 
-Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các mục sau:
+Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các bài viết sau:
 
 - [Dữ liệu chẩn đoán bắt buộc cho Office](required-diagnostic-data.md)
-- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-Nếu bạn là người quản trị cho tổ chức của bạn, bạn cũng có thể quan tâm đến những điều sau:
+Nếu bạn là người quản trị cho tổ chức của mình, bạn cũng có thể quan tâm đến các bài viết sau:
 
 - [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
