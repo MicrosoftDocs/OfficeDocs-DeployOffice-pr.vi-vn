@@ -13,25 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: ed9198f19bcd3ed7dcf11014ed46016fb7121dd6
-ms.sourcegitcommit: cdb47c4dc3297a8ad70112a084ebd1f5028e2c07
+ms.openlocfilehash: 3e44c9c20bed531f46390c91a41ce559cabc9e72
+ms.sourcegitcommit: 25a0925e7caf8fbb53e6757e8a65126eb2c9da65
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46896316"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338204"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
-> [!IMPORTANT]
-> Thông tin trong bài viết này áp dụng cho Phiên bản 1904 trở lên của phần mềm máy khách Office sau được cài đặt trên máy tính chạy Windows:
-> - Các ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus)
-> - Ứng dụng Microsoft 365 dành cho doanh nghiệp (trước đây là Office 365 Business).
-> - Microsoft 365 Personal, Microsoft 365 Family hoặc các phiên bản Office khác là một phần trong đăng ký Microsoft 365.
-> - Ứng dụng Project và Visio trên máy tính có kèm theo một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
->
-> Thông tin cũng được áp dụng cho Phiên bản 16.28 trở lên trong các ứng dụng Office dành cho máy Mac sau: Excel, Outlook, OneNote, PowerPoint và Word.
->
-> Thông tin này sẽ áp dụng cho phiên bản Outlook for iOS và Outlook for Android dự kiến sẽ được phát hành vào cuối tháng 1 năm 2020.
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office nằm trong thông tin về quyền riêng tư này, hãy xem [Kiểm soát về quyền riêng tư sẵn có cho các sản phẩm Office](products-versions-privacy-controls.md).
 
 Office bao gồm các ứng dụng phần mềm máy khách và trải nghiệm được kết nối được thiết kế để hỗ trợ bạn sáng tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Cộng tác với những người khác trên một tài liệu được lưu trữ trên OneDrive hoặc dịch nội dung của tài liệu Word sang một ngôn ngữ khác là những ví dụ về trải nghiệm được kết nối.
 
@@ -41,26 +33,31 @@ Các trải nghiệm được kết nối phân tích nội dung của bạn là
 
 Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối để phân tích nội dung của bạn và cũng cung cấp các liên kết đến nhiều thông tin hơn về chúng.
 
-| **Tên**   | **Xem thêm thông tin**   |
+| **Name**   | **Xem thêm thông tin**   |
 | ----------- | ------------------ |
 | *Bản đồ 3D*\*    | [Bắt đầu với Bản đồ 3D](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Đề xuất về biểu đồ (Excel dành cho web)|[Tạo biểu đồ với các biểu đồ được đề xuất](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
-| Kiểu dữ liệu                  | [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+|Các phần bổ trợ của Class Notebook (OneNote)|[Bắt đầu với OneNote Class Notebook: Một Hướng dẫn dành cho Giáo viên](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
+| Kiểu dữ liệu| [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Đọc chính tả  | [Đọc chính tả tài liệu Word của bạn](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Trình soạn thảo<sup>1</sup> |[Trình soạn thảo Microsoft kiểm tra ngữ pháp và nhiều nội dung khác trong tài liệu, thư và web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ý tưởng     | [Các ý tưởng trong Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
+|Công cụ Học tập|[Công cụ Học tập](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Chú thích và phụ đề trực tiếp |  [Trình bày với chú thích theo thời gian thực, tự động hoặc phụ đề trong PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | *Biểu đồ dạng bản đồ*\*    | [Tạo Biểu đồ dạng bản đồ trong Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Bản đồ trong Power View   | [Bản đồ trong Power View](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Dịch vụ Bản trình bày Office  | [Phát rộng bản trình bày PowerPoint của bạn đến một người xem từ xa](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
+|Đề xuất về PivotTable (Microsoft Excel trên web)|[Tạo PivotTable để phân tích dữ liệu trang tính](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576#OfficeVersion=Web)|
 | PowerPoint Designer   | [Tạo bố trí trang chiếu chuyên nghiệp cùng PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
+|Huấn luyện viên thuyết trình (PowerPoint)|[Diễn tập trình chiếu của bạn với Huấn luyện viên thuyết trình](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Phát hành lên Power BI   | [Phát hành lên Power BI từ Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Phát hành lên Microsoft Stream    | [Chuyển bản trình bày thành video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Nghiên cứu*\*   | [Thêm hoặc thay đổi dịch vụ nghiên cứu](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Quét danh thiếp|  [Quét hoặc nhấn vào để thêm liên hệ vào Outlook for Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|Chia sẻ thông báo|[Nhận thông báo khi các thành viên trong nhóm của bạn cập nhật tệp chia sẻ của bạn](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Tính năng kiểm tra tính tương đồng*\* (tính năng của Trình soạn thảo)|[Kiểm tra tính tương đồng trong tài liệu của bạn với các nguồn trực tuyến](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Tra cứu thông minh*\*   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
@@ -72,7 +69,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 <sup>1</sup> Ngay cả khi không có kết nối Internet, bạn vẫn có thể dùng chức năng cơ bản của Trình soạn thảo. Các chức năng cơ bản cũng vẫn khả dụng nếu bạn chọn vô hiệu hóa việc sử dụng trải nghiệm được kết nối để phân tích nội dung của mình. Trong cả hai trường hợp, Microsoft sẽ không nhận được bất kỳ dữ liệu nào về việc sử dụng Trình soạn thảo.
 
 > [!NOTE]
-> \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm được kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
+> \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
 
 ## <a name="connected-experiences-that-download-online-content"></a>Trải nghiệm được kết nối tải xuống nội dung trực tuyến
 
@@ -129,12 +126,14 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Phần bổ trợ dành cho Office*\* | [Triển khai các phần bổ trợ trong Trung tâm quản trị](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
 | Phản hồi về Office |[Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Bộ phận hỗ trợ của Office (Liên hệ với chúng tôi) |Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng |
-| Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức trong Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)  |
+| Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức trong Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
 | Trình kết nối Xã hội Outlook | [Bật Trình kết nối Xã hội Outlook](https://support.microsoft.com/office/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | *Outlook UserVoice*\* | [Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+|PivotDiagram (Visio)|[Tạo PivotDiagram trong Visio](https://support.microsoft.com/office/0d061d05-60b5-4549-b301-4d0b37625a4c)|
 | Tài liệu gần đây |[Mở tệp từ menu Tệp](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | *Trợ lý Sơ yếu lý lịch (hoặc Trợ lý CV)*\* |[Sử dụng Trợ lý Sơ yếu lý lịch và LinkedIn để có được hồ sơ tuyệt vời](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Bộ tìm phòng (Outlook)|[Cách kiểm soát Bộ tìm phòng trong Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
+|Tài liệu An toàn|[Tài liệu An toàn](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Tài liệu An toàn trong Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
 | Liên kết an toàn |[Liên kết an toàn ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
 | Nhãn độ nhạy cảm |[Áp dụng nhãn mức nhạy cảm cho tài liệu và email của bạn trong Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Chia sẻ  |[Chia sẻ sổ làm việc Excel của bạn với người khác](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Chia sẻ bản trình bày (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Chia sẻ tài liệu (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
@@ -156,7 +155,8 @@ Nếu bạn đã đăng nhập bằng tài khoản Microsoft, hãy mở ứng d�
 Nếu bạn đã đăng nhập bằng tài khoản cơ quan hoặc trường học, người quản trị trong tổ chức của bạn sẽ quyết định xem những trải nghiệm được kết nối này có sẵn cho bạn hay không. Bạn sẽ không thấy bất kỳ lựa chọn nào cho các trải nghiệm được kết nối này nếu bạn đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý cài đặt**.
 
 > [!NOTE]
-> Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
+> - Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
+> - Để biết thêm thông tin, hãy xem [Cài đặt Quyền riêng tư Tài khoản](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng cài đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để tìm hiểu thêm thông tin về cách sử dụng các thiết đặt chính sách này, hãy xem những bài viết sau đây: 
 
@@ -169,10 +169,9 @@ Nếu bạn chọn tắt một số loại trải nghiệm được kết nối,
 
 Ngay cả khi bạn quyết định tắt các trải nghiệm được kết nối này, một số chức năng Office nhất định sẽ vẫn khả dụng, chẳng hạn như đồng bộ hóa hộp thư trong Outlook và Teams và Skype for Business sẽ tiếp tục hoạt động. Ngoài ra, không thể tắt một số dịch vụ cần thiết cho hoạt động của Office, chẳng hạn như dịch vụ cấp phép xác nhận rằng bạn được cấp phép sử dụng Office đúng cách.
 
-## <a name="related-topics"></a>Chủ đề liên quan
+## <a name="related-articles"></a>Bài viết liên quan
 
 - [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md)
 - [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
 - [Các dịch vụ cần thiết cho Office](essential-services.md)
-- [Cài đặt Quyền riêng tư Tài khoản ](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
