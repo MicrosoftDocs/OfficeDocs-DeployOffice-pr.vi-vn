@@ -21,3 +21,4 @@
 ### [Dữ liệu dịch vụ bắt buộc](required-service-data.md)
 
 ## [Các dịch vụ cần thiết](essential-services.md)
+## [Các đề xuất trong sản phẩm](in-product-recommendations.md)
