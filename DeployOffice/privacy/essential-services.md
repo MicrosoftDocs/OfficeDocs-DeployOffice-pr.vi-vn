@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
-ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
+ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
+ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47941050"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367480"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -3312,7 +3312,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **EventDate** - Dấu thời gian xảy ra sự kiện 
 
-- **MostExplored** - Số nguyên biểu thị chỉ số của mục được chuyển đổi nhiều nhất trong danh sách các ứng dụng M365 và các tính năng của chúng
+- **MostExplored** - Số nguyên biểu thị chỉ mục của mục được chuyển đổi nhiều nhất trong danh sách ứng dụng Microsoft 365 và tính năng của chúng
 
 - **SessionID** - Mã nhận dạng duy nhất toàn cầu (GUID) để kết nối các sự kiện theo phiên
 
@@ -3844,7 +3844,7 @@ Các trường sau đây sẽ được thu thập:
 
 ## <a name="microsoft-autoupdate-mau-events"></a>Sự kiện Microsoft AutoUpdate (MAU)
 
-### <a name="additionalappinfo_invalidpreference"></a>additionalappinfo_invalidpreference
+### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo.invalidpreference
 
 Sự kiện này cho biết về tùy chọn không hợp lệ được đặt để hiển thị nhiều thông tin hơn về Kết thúc dịch vụ của một sản phẩm. Chúng tôi sử dụng thông tin này để khuyên khách hàng đặt tùy chọn chính xác để xem thông tin bổ sung.
  
@@ -3882,7 +3882,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh của phiên
 
-### <a name="appdelegate_launch"></a>appdelegate_launch
+### <a name="appdelegatelaunch"></a>appdelegate.launch
 
 Sự kiện này cho biết rằng đã xảy ra một lần thử khởi chạy ứng dụng. Chúng tôi ghi lại kết quả của sự kiện này (thất bại hoặc thành công). Chúng tôi sử dụng sự kiện này để xác định các trường hợp không thể khởi động MAU
 
@@ -3920,10 +3920,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="appdelegate_terminate"></a>appdelegate_terminate
+### <a name="appdelegateterminate"></a>appdelegate.terminate
 
 Sự kiện này cho biết đã xảy ra một lần Thoát ứng dụng mượt mà. Chúng tôi dùng sự kiện này để phân biệt giữa những lần Thoát ứng dụng mượt mà và những lần không mượt mà khác.
 
@@ -3961,10 +3961,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="appinstall_connecttoxpc"></a>appinstall_connecttoxpc
+### <a name="appinstallconnecttoxpc"></a>appinstall.connecttoxpc
 
 Sự kiện này cho biết đã xảy ra lỗi khi kết nối với Trình trợ giúp MAU (một cấu phần thực hiện cài đặt ứng dụng).  Sự kiện này biểu hiện ứng dụng MAU có dấu hiệu hỏng hóc. Thiết bị sẽ không thể cài đặt các bản cập nhật.
 
@@ -4002,9 +4002,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="appinstall_logscanned"></a>appinstall_logscanned
+### <a name="appinstalllogscanned"></a>appinstall_logscanned
 
 Sự kiện này được sử dụng để xác định tệp nhật kí đã xử lý thành công hay không. Chúng tôi sử dụng sự kiện này để phát hiện và giải quyết các sự cố phát sinh trong quá trình cài đặt ứng dụng. 
  
@@ -4044,7 +4044,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** – Mã định danh của phiên
 
-### <a name="appregistry_config"></a>appregistry_config
+### <a name="appregistryconfig"></a>appregistry.config
 
 Sự kiện này cho biết về các lỗi gặp phải trong quá trình tải thông tin đăng ký của ứng dụng. Chúng tôi sử dụng báo cáo này để khuyên các Quản trị viên CNTT về định dạng chính xác của việc thiết lập đăng ký ứng dụng máy khách.
  
@@ -4084,7 +4084,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** – Mã định danh của phiên
 
-### <a name="appregistry_info"></a>appregistry_info
+### <a name="appregistryinfo"></a>appregistry.info
 
 Sự kiện này cho biết ứng dụng đã khởi động. Chúng tôi dùng sự kiện này để liệt kê các ứng dụng mà MAU có thể kiểm soát được về bản cập nhật, số lượng bản sao sẵn dùng cũng như phiên bản và vị trí cài đặt của các ứng dụng đó (mặc định hoặc khác).
 
@@ -4122,10 +4122,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="appregistry_remove"></a>appregistry_remove
+### <a name="appregistryremove"></a>appregistry.remove
 
 Sự kiện này cho biết đã diễn ra một lần thử loại bỏ một Ứng dụng ra khỏi danh sách các ứng dụng quản lý bởi MAU. Chúng tôi dùng sự kiện này để xác nhận rằng MAU chỉ quản lý những ứng dụng được phát hành bởi MAU (không bao gồm bất kỳ ứng dụng AppStore nào).
 
@@ -4163,10 +4163,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="catalog_errorsignature"></a>catalog_errorsignature
+### <a name="catalogerrorsignature"></a>catalog_errorsignature
 
 Sự kiện này cho biết đã xảy ra lỗi trong khi thực hiện xác thực chứng thực số trên một tệp cập nhật bổ sung.  Bất kỳ tệp bổ sung nào xác minh chứng thực số không thành công nên được coi là không hợp lệ.
 
@@ -4204,11 +4204,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="cloningtask_begin"></a>cloningtask_begin
+### <a name="cloningtaskbegin"></a>cloningtask_begin
 
-Sự kiện này chỉ ra sự bắt đầu của tác vụ tạo bản sao trước khi cập nhật ứng dụng. Chúng tôi sử dụng sự kiện này cùng sự kiện cloningtask_status để xác định số lượng trường hợp tạo bản sao không thành công để xác định tính năng tạo bản sao có nên được tiết lưu trên các kênh người xem khác nhau không.
+Sự kiện này chỉ ra sự bắt đầu của tác vụ tạo bản sao trước khi cập nhật ứng dụng. Chúng tôi sử dụng sự kiện này cùng với sự kiện cloningtask.status để xác định số lần tạo bản sao không thành công để xác định tính năng tạo bản sao có nên được điều chỉnh trên các kênh người xem khác nhau hay không.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -4249,7 +4249,7 @@ Các trường sau đây sẽ được thu thập:
 - **UpdateID** – Mã định danh để cập nhật.
 
 
-### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
+### <a name="cloningtaskhelpertoolconnection"></a>cloningtask.helpertoolconnection
 
 Sự kiện này ghi lại sự cố khi cài đặt trên bản sao (nghĩa là chúng tôi không thể kết nối với trình trợ giúp để áp dụng bản cập nhật hoặc có thể kết nối nhưng trình trợ giúp lại không thể áp dụng bản cập nhật). Nếu chúng tôi nhận được một bản ghi được báo cáo, điều này có nghĩa là cài đặt trên bản sao đã từng không thành công và giờ đây sẽ phải chuyển sang thực hiện cập nhật tại chỗ.
 
@@ -4287,9 +4287,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="cloningtask_status"></a>cloningtask_status
+### <a name="cloningtaskstatus"></a>cloningtask.status
 
 Sự kiện này chỉ ra trạng thái của quy trình tạo bản sao đối với ứng dụng được cập nhật. Chúng tôi sử dụng sự kiện này để xác định tỷ lệ thành công cũng như loại lỗi gặp phải gây ra trường hợp không thành công. Sự kiện này được sử dụng để xác định tính năng tạo bản sao có nên được tiết lưu trên các kênh người xem khác nhau không.
 
@@ -4335,7 +4335,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh để cập nhật.
 
-### <a name="cloningtask_status_finish"></a>cloningtask_status_finish
+### <a name="cloningtaskstatusfinish"></a>cloningtask.status.finish
 
 Sự kiện này cho biết tác vụ “tạo bản sao” đã hoàn thành. Sự kiện này là một phần của báo cáo cập nhật hình phễu và chúng tôi sử dụng sự kiện này để xác định tình trạng của bản cập nhật ứng dụng.
  
@@ -4376,7 +4376,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 - **UpdateID** - Mã định danh cập nhật.
 
 
-### <a name="configuration_channel"></a>configuration_channel
+### <a name="configurationchannel"></a>configuration.channel
 
 Sự kiện này ghi lại các lần thử chuyển đổi kênh (Nhóm người xem) trong MAU.  Chúng tôi dùng sự kiện này để ghi lại các lần thử và kết quả (thành công hoặc thất bại).
 
@@ -4414,10 +4414,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="configuration_metadata"></a>configuration_metadata
+### <a name="configurationmetadata"></a>configuration.metadata
 
 Sự kiện này được ghi lại bất cứ khi nào MAU đang khởi đầu. Đây là kiểu sự kiện thông báo hoạt động của MAU
 
@@ -4457,7 +4457,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh cho phiên.
 
-### <a name="configuration_systemversion"></a>configuration_systemVersion
+### <a name="configurationsystemversion"></a>configuration.systemVersion
 
 Sự kiện cho biết nỗ lực truy xuất phiên bản hệ thống đã không thành công. Sự kiện này còn chứa thông tin về thông tin Microsoft Auto Update (MAU) có thể thu thập từ hệ thống. Chúng tôi sử dụng sự kiện này để xác định MAU có nên hỗ trợ cho các trường hợp không thành công hay không. Ghi chú rằng phiên bản hệ thống được sử dụng để xác định một bản cập nhật có thể được áp dụng cho thiết bị của khách hàng hay không.
  
@@ -4495,9 +4495,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
+### <a name="controlleralertmanagerreinstallresponse"></a>controller.alertmanager.reinstallresponse
 
 Sự kiện này cho biết rằng MAU bị rơi vào trạng thái không thể sử dụng/ không thể phục hồi và cần được cài đặt lại. Sự kiện này chỉ ra lỗi không thể phục hồi và cần có sự can thiệp của người dùng.
 
@@ -4535,10 +4535,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_alertmanager_tmpdiskfull"></a>controller_alertmanager_tmpdiskfull
+### <a name="controlleralertmanagertmpdiskfull"></a>controller.alertmanager.tmpdiskfull
 
 Sự kiện này cho biết rằng đã phát hiện dung lượng đĩa không đủ. Chúng tôi sẽ không thể cài đặt các bản cập nhật do dung lượng đĩa không đủ.
 
@@ -4576,10 +4576,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_alertmanager_tmpdiskfullretry"></a>controller_alertmanager_tmpdiskfullretry
+### <a name="controlleralertmanagertmpdiskfullretry"></a>controller.alertmanager.tmpdiskfullretry
 
 Sự kiện này cho biết đã khởi tạo một lần thử cài đặt lại bản cập nhật sau khi phát hiện dung lượng đĩa không đủ. Chúng tôi sẽ thử cài đặt lại sau khi không thể cài đặt bản cập nhật do dung lượng đĩa không đủ.
 
@@ -4617,10 +4617,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
     
 
-### <a name="controller_alertmanager_tmpdiskfullretrycancel"></a>controller_alertmanager_tmpdiskfullretrycancel
+### <a name="controlleralertmanagertmpdiskfullretrycancel"></a>controller.alertmanager.tmpdiskfullretrycancel
 
 Sự kiện này cho biết đã hủy bỏ lần thử cài đặt lại sau khi phát hiện dung lượng đĩa không đủ. Chúng tôi dùng sự kiện này để xác định xem cơ chế dự phòng có đủ để hướng dẫn người dùng thông qua quá trình cập nhật khi phát hiện dung lượng đĩa không đủ hay không.
 
@@ -4658,10 +4658,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
+### <a name="controllercheckwindownoupdatefoundok"></a>controller.checkwindow.noupdatefoundok
 
 Sự kiện này cho biết việc kiểm tra các bản cập nhật dẫn đến không tìm thấy bản cập nhật nào. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
 
@@ -4699,11 +4699,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
 
-### <a name="controller_checkwindow_updatecheck"></a>controller_checkwindow_updatecheck
+### <a name="controllercheckwindowupdatecheck"></a>controller.checkwindow.updatecheck
 
 Sự kiện này cho biết đã thực hiện kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
 
@@ -4741,10 +4741,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
+### <a name="controllercheckwindowupdatecheckcancel"></a>controller.checkwindow.updatecheckcancel
 
 Sự kiện này cho biết quá trình kiểm tra bản cập nhật đã bị hủy (bởi người dùng hoặc hệ thống). Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
 
@@ -4782,10 +4782,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
+### <a name="controllercheckwindowupdatecheckcanceluser"></a>controller.checkwindow.updatecheckcanceluser
 
 Sự kiện này cho biết người dùng đã hủy quá trình kiểm tra bản cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác, cũng như tối ưu hóa lượng tải dịch vụ và xác định tần suất kiểm tra bản cập nhật phù hợp. Chúng tôi cũng muốn tối ưu hóa nhịp độ phát hành dựa trên mong đợi về các bản cập nhật của người dùng.
 
@@ -4823,10 +4823,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_checkwindow_updatesfound"></a>controller_checkwindow_updatesfound
+### <a name="controllercheckwindowupdatesfound"></a>controller.checkwindow.updatesfound
 
 Sự kiện này cho biết đã tìm thấy các bản cập nhật từ quá trình kiểm tra bản cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
 
@@ -4864,10 +4864,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_checkwindow_uptodate"></a>controller_checkwindow_uptodate
+### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
 Sự kiện này cho biết không tìm thấy bản cập nhật nào từ quá trình kiểm tra vì ứng dụng trong thiết bị đã được cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
 
@@ -4905,51 +4905,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_applaunchwithpendingupdate"></a>controller_downloadwindow_applaunchwithpendingupdate
-
-Sự kiện này cho biết một ứng dụng đã khởi chạy trong quá trình cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác. Chúng tôi không nên cho phép các ứng dụng đang mở được cập nhật. Phải đóng các ứng dụng trước khi cập nhật.
-
-Các trường sau đây sẽ được thu thập:
-
-- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
-
-- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
-
-- **AppVersionLong** - Phiên bản ứng dụng
-
-- **Channel** - Tùy chọn dành cho người xem
-
-- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **DeviceID** - Mã định danh thiết bị
-
-- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
-
-- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
-
-- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
-
-- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
-
-- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
-
-- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
-
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
-
-- **Payload** - Văn bản tĩnh. 
-
-- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-    
-- **SessionId** - Mã định danh cho phiên
-
-    
-### <a name="controller_downloadwindow_closeapplicationdialog"></a>controller_downloadwindow_closeapplicationdialog
+### <a name="controllerdownloadwindowapplaunchwithpendingupdate"></a>controller.downloadwindow.applaunchwithpendingupdate
 
 Sự kiện này cho biết một ứng dụng đã khởi chạy trong quá trình cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác. Chúng tôi không nên cho phép các ứng dụng đang mở được cập nhật. Phải đóng các ứng dụng trước khi cập nhật.
 
@@ -4986,11 +4945,52 @@ Các trường sau đây sẽ được thu thập:
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-
-- **SessionId** - Mã định danh cho phiên
+    
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_downloadwindow_curtasknull"></a>controller_downloadwindow_curtasknull
+### <a name="controllerdownloadwindowcloseapplicationdialog"></a>controller.downloadwindow.closeapplicationdialog
+
+Sự kiện này cho biết một ứng dụng đã khởi chạy trong quá trình cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác. Chúng tôi không nên cho phép các ứng dụng đang mở được cập nhật. Phải đóng các ứng dụng trước khi cập nhật.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản tĩnh. 
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+    
+### <a name="controllerdownloadwindowcurtasknull"></a>controller.downloadwindow.curtasknull
 
 Sự kiện này cho biết đã xảy ra lỗi không mong muốn khi thử áp dụng bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
 
@@ -5028,10 +5028,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
+### <a name="controllerdownloadwindowdownloadcancel"></a>controller.downloadwindow.downloadcancel
 
 Sự kiện này cho biết người dùng đã hủy quá trình tải xuống.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
 
@@ -5069,10 +5069,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_downloadwindow_downloadfailed"></a>controller_downloadwindow_downloadfailed
+### <a name="controllerdownloadwindowdownloadfailed"></a>controller.downloadwindow.downloadfailed
 
 Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách.
 
@@ -5110,10 +5110,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_downloadwindow_downloadfailedok"></a>controller_downloadwindow_downloadfailedok
+### <a name="controllerdownloadwindowdownloadfailedok"></a>controller.downloadwindow.downloadfailedok
 
 Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật và người dùng đã được thông báo. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. Trong trường hợp xảy ra lỗi, người dùng sẽ nhận được thông báo.
 
@@ -5151,10 +5151,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_downloadpathmissing"></a>controller_downloadwindow_downloadpathmissing
+### <a name="controllerdownloadwindowdownloadpathmissing"></a>controller.downloadwindow.downloadpathmissing
 
 Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. Sự kiện này cho biết URL tải xuống bị thiếu.
 
@@ -5192,10 +5192,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_downloadtasknull"></a>controller_downloadwindow_downloadtasknull
+### <a name="controllerdownloadwindowdownloadtasknull"></a>controller.downloadwindow.downloadtasknull
 
 Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. Sự kiện này cho biết Microsoft Autoupdate đã được yêu cầu tạm dừng/ tiếp tục tải xuống nhưng lại không thể tìm thấy trình quản lý tải xuống tương ứng.
 
@@ -5233,10 +5233,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_filesignaturenotverified"></a>controller_downloadwindow_filesignaturenotverified
+### <a name="controllerdownloadwindowfilesignaturenotverified"></a>controller.downloadwindow.filesignaturenotverified
 
 Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Sự kiện này chỉ ra rằng Microsoft Autoupdate không thể xác minh bản cập nhật này do Microsoft phát hành. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. 
 
@@ -5274,10 +5274,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_installcomplete"></a>controller_downloadwindow_installcomplete
+### <a name="controllerdownloadwindowinstallcomplete"></a>controller.downloadwindow.installcomplete
 
 Sự kiện này cho biết quá trình cài đặt tất cả các bản cập nhật do Microsoft Autoupdate đề xuất đã hoàn thành. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất và tải xuống đúng cách. 
 
@@ -5315,10 +5315,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_networkunavailablealert"></a>controller_downloadwindow_networkunavailablealert
+### <a name="controllerdownloadwindownetworkunavailablealert"></a>controller.downloadwindow.networkunavailablealert
 
 Sự kiện này cho biết khả năng kết nối mạng bị mất trong khi đang tải xuống các bản cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5356,10 +5356,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_downloadwindow_networkunavailablealertok"></a>controller_downloadwindow_networkunavailablealertok
+### <a name="controllerdownloadwindownetworkunavailablealertok"></a>controller.downloadwindow.networkunavailablealertok
 
 Sự kiện này cho biết khả năng kết nối mạng bị mất trong khi đang tải xuống các bản cập nhật. Sự kiện cũng cho biết người dùng đã được thông báo về lỗi này. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5397,10 +5397,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_downloadwindow_noconnectionok"></a>controller_downloadwindow_noconnectionok
+### <a name="controllerdownloadwindownoconnectionok"></a>controller.downloadwindow.noconnectionok
 
 Sự kiện này cho biết khả năng kết nối mạng bị mất trong khi đang tải xuống các bản cập nhật. Sự kiện cũng cho biết người dùng đã được thông báo về lỗi này. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5438,10 +5438,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_repairrequired"></a>controller_downloadwindow_repairrequired
+### <a name="controllerdownloadwindowrepairrequired"></a>controller.downloadwindow.repairrequired
 
 Sự kiện này cho biết quy trình cập nhật không thành công. Sự kiện cũng cho biết bản cập nhật đã hoàn tất nhưng Microsoft Autoupdate tìm thấy sự cố với ứng dụng đã cập nhật và yêu cầu sửa chữa. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5479,9 +5479,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="controller_downloadwindow_updateaborted"></a>controller_downloadwindow_updateaborted
+### <a name="controllerdownloadwindowupdateaborted"></a>controller.downloadwindow.updateaborted
 
 Sự kiện này cho biết quy trình cập nhật bị hủy bỏ. Sự kiện cũng cho biết Daemon đang trong quá trình tiến hành bản cập nhật nhưng người dùng bấm vào OK để huỷ tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5519,10 +5519,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_updatefailed"></a>controller_downloadwindow_updatefailed
+### <a name="controllerdownloadwindowupdatefailed"></a>controller.downloadwindow.updatefailed
 
 Sự kiện này cho biết một hoặc nhiều bản cập nhật từ lô hiện tại cài đặt không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5560,51 +5560,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_updatesuccessful"></a>controller_downloadwindow_updatesuccessful
-
-Sự kiện này cho biết tất cả các bản cập nhật từ lô hiện tại đều cài đặt thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
-
-Các trường sau đây sẽ được thu thập:
-
-- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
-
-- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
-
-- **AppVersionLong** - Phiên bản ứng dụng
-
-- **Channel** - Tùy chọn dành cho người xem
-
-- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **DeviceID** - Mã định danh thiết bị
-
-- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
-
-- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
-
-- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
-
-- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
-
-- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
-
-- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
-
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
-
-- **Payload** - Văn bản cho biết bản chất của sự kiện.
-
-- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-
-- **SessionId** - Mã định danh cho phiên
-
-
-### <a name="controller_downloadwindow_userpaused"></a>controller_downloadwindow_userpaused
+### <a name="controllerdownloadwindowupdatesuccessful"></a>controller.downloadwindow.updatesuccessful
 
 Sự kiện này cho biết tất cả các bản cập nhật từ lô hiện tại đều cài đặt thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5642,10 +5601,51 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_downloadwindow_userresumed"></a>controller_downloadwindow_userresumed
+### <a name="controllerdownloadwindowuserpaused"></a>controller.downloadwindow.userpaused
+
+Sự kiện này cho biết tất cả các bản cập nhật từ lô hiện tại đều cài đặt thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+
+### <a name="controllerdownloadwindowuserresumed"></a>controller.downloadwindow.userresumed
 
 Sự kiện này cho biết quá trình tải xuống các bản cập nhật đã tiếp tục tiến hành thành công sau khi tạm dừng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5683,10 +5683,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_mainwindow_setautomaticdownloadinstall"></a>controller_mainwindow_setautomaticdownloadinstall
+### <a name="controllermainwindowsetautomaticdownloadinstall"></a>controller.mainwindow.setautomaticdownloadinstall
 
 Sự kiện này cho biết thiết bị đã đăng ký chế độ Cập nhật tự động. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5724,10 +5724,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_mainwindow_setmanualchecking"></a>controller_mainwindow_setmanualchecking
+### <a name="controllermainwindowsetmanualchecking"></a>controller.mainwindow.setmanualchecking
 
 Sự kiện này cho biết thiết bị đã đăng ký chế độ Cập nhật thủ công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5765,10 +5765,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_templateawindow_cancel"></a>controller_templateawindow_cancel
+### <a name="controllertemplateawindowcancel"></a>controller.templateawindow.cancel
 
 Sự kiện này cho biết người dùng đã chọn hủy hoặc bỏ qua một thông báo cảnh báo được đưa ra. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5806,10 +5806,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_templateawindow_enroll"></a>controller_templateawindow_enroll
+### <a name="controllertemplateawindowenroll"></a>controller.templateawindow.enroll
 
 Sự kiện này cho biết người dùng đã chọn làm theo đề xuất cảnh báo được đưa ra. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5847,11 +5847,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
 
-### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
+### <a name="controllertemplateawindowinstall"></a>controller.templateawindow.install
 
 Sự kiện này cho biết người dùng đã chọn làm theo đề xuất cảnh báo được đưa ra và đề xuất này liên quan đến việc khởi chạy hành động cài đặt phần mềm. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5889,10 +5889,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_updatewindow_begindownloadingapps"></a>controller_updatewindow_begindownloadingapps
+### <a name="controllerupdatewindowbegindownloadingapps"></a>controller.updatewindow.begindownloadingapps
 
 Sự kiện này cho biết đã bắt đầu tải xuống bản cập nhật thông qua Cửa sổ cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5930,10 +5930,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_updatewindow_networkretry"></a>controller_updatewindow_networkretry
+### <a name="controllerupdatewindownetworkretry"></a>controller.updatewindow.networkretry
 
 Sự kiện này cho biết đã kích hoạt thử lại trong trang tính Cập nhật do sự cố lỗi mạng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
 
@@ -5971,10 +5971,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_updatewindow_networkretrycancel"></a>controller_updatewindow_networkretrycancel
+### <a name="controllerupdatewindownetworkretrycancel"></a>controller.updatewindow.networkretrycancel
 
 Sự kiện này cho biết đã không thể kích hoạt thử lại trong trang tính Cập nhật do sự cố lỗi mạng. Sự kiện này cho thấy người dùng đã chọn hủy cập nhật sau khi được cảnh báo về vấn đề mạng đang ngoại tuyến. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6012,10 +6012,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_updatewindow_networkunavailable"></a>controller_updatewindow_networkunavailable
+### <a name="controllerupdatewindownetworkunavailable"></a>controller.updatewindow.networkunavailable
 
 Sự kiện này cho biết khả năng kết nối mạng bị mất một cách đột ngột. Sự kiện này cho thấy không thể truy cập máy chủ trong khi cố gắng tải xuống gói cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6053,10 +6053,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_updatewindow_noupdateavailable"></a>controller_updatewindow_noupdateavailable
+### <a name="controllerupdatewindownoupdateavailable"></a>controller.updatewindow.noupdateavailable
 
 Sự kiện này cho biết không tìm thấy bản cập nhật sẵn dùng nào sau khi tìm kiếm bản cập nhật. Sự kiện này cho thấy Microsoft Autoupdate không tìm thấy bản cập nhật sẵn dùng nào. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6094,10 +6094,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_updatewindow_noupdatestoselect"></a>controller_updatewindow_noupdatestoselect
+### <a name="controllerupdatewindownoupdatestoselect"></a>controller.updatewindow.noupdatestoselect
 
 Sự kiện này cho biết đã xảy ra lỗi dẫn đến danh sách cập nhật trống. Sự kiện này cho thấy Microsoft Autoupdate đang hiển thị trang tính cập nhật trống. Điều này không nên xảy ra. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6135,10 +6135,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="controller_updatewindow_updateavailable"></a>Controller_UpdateWindow_UpdateAvailable
+### <a name="controllerupdatewindowupdateavailable"></a>Controller.UpdateWindow.UpdateAvailable
 
 Sự kiện này cho biết có bản cập nhật được đề xuất sau khi tìm kiếm bản cập nhật. Chúng tôi dùng sự kiện này để xác định xem liệu người dùng có nhìn thấy các bản cập nhật được đề xuất, liệu các bản cập nhật phù hợp có hiển thị hay liệu việc chặn cập nhật có hoạt động theo dự kiến hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6176,10 +6176,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
+### <a name="controllerupdatewindowupdateavailablecancel"></a>controller.updatewindow.updateavailablecancel
 
 Sự kiện này cho biết người dùng đã hủy sau khi chúng tôi hiển thị trang tính mới liệt kê những thông tin cập nhật. Chúng tôi dùng sự kiện này để giải thích lý do không cập nhật (nghĩa là người dùng sẵn lòng hủy). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6217,10 +6217,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadactor_pause"></a>downloadactor_pause
+### <a name="downloadactorpause"></a>downloadactor.pause
 
 Sự kiện này cho biết người dùng đã đưa ra yêu cầu tạm dừng tải xuống. Chúng tôi dùng sự kiện này để giải thích lý do cập nhật có vẻ chưa hoàn tất. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6258,10 +6258,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadactor_redirect"></a>downloadactor_redirect
+### <a name="downloadactorredirect"></a>downloadactor.redirect
 
 Sự kiện này cho biết tác vụ trình tải xuống được trỏ đến điểm kết thúc, điều này dẫn đến URL chuyển hướng để đáp ứng yêu cầu tải xuống. Chúng tôi dùng sự kiện này để giải thích lý do tải xuống không thành công và chẩn đoán sự cố proxy. Sự kiện cũng giúp chẩn đoán lý do tại sao chúng tôi nhận thấy người dùng cài đặt các bản dựng cũ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6299,10 +6299,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="downloadactor_resume"></a>downloadactor_resume
+### <a name="downloadactorresume"></a>downloadactor.resume
 
 Sự kiện này cho biết người dùng đưa ra yêu cầu tiếp tục bản tải xuống đang tạm dừng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6340,10 +6340,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadactor_resumeerror"></a>downloadactor_resumeerror
+### <a name="downloadactorresumeerror"></a>downloadactor.resumeerror
 
 Sự kiện này cho biết người dùng đưa ra yêu cầu tiếp tục bản tải xuống đang tạm dừng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6381,10 +6381,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="downloadactor_status"></a>downloadactor_status
+### <a name="downloadactorstatus"></a>downloadactor.status
 
 Sự kiện này ghi lại đã có những lần thử tải các tệp bổ sung và kết quả của những lần thử này (Thành công hoặc Thất bại). Chúng tôi muốn biết các tệp bổ sung và gói đang được tải xuống. Việc tải một tệp không đúng có thể biểu hiện sự cố về bản dựng/ tệp bổ sung. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6422,10 +6422,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_configuration"></a>downloadmanifest_configuration
+### <a name="downloadmanifestconfiguration"></a>downloadmanifest.configuration
 
 Sự kiện này báo cáo lỗi với cấu hình Microsoft Auto Update (MAU) - kèm theo thiết lập Máy chủ Tùy chỉnh trong tùy chọn hay trong định nghĩa điểm cuối trong cấu phần MAU đã cài đặt. Chúng tôi sử dụng sự kiện này để khuyên các Quản trị viên CNTT đặt điểm cuối của Máy chủ bản kê một cách chính xác.
  
@@ -6461,10 +6461,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
+### <a name="downloadmanifestdownloadcatalogfail"></a>downloadmanifest.downloadcatalogfail
 
 Sự kiện này đã xảy ra lỗi tải xuống. Tệp không thể tải xuống đã được ghi lại. Chúng tôi muốn biết các tệp bổ sung và gói đang được tải xuống. Việc không thể tải xuống tệp kê khai có thể chỉ ra đó là lỗi khởi tạo tệp bổ sung của bản dựng hoặc lỗi cấu hình CDN, lỗi cấu hình máy khách hay lỗi mạng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6502,10 +6502,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="downloadmanifest_downloadcatalogsuccess"></a>downloadmanifest_downloadcatalogsuccess
+### <a name="downloadmanifestdownloadcatalogsuccess"></a>downloadmanifest.downloadcatalogsuccess
 
 Sự kiện này cho biết tệp đã được tải xuống thành công. Việc không thể tải xuống tệp kê khai có thể chỉ ra đó là lỗi khởi tạo tệp bổ sung của bản dựng hoặc lỗi cấu hình CDN, lỗi cấu hình máy khách hay lỗi mạng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6543,10 +6543,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_downloadfail"></a>downloadmanifest_downloadfail
+### <a name="downloadmanifestdownloadfail"></a>downloadmanifest.downloadfail
 
 Sự kiện này cho biết đã xảy ra lỗi tải xuống. Tệp kê khai hoặc tệp gói không thể tải xuống và chi tiết lỗi đã được ghi lại. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6584,51 +6584,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_downloadfromurl"></a>downloadmanifest_downloadfromurl
-
-Sự kiện này cho biết đã bắt đầu tải xuống tệp danh mục. Chúng tôi đã ghi lại URL của tệp danh mục đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
- 
-Các trường sau đây sẽ được thu thập:
-
-- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
-
-- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
-
-- **AppVersionLong** - Phiên bản ứng dụng
-
-- **Channel** - Tùy chọn dành cho người xem
-
-- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **DeviceID** - Mã định danh thiết bị
-
-- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
-
-- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
-
-- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
-
-- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
-
-- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
-
-- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
-
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
-
-- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
-
-- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-
-- **SessionId** - Mã định danh cho phiên
-
-
-### <a name="downloadmanifest_downloading"></a>downloadmanifest_downloading
+### <a name="downloadmanifestdownloadfromurl"></a>downloadmanifest.downloadfromurl
 
 Sự kiện này cho biết đã bắt đầu tải xuống tệp danh mục. Chúng tôi đã ghi lại URL của tệp danh mục đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6666,10 +6625,51 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_downloadsuccess"></a>downloadmanifest_downloadsuccess
+### <a name="downloadmanifestdownloading"></a>downloadmanifest.downloading
+
+Sự kiện này cho biết đã bắt đầu tải xuống tệp danh mục. Chúng tôi đã ghi lại URL của tệp danh mục đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa mã lỗi tải xuống và URL của tệp tải xuống. Đây là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+
+### <a name="downloadmanifestdownloadsuccess"></a>downloadmanifest.downloadsuccess
 
 Sự kiện này cho biết việc tải xuống tệp XML và tệp gói đã thành công. Chúng tôi đã ghi lại URL của tệp đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6707,10 +6707,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="downloadmanifest_downloadurl"></a>downloadmanifest_downloadurl
+### <a name="downloadmanifestdownloadurl"></a>downloadmanifest.downloadurl
 
 Sự kiện này cho biết có một yêu cầu tải xuống tệp. Chúng tôi đã ghi lại URL của tệp đang tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6748,10 +6748,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_filenameerror"></a>downloadmanifest_filenameerror
+### <a name="downloadmanifestfilenameerror"></a>downloadmanifest.filenameerror
 
 Sự kiện này cho biết đã xảy ra lỗi không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6789,10 +6789,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_invalidhash"></a>downloadmanifest_invalidhash
+### <a name="downloadmanifestinvalidhash"></a>downloadmanifest.invalidhash
 
 Sự kiện này cho biết việc xác thực bảo mật cho các tệp của chúng tôi không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6830,10 +6830,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_missingdaemon"></a>downloadmanifest_missingdaemon
+### <a name="downloadmanifestmissingdaemon"></a>downloadmanifest.missingdaemon
 
 Sự kiện này cho biết người dùng thử kiểm tra bản cập nhật và chúng tôi phát hiện ra MAU bị thiếu một thành phần cốt lõi (daemon). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6871,10 +6871,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_signatureerror"></a>downloadmanifest_signatureerror
+### <a name="downloadmanifestsignatureerror"></a>downloadmanifest.signatureerror
 
 Sự kiện này cho biết việc xác minh mã chữ ký cho gói không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6912,10 +6912,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmanifest_status"></a>downloadmanifest_status
+### <a name="downloadmanifeststatus"></a>downloadmanifest.status
 
 Sự kiện này ghi lại một tập hợp tóm tắt các lần thử/ sự cố đã xảy ra trong quá trình tải xuống tệp kê khai và tệp gói. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6953,10 +6953,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmgr_downloadend"></a>downloadmgr_downloadend
+### <a name="downloadmgrdownloadend"></a>downloadmgr.downloadend
 
 Sự kiện này ghi lại dấu hiệu cho biết quá trình tải xuống đã tự hoàn tất. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -6994,10 +6994,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="downloadmgr_downloadstart"></a>downloadmgr_downloadstart
+### <a name="downloadmgrdownloadstart"></a>downloadmgr.downloadstart
 
 Sự kiện này ghi lại bản cập nhật sắp được tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -7035,9 +7035,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="downloadtask_downloadbegin"></a>downloadtask_downloadbegin
+### <a name="downloadtaskdownloadbegin"></a>downloadtask.downloadbegin
 
 Sự kiện này cho biết sự bắt đầu của hoạt động tải xuống của một bản cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật và chúng tôi sử dụng sự kiện này để xác định tình trạng của bản cập nhật ứng dụng.
  
@@ -7086,7 +7086,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 - **UpdateVersion** - Phiên bản của ứng dụng sau khi cập nhật
 
 
-### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
+### <a name="downloadtaskdownloadfailure"></a>downloadtask.downloadfailure
 
 Sự kiện này ghi lại đã xảy ra lỗi khi tải xuống tệp gói. Chúng tôi đã ghi lại đường dẫn cập nhật và lỗi. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -7133,7 +7133,7 @@ Các trường sau đây sẽ được thu thập:
 - **UpdateID** – Mã định danh của bản cập nhật đang được tải xuống.
 
 
-### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
+### <a name="downloadtaskdownloadsuccess"></a>downloadtask.downloadsuccess
 
 Tải xuống tệp gói thành công. Chúng tôi đã ghi lại đường dẫn cập nhật được sử dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -7177,7 +7177,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** – Mã định danh của bản cập nhật đã được tải xuống.
 
-### <a name="downloadtask_updatertypeerror"></a>downloadtask_updatertypeerror
+### <a name="downloadtaskupdatertypeerror"></a>downloadtask.updatertypeerror
 
 Sự kiện này cho biết lỗi loại bộ cập nhật trong tệp bản kê được tải xuống. Chúng tôi sử dụng sử dụng này để thông báo cho chủ sở hữu về tệp bản kê để khắc phục lỗi.
  
@@ -7221,7 +7221,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateURL** - URL của gói cập nhật cần được áp dụng
 
-### <a name="downloadtask_urlerror"></a>downloadtask_urlerror
+### <a name="downloadtaskurlerror"></a>downloadtask.urlerror
 
 Sự kiện này cho biết lỗi trong URL xác định trong tệp bản kê được tải xuống. Chúng tôi sử dụng sử dụng này để thông báo cho chủ sở hữu về tệp bản kê để khắc phục lỗi.
  
@@ -7263,7 +7263,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateURL** - URL của gói cập nhật cần được áp dụng
 
-### <a name="fba_changelastupdate"></a>fba_changelastupdate
+### <a name="fbachangelastupdate"></a>fba.changelastupdate
 
 Sự kiện này cho biết thời điểm Microsoft Auto Update (MAU) kiểm tra cập nhật. Chúng tôi sử dụng sự kiện này để gỡ lỗi khi một thiết bị cụ thể chưa được cập nhật trong một khoảng thời gian kéo dài.
 
@@ -7299,10 +7299,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_checkforupdate"></a>fba_checkforupdate
+### <a name="fbacheckforupdate"></a>fba.checkforupdate
 
 Sự kiện này cho biết quá trình nền đang kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -7340,10 +7340,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_checkforupdateskip"></a>fba_checkforupdateskip
+### <a name="fbacheckforupdateskip"></a>fba.checkforupdateskip
 
 Sự kiện này cho biết quá trình nền đã bỏ qua cập nhật vì lý do GUI MAU đang mở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -7381,10 +7381,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_forceinstallmsgsent"></a>fba_forceinstallmsgsent
+### <a name="fbaforceinstallmsgsent"></a>fba.forceinstallmsgsent
 
 Sự kiện này cho biết một bản cập nhật bắt buộc được khởi tạo từ giao diện người dùng. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc.
 
@@ -7420,9 +7420,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_forceupdatecheck"></a>fba_forceupdatecheck
+### <a name="fbaforceupdatecheck"></a>fba.forceupdatecheck
 
 Sự kiện này cho biết bắt buộc kiểm tra cập nhật. Chúng tôi sử dụng sự kiện này để xác định số lần kiểm tra cập nhật bắt buộc xảy ra ngoài chu kỳ kiểm tra cập nhật bình thường.
 
@@ -7460,9 +7460,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_guiappopen"></a>fba_guiappopen
+### <a name="fbaguiappopen"></a>fba.guiappopen
 
 Sự kiện này cho biết giao diện người dùng được khởi chạy dưới chế độ Tự động Kiểm tra, vì một ứng dụng với bản cập nhật có thể áp dụng hiện đang mở. Sự kiện này được sử dụng để xác định số lần khởi chạy giao diện người dùng từ chế độ Tự động Kiểm tra để phát triển tính năng trong tương lai.
 
@@ -7500,9 +7500,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_installpending"></a>fba_installpending
+### <a name="fbainstallpending"></a>fba.installpending
 
 Sự kiện này cho biết Microsoft Auto Update (MAU) đã gửi một thông báo về các bản cập nhật đang chờ. Sự kiện này được sử dụng để xác định số lượng bản cập nhật được khởi chạy từ thông báo của người dùng và để cải thiện trải nghiệm người dùng bằng cách giảm thiểu sự gián đoạn cho người dùng trong các bản phát hành trong tương lai.
 
@@ -7540,9 +7540,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_launch"></a>fba_launch
+### <a name="fbalaunch"></a>fba.launch
 
 Sự kiện này cho biết sự bắt đầu của Bộ trợ giúp Microsoft Update với phương pháp được khởi chạy. Sự kiện này được sử dụng để xác định Bộ trợ giúp Microsoft Update có được khởi chạy trong ngữ cảnh không chính xác hay không.
 
@@ -7580,9 +7580,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_launchbyagent"></a>fba_launchbyagent
+### <a name="fbalaunchbyagent"></a>fba.launchbyagent
 
 Sự kiện này cho biết Bộ trợ giúp Microsoft Update đã khởi chạy qua Tác vụ Khởi chạy. Sự kiện này được sử dụng để xác định số lần Bộ trợ giúp Microsoft Update khởi chạy từ giao diện người dùng để phát triển trong tương lai.
 
@@ -7620,9 +7620,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_launchfromprotocol"></a>fba_launchfromprotocol
+### <a name="fbalaunchfromprotocol"></a>fba.launchfromprotocol
 
 Sự kiện này cho biết Bộ trợ giúp Microsoft Update đã khởi chạy qua giao thức URL. Sự kiện này được sử dụng để xác định số lần Bộ trợ giúp Microsoft Update khởi chạy từ URL để phát triển trong tương lai.
 
@@ -7660,9 +7660,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_launchgui"></a>fba_launchgui
+### <a name="fbalaunchgui"></a>fba.launchgui
 
 Sự kiện này cho biết Bộ trợ giúp Microsoft Update đang cố gắng khởi chạy Giao diện Người dùng đồ hoạ (GUI). Sự kiện này được sử dụng để xác định số lần UI khởi chạy từ Bộ trợ giúp Microsoft Update để hỗ trợ cho việc phát triển trong tương lai, bao gồm giảm thiểu sự gián đoán cho người dùng trong việc khởi chạy UI thường xuyên.
 
@@ -7700,10 +7700,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_launchstatus"></a>fba_launchstatus
+### <a name="fbalaunchstatus"></a>fba.launchstatus
 
 Sự kiện này ghi lại các lỗi daemon của MAU trong khi cố gắng khởi chạy. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -7748,7 +7748,7 @@ Các trường sau đây sẽ được thu thập:
 - **Success** – Chuỗi Boolean cho biết liệu quy trình MAU daemon có được khởi chạy thành công hay không.
 
 
-### <a name="fba_mausilentupdate"></a>fba_mausilentupdate
+### <a name="fbamausilentupdate"></a>fba.mausilentupdate
 
 Sự kiện này cho biết Bộ trợ giúp Microsoft Update đang khởi chạy các bản cập nhật tự hành. Sự kiện này được sử dụng để xác định số lượng bản cập nhật được áp dụng mà không có sự can thiệp của người dùng để giúp thúc đẩy cải thiện trải nghiệm người dùng.
 
@@ -7786,9 +7786,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_moreinfofromappnotification"></a>fba_moreinfofromappnotification
+### <a name="fbamoreinfofromappnotification"></a>fba.moreinfofromappnotification
 
 Sự kiện này cho biết thông tin về một ứng dụng đã đăng ký đang định tuyến qua Microsoft Auto Update (MAU). Ví dụ: thông báo kết thúc dịch vụ được đẩy qua thông báo của MAU. Chúng tôi sử dụng sự kiện này để xác định số lượng thiết bị hiển thị thông báo cụ thể này, nhằm xác định sự thành công của việc phổ biến thông tin.
 
@@ -7828,9 +7828,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_multipledaemon"></a>fba_multipledaemon
+### <a name="fbamultipledaemon"></a>fba.multipledaemon
 
 Sự kiện này cho biết đã phát hiện một bản sao khác của Bộ trợ giúp Microsoft Update và bản sao hiện tại sẽ được chấm dứt. Chúng tôi sẽ sử dụng sự kiện này để xác định số lượng thiết bị cố gắng chạy nhiều bản sao Bộ trợ giúp Cập nhật và thiết kế một giải pháp thay thế nếu cần.
 
@@ -7868,9 +7868,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_nofifyappclosed"></a>fba_nofifyappclosed
+### <a name="fbanofifyappclosed"></a>fba.nofifyappclosed
 
 Sự kiện này cho biết Bộ trợ giúp Microsoft Update đang gửi một thông báo về các bản cập nhật đang chờ vì không có ứng dụng đã đăng ký nào đang mở và bản cập nhật có thể tiếp tục mà không làm gián đoạn người dùng. Chúng tôi sử dụng sự kiện này để xác định số lượng bản cập nhật có thể được áp dụng nhưng cần hành động của người dùng để thực hiện. Sự kiện này được sử dụng để giúp thúc đẩy cải thiện trải nghiệm người dùng.
 
@@ -7908,9 +7908,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
     
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
     
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_nofifyappopen"></a>fba_nofifyappopen
+### <a name="fbanofifyappopen"></a>fba.nofifyappopen
 
 Sự kiện này cho biết Bộ trợ giúp Microsoft Update đang gửi một thông báo về các bản cập nhật đang chờ vì ứng dụng đã đăng ký đang mở và bản cập nhật yêu cầu đóng ứng dụng để tiếp tục.  Chúng tôi sử dụng sự kiện này để xác đính số lượng bản cập nhật cần sự can thiệp của người dùng.  Sự kiện này được sử dụng để giúp thúc đẩy cải thiện trải nghiệm người dùng.
 
@@ -7948,9 +7948,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_settimerfail"></a>fba_settimerfail  
+### <a name="fbasettimerfail"></a>fba.settimerfail  
 
 Sự kiện này cho biết nỗ lực thiết lập bộ định giờ để kích hoạt cập nhật trong tương lai không thành công. Sự kiện này rất quan trọng và chúng tôi sử dụng sự kiện này để xác định số lần không thành công để phát triển giải pháp thay thế nếu cần.
 
@@ -7988,10 +7988,10 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
+### <a name="fbasilentupdateoptin"></a>fba.silentupdateoptin
 
 Sự kiện này cho biết người dùng đang chọn áp dụng các bản cập nhật tự hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8029,9 +8029,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
+### <a name="fbaskipforcedupdate"></a>fba.skipforcedupdate
 
 Sự kiện này cho biết quá trình kiểm tra cập nhật bắt buộc bị bỏ qua vì lý do có các ứng dụng đang mở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8069,10 +8069,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_startforcedupdate"></a>fba_startforcedupdate
+### <a name="fbastartforcedupdate"></a>fba.startforcedupdate
 
 Sự kiện này cho biết đã xảy ra một lần thử áp dụng bản cập nhật bắt buộc. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8110,10 +8110,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_terminate"></a>fba_terminate
+### <a name="fbaterminate"></a>fba.terminate
 
 Sự kiện này cho thấy daemon MAU đã chấm dứt theo cách thông thường. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8151,10 +8151,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fba_updatefound"></a>fba_updatefound
+### <a name="fbaupdatefound"></a>fba.updatefound
 
 Sự kiện này cho thấy daemon MAU đã tìm thấy nhằm đề xuất các bản cập nhật sẵn dùng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8192,10 +8192,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="fba_updatetimer"></a>fba_updatetimer
+### <a name="fbaupdatetimer"></a>fba.updatetimer
 
 Sự kiện này cho thấy quá trình Daemon Microsoft Autoupdate đã bắt đầu hoạt động để kiểm tra cập nhật sau khi ở trạng thái ngủ trong một khoảng thời gian. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8233,10 +8233,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
+### <a name="fbasilentupdateallappsclosed"></a>fbasilentupdate.allappsclosed
 
 Sự kiện này sẽ ghi lại liệu đã đóng tất cả các ứng dụng trước khi cài đặt hay chưa. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8274,10 +8274,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_applaunchafterupdate"></a>fbasilentupdate_applaunchafterupdate
+### <a name="fbasilentupdateapplaunchafterupdate"></a>fbasilentupdate.applaunchafterupdate
 
 Sự kiện này sẽ ghi lại một lần thử khởi chạy lại ứng dụng sau cập nhật tự hành và chế độ cập nhật (sao chép hoặc không). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8319,10 +8319,10 @@ Các trường sau đây sẽ được thu thập:
     
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_applaunchwileinstalling"></a>fbasilentupdate_applaunchwileinstalling
+### <a name="fbasilentupdateapplaunchwileinstalling"></a>fbasilentupdate.applaunchwileinstalling
 
 Chúng tôi đã ghi lại thời điểm ứng dụng khởi chạy trong khi cài đặt bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8360,10 +8360,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_appneedtoclose"></a>fbasilentupdate_appneedtoclose
+### <a name="fbasilentupdateappneedtoclose"></a>fbasilentupdate.appneedtoclose
 
 Chúng tôi đã ghi lại thời điểm quá trình cập nhật khởi động và nhận thấy rằng ứng dụng cần cập nhật đã mở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8401,10 +8401,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
+### <a name="fbasilentupdateappterminationeventreceived"></a>fbasilentupdate.appterminationeventreceived
 
 Sự kiện này cho thấy Microsoft Autoupdate đã nhận được thông báo từ sự kiện Apple về việc ứng dụng đã chấm dứt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8451,7 +8451,7 @@ Các trường sau đây sẽ được thu thập:
 - **UpdateID** – Mã định danh của bản cập nhật ứng dụng.
 
 
-### <a name="fbasilentupdate_clientsession"></a>FBASilentUpdate_ClientSession
+### <a name="fbasilentupdateclientsession"></a>FBASilentUpdate.ClientSession
 
 Sự kiện này được sử dụng để tính toán số liệu tình trạng cập nhật cho Microsoft Auto Update (MAU). Sự kiện này cho phép chúng tôi xác định phiên cập nhật nào (tải xuống hay cài đặt) mà thiết bị phụ trợ hiện đang xử lý.
  
@@ -8492,7 +8492,7 @@ Các trường sau đây sẽ được thu thập:
 - **SessionId** – Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
+### <a name="fbasilentupdatecodesignfailure"></a>fbasilentupdate.codesignfailure
 
 Sự kiện này ghi lại kết quả xác minh chứng thực số sau khi áp dụng bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8530,10 +8530,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_download"></a>fbasilentupdate_download
+### <a name="fbasilentupdatedownload"></a>fbasilentupdate.download
 
 Sự kiện này cho thấy bản cập nhật đang được tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8576,7 +8576,7 @@ Các trường sau đây sẽ được thu thập:
 - **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
+### <a name="fbasilentupdatedownloadfailed"></a>fbasilentupdate.downloadfailed
 
 Sự kiện này cho biết đã xảy ra lỗi khi tải xuống bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8625,7 +8625,7 @@ Các trường sau đây sẽ được thu thập:
 - **UpdateName** – Tên của bản cập nhật ứng dụng.
 
 
-### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
+### <a name="fbasilentupdatedownloadinbackground"></a>fbasilentupdate.downloadinbackground
 
 Sự kiện này cho biết chúng tôi đang bắt đầu tải xuống một tập hợp các bản cập nhật trong nền (chúng tôi sẽ ghi lại số lượng bản cập nhật đang tải xuống đồng thời). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8663,10 +8663,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_downloadingrepairupdate"></a>fbasilentupdate_downloadingrepairupdate
+### <a name="fbasilentupdatedownloadingrepairupdate"></a>fbasilentupdate.downloadingrepairupdate
 
 Sự kiện này cho biết chúng tôi đã bắt đầu một lần thử tải xuống bản sửa lỗi cho bản cập nhật không thành công. Chúng tôi sẽ ghi lại phiên bản và bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8709,7 +8709,7 @@ Các trường sau đây sẽ được thu thập:
 - **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
+### <a name="fbasilentupdateduplicatedownloadattempted"></a>fbasilentupdate.duplicatedownloadattempted
 
 Sự kiện này cho biết đã xảy ra lỗi. Chúng tôi chỉ nên tải xuống cùng một lúc một bản cập nhật cho một ứng dụng đã biết. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8747,10 +8747,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_installattemptfailed"></a>fbasilentupdate_installattemptfailed
+### <a name="fbasilentupdateinstallattemptfailed"></a>fbasilentupdate.installattemptfailed
 
 Sự kiện này cho biết lần thử cài đặt bản cập nhật (phiên bản) đã không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8788,10 +8788,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_installcomplete"></a>fbasilentupdate_installcomplete
+### <a name="fbasilentupdateinstallcomplete"></a>fbasilentupdate.installcomplete
 
 Sự kiện này cho biết tất cả các bản cập nhật trong lô đã hoàn tất cài đặt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8829,10 +8829,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_installed"></a>fbasilentupdate_installed
+### <a name="fbasilentupdateinstalled"></a>fbasilentupdate.installed
 
 Sự kiện này cho biết bản cập nhật riêng lẻ đã được cài đặt thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8870,10 +8870,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="fbasilentupdate_installing"></a>fbasilentupdate_installing
+### <a name="fbasilentupdateinstalling"></a>fbasilentupdate.installing
 
 Sự kiện này cho biết bản cập nhật riêng lẻ đã bắt đầu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -8911,9 +8911,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fbasilentupdate_installstatus"></a>fbasilentupdate_installstatus
+### <a name="fbasilentupdateinstallstatus"></a>fbasilentupdate.installstatus
 
 Sự kiện này cho biết trạng thái của tác vụ cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật ứng dụng và chúng tôi sử dụng sự kiện này để giám sát tình trạng của bản cập nhật ứng dụng.
 
@@ -8963,7 +8963,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdatePkg** - Tên của gói cập nhật đang được áp dụng
 
-### <a name="fbasilentupdate_notificationerror"></a>fbasilentupdate_notificationerror
+### <a name="fbasilentupdatenotificationerror"></a>fbasilentupdate.notificationerror
 
 Sự kiện này cho biết lỗi gặp phải khi cố gắng gửi thông báo cho người dùng. Sự kiện này sẽ được sử dụng để gỡ lỗi vì lỗi và thực hiện hành động khắc phục.
 
@@ -9009,7 +9009,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Type** - Loại thông báo
 
-### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
+### <a name="fbasilentupdatenotificationremoved"></a>fbasilentupdate.notificationremoved
 
 Sự kiện này cho biết bản cập nhật đã chặn sẽ không còn bị chặn nữa. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -9047,10 +9047,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_queueinstall"></a>fbasilentupdate_queueinstall
+### <a name="fbasilentupdatequeueinstall"></a>fbasilentupdate.queueinstall
 
 Sự kiện này cho biết bản cập nhật sẽ ở trong hàng chờ cài đặt tự hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -9088,10 +9088,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_requiredappsclosed"></a>fbasilentupdate_requiredappsclosed
+### <a name="fbasilentupdaterequiredappsclosed"></a>fbasilentupdate.requiredappsclosed
 
 Chúng tôi sẽ ghi lại thời điểm ứng dụng có bản cập nhật đang chờ xử lý bị đóng. Thao tác này cho biết thời gian cài đặt thực tế có thể tiến hành. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -9129,9 +9129,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="fbasilentupdate_timerforapptermination"></a>FBASilentUpdate_TimerForAppTermination
+### <a name="fbasilentupdatetimerforapptermination"></a>FBASilentUpdate.TimerForAppTermination
 
 Sự kiện này được sử dụng để tính toán số liệu tình trạng cập nhật cho Microsoft Auto Update (MAU). Sự kiện này cho phép chúng tôi theo dõi sự kiện chấm dứt của ứng dụng đã mở và khoảng thời gian của trạng thái mở.
  
@@ -9171,7 +9171,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** – Mã định danh của phiên
 
-### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
+### <a name="fbasilentupdateupdateavailablenotification"></a>fbasilentupdate.updateavailablenotification
 
 Sự kiện này cho thấy đã kích hoạt thông báo có bản cập nhật sẵn dùng. Chúng tôi phải đảm bảo luồng nhắc nhở cập nhật được kích hoạt mỗi khi phát hiện có bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -9209,10 +9209,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_userclicknotification"></a>fbasilentupdate_userclicknotification
+### <a name="fbasilentupdateuserclicknotification"></a>fbasilentupdate.userclicknotification
 
 Sự kiện này cho thấy người dùng đã bấm vào phần nội dung của thông báo có bản cập nhật sẵn dùng và GUI Microsoft Autoupdate đang khởi chạy. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -9250,10 +9250,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_userselectinstalllater"></a>fbasilentupdate_userselectinstalllater
+### <a name="fbasilentupdateuserselectinstalllater"></a>fbasilentupdate.userselectinstalllater
 
 Sự kiện này cho thấy người dùng chọn cài đặt sau, sau khi thông báo có bản cập nhật sẵn dùng hiển thị. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -9291,10 +9291,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="fbasilentupdate_userselectinstallnow"></a>fbasilentupdate_userselectinstallnow
+### <a name="fbasilentupdateuserselectinstallnow"></a>fbasilentupdate.userselectinstallnow
 
 Sự kiện này cho thấy người dùng chọn cài đặt ngay bây giờ sau khi thông báo có bản cập nhật sẵn dùng hiển thị. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -9332,9 +9332,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="gui_dashboardview_appisopendialog_display"></a>gui_dashboardview_appisopendialog_display 
+### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Sự kiện này cho biết UI đã hiện một hộp thoại đóng ứng dụng mở để tiếp tục cập nhật ứng dụng. Sự kiện được sử dụng để xác định số lượng bản cập nhật bị trì hoãn để cải thiện trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng.
 
@@ -9378,7 +9378,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateName** - Tên của bản cập nhật khi xuất hiện trong tệp bản kê được tải xuống
 
-### <a name="gui_dashboardview_appisopendialogbutton_clicked"></a>gui_dashboardview_appisopendialogbutton_clicked
+### <a name="guidashboardviewappisopendialogbuttonclicked"></a>gui.dashboardview.appisopendialogbutton.clicked
 
 Sự kiện này cho biết bản cập nhật ứng dụng có bị bỏ qua không, hay một nỗ lực khác đang được thực hiện sau khi hiện hộp thoại ứng dụng mở. Sự kiện này được sử dụng để xác định số lượng bản cập nhật bị bỏ qua để cải thiện trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng.
 
@@ -9424,7 +9424,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateName** - Tên của bản cập nhật khi xuất hiện trong tệp bản kê được tải xuống
 
-### <a name="gui_dashboardview_updateinprogressdialog_display"></a>gui_dashboardview_updateinprogressdialog_display
+### <a name="guidashboardviewupdateinprogressdialogdisplay"></a>gui.dashboardview.updateinprogressdialog.display
 
 Sự kiện này ghi lại việc một hộp thoại được hiển thị cho người dùng cho biết đang cập nhật.
  
@@ -9462,7 +9462,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** – Mã định danh của phiên
 
-### <a name="gui_dashboardview_updatemodebutton_clicked"></a>gui_dashboardview_updatemodebutton_clicked
+### <a name="guidashboardviewupdatemodebuttonclicked"></a>gui.dashboardview.updatemodebutton.clicked
 
 Sự kiện này cho biết chế độ cập nhật đã được thay đổi từ Điều khiển UI. Sự kiện này được sử dụng để xác định số lượng thiết bị chuyển tiếp từ chế độ này sang chế độ khác, giúp xác định nguyên nhân khách hàng không muốn cập nhật tự động. 
 
@@ -9500,9 +9500,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="gui_feedbackwindow_buttonclicked"></a>gui_feedbackwindow_buttonclicked
+### <a name="guifeedbackwindowbuttonclicked"></a>gui.feedbackwindow.buttonclicked
 
 Sự kiện này cho biết ý kiến phản hồi đã được gửi hay bị hủy trước khi gửi. Sự kiện này được sử dụng để giúp xác định số lượng ý kiến phản hồi được gửi về một phiên bản phát hành cụ thể. Điều này giúp cô lập sớm các sự cố tiềm ẩn.
 
@@ -9540,9 +9540,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="gui_preferenceview_consentsheet_display"></a>gui_preferenceview_consentsheet_display
+### <a name="guipreferenceviewconsentsheetdisplay"></a>gui.preferenceview.consentsheet.display
 
 Sự kiện này cho biết trang tính chấp thuận cho một kênh nhất định được hiển thị, nếu có. Sự kiện này được sử dụng để xác định số lượng thiết bị đăng ký mới vào kênh người xem áp dụng (Người dùng Nội bộ Nhanh / Người dùng Nội bộ Chậm). Chúng tôi cũng sử dụng sự kiện này để đảm bảo hộp thoại chấp thuận đang hoạt động để hiện điều khoản sử dụng cho người dùng.
  
@@ -9580,9 +9580,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="gui_preferenceview_consentsheet_licenseerror"></a>gui_preferenceview_consentsheet_licenseerror
+### <a name="guipreferenceviewconsentsheetlicenseerror"></a>gui.preferenceview.consentsheet.licenseerror
 
 Sự kiện này cho biết lỗi gặp phải khi cố gắng hiện hộp thoại chấp thuận. Sự kiện này rất quan trọng và được sử dụng để khắc phục bất kỳ sự cố nào gây ra do sản phẩm thay đổi, nếu có.
 
@@ -9622,9 +9622,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="gui_preferenceview_switchchannel"></a>gui_preferenceview_switchchannel
+### <a name="guipreferenceviewswitchchannel"></a>gui.preferenceview.switchchannel
 
 Sự kiện này cho biết sự chuyển tiếp giữa các kênh đã chọn của người dùng. Sự kiện này được sử dụng để giúp xác định nguyên nhân khách hàng ra khỏi các kênh của Người dùng Nội bộ.  
 
@@ -9664,9 +9664,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="gui_updatemanager_applaunchduringupdate"></a>gui_updatemanager_applaunchduringupdate
+### <a name="guiupdatemanagerapplaunchduringupdate"></a>gui.updatemanager.applaunchduringupdate
 
 Sự kiện này cho biết một ứng dụng đã khởi chạy trong khi đang được cập nhật và Microsoft AutoUpdate đang chấm dứt ứng dụng đã khởi chạy. Ghi chú rằng khởi chạy một ứng dụng trong khi đang cập nhật có thể dẫn đến ứng dụng bị hỏng. Chúng tôi sử dụng sự kiện này để đảm bảo quy trình cập nhật không bị ứng dụng đã khởi chạy ảnh hưởng trước khi sẵn sàng sử dụng.
  
@@ -9710,7 +9710,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh của bản cập nhật ứng dụng.
 
-### <a name="gui_updatemanager_downloadupdateforapp"></a>gui_updatemanager_downloadupdateforapp
+### <a name="guiupdatemanagerdownloadupdateforapp"></a>gui.updatemanager.downloadupdateforapp
 
 Sự kiện này cho biết trạng thái hoàn thành tải xuống của một bản cập nhật. Chúng tôi sử dụng sự kiện này để đảm bảo trạng thái của quy trình cập nhật và theo dõi/giải quyết điểm thất bại.
 
@@ -9759,7 +9759,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 - **UpdateName** - Tên bản cập nhật.
 
 
-### <a name="gui_updatemanager_error"></a>gui_updatemanager_error
+### <a name="guiupdatemanagererror"></a>gui.updatemanager.error
 
 Sự kiện này cho biết các lỗi gặp phải trong quá trình cập nhật ứng dụng. Sự kiện này có thể cho biết lỗi trong trình tự thực thi của Microsoft Auto Update (MAU).  Chúng tôi dùng báo cáo này để áp dụng các bản cập nhật cho MAU để hỗ trợ cho các kịch bản lỗi phổ biến.
 
@@ -9801,7 +9801,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Success** – Giá trị chuỗi Boolean cho biết ứng dụng đã được chấm dứt thành công hay chưa.
 
-### <a name="gui_updatemanager_installcleanupforapp"></a>gui_updatemanager_installcleanupforapp
+### <a name="guiupdatemanagerinstallcleanupforapp"></a>gui.updatemanager.installcleanupforapp
 
 Sự kiện cho biết các tệp tạm thời được tạo trong quá trình cài đặt ứng dụng đã được dọn dẹp thành công. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
  
@@ -9846,7 +9846,7 @@ Các trường sau đây sẽ được thu thập:
 - **UpdateID** – Mã định danh cập nhật.
 
 
-### <a name="gui_updatemanager_installsuccessforapp"></a>gui_updatemanager_installsuccessforapp
+### <a name="guiupdatemanagerinstallsuccessforapp"></a>gui.updatemanager.installsuccessforapp
 
 Sự kiện này cho biết ứng dụng được cập nhật thành công. Sự kiện này là một phần của phễu cập nhật mà chúng tôi sử dụng để xác định tình trạng của bản cập nhật.
  
@@ -9890,7 +9890,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cập nhật.
 
-### <a name="gui_updatemanager_installupdateforapp"></a>gui_updatemanager_installupdateforapp
+### <a name="guiupdatemanagerinstallupdateforapp"></a>gui.updatemanager.installupdateforapp
 
 Sự kiện này cho biết sự bắt đầu của quy trình cài đặt một bản cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật ứng dụng mà chúng tôi sử dụng để xác định tình trạng của bản cập nhật.
  
@@ -9932,7 +9932,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cập nhật.
 
-### <a name="gui_updatemanager_queueinstallforapp"></a>gui_updatemanager_queueinstallforapp
+### <a name="guiupdatemanagerqueueinstallforapp"></a>gui.updatemanager.queueinstallforapp
 
 Sự kiện này cho biết sự bắt đầu của quy trình cài đặt một bản cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật ứng dụng mà chúng tôi sử dụng để xác định tình trạng của bản cập nhật.
  
@@ -9974,7 +9974,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cập nhật.
 
-### <a name="gui_updatemanager_relaunchapp"></a>gui_updatemanager_relaunchapp
+### <a name="guiupdatemanagerrelaunchapp"></a>gui.updatemanager.relaunchapp
 
 Sự kiện này ghi lại ứng dụng có khởi chạy thành công sau khi cập nhật hay không.
  
@@ -10020,7 +10020,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateName** - Tên bản cập nhật.
 
-### <a name="installdata_checkrunning"></a>installdata_checkrunning
+### <a name="installdatacheckrunning"></a>installdata.checkrunning
 
 Sự kiện này sẽ ghi lại kết quả kiểm tra giữa các ứng dụng sẽ cài đặt và liệu những lần thử cài đặt có tiến hành dựa trên ứng dụng đang mở hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10058,10 +10058,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installdata_cleanup"></a>installdata_cleanup
+### <a name="installdatacleanup"></a>installdata.cleanup
 
 Các tệp gói nên được loại bỏ sau khi cài đặt. Sự kiện này ghi lại các phiên bản mà chúng tôi không thể loại bỏ tệp gói. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10099,10 +10099,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installedapp_invalidbundle"></a>installedapp_invalidbundle
+### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
 
 Sự kiện này cho thấy Microsoft Autoupdate không thể truy xuất thông tin về gói của ứng dụng đã đăng ký tại đường dẫn cụ thể. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10140,10 +10140,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installedapp_invalidpreference"></a>installedapp_invalidpreference
+### <a name="installedappinvalidpreference"></a>installedapp.invalidpreference
 
 Sự kiện này ghi lại các trường hợp mà trong đó, phần tùy chọn người dùng chứa mục nhập ứng dụng không hợp lệ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10181,10 +10181,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installedapp_nilbundleid"></a>installedapp_nilbundleid
+### <a name="installedappnilbundleid"></a>installedapp.nilbundleid
 
 Sự kiện này ghi lại các trường hợp mà trong đó, ID gói của ứng dụng bị thiếu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10222,10 +10222,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installedapp_nilbundlename"></a>installedapp_nilbundlename
+### <a name="installedappnilbundlename"></a>installedapp.nilbundlename
 
 Sự kiện này ghi lại các trường hợp mà trong đó, tên gói của ứng dụng bị thiếu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10263,10 +10263,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installedapp_sendcoreappleevent"></a>installedapp_sendcoreappleevent
+### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Sự kiện này cho biết Microsoft Auto Update (MAU) đang gửi một sự kiện của Apple tới một ứng dụng đã đăng ký để chấm dứt ứng dụng nhằm tiếp tục cập nhật ứng dụng đang chờ. Sự kiện này hiện đang được sử dụng để giúp cải thiện trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng trong quá trình cập nhật ứng dụng. 
 
@@ -10317,7 +10317,7 @@ Các trường sau đây sẽ được thu thập:
 - **Success** - Cho biết ứng dụng chủ đã báo cáo hoạt động thành công hay chưa
 
     
-### <a name="installstatus_codesign"></a>installstatus_codesign
+### <a name="installstatuscodesign"></a>installstatus.codesign
 
 Sự kiện này ghi lại trạng thái của nhị phân chứng thực số OS. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10355,10 +10355,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installstatus_daemon"></a>installstatus_daemon
+### <a name="installstatusdaemon"></a>installstatus.daemon
 
 Sự kiện này ghi lại trạng thái của daemon Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10396,10 +10396,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installstatus_helper"></a>installstatus_helper
+### <a name="installstatushelper"></a>installstatus.helper
 
 Sự kiện này ghi lại trạng thái của công cụ trình trợ giúp Microsoft AutoUpdate. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10437,10 +10437,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installupdatestask_applaunched"></a>installupdatestask_applaunched
+### <a name="installupdatestaskapplaunched"></a>installupdatestask.applaunched
 
 Sự kiện này cho thấy Microsoft Autoupdate phát hiện ứng dụng khởi chạy một bản cập nhật đã chặn nhưng không thể tìm thấy chương trình cài đặt phù hợp. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10478,10 +10478,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installupdatestask_applaunchwithpendingupdate"></a>installupdatestask_applaunchwithpendingupdate
+### <a name="installupdatestaskapplaunchwithpendingupdate"></a>installupdatestask.applaunchwithpendingupdate
 
 Sự kiện này cho thấy Microsoft Autoupdate phát hiện ứng dụng khởi chạy một ứng dụng có bản cập nhật đang chờ xử lý. Ứng dụng đã khởi chạy sẽ chấm dứt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10519,10 +10519,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installupdatestask_codesignverificationfail"></a>installupdatestask_codesignverificationfail
+### <a name="installupdatestaskcodesignverificationfail"></a>installupdatestask.codesignverificationfail
 
 Sự kiện này cho biết quá trình xác minh Chứng thực số cho bản cập nhật ứng dụng đã không thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10560,10 +10560,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_codesignverificationstart"></a>installupdatestask_codesignverificationstart
+### <a name="installupdatestaskcodesignverificationstart"></a>installupdatestask.codesignverificationstart
 
 Sự kiện này cho biết quá trình xác minh Chứng thực số cho bản cập nhật ứng dụng đã bắt đầu. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10601,10 +10601,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_codesignverificationsuccess"></a>installupdatestask_codesignverificationsuccess
+### <a name="installupdatestaskcodesignverificationsuccess"></a>installupdatestask.codesignverificationsuccess
 
 Sự kiện này cho biết quá trình xác minh Chứng thực số cho bản cập nhật ứng dụng đã thành công. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10642,10 +10642,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_failsilentinstall"></a>installupdatestask_failsilentinstall
+### <a name="installupdatestaskfailsilentinstall"></a>installupdatestask.failsilentinstall
 
 Sự kiện này ghi lại lỗi trong khi áp dụng các bản cập nhật tự hành và liệu đây là bản cài đặt sao chép hay bản cài đặt thông thường. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10683,10 +10683,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installupdatestask_multiplerelocatablepackage"></a>installupdatestask_multiplerelocatablepackage
+### <a name="installupdatestaskmultiplerelocatablepackage"></a>installupdatestask.multiplerelocatablepackage
 
 Sự kiện này cho thấy Microsoft Autoupdate đã tìm thấy nhiều phiên bản của mục nhập ứng dụng dành cho gói cập nhật cụ thể trong tệp kê khai đã tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10724,10 +10724,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="installupdatestask_removeclone"></a>installupdatestask_removeclone
+### <a name="installupdatestaskremoveclone"></a>installupdatestask.removeclone
 
 Sự kiện này cho biết một bản sao đã bị loại bỏ. Chúng tôi sẽ loại bỏ bản sao sau khi quá trình Cài đặt bản sao hoàn thành hoặc khi một quá trình mới bắt đầu, cũng như khi một phiên bản sao chép cũ được tìm thấy trong máy. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10765,10 +10765,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_retryfail"></a>installupdatestask_retryfail
+### <a name="installupdatestaskretryfail"></a>installupdatestask.retryfail
 
 Sự kiện này cho biết đã gặp phải lỗi trong quá trình thử cài đặt lại. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10806,51 +10806,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
-
-Sự kiện này ghi lại các lỗi giao tiếp trong quá trình (giao tiếp với công cụ trình trợ giúp MAU). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
- 
-Các trường sau đây sẽ được thu thập:
-
-- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
-
-- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
-
-- **AppVersionLong** - Phiên bản ứng dụng
-
-- **Channel** - Tùy chọn dành cho người xem
-
-- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **DeviceID** - Mã định danh thiết bị
-
-- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
-
-- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
-
-- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
-
-- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
-
-- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
-
-- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
-
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
-
-- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và thông tin chi tiết về lỗi proxy được báo cáo.
-
-- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-
-- **SessionId** - Mã định danh cho phiên
-
-    
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Sự kiện này ghi lại các lỗi giao tiếp trong quá trình (giao tiếp với công cụ trình trợ giúp MAU). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10888,11 +10847,52 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
+
+    
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
+
+Sự kiện này ghi lại các lỗi giao tiếp trong quá trình (giao tiếp với công cụ trình trợ giúp MAU). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và thông tin chi tiết về lỗi proxy được báo cáo.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
 
     
 
-### <a name="installupdatestask_retryresponse"></a>installupdatestask_retryresponse
+### <a name="installupdatestaskretryresponse"></a>installupdatestask.retryresponse
 
 Sự kiện này ghi lại rằng lần thử lại không có tác dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10930,10 +10930,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_retrysuccess"></a>installupdatestask_retrysuccess
+### <a name="installupdatestaskretrysuccess"></a>installupdatestask.retrysuccess
 
 Sự kiện này ghi lại cài đặt bản cập nhật đã thành công sau khi thử lại. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -10971,10 +10971,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_setreopengui"></a>installupdatestask_setreopengui
+### <a name="installupdatestasksetreopengui"></a>installupdatestask.setreopengui
 
 Sự kiện này cho thấy liệu tuỳ chọn cài đặt nhằm mở lại GUI sau cài đặt có thành công hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11012,10 +11012,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="installupdatestask_updatestatus"></a>installupdatestask_updatestatus
+### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
 Sự kiện này cho biết trạng thái của tác vụ cài đặt. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
 
@@ -11069,8 +11069,58 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdatePkg** - Tên của gói cập nhật đang được áp dụng
 
+### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
-### <a name="msupdate_cli_eventhandler"></a>msupdate_cli_eventhandler
+Sự kiện này báo cáo định kỳ về trạng thái của quy trình MicrosoftAutoUpdate. Cụ thể, sự kiện này báo cáo về những tác vụ còn lại mà quy trình đang đợi để hoàn thiện cho Công cụ trợ giúp Cập nhật và trong trường hợp UI, sự kiện này báo cáo về việc quy trình có đang chấm dứt do người dùng không hoạt động hay không.  Chúng tôi sử dụng sự kiện này để xác định yếu tố tác ngăn Công cụ trợ giúp Cập nhật hoàn thành bản cập nhật và đang chấm dứt, đồng thời xác định UI có đang chấm dứt do người dùng không hoạt động hay không.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **dataCollectionDialog** - Boolean xác định quy trình có đang đợi phản hồi của người dùng trên Hộp thoại Kết nối Dữ liệu hay không
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **forcedUpdateDialog** - Boolean xác định quy trình có đang đợi phản hồi của người dùng trên Hộp thoại Cập nhật Bắt buộc hay không
+
+- **HowToCheck** - Cài đặt Cách kiểm tra
+
+- **isBusy** - Boolean xác định quy trình có đang bận với bản cập nhật hiện hoạt hay không
+
+- **isInactive** - Boolean xác định quy trình có đang đợi hành động của người dùng trong thời gian kéo dài hay không
+
+- **isWaiting** - Boolean xác định quy trình có đang đợi phản hồi của người dùng trên thông báo hay không
+
+- **PipelineInfo_ClientCountry** - Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+- **SessionLength** - Độ dài của phiên quy trình hiện tại theo giây
+
+
+### <a name="msupdateclieventhandler"></a>msupdate.cli.eventhandler
 
 Sự kiện này được sử dụng để tính toán mức sử dụng của các loại Giao diện API Dòng lệnh của Microsoft Auto Update (MAU).
 
@@ -11110,10 +11160,10 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
+### <a name="msupdateclieventhandlerapplyupdatesappids"></a>msupdate.cli.eventhandler.applyupdates.appids
 
 Sự kiện này cho thấy lệnh CLI (giao diện dòng máy khách) đã được đưa ra để áp dụng bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11151,10 +11201,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
+### <a name="msupdateclieventhandlerconfig"></a>msupdate.cli.eventhandler.config
 
 Sự kiện này cho thấy mô-đun Giao diện dòng lệnh Microsoft Autoupdate đã nhận được sự kiện Apple để định cấu hình. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11192,10 +11242,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
+### <a name="msupdateclieventhandlerupdates"></a>msupdate.cli.eventhandler.updates
 
 Sự kiện này cho thấy mô-đun Giao diện dòng lệnh Microsoft Autoupdate đã nhận được sự kiện Apple để liệt kê các bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11233,10 +11283,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="msupdate_monitor_progress_downloaded"></a>msupdate_monitor_progress_downloaded
+### <a name="msupdatemonitorprogressdownloaded"></a>msupdate.monitor.progress.downloaded
 
 Sự kiện này cho thấy các bản cập nhật đã được tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11274,10 +11324,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="msupdate_monitor_progress_failure"></a>msupdate_monitor_progress_failure
+### <a name="msupdatemonitorprogressfailure"></a>msupdate.monitor.progress.failure
 
 Sự kiện này ghi lại danh sách các bản cập nhật đang chờ nhưng không thể áp dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11315,10 +11365,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="msupdate_monitor_progress_finished"></a>msupdate_monitor_progress_finished
+### <a name="msupdatemonitorprogressfinished"></a>msupdate.monitor.progress.finished
 
 Sự kiện này ghi lại danh sách các bản cập nhật đang chờ và đã hoàn tất cài đặt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11356,10 +11406,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="msupdate_monitor_progress_queued"></a>msupdate_monitor_progress_queued
+### <a name="msupdatemonitorprogressqueued"></a>msupdate.monitor.progress.queued
 
 Sự kiện này ghi lại danh sách các bản cập nhật đang chờ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -11438,10 +11488,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="sauforcedupdate_autodismiss"></a>sauforcedupdate_autodismiss
+### <a name="sauforcedupdateautodismiss"></a>sauforcedupdate.autodismiss
 
 Sự kiện này cho biết hộp thoại cập nhật được hiển thị đã được bỏ do người dùng không hoạt động. Sự kiện này được sử dụng để xác định số lượng các bản cập nhật bắt buộc được xử lý mà người dùng không cung cấp thông tin đầu vào tới thông báo được hiển thị. Sự kiện này được sử dụng để tăng cường giao diện người dùng để giảm thiểu sự gián đoạn.
 
@@ -11481,7 +11531,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_close"></a>sauforcedupdate_close
+### <a name="sauforcedupdateclose"></a>sauforcedupdate.close
 
 Sự kiện này cho biết người dùng đã chọn đóng hộp thoại cập nhật bắt buộc. Sự kiện này được sử dụng để xác định số lượng bản cập nhật bắt buộc bị trì hoãn bởi hành động của người dùng. Sự kiện này được sử dụng để tăng cường giao diện người dùng để giảm thiểu sự gián đoạn. 
 
@@ -11519,9 +11569,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_completeautodismiss"></a>sauforcedupdate_completeautodismiss
+### <a name="sauforcedupdatecompleteautodismiss"></a>sauforcedupdate.completeautodismiss
 
 Sự kiện cho biết hộp thoại cập nhật bắt buộc đã hiển thị từ tính năng hạn chót đã được bỏ do người dùng không hoạt động. Sự kiện này được sử dụng để xác định số lượng các bản cập nhật bắt buộc được xử lý mà người dùng không cung cấp thông tin đầu vào tới thông báo được hiển thị. Sự kiện này được sử dụng để tăng cường giao diện người dùng để giảm thiểu sự gián đoạn cho tính năng hạn chót.
 
@@ -11559,9 +11609,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_completeclose"></a>sauforcedupdate_completeclose
+### <a name="sauforcedupdatecompleteclose"></a>sauforcedupdate.completeclose
 
 Sự kiện này cho biết một bản cập nhật bắt buộc đã hoàn thành thành công. Sự kiện này được sử dụng để giúp xác định tình trạng của tính năng cập nhật bắt buộc. 
 
@@ -11599,9 +11649,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_display"></a>sauforcedupdate_display
+### <a name="sauforcedupdatedisplay"></a>sauforcedupdate.display
 
 Sự kiện này cho biết một hộp thoại cập nhật bắt buộc đã hiển thị.  Sự kiện này là một phần của phễu cập nhật bắt buộc và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc.
 
@@ -11639,9 +11689,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_displayfinalhour"></a>sauforcedupdate_displayfinalhour
+### <a name="sauforcedupdatedisplayfinalhour"></a>sauforcedupdate.displayfinalhour
 
 Sự kiện này cho biết một hộp thoại báo giờ cuối để cập nhật bắt buộc đã hiển thị. Sự kiện này là một phần của phễu cập nhật bắt buộc và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc.
 
@@ -11679,9 +11729,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_done"></a>sauforcedupdate_done
+### <a name="sauforcedupdatedone"></a>sauforcedupdate.done
 
 Sự kiện này cho biết một bản cập nhật bắt buộc đã hoàn thành thành công. Sự kiện này là một phần của phễu cập nhật bắt buộc và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
@@ -11719,9 +11769,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_enabled"></a>sauforcedupdate_enabled
+### <a name="sauforcedupdateenabled"></a>sauforcedupdate.enabled
 
 Sự kiện này được kích hoạt khi Microsoft Auto Update (MAU) xác định bản cập nhật bắt buộc có thể áp dụng.  Sự kiện này được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
@@ -11761,9 +11811,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_forcedupdatedismiss"></a>sauforcedupdate_forcedupdatedismiss
+### <a name="sauforcedupdateforcedupdatedismiss"></a>sauforcedupdate.forcedupdatedismiss
 
 Sự kiện này cho biết hộp thoại báo giờ cuối để cập nhật bắt buộc đã hiển thị đã được bỏ do người dùng không hoạt động. Sự kiện này được sử dụng để xác định số lượng các bản cập nhật bắt buộc được xử lý mà người dùng không cung cấp thông tin đầu vào tới thông báo được hiển thị. Sự kiện này được sử dụng để tăng cường giao diện người dùng để giảm thiểu sự gián đoạn. 
 
@@ -11801,9 +11851,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_forcequitandupdatenow"></a>sauforcedupdate_forcequitandupdatenow
+### <a name="sauforcedupdateforcequitandupdatenow"></a>sauforcedupdate.forcequitandupdatenow
 
 Sự kiện này cho biết sự bắt đầu của bản cập nhật bắt buộc do người dùng khởi chạy. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
@@ -11841,9 +11891,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên 
+- **SessionId** - Mã định danh của phiên 
 
-### <a name="sauforcedupdate_forceterminate"></a>sauforcedupdate_forceterminate
+### <a name="sauforcedupdateforceterminate"></a>sauforcedupdate.forceterminate
 
 Sự kiện này cho biết sự bắt đầu của bản cập nhật bắt buộc với ứng dụng bị buộc chấm dứt.  Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc.
 
@@ -11881,9 +11931,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_quitandupdatenow"></a>sauforcedupdate_quitandupdatenow
+### <a name="sauforcedupdatequitandupdatenow"></a>sauforcedupdate.quitandupdatenow
 
 Sự kiện này cho biết người dùng đã chọn đóng ứng dụng và áp dụng bản cập nhật. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
@@ -11921,9 +11971,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_snooze"></a>sauforcedupdate_snooze
+### <a name="sauforcedupdatesnooze"></a>sauforcedupdate.snooze
 
 Sự kiện này cho biết người dùng đã chọn trì hoãn cập nhật bắt buộc. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
@@ -11961,9 +12011,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_terminate"></a>sauforcedupdate_terminate
+### <a name="sauforcedupdateterminate"></a>sauforcedupdate.terminate
 
 Sự kiện này cho biết sự bắt đầu của bản cập nhật bắt buộc với ứng dụng bị chấm dứt. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc.
 
@@ -12001,9 +12051,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="sauforcedupdate_updatenow"></a>sauforcedupdate_updatenow
+### <a name="sauforcedupdateupdatenow"></a>sauforcedupdate.updatenow
 
 Sự kiện này cho biết người dùng đã chọn cập nhật ứng dụng ngay bây giờ.  Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc.
 
@@ -12082,10 +12132,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="update_applaunchdetected"></a>update_applaunchdetected
+### <a name="updateapplaunchdetected"></a>update.applaunchdetected
 
 Sự kiện này cho biết một ứng dụng đã được khởi chạy trong khi đang cập nhật. Sự kiện này được sử dụng để xác định số lượng ứng dụng được khởi chạy trong quá trình cập nhật, nhằm tăng cường trải nghiệm người dùng trong các bản phát hành trong tương lai.
 
@@ -12129,7 +12179,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
-### <a name="update_appterminationreceived"></a>update_appterminationreceived
+### <a name="updateappterminationreceived"></a>update.appterminationreceived
 
 Sự kiện này cho biết một ứng dụng với cập nhật bị chặn đã bị chấm dứt và Microsoft Auto Update (MAU) có thể tiếp tục cập nhật hay không. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
 
@@ -12175,7 +12225,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
-### <a name="update_blockedappclosed"></a>update_blockedappclosed
+### <a name="updateblockedappclosed"></a>update.blockedappclosed
 
 Sự kiện này cho biết Microsoft Auto Update (MAU) đã phát hiện một ứng dụng với cập nhật bị chặn đã đóng và có thể tiếp tục cập nhật. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
@@ -12219,7 +12269,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
-### <a name="update_blockedinstallskip"></a>update_blockedinstallskip
+### <a name="updateblockedinstallskip"></a>update.blockedinstallskip
 
 Sự kiện này ghi lại lỗi gặp phải khi cố gắng bỏ qua một bản cập nhật ứng dụng. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.  
 
@@ -12259,9 +12309,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="update_clientsession"></a>update_clientsession
+### <a name="updateclientsession"></a>update.clientsession
 
 Sự kiện này được báo cáo khi trạng thái thiết bị của khách hàng thay đổi, khiến Bộ trợ giúp Microsoft Update tạm dừng hoặc tiếp tục quy trình cập nhật. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
@@ -12299,9 +12349,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="update_download_begin"></a>update_download_begin 
+### <a name="updatedownloadbegin"></a>update.download.begin 
 
 Sự kiện này cho biết sự bắt đầu của quy trình cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
@@ -12347,7 +12397,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateName** - Tên của bản cập nhật khi xuất hiện trong tệp bản kê được tải xuống
 
-### <a name="update_download_finish"></a>update_download_finish
+### <a name="updatedownloadfinish"></a>update.download.finish
 
 Sự kiện này cho biết giai đoạn tải xuống bản cập nhật ứng dụng đã hoàn thành. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.  
 
@@ -12393,7 +12443,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdateName** - Tên của bản cập nhật khi xuất hiện trong tệp bản kê được tải xuống
 
-### <a name="update_downloadresume"></a>update_downloadresume
+### <a name="updatedownloadresume"></a>update.downloadresume
 
 Sự kiện này cho biết lỗi gặp phải khi nỗ lực tiếp tục tác vụ tải xuống đã tạm dừng. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo. 
 
@@ -12437,7 +12487,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
-### <a name="update_error"></a>update_error
+### <a name="updateerror"></a>update.error
 
 Sự kiện này cho biết lỗi gặp phải khi nỗ lực cập nhật ứng dụng đã đăng ký.  Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo. 
 
@@ -12477,9 +12527,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="update_installcleanupforapp"></a>update_installcleanupforapp
+### <a name="updateinstallcleanupforapp"></a>update.installcleanupforapp
 
 Sự kiện này cho biết đã hoàn thành cài đặt cập nhật và Microsoft Auto Update (MAU) đang dọn dẹp.  Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
 
@@ -12523,7 +12573,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
-### <a name="update_installupdateforapp"></a>update_installupdateforapp
+### <a name="updateinstallupdateforapp"></a>update.installupdateforapp
 
 Sự kiện này được sử dụng để báo cáo về việc bắt đầu quy trình cài đặt bản cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
@@ -12569,7 +12619,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateName** - Tên của bản cập nhật khi xuất hiện trong tệp bản kê được tải xuống
 
-### <a name="update_installupdateforapp_success"></a>update_installupdateforapp_success
+### <a name="updateinstallupdateforappsuccess"></a>update.installupdateforapp.success
 
 Sự kiện này cho biết trạng thái của tác vụ cài đặt. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
@@ -12615,7 +12665,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
-### <a name="update_installvariance"></a>Update_InstallVariance
+### <a name="updateinstallvariance"></a>Update.InstallVariance
 
 Sự kiện này được sử dụng để tính toán số liệu tình trạng cập nhật quan trọng cho MAU. Sự kiện này cho phép chúng tôi xác định số liệu thành công của tính năng ưu tiên cài đặt và xác minh tính toàn vẹn của tính năng.
  
@@ -12653,9 +12703,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="update_multipleappupdates"></a>update_multipleappupdates 
+### <a name="updatemultipleappupdates"></a>update.multipleappupdates 
 
 Sự kiện này cho biết nhiều bản cập nhật ứng dụng đang chạy trong nền. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
 
@@ -12693,9 +12743,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="update_previousidnil"></a>update_previousidnil
+### <a name="updatepreviousidnil"></a>update.previousidnil
 
 Sự kiện cho biết gói cập nhật sửa chữa đang được tải xuống nhưng không có thông tin tải xuống trước đó. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo. 
 
@@ -12735,9 +12785,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="update_queueinstallforapp"></a>update_queueinstallforapp 
+### <a name="updatequeueinstallforapp"></a>update.queueinstallforapp 
 
 Sự kiện này cho biết một gói cập nhật đã tải xuống đã được đặt trong hàng đợi để cài đặt.  Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.
 
@@ -12783,7 +12833,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateName** - Tên của bản cập nhật khi xuất hiện trong tệp bản kê được tải xuống
 
-### <a name="update_relaunchafterupdate"></a>update_relaunchafterupdate 
+### <a name="updaterelaunchafterupdate"></a>update.relaunchafterupdate 
 
 Sự kiện này cho biết ứng dụng đã hoàn tất cập nhật và đang khởi chạy lại. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
@@ -12827,7 +12877,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
-### <a name="update_timerforapptermination"></a>update_timerforapptermination 
+### <a name="updatetimerforapptermination"></a>update.timerforapptermination 
 
 Sự kiện này cho biết thời gian bắt đầu/kết thúc của bộ định giờ để kiểm tra trạng thái ứng dụng. Sự kiện này đi theo cặp và được sử dụng để xác định tất cả bộ định giờ được loại bỏ khi bản cập nhật ứng dụng tiến hành.
 
@@ -12865,10 +12915,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatecore_appregistration"></a>updatecore_appregistration
+### <a name="updatecoreappregistration"></a>updatecore.appregistration
 
 Sự kiện này sẽ ghi lại các lần thử đăng ký ứng dụng và kết quả/ lý do. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -12906,10 +12956,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatecore_loadinglaunchagent"></a>updatecore_loadinglaunchagent
+### <a name="updatecoreloadinglaunchagent"></a>updatecore.loadinglaunchagent
 
 Sự kiện này cho thấy Tác vụ khởi chạy đang được tải. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -12947,9 +12997,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatecore_runnstaskcommand"></a>updatecore_runnstaskcommand
+### <a name="updatecorerunnstaskcommand"></a>updatecore.runnstaskcommand
 
 Sự kiện này báo cáo lỗi trong khi cố gắng khởi chạy một tác vụ. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.  
 
@@ -12987,9 +13037,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
+### <a name="updatecoreserverconnectionfail"></a>updatecore.server.connectionfail
 
 Sự kiện này ghi lại các lỗi xảy ra trong khi tiếp cận với CDN. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13027,9 +13077,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatecore_server_nullurl"></a>updatecore_server_nullurl
+### <a name="updatecoreservernullurl"></a>updatecore.server.nullurl
 
 Sự kiện này báo cáo lỗi cho biết không thể tiếp cận một máy chủ nhất định. Sự kiện này được sử dụng để xác định tỷ lệ thất bại khi cập nhật do sự cố mạng. 
 
@@ -13067,9 +13117,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
+### <a name="updatefilterhelpercannotretrievebuilddate"></a>updatefilterhelper.cannotretrievebuilddate
 
 Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại là không thể truy xuất ngày tháng từ siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13107,10 +13157,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefilterhelper_invalidappid"></a>updatefilterhelper_invalidappid
+### <a name="updatefilterhelperinvalidappid"></a>updatefilterhelper.invalidappid
 
 Sự kiện này báo cáo lỗi cho biết không tìm thấy tệp bản kê với id ứng dụng truy nhập từ phản hồi web. Sự kiện này được sử dụng để điều tra lỗi được báo cáo.
 
@@ -13148,9 +13198,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatefilterhelper_invalidappidfromwebservices"></a>updatefilterhelper_invalidappidfromwebservices
+### <a name="updatefilterhelperinvalidappidfromwebservices"></a>updatefilterhelper.invalidappidfromwebservices
 
 Sự kiện này báo cáo lỗi cho biết ID ứng dụng truy nhập từ phản hồi web không ở định dạng mong muốn. Sự kiện này được sử dụng để điều tra lỗi được báo cáo.
 
@@ -13188,9 +13238,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
+### <a name="updatefilterhelperinvalidresponsefromupdatefiltering"></a>updatefilterhelper.invalidresponsefromupdatefiltering
 
 Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13228,10 +13278,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefilterhelper_missingbuilddate"></a>updatefilterhelper_missingbuilddate
+### <a name="updatefilterhelpermissingbuilddate"></a>updatefilterhelper.missingbuilddate
 
 Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13269,10 +13319,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefilterhelper_updatebypassedoldage"></a>updatefilterhelper_updatebypassedoldage
+### <a name="updatefilterhelperupdatebypassedoldage"></a>updatefilterhelper.updatebypassedoldage
 
 Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại dịch vụ bị bỏ qua do ngày cập nhật đã cũ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13310,10 +13360,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_check_error"></a>updatefinder_check_error
+### <a name="updatefindercheckerror"></a>updatefinder.check.error
 
 Sự kiện này báo cáo lỗi gặp phải trong khi kiểm tra bản cập nhật. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo. 
 
@@ -13353,10 +13403,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
  
-### <a name="updatefinder_check_start"></a>updatefinder_check_start
+### <a name="updatefindercheckstart"></a>updatefinder.check.start
 
 Sự kiện này sẽ ghi lại bất cứ khi nào chúng tôi bắt đầu hoạt động kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13394,10 +13444,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_check_status"></a>updatefinder_check_status
+### <a name="updatefindercheckstatus"></a>updatefinder.check.status
 
 Sự kiện này tổng hợp lại trạng thái của thao tác kiểm tra bản cập nhật (hình phễu từ bước tìm kiếm cho đến tải xuống). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13435,10 +13485,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_check_updatefound"></a>updatefinder_check_updatefound
+### <a name="updatefindercheckupdatefound"></a>updatefinder.check.updatefound
 
 Chúng tôi sẽ ghi lại bất cứ khi nào tìm thấy bản cập nhật sau thao tác kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13476,10 +13526,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_check_updatenotfound"></a>updatefinder_check_updatenotfound
+### <a name="updatefindercheckupdatenotfound"></a>updatefinder.check.updatenotfound
 
 Chúng tôi sẽ ghi lại bất cứ khi nào không tìm thấy bản cập nhật nào để đề xuất sau thao tác kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13517,10 +13567,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_check_uptodate"></a>updatefinder_check_uptodate
+### <a name="updatefindercheckuptodate"></a>updatefinder.check.uptodate
 
 Chúng tôi sẽ ghi lại bất cứ khi nào không tìm thấy bản cập nhật nào để đề xuất do tất cả các ứng dụng đều đã cập nhật, sau thao tác kiểm tra bản cập nhật. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13558,10 +13608,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_offerupdates_invalidappid"></a>updatefinder_offerupdates_invalidappid
+### <a name="updatefinderofferupdatesinvalidappid"></a>updatefinder.offerupdates.invalidappid
 
 Sự kiện này báo cáo lỗi trong khi cố gắng đánh giá một bản cập nhật có áp dụng được hay không. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.  
 
@@ -13601,9 +13651,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
+### <a name="updatefinderofferupdatesminoscheckfail"></a>updatefinder.offerupdates.minoscheckfail
 
 Chúng tôi sẽ ghi lại bất cứ khi nào chúng tôi chặn bản cập nhật do không đạt các yêu cầu OS. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13641,9 +13691,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatefinder_offerupdates_missingtrigger"></a>updatefinder_offerupdates_missingtrigger
+### <a name="updatefinderofferupdatesmissingtrigger"></a>updatefinder.offerupdates.missingtrigger
 
 Sự kiện này báo cáo lỗi trong khi cố gắng đánh giá yếu tố kích hoạt từ bản kê cập nhật ứng dụng đã tải xuống. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.  
 
@@ -13685,7 +13735,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Triggers** - Từ điển yếu tố kích hoạt được tìm thấy trong bản kê
 
-### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
+### <a name="updatefinderofferupdatesnullbundleforappid"></a>updatefinder.offerupdates.nullbundleforappid
 
 Sự kiện này cho thấy Microsoft Autoupdate không thể tải thông tin gói của ID ứng dụng cụ thể như trong tệp kê khai đã tải xuống. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13723,10 +13773,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_offerupdates_updaterulematched"></a>updatefinder_offerupdates_updaterulematched
+### <a name="updatefinderofferupdatesupdaterulematched"></a>updatefinder.offerupdates.updaterulematched
 
 Sự kiện này cho biết đã tìm thấy bản cập nhật cho một ứng dụng và đường cơ sở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13764,10 +13814,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="updatefinder_registeredapps"></a>updatefinder_registeredapps
+### <a name="updatefinderregisteredapps"></a>updatefinder.registeredapps
 
 Chúng tôi sẽ ghi lại các ứng dụng được MAU cài đặt/ đăng ký/ kiểm soát. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13805,9 +13855,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatefinder_suite_invalidsuiteversion"></a>updatefinder_suite_invalidsuiteversion
+### <a name="updatefindersuiteinvalidsuiteversion"></a>updatefinder.suite.invalidsuiteversion
 
 Sự kiện này báo cáo lỗi phiên bản bộ trong khi đánh giá một bản cập nhật có áp dụng được hay không. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.
 
@@ -13847,7 +13897,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Suite** - Tên của bộ đang được xem xét
 
-### <a name="updatefinder_suite_keyvaluemissing"></a>updatefinder_suite_keyvaluemissing
+### <a name="updatefindersuitekeyvaluemissing"></a>updatefinder.suite.keyvaluemissing
 
 Sự kiện này báo cáo lỗi trong khi cố gắng thêm một ứng dụng vào bộ. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.
 
@@ -13890,7 +13940,7 @@ Các trường sau đây sẽ được thu thập:
 - **Suite** - Tên của ứng dụng bộ được thêm vào
 
     
-### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
+### <a name="updatefindersuitemissingcollateral"></a>updatefinder.suite.missingcollateral
 
 Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không thể áp dụng bản cập nhật theo bộ do thiếu tệp bổ sung. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13928,10 +13978,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_suite_staleversion"></a>updatefinder_suite_staleversion
+### <a name="updatefindersuitestaleversion"></a>updatefinder.suite.staleversion
 
 Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không thể áp dụng bản cập nhật theo bộ do phiên bản cơ sở đã quá lạc hậu. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -13969,10 +14019,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_suite_updateapplicable"></a>updatefinder_suite_updateapplicable
+### <a name="updatefindersuiteupdateapplicable"></a>updatefinder.suite.updateapplicable
 
 Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào có thể áp dụng bản cập nhật theo bộ. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14010,10 +14060,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_suite_updatenotapplicabledefaultpath"></a>updatefinder_suite_updatenotapplicabledefaultpath
+### <a name="updatefindersuiteupdatenotapplicabledefaultpath"></a>updatefinder.suite.updatenotapplicabledefaultpath
 
 Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không đề xuất cập nhật theo bộ do tất cả các ứng dụng theo bộ đều được cài đặt bằng đường dẫn mặc định. Chúng tôi sẽ ghi lại phiên bản cơ sở và ID ứng dụng Suite. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14051,10 +14101,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="updatefinder_suite_updatenotapplicableversion"></a>updatefinder_suite_updatenotapplicableversion
+### <a name="updatefindersuiteupdatenotapplicableversion"></a>updatefinder.suite.updatenotapplicableversion
 
 Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không đề xuất cập nhật theo bộ do tất cả các ứng dụng theo bộ đều có cùng phiên bản đường cơ sở. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14092,10 +14142,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_suite_updatenotoffered"></a>updatefinder_suite_updatenotoffered
+### <a name="updatefindersuiteupdatenotoffered"></a>updatefinder.suite.updatenotoffered
 
 Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào không đề xuất cập nhật theo bộ do kích thước của bộ lớn hơn các bản cập nhật riêng lẻ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14133,10 +14183,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatefinder_suite_updateoffered"></a>updatefinder_suite_updateoffered
+### <a name="updatefindersuiteupdateoffered"></a>updatefinder.suite.updateoffered
 
 Cập nhật theo bộ - Chúng tôi sẽ ghi lại bất cứ khi nào có đề xuất bản cập nhật theo bộ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14174,10 +14224,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="updatemanager_checkupdate"></a>updatemanager_checkupdate
+### <a name="updatemanagercheckupdate"></a>updatemanager.checkupdate
 
 Sự kiện này ghi lại số lượng bản cập nhật do Microsoft Autoupdate tìm thấy trong khi kiểm tra bản cập nhật sẵn dùng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14215,10 +14265,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="updatemanager_updatespending"></a>updatemanager_updatespending
+### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
 Sự kiện này cho biết đã tìm thấy các bản cập nhật và đang chờ để cài đặt. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14256,9 +14306,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="updatestatus_codesign"></a>UpdateStatus_Codesign
+### <a name="updatestatuscodesign"></a>UpdateStatus.Codesign
 
 Sự kiện này báo cáo trạng thái từ xác minh chứng thực số mà Bộ trợ giúp Microsoft Update chạy sau khi cài đặt cản cập nhật ứng dụng máy khách. Chúng tôi sử dụng sự kiện này để đảm bảo cung cấp các gói hợp lệ và sẽ cập nhật ứng dụng đã cài đặt lên phiên bản mới nhất.
 
@@ -14308,7 +14358,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **UpdatePkg** - Tên của gói cập nhật được áp dụng
 
-### <a name="urlutilities_getmauinfo"></a>urlutilities_getmauinfo
+### <a name="urlutilitiesgetmauinfo"></a>urlutilities.getmauinfo
 
 Sự kiện này báo cáo lỗi gặp phải trong khi truy nhập gói ứng dụng Microsoft Auto Update (MAU). Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.
 
@@ -14346,9 +14396,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
    
-### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
+### <a name="webservicescheckforsilentupdates"></a>webservices.checkforsilentupdates
 
 Sự kiện này cho biết đã tìm thấy các đề xuất bản cập nhật tự hành này. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14386,10 +14436,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="webservices_deltaupdater"></a>webservices_deltaupdater
+### <a name="webservicesdeltaupdater"></a>webservices.deltaupdater
 
 Sự kiện này ghi lại các tương tác giữa mã máy khách và cổng tính năng có nhiệm vụ kiểm soát xem máy khách có nên cho phép cập nhật Delta hay không. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14427,51 +14477,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
-
-Chúng tôi sẽ ghi lại bất kỳ lỗi nào do phản hồi dịch vụ web không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
- 
-Các trường sau đây sẽ được thu thập:
-
-- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
-
-- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
-
-- **AppVersionLong** - Phiên bản ứng dụng
-
-- **Channel** - Tùy chọn dành cho người xem
-
-- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **DeviceID** - Mã định danh thiết bị
-
-- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
-
-- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
-
-- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
-
-- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
-
-- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
-
-- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
-
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
-
-- **Payload** - Chứa thông tin chi tiết của hành động được đẩy từ dịch vụ web.
-
-- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-
-- **SessionId** - Mã định danh cho phiên
-
-
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
 
 Chúng tôi sẽ ghi lại bất kỳ lỗi nào do phản hồi dịch vụ web không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14509,10 +14518,51 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 
-### <a name="webservices_serviceresponse"></a>webservices_serviceresponse
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
+
+Chúng tôi sẽ ghi lại bất kỳ lỗi nào do phản hồi dịch vụ web không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+
+- **Payload** - Chứa thông tin chi tiết của hành động được đẩy từ dịch vụ web.
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+
+### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
 Sự kiện này ghi lại các yêu cầu đối với Dịch vụ MAU, thời gian phản hồi cũng như các lỗi. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14550,10 +14600,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
     
-### <a name="webservices_silentupdate"></a>webservices_silentupdate
+### <a name="webservicessilentupdate"></a>webservices.silentupdate
 
 Chúng tôi sẽ ghi lại các yêu cầu kiểm tra bất kỳ quy tắc áp dụng "cập nhật bắt buộc” nào, nghĩa là chúng tôi phải đưa người dùng đi từ bản dựng N sang bản dựng N + 1 do một số vấn đề lớn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14591,9 +14641,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="webservices_updatefiltering"></a>webservices_updatefiltering
+### <a name="webservicesupdatefiltering"></a>webservices.updatefiltering
 
 Sự kiện này cho biết tính năng lọc đã được thực hiện trên danh sách bản cập nhật có thể áp dụng thông qua dịch vụ web. Chúng tôi sử dụng sự kiện này để đảm bảo tính năng chặn ứng dụng đang hoạt động chính xác nếu chúng tôi phải chặn một bản cập nhật.
 
@@ -14631,9 +14681,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="webservices_webcontent"></a>webservices_webcontent
+### <a name="webserviceswebcontent"></a>webservices.webcontent
 
 Chúng tôi sẽ ghi lại các yêu cầu và phản hồi nhận được vào dịch vụ web. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
@@ -14671,9 +14721,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
-### <a name="webservices_whatsnew"></a>webservices_whatsnew
+### <a name="webserviceswhatsnew"></a>webservices.whatsnew
 
 Sự kiện này được kích hoạt khi Microsoft Auto Update (MAU) truy vấn dịch vụ web về tính năng “có gì mới” của các ứng dụng đã đăng ký. Sự kiện này được sử dụng để xác định tình trạng của tính năng “có gì mới”. 
 
@@ -15128,8 +15178,26 @@ Các trường sau đây sẽ được thu thập:
 
 - **PaywallOperationType** - Loại hoạt động Paywall (enum/ int - hữu hạn)
 
+### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
 
-### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+Siêu dữ liệu dựa trên phiên khi Paywall UI hiển thị cho người dùng. Microsoft sử dụng điều này để có được hành trình của người dùng và hiểu được thiết bị cũng như phiên bản hệ điều hành mà người dùng đang sử dụng để giúp đưa ra quyết định về các khoản đầu tư trong việc cải thiện trải nghiệm trong những lĩnh vực này.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App Version** - Mã phiên bản của ứng dụng đang sử dụng
+
+- **ClientId** - Mã định danh thiết bị duy nhất PII không ẩn danh (guid / chuỗi)
+
+- **Entry Point** - Mã định danh duy nhất cho điểm nhập ngữ cảnh hoặc mảng từ ứng dụng đang sử dụng
+
+- **isTablet** - Thiết bị có đang hiển thị UX máy tính bảng hay không
+
+- **OSVersion** - Phiên bản hệ điều hành Android trên thiết bị
+
+- **SessionId** - Guid: Mã định danh phiên Paywall duy nhất
+
+
+### <a name="officefirstrunappletelemetryoptin"></a>Office.FirstRun.Apple.TelemetryOptIn
 
 Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để giám sát trạng thái của dòng chọn tham gia phép đo từ xa của chúng tôi trong trải nghiệm chạy lần đầu tiên. Chúng tôi thu thập mã biểu thị loại tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
 
