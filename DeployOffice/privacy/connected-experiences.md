@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 3e44c9c20bed531f46390c91a41ce559cabc9e72
-ms.sourcegitcommit: 25a0925e7caf8fbb53e6757e8a65126eb2c9da65
+ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338204"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491600"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -40,6 +40,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 |Đề xuất về biểu đồ (Excel dành cho web)|[Tạo biểu đồ với các biểu đồ được đề xuất](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Các phần bổ trợ của Class Notebook (OneNote)|[Bắt đầu với OneNote Class Notebook: Một Hướng dẫn dành cho Giáo viên](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Kiểu dữ liệu| [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+|Trình thiết kế (Word cho web)|[Sử dụng Trình thiết kế để tạo tài liệu đẹp mắt hơn](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
 | Đọc chính tả  | [Đọc chính tả tài liệu Word của bạn](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Trình soạn thảo<sup>1</sup> |[Trình soạn thảo Microsoft kiểm tra ngữ pháp và nhiều nội dung khác trong tài liệu, thư và web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ý tưởng     | [Các ý tưởng trong Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -62,6 +63,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Tra cứu thông minh*\*   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
+|Dự đoán văn bản (một tính năng của Trình soạn thảo)|[Giúp viết nhanh hơn với tính năng dự đoán văn bản trong Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Bản chép lại |[Chép lại bản ghi của bạn](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |

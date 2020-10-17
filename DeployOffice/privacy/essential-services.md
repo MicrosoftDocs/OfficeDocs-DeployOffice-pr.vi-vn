@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
-ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
+ms.openlocfilehash: 94f248d64c74cd6575b4039178270f62b3715d15
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367480"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491564"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -293,6 +293,12 @@ Các trường sau đây sẽ được thu thập:
 
   - **Duration** - Khoảng thời gian diễn ra quá trình xác thực
 
+  - **Duration_Max** - Nếu tín hiệu này được tổng hợp, khoảng thời gian tối đa của bất kỳ sự kiện tổng hợp nào.
+
+  - **Duration_Min** - Nếu tín hiệu này được tổng hợp, khoảng thời gian tối thiểu của bất kỳ sự kiện tổng hợp nào.
+
+  - **Duration_Sum** - Nếu tín hiệu này được tổng hợp, tổng khoảng thời gian của tất cả các sự kiện tổng hợp.
+
   - **Endtime** - Thời điểm sự kiện xác thực kết thúc
 
   - **Error** - Mã lỗi nếu tính năng xác thực không thành công
@@ -407,11 +413,19 @@ Các trường sau đây sẽ được thu thập:
 
   - **Microsoft\_ADAL\_user\_cancel** - Cho biết cửa sổ giao diện người dùng đã được hủy bỏ là đúng hay sai.
 
+  - **Microsoft_ADAL_was_request_throttled** – Cho biết sự kiện này đã được ADAL tiết lưu do quá nhiều yêu cầu là đúng hay sai.
+ 
   - **Microsoft\_ADAL\_x\_ms\_request\_id** – ID yêu cầu bổ sung được cung cấp trong tiêu đề HTTP cho dịch vụ của ADAL.
 
   - **Platform** - Win32/WinRT/Android/iOS/Mac
 
+  - **Promptreasoncorrelationid** – Để nhắc, đây là id tương quan của một sự kiện khác để giải thích tại sao người dùng có thể nhìn thấy lời nhắc xác thực.
+
+  - **Resource** – Tài nguyên mà người dùng đang yêu cầu mã thông báo, chẳng hạn như Exchange hoặc SharePoint.
+
   - **Scenarioid** – GUID. Nhiều sự kiện có thể thuộc về một kịch bản duy nhất, ví dụ: kịch bản có thể được thêm một tài khoản mới nhưng có nhiều lời nhắc xảy ra như một phần của kịch bản đó. ID này cho phépsự tương quan xảy ra.
+
+  - **Scenarioname** – Tên của kịch bản sở hữu sự kiện xác thực này.
 
   - **SessionId** - GUID xác định phiên khởi động
 

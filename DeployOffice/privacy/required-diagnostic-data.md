@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: f200e22e639f2c89315c2f7fa2e9eab0367f86b1
-ms.sourcegitcommit: 1b12952b55f071b87026b49d372158209ed2e322
+ms.openlocfilehash: 7d9b2918983933ba4601ebce2b3930409001688d
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368659"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491528"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -356,6 +356,8 @@ Danh mục này chứa các trường sau đây:
   - **Flags** - Thông tin được sử dụng để thay đổi cách một sự kiện nhất định phản ứng. Được sử dụng để quản lý cách xử lý một sự kiện nhất định cho mục đích tải dữ liệu lên Microsoft.
 
   - **Id** - Mã định danh duy nhất cho sự kiện. Cho phép chúng tôi xác định duy nhất các sự kiện đang được nhận.
+
+  - **Level** - biểu thị loại sự kiện.
 
   - **Name** - Tên của sự kiện. Cho phép xác định sự kiện đã được gửi từ máy khách.
 
@@ -4174,7 +4176,7 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu bắt đầu 
 
 - **UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
 
-- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **UserInfo.TimeZone** - Múi giờ của người dùng tương ứng với giờ UTC.
 
@@ -11367,7 +11369,7 @@ Các trường sau đây sẽ được thu thập:
  
 - **above_50fps** – số lượng khung hình được hiển thị trên 50 fps
  
-- **above_55fps** – số lượng khung hình được hiển thị trên 55 fps
+- **above_55fps** - số lượng khung hình được hiển thị trên 55 fps
  
 - **account_counter** – số lượng mỗi loại tài khoản có trên thiết bị, ví dụ: tài khoản Office 365 = 1 tài khoản, tài khoản Outlook.com = 1 tài khoản.
  
