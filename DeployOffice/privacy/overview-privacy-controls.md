@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin tổng quan về kiểm soát quyền riêng tư cho Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus), bao gồm dữ liệu chẩn đoán và trải nghiệm được kết nối.
 hideEdit: true
-ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: f894db695caf8a6dfa56dd6db541d8b8fd4bd564
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440599"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794786"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn
 
@@ -30,8 +30,8 @@ ms.locfileid: "47440599"
 Microsoft cam kết cung cấp cho bạn thông tin và quyền kiểm soát cần thiết để lựa chọn cách thu thập và sử dụng dữ liệu khi bạn dùng Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đây là Office 365 ProPlus).
 
 Bắt đầu với Phiên bản 1904 của Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, chúng tôi sẽ cung cấp cho bạn các kiểm soát quyền riêng tư mới, cập nhật và được cải thiện cho các khu vực sau:
-- ***Dữ liệu chẩn đoán*** được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng trên các máy tính chạy Windows trong tổ chức của bạn.
-- ***Trải nghiệm được kết nối*** sử dụng chức năng dựa trên đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
+- ***Dữ liệu chẩn đoán** được thu thập và gửi cho Microsoft về phần mềm máy khách Office chạy trên thiết bị người dùng trong tổ chức của bạn.
+- _*_Trải nghiệm được kết nối_*_ sử dụng chức năng trên nền đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
 
 Là một phần của những thay đổi này, có các cài đặt chính sách và thành phần giao diện người dùng (UI) mới và được cập nhật.
 
@@ -39,15 +39,15 @@ Là một phần của những thay đổi này, có các cài đặt chính sá
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
-Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng trên các máy tính chạy Windows trong tổ chức của bạn.
+Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phần mềm máy khách Office chạy trên thiết bị người dùng trong tổ chức của bạn.
 
 Có ba cấp dữ liệu chẩn đoán cho phần mềm máy khách Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn mà bạn có thể chọn:
 
-- **Bắt buộc**: Dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị mà nó được cài đặt.
+- *Bắt buộc* * Dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị mà nó được cài đặt.
 
-- **Tuỳ chọn**: Dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố.
+- **Tuỳ chọn** : Dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố.
 
-- **Không thuộc loại nào**: Không có dữ liệu chẩn đoán nào về phần mềm máy khách Office chạy trên thiết bị người dùng được thu thập và gửi cho chúng tôi. Tuy nhiên, tùy chọn này hạn chế đáng kể khả năng phát hiện, chẩn đoán và khắc phục các sự cố mà người dùng của bạn có thể gặp phải khi sử dụng Office.
+- **Không thuộc loại nào** : Không có dữ liệu chẩn đoán nào về phần mềm máy khách Office chạy trên thiết bị người dùng được thu thập và gửi cho chúng tôi. Tuy nhiên, tùy chọn này hạn chế đáng kể khả năng phát hiện, chẩn đoán và khắc phục các sự cố mà người dùng của bạn có thể gặp phải khi sử dụng Office.
 
 Ví dụ, dữ liệu chẩn đoán bắt buộc có thể bao gồm thông tin về phiên bản Office được cài đặt trên thiết bị hoặc bao gồm thông tin cho biết các ứng dụng Office đang gặp sự cố khi cố mở tài liệu. Dữ liệu chẩn đoán tùy chọn có thể bao gồm thông tin về thời gian cần thiết để lưu tài liệu, có thể chỉ ra một sự cố cụ thể đối với việc lưu vào thiết bị của bạn.
 
@@ -61,7 +61,7 @@ Dữ liệu chẩn đoán này không bao gồm tên của người dùng, đị
 
 Để xem dữ liệu chẩn đoán nào đang được gửi tới Microsoft, bạn có thể sử dụng Trình xem dữ liệu chẩn đoán mà bạn có thể tải xuống và cài đặt miễn phí từ Microsoft Store.
 
-Để biết thêm thông tin, hãy xem các nguồn sau:
+Để biết thêm thông tin, hãy xem các bài viết sau đây:
 
 - [Dữ liệu chẩn đoán bắt buộc cho Office](required-diagnostic-data.md)
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
@@ -89,7 +89,7 @@ Nếu bạn chọn không cung cấp người dùng của bạn với một số
 
 Người dùng của bạn sẽ không thể chọn bật các trải nghiệm được kết nối hoặc tắt nếu họ được đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ, đôi khi được gọi là tài khoản cơ quan hoặc trường học.
 
-Để biết thêm thông tin, hãy xem các nguồn sau:
+Để biết thêm thông tin, hãy xem các bài viết sau đây:
 
 - [Các trải nghiệm kết nối trong Office](connected-experiences.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
@@ -107,7 +107,7 @@ Do những trải nghiệm được kết nối tùy chọn này bị chi phối
 
 Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, họ sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
-Để biết thêm thông tin, hãy xem các nguồn sau:
+Để biết thêm thông tin, hãy xem các bài viết sau đây:
 
 - [Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office](optional-connected-experiences.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
@@ -130,6 +130,6 @@ Ngoài ra còn có một tập hợp các dịch vụ rất cần thiết cho c�
 
 Để biết thêm thông tin, hãy xem mục [Các dịch vụ cần thiết cho Office](essential-services.md).
 
-## <a name="related-topics"></a>Chủ đề liên quan
+## <a name="related-articles"></a>Các bài viết liên quan
 - [Quyền riêng tư tại Microsoft](https://privacy.microsoft.com/)
 - [Quyền riêng tư trong Windows](https://docs.microsoft.com/windows/privacy/)

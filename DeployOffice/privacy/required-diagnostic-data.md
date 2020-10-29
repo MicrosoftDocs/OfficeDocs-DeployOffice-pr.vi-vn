@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 7d9b2918983933ba4601ebce2b3930409001688d
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 8fd62619d8aff4b5dcb10d7a4c73710282e2cdd8
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491528"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794715"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -27,9 +27,9 @@ ms.locfileid: "48491528"
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
-Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng trên các máy tính chạy Windows. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Dữ liệu chẩn đoán này được thu thập và gửi cho Microsoft về phần mềm máy khách Office chạy trên thiết bị người dùng. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
-***Dữ liệu chẩn đoán bắt buộc*** là dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị cài đặt Office.
+***Dữ liệu chẩn đoán bắt buộc** là dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị cài đặt Office.
 
 Dữ liệu chẩn đoán bắt buộc giúp xác định các sự cố với Office có thể liên quan đến cấu hình thiết bị hoặc phần mềm. Ví dụ: nó có thể giúp xác định xem một tính năng Office có gặp sự cố thường xuyên hơn trên một phiên bản hệ điều hành cụ thể không, với các tính năng mới được giới thiệu hoặc khi một số tính năng Office nhất định bị tắt. Dữ liệu chẩn đoán bắt buộc giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố này nhanh hơn để giảm tác động đối với người dùng hoặc tổ chức.
 
@@ -57,7 +57,7 @@ Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đ
 - Danh sách các trường dữ liệu trong mỗi sự kiện
 - Mô tả về từng trường dữ liệu
 
-| **Danh mục**       | **Loại dữ liệu con**| **Mô tả**    |
+| *Danh mục**       | **Loại dữ liệu con**| **Mô tả**    |
 | ---------- | ------------- | ---- |
 | **Thiết lập phần mềm và hàng tồn kho** | [Thiết lập Office và hàng tồn kho](#office-setup-and-inventory-subtype)   | Sản phẩm được cài đặt và phiên bản và trạng thái cài đặt.  |
 | | [Cấu hình phần bổ trợ Office](#office-add-in-configuration-subtype)  | Phần bổ trợ phần mềm và các thiết đặt.     |
@@ -78,7 +78,7 @@ Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đ
 
 ## <a name="categories-and-data-fields-that-are-common-for-all-events"></a>Danh mục và trường dữ liệu phổ biến cho tất cả các sự kiện
 
-Có một số thông tin về các sự kiện phổ biến cho tất cả các sự kiện, bất kể danh mục hoặc loại dữ liệu con là gì đi chăng nữa. Thông tin phổ biến này, đôi khi được gọi là *hợp đồng dữ liệu*, được sắp xếp vào các danh mục. Mỗi danh mục chứa các trường và các trường này đều là các trường siêu dữ liệu và có thuộc tính của một sự kiện riêng lẻ. Bạn có thể xem thông tin này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Có một số thông tin về các sự kiện phổ biến cho tất cả các sự kiện, bất kể danh mục hoặc loại dữ liệu con là gì đi chăng nữa. Thông tin phổ biến này, đôi khi được gọi là *hợp đồng dữ liệu* , được sắp xếp vào các danh mục. Mỗi danh mục chứa các trường và các trường này đều là các trường siêu dữ liệu và có thuộc tính của một sự kiện riêng lẻ. Bạn có thể xem thông tin này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
 Danh mục thông tin được thu thập về các sự kiện có thể được chia thành hai nhóm:
 
@@ -241,11 +241,11 @@ Danh mục này chứa các trường sau đây:
 
   - **Duration** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm của người dùng.
 
-  - **Result**.**Code** - Một ứng dụng xác định mã để xác định một kết quả nhất định. Cho phép chúng tôi xác định chi tiết cụ thể hơn về một lỗi cụ thể, chẳng hạn như mã lỗi có thể được sử dụng để phân loại và khắc phục các sự cố.
+  - **Result** . **Code** - Một ứng dụng xác định mã để xác định một kết quả nhất định. Cho phép chúng tôi xác định chi tiết cụ thể hơn về một lỗi cụ thể, chẳng hạn như mã lỗi có thể được sử dụng để phân loại và khắc phục các sự cố.
 
   - **Result.Tag** - Thẻ số nguyên xác định vị trí trong mã nơi kết quả được tạo. Cho phép chúng tôi xác định rõ vị trí trong mã nơi tạo ra kết quả cho phép phân loại lỗi.
 
-  - **Result**.**Type** - Loại mã kết quả. Xác định loại mã kết quả đã được gửi để giá trị có thể được diễn giải chính xác.
+  - **Result** . **Type** - Loại mã kết quả. Xác định loại mã kết quả đã được gửi để giá trị có thể được diễn giải chính xác.
 
   - **Success** - Cờ cho biết xem hoạt động thành công hay thất bại. Cho phép chúng tôi xác định xem các thao tác mà người dùng thực hiện trong sản phẩm sẽ thành công hay thất bại. Điều này cho phép chúng tôi xác định các sự cố đang ảnh hưởng đến người dùng.
 
@@ -377,7 +377,7 @@ Danh mục này chứa các trường sau đây:
 
   - **Source** - Quy trình nguồn đã được sử dụng để tải lên dữ liệu. Cần thiết để theo dõi từng quy trình tải lên của chúng tôi về trạng thái tổng thể và để giúp xác định các vấn đề với quy trình tải lên. Điều này cho phép chúng tôi giám sát các quy trình tải lên riêng lẻ để đảm bảo chúng vẫn tuân thủ.
 
-  - **Time** - Thời gian mà sự kiện được tạo ra trên máy khách. Cho phép chúng tôi đồng bộ hóa và xác thực thứ tự các sự kiện được tạo trên máy khách cũng như thiết lập số liệu hiệu suất cho hướng dẫn người dùng. 
+  - **Time** - Thời gian mà sự kiện được tạo ra trên máy khách. Cho phép chúng tôi đồng bộ hóa và xác thực thứ tự các sự kiện được tạo trên máy khách cũng như thiết lập số liệu hiệu suất cho hướng dẫn người dùng. 
 
 #### <a name="host"></a>Máy chủ
 
@@ -654,11 +654,11 @@ Ngoài ra, các trường sau phổ biến đối với tất cả các sự ki�
 
 - **process_bitness** - Xử lý bitness (32 hoặc 64 bit) cho ứng dụng giúp phát hiện các sự cố cụ thể đối với bitness của thiết bị
 
-- **webview_kernel_version**: Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_kernel_version** : Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
-- **webview_package_name**: Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_package_name** : Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
-- **webview_package_version**: Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_package_version** : Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
 
 ## <a name="software-setup-and-inventory-data-events"></a>Sự kiện thiết lập và kiểm kê phần mềm
@@ -897,9 +897,9 @@ Ghi lại SKU Visio dù đó là tiêu chuẩn hay chuyên nghiệp. Cần thi�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_VisioSKU**:**integer** - 0 cho SKU tiêu chuẩn và 1 cho SKU chuyên nghiệp
+  - **Data\_VisioSKU** : **integer** - 0 cho SKU tiêu chuẩn và 1 cho SKU chuyên nghiệp
 
-#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(tên cũ)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(tên cũ)* , Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Ghi lại thông tin về trạng thái kích hoạt của Ứng dụng.  Dữ liệu được giám sát để đảm bảo rằng chúng tôi có xác định lưu trữ tạm văn bản theo nhóm trong các sự cố về kích hoạt. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện.
 
@@ -907,7 +907,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **INSTALL_LOCATION** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
 
-#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(tên cũ)*, Office.OneNote.Android.ResetStatus
+#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(tên cũ)* , Office.OneNote.Android.ResetStatus
 
 Tín hiệu dùng để ghi lại mọi sự cố gặp phải khi người dùng cố gắng đặt lại Ứng dụng.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra trong quá trình đặt lại. 
 
@@ -921,7 +921,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Pass** - Cho biết có Đặt lại có thành công hay không
 
-#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInCompleted
+#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(tên cũ)* , Office.OneNote.Android.SignIn.SignInCompleted
 
 Tín hiệu quan trọng dùng để đảm bảo đăng nhập có thành công hay không. Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.
 
@@ -941,7 +941,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
 
-#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInStarted
+#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(tên cũ)* , Office.OneNote.Android.SignIn.SignInStarted
 
 Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
 
@@ -1029,7 +1029,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Dữ liệu liên quan đến thành công khi không truy xuất dữ liệu quyền phần bổ trợ cho người quản trị viên đối tượng thuê Office 365 gán phần bổ trợ. Được sử dụng cho các số liệu về trạng thái, biểu đồ và phân tích các vấn đề của khách hàng. ExchangeGetLastUpdate sẽ luôn chạy khi khởi động như một phần của mã máy chủ và xác định xem hoạt động gán phần bổ trợ đã thay đổi cho người dùng hay chưa. Nếu vậy thì osf.DLL sẽ được tải để chúng tôi có thể gọi ExchangeGetEntitlements để nhận các hoạt động gán cụ thể (và ExchangeGetManifests sẽ được gọi để truy xuất bất kỳ bản kê mới nào cần thiết). ExchangeGetEntitlements (và ExchangeGetManifests) cũng có thể được gọi theo yêu cầu sau khi ứng dụng máy chủ đã chạy.  Tốt nhất là không tải DLL lớn nếu chúng tôi không cần đến. Nếu không có sự kiện này trong phần Bắt buộc, chúng tôi sẽ không thể biết nếu người dùng không nhận được phần bổ trợ được gán cho họ nếu cuộc gọi dịch vụ đầu tiên đó không thành công.  Đó cũng là tín hiệu chính cho bất kỳ vấn đề xác thực nào mà chúng tôi gặp phải khi giao tiếp với dịch vụ của chúng tôi.
+Dữ liệu liên quan đến thành công khi không truy xuất dữ liệu quyền phần bổ trợ cho người quản trị viên đối tượng thuê Office 365 gán phần bổ trợ. Được sử dụng cho các số liệu về trạng thái, biểu đồ và phân tích các vấn đề của khách hàng. ExchangeGetLastUpdate sẽ luôn chạy khi khởi động như một phần của mã máy chủ và xác định xem hoạt động gán phần bổ trợ đã thay đổi cho người dùng hay chưa.  Nếu vậy thì osf.DLL sẽ được tải để chúng tôi có thể gọi ExchangeGetEntitlements để nhận các hoạt động gán cụ thể (và ExchangeGetManifests sẽ được gọi để truy xuất bất kỳ bản kê mới nào cần thiết).  ExchangeGetEntitlements (và ExchangeGetManifests) cũng có thể được gọi theo yêu cầu sau khi ứng dụng máy chủ đã chạy.   Tốt nhất là không tải DLL lớn nếu chúng tôi không cần đến.  Nếu không có sự kiện này trong phần Bắt buộc, chúng tôi sẽ không thể biết nếu người dùng không nhận được phần bổ trợ được gán cho họ nếu cuộc gọi dịch vụ đầu tiên đó không thành công.   Đó cũng là tín hiệu chính cho bất kỳ vấn đề xác thực nào mà chúng tôi gặp phải khi giao tiếp với dịch vụ của chúng tôi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1265,13 +1265,13 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_DocumentSessionLogID:string** - Mã định danh phiên tài liệu
 
-  - **Data\_IsEnabled**:**bool** - True nếu giải pháp được bật
+  - **Data\_IsEnabled** : **bool** - True nếu giải pháp được bật
 
   - **Data\_TemplateID:string** - GUID của mẫu mà trong đó giải pháp được tải. Được ghi nhật ký dưới dạng 0 cho giải pháp tùy chỉnh
 
-  - **Data\_AddOnID**:**string** - GUID để xác định phần bổ trợ được tải
+  - **Data\_AddOnID** : **string** - GUID để xác định phần bổ trợ được tải
 
-  - **Data\_Error**:**integer** - ID lỗi
+  - **Data\_Error** : **integer** - ID lỗi
 
 ### <a name="security-subtype"></a>*Loại con của bảo mật*
 
@@ -1508,7 +1508,7 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 - [Quyền riêng tư](#privacy-subtype)
 
 
-### <a name="application-feature-success-subtype"></a>*Loại con mức độ thành công của tính năng ứng dụng *
+### <a name="application-feature-success-subtype"></a>*Loại con mức độ thành công của tính năng ứng dụng*
 
 Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác).
 
@@ -1981,7 +1981,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **AppInfo.Version** - Phiên bản ứng dụng
 
-- **iKey**- ID ghi nhật ký dịch vụ máy chủ
+- **iKey** - ID ghi nhật ký dịch vụ máy chủ
 
 - **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
 
@@ -2797,7 +2797,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeappcompatappcompatagentscanandupload"></a>Office.AppCompat.AppCompat.AgentScanAndUpload
 
-Chỉ được thu thập khi người dùng cuối đã kích hoạt Bảng điều khiển đo từ xa cho Office.Nó thu thập thông tin về thời điểm Tác nhân đo từ xa cho Office được thực hiện.Điều này chỉ được thu thập khi Bảng điều khiển đo từ xa cho Office được bật và được sử dụng để xác định trạng thái của Tác nhân đo từ xa cho Office.
+Chỉ được thu thập khi người dùng cuối đã kích hoạt Bảng điều khiển đo từ xa cho Office. Nó thu thập thông tin về thời điểm Tác nhân đo từ xa cho Office được thực hiện.  Điều này chỉ được thu thập khi Bảng điều khiển đo từ xa cho Office được bật và được sử dụng để xác định trạng thái của Tác nhân đo từ xa cho Office.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2809,7 +2809,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeappcompatappcompattelemetrydashboardresiliencycrashlog"></a>Office.AppCompat.AppCompat.TelemetryDashboardResiliencyCrashLog
 
-Chỉ được thu thập khi Bảng điều khiển đo từ xa cho Office đã được bật bởi người dùng cuối (rất có thể là người quản trị). Nó thu thập sự xuất hiện của các sự cố liên quan đến phần bổ trợ Office và tài liệu.Điều này chỉ được thu thập khi người dùng đã kích hoạt Bảng điều khiển đo từ xa cho Office và được sử dụng để xác định xem có sự xuất hiện gia tăng của sự cố liên quan đến phần bổ trợ hoặc tài liệu hay không.
+Chỉ được thu thập khi Bảng điều khiển đo từ xa cho Office đã được bật bởi người dùng cuối (rất có thể là người quản trị). Nó thu thập sự xuất hiện của các sự cố liên quan đến phần bổ trợ Office và tài liệu. Điều này chỉ được thu thập khi người dùng đã kích hoạt Bảng điều khiển đo từ xa cho Office và được sử dụng để xác định xem có sự xuất hiện gia tăng của sự cố liên quan đến phần bổ trợ hoặc tài liệu hay không.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2891,7 +2891,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
 
-- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+- **Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
 
 - **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
@@ -2911,7 +2911,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_InitializationReason** – Trình bày nguyên nhân cụ thể của thao tác theo dạng liệt kê. Ví dụ: mở từ một URL hay một đường dẫn tệp cục bộ, tạo với trình chọn tệp, sao chép tới đường dẫn tệp, xuất sang URL, v.v.
 
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled**.
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** .
 
 - **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
 
@@ -3009,7 +3009,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
 
-- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+- **Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
 
 - **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
@@ -3121,7 +3121,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
 
-- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+- **Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
 
 - **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
@@ -3234,7 +3234,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
 
-- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+- **Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
 
 - **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
@@ -3346,7 +3346,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
 
-- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+- **Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
 
 - **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
@@ -3458,7 +3458,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
 
-- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+- **Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
 
 - **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
@@ -3571,7 +3571,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DocumentInputCurrency** – kiểu nhập văn bản được sử dụng bởi thao tác này.
 
-- ** Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
+- **Data_DocumentOperation_AppId** – Giá trị liệt kê đại diện cho ID của ứng dụng.
 
 - **Data_DocumentOperation_EndEventId** - Tag đại diện cho nơi thao tác đã kết thúc.
 
@@ -4074,7 +4074,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_UploadError** - Giá trị số cho biết loại lỗi xảy ra nếu thao tác tải lên không thành công.
 
-- **Data_UpsellAppearsFromDelegate**-một giá trị Boolean để cho biết có dạng xem Hiển thị từ menu chia sẻ không.
+- **Data_UpsellAppearsFromDelegate** -một giá trị Boolean để cho biết có dạng xem Hiển thị từ menu chia sẻ không.
 
 #### <a name="officeextensibilitycatalogexchangeprocessentitlement"></a>Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -5527,7 +5527,7 @@ Các trường sau đây sẽ được thu thập:
     - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
     - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
     - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
-    - **networkEffectiveType**- Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có kết nối Internet vào thời điểm hiển thị thẻ cá nhân hay không
+    - **networkEffectiveType** - Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có kết nối Internet vào thời điểm hiển thị thẻ cá nhân hay không
     - **networkType** - Loại kết nối mạng của thiết bị đang được sử dụng
     - **roundTripEstimateMs** - Vòng hành trình ước tính có hiệu lực của kết nối hiện tại theo mili giây
 
@@ -5733,7 +5733,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsExportable** - Cờ cho biết liệu sự kiện này xảy ra do hành động của người dùng hay không. Nên được đặt là True vì NoteViewed là hành động được kích hoạt bởi người dùng.
 
-- **NoteLocalId ** - Mã định danh duy nhất có thể phân biệt được gán cho chú thích tại thời điểm người dùng tạo ghi chú trong ứng dụng.
+- **NoteLocalId** - Mã định danh duy nhất có thể phân biệt được gán cho chú thích tại thời điểm người dùng tạo ghi chú trong ứng dụng.
 
 - **StickyNotes-SDKVersion** - Số phiên bản cho biết phiên bản Sticky Notes người dùng đang sử dụng. Cho phép chúng tôi xác định phiên bản nào của sản phẩm đang hiển thị sự cố để chúng tôi có thể ưu tiên chính xác.
 
@@ -5915,7 +5915,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsExportable** - Cờ cho biết liệu sự kiện này xảy ra do hành động của người dùng hay không. Nên được đặt là True vì NoteViewed là hành động được kích hoạt bởi người dùng.
 
-- **NoteLocalId ** - Mã định danh duy nhất có thể phân biệt được gán cho chú thích tại thời điểm người dùng tạo ghi chú trong ứng dụng.
+- **NoteLocalId** - Mã định danh duy nhất có thể phân biệt được gán cho chú thích tại thời điểm người dùng tạo ghi chú trong ứng dụng.
 
 - **StickyNotes-SDKVersion** - Số phiên bản cho biết phiên bản Sticky Notes người dùng đang sử dụng. Cho phép chúng tôi xác định phiên bản nào của sản phẩm đang hiển thị sự cố để chúng tôi có thể ưu tiên chính xác.
 
@@ -6148,7 +6148,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+  - **Data_Doc_AsyncOpenKind:long –** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
 
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
@@ -6254,7 +6254,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointdocoperationnewdocument"></a>Office.PowerPoint.DocOperation.NewDocument
 
-Được thu thập khi PowerPoint tạo bản trình bày mới. Bao gồm các số liệu về thành công, thất bại và hiệu suất.
+Được thu thập khi PowerPoint tạo bản trình bày mới.  Bao gồm các số liệu về thành công, thất bại và hiệu suất.
 
 Thông tin này được sử dụng để đảm bảo chúng tôi có thể tạo các tệp thành công và không bị suy giảm hiệu suất.
 
@@ -6284,7 +6284,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+  - **Data_Doc_AsyncOpenKind:long –** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
 
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
@@ -6380,7 +6380,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointdocoperationsave"></a>Office.PowerPoint.DocOperation.Save
 
-Được thu thập bất cứ khi nào PowerPoint thực hiện lưu bằng cách sử dụng đường dẫn mã hiện đại. Bao gồm loại kết quả thành công hoặc thất bại của số liệu về hiệu suất lưu và siêu dữ liệu của tài liệu có liên quan. Thất bại trong việc lưu có thể gây mất dữ liệu. Microsoft sử dụng dữ liệu này để đảm bảo tính năng này hoạt động như mong đợi và nội dung người dùng được duy trì thành công.
+Được thu thập bất cứ khi nào PowerPoint thực hiện lưu bằng cách sử dụng đường dẫn mã hiện đại. Bao gồm loại kết quả thành công hoặc thất bại của số liệu về hiệu suất lưu và siêu dữ liệu của tài liệu có liên quan.  Thất bại trong việc lưu có thể gây mất dữ liệu. Microsoft sử dụng dữ liệu này để đảm bảo tính năng này hoạt động như mong đợi và nội dung người dùng được duy trì thành công.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -6408,7 +6408,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+  - **Data_Doc_AsyncOpenKind:long –** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
 
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
@@ -6552,7 +6552,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_DstDoc_AsyncOpenKind:long – ** Cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây mới đã được mở hay không và lô-gic làm mới không đồng bộ nào đang được sử dụng.
+- **Data_DstDoc_AsyncOpenKind:long –** Cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây mới đã được mở hay không và lô-gic làm mới không đồng bộ nào đang được sử dụng.
 
 - **Data_DstDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
@@ -6739,7 +6739,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+- **Data_Doc_AsyncOpenKind:long –** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_Doc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
@@ -6817,7 +6817,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_DstDoc_AsyncOpenKind:long – ** Cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây mới đã được mở hay không và lô-gic làm mới không đồng bộ nào đang được sử dụng.
+- **Data_DstDoc_AsyncOpenKind:long –** Cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây mới đã được mở hay không và lô-gic làm mới không đồng bộ nào đang được sử dụng.
 
 - **Data_DstDoc_ChunkingType:long** - Cách tài liệu được lưu trữ trong SharePoint
 
@@ -7382,7 +7382,7 @@ Theo dõi tính năng chống lại người dùng. Sự kiện này giúp chún
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_Enable:bool**- True cho biết tính năng được bật cho người dùng hiện tại
+  - **Data\_Enable:bool** - True cho biết tính năng được bật cho người dùng hiện tại
 
   - **Data\_Feature:string** - Tên của tính năng
 
@@ -7400,13 +7400,13 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ConnectorsBasedOnSequence:bool** - True nếu sơ đồ được làm mới ban đầu được tạo bằng cách sử dụng trình kết nối dựa trên tuỳ chọn trình tự"
 
-  - **Data\_DialogError**:**string** - Li trong khi làm mới sơ đồ thông minh
+  - **Data\_DialogError** : **string** - Li trong khi làm mới sơ đồ thông minh
 
   - **Data\_FileError:string** - chuỗi lỗi khi tệp Excel được kết nối không hợp lệ
 
-  - **Data\_OverwriteSelected**:**bool** - True nếu người dùng chọn tùy chọn ghi đè lên sơ đồ trong khi làm mới
+  - **Data\_OverwriteSelected** : **bool** - True nếu người dùng chọn tùy chọn ghi đè lên sơ đồ trong khi làm mới
 
-  - **Data\_WarningShown**:**bool** - True nếu có bất kỳ cảnh báo nào được hiển thị cho người dùng trong quá trình làm mới dữ liệu
+  - **Data\_WarningShown** : **bool** - True nếu có bất kỳ cảnh báo nào được hiển thị cho người dùng trong quá trình làm mới dữ liệu
 
 #### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
 
@@ -7589,7 +7589,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+- **Data_Doc_AsyncOpenKind –** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -7685,7 +7685,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+- **Data_Doc_AsyncOpenKind –** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -7806,7 +7806,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+- **Data_Doc_AsyncOpenKind –** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -7958,7 +7958,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_SrcDoc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_SrcDoc_AsyncOpenKind – ** cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây đã được mở hay không và lô-gic làm mới không đồng bộ nào được sử dụng.
+- **Data_SrcDoc_AsyncOpenKind –** cho biết có một phiên bản đã được lưu trữ trên nền điện toán đám mây đã được mở hay không và lô-gic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_SrcDoc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -8061,7 +8061,7 @@ Các trường sau đây sẽ được thu thập:
 
 - Không có
 
-#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(tên cũ)*, Office.OneNote.Android.Canvas.PageOpened
+#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(tên cũ)* , Office.OneNote.Android.Canvas.PageOpened
 
 Tín hiệu dùng để ghi lại khi mở một Trang.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra khi mở một Trang trong OneNote
 
@@ -8071,7 +8071,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **TIME_TAKEN_IN_MS** - lượng thời gian cho việc mở trang
 
-#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(tên cũ)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(tên cũ)* , Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
 Tín hiệu này được đùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng Android OneNote, sổ tay được cung cấp đúng cách và người dùng đã tạo ghi chú mới thành công.  Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
 
@@ -8079,7 +8079,7 @@ Các trường sau đây sẽ được thu thập:
 
 - Không có
 
-#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(tên cũ)*, Office.OneNote.Android.MessageBar.MessageBarClicked
+#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(tên cũ)* , Office.OneNote.Android.MessageBar.MessageBarClicked
 
 Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
 
@@ -8644,13 +8644,13 @@ Sự kiện này xác định số lượng tài khoản MSA và ADAL trong sổ
 
 Các trường sau đây sẽ được thu thập:
 
-- **RegistryADALCount**- Cho biết số lượng tài khoản ADAL trong sổ đăng ký.
+- **RegistryADALCount** - Cho biết số lượng tài khoản ADAL trong sổ đăng ký.
 
-- **RegistryLiveIdCount**- Cho biết số lượng tài khoản MSA trong sổ đăng ký.
+- **RegistryLiveIdCount** - Cho biết số lượng tài khoản MSA trong sổ đăng ký.
 
-- **SharedPrefADALCount**- Cho biết số lượng tài khoản ADAL trong tùy chọn chia sẻ.
+- **SharedPrefADALCount** - Cho biết số lượng tài khoản ADAL trong tùy chọn chia sẻ.
 
-- **SharedPrefLiveIdCount**- Cho biết số lượng tài khoản MSA trong tùy chọn chia sẻ.
+- **SharedPrefLiveIdCount** - Cho biết số lượng tài khoản MSA trong tùy chọn chia sẻ.
 
 
 #### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
@@ -8691,7 +8691,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_AppURL -** URL của phần bổ trợ; Ghi nhật ký URL đầy đủ cho phần bổ trợ lưu trữ và tên miền URL cho phần bổ trợ không lưu trữ
 
-  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+  - **Data_Doc_AsyncOpenKind:long –** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
 
   - **Data\_AuthorsCount:integer -** Số lượng tác giả đã chỉnh sửa tài liệu trong phiên này
 
@@ -8743,7 +8743,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_SpecialChars:long -** Bitmask dài biểu thị các ký tự đặc biệt trong URL hoặc đường dẫn của tài liệu
 
-  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ) 
+  - **Data\_Doc\_SyncBackedType -** Chỉ báo về loại tài liệu (cục bộ hoặc dịch vụ) 
 
   - **Data\_Doc\_UrlHash:string -** Hàm băm của URL đầy đủ của tài liệu được lưu trữ trên đám mây
 
@@ -9012,7 +9012,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsFRELoadSuccessful** - số nguyên biểu thị trạng thái kết quả
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(previous name)* , Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 Tín hiệu quan trọng được sử dụng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
@@ -9115,13 +9115,13 @@ nào đã hiển thị trong thời gian khởi động hay không
  
 - **USER_INTERACTED_DURING_EVENT** - Cho biết liệu người dùng có tương tác trong quá trình khởi động hay không
 
-#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(tên cũ)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(tên cũ)* , Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
 
 Tín hiệu dùng để cho biết Ứng dụng OneNote nằm trong nền trước.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
 Các trường sau đây sẽ được thu thập: Không có
 
-#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(tên cũ)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(tên cũ)* , Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
 
 Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
@@ -9226,7 +9226,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data_Doc_AsyncOpenKind:long – ** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
+  - **Data_Doc_AsyncOpenKind:long –** Cho biết liệu một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay chưa và lô-gic làm mới không đồng bộ nào được sử dụng.
 
   - **Data\_Doc\_ChunkingType:long -** Cách tài liệu được lưu trữ trong SharePoint
 
@@ -9721,7 +9721,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+- **Data_Doc_AsyncOpenKind –** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -9846,7 +9846,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+- **Data_Doc_AsyncOpenKind –** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -9969,7 +9969,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_AssistedReadingReasons -** Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-  - **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+  - **Data_Doc_AsyncOpenKind –** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
 
   - **Data\_Doc\_ChunkingType -** Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -10094,7 +10094,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_AssistedReadingReasons** - Tập hợp các giá trị được xác định trước lý do tại sao tài liệu được mở trong chế độ đọc được hỗ trợ
 
-- **Data_Doc_AsyncOpenKind – ** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
+- **Data_Doc_AsyncOpenKind –** cho biết có một phiên bản được lưu trữ trên nền điện toán đám mây đã được mở hay không và logic làm mới không đồng bộ nào được sử dụng.
 
 - **Data_Doc_ChunkingType** - Các đơn vị được sử dụng để mở tài liệu luỹ kế
 
@@ -10282,7 +10282,7 @@ Cho phép chúng tôi phát hiện ra rằng người dùng có một công cụ
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_Data\_Jaws -** Cho biết liệu Jaws có đang chạy trong phiên không**Data\_Data\_Magic -** Cho biết liệu Magic có chạy trong phiên không
+  - **Data\_Data\_Jaws -** Cho biết liệu Jaws có đang chạy trong phiên không **Data\_Data\_Magic -** Cho biết liệu Magic có chạy trong phiên không
 
   - **Data\_Data\_Magnify -** Cho biết liệu tính năng Phóng to có chạy trong phiên không
 
@@ -10708,7 +10708,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **StoreType** - Nguồn gốc của ứng dụng
 
-- **Tag**- Xác định chính xác nơi mã bị lỗi khi sử dụng thẻ duy nhất được liên kết.
+- **Tag** - Xác định chính xác nơi mã bị lỗi khi sử dụng thẻ duy nhất được liên kết.
 
 - **UsesSharedRuntime** - Cho biết ứng dụng có sử dụng sharedRuntime hay không.
 
@@ -10778,7 +10778,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointsession"></a>Office.PowerPoint.Session
 
-Thu thập việc sử dụng tính năng trên mỗi phiên PowerPoint.Dữ liệu này được sử dụng để tính tỷ lệ thoát PowerPoint không đáng tin cậy trong khi sử dụng một tính năng. Tỷ lệ thoát PowerPoint không đáng tin cậy là tín hiệu chính để đảm bảo PowerPoint đang hoạt động như mong đợi.
+Thu thập việc sử dụng tính năng trên mỗi phiên PowerPoint. Dữ liệu này được sử dụng để tính tỷ lệ thoát PowerPoint không đáng tin cậy trong khi sử dụng một tính năng. Tỷ lệ thoát PowerPoint không đáng tin cậy là tín hiệu chính để đảm bảo PowerPoint đang hoạt động như mong đợi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -10858,7 +10858,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointuaesession"></a>Office.PowerPoint.UAE.Session
 
-Thu thập tính năng đã được sử dụng khi phiên PowerPoint thoát ra một không đáng tin cậy.Thông tin này rất quan trọng để theo kịp việc PowerPoint thoát ra một cách không đáng tin cậy. Microsoft đang sử dụng dữ liệu này để chẩn đoán sự cố nhằm đảm bảo PowerPoint hoạt động như mong đợi.
+Thu thập tính năng đã được sử dụng khi phiên PowerPoint thoát ra một không đáng tin cậy.  Thông tin này rất quan trọng để theo kịp việc PowerPoint thoát ra một cách không đáng tin cậy. Microsoft đang sử dụng dữ liệu này để chẩn đoán sự cố nhằm đảm bảo PowerPoint hoạt động như mong đợi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -11031,7 +11031,7 @@ Các trường sau đây sẽ được thu thập:
 - **last_known_is_in_foreground** – ứng dụng gần đây nhất ở trang mặt trước hay trong nền
 
 
-### <a name="application-feature-performance-subtype"></a>*Loại con hiệu suất tính năng ứng dụng *
+### <a name="application-feature-performance-subtype"></a>*Loại con hiệu suất tính năng ứng dụng*
 
 Thời gian phản hồi hoặc hiệu suất kém cho các tình huống như ứng dụng khởi động hoặc mở tệp.
 
@@ -11717,13 +11717,13 @@ Các trường sau đây sẽ được thu thập:
 
 - **ErrorCode** - Trả về mã lỗi liên quan đến việc không thể cung cấp 
 
-- **NetworkConnection**: Loại kết nối mạng của thiết bị đang sử dụng
+- **NetworkConnection** : Loại kết nối mạng của thiết bị đang sử dụng
 
 - **NetworkDataExchange** - Bản ghi số lượng byte được trao đổi trong quá trình cung cấp.
 
 - **ServerType** - Trả về loại máy chủ cung cấp dịch vụ
 
-- **TimeTakenInMilliSeconds**: Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
+- **TimeTakenInMilliSeconds** : Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
 
 
 #### <a name="officeonenotesystembootdialogssafebootdialogpending"></a>Office.OneNote.System.BootDialogs.SafeBootDialogPending 
@@ -11795,7 +11795,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **ColdBoot** - Đây là lần đầu ứng dụng Office chạy sau khi khởi động lại hệ thống hay phải tải nhị phân ứng dụng từ đĩa.
 
-- ** DeviceModel** - Model của thiết bị.
+- **DeviceModel** - Model của thiết bị.
 
 - **DocLocation** -  Khi mở tài liệu, cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v).
 
@@ -11832,7 +11832,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **CountdownInitTime–** Thời gian từ khi hoàn thành tải trình chiếu đến khi bắt đầu đếm ngược.
 
-- **CritiqueSummary**- Tóm tắt về tất cả những phê bình mà người dùng thấy với số lượng của họ.
+- **CritiqueSummary** - Tóm tắt về tất cả những phê bình mà người dùng thấy với số lượng của họ.
 
 - **ExitEventCode** – Mã để xác định trường hợp người dùng thoát khỏi phiên duyệt, dù là trường hợp sự cố hay thoát thành công. 
 
@@ -11848,7 +11848,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Sessionid** - Đây là ID phiên trước cửa. Chúng tôi có thể sử dụng nhật ký dịch vụ vá lỗi.
 
-- ding**SlideshowViewLoadTime** – thời gian thực hiện bởi trình chiếu để tải.
+- ding **SlideshowViewLoadTime** – thời gian thực hiện bởi trình chiếu để tải.
 
 
 #### <a name="officepowerpointpptandroidrehearseviewerrors"></a>Office.PowerPoint.PPT.Android.RehearseView.Errors
@@ -12059,7 +12059,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_FileOpenTimeStamp: time: -** Dấu thời gian khi tệp bắt đầu mở
 
-  - **Data\_FilePathHash: binary - ** GUID cho đường dẫn tệp
+  - **Data\_FilePathHash: binary -** GUID cho đường dẫn tệp
 
   - **Data\_FileSize: long -** Kích cỡ tài liệu tính bằng byte
 
@@ -12101,7 +12101,7 @@ Các trường sau đây sẽ được thu thập:
 - **DIALOG_ACTION** - Nút hộp thoại người dùng bấm vào - Nút cộng hoặc nút trừ
 
 
-#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningCompleted
+#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(tên cũ)* , Office.OneNote.Android.Sync.ProvisioningCompleted
 
 Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng. Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
 
@@ -12117,7 +12117,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **TimeTakenInMilliSeconds** - Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
 
-#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningStarted
+#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(tên cũ)* , Office.OneNote.Android.Sync.ProvisioningStarted
 
 Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng.  Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
 
@@ -13448,11 +13448,11 @@ Các trường sau chỉ được thu thập cho Android:
 
 - **talkback** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho TalkBack trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
 
-- **webview_kernel_version**: Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_kernel_version** : Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
-- **webview_package_name**: Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_package_name** : Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
-- **webview_package_version**: Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_package_version** : Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
 #### <a name="lowstoragewarning"></a>low.storage.warning
 
