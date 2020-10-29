@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office những thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số sự kiện ví dụ.
 hideEdit: true
-ms.openlocfilehash: 2183863e1f7050d7d6ba838b639debf2b53ac9bd
-ms.sourcegitcommit: e1e4c309d62d0708404b7838c96416ce89f1b8b7
+ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328341"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794823"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán tuỳ chọn cho Office
 
@@ -27,9 +27,9 @@ ms.locfileid: "48328341"
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
-Dữ liệu chẩn đoán được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng trên các máy tính chạy Windows. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Dữ liệu chẩn đoán này được thu thập và gửi cho Microsoft về phần mềm máy khách Office chạy trên thiết bị người dùng. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
-***Dữ liệu chẩn đoán tuỳ chọn*** là dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố.
+***Dữ liệu chẩn đoán tùy chọn** _ là dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố.
 
 Nếu bạn chọn gửi cho chúng tôi dữ liệu chẩn đoán tùy chọn, dữ liệu chẩn đoán bắt buộc cũng sẽ được bao gồm. Ngoài ra, các tệp nhật ký chẩn đoán của Office có chứa thông tin giống với dữ liệu chẩn đoán tùy chọn cũng có thể được gửi. Để biết thêm thông tin về các tệp nhật ký này, xem [Tổng quan về các tệp nhật ký chẩn đoán của Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
@@ -71,7 +71,7 @@ Danh mục này bao gồm các sự kiện có thể bao gồm các lĩnh vực 
 
 Bảng sau đây cung cấp các ví dụ về các sự kiện trong danh mục này và mô tả về các sự kiện đó.
 
-| **Tên sự kiện**   | **Mô tả sự kiện**  |
+| _ *Tên sự kiện**   | **Mô tả sự kiện**  |
 | ---- | ---- |
 | Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | Sự kiện này cho biết liệu Word có cập nhật thành công dải băng trong Giao diện người dùng Word hay không khi người dùng thay đổi danh tính của họ. Chúng tôi sử dụng sự kiện này để phát hiện thiết lập không chính xác và các sự cố khác ảnh hưởng đến giao diện người dùng Office. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Sự kiện này cung cấp thông tin về phần bổ trợ Office mà người dùng đã cài đặt, bao gồm ID ứng dụng, bản dựng và phiên bản hệ điều hành, thành công của bản cài đặt và thời gian cài đặt.  |

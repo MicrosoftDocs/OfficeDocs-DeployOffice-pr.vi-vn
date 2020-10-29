@@ -13,29 +13,25 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư cho Office trên thiết bị Android.
 hideEdit: true
-ms.openlocfilehash: 6086ecd1b2cd55bbf6cb4577879714f1d20a2f93
-ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
+ms.openlocfilehash: 2c1ecab42f31c85616faca42a5cb01b183a36087
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092140"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794463"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android
 
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office trong phạm vi thông tin về quyền riêng tư này, hãy xem [Các biện pháp kiểm soát quyền riêng tư có sẵn dành cho các sản phẩm Office](products-versions-privacy-controls.md).
+
 Sẽ có các thiết đặt chính sách mới cho Office trên thiết bị Android cho phép bạn kiểm soát các thiết đặt liên quan đến vấn đề sau đây:
 
-- ***Dữ liệu chẩn đoán*** về phần mềm máy khách Office được sử dụng được thu thập và gửi cho Microsoft.
+- ***Dữ liệu chẩn đoán** _ về phần mềm máy khách Office được sử dụng được thu thập và gửi cho Microsoft.
 
-- ***Trải nghiệm được kết nối*** sử dụng chức năng trên nền đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
+- _*_Trải nghiệm được kết nối_*_ sử dụng chức năng trên nền đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
 
 Để biết thêm thông tin về dữ liệu chẩn đoán và trải nghiệm được kết nối, hãy xem mục [Tổng quan về các biện pháp kiểm soát quyền riêng tư](overview-privacy-controls.md).
-
-Các thiết đặt chính sách này sẽ áp dụng cho các ứng dụng sau đây:
-- Phiên bản 16.0.12228.20260 trở lên trong Word for Android, Excel for Android và PowerPoint for Android.
-- Phiên bản 4.1.71 trở lên trong Outlook for Android.
-- Phiên bản 16.0.12228.20004 trở lên trong OneNote for Android.
-- Phiên bản 5.47 trở lên trong OneDrive for Android.
-- Phiên bản 16.0.12430.20254 trở lên của ứng dụng Office dành cho Android.
 
 ## <a name="policy-settings-available-for-office-on-android-devices"></a>Các thiết đặt chính sách sẵn dùng cho Office trên các thiết bị chạy Android
 
@@ -43,7 +39,7 @@ Bảng sau liệt kê các thiết đặt chính sách nào sẵn dùng cho Offi
 
 > [!NOTE]
 >- Thông tin bổ sung được cung cấp bao gồm các thiết đặt chính sách đối với Office trên các thiết bị chạy Windows. Nhưng thông tin tương tự sẽ áp dụng cho Office trên các thiết bị chạy Android vì chúng là các thiết đặt chính sách tương tự.
->- * cho phép sử dụng các trải nghiệm được kết nối trong thiết đặt chính sách Office* sẵn dùng cho Office trên các thiết bị chạy Windows không áp dụng cho Office trên thiết bị Android. 
+>- _Cho phép sử dụng các trải nghiệm được kết nối trong thiết đặt chính sách Office sẵn dùng cho Office trên các thiết bị chạy Windows không áp dụng cho Office trên thiết bị Android. 
 
 
 |Tên của thiết đặt chính sách  |Thông tin bổ sung |

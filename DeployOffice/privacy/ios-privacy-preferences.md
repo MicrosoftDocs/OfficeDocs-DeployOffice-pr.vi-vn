@@ -14,30 +14,25 @@ ms.custom:
 - Ent_Office_Mac
 description: Cung cấp cho người quản trị Office thông tin về cách quản lý kiểm soát quyền riêng tư trên thiết bị iOS.
 hideEdit: true
-ms.openlocfilehash: ac8b3428734649981f20a82be2f0793c857e09ee
-ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
+ms.openlocfilehash: ed24ac934625bba61eac25e764a892d48365c005
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092176"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794679"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS
 
+> [!NOTE]
+> Để biết danh sách các sản phẩm Office trong phạm vi thông tin về quyền riêng tư này, hãy xem [Các biện pháp kiểm soát quyền riêng tư có sẵn dành cho các sản phẩm Office](products-versions-privacy-controls.md).
+
 Sẽ có các cài đặt tùy chọn mới cho Office trên thiết bị iOS cho phép bạn kiểm soát các cài đặt liên quan đến vấn đề sau đây:
 
-- ***Dữ liệu chẩn đoán*** về phần mềm máy khách Office được sử dụng được thu thập và gửi cho Microsoft.
+- ***Dữ liệu chẩn đoán** _ về phần mềm máy khách Office được sử dụng được thu thập và gửi cho Microsoft.
 
-- ***Trải nghiệm được kết nối*** sử dụng chức năng trên nền đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
+- _*_Trải nghiệm được kết nối_*_ sử dụng chức năng trên nền đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
 
 Để biết thêm thông tin về dữ liệu chẩn đoán và trải nghiệm được kết nối, hãy xem mục [Tổng quan về các biện pháp kiểm soát quyền riêng tư](overview-privacy-controls.md).
-
-Các cài đặt tùy chọn này sẽ áp dụng cho các ứng dụng sau đây:
-- Phiên bản 2.30 trở lên trong Word for iOS, Excel for iOS và PowerPoint for iOS.
-- Phiên bản 4.30.0 trở lên trong Outlook for iOS
-- Phiên bản 16.30 trở lên trong OneNote for iOS.
-- Phiên bản 11.19.11 trở lên trong OneDrive for iOS.
-- Phiên bản 1.17 trở lên của Visio Viewer for iOS.
-- Phiên bản 2.34 trở lên của ứng dụng Office dành cho iOS.
 
 > [!NOTE]
 > Để tìm hiểu thông tin về các cài đặt tương tự cho Office trên các máy tính chạy macOS, xem mục [Sử dụng tuỳ chọn để quản lý các biện pháp kiểm soát quyền riêng tư cho Office for Mac](mac-privacy-preferences.md).
@@ -74,13 +69,13 @@ Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn v
 
 |||
 |:-----|:-----|
-|**Khóa**  | `DiagnosticDataTypePreference`  |
+|_ *Khóa**  | `DiagnosticDataTypePreference`  |
 |**Kiểu Dữ liệu**  | Chuỗi |
 |**Giá trị khả thi**  | `BasicDiagnosticData` *(đặt ở mức Bắt buộc)* <br/> `FullDiagnosticData` *(đặt ở mức Tùy chọn)* <br/> `ZeroDiagnosticData` *(không áp dụng mức nào ở trên)* |
 
 Nếu bạn không đặt tùy chọn này thì cả dữ liệu chẩn đoán bắt buộc và tùy chọn sẽ được gửi tới Microsoft nếu người dùng có đăng ký Office 365 (hoặc Microsoft 365) đang đăng nhập bằng tài khoản cơ quan hoặc trường học. Ngoài ra, những người dùng này không thể thay đổi cấp dữ liệu chẩn đoán, bất kể bạn đặt tùy chọn này như thế nào.
 
-Đối với những người dùng khác, chẳng hạn như người dùng gia đình có đăng ký Office 365 (hoặc Microsoft 365), thì ứng dụng sẽ chỉ gửi dữ liệu chẩn đoán bắt buộc, trừ khi người dùng chọn gửi cả dữ liệu chẩn đoán tự chọn bằng cách truy cập mục **Cài đặt ** > **Cài đặt Quyền riêng tư**.
+Đối với những người dùng khác, chẳng hạn như người dùng gia đình có đăng ký Office 365 (hoặc Microsoft 365), thì ứng dụng sẽ chỉ gửi dữ liệu chẩn đoán bắt buộc, trừ khi người dùng chọn gửi cả dữ liệu chẩn đoán tự chọn bằng cách truy cập mục **Cài đặt** > **Cài đặt Quyền riêng tư** .
 
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Cài đặt tùy chọn cho các trải nghiệm được kết nối phân tích nội dung của bạn
@@ -98,7 +93,7 @@ Nếu bạn không đặt tùy chọn này thì các trải nghiệm được k�
 
 Nếu người dùng có đăng ký Office 365 (hoặc Microsoft 365) và được đăng nhập bằng tài khoản cơ quan hoặc thì người dùng đó sẽ không thể tắt trải nghiệm được kết nối phân tích nội dung.
 
-Đối với những người dùng khác, chẳng hạn như người dùng gia đình có đăng ký Office 365 (hoặc Microsoft 365), người dùng có thể chọn tắt các trải nghiệm được kết nối phân tích nội dung bằng cách vào mục **Cài đặt** > **Cài đặt Quyền riêng tư**.
+Đối với những người dùng khác, chẳng hạn như người dùng gia đình có đăng ký Office 365 (hoặc Microsoft 365), người dùng có thể chọn tắt các trải nghiệm được kết nối phân tích nội dung bằng cách vào mục **Cài đặt** > **Cài đặt Quyền riêng tư** .
 
 ## <a name="preference-setting-for-connected-experiences-that-download-online-content"></a>Cài đặt tùy chọn cho các trải nghiệm được kết nối tải xuống nội dung trực tuyến
 
@@ -115,7 +110,7 @@ Nếu bạn không đặt tùy chọn này thì các trải nghiệm được k�
 
 Nếu người dùng có đăng ký Office 365 (hoặc Microsoft 365) và được đăng nhập bằng tài khoản cơ quan hoặc thì người dùng đó sẽ không thể tắt trải nghiệm tải xuống nội dung trực tuyến.
 
-Đối với những người dùng khác, chẳng hạn như người dùng gia đình có đăng ký Office 365 (hoặc Microsoft 365), người dùng có thể chọn tắt các trải nghiệm được kết nối tải xuống nội dung trực tuyến bằng cách vào mục **Cài đặt** > **Cài đặt Quyền riêng tư**.
+Đối với những người dùng khác, chẳng hạn như người dùng gia đình có đăng ký Office 365 (hoặc Microsoft 365), người dùng có thể chọn tắt các trải nghiệm được kết nối tải xuống nội dung trực tuyến bằng cách vào mục **Cài đặt** > **Cài đặt Quyền riêng tư** .
 
 ## <a name="preference-setting-for-optional-connected-experiences"></a>Cài đặt tùy chọn cho các trải nghiệm được kết nối tùy chọn
 
@@ -128,6 +123,6 @@ Ngoài các trải nghiệm được kết nối được đề cập ở trên,
 |**Giá trị khả thi**  | `TRUE` *(đã bật)* <br/> `FALSE` *(đã tắt)*|
 
 
-Nếu bạn không đặt tùy chọn này thì trải nghiệm được kết nối tùy chọn sẽ sẵn dùng đối với người dùng có đăng ký Office 365 (hoặc Microsoft 365) đã đăng nhập bằng tài khoản cơ quan hoặc trường học. Trừ khi bạn đã đặt tùy chọn này là FALSE, những người dùng này có thể chọn tắt trải nghiệm được kết nối tùy chọn bằng cách vào mục **Cài đặt** > **Cài đặt Quyền riêng tư**.
+Nếu bạn không đặt tùy chọn này thì trải nghiệm được kết nối tùy chọn sẽ sẵn dùng đối với người dùng có đăng ký Office 365 (hoặc Microsoft 365) đã đăng nhập bằng tài khoản cơ quan hoặc trường học. Trừ khi bạn đã đặt tùy chọn này là FALSE, những người dùng này có thể chọn tắt trải nghiệm được kết nối tùy chọn bằng cách vào mục **Cài đặt** > **Cài đặt Quyền riêng tư** .
 
 Đối với những người dùng khác, chẳng hạn như người dùng gia đình có đăng ký Office 365 (hoặc Microsoft 365), sẽ không có tùy chọn tắt trải nghiệm được kết nối tùy chọn.

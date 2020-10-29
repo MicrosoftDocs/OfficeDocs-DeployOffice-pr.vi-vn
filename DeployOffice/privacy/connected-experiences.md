@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 2ffbac14694578fc1f5964cef2c92eea6d6a2172
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491600"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794789"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -71,7 +71,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 <sup>1</sup> Ngay cả khi không có kết nối Internet, bạn vẫn có thể dùng chức năng cơ bản của Trình soạn thảo. Các chức năng cơ bản cũng vẫn khả dụng nếu bạn chọn vô hiệu hóa việc sử dụng trải nghiệm được kết nối để phân tích nội dung của mình. Trong cả hai trường hợp, Microsoft sẽ không nhận được bất kỳ dữ liệu nào về việc sử dụng Trình soạn thảo.
 
 > [!NOTE]
-> \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
+> \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office* .
 
 ## <a name="connected-experiences-that-download-online-content"></a>Trải nghiệm được kết nối tải xuống nội dung trực tuyến
 
@@ -99,11 +99,11 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Trình nghiên cứu*\*    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Cho Tôi Biết    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-|*Ước tính thời gian di chuyển trong Up Next *\*|Khi bạn chọn cho phép Outlook for iOS và Android truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) thẻ ở đầu hộp thư đến của bạn.|
+|*Ước tính thời gian di chuyển trong Up Next*\*|Khi bạn chọn cho phép Outlook for iOS và Android truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) thẻ ở đầu hộp thư đến của bạn.|
 | *Thanh thời tiết*\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
->\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
+>\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office* .
 
 ## <a name="other-connected-experiences"></a>Trải nghiệm được kết nối khác
 
@@ -125,7 +125,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Hộp thư đến Ưu tiên (Outlook) |[Hộp thư đến Ưu tiên dành cho Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Quản lý Quyền Thông tin |[Mở tệp có các quyền bị hạn chế](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | Thẻ liên hệ LinkedIn |[LinkedIn trong các ứng dụng và dịch vụ của Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Phần bổ trợ dành cho Office*\* | [Triển khai các phần bổ trợ trong Trung tâm quản trị](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
+| *Phần bổ trợ dành cho Office*\* | [Xem, quản lý và cài đặt bổ trợ trong các chương trình Office](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(cho người dùng)* <br/> [Triển khai các phần bổ trợ trong Trung tâm quản trị](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(cho người quản trị)* |
 | Phản hồi về Office |[Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Bộ phận hỗ trợ của Office (Liên hệ với chúng tôi) |Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng |
 | Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức trong Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -146,18 +146,18 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Khi bạn vắng mặt |[Nhận thông báo khi các thành viên trong nhóm của bạn cập nhật tệp chia sẻ của bạn](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
->\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
+>\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office* .
 
 ## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Chọn xem những trải nghiệm được kết nối này có sẵn để sử dụng không
 
 Bạn có thể chọn xem một số loại trải nghiệm được kết nối nhất định, chẳng hạn như trải nghiệm được kết nối tải xuống nội dung trực tuyến, có sẵn để sử dụng hay không. Cách bạn đưa ra lựa chọn đó tùy thuộc vào việc bạn đã đăng nhập vào Office bằng tài khoản Microsoft, chẳng hạn như địa chỉ email outlook.com cá nhân hoặc với tài khoản cơ quan hoặc trường học.
 
-Nếu bạn đã đăng nhập bằng tài khoản Microsoft, hãy mở ứng dụng Office, chẳng hạn như Word và đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý thiết đặt**. Trong phần **Trải nghiệm được kết nối**, bạn có thể chọn xem một số loại trải nghiệm được kết nối nhất định, chẳng hạn như trải nghiệm được kết nối tải xuống nội dung trực tuyến, có sẵn để sử dụng hay không. Nếu bạn không đi đến phần **Quản lý thiết đặt**, tất cả các trải nghiệm được kết nối đều sẽ có sẵn cho bạn.
+Nếu bạn đã đăng nhập bằng tài khoản Microsoft, hãy mở ứng dụng Office, chẳng hạn như Word và đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý thiết đặt** . Trong phần **Trải nghiệm được kết nối** , bạn có thể chọn xem một số loại trải nghiệm được kết nối nhất định, chẳng hạn như trải nghiệm được kết nối tải xuống nội dung trực tuyến, có sẵn để sử dụng hay không. Nếu bạn không đi đến phần **Quản lý thiết đặt** , tất cả các trải nghiệm được kết nối đều sẽ có sẵn cho bạn.
 
-Nếu bạn đã đăng nhập bằng tài khoản cơ quan hoặc trường học, người quản trị trong tổ chức của bạn sẽ quyết định xem những trải nghiệm được kết nối này có sẵn cho bạn hay không. Bạn sẽ không thấy bất kỳ lựa chọn nào cho các trải nghiệm được kết nối này nếu bạn đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý cài đặt**.
+Nếu bạn đã đăng nhập bằng tài khoản cơ quan hoặc trường học, người quản trị trong tổ chức của bạn sẽ quyết định xem những trải nghiệm được kết nối này có sẵn cho bạn hay không. Bạn sẽ không thấy bất kỳ lựa chọn nào cho các trải nghiệm được kết nối này nếu bạn đi đến **Tệp** > **Tài khoản** > **Quyền riêng tư tài khoản** > **Quản lý cài đặt** .
 
 > [!NOTE]
-> - Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
+> - Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư** . Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 > - Để biết thêm thông tin, hãy xem [Cài đặt Quyền riêng tư Tài khoản](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Nếu bạn là người quản trị cho tổ chức của bạn, bạn có thể sử dụng cài đặt chính sách để xác định xem những trải nghiệm được kết nối này có sẵn cho người dùng của bạn hay không. Nếu bạn không sử dụng các cài đặt chính sách này, tất cả các trải nghiệm được kết nối sẽ có sẵn cho người dùng của bạn. Để tìm hiểu thêm thông tin về cách sử dụng các thiết đặt chính sách này, hãy xem những bài viết sau đây: 
