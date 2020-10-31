@@ -103,7 +103,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Thanh thời tiết*\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
->\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office* .
+>\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi cài đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office* .
 
 ## <a name="other-connected-experiences"></a>Trải nghiệm được kết nối khác
 
@@ -125,7 +125,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Hộp thư đến Ưu tiên (Outlook) |[Hộp thư đến Ưu tiên dành cho Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Quản lý Quyền Thông tin |[Mở tệp có các quyền bị hạn chế](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | Thẻ liên hệ LinkedIn |[LinkedIn trong các ứng dụng và dịch vụ của Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Phần bổ trợ dành cho Office*\* | [Xem, quản lý và cài đặt bổ trợ trong các chương trình Office](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(cho người dùng)* <br/> [Triển khai các phần bổ trợ trong Trung tâm quản trị](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(cho người quản trị)* |
+| *Phần bổ trợ dành cho Office*\* | [Xem, quản lý và cài đặt phần bổ trợ trong các chương trình Office](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(cho người dùng)* <br/> [Triển khai các phần bổ trợ trong Trung tâm quản trị](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(cho người quản trị)* |
 | Phản hồi về Office |[Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Bộ phận hỗ trợ của Office (Liên hệ với chúng tôi) |Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng |
 | Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức trong Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|

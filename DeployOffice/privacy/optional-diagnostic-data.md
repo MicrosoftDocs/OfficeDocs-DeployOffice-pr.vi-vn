@@ -27,9 +27,9 @@ ms.locfileid: "48794823"
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
-Dữ liệu chẩn đoán này được thu thập và gửi cho Microsoft về phần mềm máy khách Office chạy trên thiết bị người dùng. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Dữ liệu chẩn đoán này về phần mềm máy khách Office chạy trên thiết bị của người dùng được thu thập và gửi đến Microsoft. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
-***Dữ liệu chẩn đoán tùy chọn** _ là dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố.
+***Dữ liệu chẩn đoán tùy chọn** _ là dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục sự cố.
 
 Nếu bạn chọn gửi cho chúng tôi dữ liệu chẩn đoán tùy chọn, dữ liệu chẩn đoán bắt buộc cũng sẽ được bao gồm. Ngoài ra, các tệp nhật ký chẩn đoán của Office có chứa thông tin giống với dữ liệu chẩn đoán tùy chọn cũng có thể được gửi. Để biết thêm thông tin về các tệp nhật ký này, xem [Tổng quan về các tệp nhật ký chẩn đoán của Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 

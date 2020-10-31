@@ -26,9 +26,9 @@ ms.locfileid: "48794679"
 > [!NOTE]
 > Để biết danh sách các sản phẩm Office trong phạm vi thông tin về quyền riêng tư này, hãy xem [Các biện pháp kiểm soát quyền riêng tư có sẵn dành cho các sản phẩm Office](products-versions-privacy-controls.md).
 
-Sẽ có các cài đặt tùy chọn mới cho Office trên thiết bị iOS cho phép bạn kiểm soát các cài đặt liên quan đến vấn đề sau đây:
+Có các cài đặt tùy chọn mới cho Office trên thiết bị iOS cho phép bạn kiểm soát các cài đặt liên quan đến vấn đề sau đây:
 
-- ***Dữ liệu chẩn đoán** _ về phần mềm máy khách Office được sử dụng được thu thập và gửi cho Microsoft.
+- ***Dữ liệu chẩn đoán** _ về phần mềm máy khách Office được sử dụng được thu thập và gửi đến Microsoft.
 
 - _*_Trải nghiệm được kết nối_*_ sử dụng chức năng trên nền đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
 
