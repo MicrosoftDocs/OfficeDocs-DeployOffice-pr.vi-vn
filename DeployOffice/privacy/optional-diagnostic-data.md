@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office những thông tin về dữ liệu chẩn đoán tùy chọn trong Office, bao gồm một số sự kiện ví dụ.
 hideEdit: true
-ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: 7dc10c50baed0306e3e7fc6dd70e0d798a72d0bc
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794823"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931276"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán tuỳ chọn cho Office
 
@@ -28,6 +28,9 @@ ms.locfileid: "48794823"
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm. Dữ liệu này không bao gồm tên người dùng hoặc địa chỉ email, nội dung của các tệp của người dùng hoặc thông tin về các ứng dụng không liên quan đến Office.
 
 Dữ liệu chẩn đoán này về phần mềm máy khách Office chạy trên thiết bị của người dùng được thu thập và gửi đến Microsoft. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+
+> [!NOTE]
+> Nếu bạn đang sử dụng phiên bản Office 2019 hoặc Office 2016 không cung cấp cho bạn hoặc người quản trị của bạn khả năng chọn để gửi hay không cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn, sau đó chỉ dữ liệu chẩn đoán bắt buộc được gửi. Ví dụ: nếu bạn đang sử dụng Office Professional Plus 2019 hoặc Office Standard 2016, vốn không cung cấp lựa chọn đó, thì chỉ bắt buộc dữ liệu chẩn đoán sẽ được gửi đi. Office 2013 không gửi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn. Để biết thêm thông tin về những phiên bản Office nào cung cấp lựa chọn này, hãy xem [Kiểm soát quyền riêng tư có sẵn cho các sản phẩm Office](products-versions-privacy-controls.md).
 
 ***Dữ liệu chẩn đoán tùy chọn** _ là dữ liệu bổ sung giúp chúng tôi cải tiến sản phẩm và cung cấp thông tin nâng cao để giúp chúng tôi phát hiện, chẩn đoán và khắc phục sự cố.
 
