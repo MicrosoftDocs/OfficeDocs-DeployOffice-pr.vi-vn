@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp thông tin về các sản phẩm và phiên bản Office nào có các kiểm soát quyền riêng tư gần đây nhất.
 hideEdit: true
-ms.openlocfilehash: d6fc46501b2137f2f22cd30dad4a2168bc490360
-ms.sourcegitcommit: da41d41b443c8392c96e64a4d2fc674957abddf5
+ms.openlocfilehash: 8434891947997908bb4de61ad56606f8b4b59614
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47432012"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931204"
 ---
 # <a name="privacy-controls-available-for-office-products"></a>Kiểm soát quyền riêng tư có sẵn cho các sản phẩm Office
 
@@ -42,7 +42,6 @@ Các biện pháp kiểm soát quyền riêng tư gần đây nhất của chún
 - Các phiên bản bán lẻ của Office 2019 và Office 2016, được cung cấp dưới dạng mua một lần. Ví dụ: Office Professional 2019 hoặc Office Home & Student 2016.
 - Các phiên bản dành cho máy tính để bàn của Project và Visio đi kèm với một số gói đăng ký, chẳng hạn như Gói Project 5 hoặc Gói Visio 2.
 - Các phiên bản bán lẻ của Project 2019, Project 2016, Visio 2019 và Visio 2016, có sẵn dưới dạng mua một lần.
-- Các phiên bản được cấp phép số lượng lớn của Project 2016 và Visio 2016 được cài đặt bằng cách sử dụng Click-to-Run thay vì được cài đặt bằng cách sử dụng Windows Installer (MSI). Ví dụ: Project Professional 2016 hoặc Visio Standard 2016.
 
 Đối với thiết bị Windows, bảng sau liệt kê các ứng dụng và phiên bản tối thiểu của những ứng dụng có các kiểm soát quyền riêng tư gần đây nhất của chúng tôi.
 
@@ -74,6 +73,12 @@ Các biện pháp kiểm soát quyền riêng tư gần đây nhất của chún
 Một số sản phẩm Office có thể không có một số loại trải nghiệm được kết nối nhất định, vì vậy một số kiểm soát quyền riêng tư sẽ không phù hợp.
 
 Để định cấu hình các kiểm soát quyền riêng tư này cho người dùng đang sử dụng Office trên thiết bị Windows trong tổ chức của bạn, bạn có thể sử dụng Chính sách Nhóm hoặc dịch vụ chính sách đám mây Office. Để biết thêm thông tin, hãy xem [ Sử dụng cài đặt chính sách để quản lý các kiểm soát quyền riêng tư cho các Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md).
+
+> [!NOTE]
+> Kiểm soát quyền riêng tư "Cho phép việc sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office" được hỗ trợ trên *các phiên bản Office, Project và Visio được cấp phép số lượng lớn* sau đây.
+> - Office 2019, Project 2019 và Visio 2019, khi chúng được cấu hình để sử dụng kênh cập nhật PerpetualVL2019. Trong trường hợp đó, bạn phải sử dụng ít nhất Phiên bản 1808 (Bản dựng 10367,20048), được phát hành vào ngày 13 tháng Mười, 2020.
+> - Project 2019 và Visio 2019, khi chúng được cấu hình để sử dụng một kênh Cập Nhật khác ngoài PerpetualVL2019. Ví dụ: nếu chúng được cấu hình để sử dụng Kênh hiện tại, Kênh Doanh nghiệp hàng tháng hoặc Kênh Doanh nghiệp bán niên. Trong trường hợp đó, bạn phải sử dụng ít nhất phiên bản 1904.
+> - Project 2016 và Visio 2016 được cài đặt bằng cách sử dụng Click-to-Run thay vì được cài đặt bằng cách sử dụng Windows Installer (MSI). Trong trường hợp đó, bạn phải sử dụng ít nhất phiên bản 1904.
 
 ## <a name="office-on-mac-devices"></a>Office trên các thiết bị của Mac
 

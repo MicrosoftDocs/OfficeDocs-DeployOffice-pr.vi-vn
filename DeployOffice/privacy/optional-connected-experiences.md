@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: c7593aed7e4bc6037bca6b84181c0434b2e27e30
-ms.sourcegitcommit: 288d54b2e6b463f67358f701ef0dd5424237f811
+ms.openlocfilehash: d0eea79f28d2c2f79991ac0d59ebb6a567fecb21
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322392"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931458"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -42,7 +42,7 @@ Bing cung cấp các trải nghiệm sau trong Outlook cho iOS và Android:
 
 - **Đề xuất vị trí:**   Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, địa chỉ đường đầy đủ sẽ có trong trường Vị trí.
 - **Lịch thú vị:**   Bạn có thể [đăng ký](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) lịch của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn.
-- **Thời gian di chuyển trong Up Next: ** Sự kiện sắp diễn ra tiếp theo của bạn sẽ được tóm tắt ở đầu hộp thư đến trong email của bạn trong một thẻ có tên [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) Trong Outlook for Android, trải nghiệm này yêu cầu Bing Maps cung cấp thời gian di chuyển ước tính.
+- **Thời gian di chuyển trong Up Next:** Sự kiện sắp diễn ra tiếp theo của bạn sẽ được tóm tắt ở đầu hộp thư đến trong email của bạn trong một thẻ có tên [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) Trong Outlook for Android, trải nghiệm này yêu cầu Bing Maps cung cấp thời gian di chuyển ước tính.
 
  Những trải nghiệm này hoạt động dựa trên Bing được cấp phép cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trong khi sử dụng các dịch vụ này đều được gửi đến Microsoft Bing. Chúng không được liên kết với bạn bởi tổ chức Bing.
 
@@ -99,7 +99,10 @@ Trên Outlook for iOS, sự kiện sắp diễn ra tiếp theo của bạn sẽ 
 
 Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
-Để biết thêm thông tin, hãy xem [Thiết đặt Quyền riêng tư Tài khoản.](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Để biết thêm thông tin, hãy xem [Cài đặt Quyền riêng tư Tài khoản](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+
+> [!NOTE]
+> Nếu người quản trị cho tổ chức của bạn cung cấp cho bạn một phiên bản được cấp phép số lượng lớn của Office 2019, Project 2019 hoặc Visio 2019, hãy đi tới **Tệp** > **Tùy chọn** > **Trung tâm Tin cậy** > **Cài đặt Trung tâm Tin cậy** > **Tùy chọn Quyền riêng tư**. Tại đó bạn sẽ thấy một hộp kiểm cho **Bật các trải nghiệm được kết nối tùy chọn**. Nếu bạn không thấy hộp kiểm đó trong Project 2019 hoặc Visio 2019, hãy chọn **Cài đặt Quyền riêng tư...** trong **Trung tâm tin cậy** hộp thoại đó. Sau đó, bạn sẽ thấy một **Cài đặt quyền riêng tư** hộp thoại xuất hiện với một hộp kiểm cho **Bật trải nghiệm được kết nối tùy chọn**.
 
 ## <a name="your-privacy-settings"></a>Cài đặt quyền riêng tư của bạn
 
@@ -107,11 +110,14 @@ Nếu người quản trị của bạn cung cấp cho bạn khả năng sử d�
 
 Nếu bạn đang sử dụng Office dành cho máy Mac, hãy mở ứng dụng Office bất kỳ, rồi chọn menu ứng dụng (chẳng hạn như Word hoặc Excel) > **Tùy chọn** > **Quyền riêng tư**. Thao tác này sẽ mở hộp thoại cài đặt Quyền riêng tư Tài khoản nơi bạn có thể thấy tùy chọn quyền riêng tư của mình.
 
-Để biết thêm thông tin, hãy xem [Thiết đặt Quyền riêng tư Tài khoản.](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Để biết thêm thông tin, hãy xem [Cài đặt Quyền riêng tư Tài khoản](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+
+> [!NOTE]
+> Nếu người quản trị cho tổ chức của bạn cung cấp cho bạn một phiên bản được cấp phép số lượng lớn của Office 2019, Project 2019 hoặc Visio 2019, hãy đi tới **Tệp** > **Tùy chọn** > **Trung tâm Tin cậy** > **Cài đặt Trung tâm Tin cậy** > **Tùy chọn Quyền riêng tư**. Tại đó bạn sẽ thấy một hộp kiểm cho **Bật các trải nghiệm được kết nối tùy chọn**. Nếu bạn không thấy hộp kiểm đó trong Project 2019 hoặc Visio 2019, hãy chọn **Cài đặt Quyền riêng tư...** trong **Trung tâm tin cậy** hộp thoại đó. Sau đó, bạn sẽ thấy một **Cài đặt quyền riêng tư** hộp thoại xuất hiện với một hộp kiểm cho **Bật trải nghiệm được kết nối tùy chọn**.
 
 ## <a name="required-service-data"></a>Dữ liệu dịch vụ bắt buộc
 
-Khi bạn sử dụng bất kỳ dịch vụ tùy chọn dựa trên đám mây nào được mô tả trong bài viết này, Microsoft có thể thu thập [ dữ liệu dịch vụ bắt buộc](required-service-data.md) (chẳng hạn như dữ liệu sử dụng, dữ liệu lỗi và hiệu suất) về hiệu suất của trải nghiệm khi bạn sử dụng các dịch vụ này. Dữ liệu dịch vụ bắt buộc này có thể chứa "dữ liệu cá nhân" theo quy định tại Điều 4 của Quy định Chung về Bảo vệ Dữ liệu Châu Âu.Tất cả dữ liệu dịch vụ bắt buộc mà Microsoft thu thập trong quá trình sử dụng bất kỳ ứng dụng và dịch vụ Microsoft Office 365 ProPlus được đặt biệt danh như đã xác định theo tiêu chuẩn ISO/IEC 19944:2017 (mục 8.3.3).
+Khi bạn sử dụng bất kỳ dịch vụ tùy chọn dựa trên đám mây nào được mô tả trong bài viết này, Microsoft có thể thu thập [ dữ liệu dịch vụ bắt buộc](required-service-data.md) (chẳng hạn như dữ liệu sử dụng, dữ liệu lỗi và hiệu suất) về hiệu suất của trải nghiệm khi bạn sử dụng các dịch vụ này. Dữ liệu dịch vụ bắt buộc này có thể chứa "dữ liệu cá nhân" theo quy định tại Điều 4 của Quy định Chung về Bảo vệ Dữ liệu Châu Âu. Tất cả dữ liệu dịch vụ bắt buộc mà Microsoft thu thập trong quá trình sử dụng bất kỳ ứng dụng và dịch vụ Microsoft Office 365 ProPlus được đặt biệt danh như đã xác định theo tiêu chuẩn ISO/IEC 19944:2017 (mục 8.3.3).
 
 ## <a name="admin-controls-for-optional-connected-experiences"></a>Kiểm soát của người quản trị dành cho trải nghiệm được kết nối tùy chọn 
 
