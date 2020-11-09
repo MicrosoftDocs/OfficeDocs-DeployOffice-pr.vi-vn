@@ -31,7 +31,7 @@ Microsoft cam kết cung cấp cho bạn thông tin và quyền kiểm soát c�
 
 Bắt đầu với Phiên bản 1904 của Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn, các thiết đặt chính sách mới sẽ cho phép bạn kiểm soát các thiết đặt liên quan đến những mục sau:
 
-- ***Dữ liệu chẩn đoán** _ được thu thập và gửi cho Microsoft về phần mềm máy khách Office đang được sử dụng
+- ***Dữ liệu chẩn đoán** _ được thu thập và gửi đến Microsoft về phần mềm máy khách Office đang được sử dụng
 
 - _*_Trải nghiệm được kết nối_*_ sử dụng chức năng dựa trên đám mây để cung cấp các tính năng Office nâng cao cho bạn và người dùng của bạn.
 
@@ -64,13 +64,13 @@ Cũng giống như bất kỳ thiết đặt chính sách mới nào, bạn nên
 
 Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn và cập nhật, phát hiện, chẩn đoán và khắc phục sự cố cũng như giúp cải thiện sản phẩm.
 
-Bạn có thể sử dụng _Cấu hình mức dữ liệu chẩn đoán phần mềm máy khách được Office gửi đến cài đặt chính sách của Microsoft* để chọn mức dữ liệu chẩn đoán được gửi đến Microsoft.
+Bạn có thể sử dụng cài đặt chính sách _Cấu hình mức dữ liệu chẩn đoán phần mềm máy khách được Office gửi đến Microsoft* để chọn mức dữ liệu chẩn đoán được gửi đến Microsoft.
 
 Nếu bạn bật thiết đặt chính sách này, bạn phải chọn mức độ dữ liệu chẩn đoán được gửi đến Microsoft. Lựa chọn của bạn được Bắt buộc, Tùy chọn hoặc Không có lựa chọn nào.
 
-- Nếu bạn chọn * **Bắt buộc** _, dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị mà nó được cài đặt được gửi đến Microsoft.
+- Nếu bạn chọn * **Bắt buộc** _, dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị mà Office được cài đặt sẽ được gửi đến Microsoft.
 
-- Nếu bạn chọn _*_Tùy chọn_*_ , dữ liệu bổ sung giúp cải thiện sản phẩm và cung cấp thông tin nâng cao nhằm giúp phát hiện, chẩn đoán và khắc phục các sự cố được gửi đến Microsoft. Nếu bạn chọn gửi cho dữ liệu chẩn đoán tùy chọn, dữ liệu chẩn đoán bắt buộc cũng sẽ được bao gồm.
+- Nếu bạn chọn _*_Tùy chọn_*_ , dữ liệu bổ sung giúp cải thiện sản phẩm và cung cấp thông tin nâng cao nhằm giúp phát hiện, chẩn đoán và khắc phục các sự cố sẽ được gửi đến Microsoft. Nếu bạn chọn gửi cho dữ liệu chẩn đoán tùy chọn, dữ liệu chẩn đoán bắt buộc cũng sẽ được bao gồm.
 
 - Nếu bạn chọn _*_Không có lựa chọn nào_*_ , không có dữ liệu chẩn đoán nào về phần mềm máy khách Office chạy trên thiết bị của người dùng được gửi đến Microsoft. Tuy nhiên, tùy chọn này hạn chế đáng kể khả năng phát hiện, chẩn đoán và khắc phục các sự cố của Microsoft mà người dùng của bạn có thể gặp phải khi sử dụng Office.
 
@@ -104,7 +104,7 @@ Người dùng của bạn sẽ không thể chọn bật hoặc tắt các tr�
 
 Đây là trải nghiệm sử dụng nội dung Office của bạn để cung cấp đề xuất thiết kế, đề xuất chỉnh sửa, dữ liệu thông tin chuyên sâu và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Bộ dịch. Để biết về danh sách các trải nghiệm được kết nối này, hãy xem mục [Trải nghiệm được kết nối trong Office](connected-experiences.md).
 
-Bạn có thể sử dụng _Cho phép sử dụng các trải nghiệm được kết nối trong Office phân tích chính sách nội dung* để kiểm soát xem các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối này sẽ có sẵn cho người dùng của bạn.
+Bạn có thể sử dụng cài đặt chính sách _Cho phép sử dụng các trải nghiệm được kết nối trong Office có phân tích nội dung* để kiểm soát liệu các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối này sẽ có sẵn cho người dùng của bạn.
 
 Lưu ý rằng nếu bạn vô hiệu hóa thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối trong Office* , các trải nghiệm được kết nối phân tích nội dung sẽ không có sẵn cho người dùng của bạn.
 
@@ -125,7 +125,7 @@ Các trải nghiệm được kết nối này là khác nhau vì chúng không 
 Bạn có thể sử dụng thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tuỳ chọn bổ sung trong Office* để kiểm soát xem các loại trải nghiệm được kết nối này có khả dụng cho người dùng của bạn hay không. Nếu bạn không cấu hình các cài đặt chính sách này, những trải nghiệm được kết nối tuỳ chọn này sẽ có sẵn cho người dùng của bạn.
 
 > [!NOTE]
-> Để áp dụng *Cho phép việc sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong cài đặt chính sách Office* với số lượng lớn các phiên bản được cấp phép của Office 2019, Project 2019 hoặc Visio 2019, bạn phải sử dụng Chính sách Nhóm. Bạn không thể sử dụng dịch vụ chính sách đám mây Office. Điều này áp dụng cho khi Office 2019, Project 2019 hoặc Visio 2019 được cấu hình để sử dụng kênh cập nhật PerpetualVL2019.
+> Để áp dụng cài đặt chính sách *Cho phép việc sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office* cho số lượng lớn các phiên bản được cấp phép của Office 2019, Project 2019 hoặc Visio 2019, bạn phải sử dụng Chính sách Nhóm. Bạn không thể sử dụng dịch vụ chính sách đám mây Office. Điều này áp dụng cho thời điểm Office 2019, Project 2019 hoặc Visio 2019 được cấu hình để sử dụng kênh cập nhật PerpetualVL2019.
 
 Ngay cả khi bạn chọn cung cấp các trải nghiệm được kết nối tùy chọn này cho người dùng của mình, họ sẽ có tùy chọn tắt các trải nghiệm được kết nối tùy chọn này với tư cách là một nhóm bằng cách đi tới [hộp thoại cài đặt quyền riêng tư](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Người dùng của bạn sẽ chỉ có lựa chọn này nếu họ đăng nhập vào Office bằng thông tin đăng nhập tổ chức của họ (đôi khi được gọi là tài khoản cơ quan hoặc trường học), chứ không phải nếu họ đăng nhập bằng địa chỉ email cá nhân.
 
