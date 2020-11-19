@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 8fd62619d8aff4b5dcb10d7a4c73710282e2cdd8
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: e8b54e50ca8fc080cf09b26d83f4b7f28bc81290
+ms.sourcegitcommit: 521da3465e94ca9d29f3c6f49b78dd5f952d9cc6
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794715"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49088142"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -78,7 +78,7 @@ Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đ
 
 ## <a name="categories-and-data-fields-that-are-common-for-all-events"></a>Danh mục và trường dữ liệu phổ biến cho tất cả các sự kiện
 
-Có một số thông tin về các sự kiện phổ biến cho tất cả các sự kiện, bất kể danh mục hoặc loại dữ liệu con là gì đi chăng nữa. Thông tin phổ biến này, đôi khi được gọi là *hợp đồng dữ liệu* , được sắp xếp vào các danh mục. Mỗi danh mục chứa các trường và các trường này đều là các trường siêu dữ liệu và có thuộc tính của một sự kiện riêng lẻ. Bạn có thể xem thông tin này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
+Có một số thông tin về các sự kiện phổ biến cho tất cả các sự kiện, bất kể danh mục hoặc loại dữ liệu con là gì đi chăng nữa. Thông tin phổ biến này, đôi khi được gọi là *hợp đồng dữ liệu*, được sắp xếp vào các danh mục. Mỗi danh mục chứa các trường và các trường này đều là các trường siêu dữ liệu và có thuộc tính của một sự kiện riêng lẻ. Bạn có thể xem thông tin này bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
 Danh mục thông tin được thu thập về các sự kiện có thể được chia thành hai nhóm:
 
@@ -241,11 +241,11 @@ Danh mục này chứa các trường sau đây:
 
   - **Duration** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm của người dùng.
 
-  - **Result** . **Code** - Một ứng dụng xác định mã để xác định một kết quả nhất định. Cho phép chúng tôi xác định chi tiết cụ thể hơn về một lỗi cụ thể, chẳng hạn như mã lỗi có thể được sử dụng để phân loại và khắc phục các sự cố.
+  - **Result**.**Code** - Một ứng dụng xác định mã để xác định một kết quả nhất định. Cho phép chúng tôi xác định chi tiết cụ thể hơn về một lỗi cụ thể, chẳng hạn như mã lỗi có thể được sử dụng để phân loại và khắc phục các sự cố.
 
   - **Result.Tag** - Thẻ số nguyên xác định vị trí trong mã nơi kết quả được tạo. Cho phép chúng tôi xác định rõ vị trí trong mã nơi tạo ra kết quả cho phép phân loại lỗi.
 
-  - **Result** . **Type** - Loại mã kết quả. Xác định loại mã kết quả đã được gửi để giá trị có thể được diễn giải chính xác.
+  - **Result**.**Type** - Loại mã kết quả. Xác định loại mã kết quả đã được gửi để giá trị có thể được diễn giải chính xác.
 
   - **Success** - Cờ cho biết xem hoạt động thành công hay thất bại. Cho phép chúng tôi xác định xem các thao tác mà người dùng thực hiện trong sản phẩm sẽ thành công hay thất bại. Điều này cho phép chúng tôi xác định các sự cố đang ảnh hưởng đến người dùng.
 
@@ -654,11 +654,11 @@ Ngoài ra, các trường sau phổ biến đối với tất cả các sự ki�
 
 - **process_bitness** - Xử lý bitness (32 hoặc 64 bit) cho ứng dụng giúp phát hiện các sự cố cụ thể đối với bitness của thiết bị
 
-- **webview_kernel_version** : Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_kernel_version**: Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
-- **webview_package_name** : Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_package_name**: Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
-- **webview_package_version** : Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_package_version**: Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
 
 ## <a name="software-setup-and-inventory-data-events"></a>Sự kiện thiết lập và kiểm kê phần mềm
@@ -897,9 +897,9 @@ Ghi lại SKU Visio dù đó là tiêu chuẩn hay chuyên nghiệp. Cần thi�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_VisioSKU** : **integer** - 0 cho SKU tiêu chuẩn và 1 cho SKU chuyên nghiệp
+  - **Data\_VisioSKU**:**integer** - 0 cho SKU tiêu chuẩn và 1 cho SKU chuyên nghiệp
 
-#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(tên cũ)* , Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(tên cũ)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Ghi lại thông tin về trạng thái kích hoạt của Ứng dụng.  Dữ liệu được giám sát để đảm bảo rằng chúng tôi có xác định lưu trữ tạm văn bản theo nhóm trong các sự cố về kích hoạt. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện.
 
@@ -907,7 +907,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **INSTALL_LOCATION** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
 
-#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(tên cũ)* , Office.OneNote.Android.ResetStatus
+#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(tên cũ)*, Office.OneNote.Android.ResetStatus
 
 Tín hiệu dùng để ghi lại mọi sự cố gặp phải khi người dùng cố gắng đặt lại Ứng dụng.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra trong quá trình đặt lại. 
 
@@ -921,7 +921,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Pass** - Cho biết có Đặt lại có thành công hay không
 
-#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(tên cũ)* , Office.OneNote.Android.SignIn.SignInCompleted
+#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInCompleted
 
 Tín hiệu quan trọng dùng để đảm bảo đăng nhập có thành công hay không. Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.
 
@@ -941,7 +941,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
 
-#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(tên cũ)* , Office.OneNote.Android.SignIn.SignInStarted
+#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInStarted
 
 Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
 
@@ -1265,13 +1265,13 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_DocumentSessionLogID:string** - Mã định danh phiên tài liệu
 
-  - **Data\_IsEnabled** : **bool** - True nếu giải pháp được bật
+  - **Data\_IsEnabled**:**bool** - True nếu giải pháp được bật
 
   - **Data\_TemplateID:string** - GUID của mẫu mà trong đó giải pháp được tải. Được ghi nhật ký dưới dạng 0 cho giải pháp tùy chỉnh
 
-  - **Data\_AddOnID** : **string** - GUID để xác định phần bổ trợ được tải
+  - **Data\_AddOnID**:**string** - GUID để xác định phần bổ trợ được tải
 
-  - **Data\_Error** : **integer** - ID lỗi
+  - **Data\_Error**:**integer** - ID lỗi
 
 ### <a name="security-subtype"></a>*Loại con của bảo mật*
 
@@ -1553,6 +1553,8 @@ Các trường sau đây sẽ được thu thập:
 Sự kiện này được thu thập để đảm bảo cấu hình tài khoản vận hành thành công và được dùng để giám sát trạng thái tạo tài khoản, khả năng thêm tài khoản email mới và giám sát những lần đặt lại tài khoản tạm thời.
 
 Các trường sau đây sẽ được thu thập: 
+
+- **account_creation_source** – thuộc tính tùy chọn được sử dụng để tìm và chẩn đoán mọi sự cố xảy ra trong quá trình tạo tài khoản khi thêm loại hành động.  Thuộc tính này có thể có các giá trị như đăng nhập đơn (SS0), create_new_account, thủ công, v.v.
 
 - **action** - Loại hành động được thực hiện trên tài khoản, chẳng hạn như thêm, loại bỏ hoặc đặt lại
 
@@ -1981,7 +1983,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **AppInfo.Version** - Phiên bản ứng dụng
 
-- **iKey** - ID ghi nhật ký dịch vụ máy chủ
+- **iKey**- ID ghi nhật ký dịch vụ máy chủ
 
 - **RMS.Duration** -Tổng thời gian để hoàn tất API cuộc gọi
 
@@ -2581,6 +2583,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_BootDuration** - Thời lượng khởi động ứng dụng trong quá trình mở tệp.
 
+- **Data_ClosePreviouslyOpenedMarkers** – Một giá trị chuỗi ghi nhật ký khoảng thời gian giữa một số lệnh chức năng khi khởi động ứng dụng, theo định dạng kèm ID chức năng và khoảng thời gian.
+
 - **Data_ClosePreviouslyOpenedMarkers** – Trong một số kịch bản mở tệp, việc đóng tài liệu đã mở trước đó diễn ra trước khi mở tài liệu hiện tại. Khoảng thời gian này giữa một số thao tác diễn ra trong trường hợp này sẽ được lưu trữ trong một giá trị chuỗi có định dạng \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
 - **Data_Doc_AccessMode** - Một liệt kê cho biết phương thức truy nhập của tệp, ví dụ: chỉ đọc, đọc/ghi.
@@ -2911,7 +2915,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_InitializationReason** – Trình bày nguyên nhân cụ thể của thao tác theo dạng liệt kê. Ví dụ: mở từ một URL hay một đường dẫn tệp cục bộ, tạo với trình chọn tệp, sao chép tới đường dẫn tệp, xuất sang URL, v.v.
 
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** .
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled**.
 
 - **Data_IsNameMissingInUrl** – Cho biết tên không được phân tách khỏi URL.
 
@@ -4074,7 +4078,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_UploadError** - Giá trị số cho biết loại lỗi xảy ra nếu thao tác tải lên không thành công.
 
-- **Data_UpsellAppearsFromDelegate** -một giá trị Boolean để cho biết có dạng xem Hiển thị từ menu chia sẻ không.
+- **Data_UpsellAppearsFromDelegate**-một giá trị Boolean để cho biết có dạng xem Hiển thị từ menu chia sẻ không.
 
 #### <a name="officeextensibilitycatalogexchangeprocessentitlement"></a>Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -5527,7 +5531,7 @@ Các trường sau đây sẽ được thu thập:
     - **cardCorrelationId** - Bản sao của Data.appContextId phía trên 
     - **cardPersonaCorrelationId** - Bản sao của Data.cardCorrelationId phía trên
     - **consumerCorrelationId** - Bản sao của Data.clientCorrelationId phía trên 
-    - **networkEffectiveType** - Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có kết nối Internet vào thời điểm hiển thị thẻ cá nhân hay không
+    - **networkEffectiveType**- Loại kết nối mạng hiệu quả, ví dụ: "slow-2g Online" để xác định xem người dùng có kết nối Internet vào thời điểm hiển thị thẻ cá nhân hay không
     - **networkType** - Loại kết nối mạng của thiết bị đang được sử dụng
     - **roundTripEstimateMs** - Vòng hành trình ước tính có hiệu lực của kết nối hiện tại theo mili giây
 
@@ -6837,7 +6841,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau đối với một tài liệu nhất định
 
 - **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
 
@@ -7376,13 +7380,201 @@ Các trường sau đây sẽ được thu thập:
 - **Data.warningMessage** - Thông báo cảnh báo được dịch vụ báo cáo
 
 
+#### <a name="officeuxacccheckeracccheckerfinalviolationcountperrule"></a>Office.UX.AccChecker.AccCheckerFinalViolationCountPerRule
+
+Sự kiện này được kích hoạt khi sự cố Khả năng truy nhập được báo cáo đối với tài liệu được mở hiện tại. Sự kiện này thể hiện vi phạm về Khả năng truy nhập (Lỗi, Cảnh báo và Mẹo) tồn tại trên mỗi Quy tắc, đối với tài liệu đã mở ban đầu và cuối phiên.  Sự kiện này được sử dụng để ghi số lượng vi phạm về Khả năng truy nhập (Lỗi, Cảnh báo và Mẹo) trên mỗi Quy tắc, đối với tài liệu đã mở ban đầu và cuối phiên.
+
+Chi tiết về số lượng vi phạm trên mỗi quy tắc giúp Microsoft xác định sự cố Khả năng truy nhập nào là thông thường nhất trong tài liệu Office. Điều này giúp thực hiện việc khắc phục các sự cố và thúc đẩy tạo môi trường toàn diện trong nơi làm việc và lớp học dành cho những người khuyết tật.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FinalCount_RuleID_0** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_1** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_2** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_3** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_4** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_5** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_6** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_7** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_8** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_9** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_10** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_11** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_12** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_13** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_14** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_15** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_16** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_FinalCount_RuleID_17** - Số lượng các vi phạm Rule ID = n sót lại trong lần cuối cùng bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_0** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_1** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_2** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_3** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_4** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_5** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_6** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_7** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_8** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_9** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_10** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_11** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_12** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_13** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_14** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_15** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_16** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **Data_InitialCount_RuleID_17** - Số lượng các vi phạm Rule ID = n được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **FinalDocID** - DocumentID cuối cùng của tài liệu đã quét
+
+- **FinalDocUrlHash** - DocumentURLHash cuối cùng của tài liệu đã quét
+    
+- **InitialDocID** - DocumentID ban đầu của tài liệu đã quét
+
+- **InitialDocUrlHash** - DocumentURLHash ban đầu của tài liệu đã quét
+
+- **PaneOpened** - Boolean theo dõi xem ngăn AccChecker được mở hay không
+
+- **ServerDocID** - DocumentID máy chủ đối với tài liệu được bộ kiểm tra Khả năng truy nhập quét
+
+
+#### <a name="officeuxacccheckeracccheckerviolationinformation"></a>Office.UX.AccChecker.AccCheckerViolationInformation
+
+Sự kiện này được kích hoạt khi sự cố Khả năng truy nhập được báo cáo đối với tài liệu được mở hiện tại. Sự kiện này thể hiện số lượng tổng hợp các vi phạm (Lỗi, Cảnh báo và Mẹo) đối với tài liệu đã mở ban đầu và cuối phiên. Sự kiện này được sử dụng để ghi số lượng tổng hợp các vi phạm về Khả năng truy nhập (Lỗi, Cảnh báo và Mẹo) đối với tài liệu đã mở ban đầu và cuối phiên. Kiến thức về mức sử dụng bộ kiểm tra Khả năng truy nhập cho phép Microsoft cải thiện trải nghiệm ứng dụng để trở nên toàn diện hơn cho những người khuyết tật trong kịch bản sử dụng Office tại nơi làm việc và lớp học.
+
+Các trường sau đây sẽ được thu thập:
+    
+- **FinalDocID** - DocumentID cuối cùng của tài liệu đã quét
+
+- **FinalDocUrlHash** - DocumentURLHash cuối cùng của tài liệu đã quét
+
+- **FinalErrorCount** - Số lượng Lỗi cuối cùng được Bộ kiểm tra Khả năng truy nhập báo cáo đối với tài liệu
+
+- **FinalIntelligentServiceCount** - Số lượng sự cố Dịch vụ thông minh cuối cùng được Bộ kiểm tra Khả năng truy nhập báo cáo đối với tài liệu
+
+- **FinalTipCount** - Số lượng mẹo cuối cùng được Bộ kiểm tra Khả năng truy nhập báo cáo đối với tài liệu
+
+- **FinalViolationCount** - Số lượng vi phạm cuối cùng được Bộ kiểm tra Khả năng truy nhập báo cáo đối với tài liệu
+
+- **FinalWarningCount** - Số lượng cảnh báo cuối cùng được Bộ kiểm tra Khả năng truy nhập báo cáo trong tài liệu
+
+- **InitialDocID** - DocumentID ban đầu của tài liệu đã quét
+
+- **InitialDocUrlHash** - DocumentURLHash ban đầu của tài liệu đã quét
+
+- **InitialErrorCount** - Số lượng tất cả vi phạm của kiểu Lỗi được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **InitialIntelligentServicesCount** - Số lượng tất cả vi phạm của kiểu Dịch vụ thông minh được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **InitialTipCount** - Số lượng tất cả vi phạm của kiểu Mẹo được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **InitialUrlHash** - Số lượng tất cả vi phạm của kiểu lỗi được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **InitialViolationCount** - Số lượng tất cả vi phạm được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **InitialWarningCount** - Số lượng tất cả vi phạm của kiểu Cảnh báo được tìm thấy trong lần đầu tiên bộ kiểm tra khả năng truy nhập chạy trong một phiên.
+
+- **PaneOpened** - Boolean theo dõi xem ngăn Bộ kiểm tra Khả năng truy nhập được mở hay không
+
+- **ServerDocID** - DocumentID máy chủ đối với tài liệu được bộ kiểm tra Khả năng truy nhập quét
+
+
+#### <a name="officeuxacccheckerbackgroundacccheckerenabledstate"></a>Office.UX.AccChecker.BackgroundAccCheckerEnabledState
+
+Sự kiện này được kích hoạt khi người dùng hoặc Người quản trị CNTT bật bộ kiểm tra Khả năng truy nhập nền cho người dùng Office. Sự kiện này được sử dụng để hiểu các phiên bản khi bộ kiểm tra Khả năng truy nhập nền được bật cho người dùng Office. Trạng thái đã bật của bộ kiểm tra Khả năng truy nhập nền cho phép Microsoft biết liệu tài liệu có được quét tự động trong nền hay không. Việc này giúp tạo ra môi trường nơi làm việc và lớp học toàn diện hơn cho những người khuyết tật.
+
+Các trường sau đây sẽ được thu thập:
+
+- **BackgroundAccCheckerEnabled** - Boolean theo dõi trạng thái Bật/Tắt của bộ kiểm tra Khả năng truy nhập nền
+
+
+#### <a name="officeuxacccheckerbackgroundscanningcheckboxclicked"></a>Office.UX.AccChecker.BackgroundScanningCheckboxClicked
+
+Sự kiện này được kích hoạt khi người dùng bật bộ kiểm tra Khả năng truy nhập nền từ ngăn tác vụ bộ kiểm tra Khả năng truy nhập.  Sự kiện này được sử dụng để hiểu các phiên bản khi bộ kiểm tra Khả năng truy nhập nền được bật đối với tài liệu Office. Trạng thái đã bật của bộ kiểm tra Khả năng truy nhập nền cho phép Microsoft biết liệu tài liệu có được quét tự động trong nền hay không. Việc này giúp tạo ra môi trường nơi làm việc và lớp học toàn diện hơn cho những người khuyết tật.
+
+Các trường sau đây sẽ được thu thập:
+    
+- **FinalBackgroundScanningState** - Trạng thái ban đầu của hộp kiểm cho phép quét nền
+
+- **InitialBackgroundScanningState** - Trạng thái ban đầu của hộp kiểm cho phép quét nền
+
+
+#### <a name="officeuxacccheckerdisabledresults"></a>Office.UX.AccChecker.DisabledResults
+
+Sự kiện này được kích hoạt khi Bộ kiểm tra Khả năng truy nhập bị tắt đối với tài liệu đã mở. Sự kiện này được sử dụng để hiểu các phiên bản khi bộ kiểm tra Khả năng truy nhập Office bị tắt do tài liệu Office cũ hoặc không được hỗ trợ. Trạng thái tắt của bộ kiểm tra Khả năng truy nhập cho phép Microsoft biết mức độ thường xuyên khi một tài liệu không thể quét và hỗ trợ người dùng trong việc cho phép quét tài liệu đó – bằng cách chuyển đổi tài liệu sang dạng thức tệp hiện đại. Việc này giúp tạo ra môi trường nơi làm việc và lớp học toàn diện hơn cho những người khuyết tật.
+
+Các trường sau đây sẽ được thu thập:
+    
+- **Data_Disabled_ID** - ID của lỗi đã vô hiệu hóa
+
+- **Data_Disabled_Reason** - Lý do tắt Bộ kiểm tra Khả năng truy nhập
+
+- **Data_IsUpConvertEnabled** - Theo dõi xem Chuyển đổi sang dạng thức tệp hiện đại có sẵn dùng đối với tài liệu hay không
+
+
+#### <a name="officeuxacccheckershowtaskpane"></a>Office.UX.AccChecker.ShowTaskPane
+
+Sự kiện này được kích hoạt khi ngăn tác vụ Bộ kiểm tra Khả năng truy nhập được cho chạy đối với tài liệu hiện đã mở.  Sự kiện được sử dụng để hiểu mức độ sử dụng của Bộ kiểm tra Khả năng truy nhập Office. Bộ kiểm tra Khả năng truy nhập được sử dụng để xác định và khắc phục sự cố Khả năng truy nhập trong tài liệu Office. Kiến thức về mức sử dụng Bộ kiểm tra Khả năng truy nhập cho phép Microsoft cải thiện trải nghiệm ứng dụng để trở nên toàn diện hơn cho những người khuyết tật trong kịch bản sử dụng Office tại nơi làm việc và lớp học.
+
+Các trường sau đây sẽ được thu thập:
+
+- **BackgroundScanCheckboxEnabled** - Theo dõi xem Bộ kiểm tra Khả năng truy nhập nền có được bật hay không
+    
+- **Column** - Mục đích
+
+- **DocUrlHash** - Hàm băm id tài liệu duy nhất của tài liệu được quét
+
+- **HasAccessibilityViolations** - Theo dõi xem tài liệu có chứa bất kỳ vi phạm về khả năng truy nhập nào vào thời điểm ngăn được mở hay không
+
+- **IsPaneDisabled** - Theo dõi xem ngăn Bộ kiểm tra Khả năng truy nhập được mở trong trạng thái bị vô hiệu lực (tài liệu cũ hoặc không được hỗ trợ) hay không
+
+- **PaneOpenedBefore** - Theo dõi xem ngăn Bộ kiểm tra Khả năng truy nhập được mở trước
+
+- **WAC_ServerDocId** - ID Tài liệu máy chủ đối với tài liệu đã được quét
+
+
 #### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
 
 Theo dõi tính năng chống lại người dùng. Sự kiện này giúp chúng tôi xác định thành công hay thất bại của việc chống lại tính năng.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_Enable:bool** - True cho biết tính năng được bật cho người dùng hiện tại
+  - **Data\_Enable:bool**- True cho biết tính năng được bật cho người dùng hiện tại
 
   - **Data\_Feature:string** - Tên của tính năng
 
@@ -7400,13 +7592,13 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ConnectorsBasedOnSequence:bool** - True nếu sơ đồ được làm mới ban đầu được tạo bằng cách sử dụng trình kết nối dựa trên tuỳ chọn trình tự"
 
-  - **Data\_DialogError** : **string** - Li trong khi làm mới sơ đồ thông minh
+  - **Data\_DialogError**:**string** - Li trong khi làm mới sơ đồ thông minh
 
   - **Data\_FileError:string** - chuỗi lỗi khi tệp Excel được kết nối không hợp lệ
 
-  - **Data\_OverwriteSelected** : **bool** - True nếu người dùng chọn tùy chọn ghi đè lên sơ đồ trong khi làm mới
+  - **Data\_OverwriteSelected**:**bool** - True nếu người dùng chọn tùy chọn ghi đè lên sơ đồ trong khi làm mới
 
-  - **Data\_WarningShown** : **bool** - True nếu có bất kỳ cảnh báo nào được hiển thị cho người dùng trong quá trình làm mới dữ liệu
+  - **Data\_WarningShown**:**bool** - True nếu có bất kỳ cảnh báo nào được hiển thị cho người dùng trong quá trình làm mới dữ liệu
 
 #### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
 
@@ -8061,7 +8253,7 @@ Các trường sau đây sẽ được thu thập:
 
 - Không có
 
-#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(tên cũ)* , Office.OneNote.Android.Canvas.PageOpened
+#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(tên cũ)*, Office.OneNote.Android.Canvas.PageOpened
 
 Tín hiệu dùng để ghi lại khi mở một Trang.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra khi mở một Trang trong OneNote
 
@@ -8071,7 +8263,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **TIME_TAKEN_IN_MS** - lượng thời gian cho việc mở trang
 
-#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(tên cũ)* , Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(tên cũ)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
 Tín hiệu này được đùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng Android OneNote, sổ tay được cung cấp đúng cách và người dùng đã tạo ghi chú mới thành công.  Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
 
@@ -8079,7 +8271,7 @@ Các trường sau đây sẽ được thu thập:
 
 - Không có
 
-#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(tên cũ)* , Office.OneNote.Android.MessageBar.MessageBarClicked
+#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(tên cũ)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
 Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
 
@@ -8283,7 +8475,9 @@ Các trường sau đây sẽ được thu thập:
    - **source** – cho biết nguồn thông báo (nếu có) từ cài đặt hoặc cài đặt không làm phiền
    - **swipe_setting** – cho biết thông tin về cài đặt trượt nhanh liên quan đến hành động này (nếu có)
      - **swipe_action** – cho biết người dùng đã tìm cách thực hiện điều gì, tức là: gắn cờ, xóa, lưu trữ, thông tin này cho phép chúng tôi xác định người dùng muốn hành động gì và liệu hành động có thất bại hay không. 
-     - **swipe_direction** – xác định cách người dùng thiết lập hướng trượt nhanh, tức là từ trái sang phải hay phải sang trái. Điều này cho phép chúng tôi xác định xem liệu có sự cố nào với một hướng trượt nhanh cụ thể hay không.
+     - **swipe_direction** – xác định cách người dùng thiết lập hướng trượt nhanh, tức là từ trái sang phải hay phải sang trái. Điều này cho phép chúng tôi xác định xem có sự cố nào với một hướng trượt nhanh cụ thể hay không.
+   - **temperature_unit_setting** -  đơn vị nhiệt độ được chọn được sử dụng cho thời tiết 
+   - **theme_color_setting** - màu chủ đề ứng dụng tùy chỉnh được người dùng chọn 
    - **ui_mode_setting** – chế độ giao diện người dùng được chọn (tối, sáng, mặc định theo hệ thống, pin yếu, v.v)
    - **signature_setting** – cho biết liệu cài đặt được áp dụng cho tất cả tài khoản hay tài khoản riêng lẻ
 
@@ -8644,13 +8838,13 @@ Sự kiện này xác định số lượng tài khoản MSA và ADAL trong sổ
 
 Các trường sau đây sẽ được thu thập:
 
-- **RegistryADALCount** - Cho biết số lượng tài khoản ADAL trong sổ đăng ký.
+- **RegistryADALCount**- Cho biết số lượng tài khoản ADAL trong sổ đăng ký.
 
-- **RegistryLiveIdCount** - Cho biết số lượng tài khoản MSA trong sổ đăng ký.
+- **RegistryLiveIdCount**- Cho biết số lượng tài khoản MSA trong sổ đăng ký.
 
-- **SharedPrefADALCount** - Cho biết số lượng tài khoản ADAL trong tùy chọn chia sẻ.
+- **SharedPrefADALCount**- Cho biết số lượng tài khoản ADAL trong tùy chọn chia sẻ.
 
-- **SharedPrefLiveIdCount** - Cho biết số lượng tài khoản MSA trong tùy chọn chia sẻ.
+- **SharedPrefLiveIdCount**- Cho biết số lượng tài khoản MSA trong tùy chọn chia sẻ.
 
 
 #### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
@@ -8935,26 +9129,9 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_WasSuccessful:bool -** True nếu quá trình lưu dưới dạng được thực hiện thành công
 
-  - **Data\_WinLaunchTime:integer -** Thời gian để khởi chạy ngăn khởi động Visio, v.v.)
+  - **Data\_WinLaunchTime:integer -** thời gian để khởi chạy ngăn khởi động Visio, v.v.)
 
-  - **Office.Visio.FileCharacteristicsVisio -** Ghi lại các thuộc tính tệp tại thời điểm tệp khởi động dành cho Visio C2R và Dev16. Sự kiện này giúp chúng tôi phân loại và gỡ lỗi các lỗi về thuộc tính tài liệu, từ đó cho phép chúng tôi truy ra được nguyên nhân nhanh hơn và khắc phục sự cố để đạt được sự hài lòng khách hàng.
-
-  - **Office.Visio.Shared.BootStats -** Sự kiện này sẽ thu thập thời gian khởi động cho ứng dụng Visio Win32. Nó thu thập các trường khác nhau để khởi động các thành phần khác nhau như thời gian tải Ribbon, thời gian khởi tạo ứng dụng. Sự kiện này được sử dụng để đo hiệu suất khởi động cho Visio.
-
-  - **Office.Visio.Shared.FileOpen -** Sự kiện này thu thập số liệu thống kê Mở tệp cho Visio. Sự kiện này được sử dụng để theo dõi tỷ lệ mở thành công/thất bại của mở tệp và ánh xạ nó với một vài thuộc tính như kích thước tệp. Thuộc tính tệp cho phép chúng tôi gỡ lỗi và truy ra được nguyên nhân nhanh hơn.
-
-  - **Office.Visio.Shared.Filesave -** Sự kiện này thu thập số liệu thống kê Lưu tệp cho Visio. Sự kiện này được sử dụng để theo dõi tỷ lệ mở thành công/thất bại của lưu tệp và ánh xạ nó với một vài thuộc tính như kích thước tệp và vị trí mà nó đang được lưu, ví dụ: đám mây/cục bộ. Thuộc tính tệp cho phép chúng tôi gỡ lỗi và truy ra được nguyên nhân nhanh hơn.
-
-  - **Office.Visio.Shared.FilesaveAs -** Sự kiện này thu thập số liệu thống kê Lưu tệp cho Visio. Sự kiện này được sử dụng để theo dõi tỷ lệ mở thành công/thất bại của lưu tệp và ánh xạ nó với một vài thuộc tính như kích thước tệp và vị trí mà nó đang được lưu, ví dụ: đám mây/cục bộ. Thuộc tính tệp cho phép chúng tôi gỡ lỗi và truy ra được nguyên nhân nhanh hơn.
-
-  - **Office.Visio.Shared.PostSave -** Sự kiện này ghi lại các nguyên nhân gây ra lỗi trong lưu tệp.
-
-  - **Office.Visio.Shared.FilesaveAs -** Sự kiện này thu thập số liệu thống kê Lưu tệp dưới dạng cho Visio Dev16. Sự kiện này được sử dụng để theo dõi tỷ lệ mở thành công/thất bại của lưu tệp dưới dạng và ánh xạ nó với một vài thuộc tính như kích thước tệp và vị trí mà nó đang được lưu, ví dụ: đám mây/cục bộ. Thuộc tính tệp cho phép chúng tôi gỡ lỗi và truy ra được nguyên nhân nhanh hơn.
-
-  - **Office.Visio.VisioFileSaveAsync -** Sự kiện này thu thập số liệu thống kê lưu tệp không đồng bộ cho Visio Dev16. Sự kiện này được sử dụng để theo dõi tỷ lệ mở thành công/thất bại của lưu tệp không đồng bộ và ánh xạ nó với một vài thuộc tính như kích thước tệp và vị trí mà nó đang được lưu, ví dụ: đám mây/cục bộ. Thuộc tính tệp cho phép chúng tôi gỡ lỗi và truy ra được nguyên nhân nhanh hơn.
-
-  - **Office.Visio.VisioFileSaveAsync -** Sự kiện này thu thập số liệu thống kê Lưu tệp đồng bộ cho Visio Dev16. Sự kiện này được sử dụng để theo dõi tỷ lệ mở thành công/thất bại của lưu tệp đồng bộ và ánh xạ nó với một vài thuộc tính như kích thước tệp và vị trí mà nó đang được lưu, ví dụ: đám mây/cục bộ. Thuộc tính tệp cho phép chúng tôi gỡ lỗi và truy ra được nguyên nhân nhanh hơn. Sự kiện này giúp chúng tôi theo dõi lưu lý do lỗi của một tệp.
-
+  
 #### <a name="officeextensibilitysandboxodpactivationhanging"></a>Office.Extensibility.Sandbox.ODPActivationHanging
 
 Thu thập khi phần bổ trợ Office mất nhiều thời gian để khởi chạy (> 5 giây). Được sử dụng để phát hiện và khắc phục các sự cố với việc khởi chạy phần bổ trợ dành cho Office.
@@ -9012,7 +9189,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsFRELoadSuccessful** - số nguyên biểu thị trạng thái kết quả
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(previous name)* , Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 Tín hiệu quan trọng được sử dụng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
@@ -9115,13 +9292,13 @@ nào đã hiển thị trong thời gian khởi động hay không
  
 - **USER_INTERACTED_DURING_EVENT** - Cho biết liệu người dùng có tương tác trong quá trình khởi động hay không
 
-#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(tên cũ)* , Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(tên cũ)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
 
 Tín hiệu dùng để cho biết Ứng dụng OneNote nằm trong nền trước.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
 Các trường sau đây sẽ được thu thập: Không có
 
-#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(tên cũ)* , Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(tên cũ)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
 
 Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
@@ -10708,7 +10885,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **StoreType** - Nguồn gốc của ứng dụng
 
-- **Tag** - Xác định chính xác nơi mã bị lỗi khi sử dụng thẻ duy nhất được liên kết.
+- **Tag**- Xác định chính xác nơi mã bị lỗi khi sử dụng thẻ duy nhất được liên kết.
 
 - **UsesSharedRuntime** - Cho biết ứng dụng có sử dụng sharedRuntime hay không.
 
@@ -11067,6 +11244,18 @@ Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự 
 
 Các trường sau đây sẽ được thu thập: 
 
+- **above_40fps** - số lượng khung hình được kết xuất trên 40 fps
+
+- **above_40rate** - tốc độ khung hình được kết xuất trên 40 fps
+
+- **above_50fps** - số lượng khung hình được kết xuất trên 50 fps
+
+- **above_50rate** - tốc độ khung hình được kết xuất trên 50 fps
+
+- **above_55fps** - số lượng khung hình được kết xuất trên 55 fps
+
+- **above_55rate** - tốc độ khung hình được kết xuất trên 55 fps
+
 - **account_counter** - theo dõi số lượng tài khoản được liên kết cho từng kiểu lịch, ví dụ: 2 cho lịch Gmail và liệu tài khoản đó có đang sử dụng dịch vụ đồng bộ mới của chúng tôi hay không
 
 - **app_instance** - Outlook có 2 điểm nhập vào dành cho Duo, một với Lịch và một với Thư và có thể khởi động cả hai đồng thời trong môi trường nhiều phiên bản. Sự kiện này sẽ cho chúng tôi biết phiên bản nào thực hiện cuộc gọi báo cáo này, phiên bản Thư hoặc Lịch
@@ -11143,11 +11332,17 @@ Sự kiện này sẽ thu thập hai loại dữ liệu người dùng: trạng 
 
 Các trường sau đây sẽ được thu thập: 
 
-- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
+- **above_40fps** - số lượng khung hình được kết xuất trên 40 fps
 
-- **above_50fps** – số lượng khung hình được hiển thị trên 50 fps
+- **above_40rate** - tốc độ khung hình được kết xuất trên 40 fps
 
-- **above_55fps** – số lượng khung hình được hiển thị trên 55 fps
+- **above_50fps** - số lượng khung hình được kết xuất trên 50 fps
+
+- **above_50rate** - tốc độ khung hình được kết xuất trên 50 fps
+
+- **above_55fps** - số lượng khung hình được kết xuất trên 55 fps
+
+- **above_55rate** - tốc độ khung hình được kết xuất trên 55 fps
 
 - **account_counter** – số lượng mỗi loại tài khoản có trên thiết bị, ví dụ: tài khoản Office 365 = 1 tài khoản, tài khoản Outlook.com = 1 tài khoản.
 
@@ -11189,7 +11384,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="initialpagelanding"></a>Initial.page.landing 
  
-Sự kiện này giúp theo dõi loại trải nghiệm người dùng nhìn thấy khi họ đến trang ứng dụng của chúng tôi.  Dữ liệu này được sử dụng để xác định lưu lượng truy cập của người dùng được dẫn vào từng trải nghiệm trong ứng dụng của chúng tôi và cũng giúp chúng tôi dễ dàng hợp nhất các kết quả thử nghiệm.
+Sự kiện này giúp theo dõi kiểu trải nghiệm mà người dùng nhìn thấy khi họ đến trang ứng dụng của chúng tôi.  Dữ liệu này được sử dụng để xác định lưu lượng truy cập của người dùng được dẫn vào từng trải nghiệm trong ứng dụng của chúng tôi và cũng giúp chúng tôi dễ dàng hợp nhất các kết quả thử nghiệm.
  
 Các trường sau đây sẽ được thu thập: 
 
@@ -11365,11 +11560,17 @@ Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự 
 
 Các trường sau đây sẽ được thu thập: 
 
-- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
+- **above_40fps** - số lượng khung hình được kết xuất trên 40 fps
+
+- **above_40rate** - tốc độ khung hình được kết xuất trên 40 fps
  
-- **above_50fps** – số lượng khung hình được hiển thị trên 50 fps
+- **above_50fps** - số lượng khung hình được kết xuất trên 50 fps
+
+- **above_50rate** - tốc độ khung hình được kết xuất trên 50 fps
  
-- **above_55fps** - số lượng khung hình được hiển thị trên 55 fps
+- **above_55fps** - số lượng khung hình được kết xuất trên 55 fps
+
+- **above_55rate** - tốc độ khung hình được kết xuất trên 55 fps
  
 - **account_counter** – số lượng mỗi loại tài khoản có trên thiết bị, ví dụ: tài khoản Office 365 = 1 tài khoản, tài khoản Outlook.com = 1 tài khoản.
  
@@ -11717,13 +11918,13 @@ Các trường sau đây sẽ được thu thập:
 
 - **ErrorCode** - Trả về mã lỗi liên quan đến việc không thể cung cấp 
 
-- **NetworkConnection** : Loại kết nối mạng của thiết bị đang sử dụng
+- **NetworkConnection**: Loại kết nối mạng của thiết bị đang sử dụng
 
 - **NetworkDataExchange** - Bản ghi số lượng byte được trao đổi trong quá trình cung cấp.
 
 - **ServerType** - Trả về loại máy chủ cung cấp dịch vụ
 
-- **TimeTakenInMilliSeconds** : Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
+- **TimeTakenInMilliSeconds**: Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
 
 
 #### <a name="officeonenotesystembootdialogssafebootdialogpending"></a>Office.OneNote.System.BootDialogs.SafeBootDialogPending 
@@ -11832,7 +12033,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **CountdownInitTime–** Thời gian từ khi hoàn thành tải trình chiếu đến khi bắt đầu đếm ngược.
 
-- **CritiqueSummary** - Tóm tắt về tất cả những phê bình mà người dùng thấy với số lượng của họ.
+- **CritiqueSummary**- Tóm tắt về tất cả những phê bình mà người dùng thấy với số lượng của họ.
 
 - **ExitEventCode** – Mã để xác định trường hợp người dùng thoát khỏi phiên duyệt, dù là trường hợp sự cố hay thoát thành công. 
 
@@ -12065,7 +12266,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_FileType: string -** Phần mở rộng tệp của sơ đồ đã mở
 
-  - **Data\_IsInternalFile: bool -** True nếu tệp là một tệp nội bộ. Ví dụ: mẫu tô
+  - **Data\_IsInternalFile: bool -** True nếu tệp là một tệp nội bộ. Ví dụ: Bộ hình dạng
 
   - **Data\_IsIRM: bool -** True nếu tệp được bảo vệ Quyền Thông tin
 
@@ -12101,7 +12302,7 @@ Các trường sau đây sẽ được thu thập:
 - **DIALOG_ACTION** - Nút hộp thoại người dùng bấm vào - Nút cộng hoặc nút trừ
 
 
-#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(tên cũ)* , Office.OneNote.Android.Sync.ProvisioningCompleted
+#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningCompleted
 
 Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng. Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
 
@@ -12117,7 +12318,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **TimeTakenInMilliSeconds** - Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
 
-#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(tên cũ)* , Office.OneNote.Android.Sync.ProvisioningStarted
+#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningStarted
 
 Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng.  Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
 
@@ -12941,7 +13142,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsGallatin** - Boolean để kiểm tra xem liệu đó có phải là tài khoản Gallatin hay không
 
-- **MessageCode** - liệt kê để cho biết điểm xảy ra sự cố kích hoạt.
+- **MessageCode** - liệt kê để xác định điểm sự cố kích hoạt
 
 - **PreviousEntryPoint** - Liệt kê Entrypoint để khởi động quy trình kích hoạt cấp phép
 
@@ -13324,7 +13525,29 @@ Các trường sau đây sẽ được thu thập:
 
 - **origin** – Vị trí lần thử lưu tệp xuất phát (như từ email) để chúng tôi có thể phát hiện các sự cố liên quan đến thao tác lưu tệp từ một vị trí cụ thể trong ứng dụng
 
-- **token_type** - loại mã thông báo được dùng nhằm xác thực tài khoản để lưu tệp, từ đó giúp chúng tôi phát hiện các sự cố xác thực liên quan đến việc lưu tệp
+- **token_type** - loại mã thông báo được sử dụng nhằm xác thực tài khoản để lưu tệp, từ đó giúp chúng tôi phát hiện các sự cố xác thực liên quan đến việc lưu tệp
+
+#### <a name="wkwebviewerror"></a>wkwebview.error
+
+Sự kiện này cho phép chúng tôi phát hiện thời điểm lỗi dạng xem web xảy ra khi soạn thảo hoặc đọc email để chúng tôi có thể ngăn các sự cố khiến ứng dụng của bạn không thể soạn thảo email hoặc đọc email. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **description** - mô tả lỗi
+
+- **error_code** - mã lỗi cho WKError
+
+- **function_name** - tên hàm javascript khi có lỗi
+
+- **js_exception_column_number** - Số cột nơi ngoại lệ JavaScript xảy ra 
+
+- **js_exception_line_number** - Số dòng nơi ngoại lệ JavaScript xảy ra
+
+- **js_exception_message** - Thông báo ngoại lệ khi ngoại lệ JavaScript xảy ra
+
+- **js_exception_source_url** - URL nguồn nơi ngoại lệ JavaScript xảy ra  
+
+- **scenario** - nơi xảy ra lỗi, khi đang kết xuất hay soạn thảo.
 
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Sự kiện dữ liệu cấu hình và kết nối thiết bị
@@ -13446,13 +13669,15 @@ Các trường sau chỉ được thu thập cho Android:
 
 - **switch_access** – Cho chúng tôi biết liệu người dùng có bật cài đặt Truy cập chuyển đổi trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
 
-- **talkback** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho TalkBack trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+- **talkback** - Cho chúng tôi biết liệu người dùng có bật cài đặt cho talkback trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
 
-- **webview_kernel_version** : Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **theme_color** - Màu chủ đề tùy chỉnh (do người dùng chọn) hiện đang được ứng dụng sử dụng
 
-- **webview_package_name** : Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_kernel_version**: Phiên bản nhân Chromium của webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
-- **webview_package_version** : Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+- **webview_package_name**: Tên gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
+
+- **webview_package_version**: Phiên bản của gói webview trên thiết bị giúp chúng tôi phát hiện các sự cố tương thích liên quan đến phiên bản của webview.
 
 #### <a name="lowstoragewarning"></a>low.storage.warning
 
