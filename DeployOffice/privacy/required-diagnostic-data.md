@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: e8b54e50ca8fc080cf09b26d83f4b7f28bc81290
-ms.sourcegitcommit: 521da3465e94ca9d29f3c6f49b78dd5f952d9cc6
+ms.openlocfilehash: 97d334551743566bde549da4b3b4a2476255d248
+ms.sourcegitcommit: 1c635a2906afb601e7c92b3f48dde3d271d06105
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49088142"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367383"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -1534,7 +1534,7 @@ Các trường sau đây sẽ được thu thập:
  
 - **number_of_accounts** – tổng số tài khoản mà trên đó thực hiện hành động
  
-- **result** – kết quả của hành động, ví dụ: thành công, thất bại.
+- **kết quả** – kết quả của hành động, ví dụ: thành công, thất bại.
    
 - **server_type** – loại máy chủ cho tài khoản, tương tự như account_type
  
@@ -1554,9 +1554,9 @@ Sự kiện này được thu thập để đảm bảo cấu hình tài khoản
 
 Các trường sau đây sẽ được thu thập: 
 
-- **account_creation_source** – thuộc tính tùy chọn được sử dụng để tìm và chẩn đoán mọi sự cố xảy ra trong quá trình tạo tài khoản khi thêm loại hành động.  Thuộc tính này có thể có các giá trị như đăng nhập đơn (SS0), create_new_account, thủ công, v.v.
+- **account_creation_source** – thuộc tính tùy chọn được sử dụng để tìm và chẩn đoán bất kỳ sự cố nào xảy ra trong quá trình tạo tài khoản khi thêm loại hành động.  Nó có thể có các giá trị như đăng nhập đơn (SSO), create_new_account, thủ công, v.v.
 
-- **action** - Loại hành động được thực hiện trên tài khoản, chẳng hạn như thêm, loại bỏ hoặc đặt lại
+- **hành động** - Loại hành động được thực hiện trên tài khoản, chẳng hạn như thêm, loại bỏ hoặc đặt lại
 
 #### <a name="addnewaccountstep"></a>add.new.account.step
 
@@ -2355,7 +2355,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
 
-- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của lệnh gọi API hay không 
 
 - **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
 
@@ -5946,7 +5946,7 @@ Các trường sau đây sẽ được thu thập
 
 - **InitialReplicationInSession** - Bản sao nhân bản này có phải bản sao nhân bản sổ tay đầu tiên sau khi mở hay không
 
-- **IsBackgroundSync** - Đây có phải là đồng bộ nền hay không
+- **IsBackgroundSync** - đây có phải là đồng bộ hóa nền hay không
 
 - **IsCachedErrorSuppressed** - Lỗi có được lưu trong bộ nhớ cache hay không
 
@@ -6576,7 +6576,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau đối với một tài liệu nhất định
 
 - **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
     
@@ -7751,7 +7751,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu 
 
-- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở 
+- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho trang web cuộc gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở nó 
 
 - **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này 
 
@@ -11384,7 +11384,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="initialpagelanding"></a>Initial.page.landing 
  
-Sự kiện này giúp theo dõi kiểu trải nghiệm mà người dùng nhìn thấy khi họ đến trang ứng dụng của chúng tôi.  Dữ liệu này được sử dụng để xác định lưu lượng truy cập của người dùng được dẫn vào từng trải nghiệm trong ứng dụng của chúng tôi và cũng giúp chúng tôi dễ dàng hợp nhất các kết quả thử nghiệm.
+Sự kiện này giúp theo dõi loại trải nghiệm mà người dùng thấy khi họ truy cập trang ứng dụng của chúng tôi.  Dữ liệu này được sử dụng để xác định lưu lượng truy cập của người dùng được dẫn vào từng trải nghiệm trong ứng dụng của chúng tôi và cũng giúp chúng tôi dễ dàng hợp nhất các kết quả thử nghiệm.
  
 Các trường sau đây sẽ được thu thập: 
 
@@ -12266,7 +12266,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_FileType: string -** Phần mở rộng tệp của sơ đồ đã mở
 
-  - **Data\_IsInternalFile: bool -** True nếu tệp là một tệp nội bộ. Ví dụ: Bộ hình dạng
+  - **Data\_IsInternalFile: bool -** True nếu tệp là một tệp nội bộ. Ví dụ: Stencil
 
   - **Data\_IsIRM: bool -** True nếu tệp được bảo vệ Quyền Thông tin
 
@@ -13142,7 +13142,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsGallatin** - Boolean để kiểm tra xem liệu đó có phải là tài khoản Gallatin hay không
 
-- **MessageCode** - liệt kê để xác định điểm sự cố kích hoạt
+- **MessageCode** - liệt kê để chỉ ra điểm không kích hoạt được
 
 - **PreviousEntryPoint** - Liệt kê Entrypoint để khởi động quy trình kích hoạt cấp phép
 
