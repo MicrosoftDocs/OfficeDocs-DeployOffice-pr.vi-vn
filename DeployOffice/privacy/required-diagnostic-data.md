@@ -1534,7 +1534,7 @@ Các trường sau đây sẽ được thu thập:
  
 - **number_of_accounts** – tổng số tài khoản mà trên đó thực hiện hành động
  
-- **kết quả** – kết quả của hành động, ví dụ: thành công, thất bại.
+- **result** – kết quả của hành động, ví dụ: thành công, thất bại.
    
 - **server_type** – loại máy chủ cho tài khoản, tương tự như account_type
  
@@ -1556,7 +1556,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **account_creation_source** – thuộc tính tùy chọn được sử dụng để tìm và chẩn đoán bất kỳ sự cố nào xảy ra trong quá trình tạo tài khoản khi thêm loại hành động.  Nó có thể có các giá trị như đăng nhập đơn (SSO), create_new_account, thủ công, v.v.
 
-- **hành động** - Loại hành động được thực hiện trên tài khoản, chẳng hạn như thêm, loại bỏ hoặc đặt lại
+- **action** - Loại hành động được thực hiện trên tài khoản, chẳng hạn như thêm, loại bỏ hoặc đặt lại
 
 #### <a name="addnewaccountstep"></a>add.new.account.step
 
@@ -1863,7 +1863,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **suggestions_shown** - cho biết số lượng đề xuất soạn thảo thông minh hiển thị cho người dùng
  
-- **thread_id** - ID chuỗi của bản nháp cuộc trò chuyện được liên kết cùng
+- **thread_id** – ID chuỗi của bản nháp cuộc trò chuyện được liên kết cùng
 
 #### <a name="draganddrop"></a>drag.and.drop
 
@@ -2355,7 +2355,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.StatusCode** - Mã trạng thái của kết quả được trả về
 
-- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của lệnh gọi API hay không 
+- **RMS.TokenProvided** - Cho biết liệu có cung cấp mã thông báo làm đầu vào của cuộc gọi API hay không 
 
 - **RMS.UserProvided** - Cho biết liệu có cung cấp cho người tiêu dùng làm đầu vào của cuộc gọi API hay không 
 
@@ -4180,7 +4180,7 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu bắt đầu 
 
 - **UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
 
-- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **UserInfo.TimeZone** - Múi giờ của người dùng tương ứng với giờ UTC.
 
@@ -4250,7 +4250,7 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 
 - **UserInfo.MsaId** - Mã định danh người dùng duy nhất trên toàn cầu cho tài khoản Microsoft dành cho người tiêu dùng.
 
-- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem một vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
+- **UserInfo.OMSTenantId** - Đối tượng thuê đi kèm gói đăng ký của người dùng. Cho phép chúng tôi phân loại các sự cố và xác định xem vấn đề có phổ biến hay bị cô lập đối với một nhóm người dùng hoặc một đối tượng thuê cụ thể hay không.
 
 - **UserInfo.TimeZone** - Múi giờ của người dùng tương ứng với giờ UTC.
 
@@ -5946,7 +5946,7 @@ Các trường sau đây sẽ được thu thập
 
 - **InitialReplicationInSession** - Bản sao nhân bản này có phải bản sao nhân bản sổ tay đầu tiên sau khi mở hay không
 
-- **IsBackgroundSync** - đây có phải là đồng bộ hóa nền hay không
+- **IsBackgroundSync** - Đây có phải là đồng bộ nền hay không
 
 - **IsCachedErrorSuppressed** - Lỗi có được lưu trong bộ nhớ cache hay không
 
@@ -6576,7 +6576,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau đối với một tài liệu nhất định
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
 
 - **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
     
@@ -6841,7 +6841,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau đối với một tài liệu nhất định
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
 
 - **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
 
@@ -7751,7 +7751,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_PartsUnknown** - Số phần tài liệu mà chúng tôi không thể lấy dữ liệu 
 
-- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho trang web cuộc gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở nó 
+- **Data_RecoverableFailureInitiationLocationTag** - Thẻ duy nhất cho site gọi mã được sử dụng để xác định vị trí trong mã nơi mà chúng tôi cố gắng sửa tệp trước khi mở 
 
 - **Data_RenameDisabledReason** - Lỗi gây ra việc đổi tên bị vô hiệu hóa cho tài liệu này 
 
@@ -8475,7 +8475,7 @@ Các trường sau đây sẽ được thu thập:
    - **source** – cho biết nguồn thông báo (nếu có) từ cài đặt hoặc cài đặt không làm phiền
    - **swipe_setting** – cho biết thông tin về cài đặt trượt nhanh liên quan đến hành động này (nếu có)
      - **swipe_action** – cho biết người dùng đã tìm cách thực hiện điều gì, tức là: gắn cờ, xóa, lưu trữ, thông tin này cho phép chúng tôi xác định người dùng muốn hành động gì và liệu hành động có thất bại hay không. 
-     - **swipe_direction** – xác định cách người dùng thiết lập hướng trượt nhanh, tức là từ trái sang phải hay phải sang trái. Điều này cho phép chúng tôi xác định xem có sự cố nào với một hướng trượt nhanh cụ thể hay không.
+     - **swipe_direction** – xác định cách người dùng thiết lập hướng trượt nhanh, tức là từ trái sang phải hay phải sang trái. Điều này cho phép chúng tôi xác định xem liệu có sự cố nào với một hướng trượt nhanh cụ thể hay không.
    - **temperature_unit_setting** -  đơn vị nhiệt độ được chọn được sử dụng cho thời tiết 
    - **theme_color_setting** - màu chủ đề ứng dụng tùy chỉnh được người dùng chọn 
    - **ui_mode_setting** – chế độ giao diện người dùng được chọn (tối, sáng, mặc định theo hệ thống, pin yếu, v.v)
@@ -9129,7 +9129,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_WasSuccessful:bool -** True nếu quá trình lưu dưới dạng được thực hiện thành công
 
-  - **Data\_WinLaunchTime:integer -** thời gian để khởi chạy ngăn khởi động Visio, v.v.)
+  - **Data\_WinLaunchTime:integer -** Thời gian để khởi chạy ngăn khởi động Visio, v.v.)
 
   
 #### <a name="officeextensibilitysandboxodpactivationhanging"></a>Office.Extensibility.Sandbox.ODPActivationHanging
@@ -11244,7 +11244,7 @@ Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự 
 
 Các trường sau đây sẽ được thu thập: 
 
-- **above_40fps** - số lượng khung hình được kết xuất trên 40 fps
+- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
 
 - **above_40rate** - tốc độ khung hình được kết xuất trên 40 fps
 
@@ -11332,7 +11332,7 @@ Sự kiện này sẽ thu thập hai loại dữ liệu người dùng: trạng 
 
 Các trường sau đây sẽ được thu thập: 
 
-- **above_40fps** - số lượng khung hình được kết xuất trên 40 fps
+- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
 
 - **above_40rate** - tốc độ khung hình được kết xuất trên 40 fps
 
@@ -11384,7 +11384,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="initialpagelanding"></a>Initial.page.landing 
  
-Sự kiện này giúp theo dõi loại trải nghiệm mà người dùng thấy khi họ truy cập trang ứng dụng của chúng tôi.  Dữ liệu này được sử dụng để xác định lưu lượng truy cập của người dùng được dẫn vào từng trải nghiệm trong ứng dụng của chúng tôi và cũng giúp chúng tôi dễ dàng hợp nhất các kết quả thử nghiệm.
+Sự kiện này giúp theo dõi loại trải nghiệm người dùng nhìn thấy khi họ đến trang ứng dụng của chúng tôi.  Dữ liệu này được sử dụng để xác định lưu lượng truy cập của người dùng được dẫn vào từng trải nghiệm trong ứng dụng của chúng tôi và cũng giúp chúng tôi dễ dàng hợp nhất các kết quả thử nghiệm.
  
 Các trường sau đây sẽ được thu thập: 
 
@@ -11560,7 +11560,7 @@ Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự 
 
 Các trường sau đây sẽ được thu thập: 
 
-- **above_40fps** - số lượng khung hình được kết xuất trên 40 fps
+- **above_40fps** – số lượng khung hình được hiển thị trên 40 fps
 
 - **above_40rate** - tốc độ khung hình được kết xuất trên 40 fps
  
@@ -12266,7 +12266,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_FileType: string -** Phần mở rộng tệp của sơ đồ đã mở
 
-  - **Data\_IsInternalFile: bool -** True nếu tệp là một tệp nội bộ. Ví dụ: Stencil
+  - **Data\_IsInternalFile: bool -** True nếu tệp là một tệp nội bộ. Ví dụ: mẫu tô
 
   - **Data\_IsIRM: bool -** True nếu tệp được bảo vệ Quyền Thông tin
 
@@ -13142,7 +13142,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsGallatin** - Boolean để kiểm tra xem liệu đó có phải là tài khoản Gallatin hay không
 
-- **MessageCode** - liệt kê để chỉ ra điểm không kích hoạt được
+- **MessageCode** - liệt kê để cho biết điểm xảy ra sự cố kích hoạt.
 
 - **PreviousEntryPoint** - Liệt kê Entrypoint để khởi động quy trình kích hoạt cấp phép
 
@@ -13525,7 +13525,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **origin** – Vị trí lần thử lưu tệp xuất phát (như từ email) để chúng tôi có thể phát hiện các sự cố liên quan đến thao tác lưu tệp từ một vị trí cụ thể trong ứng dụng
 
-- **token_type** - loại mã thông báo được sử dụng nhằm xác thực tài khoản để lưu tệp, từ đó giúp chúng tôi phát hiện các sự cố xác thực liên quan đến việc lưu tệp
+- **token_type** - loại mã thông báo được dùng nhằm xác thực tài khoản để lưu tệp, từ đó giúp chúng tôi phát hiện các sự cố xác thực liên quan đến việc lưu tệp
 
 #### <a name="wkwebviewerror"></a>wkwebview.error
 
@@ -13669,7 +13669,7 @@ Các trường sau chỉ được thu thập cho Android:
 
 - **switch_access** – Cho chúng tôi biết liệu người dùng có bật cài đặt Truy cập chuyển đổi trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
 
-- **talkback** - Cho chúng tôi biết liệu người dùng có bật cài đặt cho talkback trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+- **talkback** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho TalkBack trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
 
 - **theme_color** - Màu chủ đề tùy chỉnh (do người dùng chọn) hiện đang được ứng dụng sử dụng
 
