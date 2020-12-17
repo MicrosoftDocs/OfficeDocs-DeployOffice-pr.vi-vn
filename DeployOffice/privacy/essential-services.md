@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 94f248d64c74cd6575b4039178270f62b3715d15
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 03274656b30fe1e30e609ef32aa38947917a23cd
+ms.sourcegitcommit: 954510a42df092730412aa25cd8683f6a629537c
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491564"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49685851"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -27,12 +27,12 @@ ms.locfileid: "48491564"
 
 Office bao gồm các ứng dụng phần mềm máy khách và trải nghiệm được kết nối được thiết kế để hỗ trợ bạn sáng tạo, giao tiếp và cộng tác một cách hiệu quả hơn. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối sẵn dùng cho bạn hoặc cho người dùng của bạn nếu bạn là người quản trị trong tổ chức của mình, nhưng vẫn có một bộ dịch vụ rất cần thiết cho cách thức Office làm việc và do đó nó không vô hiệu hóa. Ví dụ: dịch vụ cấp phép xác nhận bạn được cấp phép sử dụng Office đúng cách. Dữ liệu dịch vụ bắt buộc về các dịch vụ này sẽ được thu thập và gửi đến Microsoft mà không phụ thuộc vào bất cứ thiết đặt chính sách liên quan nào khác mà bạn đã đặt cấu hình.
 
-Để biết thêm thông tin, hãy xem các nguồn sau:
+Để biết thêm thông tin, hãy xem các bài viết sau đây:
 
 - [Dữ liệu dịch vụ bắt buộc cho Office](required-service-data.md)
 - [Các trải nghiệm kết nối trong Office](connected-experiences.md)
 
-Nếu bạn là người quản trị cho tổ chức, bạn cũng có thể quan tâm đến những điều sau:
+Nếu bạn là người quản trị cho tổ chức của mình, bạn cũng có thể quan tâm đến các bài viết sau:
 
 - [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
@@ -47,8 +47,8 @@ Bảng sau đây cung cấp danh sách các dịch vụ cần thiết cho Office
 
 | **Service**  | **Mô tả**  |
 | ------ | ---- |
-| [Xác thực](#authentication-events) | Xác thực là một dịch vụ đa nền tảng xác thực danh tính người dùng Office của bạn. Nó là điều bắt buộc để cho phép bạn đăng nhập vào Office, kích hoạt giấy phép Office, truy nhập các tệp được lưu trữ trên đám mây và cung cấp trải nghiệm nhất quán trên các phiên Office và thiết bị của bạn.    |
-| [Click-to-Run](#click-to-run-events) | Click-to-Run là công nghệ cài đặt được sử dụng để cài đặt và cập nhật Office trên Windows. Công nghệ này kiểm tra các phiên bản mới của Office và tải xuống và cài đặt khi có phiên bản mới.Click-to-Run sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật Office, bao gồm các bản cập nhật bảo mật.     |
+| [Xác thực](#authentication-events) | Xác thực là một dịch vụ đa nền tảng xác thực danh tính người dùng Office của bạn.  Nó là điều bắt buộc để cho phép bạn đăng nhập vào Office, kích hoạt giấy phép Office, truy nhập các tệp được lưu trữ trên đám mây và cung cấp trải nghiệm nhất quán trên các phiên Office và thiết bị của bạn.    |
+| [Click-to-Run](#click-to-run-events) | Click-to-Run là công nghệ cài đặt được sử dụng để cài đặt và cập nhật Office trên Windows. Công nghệ này kiểm tra các phiên bản mới của Office và tải xuống và cài đặt khi có phiên bản mới. Click-to-Run sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật Office, bao gồm các bản cập nhật bảo mật.     |
 | [Dịch vụ cấu hình nâng cao (ECS)](#enhanced-configuration-service-ecs-events) | ECS cung cấp cho Microsoft khả năng cấu hình lại các bản cài đặt Office mà không cần bạn phải triển khai lại Office. Dịch vụ này được sử dụng để kiểm soát việc triển khai dần các tính năng hoặc bản cập nhật, trong khi ảnh hưởng của việc triển khai được theo dõi từ dữ liệu chẩn đoán được thu thập. Nó cũng được sử dụng để giảm thiểu các vấn đề về bảo mật hoặc hiệu suất với một tính năng hoặc bản cập nhật. Ngoài ra, ECS còn hỗ trợ thay đổi cấu hình liên quan đến dữ liệu chẩn đoán để giúp đảm bảo rằng các sự kiện thích hợp sẽ được thu thập. |
 | [Cấp phép](#licensing-events)     | Cấp phép là dịch vụ dựa trên nền điện toán đám mây hỗ trợ kích hoạt Office của bạn để cài đặt mới và duy trì giấy phép trên thiết bị của bạn sau khi Office được kích hoạt. Dịch vụ này đăng ký cho từng thiết bị của bạn, kích hoạt Office, kiểm tra trạng thái đăng ký Office và quản lý khóa của các sản phẩm của bạn.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) là công nghệ dùng để cập nhật các ứng dụng Microsoft được làm ra dành cho MacOS, chẳng hạn như Office. MAU sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật ứng dụng, bao gồm cả các bản cập nhật bảo mật.|
@@ -359,7 +359,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Microsoft\_ADAL\_extended\_expires\_on\_setting** - Cho biết việc mã thông báo có một thời hạn mở rộng là đúng hay sai.
 
-  - **Microsoft\_ADAL\_http\_sự kiện\_coun**t - Số lượngcuộc gọi HTTP được thực hiện bởi ADAL.
+  - **Microsoft\_ADAL\_http\_sự kiện\_coun** t - Số lượngcuộc gọi HTTP được thực hiện bởi ADAL.
 
   - **Microsoft\_ADAL\_http\_event\_count\_max** - tín hiệu này được tổng hợp, các cuộc gọi HTTP tối đa được thực hiện bởi ADAL của bất kỳ sự kiện tổng hợp nào.
 
@@ -931,7 +931,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officeclicktorunbootstrapper"></a>Office.ClickToRun.Bootstrapper 
 
-Thiết lập Office và dữ liệu kiểm kê được thu thập khi người dùng đang chạy Office setup.exe để sửa đổi các sản phẩm Office đã cài đặt của họ. Được sử dụng để đo lường mức độ thành công/thất bại của cài đặt Office do người dùng khởi tạo đầy đủ bao gồm cả kiểm tra điều kiện tiên quyết.
+Dữ liệu thiết lập Office và kiểm kê thu thập được khi người dùng đang chạy Office setup.exe để sửa đổi các sản phẩm Office mà họ đã cài đặt. Được sử dụng để đo lường mức độ thành công/thất bại của cài đặt Office do người dùng khởi tạo đầy đủ bao gồm cả kiểm tra điều kiện tiên quyết.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1118,75 +1118,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-** Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-** Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID-** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigurelight"></a>Office.ClickToRun.Scenario.InstallTaskConfigurelight
 
@@ -1194,75 +1194,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-** Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
@@ -1270,75 +1270,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
   - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
   - **Data\_ErrorSource -** Nơi xảy ra lỗi
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskfonts"></a>Office.ClickToRun.Scenario.InstallTaskFonts
 
@@ -1346,75 +1346,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt
+  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-** Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskinitupdates"></a>Office.ClickToRun.Scenario.InstallTaskInitupdates
 
@@ -1422,75 +1422,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
   - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-** Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskintegrateinstall"></a>Office.ClickToRun.Scenario.InstallTaskIntegrateinstall
 
@@ -1498,75 +1498,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
   - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
   - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltasklastrun"></a>Office.ClickToRun.Scenario.InstallTaskLastrun
 
@@ -1574,75 +1574,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
   - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt
+  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
   - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-** Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskmigrate"></a>Office.ClickToRun.Scenario.InstallTaskMigrate
 
@@ -1650,75 +1650,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
   - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
   - **Data\_ErrorSource -** Nơi xảy ra lỗi
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt
+  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
   - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskpublishrsod"></a>Office.ClickToRun.Scenario.InstallTaskPublishrsod
 
@@ -1726,75 +1726,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
   - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
   - **Data\_ErrorSource -** Nơi xảy ra lỗi
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
   - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskremoveinstallation"></a>Office.ClickToRun.Scenario.InstallTaskRemoveinstallation
 
@@ -1802,75 +1802,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
   - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
@@ -1878,227 +1878,227 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình c
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**   Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -**  Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi được yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioinstalltaskuninstallcentennial"></a>Office.ClickToRun.Scenario.InstallTaskUninstallcentennial
 
-Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình cài đặt Office đang gỡ cài đặt phiên bản Office trước đó được cài đặt từ Cửa hàng. Sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
+Dữ liệu thiết lập Office và kiểm kê thu thập được khi trình cài đặt Office đang gỡ cài đặt phiên bản Office trước đó đã được cài đặt khỏi Cửa hàng. Sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenariorepairtaskfinalintegrate"></a>Office.ClickToRun.Scenario.RepairTaskFinalintegrate
 
-Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy khách sửa chữa Office xuất bản lại các tệp .msi và tiện ích mở rộng Office. Sử dụng để đo lường mức độ thành công/thất bại của việc sửa chữa Office.
+Dữ liệu thiết lập Office và kiểm kê thu thập được khi máy khách sửa chữa Office phát hành lại các tệp .msi và tiện ích mở rộng Office. Sử dụng để đo lường mức độ thành công/thất bại của việc sửa chữa Office.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenariorepairtaskfullrepair"></a>Office.ClickToRun.Scenario.RepairTaskFullrepair
 
@@ -2106,75 +2106,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenariorepairtaskintegraterepair"></a>Office.ClickToRun.Scenario.RepairTaskIntegraterepair
 
@@ -2182,75 +2182,75 @@ Office thiết lập và kiểm kê dữ liệu được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenariorepairtaskremoveinstallation"></a>Office.ClickToRun.Scenario.RepairTaskRemoveinstallation
 
@@ -2258,75 +2258,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskintegrateupdate"></a>Office.ClickToRun.Scenario.UpdateTaskIntegrateupdate 
 
@@ -2334,75 +2334,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskpublishrsod"></a>Office.ClickToRun.Scenario.UpdateTaskPublishrsod
 
@@ -2410,75 +2410,75 @@ Office được thiết lập và kiểm kê được thu thập khi máy khách
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateapply"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateapply
 
@@ -2486,25 +2486,25 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi được yêu cầu thêm vào 
 
   - **Data\_AvailableVersion to-** Phiên bản Office có sẵn để cập nhật
 
@@ -2512,59 +2512,59 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_CorruptionChecksOnly –-** Nếu chúng tôi chỉ kiểm tra lỗi hỏng và không cập nhật
+  - **Data\_CorruptionChecksOnly -** Cho biết nếu chúng tôi chỉ kiểm tra lỗi hỏng và không cập nhật
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
   - **Data\_ErrorSource -** Nơi xảy ra lỗi
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
   - **Data\_HardlinkingException -** Trường hợp ngoại lệ chúng tôi gặp phải khi tìm cách tạo liên kết cứng
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
   - **Data\_PackageOperationSuccessful -** Việc chúng tôi hoàn thành thành công tác vụ của chúng tôi trên gói chương trình Office có đúng hay không
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
   - **Data\_WorkstationLockState -** Việc chúng tôi cho rằng máy tính bị khóa có đúng hay không
 
@@ -2574,75 +2574,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
   - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedetection"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedetection
 
@@ -2650,25 +2650,25 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi được yêu cầu thêm vào 
 
   - **Data\_AvailableVersion to-** Phiên bản Office có sẵn để cập nhật
 
@@ -2678,81 +2678,81 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
   - **Data\_ErrorSource -** Nơi xảy ra lỗi
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
   - **Data\_PackageUpdateAvailable -** Việc chúng tôi có sẵn phiên bản Office mới có đúng hay không
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
   - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
 
-Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy khách Click-to-Run đang tải bản cập nhật mới. Sử dụng để đánh giá thành công / thất bại của việc Office Cập Nhật.
+Dữ liệu thiết lập Office và kiểm kê thu thập được khi máy khách Click-to-Run đang tải xuống bản cập nhật mới. Sử dụng để đánh giá thành công / thất bại của việc Office Cập Nhật.
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**   Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi được yêu cầu thêm vào 
 
   - **Data\_AvailableVersion to-** Phiên bản Office có sẵn để cập nhật
 
@@ -2760,61 +2760,61 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_CorruptionChecksOnly –-** Nếu chúng tôi chỉ kiểm tra lỗi hỏng và không cập nhật
+  - **Data\_CorruptionChecksOnly -** Cho biết nếu chúng tôi chỉ kiểm tra lỗi hỏng và không cập nhật
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
   - **Data\_ErrorSource -** Nơi xảy ra lỗi
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
   - **Data\_FoundCorruptFiles -** Việc chúng tôi tìm thấy tệp hỏng có đúng hay không
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
   - **Data\_PackageOperationSuccessful -** Việc chúng tôi hoàn thành thành công tác vụ của chúng tôi trên gói chương trình Office có đúng hay không
 
   - **Data\_PipelineExitCode -** Mã thoát mà đường dẫn tệp của chúng tôi đã trả về
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatefinalize"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
 
@@ -2822,75 +2822,75 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ CDN hoặc cục bộ 
+  - **Data\_15\_SourceType -** Nơi đặt nguồn Office 15, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
+  - **Data\_15\_UpdatesEnabled -** Cho biết bản cập nhật Office 15 có được bật hay không 
 
-  - **Data\_15\_UpdateVersion -**  Phiên bản Office 15 chúng tôi đang cập nhật 
+  - **Data\_15\_UpdateVersion -** Phiên bản Office 15 chúng tôi đang cập nhật 
 
-  - **Data\_15\_Version -** Phiên bản Office 15 
+  - **Data\_15\_Version -** Phiên bản Office 15 
 
-  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ CDN hoặc cục bộ 
+  - **Data\_16\_SourceType -** Nơi đặt nguồn Office 16, ví dụ: CDN hoặc cục bộ 
 
-  - **Data\_16\_UpdatesEnabled-** Cho biết bản cập nhật Office 16 có được bật hay không 
+  - **Data\_16\_UpdatesEnabled -** Cho biết bản cập nhật Office 16 có được bật hay không 
 
-  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
+  - **Data\_16\_UpdateVersion -** Phiên bản Office 16 chúng tôi đang cập nhật 
 
-  - **Data\_16\_Version -** Phiên bản Office 16 
+  - **Data\_16\_Version -** Phiên bản Office 16 
 
-  - **Data\_AddingFixedProducts-** Những sản phẩm chúng tôi đang thêm vào 
+  - **Data\_AddingFixedProducts -** Những sản phẩm chúng tôi đang thêm vào 
 
-  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
+  - **Data\_AddingProducts -** Những sản phẩm chúng tôi đang yêu cầu thêm vào 
 
   - **Data\_CompletionState -** Cho biết chúng tôi đã hoàn thành tác vụ hay chưa
 
-  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
+  - **Data\_ErrorCode -** Mã lỗi mà chúng tôi đã thất bại 
 
-  - **Data\_ErrorDetails-** Chi tiết bổ sung về lỗi 
+  - **Data\_ErrorDetails -** Chi tiết bổ sung về lỗi 
 
-  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
+  - **Data\_ErrorMessage -** Thông báo lỗi về vấn đề đã xảy ra 
 
-  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
+  - **Data\_ErrorSource -** Nơi xảy ra lỗi 
 
-  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
+  - **Data\_ExceptionType -** Trường hợp ngoại lệ chúng tôi không thành công 
 
-  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
+  - **Data\_IsErrorCodeIgnorable -** Nếu mã lỗi mà chúng tôi không thành công có thể bỏ qua 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng có thể bỏ qua mã lỗi 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** Nếu chúng tôi tin rằng mã lỗi là có thể bỏ qua 
 
-  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
+  - **Data\_NewestPackageVersion -** Phiên bản mới nhất của Office trên máy 
 
-  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
+  - **Data\_OldestPackageVersion -** Phiên bản cũ nhất của Office trên máy 
 
-  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm 
+  - **Data\_ProductsToAdd -** Sản phẩm Office chúng tôi đang thêm vào 
 
-  - **Data\_ProductsToRemove-**  Sản phẩm Office chúng tôi đang loại bỏ 
+  - **Data\_ProductsToRemove -** Sản phẩm Office chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingFixedProducts-** Những sản phẩm chúng tôi đang loại bỏ 
+  - **Data\_RemovingFixedProducts -** Những sản phẩm chúng tôi đang loại bỏ 
 
-  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
+  - **Data\_RemovingProducts -** Những sản phẩm chúng tôi được yêu cầu loại bỏ 
 
-  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
+  - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
 
-  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
+  - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
-  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
+  - **Data\_SourceType -** Vị trí nguồn của chúng tôi, ví dụ: CDN 
 
-  - **Data\_SqmMachineID -**   ID máy duy nhất được sử dụng bởi Windows SQM 
+  - **Data\_SqmMachineID -** ID máy duy nhất được sử dụng bởi Windows SQM 
 
-  - **Data\_SusClientID-**  Mã định danh cập nhật Office trên máy 
+  - **Data\_SusClientID -** Mã định danh cập nhật Office trên máy 
 
-  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy bỏ 
+  - **Data\_TaskState -** Trạng thái tác vụ, ví dụ: đang chạy hoặc bị hủy 
 
-  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
+  - **Data\_TotalClientCabSize -** Kích cỡ cab máy khách của chúng tôi 
 
-  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
+  - **Data\_TriggeringUI -** Những gì kích hoạt giao diện người dùng 
 
-  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
+  - **Data\_UpdatesEnabled -** Cho biết bản cập nhật Office có được bật hay không 
 
-  - **Data\_Version -** Phiên bản Office 
+  - **Data\_Version -** Phiên bản Office 
 
 ### <a name="officeclicktoruntransport"></a>Office.ClickToRun.Transport
 
@@ -2943,13 +2943,13 @@ Thiết lập Office và dữ liệu kiểm kê được thu thập khi máy kh�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **Data\_IsForeGroundStreaming** – Nếu chúng tôi đang phát trực tuyến trong mặt trước hoặc nền
+  - **Data\_IsForeGroundStreaming**- Cho biết nếu chúng tôi đang phát trực tuyến trong mặt trước hoặc nền
 
-  - **Data\_IsInstallMode** – 1 nếu chúng tôi đang cài đặt và tải xuống tệp, 0 nếu chúng tôi không làm điều đó
+  - **Data\_IsInstallMode** - 1 nếu chúng tôi đang cài đặt và tải xuống tệp, 0 nếu chúng tôi không làm điều đó
 
   - **Data\_SourceProtocol –** Nếu chúng tôi tải xuống từ mạng dữ liệu nội dung, CDN, máy chúng tôi cài đặt trên đó, cục bộ hoặc từ một tài nguyên trên mạng cục bộ,
 
-  - **Data\_Status** – Thành công hay thất bại 
+  - **Data\_Status** - Thành công hay thất bại 
 
 ### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
@@ -2976,13 +2976,13 @@ Báo cáo kết quả thử nghiệm cài đặt từ đầu đến cuối
 
  - **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
 
- - **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+ - **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
 
- - **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+ - **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
 
  - **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
 
- - **ExitCode –**   Giá trị nguyên liên kết với kết quả của việc chạy trình khởi động, biểu thị sự so sánh phương thức thành công và không thành công cụ thể
+ - **ExitCode -**   Giá trị nguyên liên kết với kết quả của việc chạy trình khởi động, biểu thị sự so sánh phương thức thành công và không thành công cụ thể
 
 ### <a name="officeclicktorununiversalbootstrappercalculateparameters"></a>Office.ClickToRun.UniversalBootstrapper.CalculateParameters
 
@@ -3055,11 +3055,11 @@ Báo cáo về hành động giải thích lý do cho việc đầu vào đượ
 
 Báo cáo về hành động đọc đầu vào đã gắn thẻ từ chữ ký nhúng của exe.  Đây là một khái niệm chưa được chứng minh, việc lặp lại trước đó của setup.exe đã không diễn ra và là những gì chúng tôi đang dựa vào để truyền tải những lựa chọn về sản phẩm/ ngôn ngữ/ bitness của người dùng từ trang web tới quá trình bên trong setup.exe.
  
-- **ErrorCode –**    Số nguyên được liên kết với một ngoại lệ chưa được xử lý
+- **ErrorCode -**    Số nguyên được liên kết với một ngoại lệ chưa được xử lý
 
-- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
 
-- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
 
 - **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
 
@@ -3135,35 +3135,35 @@ Báo cáo về các hành động gây ảnh hưởng đến máy đã thực hi
 
 - **AvailableClientVersionText –**    Giá trị chuỗi của phiên bản Máy khách C2R "16.0.xxxxx.yyyyy" được tìm thấy trong Trình mô tả phiên bản XML, giá trị này được sử dụng để xác định xem Máy khách C2R hiện cài đặt có nên cập nhật hay không
 
-- **CleanFireflyAction –**    "đúng" nếu tác vụ CleanFireFlyAction được lên lịch hoạt động trong quá trình cài đặt này
+- **CleanFireflyAction -**    "đúng" nếu tác vụ CleanFireFlyAction được lên lịch hoạt động trong quá trình cài đặt này
 
-- **CleanO15Action –**    "đúng" nếu tác vụ CleanO15Action được lên lịch hoạt động trong quá trình cài đặt này
+- **CleanO15Action -**    "đúng" nếu tác vụ CleanO15Action được lên lịch hoạt động trong quá trình cài đặt này
 
-- **CMDMode –**    Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
+- **CMDMode –** Chuỗi thân thiện tương ứng với việc chuyển đổi chế độ tổng thể đã phát hiện trong đối số cmd được chuyển sang cho exe. Các khả năng có thể là: tự hoạt động, đặt cấu hình, người tiêu dùng, tải xuống, trợ giúp, trình đóng gói
 
-- **DeliveryMechanism –**    Guid "FFNRoot" được trích xuất từ Trình mô tả phiên bản XML (đóng dấu bởi RDX), điều này cho chúng ta biết nguồn dựng đến từ khán giả/ kênh nào
+- **DeliveryMechanism -**    GUID "FFNRoot" được trích xuất từ Trình mô tả phiên bản XML (đóng dấu bởi RDX), điều này cho chúng ta biết nguồn dựng đến từ khán giả/ kênh nào
 
-- **DownloadC2RClientAction –**    "đúng" nếu tác vụ DownloadC2RClientAction được lên lịch hoạt động trong quá trình cài đặt này
+- **DownloadC2RClientAction -**    "đúng" nếu tác vụ DownloadC2RClientAction được lên lịch hoạt động trong quá trình cài đặt này
 
 - **ErrorCode –**   Giá trị nguyên liên kết với một ngoại lệ chưa được xử lý
 
-- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
+- **ErrorDetails –**    Chuỗi mô tả vị trí mà ở đó, ngoại lệ chưa được xử lý xảy ra (hàm, tệp, số đường truyền, các tham số bổ sung được thiết lập bởi trình loại bỏ)
 
-- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
+- **ErrorMessage –**    Chuỗi được xác định tại điểm mà ngoại lệ chưa được xử lý được đưa ra, từ đó mô tả bản chất của trạng thái không thành công
 
 - **ErrorType –**   Chuỗi mô tả danh mục của ngoại lệ chưa được xử lý
 
-- **ExitCode –**    Giá trị nguyên liên kết với kết quả của việc trình khởi động chạy giai đoạn thực thi, biểu thị sự so sánh phương thức thành công và không thành công cụ thể
+- **ExitCode -**    Giá trị nguyên liên kết với kết quả của việc trình khởi động chạy giai đoạn thực thi, biểu thị sự so sánh phương thức thành công và không thành công cụ thể
 
-- **LaunchAction –**    "đúng" nếu tác vụ LaunchAction được lên lịch hoạt động trong quá trình cài đặt này
+- **LaunchAction -**    "đúng" nếu tác vụ LaunchAction được lên lịch hoạt động trong quá trình cài đặt này
 
-- **LaunchUpdateAction –**    "đúng" nếu tác vụ LaunchUpdateAction được lên lịch hoạt động trong quá trình cài đặt này
+- **LaunchUpdateAction -**    "đúng" nếu tác vụ LaunchUpdateAction được lên lịch hoạt động trong quá trình cài đặt này
 
-- **PreReqResult –**    Giá trị nguyên bộ đếm của kết quả khi thực hiện kiểm tra PreReq (đạt/ không đạt/ khởi chạy lại)
+- **PreReqResult -**    Giá trị nguyên bộ đếm của kết quả khi thực hiện kiểm tra PreReq (đạt/ không đạt/ khởi chạy lại)
 
-- **UnexpectedAction –**    "đúng" nếu tác vụ UnexpectedAction (trường hợp lỗi) được lên lịch hoạt động trong quá trình cài đặt này
+- **UnexpectedAction -**    "đúng" nếu tác vụ UnexpectedAction (trường hợp lỗi) được lên lịch hoạt động trong quá trình cài đặt này
 
-- **VersionToInstall –**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
+- **VersionToInstall -**    Giá trị chuỗi của phiên bản Office "16.0.xxxxx.yyyyy" đang được cài đặt
 
 ### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
 
@@ -3233,7 +3233,7 @@ Các trường sau đây sẽ được thu thập:
 
 Thu thập danh sách các cấu hình đã nhận được bằng máy khách từ ECS
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
   - **ECSConfigs** - Danh sách cấu hình ECS được phân tách bằng dấu phẩy
 
@@ -3343,6 +3343,97 @@ Các trường sau đây sẽ được thu thập:
 - **SessionID** – GUID để kết nối các sự kiện theo phiên
 
 
+### <a name="officeandroiddocsuiviewspurchasetokenredemptionresponse"></a>Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+
+Phép đo từ xa của sản phẩm này được thu thập để theo dõi và ghi lại trạng thái giao dịch nội bộ và thông tin đối chiếu nhằm cải thiện độ tin cậy và hiệu suất. Microsoft sử dụng dữ liệu này để phân tích và cải thiện độ tin cậy và hiệu suất của các cơ chế xử lý và đối chiếu giao dịch nội bộ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **MicrosoftPurchaseOrderId** - ID đơn đặt hàng Microsoft được gửi bởi Dịch vụ liên kết bán lẻ (RFS) cho các mục đích theo dõi.
+
+- **ResponseCode** - Mã phản hồi HTTP (số nguyên)
+
+- **StatusCode** - Mã trạng thái phản hồi RFS (số nguyên enum hữu hạn do RFS xác định)
+
+
+### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
+
+Sự kiện này thu thập dữ liệu giúp giám sát trạng thái của các thành phần Dime. Dữ liệu được sử dụng để giám sát và cảnh báo về trạng thái của luồng mua hàng Dime nhằm đảm bảo tính năng này hoạt động như mong đợi. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActivityErrorDescription** - Mô tả lỗi của hoạt động
+
+- **Data_ActivityErrorMessage** - Thông báo lỗi của hoạt động 
+
+- **Data_CampaignId** - ID chiến dịch để phân bổ
+
+- **Data_ContentId** - Sẽ được gắn phù hợp với ID luồng và ID nội dung dựa vào ID trải nghiệm
+
+- **Data_CorrelationVector** - Vectơ tương quan để tương quan dime với các đối tác sử dụng vectơ tương quan
+
+- **Data_CustomerImpacted** - Được sử dụng để khắc phục sự cố nếu khách hàng bị ảnh hưởng khi tải luồng
+
+- **Data_DimeActivityDuration** - Thời gian diễn ra 
+
+- **Data_DimeActivityMetadata** - Siêu dữ liệu hoạt động
+
+- **Data_DimeActivityName** - Tên hoạt động để giám sát tình trạng
+
+- **Data_DimeActivityResult** - Kết quả hoạt động, Thành công/Lỗi/Lỗi dự kiến
+
+- **Data_DimeVersion** - Phiên bản dựng
+
+- **Data_DurationLevel** - Mức độ nghiêm trọng - 0/1/2
+
+- **Data_EcsConfigIds** - ID thử nghiệm
+
+- **Data_EcsCountry** - Quốc gia bị phát hiện
+
+- **Data_EcsETag** - Thông tin chuyến bay
+
+- **Data_Environment** - Sản xuất/sản xuất trước môi trường dime
+
+- **Data_ExperienceId** - Trải nghiệm tải 
+
+- **Data_FlowId** - Sẽ được gắn phù hợp với ID luồng và ID nội dung dựa vào ID trải nghiệm
+
+- **Data_Language** - Văn hóa
+
+- **Data_Market** - Thị trường bị phát hiện
+
+- **Data_OTelJS_Version** - Phiên bản phép đo từ xa Office
+
+- **Data_PageSessionId** - ID phiên của trang
+
+- **Data_PartnerId** - Ứng dụng người gọi
+
+- **Data_QosLevel** - Mức độ nghiêm trọng 0/1/2
+
+- **Data_SDX_AssetId** - ID tài sản của nội dung lưu trữ Trải nghiệm cung cấp dịch vụ (SDX)
+
+- **Data_SDX_BrowserToken** - Mã thông báo của trình duyệt
+
+- **Data_SDX_HostJsVersion** - Phiên bản thư viện JavaScript
+
+- **Data_SDX_Id** - ID trải nghiệm cung cấp dịch vụ
+
+- **Data_SDX_InstanceId** - ID bản sao của SDX
+
+- **Data_SDX_MarketplaceType** - Loại thị trường SDX
+
+- **Data_SDX_OfficeJsVersion** - Phiên bản Office JS
+
+- **Data_SDX_SessionId** - ID phiên của SDX
+
+- **Data_SDX_Version** - Phiên bản SDX
+
+- **Data_TimestampUTC** - Dấu thời gian của sự kiện
+
+- **Data_TsgId** - ID hướng dẫn khắc phục sự cố cho mỗi hoạt động
+
+- **Data_UserAgent** - Thẻ tiêu đề
+
 ### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Phép đo từ xa mức sử dụng quan trọng được thu thập để cho biết khi nào người dùng nhấn vào nút Mua.  Dữ liệu được sử dụng để suy ra mẫu hình sử dụng và chỉ số chuyển đổi cho những người dùng cố gắng mua gói đăng ký trong ứng dụng.
@@ -3387,6 +3478,47 @@ Các trường sau đây sẽ được thu thập:
 Nếu chúng tôi không thể tự động kích hoạt giấy phép vì một số lý do, chúng tôi sẽ hiển thị trình hướng dẫn kích hoạt cho người dùng. Điều này báo cáo rằng trình hướng dẫn được đang được hiển thị cho người dùng. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Sự kiện này không thu thập trường nào.
+
+### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
+ 
+Sự kiện này được sử dụng làm tín hiệu để cho chúng tôi biết rằng trải nghiệm mua hàng trong ứng dụng đang bị đóng bởi người dùng hoặc ứng dụng. Dữ liệu được sử dụng để giám sát và cảnh báo về trạng thái của luồng mua hàng trong ứng dụng nhằm đảm bảo tính năng này hoạt động như mong đợi.  
+ 
+Các trường sau đây sẽ được thu thập:
+ 
+- **Data_ClosedDialog** - cờ cho biết người dùng đã đóng hộp thoại
+
+### <a name="officelicensingdialogswebviewdialoghandleerrornotification"></a>Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
+ 
+Sự kiện này được sử dụng làm tín hiệu để cho chúng tôi biết trải nghiệm mua hàng trong ứng dụng đã tìm cách tải nhưng lỗi đã xảy ra khiến hộp thoại không hiển thị. Dữ liệu được sử dụng để giám sát và cảnh báo về trạng thái của luồng mua hàng trong ứng dụng nhằm đảm bảo tính năng này hoạt động như mong đợi.  
+ 
+Các trường sau đây sẽ được thu thập:
+  
+- **Data_MoeErrorCode** - Mã lỗi thấy trên khung hộp thoại web
+
+### <a name="officelicensingdialogswebviewdialogpreload"></a>Office.Licensing.Dialogs.WebViewDialog.Preload
+ 
+Sự kiện này được sử dụng làm tín hiệu để cho chúng tôi biết trải nghiệm mua hàng trong ứng dụng đang được tải trong nền. Dữ liệu được sử dụng để giám sát và cảnh báo về trạng thái của luồng mua hàng trong ứng dụng nhằm đảm bảo tính năng này hoạt động như mong đợi.  
+ 
+Các trường sau đây sẽ được thu thập:
+
+ - Không có
+
+### <a name="officelicensingdialogswebviewdialogshow"></a>Office.Licensing.Dialogs.WebViewDialog.Show
+ 
+Sự kiện này được sử dụng làm tín hiệu để cho chúng tôi biết trải nghiệm mua hàng trong ứng dụng đang hiển thị cho người dùng. Dữ liệu được sử dụng để giám sát và cảnh báo về trạng thái của luồng mua hàng trong ứng dụng.  
+
+Các trường sau đây sẽ được thu thập:
+
+ - Không có
+
+### <a name="officelicensingdialogswebviewdialogtimeout"></a>Office.Licensing.Dialogs.WebViewDialog.Timeout
+
+Sự kiện này được sử dụng làm tín hiệu để cho chúng tôi biết trải nghiệm mua hàng trong ứng dụng đã tìm cách tải nhưng đã hết thời gian. Dữ liệu được sử dụng để giám sát và cảnh báo về trạng thái của luồng mua hàng trong ứng dụng nhằm đảm bảo tính năng này hoạt động như mong đợi. 
+
+Các trường sau đây sẽ được thu thập:
+
+ - Không có
+
 
 ### <a name="officelicensingenforcesigninqualified"></a>Office.Licensing.EnforceSignInQualified 
 
@@ -4385,7 +4517,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
+
+- **Success** - Cho biết tác vụ nhân bản có thành công hay không
 
 - **UpdateID** - Mã định danh cập nhật.
 
@@ -5700,6 +5834,47 @@ Các trường sau đây sẽ được thu thập:
 - **SessionId** - Mã định danh của phiên
 
 
+### <a name="controllermainwindowsetautomaticchecking"></a>controller.mainwindow.setautomaticchecking
+
+Sự kiện này cho biết thiết bị đã đăng ký chế độ Cập nhật tự động. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+
+Các trường sau đây sẽ được thu thập:
+
+ - **App** – Quy trình ứng dụng để gửi sự kiện
+
+- **AppInfo_Language** – Ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** – Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** – Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **DeviceID** – Mã định danh của thiết bị
+
+- **DeviceInfo_Model** – Mô hình phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản hệ điều hành
+
+- **Event_ReceivedTime** – Thời gian nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** – Tên của sự kiện đo từ xa được ghi lại
+
+- **EventInfo_Time** – Thời gian sự kiện được ghi lại xảy ra 
+
+- **HowTocheck** – Tùy chọn kiểm tra cập nhật
+
+- **Payload** - Văn bản cho biết bản chất của sự kiện.
+
+- **PipelineInfo_ClientCountry** - Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+
 ### <a name="controllermainwindowsetautomaticdownloadinstall"></a>controller.mainwindow.setautomaticdownloadinstall
 
 Sự kiện này cho biết thiết bị đã đăng ký chế độ Cập nhật tự động. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
@@ -6428,7 +6603,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **EventInfo_Time** - Thời điểm ghi lại sự kiện 
 
-- **HowTocheck** - Tùy chọn kiểm tra cập nhật
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
 - **Payload** - Chứa URL tải xuống và mã lỗi trong trường hợp không thành công. URL tải xuống là vị trí tải xuống của Microsoft trừ khi kênh được đặt thành Tùy chỉnh. Đối với kênh Tuỳ chỉnh, giá trị này được đặt thành "Vị trí tùy chỉnh".
 
@@ -7227,7 +7402,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -7271,7 +7446,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -9386,7 +9561,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -9432,7 +9607,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -10822,48 +10997,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh của phiên
 
-
-### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
-
-Sự kiện này ghi lại các lỗi giao tiếp trong quá trình (giao tiếp với công cụ trình trợ giúp MAU). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
- 
-Các trường sau đây sẽ được thu thập:
-
-- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
-
-- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
-
-- **AppVersionLong** - Phiên bản ứng dụng
-
-- **Channel** - Tùy chọn dành cho người xem
-
-- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **DeviceID** - Mã định danh thiết bị
-
-- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
-
-- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
-
-- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
-
-- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
-
-- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
-
-- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
-
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
-
-- **Payload** - Chứa một mã định danh dùng để theo dõi hoạt động cập nhật, tên của bản cập nhật và thông tin chi tiết về lỗi proxy được báo cáo.
-
-- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-
-- **SessionId** - Mã định danh của phiên
-
-    
+   
 ### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Sự kiện này ghi lại các lỗi giao tiếp trong quá trình (giao tiếp với công cụ trình trợ giúp MAU). Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
@@ -11083,6 +11217,94 @@ Các trường sau đây sẽ được thu thập:
 
 - **UpdatePkg** - Tên của gói cập nhật đang được áp dụng
 
+### <a name="lifecyclecomplimentproclaunch"></a>Lifecycle.complimentproclaunch
+
+Sự kiện này cho biết nỗ lực khởi chạy Microsoft Update Assistant từ Microsoft AutoUpdate hoặc từ Microsoft AutoUpdate từ Microsoft Update Assistant. Sự kiện này được sử dụng để xác định và đảm bảo trạng thái của Microsoft AutoUpdate và Microsoft Update Assistant.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, có dây, không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Error** - Mọi lỗi được báo cáo trong khi cố gắng khởi chạy chương trình
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowToCheck** - Cách kiểm tra cài đặt
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **Reason** - Lý do cố gắng khởi chạy quy trình bổ sung
+
+- **SessionId** - Mã định danh của phiên
+
+- **Success** -  Cho biết nỗ lực khởi chạy có thành công hay không
+
+### <a name="lifecyclelaunch"></a>Lifecycle.launch
+
+Sự kiện này cho biết bắt đầu Microsoft AutoUpdate hoặc Microsoft Update Assistant. Sự kiện này cũng được sử dụng để báo cáo mọi sự cố tìm thấy trong quá trình khởi chạy, cũng như làm phương pháp báo cáo dùng để khởi chạy trong trường hợp Microsoft Update Assistant.
+
+*[Sự kiện này thay thế fba.launch và appdelegate.launch events.]*
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Error** - Mọi lỗi tìm thấy trong khi khởi chạy
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
+
+- **HowToCheck** - Cách kiểm tra cài đặt
+
+- **LaunchedBy** - Phương pháp dùng để khởi chạy Microsoft Update Assistant nếu có
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
 ### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
 Sự kiện này báo cáo định kỳ về trạng thái của quy trình MicrosoftAutoUpdate. Cụ thể, sự kiện này báo cáo về những tác vụ còn lại mà quy trình đang đợi để hoàn thiện cho Công cụ trợ giúp Cập nhật và trong trường hợp UI, sự kiện này báo cáo về việc quy trình có đang chấm dứt do người dùng không hoạt động hay không.  Chúng tôi sử dụng sự kiện này để xác định yếu tố tác ngăn Công cụ trợ giúp Cập nhật hoàn thành bản cập nhật và đang chấm dứt, đồng thời xác định UI có đang chấm dứt do người dùng không hoạt động hay không.
@@ -11132,6 +11354,50 @@ Các trường sau đây sẽ được thu thập:
 - **SessionId** - Mã định danh của phiên
 
 - **SessionLength** - Độ dài của phiên quy trình hiện tại theo giây
+
+
+### <a name="lifecycleterminate"></a>Lifecycle.terminate
+
+Sự kiện này cho biết kết thúc Microsoft AutoUpdate hoặc Microsoft Update Assistant. Sự kiện này được sử dụng để xác định trạng thái của Microsoft AutoUpdate và Microsoft Update Assistant.
+
+*[Sự kiện này thay thế các sự kiện fba.terminate và appdelegate.terminate.]*
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, có dây, không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** -   Thời gian sự kiện được ghi lại xảy ra 
+
+- **HowToCheck** - Cách kiểm tra cài đặt
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+- **SessionLength** - Độ dài của phiên quy trình hiện tại theo giây
+
 
 
 ### <a name="msupdateclieventhandler"></a>msupdate.cli.eventhandler
@@ -11871,7 +12137,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này cho biết sự bắt đầu của bản cập nhật bắt buộc do người dùng khởi chạy. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -11991,7 +12257,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này cho biết người dùng đã chọn trì hoãn cập nhật bắt buộc. Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12071,7 +12337,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết người dùng đã chọn cập nhật ứng dụng ngay bây giờ.  Sự kiện này là một phần của phễu và được sử dụng để xác định tình trạng của tính năng cập nhật bắt buộc.
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12235,7 +12501,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -12279,7 +12545,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -12287,7 +12553,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này ghi lại lỗi gặp phải khi cố gắng bỏ qua một bản cập nhật ứng dụng. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.  
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12369,7 +12635,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết sự bắt đầu của quy trình cập nhật ứng dụng. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12415,7 +12681,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này cho biết giai đoạn tải xuống bản cập nhật ứng dụng đã hoàn thành. Sự kiện này là một phần của phễu cập nhật và được sử dụng để xác định tình trạng của bản cập nhật ứng dụng.  
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12451,7 +12717,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -12497,7 +12763,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -12583,7 +12849,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -12627,7 +12893,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -12763,7 +13029,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện cho biết gói cập nhật sửa chữa đang được tải xuống nhưng không có thông tin tải xuống trước đó. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -12841,7 +13107,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -12887,7 +13153,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
 
-- **SessionId** - Mã định danh cho phiên
+- **SessionId** - Mã định danh của phiên
 
 - **UpdateID** - Mã định danh cho một bản cập nhật ứng dụng
 
@@ -13017,7 +13283,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này báo cáo lỗi trong khi cố gắng khởi chạy một tác vụ. Sự kiện này rất quan trọng và được sử dụng để điều tra lỗi được báo cáo.  
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -14535,47 +14801,6 @@ Các trường sau đây sẽ được thu thập:
 - **SessionId** - Mã định danh của phiên
 
 
-### <a name="webservicesserviceaction"></a>webservices.serviceaction
-
-Chúng tôi sẽ ghi lại bất kỳ lỗi nào do phản hồi dịch vụ web không mong muốn. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
- 
-Các trường sau đây sẽ được thu thập:
-
-- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
-
-- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
-
-- **AppVersionLong** - Phiên bản ứng dụng
-
-- **Channel** - Tùy chọn dành cho người xem
-
-- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **DeviceID** - Mã định danh thiết bị
-
-- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
-
-- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
-
-- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
-
-- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
-
-- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
-
-- **EventInfo_Time** - Thời điểm ghi lại sự kiện 
-
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
-
-- **Payload** - Chứa thông tin chi tiết của hành động được đẩy từ dịch vụ web.
-
-- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
-
-- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
-
-- **SessionId** - Mã định danh của phiên
-
-
 ### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
 Sự kiện này ghi lại các yêu cầu đối với Dịch vụ MAU, thời gian phản hồi cũng như các lỗi. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
@@ -15251,6 +15476,46 @@ Các trường sau đây sẽ được thu thập:
 - **requestType** - Chuỗi – Loại yêu cầu StoreKit. Như “ProductsFetch”, “PendingPurchase”
 
 - **status** - Chuỗi – Thành công hay thất bại, cho biết yêu cầu thành công hay thất bại
+
+### <a name="officeonenotegetsharepointidsfordocument"></a>Office.OneNote.GetSharePointIdsForDocument
+
+Dữ liệu được thu thập ghi lại sự thất bại và thành công khi tìm nạp ID SharePoint (SPO) cho URL tài liệu. Sự thành công và thất bại (bao gồm nguyên nhân thất bại) của cuộc gọi sẽ được ghi lại cho tất cả nền tảng. Điểm đánh dấu này sẽ được yêu cầu để theo dõi và chẩn đoán trạng thái cuộc gọi đã được thực hiện để lấy ID. Các ID cần có để dữ liệu trang OneNote (thuộc sổ ghi chép lưu trữ trên SharePoint) hiển thị trong nguồn cấp dữ liệu. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **ErrorCode** - giá trị số nguyên của lỗi
+
+- **ErrorMessage** - chuỗi mô tả lỗi
+
+- **FailureType** - chuỗi xác định loại lỗi
+
+- **HttpStatusCode** - Mã lỗi HTTP cho cuộc gọi mạng
+
+- **InnerErrorCode** - mã số nguyên
+
+- **InnerErrorMesage** - thông báo lỗi
+
+- **IsSuccess** - giá trị Boolean cho tín hiệu thành công
+
+### <a name="officeonenotegetsharepointidsfordocumentw32old"></a>Office.OneNote.GetSharePointIdsForDocumentW32Old
+
+Dữ liệu đo từ xa ghi lại các kịch bản thất bại và thành công khi tìm nạp ID SharePoint (SPO) cho URL tài liệu. Sự thành công và thất bại (bao gồm nguyên nhân thất bại) của cuộc gọi sẽ được ghi lại. Dữ liệu này chỉ được ghi lại vào nền tảng win32 cũ. Điểm đánh dấu này sẽ được yêu cầu để theo dõi và chẩn đoán trạng thái cuộc gọi đã được thực hiện để lấy ID. Các ID cần có để dữ liệu trang OneNote (thuộc sổ ghi chép lưu trữ trên SharePoint) hiển thị trong nguồn cấp dữ liệu. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **ErrorCode** - giá trị số nguyên của lỗi
+
+- **ErrorMessage** - chuỗi mô tả lỗi
+
+- **FailureType** - chuỗi xác định loại lỗi
+
+- **HttpStatusCode** - Mã lỗi HTTP cho cuộc gọi mạng
+
+- **InnerErrorCode** - mã số nguyên
+
+- **InnerErrorMesage** - thông báo lỗi
+
+- **IsSuccess** - giá trị Boolean cho tín hiệu thành công
 
 
 ### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
@@ -16021,7 +16286,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officesystemsystemhealthungracefulappexitdesktop"></a>Office.System.SystemHealthUngracefulAppExitDesktop
 
-Sử dụng để ghi lại số liệu gặp sự cố.
+Sự kiện được kích hoạt do hành động chấm dứt ứng dụng bất thường (Ví dụ: trình quản lý tác vụ bắt buộc thoát, ứng dụng bị treo, v.v.) đối với các ứng dụng máy khách Office như Word, Excel, PowerPoint và Outlook. Chúng tôi dùng các số liệu Thoát ứng dụng bất thường để đo lường trạng thái sản phẩm máy khách Office. Đây là một tín hiệu nghiệp vụ quan trọng do các kỹ sư Office sử dụng để kết luận tính ổn định của sản phẩm.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -16029,83 +16294,103 @@ Các trường sau đây sẽ được thu thập:
 
   - **AffectedProcessAppBuildRevision -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
 
+  - **AffectedProcessAppMajorVer** - Mã định danh phiên bản chính cho quá trình bị ảnh hưởng.
+
   - **AffectedProcessAppMinorVer -** Mã định danh phiên bản phụ cho quá trình bị ảnh hưởng.
 
-  - **AffectedProcessAppName -** Tên của quy trình bị ảnh hưởng.
+  - **AffectedProcessAppName -** Tên của quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessExeBuildVersion -** Số phiên bản bản dựng của quy trình bị ảnh hưởng.
+  - **AffectedProcessExeBuildVersion -** Số phiên bản dựng của quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessExeMajorVersion -** Số phiên bản chính của quy trình bị ảnh hưởng.
+  - **AffectedProcessExeMajorVersion -** Số phiên bản chính của quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessExeMinorVersion -** Số phiên bản phụ của quy trình bị ảnh hưởng.
+  - **AffectedProcessExeMinorVersion -** Số phiên bản phụ của quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessExeBuildVersion -** Số phiên bản bản chỉnh sửa bản dựng của quy trình bị ảnh hưởng.
+  - **AffectedProcessExeBuildVersion -** Số phiên bản của bản chỉnh sửa bản dựng của quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessIsDebug -** Quy trình bị ảnh hưởng có phải là một bản dựng gỡ lỗi hay không.
+  - **AffectedProcessIsDebug -** Quy trình bị ảnh hưởng có phải là bản dựng gỡ lỗi hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessIsLabMachine -** Quy trình bị ảnh hưởng có phải ở trong phòng thí nghiệm của Microsoft không.
+  - **AffectedProcessIsLabMachine -** Quy trình bị ảnh hưởng có phải ở trong phòng thí nghiệm của Microsoft không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessOsEnvironment -** Mã định danh hệ điều hành cho quy trình bị ảnh hưởng.
+  - **AffectedProcessOsEnvironment -** Mã định danh hệ điều hành cho quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AppName -** Tên ứng dụng bị ảnh hưởng.
+  - **AppName -** Tên ứng dụng bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedAssignedFlights -** Chuyến bay được gán cho quy trình bị rơi.
+  - **CrashedAssignedFlights -** Chuyến bay được gán cho quy trình gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedConfigIds -** Cấu hình được gán cho quy trình bị rơi.
+  - **CrashedConfigIds -** Cấu hình được gán cho quy trình gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
   - **CrashedEcsETag -** một mã định danh thử nghiệm cho quy trình rơi.
 
-  - **CrashedImpressionId -** mã định danh ấn tượng của quy trình rơi.
+  - **CrashedImpressionId -** mã định danh ấn tượng của quy trình rơi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedProcessSessionID -** một mã định danh duy nhất của quy trình rơi.
+  - **CrashedModuleName** - Tên mô-đun lỗi
 
-  - **CrashedProcessSessionInitTime -** thời gian khi bắt đầu quy trình bị ảnh hưởng.
+  - **CrashedProcessSessionID -** một mã định danh duy nhất của quy trình rơi. 
+
+  - **CrashedProcessSessionInitTime -** thời gian khi bắt đầu quy trình bị ảnh hưởng. 
+
+  - **CrashedProcessSessionUninitTime** - Thời gian khi kết thúc quy trình bị ảnh hưởng.
+
+  - **CrashTag** - Mã định danh duy nhất cho mã của sự cố.
 
   - **CrashType -** Mã định danh bucketing cho loại gặp sự cố.
 
-  - **DetectionTime -** thời gian khi việc thoát không mong muốn đã được phát hiện.
+  - **DetectionTime -** thời gian khi việc thoát không mong muốn đã được phát hiện. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ErrorString -** mô tả lỗi.
+  - **ErrorString -** Mô tả lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ExceptionAddress -** địa chỉ trong chương trình nơi lỗi xảy ra.
+  - **ExceptionAddress -** Địa chỉ trong chương trình nơi lỗi xảy ra. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
   - **ExceptionCode -** Mã định danh bucketing cho trường hợp ngoại lệ.
 
-  - **FaultAppName -** tên của ứng dụng lỗi.
+  - **FaultAppName -** tên của ứng dụng lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
   - **InstallMethod** - Bản dựng hiện tại của Office đã được nâng cấp từ, quay lại hay cài đặt mới.
 
-  - **InstallType -** Mã định danh cho phương thức mà Office được cài đặt.
+  - **InstallType -** Mã định danh cho phương thức mà Office được cài đặt. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **InstallTypeName -** Mã định danh cho phương thức mà Office được cài đặt.
+  - **InstallTypeName -** Mã định danh cho phương thức mà Office được cài đặt. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **IsLabMachine -** Office có đang được chạy trong phòng thí nghiệm của Microsoft hay không.
+  - **IsLabMachine -** Office có đang được chạy trong phòng thí nghiệm của Microsoft hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **IsMsftInternal -** Người dùng Windows mà Office đang chạy có phải nhân viên của Microsoft hay không.
+  - **IsMsftInternal -** Người dùng Windows mà Office đang chạy có phải nhân viên của Microsoft hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleBaseAddress -** các địa chỉ cơ sở của mô-đun lỗi.
+  - **ModuleBaseAddress -** Địa chỉ cơ sở của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleBuildVersion -** Số phiên bản bản dựng của mô-đun lỗi.
+  - **ModuleBuildVersion -** Số phiên bản dựng của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleMajorVersion -** Số phiên bản chính của mô-đun lỗi.
+  - **ModuleMajorVersion -** Số phiên bản chính của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleMinorVersion -** Số phiên bản phụ của mô-đun lỗi.
+  - **ModuleMinorVersion -** Số phiên bản phụ của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleName -** Tên mô-đun lỗi.
+  - **ModuleName -** Tên mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleOffset -** Bù trừ theo byte từ địa chỉ cơ sở nơi lỗi xảy ra.
+  - **ModuleOffset -** Bù trừ tính theo byte (theo hệ thập lục phân) từ địa chỉ cơ sở nơi lỗi xảy ra.
 
-  - **ModuleRevisionVersion -** Số phiên bản bản chỉnh sửa bản dựng của mô-đun lỗi.
+  - **ModuleRevisionVersion -** Số phiên bản của bản chỉnh sửa bản dựng của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleSize -** Kích cỡ mô-đun lỗi theo byte.
+  - **ModuleSize -** Kích cỡ mô-đun lỗi theo byte. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+  - **ModuleVersion** - Phiên bản của mô-đun lỗi gây ra sự cố.
+
+  - **OfficeArchitectureText** - Kiến trúc cài đặt: x64, x86, v.v.
+
+  - **OfficeUILang** - Ngôn ngữ giao diện người dùng trong Bản dựng Office.
 
   - **OSEnvironment -** Mã định danh cho môi trường mà Office đang chạy.
 
   - **PreviousBuild** - Phiên bản bản dựng đã được cài đặt trước đó
 
-  - **UAETypeName -** Mã định danh bucketing cho cách ứng dụng cố ý thoát.
+  - **ProcessorArchitecture** - Kiến trúc bộ xử lý cho môi trường: x64, x86, v.v.
 
-  - **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố.
+  - **SessionFlags** - Xác định các điều kiện của phiên như: tệp đã mở hay đã chỉnh sửa, tài liệu đám mây đã mở chưa, trình tự khởi động đã hoàn thành chưa, v.v. 
+
+  - **UAETypeName -** Mã định danh bucketing cho cách ứng dụng cố ý thoát. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+  - **UninitLibletId** - Mã định danh duy nhất cho cấu phần lỗi của sự cố.
+
+  - **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 ### <a name="officesystemsystemhealthungracefulappexitimmersive"></a>Office.System.SystemHealthUngracefulAppExitImmersive
 
@@ -16171,79 +16456,110 @@ Sự kiện được kích hoạt do hành động chấm dứt ứng dụng b�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **AddinExecution -** Cờ thông báo nếu phần bổ trợ đang thực thi và không hoàn thành trong quá trình thoát ứng dụng không đáng tin cậy.
+  - **AddinExecution** - Cờ thông báo nếu phần bổ trợ đang thực thi và không hoàn thành trong quá trình thoát ứng dụng không đáng tin cậy. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **BootCompleted –** Đã hoàn tất khởi động Office tại thời điểm gặp sự cố hay chưa.
+  - **AppUsedVirtualMemory** - Bộ nhớ ảo được sử dụng bởi ứng dụng Office
 
-  - **CrashedAppBuild -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
+  - **BootCompleted** - Khởi động Office đã hoàn tất tại thời điểm gặp sự cố chưa. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedAppMajor -** Mã định danh phiên bản chính cho quá trình bị ảnh hưởng.
+  - **BucketId** - Mã định danh bucket Watson cho sự cố
+ 
+  - **CabGuid** - Mã định danh nhận dạng chung duy nhất (GUID) cho taxi Watson.
 
-  - **CrashedAppMinor -** Mã định danh phiên bản phụ cho quá trình bị ảnh hưởng.
+  - **CrashedAppBuild** - Mã định danh phiên bản dựng cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedAppRevision -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
+  - **CrashedAppMajor** - Mã định danh phiên bản chính cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+ 
+  - **CrashedAppMinor** - Mã định danh phiên bản phụ cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedEcsETag -** Mã định danh thử nghiệm cho quy trình xảy ra sự cố.
+  - **CrashedAppVersion** - Mã định danh phiên bản ứng dụng cho quá trình gặp sự cố.
 
-  - **CrashedModuleName -** Tên mô-đun lỗi.
+  - **CrashedEcsETag** - Mã định danh thử nghiệm cho quá trình gặp sự cố.
 
-  - **CrashedSessionId -** một mã định danh duy nhất của quy trình rơi.
+  - **CrashedModuleName** - Tên mô-đun lỗi.
 
-  - **CrashedSessionInitTime -** thời gian khi bắt đầu quy trình bị ảnh hưởng.
+  - **CrashedProcessSessionId** - Mã định danh duy nhất của quá trình gặp sự cố.
 
-  - **CrashTime –** Thời gian cho biết máy khách bị chấm dứt một cách không đáng tin cậy.
+  - **CrashedProcessSessionInitTime** - Thời gian khi bắt đầu quy trình bị ảnh hưởng.
 
-  - **CrashType -** Mã định danh bucketing cho loại gặp sự cố.
+  - **CrashedProcessSessionUninitTime** - Thời gian khi kết thúc quy trình bị ảnh hưởng.
 
-  - **DetectionTime -** thời gian khi việc thoát không mong muốn đã được phát hiện.
+  - **CrashTag** - Mã định danh duy nhất cho mã của sự cố.
 
-  - **ExceptionAddress -** địa chỉ trong chương trình nơi lỗi xảy ra.
+  - **CrashTime** - Thời gian cho biết máy khách bị chấm dứt một cách không đáng tin cậy. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ExceptionCode -** Mã định danh bucketing cho trường hợp ngoại lệ.
+  - **CrashType** - Mã định danh bucketing cho loại sự cố.
 
-  - **HandOff –** Người dùng đã tạo và chuyển quy trình Office sang một phiên mới hay chưa.
+  - **DetectionTime** - Thời điểm phát hiện thoát ra không mong muốn. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **HasEdit –** Người dùng có đang chỉnh sửa tài liệu trong máy khách gặp sự cố hay không.
+  - **ExceptionAddress** - địa chỉ trong chương trình nơi lỗi xảy ra. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **HasOpen –** Có tài liệu đã mở trong máy khách gặp sự cố hay không.
+  - **ExceptionCode** - Mã định danh bucketing cho trường hợp ngoại lệ.
 
-  - **HexCrashTag -**  Mã định danh duy nhất cho mã của sự cố.
+  - **ExceptionInfo** - Thông tin hệ thống cho trường hợp ngoại lệ.
 
-  - **HexExceptionAddress -** Địa chỉ theo hệ thập lục phân trong chương trình, nơi xảy ra lỗi.
+  - **HandOff** - Người dùng đã tạo và chuyển quy trình Office sang phiên mới hay chưa. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **HexExceptionCode -** Mã định danh theo hệ thập lục phân cho trường hợp ngoại lệ.
+  - **HangTypeCode** - Cho biết hình thức bị treo nếu quá trình bị treo trong khi thực thi.
 
-  - **HexModuleBaseAddress -** các địa chỉ cơ sở theo hệ thập lục phân của mô-đun lỗi.
+  - **HasEdit** - Người dùng có đang chỉnh sửa tài liệu trong máy khách gặp sự cố hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **HexModuleOffset -** Bù trừ theo byte (theo hệ thập lục phân) từ địa chỉ cơ sở nơi lỗi xảy ra.
+  - **HasOpen** - Có tài liệu đã mở trong máy khách gặp sự cố hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleSize -** Kích cỡ mô-đun lỗi theo byte theo hệ thập lục phân.
+  - **HexCrashTag** - Mã định danh duy nhất cho mã của sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **HexVerifyElseCrashTag -** Mã định danh duy nhất theo hệ thập lục phân cho vị trí ứng dụng gặp sự cố.
+  - **HexExceptionAddress** - Địa chỉ theo hệ thập lục phân trong chương trình nơi xảy ra lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **InstallMethod** - Bản dựng hiện tại của Office đã được nâng cấp từ, quay lại hay cài đặt mới.
+  - **HexExceptionCode** - Mã định danh theo hệ thập lục phân cho trường hợp ngoại lệ. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **IsLabMachine -** Office có đang được chạy trong phòng thí nghiệm của Microsoft hay không.
+  - **HexModuleBaseAddress** - Địa chỉ cơ sở theo hệ thập lục phân của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleBaseAddress -** các địa chỉ cơ sở của mô-đun lỗi.
+  - **HexModuleOffset** - Bù trừ tính theo byte (theo hệ thập lục phân) từ địa chỉ cơ sở nơi lỗi xảy ra. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleOffset -** Bù trừ theo byte từ địa chỉ cơ sở nơi lỗi xảy ra.
+  - **ModuleSize** - Kích cỡ mô-đun lỗi theo byte theo hệ thập lục phân. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleSize -** Kích cỡ mô-đun lỗi theo byte.
+  - **HexVerifyElseCrashTag** - Mã định danh duy nhất theo hệ thập lục phân cho vị trí ứng dụng gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **OfficeArchitectureText -** Kiến trúc của sản phẩm Office dưới dạng chuỗi (ví dụ: x86, arm).
+  - **InstallMethod** - Phiên bản dựng hiện tại của Office đã được nâng cấp, hạ cấp hay cài đặt mới.
 
-  - **OfficeUiLang -** Ngôn ngữ giao diện người dùng cho bản dựng Office.
+  - **IsLabMachine** - Office có đang được chạy trong phòng thí nghiệm của Microsoft hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **PreviousBuild** - Phiên bản bản dựng đã được cài đặt trước đó
+  - **ModuleBaseAddress** - Địa chỉ cơ sở của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **SafeMode –** Phiên có được khởi động ở chế độ an toàn hay không.
+  - **HexModuleOffset** - Bù trừ tính theo byte (theo hệ thập lục phân) từ địa chỉ cơ sở nơi lỗi xảy ra.
 
-  - **UAEOSEnvironment -** Mã định danh môi trường của hệ điều hành.
+  - **ModuleSize** - Kích cỡ mô-đun lỗi theo byte. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **UninitLibletId –** Mã định danh duy nhất cho cấu phần lỗi của sự cố.
+  - **ModuleStamp** - Dấu mô-đun lỗi.
 
-  - **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+  - **ModuleVersion** - Phiên bản của mô-đun lỗi gây ra sự cố.
+
+  - **OfficeArchitectureText** - Kiến trúc sản phẩm Office dưới dạng chuỗi (ví dụ: x86, arm).
+
+  - **OfficeUiLang** - Ngôn ngữ giao diện người dùng trong bản dựng Office.
+
+  - **PreviousBuild** - Phiên bản dựng đã được cài đặt trước đó
+
+  - **ProcessorArchitecture** - Kiến trúc bộ xử lý cho môi trường x64, x86, v.v.
+
+  - **SafeMode** - Phiên có được khởi động ở chế độ an toàn hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+  - **SessionFlags** - Xác định các điều kiện của phiên như: tệp đã mở hay đã chỉnh sửa, tài liệu đám mây đã mở chưa, trình tự khởi động đã hoàn thành chưa, v.v. 
+
+  - **StackHash** - Cung cấp ID dạng băm cho ngăn xếp lỗi trong Office.
+
+  - **SystemAvailableMemory** - Bộ nhớ có sẵn trong hệ điều hành
+
+  - **UAEOSEnvironment** - Mã định danh môi trường của hệ điều hành. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+  - **UninitLibletId** - Mã định danh duy nhất cho cấu phần lỗi của sự cố.
+
+  - **VerifyElseCrashTag** - Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+  - **WatsonReportId** - Mã định danh của báo cáo được gửi đến dịch vụ Windows Watson.
+
+  - **WerEventCreatedTime** - Dấu thời gian cho sự kiện Báo cáo Lỗi Windows.
+
 
 ### <a name="officesystemungracefulapplicationexitdesktopappexit"></a>Office.System.UngracefulApplicationExit.DesktopAppExit
 
@@ -16491,7 +16807,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **IsRuleEvent** - Việc sự kiện này được thực hiện bằng một quy tắc phép đo từ xa là đúng hay sai.
 
-### <a name="officetelemetryinvalideventcontractname"></a>Office.Telemetry.InvalidEventContractName 
+### <a name="officetelemetryinvalideventcontractname"></a>Office.Telemetry.InvalidEventContractName 
 
 Báo cáo triển khai hoặc thực hiện phép đo từ xa không hợp lệ
 
