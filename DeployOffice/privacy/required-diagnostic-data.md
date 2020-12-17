@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 97d334551743566bde549da4b3b4a2476255d248
-ms.sourcegitcommit: 1c635a2906afb601e7c92b3f48dde3d271d06105
+ms.openlocfilehash: 1c63598ee9a9744128ef30916d1457d4a02c9092
+ms.sourcegitcommit: 954510a42df092730412aa25cd8683f6a629537c
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367383"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49685887"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -33,12 +33,12 @@ Dữ liệu chẩn đoán này được thu thập và gửi cho Microsoft về 
 
 Dữ liệu chẩn đoán bắt buộc giúp xác định các sự cố với Office có thể liên quan đến cấu hình thiết bị hoặc phần mềm. Ví dụ: nó có thể giúp xác định xem một tính năng Office có gặp sự cố thường xuyên hơn trên một phiên bản hệ điều hành cụ thể không, với các tính năng mới được giới thiệu hoặc khi một số tính năng Office nhất định bị tắt. Dữ liệu chẩn đoán bắt buộc giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố này nhanh hơn để giảm tác động đối với người dùng hoặc tổ chức.
 
-Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các mục sau:
+Để biết thêm thông tin về dữ liệu chẩn đoán, hãy xem các bài viết sau:
 
 - [Dữ liệu chẩn đoán tuỳ chọn cho Office](optional-diagnostic-data.md)
 - [Sử dụng Trình xem chẩn đoán dữ liệu với Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-Nếu bạn là người quản trị cho tổ chức, có thể bạn cũng quan tâm đến những vấn đề sau:
+Nếu bạn là người quản trị cho tổ chức của mình, bạn cũng có thể quan tâm đến các bài viết sau:
 
 - [Tổng quan về các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](overview-privacy-controls.md)
 - [Sử dụng thiết đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư đối với Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn](manage-privacy-controls.md)
@@ -241,11 +241,11 @@ Danh mục này chứa các trường sau đây:
 
   - **Duration** - Khoảng thời gian hoạt động cần để thực hiện. Cho phép chúng tôi xác định sự cố về hiệu suất ảnh hưởng tiêu cực đến trải nghiệm của người dùng.
 
-  - **Result**.**Code** - Một ứng dụng xác định mã để xác định một kết quả nhất định. Cho phép chúng tôi xác định chi tiết cụ thể hơn về một lỗi cụ thể, chẳng hạn như mã lỗi có thể được sử dụng để phân loại và khắc phục các sự cố.
+  - **Result.Code** - Một ứng dụng xác định mã để xác định một kết quả nhất định. Cho phép chúng tôi xác định chi tiết cụ thể hơn về một lỗi cụ thể, chẳng hạn như mã lỗi có thể được sử dụng để phân loại và khắc phục các sự cố.
 
   - **Result.Tag** - Thẻ số nguyên xác định vị trí trong mã nơi kết quả được tạo. Cho phép chúng tôi xác định rõ vị trí trong mã nơi tạo ra kết quả cho phép phân loại lỗi.
 
-  - **Result**.**Type** - Loại mã kết quả. Xác định loại mã kết quả đã được gửi để giá trị có thể được diễn giải chính xác.
+  - **Result.Type** - Loại mã kết quả. Xác định loại mã kết quả đã được gửi để giá trị có thể được diễn giải chính xác.
 
   - **Success** - Cờ cho biết xem hoạt động thành công hay thất bại. Cho phép chúng tôi xác định xem các thao tác mà người dùng thực hiện trong sản phẩm sẽ thành công hay thất bại. Điều này cho phép chúng tôi xác định các sự cố đang ảnh hưởng đến người dùng.
 
@@ -685,6 +685,16 @@ Các trường sau đây sẽ được thu thập:
 - **provider** - mã định danh dành cho gói phần mềm của nhà cung cấp đối với SSO.
 
 - **state** – trạng thái hiện tại của tài khoản (giá trị ví dụ: KHÔNG THÀNH CÔNG, ĐANG CHỜ XỬ LÝ, ĐÃ THÊM,...)
+
+
+#### <a name="installreferral"></a>install.referral
+
+Sự kiện này được kích hoạt tại bản cài đặt ban đầu của ứng dụng và bản ghi từ vị trí mà người dùng đã được nhắc (nếu có).
+
+Các trường sau đây sẽ được thu thập:
+
+- **install_referrer** sản phẩm hoặc trải nghiệm từ vị trí mà người dùng đã được nhắc
+
  
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
@@ -770,6 +780,71 @@ Các trường sau đây sẽ được thu thập:
 - **sessionID** - GUID được tạo ngẫu nhiên để xác định phiên ứng dụng
 
 - **UTCReplace_AppSessionGuid** - Giá trị boolean không đổi. Luôn true.
+
+#### <a name="officeonenoteandroidapponenotelaunchednonactivated"></a>Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.App.OneNoteLaunchedNonActivated.]*
+
+Ghi lại thông tin về trạng thái kích hoạt của Ứng dụng.  Dữ liệu được giám sát để đảm bảo rằng chúng tôi có xác định lưu trữ tạm văn bản theo nhóm trong các sự cố về kích hoạt. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **INSTALL_LOCATION** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
+
+#### <a name="officeonenoteandroidresetstatus"></a>Office.OneNote.Android.ResetStatus
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.ResetStatus.]*
+
+Tín hiệu dùng để ghi lại mọi sự cố gặp phải khi người dùng cố gắng đặt lại Ứng dụng.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra trong quá trình đặt lại. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **Tài khoản** - Cho biết loại nếu tài khoản dùng để đăng nhập vào Ứng dụng
+
+- **Loại Chuỗi Chung** - Trả về nếu đó là đặt lại toàn bộ của đặt lại notes_light_data
+
+- **LaunchPoint** - Điểm mà Đặt lại được khởi tạo. Các giá trị khả thi: Nút đăng xuất, Đăng xuất thất bại, Đã kích hoạt Intune
+
+- **Pass** - Cho biết có Đặt lại có thành công hay không
+
+#### <a name="officeonenoteandroidsigninsignincompleted"></a>Office.OneNote.Android.SignIn.SignInCompleted
+
+*[Sự kiện này đã được đặt tên trước đây là OneNote.SignIn.SignInCompleted.]*
+
+Tín hiệu quan trọng dùng để đảm bảo đăng nhập có thành công hay không. Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **CompletionState** - Trạng thái cuối cùng của đăng nhập - Đã thành công hoặc thất bại. Và các trường hợp lỗi
+
+- **EntryPoint** - Cho biết nơi Đăng nhập được khởi tạo
+
+- **Hresult** - Mã lỗi
+
+- **ID Gói Nhà cung cấp** - Trong trường hợp đăng nhập tự động
+
+- **Result** - Thành công, Thất bại, Không xác định, Đã hủy
+
+- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ 
+
+- **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
+
+#### <a name="officeonenoteandroidsigninsigninstarted"></a>Office.OneNote.Android.SignIn.SignInStarted
+
+*[Sự kiện này đã được đặt tên trước đây là OneNote.SignIn.SignInStarted.]*
+
+Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
+
+Các trường sau đây sẽ được thu thập: 
+
+- **EntryPoint** - Cho biết nơi Đăng nhập được khởi tạo
+
+- **Result** - Kết quả của tiến trình đăng nhập
+
+- **ServerType** - Trả về loại của máy chủ cung cấp dịch vụ 
+
+- **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
+
 
 #### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
 
@@ -898,63 +973,6 @@ Ghi lại SKU Visio dù đó là tiêu chuẩn hay chuyên nghiệp. Cần thi�
 Các trường sau đây sẽ được thu thập:
 
   - **Data\_VisioSKU**:**integer** - 0 cho SKU tiêu chuẩn và 1 cho SKU chuyên nghiệp
-
-#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(tên cũ)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
-
-Ghi lại thông tin về trạng thái kích hoạt của Ứng dụng.  Dữ liệu được giám sát để đảm bảo rằng chúng tôi có xác định lưu trữ tạm văn bản theo nhóm trong các sự cố về kích hoạt. Chúng tôi cũng phân tích dữ liệu để tìm khu vực cải thiện.
-
-Các trường sau đây sẽ được thu thập: 
-
-- **INSTALL_LOCATION** - Cho biết liệu ứng dụng được cài đặt sẵn hay tải xuống từ Cửa hàng
-
-#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(tên cũ)*, Office.OneNote.Android.ResetStatus
-
-Tín hiệu dùng để ghi lại mọi sự cố gặp phải khi người dùng cố gắng đặt lại Ứng dụng.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra trong quá trình đặt lại. 
-
-Các trường sau đây sẽ được thu thập: 
-
-- **Tài khoản** - Cho biết loại nếu tài khoản dùng để đăng nhập vào Ứng dụng
-
-- **Loại Chuỗi Chung** - Trả về nếu đó là đặt lại toàn bộ của đặt lại notes_light_data
-
-- **LaunchPoint** - Điểm mà Đặt lại được khởi tạo. Các giá trị khả thi: Nút đăng xuất, Đăng xuất thất bại, Đã kích hoạt Intune
-
-- **Pass** - Cho biết có Đặt lại có thành công hay không
-
-#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInCompleted
-
-Tín hiệu quan trọng dùng để đảm bảo đăng nhập có thành công hay không. Phép đo từ xa được thu thập để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote.
-
-Các trường sau đây sẽ được thu thập: 
-
-- **CompletionState** - Trạng thái cuối cùng của đăng nhập - Đã thành công hoặc thất bại. Và các trường hợp lỗi
-
-- **EntryPoint** - Cho biết nơi Đăng nhập được khởi tạo
-
-- **Hresult** - Mã lỗi
-
-- **ID Gói Nhà cung cấp** - Trong trường hợp đăng nhập tự động
-
-- **Result** - Thành công, Thất bại, Không xác định, Đã hủy
-
-- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ 
-
-- **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
-
-#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(tên cũ)*, Office.OneNote.Android.SignIn.SignInStarted
-
-Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
-
-Các trường sau đây sẽ được thu thập: 
-
-- **EntryPoint** - Cho biết nơi Đăng nhập được khởi tạo
-
-- **Result** - Kết quả của tiến trình đăng nhập
-
-- **ServerType** - Trả về loại của máy chủ cung cấp dịch vụ 
-
-- **SignInMode** - Đăng nhập hoặc Đăng ký hoặc Đăng nhập tự động hoặc Đăng ký gia tốc
-
 
 ### <a name="office-add-in-configuration-subtype"></a>*Loại con cấu hình phần bổ trợ Office*
 
@@ -1827,6 +1845,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **conversation_type** – Cho chúng tôi biết loại dạng xem email nào đã được kết xuất, chẳng hạn như dạng xem thư đơn hay dạng xem nhiều thư. Giúp chúng tôi phát hiện các sự cố liên quan đến một loại thư cụ thể trong dạng xem trò chuyện email của chúng tôi.
 
+- **hx_error_type** - cho chúng tôi biết lỗi nào đã xảy ra đã ngăn dịch vụ hoàn tất việc xoá, cập nhật, hoặc thêm tương tác vào tin nhắn.
+
+- **hx_string_tag** - cho chúng tôi biết thẻ của lỗi trong cơ sở mã của dịch vụ
+
 - **reaction_origin** – Cho chúng tôi biết nguồn gốc phản ứng của người dùng 
 
 - **reaction_type** – Cho chúng tôi biết loại phản ứng của người dùng
@@ -2445,7 +2467,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **attachment_download_time** – thời gian cho hành động tải xuống tệp đính kèm
 
-- **attachment_extn** – phần mở rộng tệp của tệp đính kèm đã tải xuống
+- **attachment_extn** - phần mở rộng tệp của tệp đính kèm đã tải xuống *[Trường này đã bị loại bỏ khỏi bản dựng Office hiện tại nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **attachment_id** – mã định danh hệ thống cho tệp đính kèm đã tải xuống 
 
@@ -2459,7 +2481,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **event_mode** – hành động thuộc loại chế độ sự kiện nào, nhóm hay một số khác. 
 
-- **Extension** – phần mở rộng tệp của liên kết hoặc tệp đính kèm liên kết với hành động này 
+- **Phần mở rộng** - Bốn ký tự của phần mở rộng tệp liên kết hoặc tệp đính kèm liên kết với hành động này  *[Trường này đã bị loại bỏ khỏi bản dựng Office hiện tại nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **internet_message_id** – theo dõi ID thư
 
@@ -2475,11 +2497,13 @@ Các trường sau đây sẽ được thu thập:
 
 - **message_id** – ID thư máy chủ được nhắm mục tiêu cho hành động hoặc danh sách được phân tách bằng dấu phẩy, nếu có nhiều mục đang hoạt động.
 
-- **message_type** – cho biết loại nhập thư mà hành động được thực hiện ** – nhóm hoặc khác
+- **message_type** - cho biết loại nhập thư mà hành động được thực hiện ** - nhóm hoặc khác
 
 - **number_selected** – số lượng mặt hàng người dùng đã chọn trong danh sách thư, rồi thực hiện hành động trong nhiều chế độ lựa chọn.
 
 - **origin** - nguồn của hành động, ví dụ: trượt nhanh ô, truy vấn bằng không, liên kết sâu, dạng xem email, danh sách email, v.v.
+
+- **origin_view** - dạng xem nguồn của hành động, ví dụ: cuộc hội thoại, thông báo v.v.
 
 - **reported_to_msft** – sau khi gửi email tới thư rác (spam) hoặc thùng rác (lừa đảo qua mạng), họ có thể chọn báo cáo hành động của họ với Microsoft.
 
@@ -2494,6 +2518,8 @@ Các trường sau đây sẽ được thu thập:
 - **source_folder** – theo dõi loại thư mục nguồn khi hành động được chỉ định di chuyển từ một thư mục sang thư mục khác, tức là: đến hộp thư đến, thùng rác v.v 
 
 - **source_inbox** – cho biết hộp thư đến nào đang diễn ra hành động thư (tức là ưu tiên, khác, v.v) trạng thái – trạng thái của hành động, tức là thành công hay điểm thất bại
+
+- **state** - trạng thái của hành động, nghĩa là thành công hoặc thất bại
 
 - **target_folder** – cho biết loại thư mục đích khi di chuyển email từ một thư mục sang thư mục khác
 
@@ -2697,6 +2723,33 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DownloadSuccess** - Cờ Boolean cho biết Tệp mở rộng APK tải xuống cố thành công hay không bất cứ khi nào chúng tôi cố gắng tải xuống khi ứng dụng khởi động.
 
+#### <a name="officeandroidearlytelemetrynotecreated"></a>Office.Android.EarlyTelemetry.NoteCreated
+
+Dấu hiệu quan trọng được sử dụng để giám sát khả năng tạo ghi chú trong ứng dụng của người dùng Sticky Notes. Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể tạo trang, điều này sẽ gây ra sự cố nghiêm trọng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **IsExportable** - Cờ cho biết liệu sự kiện này xảy ra do hành động của người dùng hay không. Nên được đặt là True vì NoteCreated là hành động được kích hoạt bởi người dùng.
+
+- **NoteLocalId** - Xác định mã định danh duy nhất được gán cho chú thích ở thời điểm người dùng tạo ghi chú trong ứng dụng.
+
+- **StickyNotes-SDKVersion** - Số phiên bản cho biết phiên bản Sticky Notes người dùng đang sử dụng. Cho phép chúng tôi xác định phiên bản nào của sản phẩm đang hiển thị sự cố để chúng tôi có thể ưu tiên chính xác.
+
+
+#### <a name="officeandroidearlytelemetrynoteviewed"></a>Office.Android.EarlyTelemetry.NoteViewed 
+
+Dấu hiệu quan trọng được sử dụng để giám sát khả năng xem ghi chú trong ứng dụng của người dùng Sticky Notes. Phép đo từ xa được sử dụng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote. Nếu người dùng không thể xem sổ tay, điều này sẽ gây ra sự cố có mức độ nghiêm trọng cao.
+
+Các trường sau đây sẽ được thu thập:
+
+- **HasImages** - Cờ cho biết liệu ghi chú đã xem có hình ảnh được lưu trữ trong đó hay không.
+
+- **IsExportable** - Cờ cho biết liệu sự kiện này xảy ra do hành động của người dùng hay không. Nên được đặt là True vì NoteViewed là hành động được kích hoạt bởi người dùng.
+
+- **NoteLocalId** - Mã định danh duy nhất có thể phân biệt được gán cho chú thích tại thời điểm người dùng tạo ghi chú trong ứng dụng.
+
+- **StickyNotes-SDKVersion** - Số phiên bản cho biết phiên bản Sticky Notes người dùng đang sử dụng. Cho phép chúng tôi xác định phiên bản nào của sản phẩm đang hiển thị sự cố để chúng tôi có thể ưu tiên chính xác.
+
 
 #### <a name="officeandroidintuneintunecompliancerequest"></a>Office.Android.Intune.IntuneComplianceRequest
 
@@ -2790,14 +2843,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **UserDecision** - Cho biết lựa chọn mà người dùng thực hiện như đăng nhập hoặc đăng ký hoặc đăng nhập sau.
 
-#### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
-
-Được tạo khi khởi động máy khách khi người dùng cuối đã kích hoạt Bảng điều khiển Đo từ xa cho Office.  Nó thu thập thông tin về thời điểm Tác nhân Đo từ xa cho Office đã tải dữ liệu lên thư mục chia sẻ. Mục đích sử dụng chính của sự kiện này là để theo dõi sức khỏe Tác nhân Đo từ xa cho Office và mục đích sử dụng thứ hai của sự kiện này là để ước tính việc sử dụng Bảng điều khiển Đo từ xa cho Office.
-
-Các trường sau đây sẽ được thu thập:
-
-- **UploadTime** - Dấu thời gian của lần tải lên thành công cuối cùng được thực hiện bởi Tác nhân Đo từ xa.
-
 
 #### <a name="officeappcompatappcompatagentscanandupload"></a>Office.AppCompat.AppCompat.AgentScanAndUpload
 
@@ -2810,6 +2855,15 @@ Các trường sau đây sẽ được thu thập:
   - **Data.AgentScan** - Dấu thời gian khi Tác nhân đo từ xa hoàn thành việc quét thành công
 
   - **Data.AgentUpload** - Dấu thời gian khi Tác nhân đo từ xa hoàn thành việc tải lên thành công
+
+#### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
+
+Được tạo khi khởi động máy khách khi người dùng cuối đã kích hoạt Bảng điều khiển Đo từ xa cho Office.  Nó thu thập thông tin về thời điểm Tác nhân Đo từ xa cho Office đã tải dữ liệu lên thư mục chia sẻ. Mục đích sử dụng chính của sự kiện này là để theo dõi sức khỏe Tác nhân Đo từ xa cho Office và mục đích sử dụng thứ hai của sự kiện này là để ước tính việc sử dụng Bảng điều khiển Đo từ xa cho Office.
+
+Các trường sau đây sẽ được thu thập:
+
+- **UploadTime** - Dấu thời gian của lần tải lên thành công cuối cùng được thực hiện bởi Tác nhân Đo từ xa.
+
 
 #### <a name="officeappcompatappcompattelemetrydashboardresiliencycrashlog"></a>Office.AppCompat.AppCompat.TelemetryDashboardResiliencyCrashLog
 
@@ -2845,7 +2899,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Doc_FqdnHash** - Một GUID duy nhất xác định tên máy chủ lưu trữ.
 
-- **Data_Doc_IdentityTelemetryId** – Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện thao tác mở..
+- **Data_Doc_IdentityTelemetryId** - Hàm băm một chiều của danh tính người dùng được sử dụng để thực hiện mở.
 
 - **Data_Doc_InitializationScenario** - Một liệt kê cho biết kiểu kịch bản chi tiết của thao tác mở tệp.
 
@@ -2936,6 +2990,118 @@ Các trường sau đây sẽ được thu thập:
 - **Data_UnpackLinkHint** – Liệt kê đại diện cho hành động người dùng tiềm ẩn dựa trên liên kết giải nén.
 
 - **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
+
+#### <a name="officeappleactivateperpetual"></a>Office.Apple.ActivatePerpetual
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để theo dõi trạng thái của dòng kích hoạt vĩnh viễn cũng như việc điều tra các nguyên nhân gây ra lỗi bằng cách xem xét các giá trị FailedAt.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_FailedAt** - Chúng tôi thu thập một chuỗi đại diện cho vị trí trong dòng giấy phép kích hoạt vĩnh viễn mà chúng tôi đã không thành công.
+
+#### <a name="officeappleactivatesubscription"></a>Office.Apple.ActivateSubscription
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập thông tin liên quan đến việc di chuyển từ ngăn xếp mã cấp phép kế thừa sang mã cấp phép vNext. Điều này được sử dụng để theo dõi trạng thái của luồng kích hoạt đăng ký cũng như theo dõi xem nếu đây là sự di chuyển sang cấp phép vNext và nếu danh tính chính được sử dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ActivatingPrimaryIdentity** - Giá trị true/false biểu thị nếu danh tính chính được sử dụng. 
+
+- **Data_NULSubscriptionLicensed** - Giá trị true/false biểu thị trạng thái gói đăng ký
+
+#### <a name="officeapplecisauthticketwithidentity"></a>Office.Apple.CISAuthTicketWithIdentity
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để thu thập sự cố lỗi trên mã thông báo xác thực trong quá trình InAppPurchase trên máy Mac (sự kiện ghi lại mã lỗi đã nhận được).  Sự kiện này được sử dụng để phát hiện và giúp khắc phục sự cố hỏng mã thông báo
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EmptyAuthToken** - Chúng tôi thu thập một chuỗi đại diện cho vị trí trong dòng giấy phép kích hoạt vĩnh viễn mà chúng tôi đã không thành công.
+
+- **Data_TicketAuthError** - Mã lỗi cho biết nguyên nhân gây ra lỗi
+
+- **Data_ValidIdentity** - Liệu máy khách có nhận dạng hợp lệ hay không
+
+#### <a name="officeappleinappassociationactivity"></a>Office.Apple.InAppAssociationActivity
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập thông tin liên quan đến liên kết sản phẩm sau khi mua trong ứng dụng. Chúng tôi ghi nhật ký SKU đăng ký mà chúng tôi đang liên kết.  Điều này được sử dụng để theo dõi trạng thái của các liên kết sản phẩm mua hàng trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ProductID** - SKU đăng ký mà chúng tôi đang cố gắng liên kết sản phẩm.
+
+#### <a name="officeappleinapppurchaseactivity"></a>Office.Apple.InAppPurchaseActivity
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. 
+
+Chúng tôi thu thập thông tin liên quan đến các giao dịch mua sản phẩm trên AppStore. Chúng tôi theo dõi kết quả của giao dịch mua hàng (Thất bại, thành công, vấn đề thanh toán, v.v.), loại yêu cầu mua hàng (khôi phục, mua hàng) và SKU/sản phẩm được mua (Microsoft 365 Family, v.v.).  Dữ liệu này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ Data_PurchaseResult** - Kết quả của thao tác mua hàng
+
+- **Data_ProductID** - Sản phẩm được mua
+
+- **Data_PurchaseRequestType** - Loại yêu cầu mua hàng
+
+#### <a name="officeappleintune"></a>Office.Apple.InTune
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập xem phiên hiện tại có được quản lý bởi Intune hay không. Điều này được sử dụng cho pivot/bộ lọc trên các phiên được Intune quản lý và cho phép chúng tôi điều tra các vấn đề tiềm ẩn liên quan đến Office đang được chạy dưới dạng một ứng dụng do Intune quản lý.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EventID** - Chúng tôi thu thập chuỗi đại diện cho mã cho biết xem liệu phiên này có được quản lý hay không.
+
+#### <a name="officeapplelicensingmaclicensingstate"></a>Office.Apple.Licensing.Mac.LicensingState
+
+Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại trạng thái hiện tại của giấy phép cho một phiên trong máy (ID giấy phép OLS, SKU đang được sử dụng, có thời gian gia hạn hay không, RFM, v.v.). Dữ liệu thu thập được sử dụng để phát hiện lỗi và điều tra nguyên nhân gây ra lỗi. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_DidRunPreview** - Chuỗi cho biết nếu phiên này được chạy dưới chế độ xem trước
+
+- **Data_LicensingACID** - Chuỗi đại diện cho mã định danh nội bộ của hệ thống cấp phép
+
+- **Data_LicensingType** - Chuỗi đại diện cho loại giấy phép
+
+- **Data_OLSLicenseId** - Chuỗi đại diện cho mã định danh giấy phép
+
+- **Data_State** - Chuỗi đại diện cho trạng thái hiện tại của giấy phép
+
+#### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
+
+Cho phép chúng tôi biết xem việc kết nối với thiết bị hoặc ứng dụng đã thành công hay chưa.  Sử dụng để giám sát và biết về trạng thái tính năng. Sự kiện này được tạo bởi Microsoft Data Streamer cho phần bổ trợ Excel.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Datasource_Type** - Sê-ri của thiết bị hoặc thông tin Dịch vụ ứng dụng
+
+- **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
+
+- **Activity_Name** = Tên của hoạt động "Kết_nối_thiết_bị"
+
+- **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
+
+- **Activity_StartStopType** = Bắt đầu
+
+- **Activity_DateTimeTicks** = Dữ liệu về thời gian cho hoạt động
+ 
+#### <a name="officeconnectdeviceactivitystop"></a>Office.ConnectDevice.Activity.Stop
+
+Cho phép chúng tôi biết xem việc kết nối với thiết bị hoặc ứng dụng đã thành công hay chưa. Được sử dụng để giám sát và biết về trạng thái tính năng. Sự kiện này được tạo bởi Microsoft Data Streamer cho phần bổ trợ Excel.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Datasource_Type** - Sê-ri của thiết bị hoặc thông tin Dịch vụ ứng dụng
+
+- **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
+
+- **Activity_Name** - Tên của hoạt động "Kết_nối_thiết_bị"
+
+- **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
+
+- **Activity_StartStopType** - Stop
+
+- **Activity_DateTimeTicks** = Dữ liệu về thời gian cho hoạt động
 
 #### <a name="officedocsappdocsoperationopenfrommrubypath"></a>Office.Docs.AppDocs.OperationOpenFromMruByPath
 
@@ -3612,117 +3778,6 @@ Các trường sau đây sẽ được thu thập:
 - **Data_UnpackLinkPromptResult** – Liệt kê đại diện cho phản hồi giải nén lời nhắc liên kết.
 
 
-#### <a name="officeappleactivateperpetual"></a>Office.Apple.ActivatePerpetual
-
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để theo dõi trạng thái của dòng kích hoạt vĩnh viễn cũng như việc điều tra các nguyên nhân gây ra lỗi bằng cách xem xét các giá trị FailedAt.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_FailedAt** - Chúng tôi thu thập một chuỗi đại diện cho vị trí trong dòng giấy phép kích hoạt vĩnh viễn mà chúng tôi đã không thành công.
-
-#### <a name="officeappleactivatesubscription"></a>Office.Apple.ActivateSubscription
-
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập thông tin liên quan đến việc di chuyển từ ngăn xếp mã cấp phép kế thừa sang mã cấp phép vNext. Điều này được sử dụng để theo dõi trạng thái của luồng kích hoạt đăng ký cũng như theo dõi xem nếu đây là sự di chuyển sang cấp phép vNext và nếu danh tính chính được sử dụng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_ActivatingPrimaryIdentity** - Giá trị true/false biểu thị nếu danh tính chính được sử dụng. 
-
-- **Data_NULSubscriptionLicensed** - Giá trị true/false biểu thị trạng thái gói đăng ký
-
-#### <a name="officeapplecisauthticketwithidentity"></a>Office.Apple.CISAuthTicketWithIdentity
-
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để thu thập sự cố lỗi trên mã thông báo xác thực trong quá trình InAppPurchase trên máy Mac (sự kiện ghi lại mã lỗi đã nhận được).  Sự kiện này được sử dụng để phát hiện và giúp khắc phục sự cố hỏng mã thông báo
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_EmptyAuthToken** - Chúng tôi thu thập một chuỗi đại diện cho vị trí trong dòng giấy phép kích hoạt vĩnh viễn mà chúng tôi đã không thành công.
-
-- **Data_TicketAuthError** - Mã lỗi cho biết nguyên nhân gây ra lỗi
-
-- **Data_ValidIdentity** - Liệu máy khách có nhận dạng hợp lệ hay không
-
-#### <a name="officeappleinappassociationactivity"></a>Office.Apple.InAppAssociationActivity
-
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập thông tin liên quan đến liên kết sản phẩm sau khi mua trong ứng dụng. Chúng tôi ghi nhật ký SKU đăng ký mà chúng tôi đang liên kết.  Điều này được sử dụng để theo dõi trạng thái của các liên kết sản phẩm mua hàng trong ứng dụng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_ProductID** - SKU đăng ký mà chúng tôi đang cố gắng liên kết sản phẩm.
-
-#### <a name="officeappleinapppurchaseactivity"></a>Office.Apple.InAppPurchaseActivity
-
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. 
-
-Chúng tôi thu thập thông tin liên quan đến các giao dịch mua sản phẩm trên AppStore. Chúng tôi theo dõi kết quả của giao dịch mua hàng (Thất bại, thành công, vấn đề thanh toán, v.v.), loại yêu cầu mua hàng (khôi phục, mua hàng) và SKU/sản phẩm được mua (Microsoft 365 Family, v.v.).  Dữ liệu này được sử dụng để theo dõi trạng thái của dòng mua hàng trong ứng dụng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_ Data_PurchaseResult** - Kết quả của thao tác mua hàng
-
-- **Data_ProductID** - Sản phẩm được mua
-
-- **Data_PurchaseRequestType** - Loại yêu cầu mua hàng
-
-#### <a name="officeappleintune"></a>Office.Apple.InTune
-
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Chúng tôi thu thập xem phiên hiện tại có được quản lý bởi Intune hay không. Điều này được sử dụng cho pivot/bộ lọc trên các phiên được Intune quản lý và cho phép chúng tôi điều tra các vấn đề tiềm ẩn liên quan đến Office đang được chạy dưới dạng một ứng dụng do Intune quản lý.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_EventID** - Chúng tôi thu thập chuỗi đại diện cho mã cho biết xem liệu phiên này có được quản lý hay không.
-
-#### <a name="officeapplelicensingmaclicensingstate"></a>Office.Apple.Licensing.Mac.LicensingState
-
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại trạng thái hiện tại của giấy phép cho một phiên trong máy (ID giấy phép OLS, SKU đang được sử dụng, có thời gian gia hạn hay không, RFM, v.v.). Dữ liệu thu thập được sử dụng để phát hiện lỗi và điều tra nguyên nhân gây ra lỗi. 
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_DidRunPreview** - Chuỗi cho biết nếu phiên này được chạy dưới chế độ xem trước
-
-- **Data_LicensingACID** - Chuỗi đại diện cho mã định danh nội bộ của hệ thống cấp phép
-
-- **Data_LicensingType** - Chuỗi đại diện cho loại giấy phép
-
-- **Data_OLSLicenseId** - Chuỗi đại diện cho mã định danh giấy phép
-
-- **Data_State** - Chuỗi đại diện cho trạng thái hiện tại của giấy phép
-
-#### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
-
-Cho phép chúng tôi biết xem việc kết nối với thiết bị hoặc ứng dụng đã thành công hay chưa.  Sử dụng để giám sát và biết về trạng thái tính năng. Sự kiện này được tạo bởi Microsoft Data Streamer cho phần bổ trợ Excel.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Datasource_Type** - Sê-ri của thiết bị hoặc thông tin Dịch vụ ứng dụng
-
-- **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
-
-- **Activity_Name** = Tên của hoạt động "Kết_nối_thiết_bị"
-
-- **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
-
-- **Activity_StartStopType** = Bắt đầu
-
-- **Activity_DateTimeTicks** = Dữ liệu về thời gian cho hoạt động
- 
-#### <a name="officeconnectdeviceactivitystop"></a>Office.ConnectDevice.Activity.Stop
-
-Cho phép chúng tôi biết xem việc kết nối với thiết bị hoặc ứng dụng đã thành công hay chưa. Được sử dụng để giám sát và biết về trạng thái tính năng. Sự kiện này được tạo bởi Microsoft Data Streamer cho phần bổ trợ Excel.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Datasource_Type** - Sê-ri của thiết bị hoặc thông tin Dịch vụ ứng dụng
-
-- **DataSource_Name** - Tên của nguồn dữ liệu được kết nối
-
-- **Activity_Name** - Tên của hoạt động "Kết_nối_thiết_bị"
-
-- **Activity_CV** = ID để kết hợp các sự kiện trong phiên kết nối
-
-- **Activity_StartStopType** - Stop
-
-- **Activity_DateTimeTicks** = Dữ liệu về thời gian cho hoạt động
 
 #### <a name="officedocsappledocsuxiossaveasthroughfilemenu"></a>Office.Docs.Apple.DocsUXiOSSaveAsThroughFileMenu 
 
@@ -3949,6 +4004,31 @@ Các trường sau đây sẽ được thu thập:
 - **Data_SaveLocation** - Việc phân mục trừu tượng vị trí của một tệp như "SharePoint", "OneDrive", "Local", "WOPI", v.v, và hiển nhiên không phải là vị trí thực của tệp.
 
 - **Data_SaveOperationType** - Giá trị số do nhóm các giá trị Loại_thao_tác_lưu_NS của Apple xác định.
+
+
+#### <a name="officedocsuipaywallcontrolpresigninfre"></a>Office.DocsUI.PaywallControl.PreSignInFRE
+ 
+Đây là mức sử dụng quan trọng đối với việc bán hàng gia tăng trong Trải nghiệm Chạy thử lần đầu tiên cho người dùng chưa đăng ký. Sự kiện này đã ghi lại các số liệu đăng nhập lần đầu tiên. Dữ liệu sẽ được sử dụng để suy ra thông tin chuyên sâu về thời điểm trước khi đăng nhập và hiểu xem người dùng đang tiếp tục vào giai đoạn tiếp theo trong dòng người dùng.
+ 
+Các trường sau đây sẽ được thu thập: 
+
+- **EventDate** - Dấu thời gian xảy ra sự kiện  
+
+- **FunnelPoint** - Bộ liệt kê cho biết vị trí mà người dùng đang sử dụng trong các kênh thử nghiệm này. Bộ liệt kê sẽ thông báo nếu người dùng nhìn thấy cách xử lý và thả xuống hay không.
+
+- **SessionID** - Mã nhận dạng duy nhất toàn cầu để kết nối các sự kiện theo phiên
+
+
+#### <a name="officedocsuipaywallcontroluserimageclicked"></a>Office.DocsUI.PaywallControl.UserImageClicked 
+ 
+Sự kiện này sẽ đo từ xa để xem liệu người dùng đang tìm cách hoàn tất một hành động bằng cách bấm vào ảnh đại diện người dùng. Dữ liệu này sẽ được sử dụng để đo lường số người dùng tương tác với biểu tượng ảnh đại diện để đánh giá nhu cầu cho trải nghiệm theo dõi sau khi nhấn vào.
+ 
+Các trường sau đây sẽ được thu thập: 
+
+- **EventDate** - Dấu thời gian xảy ra sự kiện  
+
+- **SessionID** - Mã nhận dạng duy nhất toàn cầu để kết nối các sự kiện theo phiên 
+
 
 #### <a name="officedocsuisharinguicloudupsellshown"></a>Office.DocsUI.SharingUI.CloudUpsellShown 
 
@@ -5612,7 +5692,7 @@ Các trường sau đây sẽ được thu thập:
 - **Doc_RenderDurationms** - Thời gian để kiết xuất tệp pdf
 
 
-#### <a name="officeofficemobilepdfviewerpdffileoperations"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations
+#### <a name="officeofficemobilepdfviewerpdffileoperations-on-android"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations (trên Android)
 
 Sự kiện được thu thập cho ứng dụng Office dành cho Android. Ghi lại thời điểm thao tác mở, đóng hoặc lưu một tệp .pdf được thực hiện và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin tháo tác của tệp .pdf. Sự kiện giúp chúng tôi hỗ trợ thao tác mở, đóng và lưu tệp .pdf diễn ra như mong đợi và cải thiện hiệu suất của thao tác tệp .pdf.
 
@@ -5652,7 +5732,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_Type** - Kiểu thao tác tệp (mở, đóng hoặc lưu) 
 
-#### <a name="officeofficemobilepdfviewerpdffileoperations"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations
+#### <a name="officeofficemobilepdfviewerpdffileoperations-on-ios"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations (trên iOS)
 
 Sự kiện được thu thập cho ứng dụng Office dành cho iOS. Ghi lại thời điểm thao tác mở, đóng hoặc lưu một tệp .pdf được thực hiện và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin tháo tác của tệp .pdf. Sự kiện giúp chúng tôi hỗ trợ thao tác mở, đóng và lưu tệp .pdf diễn ra như mong đợi và cải thiện hiệu suất của thao tác tệp .pdf. 
 
@@ -5687,7 +5767,9 @@ Sự kiện được thu thập cho ứng dụng Office dành cho iOS. Ghi lại
 - **Data_Type** - Kiểu thao tác tệp (mở, đóng hoặc lưu)
 
 
-#### <a name="officeonenoteandroidappnavigationnavigationuistatechanged-onenoteappnavigationnavigationuistatechanged-previous-name"></a>Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(tên cũ)*
+#### <a name="officeonenoteandroidappnavigationnavigationuistatechanged"></a>Office.OneNote.Android.App.Navigation.NavigationUIStateChanged
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.App.Navigation.NavigationUIStateChanged.]*
 
 Sự kiện này thu thập tín hiệu quan trọng dùng để đảm bảo người dùng OneNote có thể dẫn hướng thành công qua ứng dụng.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
@@ -5699,7 +5781,31 @@ Các trường sau đây sẽ được thu thập:
 
 - **OLD_STATE** - Cho biết trạng thái của các ứng dụng ngay trước khi dẫn hướng
 
-#### <a name="officeonenoteandroidlenssdkofficelenslaunched-onenotelenssdkofficelenslaunched-previous-name"></a>Office.OneNote.Android.LensSDK.OfficeLensLaunched, OneNote.LensSDK.OfficeLensLaunched *(tên cũ)*
+#### <a name="officeonenoteandroidcanvaspageopened"></a>Office.OneNote.Android.Canvas.PageOpened
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.Canvas.PageOpened.]*
+
+Tín hiệu dùng để ghi lại khi mở một Trang.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra khi mở một Trang trong OneNote
+
+Các trường sau đây sẽ được thu thập: 
+
+- **JOT_ID** - đối tượng của trang đã mở
+
+- **TIME_TAKEN_IN_MS** - lượng thời gian cho việc mở trang
+
+#### <a name="officeonenoteandroidcapturenewnotenewnotetaken"></a>Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.Capture.NewNote.NewNoteTaken.]*
+
+Tín hiệu này được đùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng Android OneNote, sổ tay được cung cấp đúng cách và người dùng đã tạo ghi chú mới thành công.  Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
+#### <a name="officeonenoteandroidlenssdkofficelenslaunched"></a>Office.OneNote.Android.LensSDK.OfficeLensLaunched
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.LensSDK.OfficeLensLaunched.]*
 
 Sự kiện này thu thập những tín hiệu quan trọng dùng để đảm bảo OfficeLens sẽ khởi động đúng cách.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
@@ -5713,6 +5819,17 @@ Các trường sau đây sẽ được thu thập:
 
 - **LAUNCH_REASON** - Cho biết dòng khởi động OfficeLens. Dòng đó có thể nằm trên màn hình khóa hoặc thông qua các tùy chọn Camera hoặc Bộ sưu tập trong StickyNotes hoặc OneNote Canvas, v.v.
 
+#### <a name="officeonenoteandroidmessagebarmessagebarclicked"></a>Office.OneNote.Android.MessageBar.MessageBarClicked
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.MessageBar.MessageBarClicked.]*
+
+Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
+
+Các trường sau đây sẽ được thu thập: 
+
+- **Message_Bar_Type** - Trả về nếu người dùng đang sử dụng thanh thông báo cũ hoặc mới
+
+- **Message_Type** - Trả về ID thông báo lỗi
 
 #### <a name="officeonenoteandroidstickynotesnotecreated"></a>Office.OneNote.Android.StickyNotes.NoteCreated
  
@@ -6576,7 +6693,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau đối với một tài liệu nhất định
 
 - **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
     
@@ -6841,7 +6958,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Mã định danh duy nhất của danh tính được sử dụng cho thao tác Tài liệu dùng chung
 
-- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau cho một tài liệu nhất định
+- **Data_DstDoc_IOFlags:long** - Bitmask cho các cờ liên quan đến IO khác nhau đối với một tài liệu nhất định
 
 - **Data_DstDoc_IrmRights:long** - Tập hợp các giá trị được xác định trước về loại Quản lý Quyền Thông tin được áp dụng trên tài liệu này (Chuyển tiếp, trả lời, SecureReader, Chỉnh sửa, v.v.)
 
@@ -6987,6 +7104,69 @@ Các trường sau đây sẽ được thu thập:
 
 - **SrcDoc** - Vị trí ban đầu của tài liệu (trong trường hợp Lưu dưới dạng)
 
+
+#### <a name="officepowerpointpptiosrehearseview"></a>Office.PowerPoint.PPT.IOS.RehearseView 
+
+Sự kiện này biểu thị người dùng đã ngừng phiên bản thử nghiệm. Dữ liệu được sử dụng kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.  
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **ConnectionCreationTime** thực gian để tạo kết nối bên dịch vụ.
+
+- **CountDownAlertTime** – Thời gian để hiển thị cảnh báo đếm ngược.
+
+- **CountdownInitTime–** Thời gian từ khi hoàn thành tải trình chiếu đến khi bắt đầu đếm ngược.
+
+- **CritiqueSummary**- Tóm tắt về tất cả những phê bình mà người dùng thấy với số lượng của họ.
+
+- **ExitEventCode** – Mã để xác định trường hợp người dùng thoát khỏi phiên duyệt, dù là trường hợp sự cố hay thoát thành công.
+
+- **FRETime** - Thời gian từ khi màn hình trải nghiệm sử dụng lần đầu bắt đầu hiển thị cho đến khi người dùng loại bỏ nó.
+
+- **MicrophonePermissionTime** - Thời gian để hiển thị cảnh báo quyền đối với micrô cho đến khi người dùng chọn một trong các tùy chọn.
+
+- **PauseRehearsingCount** - Đếm số lần người dùng đã bấm vào ngừng thử nghiệm.
+
+- **RehearsalInitTime** - Thời gian diễn tập để khởi tạo.
+
+- **ResumeRehearsingCount** - Đếm số lần người dùng bấm vào tiếp tục thử nghiệm.
+
+- **SessionId** - Đây là ID phiên phát biểu trước cửa.  ID này được sử dụng để gỡ lỗi các bản ghi dịch vụ.
+
+- ding **SlideshowViewLoadTime** – thời gian thực hiện bởi trình chiếu để tải.
+
+
+#### <a name="officepowerpointpptiosrehearseviewrehearsalsummarypage"></a>Office.PowerPoint.PPT.IOS.RehearseView.RehearsalSummaryPage
+
+Sự kiện đã được kích hoạt khi trang tổng hợp hoàn tất việc tải trang. Sự kiện này sẽ giúp chúng tôi nắm được hiệu suất của trang tổng hợp. Sự kiện này cho biết thời lượng trang dịch vụ tổng hợp thử nghiệm tải trên máy khách. Phải đảm bảo tính năng này hiệu quả.  
+
+Các trường sau đây sẽ được thu thập: 
+
+- **PayloadCreationTime** – Đây là thời gian tính bằng mili giây để tạo tải trọng.  
+
+- **PostUrlCallTime** – Đây là thời gian tính bằng mili giây để gửi lệnh gọi URL bài đăng. 
+
+- **RehearseSessionId** - Đây là ID phiên phát biểu trước cửa. Chúng tôi có thể điều này để gỡ lỗi các bản ghi dịch vụ.  
+
+- **SummaryPageErrorReceived** – Đây là giá trị Boolean cho biết liệu trang tóm tắt đã được nhận hay đã xảy ra lỗi.
+
+- **SummaryPageHtmlLoadTime** – Đây là thời gian tính bằng mili giây để tải summarypageHtml. 
+
+- **SummaryPageLoadStartTime** – Đây là thời gian tính bằng mili giây để nhận được phản hồi đầu tiên từ máy chủ. 
+
+- **SummaryPageLoadTime** – Thời gian để tải trang tổng hợp. Thời lượng này bao gồm thời gian tạo tải trọng. 
+
+- **ThumbnailsCount** – Đây là tổng số hình thu nhỏ sẽ là một phần của trang tổng hợp. 
+
+
+#### <a name="officepowerpointpptiosrehearseviewstartsession"></a>Office.PowerPoint.PPT.IOS.RehearseView.StartSession 
+ 
+Sự kiện này được kích hoạt khi người dùng bấm vào phiên bắt đầu. Sự kiện này sẽ giúp chúng tôi nắm được bao nhiêu người dùng đang sử dụng tính năng huấn luyện viên trình bày trên iOS. Khi kết hợp với Office.PowerPoint.PPT.iOS.RehearseView sự kiện này sẽ cho chúng tôi biết số người dùng đã hoàn tất thành công phiên bản thử nghiệm và số người dùng không thể hoàn tất. Đây là chỉ báo đầu tiên về sự cố hoặc lỗi trong tính năng này.
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
+
 #### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
 Được thu thập bất cứ khi nào thao tác xuất PDF hoàn thành và có chứa thông tin về thao tác đã thành công. Thông tin này rất quan trọng nhằm xác định thao tác xuất PDF đã thành công cho ứng dụng của chúng tôi.
@@ -6994,6 +7174,14 @@ Các trường sau đây sẽ được thu thập:
 Các trường sau đây sẽ được thu thập:
 
 - **Data_ExportAsPDFSucceed** - Boolean cho biết thao tác xuất dưới dạng PDF có thành công hay không.
+
+#### <a name="officepowerpointpptsharedrehearseviewrehearseclicked"></a>Office.PowerPoint.PPT.Shared.RehearseView.RehearseClicked
+
+Sự kiện này sẽ ghi lại khi nào RehearseWithCoach được bấm vào.  Sự kiện này được sử dụng để phân tích phễu đã thấy-đã thử-đã giữ của tính năng này. Sự kiện này cùng với sự kiện đã thử và giữ sẽ giúp chúng tôi tìm ra liệu người dùng có bị loại bỏ khỏi phễu này không. Việc này giúp chúng tôi duy trì trạng thái của tính năng này.
+
+Các trường sau đây sẽ được thu thập:
+
+- Không có
 
 
 #### <a name="officepowerpointpptsharedslideshowfailure"></a>Office.PowerPoint.PPT.Shared.SlideShow.Failure
@@ -8245,6 +8433,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ViewKind-** Kiểu dạng xem Word
 
+
+
 #### <a name="onenoteappnavigationratingreminderdialogshown"></a>OneNote.App.Navigation.RatingReminderDialogShown
 
 Các tín hiệu quan trọng dùng để đo lường mức độ hiệu quả của logic kích hoạt lời nhắc Xếp hạng. Hộp thoại này hiển thị khi người dùng đã đáp ứng tất cả các điều kiện để xem lời nhắc xếp hạng (số ngày hoạt động, đã xếp hạng trước đây hay chưa,...). Mục này dùng để đảm bảo logic kích hoạt lời nhắc Xếp hạng. Nếu người dùng đang nhìn thấy hộp thoại này, mục này sẽ cung cấp cho chúng tôi cách nhận phản hồi từ khách hàng vào đúng thời điểm và cải thiện trạng thái ứng dụng.
@@ -8252,34 +8442,6 @@ Các tín hiệu quan trọng dùng để đo lường mức độ hiệu quả 
 Các trường sau đây sẽ được thu thập:
 
 - Không có
-
-#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(tên cũ)*, Office.OneNote.Android.Canvas.PageOpened
-
-Tín hiệu dùng để ghi lại khi mở một Trang.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục bất kỳ sự cố nào xảy ra khi mở một Trang trong OneNote
-
-Các trường sau đây sẽ được thu thập: 
-
-- **JOT_ID** - đối tượng của trang đã mở
-
-- **TIME_TAKEN_IN_MS** - lượng thời gian cho việc mở trang
-
-#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(tên cũ)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
-
-Tín hiệu này được đùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng Android OneNote, sổ tay được cung cấp đúng cách và người dùng đã tạo ghi chú mới thành công.  Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
-
-Các trường sau đây sẽ được thu thập:
-
-- Không có
-
-#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(tên cũ)*, Office.OneNote.Android.MessageBar.MessageBarClicked
-
-Tín hiệu dùng để cho biết bất kỳ sự cố nào gặp phải khi sử dụng Thanh Thông báo.  Phép đo từ xa được dùng để giám sát, phát hiện và khắc phục mọi sự cố xảy ra trong khi tương tác với Thanh Thông báo
-
-Các trường sau đây sẽ được thu thập: 
-
-- **Message_Bar_Type** - Trả về nếu người dùng đang sử dụng thanh thông báo cũ hoặc mới
-
-- **Message_Type** - Trả về ID thông báo lỗi
 
 #### <a name="parselicenseop"></a>ParseLicenseOp
 
@@ -8434,6 +8596,14 @@ Các trường sau đây sẽ được thu thập:
 - **battery_level** - cho chúng tôi biết mức pin trên thiết bị để giúp chúng tôi phát hiện thời điểm ứng dụng của chúng tôi tác động gây hại đến mức pin trên thiết bị của bạn
 
 - **has_hx** - Cho biết tài khoản đang sử dụng dịch vụ đồng bộ mới của chúng tôi để giúp chúng tôi phát hiện các sự cố do dịch vụ đồng bộ
+
+- **Session.Duration** - độ dài của phiên làm việc tính bằng giây
+
+- **Session.DurationBucket** - xô thời lượng *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+- **Session.FirstLaunchTime** - thời điểm ra mắt ứng dụng được ghi nhận đầu tiên *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+- **Session.State** - chỉ báo đây là điểm bắt đầu hay kết thúc của phiên
 
 #### <a name="settingsaction"></a>settings.action
 
@@ -9101,7 +9271,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_SDX\_HostJsVersion -** Đây là phiên bản dành riêng cho nền tảng của Office.js (ví dụ: Outlook web16.01.js) Phần này chứa bề mặt API cho phần bổ trợ.
 
-  - **Data\_SDX\_Id -** GUID của phần bổ trợ duy nhất xác định nó 
+  - **Data\_SDX\_Id -** GUID của phần bổ trợ duy nhất xác định nó
 
   - **Data\_SDX\_InstanceId -** Thể hiện cặp tài liệu Phần bổ trợ
 
@@ -9189,7 +9359,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **IsFRELoadSuccessful** - số nguyên biểu thị trạng thái kết quả
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+#### <a name="officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.App.AppBootComplete.]*
 
 Tín hiệu quan trọng được sử dụng để đảm bảo người dùng tiêu dùng mới (Tài khoản Microsoft) có thể khởi động thành công và sử dụng OneNote lần đầu tiên.  Tín hiệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.  Nếu người dùng không thể khởi chạy ứng dụng trong lần đầu, điều này sẽ gây ra sự cố ở mức độ nghiêm trọng cao.
 
@@ -9292,13 +9464,19 @@ nào đã hiển thị trong thời gian khởi động hay không
  
 - **USER_INTERACTED_DURING_EVENT** - Cho biết liệu người dùng có tương tác trong quá trình khởi động hay không
 
-#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(tên cũ)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+#### <a name="officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.App.OneNoteAppForeground.]*
 
 Tín hiệu dùng để cho biết Ứng dụng OneNote nằm trong nền trước.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
-Các trường sau đây sẽ được thu thập: Không có
+Các trường sau đây sẽ được thu thập: 
 
-#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(tên cũ)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+- Không có
+
+#### <a name="officeonenoteandroidapplaunch-officeandroidearlytelemetryapplaunch"></a>Office.OneNote.Android.AppLaunch, Office.Android.EarlyTelemetry.AppLaunch
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.AppLaunch.]*
 
 Sau đó, tín hiệu quan trọng được sử dụng để đảm bảo người dùng OneNote có thể khởi chạy ứng dụng thành công.  Phép đo từ xa được dùng để đảm bảo phát hiện hồi quy quan trọng cho sức khỏe của ứng dụng và dịch vụ OneNote. 
 
@@ -9449,7 +9627,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_ResourceIdHash:string -** Hàm băm của mã định danh nguồn cho các tài liệu được lưu trữ trên đám mây
 
-  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
+  - **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId:string -** Mã định biến không thể thay đổi cho các tài liệu được lưu trữ trên đám mây 
 
@@ -9812,7 +9990,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **OfficeProcessSessionStart** gửi thông tin cơ bản khi bắt đầu một phiên Office mới. Điều này được sử dụng để đếm số phiên duy nhất được thấy trên một thiết bị nhất định. Điều này được sử dụng như một sự kiện thông báo hoạt động để đảm bảo rằng ứng dụng có chạy trên thiết bị hay không. Ngoài ra, nó đóng vai trò là tín hiệu quan trọng cho độ tin cậy của ứng dụng tổng thể
 
-- **AppSessionGuid** - Mã định danh của một phiên ứng dụng cụ thể bắt đầu tại thời điểm tạo quy trình và tồn tại cho đến khi quy trình kết thúc. Nó được định dạng là GUID 128 bit tiêu chuẩn nhưng được cấu tạo gồm 4 phần. Bốn phần theo thứ tự là (1) ID quy trình 32 bit (2) ID phiên 16 bit (3) ID khởi động 16 bit (4) Thời gian tạo quy trình trong UTC 100ns 64 bit
+- **AppSessionGuid** - Mã định danh của một phiên ứng dụng cụ thể bắt đầu tại thời điểm tạo quy trình và tồn tại cho đến khi quy trình kết thúc. Nó được định dạng là GUID 128 bit tiêu chuẩn nhưng được cấu tạo gồm 4 phần. Bốn phần theo thứ tự là (1) ID quy trình 32-bit (2) ID phiên 16-bit (3) ID khởi động 16 bit (4) Thời gian tạo quy trình trong UTC 100ns 64-bit
 
 - **processSessionId** - GUID được tạo ngẫu nhiên để xác định phiên ứng dụng
 
@@ -10188,7 +10366,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_Doc\_ResourceIdHash -** Mã định danh tài liệu ẩn danh được sử dụng để chẩn đoán sự cố
 
-  - **Data_Doc_RtcType-** Cho biết có bao nhiêu kênh thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
+  - **Data_Doc_RtcType** - Cho biết thời gian thực (RTC) được thiết lập cho tệp hiện tại (Vô hiệu hóa, không được hỗ trợ, theo yêu cầu, luôn được bật, v.v.).
 
   - **Data\_Doc\_ServerDocId -** Mã định danh tài liệu ẩn danh không thể thay đổi được sử dụng để chẩn đoán sự cố
 
@@ -11167,7 +11345,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Tên sự kiện** - Tên sự kiện là Danh mục sự kiện và Nhãn sự kiện.
 
-#### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetry-safebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+#### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetrysafebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry.SafeBootResetCrashCounterOnAppSuspend
 
 Tín hiệu quan trọng sẽ được gửi đến khi chúng tôi đã đặt lại sự cố truy cập vào ứng dụng đình chỉ trước khi hiển thị hộp thoại khởi động an toàn. Đánh dấu này sẽ được yêu cầu để theo dõi và chẩn đoán trạng thái của ứng dụng. Hộp thoại khởi động an toàn được hiển thị khi ứng dụng gặp sự cố nhiều lần liên tục. Ứng dụng này cung cấp cho người dùng tùy chọn đặt lại ứng dụng. Đánh dấu này sẽ giúp bạn tìm hiểu xem hộp thoại Khởi động an toàn không được hiển thị cho một người dùng dù đã nhấn vào tiêu chí kích hoạt. 
 
@@ -11295,6 +11473,21 @@ Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự 
 Các trường sau đây sẽ được thu thập: 
 
 - **time** - Cho chúng tôi biết lượng thời gian cần thiết để cuộc trò chuyện email hoàn tất tải.
+
+#### <a name="conversationreloaded"></a>conversation.reloaded
+
+Sự kiện này cho phép chúng tôi phát hiện chúng tôi thường xuyên tải lại cuộc hội thoại dựa trên thông báo dịch vụ. Chúng tôi cần theo dõi nếu thông báo cập nhật đang quá ồn và cần phải được giảm bớt vì chúng đang giảm đi sự tiện dụng.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **average** - số lượt tải lại chia cho quy mô 
+
+- **client-request-id** – mã định dạng yêu cầu máy khách cho yêu cầu gây ra lỗi
+
+- **date** – dấu ngày của yêu cầu gây ra lỗi
+
+- **duration** - thời gian cuộc trò chuyện đã mở 
+
 
 #### <a name="coredatamigration"></a>core.data.migration
 
@@ -11608,6 +11801,53 @@ Các trường sau đây sẽ được thu thập:
  
 - **view_duration** – thời lượng cấu phần được người dùng xem
 
+#### <a name="messagerenderingintercepted"></a>message.rendering.intercepted
+
+Sự kiện này cho phép chúng tôi theo dõi tần suất người dùng chặn tiến trình kết xuất trước khi hoàn tất. Chúng tôi sử dụng dữ liệu này để phát hiện các sự cố về hiệu suất.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **is_cache** - liệu nội dung thư có được tải xuống từ bộ nhớ đệm hay không
+
+- **is_on_screen** - việc hiển thị quy trình kết xuất đối với người dùng (kết xuất bình thường)
+
+- **is_rendering_complete** - việc hoàn tất quy trình kết xuất 
+
+- **is_trimmed_body** - việc xác định nội dung thư 
+
+- **rendering_method** - phương pháp kết xuất thư
+
+- **rendering_time** - khoảng thời gian kết xuất thư cho đến khi người dùng rời khỏi trang
+
+#### <a name="messagerenderingperformance"></a>message.rendering.performance
+
+Sự kiện này cho phép chúng tôi giám sát hiệu suất của quy trình kết xuất thư, để chúng ta có thể phân tích hiệu suất của các quy trình kết xuất khác nhau và phát hiện các sự cố về hiệu suất. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **bundle_prepare_time** - thời gian chuẩn bị các gói kết xuất
+
+- **full_rendering_time** -thời gian hoàn tất quy trình kết xuất
+
+- **is_cache** - liệu nội dung thư có được tải xuống từ bộ nhớ đệm hay không
+
+- **is_on_screen** - việc hiển thị quy trình kết xuất đối với người dùng (kết xuất bình thường)
+
+- **is_trimmed_body** - việc xác định nội dung thư 
+
+- **load_message_time** - thời gian tải thư từ backend (có thể là 0 nếu thư đã được lưu vào bộ nhớ đệm)
+
+- **native_preprocess_time** - thời gian để xem nội dung toàn bộ quy trình trong phần bản địa 
+
+- **prepare_body_time** -thời gian chuẩn bị sẵn sàng nội dung thư (bao gồm tải và xử lý trước thư)
+
+- **rendering_method** - phương pháp kết xuất thư
+
+- **rendering_time** - thời gian để kết xuất thư theo gói  
+
+- **wait_time** - thời gian để xây dựng URL thư
+
+
 #### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
 Việc ghi lại số liệu hiệu suất ứng dụng đối với thời gian phản hồi của ứng dụng từ khi khởi động là quan trọng.  Microsoft dùng tính năng này để thu thập lượng thời gian cần thiết để ứng dụng có thể phản hồi cũng như phát hiện những kịch bản có thể ảnh hưởng đến thời gian khởi động trong Word, Excel hoặc PowerPoint.
@@ -11908,6 +12148,24 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Last Error** - Một trong năm giá trị chuỗi (bộ liệt kê) để ghi lại giai đoạn của ứng dụng chính sách được thực thi khi xảy ra ngoại lệ
 
+#### <a name="officeonenoteandroidsyncprovisioningcompleted"></a>Office.OneNote.Android.Sync.ProvisioningCompleted
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.Sync.ProvisioningCompleted.]*
+
+Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng. Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
+
+Các trường sau đây sẽ được thu thập: 
+
+- **AppSuspendedDuringEvent** – Trả về Boolean để cho biết liệu ứng dụng có bị tạm ngừng trong quá trình cung cấp hay không
+
+- **NetworkConnection** – Loại kết nối mạng của thiết bị đang sử dụng
+
+- **NetworkDataExchange** – Bản ghi số lượng byte được trao đổi trong quá trình cung cấp.
+
+- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ
+
+- **TimeTakenInMilliSeconds** - Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
+
 #### <a name="officeonenoteandroidsyncprovisioningerror"></a>Office.OneNote.Android.Sync.ProvisioningError
 
 Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng. Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote.
@@ -11926,6 +12184,18 @@ Các trường sau đây sẽ được thu thập:
 
 - **TimeTakenInMilliSeconds**: Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
 
+
+#### <a name="officeonenoteandroidsyncprovisioningstarted"></a>Office.OneNote.Android.Sync.ProvisioningStarted
+
+*[Sự kiện này trước đây đã được đặt tên là OneNote.Sync.ProvisioningStarted.]*
+
+Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng.  Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
+
+Các trường sau đây sẽ được thu thập: 
+
+- **NetworkConnection** – Loại kết nối mạng của thiết bị đang sử dụng
+
+- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ
 
 #### <a name="officeonenotesystembootdialogssafebootdialogpending"></a>Office.OneNote.System.BootDialogs.SafeBootDialogPending 
 
@@ -12052,17 +12322,6 @@ Các trường sau đây sẽ được thu thập:
 - ding **SlideshowViewLoadTime** – thời gian thực hiện bởi trình chiếu để tải.
 
 
-#### <a name="officepowerpointpptandroidrehearseviewerrors"></a>Office.PowerPoint.PPT.Android.RehearseView.Errors
-
-Sự kiện được kích hoạt khi bất kỳ lỗi nào xảy ra. Sự kiện này sẽ giúp chúng tôi biết lỗi người dùng đã gặp phải và đảm bảo Huấn luyện trình bày hiệu quả trên thiết bị di động.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Session id:string** - id phiên bản thử nghiệm
-
-- **RehearsalEventCode:int** - mã lỗi phiên bản thử nghiệm
-
-
 #### <a name="officepowerpointpptandroidrehearseviewrehearsalsummarypage"></a>Office.PowerPoint.PPT.Android.RehearseView.RehearsalSummaryPage 
 
 Sự kiện được kích hoạt khi tải trang tổng hợp. Sự kiện này sẽ giúp chúng tôi nắm được hiệu suất của trang tổng hợp. Sự kiện này cho biết thời lượng trang dịch vụ tổng hợp thử nghiệm tải trên máy khách. Phải đảm bảo tính năng này hiệu quả. 
@@ -12096,6 +12355,20 @@ Sự kiện được kích hoạt khi người dùng bấm vào bắt đầu phi
 Các trường sau đây sẽ được thu thập:
 
  - Không có
+
+
+#### <a name="officepowerpointpptsharedrehearseviewerrors"></a>Office.PowerPoint.PPT.Shared.RehearseView.Errors
+
+*[Sự kiện này trước đây đã được đặt tên là Office.PowerPoint.PPT.Android.RehearseView.Errors]*
+
+Sự kiện được kích hoạt khi bất kỳ lỗi nào xảy ra. Sự kiện này sẽ giúp chúng tôi biết lỗi người dùng đã gặp phải và đảm bảo Huấn luyện trình bày hiệu quả trên thiết bị di động.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Session ID** - id phiên bản thử nghiệm
+
+- **RehearsalEventCode** - mã lỗi phiên bản thử nghiệm
+
 
 #### <a name="officepowerpointrehearsalsessionmetrics"></a>Office.PowerPoint.Rehearsal.SessionMetrics 
 
@@ -12302,32 +12575,6 @@ Các trường sau đây sẽ được thu thập:
 - **DIALOG_ACTION** - Nút hộp thoại người dùng bấm vào - Nút cộng hoặc nút trừ
 
 
-#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningCompleted
-
-Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng. Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
-
-Các trường sau đây sẽ được thu thập: 
-
-- **AppSuspendedDuringEvent** – Trả về Boolean để cho biết liệu ứng dụng có bị tạm ngừng trong quá trình cung cấp hay không
-
-- **NetworkConnection** – Loại kết nối mạng của thiết bị đang sử dụng
-
-- **NetworkDataExchange** – Bản ghi số lượng byte được trao đổi trong quá trình cung cấp.
-
-- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ
-
-- **TimeTakenInMilliSeconds** - Trả về thời gian cần thiết để hoàn tất việc cung cấp tính bằng mili giây
-
-#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(tên cũ)*, Office.OneNote.Android.Sync.ProvisioningStarted
-
-Tín liệu quan trọng được dùng để đảm bảo sau khi người dùng đăng nhập vào Ứng dụng OneNote trong Android, sổ tay được cung cấp đúng cách để bạn có thể truy nhập dễ dàng.  Tín liệu này được dùng để đảm bảo phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote
-
-Các trường sau đây sẽ được thu thập: 
-
-- **NetworkConnection** – Loại kết nối mạng của thiết bị đang sử dụng
-
-- **ServerType** – Trả về loại máy chủ cung cấp dịch vụ
-
 #### <a name="perfevent"></a>perf.event
 
 Được dùng để giám sát tác động tiêu cực có thể có đối với hiệu năng tải các phần khác nhau trong ứng dụng, ví dụ: để đảm bảo hộp thư đến của bạn tải nhanh nhất có thể trong lần đầu tiên bạn mở ứng dụng.
@@ -12336,11 +12583,22 @@ Các trường sau đây sẽ được thu thập:
 
 - **app_start_show_message_list** – điều đó có nghĩa là đã xảy ra sự cố về hiệu năng khi khởi động ứng dụng khiến danh sách tin nhắn trong hộp thư đến của bạn mất nhiều thời gian để tải
 
+- **average** - thu thập số lần tải lại xảy ra trên một cuộc hội thoại chia cho số lượng tin nhắn trong cuộc hội thoại đó.  
+
 - **event_type** – cho chúng tôi biết loại sự kiện hiệu năng gây ra sự cố về hiệu năng để giúp chúng tôi phát hiện ra các sự cố liên quan đến một loại cụ thể.   
 
 - **extra_params** - Nhà phát triển có thể thêm các tham số khác tại đây để giúp cung cấp thêm thông tin chi tiết cho chúng tôi về những điều có thể gây ra sự cố hiệu năng này, ví dụ: hành động này bắt đầu và kết thúc khi nào, v.v. 
 
 - **profiling_summary** - cung cấp thông tin về nhóm tác vụ, số lượng tác vụ và thời gian trung bình các nhóm đó để giúp hiểu rõ hồi quy tiềm tàng trong từng khu vực cụ thể khi tải ứng dụng
+
+- **runtime_performance_monitoring_data** -cung cấp dữ liệu hiệu suất (thời gian tải, số lượng bản ghi) khi tải dữ liệu vào các phần khác nhau của ứng dụng.
+  - **average_cost_time_ns** - Thời gian chi phí trung bình được tính bằng nano giây.
+  - **cost_type** - Cho chúng tôi biết sự kiện này là để đo thời gian thực hiện hoặc tổng dung lượng lưu trữ.
+  - **hx_object_type** - Cung cấp loại đối tượng lập trình cụ thể của phép đo.
+  - **is_main_thread** - Cho chúng tôi biết sự kiện này chỉ có đo thời gian thực hiện chủ đề chính.
+  - **record_count** - Số bản ghi tầng lưu trữ cơ sở được trả về.
+  - **scope** - Cung cấp tên của trang/ thành phần UI mà sự kiện này thuộc về.
+  - **total_cost_time_ns** - Tổng thời gian thực hiện được tính bằng nano giây. 
 
 - **total_time_elapsed** - Cho chúng tôi biết thời lượng sự kiện hiệu năng đã diễn ra để giúp chúng tôi hiểu rõ mức độ nghiêm trọng của sự cố về hiệu năng
 
@@ -12632,7 +12890,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **WordFileCorruptionReason** - Lý do hỏng vì tệp Word có thể gặp sự cố trong quá trình mở
 
-- **WordFileOpenErrorCode** - mã lỗi mở tệp Word cụ thể.
+- **WordFileOpenErrorCode** - Mã lỗi mở tệp Word cụ thể.
 
 - **WordFileTypeFromDod** - Loại tệp được Word xác định dựa trên định dạng tệp thực tế
 
@@ -13547,7 +13805,17 @@ Các trường sau đây sẽ được thu thập:
 
 - **js_exception_source_url** - URL nguồn nơi ngoại lệ JavaScript xảy ra  
 
-- **scenario** - nơi xảy ra lỗi, khi đang kết xuất hay soạn thảo.
+- **scenario** - nơi xảy ra lỗi. Đây là bộ liệt kê. Các giá trị có thể là old_renderer, react_renderer và đang soạn thảo.
+
+#### <a name="wkwebviewterminate"></a>wkwebview.terminate
+
+Sự kiện này cho phép chúng tôi phát hiện thấy khi có dạng xem web đã chấm dứt. Dữ liệu này cho phép chúng tôi giám sát người dùng lỗi gặp phải khi soạn hoặc đọc email. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **is_foreground** - việc ứng dụng có đang ở trong nền trước nơi sự kiện này xảy ra.
+
+- **Scenario** - nơi xảy ra lỗi, khi đang kết xuất hay soạn thảo.
 
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Sự kiện dữ liệu cấu hình và kết nối thiết bị
