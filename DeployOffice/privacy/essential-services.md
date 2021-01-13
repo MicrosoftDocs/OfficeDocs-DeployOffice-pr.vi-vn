@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 03274656b30fe1e30e609ef32aa38947917a23cd
-ms.sourcegitcommit: 954510a42df092730412aa25cd8683f6a629537c
+ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
+ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49685851"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799157"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -117,7 +117,7 @@ Các trường sau đây sẽ được thu thập:
 
 Được thu thập khi người dùng đăng xuất khỏi Office.
 
-Việc biết được rằng người dùng đã đăng xuất giúp phân loại các sự kiện khác, ví dụ: lời nhắc, như ý muốn, vì vậy những sự kiện đó có thể được tính toán chính xác trong các số liệu về độ tin cậy/tính sẵn sàng và ngăn ngừa cảnh báo hoặc quay lại bản dựng dựa trên cơ sở bị lỗi mà người dùng sẽ gặp phải lời nhắc đăng nhập không mong muốn.
+Việc biết được người dùng đã đăng xuất giúp phân loại các sự kiện khác, ví dụ: lời nhắc, như dự kiến, để có thể tính toán chính xác những sự kiện này trong các số liệu về độ tin cậy / khả năng sẵn sàng phát hành và tránh cảnh báo hoặc quay lại bản dựng dựa trên cơ sở lỗi mà người dùng đang gặp phải lời nhắc đăng nhập không mong muốn.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -151,7 +151,7 @@ Các sự kiện này, cùng với các sự kiện không gian tên Office.MATS
 
 3\) Khi xảy ra lỗi, các tín hiệu này phát ra các mã lỗi quan trọng từ cấu phần chịu trách nhiệm (mã máy khách Office, thư viện xác thực hoặc dịch vụ ủy quyền) có thể được sử dụng để phân loại, chẩn đoán và giảm thiểu
 
-4\) Các tín hiệu này cung cấp tính sẵn sàng và trạng thái màn hình khởi chạy cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi chặn người dùng quan trọng
+4\) Các tín hiệu này ảnh hưởng đến khả năng sẵn sàng phát hành và các màn hình trạng thái, tạo ra cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi chặn người dùng quan trọng
 
 Các trường sau đây sẽ được thu thập:
 
@@ -207,7 +207,7 @@ Các sự kiện này, cùng với các sự kiện không gian tên Office.MATS
 
 3\) Khi xảy ra lỗi, các tín hiệu này phát ra các mã lỗi quan trọng từ cấu phần chịu trách nhiệm (mã máy khách Office, thư viện xác thực hoặc dịch vụ ủy quyền) có thể được sử dụng để phân loại, chẩn đoán và giảm thiểu
 
-4\) Các tín hiệu này cung cấp tính sẵn sàng và trạng thái màn hình khởi chạy cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi chặn người dùng quan trọng.
+4\) Các tín hiệu này ảnh hưởng đến khả năng sẵn sàng phát hành và các màn hình trạng thái, tạo ra cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi chặn người dùng quan trọng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -261,7 +261,7 @@ Hệ thống phép đo từ xa xác thực Microsoft (Microsoft Auth Telemetry S
 
 3\) Khi xảy ra lỗi, các tín hiệu này phát ra các mã lỗi quan trọng từ cấu phần chịu trách nhiệm (mã máy khách Office, thư viện xác thực hoặc dịch vụ ủy quyền) có thể được sử dụng để phân loại, chẩn đoán và giảm thiểu
 
-4\) Các tín hiệu này cung cấp tính sẵn sàng và trạng thái màn hình khởi chạy cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
+4\) Các tín hiệu này ảnh hưởng đến khả năng sẵn sàng phát hành và các màn hình trạng thái, tạo ra cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -423,7 +423,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Resource** – Tài nguyên mà người dùng đang yêu cầu mã thông báo, chẳng hạn như Exchange hoặc SharePoint.
 
-  - **Scenarioid** – GUID. Nhiều sự kiện có thể thuộc về một kịch bản duy nhất, ví dụ: kịch bản có thể được thêm một tài khoản mới nhưng có nhiều lời nhắc xảy ra như một phần của kịch bản đó. ID này cho phépsự tương quan xảy ra.
+  - **Scenarioid** – GUID. Nhiều sự kiện có thể thuộc về một kịch bản duy nhất, ví dụ: kịch bản có thể đang thêm một tài khoản mới nhưng có nhiều lời nhắc xảy ra như một phần của kịch bản đó. ID này cho phépsự tương quan xảy ra.
 
   - **Scenarioname** – Tên của kịch bản sở hữu sự kiện xác thực này.
 
@@ -452,7 +452,7 @@ Hệ thống phép đo từ xa xác thực Microsoft (Microsoft Auth Telemetry S
 
 3) Khi xảy ra lỗi, các tín hiệu này phát ra các mã lỗi quan trọng từ cấu phần chịu trách nhiệm (mã máy khách Office, thư viện xác thực hoặc dịch vụ ủy quyền) có thể được sử dụng để phân loại, chẩn đoán và giảm thiểu
 
-4) Các tín hiệu này cung cấp tính sẵn sàng và trạng thái màn hình khởi chạy cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
+4) Các tín hiệu này ảnh hưởng đến khả năng sẵn sàng phát hành và các màn hình trạng thái, tạo ra cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -588,7 +588,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Microsoft_ADAL_is_silent_ui** - Việc giao diện người dùng được hiển thị (lời nhắc) bằng ADAL là đúng hay sai
 
-- **Microsoft_ADAL_is_successfull** - Việc API ADAL đã thành công là đúng hay sai (MacOS)
+- **Microsoft_ADAL_is_successfull** - Việc API ADAL đã thành công là đúng hay sai (macOS)
 
 - **Microsoft_ADAL_is_successfull** - Việc API ADAL đã thành công là đúng hay sai
 
@@ -692,9 +692,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **MSAL_read_token** - Các mã thông báo đã được đọc từ bộ đệm ẩn (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT hết hạn đã được đọc, nhưng bị loại bỏ]).
 
-- **MSAL_read_token_last_error** - Nếu MSAL gặp lỗi khi đọc từ bộ đệm ẩn, chúng tôi sẽ lưu trữ thông tin tại đây. (Ví dụ: Lỗi đọc đĩa phát sinh từ HĐH, Lỗi chuỗi khóa trên MacOS).
+- **MSAL_read_token_last_error** - Nếu MSAL gặp lỗi khi đọc từ bộ đệm ẩn, chúng tôi sẽ lưu trữ thông tin tại đây. (Ví dụ: Lỗi đọc đĩa phát sinh từ HĐH, Lỗi chuỗi khóa trên macOS).
 
-- **MSAL_request_duration** - Yêu cầu mất bao lâu kể từ khi gọi API cấp cao nhất của MSAL cho đến khi chúng tôi trả về kết quả.
+- **MSAL_request_duration** - Thời gian xử lý yêu cầu kể từ khi gọi API cấp cao nhất của MSAL cho đến khi chúng tôi trả về kết quả.
 
 - **MSAL_request_id** - Yêu cầu ID cho cuộc gọi cuối cùng mà chúng tôi đã thực hiện tới dịch vụ mã thông báo bảo mật của Microsoft.
 
@@ -718,7 +718,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **MSAL_write_token** - Các mã thông báo đã được ghi vào bộ đệm ẩn (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT hết hạn đã được đọc, nhưng bị loại bỏ]).
 
-- **MSAL_write_token_last_error** - Nếu MSAL gặp lỗi ghi vào bộ đệm ẩn, chúng tôi sẽ lưu trữ thông tin tại đây. (Ví dụ: Lỗi đọc đĩa phát sinh từ HĐH, Lỗi chuỗi khóa trên MacOS).
+- **MSAL_write_token_last_error** - Nếu MSAL gặp lỗi ghi vào bộ đệm ẩn, chúng tôi sẽ lưu trữ thông tin tại đây. (Ví dụ: Lỗi đọc đĩa phát sinh từ HĐH, Lỗi chuỗi khóa trên macOS).
 
 - **oneauth_api** - API OneAuth đã được gọi cho nỗ lực xác thực này.
 
@@ -726,17 +726,17 @@ Các trường sau đây sẽ được thu thập:
 
 - **oneauth_version** - Phiên bản của SDK OneAuth.
 
-- **Platform** - Nền tảng HĐH (0: Windows Desktop, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
+- **Platform** - Nền tảng HĐH (0: Windows Desktop, 1: Android, 2: iOS, 3: macOS, 4: UWP)
 
 - **Promptreasoncorrelationid** - Mã định danh tương quan có thể dùng để tra cứu sự kiện xác thực trước đó để giải thích lý do tại sao người dùng đã được nhắc để xác thực.
 
-- **Resource** - Tài nguyên mà mã thông báo được yêu cầu.
+- **Resource** - Tài nguyên yêu cầu mã thông báo.
 
-- **Scenarioid** - Nhiều sự kiện có thể thuộc về một kịch bản như tình huống có thể thêm tài khoản mới nhưng có nhiều lời nhắc xảy ra như một phần của tình huống đó. Mã định danh này cho phép mối tương quan của các sự kiện liên quan đó.
+- **Scenarioid** - Nhiều sự kiện có thể thuộc về một kịch bản duy nhất, ví dụ: kịch bản có thể đang thêm một tài khoản mới nhưng có nhiều lời nhắc xảy ra như một phần của kịch bản đó. Mã định danh này cho phép mối tương quan của các sự kiện liên quan đó.
 
 - **Scenarioname** - Tên của tình huống ứng dụng yêu cầu xác thực, ví dụ: lần khởi động đầu tiên, kiểm tra cấp phép, v.v.
 
-- **Scope** - Phạm vi mã thông báo được yêu cầu.
+- **Scope** - Phạm vi yêu cầu mã thông báo.
 
 - **Sdkver** - Phiên bản thư viện Hệ thống đo từ xa Microsoft Auth dùng để tạo dữ liệu này
 
@@ -786,7 +786,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **WAM_redirect_uri** - URI chuyển hướng đã đăng ký cho ứng dụng trong Azure Active Directory.
 
-- **WAM_resource**  - Tài nguyên mà mã thông báo được yêu cầu.
+- **WAM_resource**  - Tài nguyên yêu cầu mã thông báo.
 
 - **WAM_server_error_code** - Mã lỗi do dịch vụ trả về cho WAM.
 
@@ -817,7 +817,7 @@ Hệ thống phép đo từ xa xác thực Microsoft (Microsoft Auth Telemetry S
 
 3) Khi xảy ra lỗi, các tín hiệu này phát ra các mã lỗi quan trọng từ cấu phần chịu trách nhiệm (mã máy khách Office, thư viện xác thực hoặc dịch vụ ủy quyền) có thể được sử dụng để phân loại, chẩn đoán và giảm thiểu
 
-4) Các tín hiệu này cung cấp tính sẵn sàng và trạng thái màn hình khởi chạy cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
+4) Các tín hiệu này ảnh hưởng đến khả năng sẵn sàng phát hành và các màn hình trạng thái, tạo ra cảnh báo để các kỹ sư của chúng tôi có thể nhanh chóng can thiệp và giảm thời gian nhằm giảm thiểu các lỗi quan trọng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -875,7 +875,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **oneauth_version** - Phiên bản của SDK OneAuth.
 
-- **Platform** - Nền tảng HĐH (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+- **Platform** - Nền tảng HĐH (0: Win32, 1: Android, 2: iOS, 3:macOS, 4: WinRT
 
 - **Scenarioname** - Tên của kịch bản cần thiết để xác thực được chỉ định bởi ứng dụng gọi.
 
@@ -2988,7 +2988,7 @@ Báo cáo kết quả thử nghiệm cài đặt từ đầu đến cuối
 
 Báo cáo về hành động giải thích lý do cho việc đầu vào được thu thập bằng cách sử dụng CollectParameters
 
-- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước) hoặc Kênh Enterprise nửa năm một lần.
+- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết có yêu cầu kênh cài đặt/cập nhật cụ thể không. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước) hoặc Kênh Enterprise nửa năm một lần.
 
 - **ChannelID –** Số nguyên thể hiện giá trị enum của kênh cập nhật/cài đặt đã chọn. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước), Kênh Enterprise nửa năm một lần, hoặc Không hợp lệ.
 
@@ -3067,7 +3067,7 @@ Báo cáo về hành động đọc đầu vào đã gắn thẻ từ chữ ký 
 
 Báo cáo các tham số được sử dụng cho cài đặt Office
 
-- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết kênh cài đặt/cập nhật minh bạch được yêu cầu là kênh nào. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước) hoặc Kênh Enterprise nửa năm một lần.
+- **BitField –**    Giá trị nguyên của đối số BitField cho chúng ta biết có yêu cầu kênh cài đặt/cập nhật cụ thể không. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước) hoặc Kênh Enterprise nửa năm một lần.
 
 - **ChannelID –** Số nguyên thể hiện giá trị enum của kênh cập nhật/cài đặt đã chọn. Ví dụ: Kênh Beta, Kênh hiện tại (Xem trước), Kênh hiện tại, Kênh Enterprise hàng tháng, Kênh Enterprise nửa năm một lần (Xem trước), Kênh Enterprise nửa năm một lần, hoặc Không hợp lệ.
 
@@ -3315,6 +3315,20 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionID** – GUID để kết nối các sự kiện theo phiên
 
+### <a name="officeandroiddocsuipaywallcontrolpurchasetokenredemptionresponse"></a>Office.Android.DocsUI.PaywallControl.PurchaseTokenRedemptionResponse
+
+*[Sự kiện này trước đây có tên Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse.]*
+
+Phép đo từ xa của sản phẩm này được thu thập để theo dõi và ghi lại trạng thái giao dịch nội bộ và thông tin đối chiếu nhằm cải thiện độ tin cậy và hiệu suất. Microsoft sử dụng dữ liệu này để phân tích và cải thiện độ tin cậy và hiệu suất của các cơ chế xử lý và đối chiếu giao dịch nội bộ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **MicrosoftPurchaseOrderId** - ID đơn đặt hàng Microsoft được gửi bởi Dịch vụ liên kết bán lẻ (RFS) cho các mục đích theo dõi.
+
+- **ResponseCode** - Mã phản hồi HTTP (số nguyên)
+
+- **StatusCode** - Mã trạng thái phản hồi RFS (số nguyên enum hữu hạn do RFS xác định)
+
 
 ### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
@@ -3343,22 +3357,26 @@ Các trường sau đây sẽ được thu thập:
 - **SessionID** – GUID để kết nối các sự kiện theo phiên
 
 
-### <a name="officeandroiddocsuiviewspurchasetokenredemptionresponse"></a>Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+### <a name="officeandroiddocsuiviewsdimeerror"></a>Office.Android.DocsUI.Views.DimeError
 
-Phép đo từ xa của sản phẩm này được thu thập để theo dõi và ghi lại trạng thái giao dịch nội bộ và thông tin đối chiếu nhằm cải thiện độ tin cậy và hiệu suất. Microsoft sử dụng dữ liệu này để phân tích và cải thiện độ tin cậy và hiệu suất của các cơ chế xử lý và đối chiếu giao dịch nội bộ.
+Sự kiện này được thu thập cho ứng dụng Office for Android (được phát hành trên Huawei và ở các Cửa hàng Trung Quốc). Sự kiện này cho biết nỗ lực mua đăng ký Microsoft 365 qua Dime (một webURL được tải trong webview của máy khách) không thành công. Chỉ thu được các kịch bản lỗi. Dữ liệu của sự kiện này chỉ là dữ liệu lỗi và được sử dụng để đảm bảo trạng thái của dòng mua sản phẩm trên Dime trong máy khách.
 
 Các trường sau đây sẽ được thu thập:
 
-- **MicrosoftPurchaseOrderId** - ID đơn đặt hàng Microsoft được gửi bởi Dịch vụ liên kết bán lẻ (RFS) cho các mục đích theo dõi.
+- **CorrelationID** - ID xác định duy nhất một phiên mua sản phẩm trên Dime.
 
-- **ResponseCode** - Mã phản hồi HTTP (số nguyên)
-
-- **StatusCode** - Mã trạng thái phản hồi RFS (số nguyên enum hữu hạn do RFS xác định)
+- **ErrorReason** - Cho biết nguyên nhân xảy ra lỗi.
+  - 0 – Lỗi không xác định
+  - 1 – Không có internet
+  - 2 – Xác thực mã định danh duy nhất toàn cầu (UUID) không thành công
+  - 3 - Mã định danh duy nhất toàn cầu (UUID) null hoặc trống
+  - 4 – Lỗi nạp JavaScript khi ứng dụng Office for Android không thể truyền authToken qua Dime
+  - 5 – WebURL cơ sở được tải trên máy khách không hợp lệ
 
 
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
-Sự kiện này thu thập dữ liệu giúp giám sát trạng thái của các thành phần Dime. Dữ liệu được sử dụng để giám sát và cảnh báo về trạng thái của luồng mua hàng Dime nhằm đảm bảo tính năng này hoạt động như mong đợi. 
+Sự kiện này thu thập dữ liệu giúp giám sát trạng thái của các thành phần Dime. Ví dụ: đối với dòng mua sản phẩm trong ứng dụng khi người dùng chọn mua đăng ký Microsoft 365 từ trong ứng dụng Office for Android hoặc trên các thiết bị chạy Windows.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3410,23 +3428,23 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_QosLevel** - Mức độ nghiêm trọng 0/1/2
 
-- **Data_SDX_AssetId** - ID tài sản của nội dung lưu trữ Trải nghiệm cung cấp dịch vụ (SDX)
+- **Data_SDX_AssetId** - ID nội dung của Trải nghiệm cung cấp dịch vụ (SDX) lưu trữ nội dung cho Win32
 
-- **Data_SDX_BrowserToken** - Mã thông báo của trình duyệt
+- **Data_SDX_BrowserToken** - Mã thông báo của trình duyệt cho Win32
 
-- **Data_SDX_HostJsVersion** - Phiên bản thư viện JavaScript
+- **Data_SDX_HostJsVersion** - Phiên bản thư viện JavaScript cho Win32
 
-- **Data_SDX_Id** - ID trải nghiệm cung cấp dịch vụ
+- **Data_SDX_Id** - ID Trải nghiệm cung cấp dịch vụ cho Win32
 
-- **Data_SDX_InstanceId** - ID bản sao của SDX
+- **Data_SDX_InstanceId** - ID bản sao của SDX cho Win32
 
-- **Data_SDX_MarketplaceType** - Loại thị trường SDX
+- **Data_SDX_MarketplaceType** - Loại thị trường SDX cho Win32
 
-- **Data_SDX_OfficeJsVersion** - Phiên bản Office JS
+- **Data_SDX_OfficeJsVersion** - Phiên bản Office JS cho Win32
 
-- **Data_SDX_SessionId** - ID phiên của SDX
+- **Data_SDX_SessionId** - ID phiên của SDX cho Win32
 
-- **Data_SDX_Version** - Phiên bản SDX
+- **Data_SDX_Version** - Phiên bản SDX cho Win32
 
 - **Data_TimestampUTC** - Dấu thời gian của sự kiện
 
@@ -3522,7 +3540,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingenforcesigninqualified"></a>Office.Licensing.EnforceSignInQualified 
 
-Đây là tín hiệu cho chúng tôi biết nếu thử nghiệm mà chúng tôi đang chạy để thực thi đăng nhập người dùng như một phần của việc cấp phép có thành công hay không. Điều này rất quan trọng trong việc phát hiện thành công hay thất bại của thử nghiệm buộc người dùng phải đăng nhập, đây là bước bắt buộc đối với ngăn xếp cấp phép hiện đại. Lỗi đăng nhập sẽ cho kết quả rằng người dùng không còn sử dụng ứng dụng.
+Đây là tín hiệu cho chúng tôi biết nếu thử nghiệm mà chúng tôi đang chạy để thực thi đăng nhập người dùng như một phần của việc cấp phép có thành công hay không. Điều này rất quan trọng trong việc phát hiện thành công hay thất bại của thử nghiệm buộc người dùng phải đăng nhập, đây là bước bắt buộc đối với xếp chồng cấp phép hiện đại. Lỗi đăng nhập sẽ cho kết quả rằng người dùng không còn sử dụng ứng dụng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3565,7 +3583,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
-Trên mỗi phiên, chúng tôi kiểm tra xem đã qua 72 giờ kể từ khi gia hạn giấy phép cuối cùng hay chưa và tìm cách mở rộng hết giấy phép hiện tại. Sự kiện này báo cáo sự thành công hay thất bại của cuộc gọi mà chúng tôi thực hiện để đảm bảo chúng tôi có thể gia hạn hết hạn giấy phép và giữ cho chức năng cài đặt Office của người dùng. Nó rất quan trọng trong việc chẩn đoán các vấn đề liên quan đến đăng ký và các vấn đề dịch vụ cho người dùng và rất quan trọng trong việc phát hiện hồi quy cho người dùng đăng ký đã kích hoạt.
+Trên mỗi phiên, chúng tôi kiểm tra xem đã qua 72 giờ kể từ khi gia hạn giấy phép mới nhất hay chưa và cố gắng gia hạn giấy phép hiện tại. Sự kiện này báo cáo sự thành công hay thất bại của cuộc gọi mà chúng tôi thực hiện để đảm bảo chúng tôi có thể gia hạn hết hạn giấy phép và giữ cho chức năng cài đặt Office của người dùng. Điều này rất quan trọng trong việc chẩn đoán các vấn đề liên quan đến đăng ký và các sự cố về dịch vụ cho người dùng cũng như trong việc phát hiện hồi quy cho người dùng đã kích hoạt đăng ký.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4397,7 +4415,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="cloningtaskhelpertoolconnection"></a>cloningtask.helpertoolconnection
 
-Sự kiện này ghi lại sự cố khi cài đặt trên bản sao (nghĩa là chúng tôi không thể kết nối với trình trợ giúp để áp dụng bản cập nhật hoặc có thể kết nối nhưng trình trợ giúp lại không thể áp dụng bản cập nhật). Nếu chúng tôi nhận được một bản ghi được báo cáo, điều này có nghĩa là cài đặt trên bản sao đã từng không thành công và giờ đây sẽ phải chuyển sang thực hiện cập nhật tại chỗ.
+Sự kiện này ghi lại sự cố khi cài đặt trên bản sao (nghĩa là chúng tôi không thể kết nối với trình trợ giúp để áp dụng bản cập nhật hoặc có thể kết nối nhưng trình trợ giúp lại không thể áp dụng bản cập nhật). Nếu chúng tôi nhận được một bản ghi được báo cáo, điều này có nghĩa là cài đặt trên bản sao đã thất bại và giờ sẽ phải chuyển sang thực hiện cập nhật tại chỗ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9745,7 +9763,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **Channel** - Tùy chọn dành cho người xem
 
-- **ChannelName** - Kênh có hộp thoại chấp thuận hiển thị
+- **ChannelName** - Kênh hiển thị hộp thoại chấp thuận
 
 - **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -11408,7 +11426,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
-- **AppID** - Mã định danh của ứng dụng gửi giao diện API dòng lệnh đến MAU.
+- **AppID** - Mã định danh của ứng dụng gửi API giao diện dòng lệnh đến MAU.
 
 - **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
 
@@ -11432,9 +11450,9 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **EventInfo_Time** - Thời điểm ghi lại sự kiện 
 
-- **EventType** - Loại sự kiện được ứng dụng gửi đến giao diện API dòng lệnh của MAU.
+- **EventType** - Loại sự kiện được ứng dụng gửi đến API giao diện dòng lệnh của MAU.
 
-- **HowTocheck** - Tùy chọn kiểm tra cập nhật
+- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -13401,7 +13419,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 ### <a name="updatefilterhelpercannotretrievebuilddate"></a>updatefilterhelper.cannotretrievebuilddate
 
-Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại là không thể truy xuất ngày tháng từ siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU chỉ khi bản cập nhật được cung cấp không cũ hơn số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại là không thể truy xuất ngày tháng từ siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -13522,7 +13540,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 ### <a name="updatefilterhelperinvalidresponsefromupdatefiltering"></a>updatefilterhelper.invalidresponsefromupdatefiltering
 
-Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU chỉ khi bản cập nhật được cung cấp không cũ hơn số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -13563,7 +13581,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="updatefilterhelpermissingbuilddate"></a>updatefilterhelper.missingbuilddate
 
-Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU chỉ khi bản cập nhật được cung cấp không cũ hơn số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại ngày tháng bị thiếu trong siêu dữ liệu của ứng dụng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -13604,7 +13622,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="updatefilterhelperupdatebypassedoldage"></a>updatefilterhelper.updatebypassedoldage
 
-Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU trong trường hợp bản cập nhật được đề xuất không quá lạc hậu so với số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại dịch vụ bị bỏ qua do ngày cập nhật đã cũ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+Chúng tôi chỉ có thể lọc các bản cập nhật thông qua Dịch vụ MAU chỉ khi bản cập nhật được cung cấp không cũ hơn số lượng ngày nhất định. Tại đây, chúng tôi sẽ ghi lại dịch vụ bị bỏ qua do ngày cập nhật đã cũ. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
  
 Các trường sau đây sẽ được thu thập:
 
@@ -15303,7 +15321,7 @@ Tín hiệu quan trọng được sử dụng để theo dõi hiệu suất củ
 
 Điều này được sử dụng để đảm bảo tình trạng dịch vụ bằng cách cho phép chúng tôi xem những đối tượng thuê nào đang gặp phải tình trạng dữ liệu đến chậm đến mức không thể chấp nhận được từ dịch vụ của chúng tôi, thông tin về dữ liệu họ đã tải xuống khi họ gặp phải vấn đề về độ trễ đó, và độ phổ biến về sự chậm trễ này đối với đối tượng thuê. Nó cũng được sử dụng để báo cáo tình trạng dịch vụ và hiệu suất cho các khách hàng của chúng tôi để đo lường xu hướng theo thời gian và tự động cảnh báo về các vấn đề nhằm giảm thiểu kỹ thuật. 
 
-Nếu chúng tôi thấy độ trễ không thể chấp nhận được cho một phần hoặc sổ ghi chép, chúng tôi cũng sẽ sử dụng dữ liệu này để tương quan dữ liệu đó với các tín hiệu khác từ máy khách và dịch vụ liên quan đến cùng một tài liệu để xác định các hồi quy hiệu suất phía máy khách, để từ đó cho phép chúng tôi cung cấp dịch vụ hiệu quả hơn.
+Nếu thấy độ chậm trễ không chấp nhận được đối với một phần hoặc sổ tay, chúng tôi cũng sẽ sử dụng dữ liệu này để tương quan dữ liệu đó với các tín hiệu khác từ máy khách và dịch vụ liên quan đến cùng một tài liệu để xác định các hồi quy hiệu năng phía máy khách cho phép chúng tôi cung cấp dịch vụ hiệu quả hơn.
 
 Nếu chúng tôi không nhận được dữ liệu này, chúng tôi sẽ không thể theo dõi hiệu suất của khía cạnh này trong dịch vụ của mình hoặc tác động của những thay đổi phía máy chủ mà chúng tôi có thể thấy cần thiết do việc sử dụng hoặc các yếu tố khác.
 
@@ -15371,7 +15389,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Tín hiệu quan trọng được sử dụng để theo dõi các lỗi và ngoại lệ đã xảy ra bên trong ngăn xếp đồng bộ trong OneNote của khách cho phép chúng tôi theo dõi và giảm thiểu các điều kiện không mong muốn này.
 
-Điều này được sử dụng để đảm bảo trạng thái dịch vụ bằng cách cho phép chúng tôi xem các báo cáo lỗi từ khách hàng trong thời gian gần thực tế, cho phép chúng tôi phản hồi các vấn đề đồng bộ khi chúng phát sinh. Nó cũng được sử dụng để xác định mức độ phổ biến của một vấn đề và mức độ nghiêm trọng bằng cách tham chiếu chéo thẻ lỗi với mã của máy khách để xác định nguồn gốc của lỗi. Chúng tôi cũng tổng hợp dữ liệu này để có thông tin về hiệu suất của chúng tôi theo thời gian cũng như tác động và hiệu quả của những cải tiến mà chúng tôi thực hiện đối với khách hàng và dịch vụ của mình. Nếu chúng tôi không có dữ liệu này, chúng tôi sẽ không thể chủ động phản hồi các tình trạng lỗi trong dịch vụ đồng bộ hóa của mình mà không cần khách hàng báo cáo.
+Điều này được sử dụng để đảm bảo trạng thái dịch vụ bằng cách cho phép chúng tôi xem các báo cáo lỗi từ khách hàng trong thời gian gần thực tế, cho phép chúng tôi phản hồi các sự cố về đồng bộ khi chúng phát sinh. Nó cũng được sử dụng để xác định mức độ phổ biến của một vấn đề và mức độ nghiêm trọng bằng cách tham chiếu chéo thẻ lỗi với mã của máy khách để xác định nguồn gốc của lỗi. Chúng tôi cũng tổng hợp dữ liệu này để có thông tin về hiệu suất của chúng tôi theo thời gian cũng như tác động và hiệu quả của những cải tiến mà chúng tôi thực hiện đối với khách hàng và dịch vụ của mình. Nếu chúng tôi không có dữ liệu này, chúng tôi sẽ không thể chủ động phản hồi các tình trạng lỗi trong dịch vụ đồng bộ hóa của mình mà không cần khách hàng báo cáo.
 
 Các lĩnh vực sau đây sẽ được thu thập: 
 
@@ -15405,7 +15423,9 @@ Không có sự kiện dữ liệu dịch vụ bắt buộc được thu thập 
 
 ## <a name="telemetry-events"></a>Sự kiện phép đo từ xa
 
-### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
+
+*[Sự kiện này trước đây có tên Office.Android.DocsUI.Views.PaywallOperationMetrics.]*
 
 Microsoft sử dụng dữ liệu này để có được tình trạng của tính năng, tỷ lệ thành công hoặc lỗi cho người dùng khi mua hàng, nhằm đảm bảo các khoản đầu tư thích hợp nhằm cải thiện trải nghiệm mua hàng của khách hàng trên các nền tảng di động.
 
@@ -15417,9 +15437,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **PaywallOperationType** - Loại hoạt động Paywall (enum/ int - hữu hạn)
 
-### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
+### <a name="officeandroiddocsuipaywallcontrolpaywallsessiondata"></a>Office.Android.DocsUI.PaywallControl.PaywallSessionData
 
-Siêu dữ liệu dựa trên phiên khi Paywall UI hiển thị cho người dùng. Microsoft sử dụng điều này để có được hành trình của người dùng và hiểu được thiết bị cũng như phiên bản hệ điều hành mà người dùng đang sử dụng để giúp đưa ra quyết định về các khoản đầu tư trong việc cải thiện trải nghiệm trong những lĩnh vực này.
+*[Sự kiện này trước đây có tên Office.Android.DocsUI.Views.PaywallSessionData.]*
+
+Siêu dữ liệu dựa trên phiên khi UI Paywall được hiển thị cho người dùng. Microsoft sử dụng điều này để có được hành trình của người dùng và hiểu được thiết bị cũng như phiên bản hệ điều hành mà người dùng đang sử dụng để giúp đưa ra quyết định về các khoản đầu tư trong việc cải thiện trải nghiệm trong những lĩnh vực này.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -16898,8 +16920,6 @@ Các trường sau đây sẽ được thu thập:
   - **ErrorRuleVersion** - Phiên bản quy tắc phép đo từ xa gây ra lỗi
 
   - **WarningInfo** - Số thông tin chẩn đoán cảnh báo
-
-<!-- end list -->
 
   - **QueueFlushCount** - Số lượng lần xóa hàng đợi
 
