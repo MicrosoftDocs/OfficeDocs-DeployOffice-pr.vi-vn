@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: b7993abbca401d65cc99ed9fdd7960bae03e89a3
-ms.sourcegitcommit: c891622923aecf9afd3ba61e008501cb0c374b73
+ms.openlocfilehash: 6b099a73550f3a2c31147b9c7a5adb34dce6ff5f
+ms.sourcegitcommit: 9f4afc7525d1d4cb6fbc0feef721a8eaffc09048
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841738"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867474"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
