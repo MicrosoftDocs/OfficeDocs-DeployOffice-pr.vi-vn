@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
-ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
+ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799157"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242176"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -3466,6 +3466,14 @@ Các trường sau đây sẽ được thu thập:
 
 - **toggleCount** - Int – Số lần người dùng chuyển đổi giữa việc xem các sản phẩm khác nhau trước khi họ nhấn vào Nút Mua trong phiên hiện tại của Paywall.
 
+### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
+
+Đo lường sử dụng từ xa để biết khi nào người dùng nhấn vào “Xem Tất cả Lợi ích”, sau khi mua hàng thành công để xem các ứng dụng và tính năng bao gồm trong giao dịch mua mà họ vừa thực hiện. Dữ liệu được sử dụng để giúp phát triển tính năng nâng cao trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng trong quá trình cập nhật ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **productId** - Chuỗi - ID Ứng dụng của Microsoft Store của sản phẩm mà người dùng đang xem tất cả các lợi ích được cung cấp
+
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -4332,7 +4340,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="catalogerrorsignature"></a>catalog_errorsignature
 
-Sự kiện này cho biết đã xảy ra lỗi trong khi thực hiện xác thực chứng thực số trên một tệp cập nhật bổ sung.  Bất kỳ tệp bổ sung nào xác minh chứng thực số không thành công nên được coi là không hợp lệ.
+Sự kiện này báo cáo về các sự cố khác nhau với các tệp đã tải xuống, bao gồm cả chữ ký của nhà cung cấp và giá trị băm không khớp trên tệp đã tải xuống. Chúng tôi sử dụng sự kiện này để phát hiện sự cố khi xuất bản tập hợp tệp kê khai cho các ứng dụng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4360,9 +4368,15 @@ Các trường sau đây sẽ được thu thập:
 
 - **EventInfo_Time** - Thời điểm ghi lại sự kiện 
 
-- **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
+- **FileHash** – Giá trị băm của tệp tải xuống
 
-- **Payload** - Chứa tên của tệp danh mục kèm chữ ký không hợp lệ. Sự khác nhau của văn bản tĩnh mô tả các điều kiện lỗi khác nhau.
+- **FileName** – Tên của tệp hiển thị giá trị băm không khớp
+
+- **HashInCatalog** – Nhập giá trị băm trong tệp danh mục tương ứng
+
+- **HowTocheck** - Sở thích kiểm tra các bản cập nhật
+
+- **Payload** - chứa thông tin về sự cố báo cáo ứng dụng
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -7987,11 +8001,13 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **HowToCheck** - Cách kiểm tra cài đặt
 
-- **Payload** -  Văn bản tĩnh
+- **Payload** - Văn bản tĩnh *[Trường này đã bị xóa khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **Lý do** - Văn bản tĩnh cho biết không thể tiếp tục cập nhật im lặng khi giao diện người dùng đang mở
 
 - **SessionId** - Mã định danh của phiên
 
@@ -9392,6 +9408,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Channel** - Tùy chọn dành cho người xem
 
+- **CustomNotification** – Boolean cho biết liệu thông báo tùy chỉnh đã được sử dụng hay chưa.
+
 - **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **DeviceID** - Mã định danh thiết bị
@@ -9410,7 +9428,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Văn bản cho biết bản chất của sự kiện.
+- **Payload** - Văn bản cho biết bản chất của sự kiện. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -10523,6 +10541,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Success** - Cho biết ứng dụng chủ đã báo cáo hoạt động thành công hay chưa
 
+- **UpdateID** – Định danh cập nhật.
     
 ### <a name="installstatuscodesign"></a>installstatus.codesign
 
@@ -10577,7 +10596,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **AppVersionLong** - Phiên bản ứng dụng
 
-- **Channel** - Tùy chọn dành cho người xem
+- **BundleReachable** – Boolean cho biết liệu có sự cố khi đánh giá gói ứng dụng Microsoft AutoUpdate hay không.
+
+- **Kênh** - Sở thích đối với khán giả
+
+- **Codesigned** – Boolean cho biết liệu Trợ lý Cập nhật đã được ký mã chính xác hay chưa.
 
 - **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -10595,9 +10618,11 @@ Các trường sau đây sẽ được thu thập:
 
 - **EventInfo_Time** - Thời điểm ghi lại sự kiện 
 
+- **Tồn tại** – Boolean cho biết liệu Trợ lý Cập nhật có tồn tại trên đĩa hay không.
+
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Chứa chỉ báo cho biết liệu cấu phần Daemon có xuất hiện ở vị trí dự kiến và có được chứng thực số hay không.
+- **Payload** - Chứa chỉ báo cho biết liệu cấu phần Daemon có xuất hiện ở vị trí dự kiến và có được chứng thực số hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 6b099a73550f3a2c31147b9c7a5adb34dce6ff5f
-ms.sourcegitcommit: 9f4afc7525d1d4cb6fbc0feef721a8eaffc09048
+ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867474"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242212"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -29,7 +29,7 @@ Dữ liệu chẩn đoán được sử dụng để giữ cho Office an toàn v
 
 Dữ liệu chẩn đoán này được thu thập và gửi cho Microsoft về phần mềm máy khách Office chạy trên thiết bị người dùng. Một số dữ liệu chẩn đoán là bắt buộc, trong khi một số dữ liệu chẩn đoán là tùy chọn. Chúng tôi cung cấp cho bạn khả năng chọn gửi cho chúng tôi dữ liệu chẩn đoán bắt buộc hoặc tùy chọn thông qua việc sử dụng các kiểm soát quyền riêng tư, chẳng hạn như thiết đặt chính sách cho các tổ chức. Bạn có thể thấy dữ liệu chẩn đoán được gửi cho chúng tôi bằng cách sử dụng Trình xem dữ liệu chẩn đoán.
 
-***Dữ liệu chẩn đoán bắt buộc** là dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị cài đặt Office.
+***Dữ liệu chẩn đoán bắt buộc*** là dữ liệu tối thiểu cần thiết để giúp Office an toàn, cập nhật và hoạt động như mong đợi trên thiết bị cài đặt Office.
 
 Dữ liệu chẩn đoán bắt buộc giúp xác định các sự cố với Office có thể liên quan đến cấu hình thiết bị hoặc phần mềm. Ví dụ: nó có thể giúp xác định xem một tính năng Office có gặp sự cố thường xuyên hơn trên một phiên bản hệ điều hành cụ thể không, với các tính năng mới được giới thiệu hoặc khi một số tính năng Office nhất định bị tắt. Dữ liệu chẩn đoán bắt buộc giúp chúng tôi phát hiện, chẩn đoán và khắc phục các sự cố này nhanh hơn để giảm tác động đối với người dùng hoặc tổ chức.
 
@@ -57,7 +57,7 @@ Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đ
 - Danh sách các trường dữ liệu trong mỗi sự kiện
 - Mô tả về từng trường dữ liệu
 
-| *Danh mục**       | **Loại dữ liệu con**| **Mô tả**    |
+| **Danh mục**       | **Loại dữ liệu con**| **Mô tả**    |
 | ---------- | ------------- | ---- |
 | **Thiết lập phần mềm và hàng tồn kho** | [Thiết lập Office và hàng tồn kho](#office-setup-and-inventory-subtype)   | Sản phẩm được cài đặt và phiên bản và trạng thái cài đặt.  |
 | | [Cấu hình phần bổ trợ Office](#office-add-in-configuration-subtype)  | Phần bổ trợ phần mềm và các thiết đặt.     |
@@ -1291,6 +1291,7 @@ Các trường sau đây sẽ được thu thập:
   
   - **LoadResult** - Trạng thái thành công của việc tải xuống
 
+  - **OfficeArchitecture** - Kiến trúc của máy khách Office
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -5367,6 +5368,37 @@ Các trường sau đây sẽ được thu thập:
 
 - **userDuration** - Kép – Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho Paywall
 
+
+#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Đo từ xa kỹ thuật quan trọng với Dịch vụ Liên đoàn Bán lẻ của Microsoft (RFS) để thu thập thông tin được cung cấp trong sự kiện này. RFS là dịch vụ nội bộ được sử dụng trong Microsoft để kiểm tra chéo giao dịch mua. Dữ liệu được sử dụng để có được tình trạng của lệnh gọi API được thực hiện tới RFS, điều này sẽ giúp hiểu tỷ lệ thành công và gỡ lỗi cho bất kỳ lỗi nào.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Nút/Luồng từ đó Paywall được hiển thị. Như “Nút Nâng cấp Cao cấp” hoặc "Luồng Chạy Đầu tiên".
+
+- **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (thất bại). Chỉ ra phản hồi lỗi do phản hồi Cấp phép RFS đưa ra.
+
+- **productId** - Chuỗi – ID Cửa hàng Ứng dụng của sản phẩm mà yêu cầu được thực hiện cho
+
+- **status** - Chuỗi – Thành công hay Thất bại, cho biết yêu cầu thành công hay thất bại
+
+
+#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Phép đo từ xa mức sử dụng quan trọng cho biết khi nào người dùng nhấn vào nút Mua hàng/Mua. Được sử dụng để suy ra mẫu hình sử dụng và chỉ số chuyển đổi cho những người dùng cố gắng mua gói đăng ký trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **entryPoint** - Chuỗi – Nút/Luồng từ đó Paywall được hiển thị. Như “Nút Nâng cấp Cao cấp” hoặc "Luồng Chạy Đầu tiên".
+
+- **isDefaultSKU** - Bool – Nếu người dùng đang mua sản phẩm, chúng tôi đề xuất cho họ bằng cách hiển thị sản phẩm theo mặc định.
+
+- **productId** - Chuỗi – Id sản phẩm trong cửa hàng ứng dụng của sản phẩm mà nút Mua đã được nhấn vào
+
+- **toggleCount** - Int – Số lần người dùng chuyển đổi giữa việc xem các sản phẩm khác nhau trước khi họ nhấn vào Nút Mua trong phiên hiện tại của Paywall.
+
+
 #### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
 
 Sự kiện này thu thập các tính năng và ứng dụng người dùng mở rộng từ "Xem Thêm Lợi Ích” và khoảng thời gian đã dành ra.  Dữ liệu được sử dụng để hiểu mức sử dụng tính năng "Xem mọi lợi ích" và tối ưu hóa hơn nữa trải nghiệm trong các phiên bản tương lai.
@@ -5378,6 +5410,16 @@ Các trường sau đây sẽ được thu thập:
 - **productId** - Chuỗi - Người dùng đang xem thêm lợi ích được cung cấp cho App Store ID của sản phẩm này
 
 - **userDuration** - Kép - Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho Màn hình Lợi ích.
+
+
+### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSwitched
+
+Phép đo từ xa mức sử dụng để hiển thị số lần người dùng chuyển đổi giữa các SKU khác nhau trước khi thử mua hàng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **productId**- Chuỗi – ID Cửa hàng Ứng dụng của sản phẩm mà người dùng vừa chuyển sang xem từ các sản phẩm có sẵn trên trình chọn SKU.
+
 
 #### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
 
@@ -11470,6 +11512,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **Phương pháp** - COM phương pháp bổ trợ, dẫn đến sự cố 
 
+- **OfficeArchitecture** - Kiến trúc của máy khách Office
 
 #### <a name="officeprogrammabilitytelemetryaddincrash"></a>Office.Programmability.Telemetry.AddInCrash
 
