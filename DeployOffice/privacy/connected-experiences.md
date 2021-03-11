@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: 8471214380e05fde406d0298dd70b10924f898ef
-ms.sourcegitcommit: 6cffc990cc0d883e2bc84eff12abad37807f9975
+ms.openlocfilehash: fe0d70bb03699af3b393de560234f9a1bb32c3c7
+ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50152787"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597353"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -63,7 +63,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 |Chia sẻ thông báo|[Nhận thông báo khi các thành viên trong nhóm của bạn cập nhật tệp chia sẻ của bạn](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Tính năng kiểm tra tính tương đồng*\* (tính năng của Trình soạn thảo)|[Kiểm tra tính tương đồng trong tài liệu của bạn với các nguồn trực tuyến](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Tra cứu thông minh*\*   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
-| Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
+| Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://support.microsoft.com/office/58517b93-946e-42d4-95d0-777aa5aa42a5) <br/> [Câu trả lời được gợi ý được tạo như thế nào?](https://support.microsoft.com/office/af9cfa57-4f4f-419f-b76d-bb305c3a9d4d)|
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Dự đoán văn bản (một tính năng của Trình soạn thảo)|[Giúp viết nhanh hơn với tính năng dự đoán văn bản trong Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Bản chép lại |[Chép lại bản ghi của bạn](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
@@ -83,9 +83,9 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 
 | **Name**      | **Xem thêm thông tin**  |
 | ------------- | ------------- |
-| Ứng dụng lịch| [Ứng dụng Lịch là gì?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
+| Ứng dụng lịch| [Ứng dụng Lịch là gì?](https://support.microsoft.com/office/57f5ad1d-c364-4054-924e-c796b80f382b) |
 | Phông chữ đám mây                 | [Phông chữ đám mây trong Office](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| Câu hỏi thường gặp |Khi bạn chọn **Cài đặt** > **Trợ giúp & Phản hồi** > **Câu hỏi thường gặp** trên Outlook for iOS và Outlook for Android, bạn sẽ được chuyển đến [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
+| Câu hỏi thường gặp |Khi bạn chọn **Cài đặt** > **Trợ giúp và Ý kiến phản hồi** > **Các câu hỏi thường gặp** trên Outlook for iOS và Android, bạn được chuyển tới [Outlook for iOS Trợ giúp](https://support.microsoft.com/article/4456b5ef-d20e-4e86-abee-c95f9eba26da) hoặc [Outlook for Android Trợ giúp](https://support.microsoft.com/article/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
 | Hiệu ứng viết tay                 | [Vẽ và viết bằng tính năng viết tay trong Office](https://support.microsoft.com/office/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Chèn biểu tượng                | [Chèn biểu tượng vào Microsoft Office](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Chèn Microsoft Forms      | [Chèn biểu mẫu hoặc bài kiểm tra vào PowerPoint](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
@@ -94,14 +94,14 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | *Chèn video trực tuyến*\*     | [Chèn video từ YouTube hoặc trang web khác](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
 | *Lịch thú vị*\*| [Đăng ký nhận lịch](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn trên Outlook for iOS và Outlook for Android. |
 | *Đề xuất về vị trí*\* | Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, Outlook for iOS và Outlook for Android sẽ thêm địa chỉ đường đầy đủ vào trong trường Vị trí. |
-| Bản đồ trong thông tin chi tiết về sự kiện | Tìm hiểu nơi bạn cần đến với [bản đồ](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) trong thông tin chi tiết về sự kiện trên Outlook for iOS và Outlook for Android. |
+| Bản đồ trong thông tin chi tiết về sự kiện | Trang chi tiết sự kiện sẽ hiện một [bản đồ](https://support.microsoft.com/office/0678bfde-9cb7-4beb-9581-712abfe2bb46) dựa trên địa chỉ của vị trí sự kiện trên Outlook for iOS và Android. |
 | Trợ giúp Office                 | Khi bạn chọn **Trợ giúp** > **Trợ giúp** trên dải băng hoặc sử dụng F1 trong ứng dụng Office   |
 | Tìm kiếm hình trực tuyến (Visio) | [Tìm thêm các hình và mẫu tô](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | *Trình bắt đầu nhanh PowerPoint*\*     | [Nghiên cứu một chủ đề với Trình bắt đầu nhanh PowerPoint](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | *Trình nghiên cứu*\*    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Cho Tôi Biết    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-|*Ước tính thời gian di chuyển trong Up Next*\*|Khi bạn chọn cho phép Outlook for iOS và Android truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) thẻ ở đầu hộp thư đến của bạn.|
+|*Ước tính thời gian di chuyển trong Up Next*\*|Khi bạn chọn cho phép Outlook for iOS và Android truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) thẻ ở đầu hộp thư đến của bạn.<br/><br/> [Thông báo Đến lúc đi là gì?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Thanh thời tiết*\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
