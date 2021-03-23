@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
+ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242176"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51032005"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -3374,6 +3374,42 @@ Các trường sau đây sẽ được thu thập:
   - 5 – WebURL cơ sở được tải trên máy khách không hợp lệ
 
 
+### <a name="officeandroiddocsuiviewspremiumfeatureupsell"></a>Office.Android.DocsUI.Views.PremiumFeatureUpsell
+
+Sự kiện này ghi lại các lần bấm bằng tính năng bấm của người dùng miễn phí để xem tính năng đằng sau tường thanh toán. Dữ liệu được sử dụng để đo sự tương tác của người dùng với trải nghiệm nâng theo ngữ cảnh và hiểu rõ những tính năng được người dùng ưa thích, điều này thúc đẩy họ mua đăng ký. Điều này sẽ giúp chúng tôi đầu tư cải thiện các bộ điểm mục nhập ưu tiên đó. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **featureId** - TCID cho tính năng cao cấp
+
+- **featureName** - Tiêu đề Tính năng Cao cấp
+
+- **seePlanButtonClick** - Số lần "Xem nút Kế hoạch" được bấm vào trên giao diện người dùng tăng cấp
+
+### <a name="officeappleiapreviewyoursubscriptionios"></a>Office.Apple.IAPReviewYourSubscriptioniOS
+
+Sự kiện này ghi lại siêu dữ liệu dựa trên phiên khi giao diện người dùng Mua trong Ứng dụng (IAP) hiển thị cho người dùng và các nút mà người dùng tương tác sau đó. Dữ liệu này được sử dụng để giúp chúng tôi hiểu rõ mâu thuẫn trong dòng mua và so sánh chúng với hình phễu của trải nghiệm mua khác để hiểu được trải nghiệm nào phù hợp hơn với người dùng. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **FlowType** - Số nguyên – Luồng từ nơi khởi chạy IAP.
+
+- **Restore** - Chuỗi – thẻ quy tắc được ghi nhật ký khi bấm vào nút khôi phục
+
+- **PremiumFeatures** - Chuỗi – thẻ quy tắc được ghi nhật ký khi bấm nút "PremiumFeatures"
+
+- **Product** - Chuỗi - SKU được người dùng chọn
+
+
+### <a name="officeappleinapppurchasecontext"></a>Office.Apple.InAppPurchaseContext
+
+Sự kiện này đo mức sử dụng từ xa quan trọng đối với điểm mục nhập của màn hình mua trong ứng dụng. Dữ liệu sẽ giúp chúng tôi hiểu và cải thiện trải nghiệm người dùng bằng cách xác định điểm mục nhập ưu tiên cho giao dịch mua trong ứng dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **context** - Chuỗi – Luồng mà người dùng đã vào trang mua trong ứng dụng
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Sự kiện này thu thập dữ liệu giúp giám sát trạng thái của các thành phần Dime. Ví dụ: đối với dòng mua sản phẩm trong ứng dụng khi người dùng chọn mua đăng ký Microsoft 365 từ trong ứng dụng Office for Android hoặc trên các thiết bị chạy Windows.
@@ -3452,6 +3488,16 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_UserAgent** - Thẻ tiêu đề
 
+
+### <a name="officedocssharedpremiumfeaturemessagebar"></a>Office.Docs.Shared.PremiumFeatureMessageBar
+
+Sự kiện này sẽ thu thập các thao tác nhấn của người dùng miễn phí về một tính năng cao cấp đằng sau danh sách thanh toán. Dữ liệu được sử dụng để hiểu rõ bộ tính năng người dùng đang tương tác khi họ chuyển đổi thành người dùng trả phí. Mục này cho chúng tôi biết điểm mục nhập ưu tiên của người dùng và cải thiện trải nghiệm người dùng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **featureId** - TCID cho tính năng cao cấp mà người dùng nhấn vào
+
+
 ### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Phép đo từ xa mức sử dụng quan trọng được thu thập để cho biết khi nào người dùng nhấn vào nút Mua.  Dữ liệu được sử dụng để suy ra mẫu hình sử dụng và chỉ số chuyển đổi cho những người dùng cố gắng mua gói đăng ký trong ứng dụng.
@@ -3504,6 +3550,26 @@ Các trường sau đây sẽ được thu thập:
 Nếu chúng tôi không thể tự động kích hoạt giấy phép vì một số lý do, chúng tôi sẽ hiển thị trình hướng dẫn kích hoạt cho người dùng. Điều này báo cáo rằng trình hướng dẫn được đang được hiển thị cho người dùng. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Sự kiện này không thu thập trường nào.
+
+### <a name="officelicensingbusbarcheckfordynamicbusbarexperiment"></a>Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
+
+Sự kiện này được kích hoạt một lần với mọi loại thanh doanh nghiệp cấp phép được hiển thị, có chuyển đổi thanh doanh nghiệp động trên (nhóm xử lý). Sự kiện dữ liệu này sẽ báo cáo xem có sẵn chiến dịch thanh kinh doanh động của Nền tảng Lập trình Vòng đời trên ổ đĩa hay không. Dữ liệu sẽ được sử dụng để đo trạng thái của công nghệ thanh kinh doanh động Nền tảng Lập trình Vòng đời mới.
+
+Các trường sau đây sẽ được thu thập:
+
+- **DoesIstPaignExist (bool)** - Cho biết chiến dịch có nằm trên ổ đĩa hay không
+
+- **Type (int32)** - Cho biết loại thanh doanh nghiệp cấp phép
+
+
+### <a name="officelicensingbusbarshowstashedbusbar"></a>Office.Licensing.BusBar.ShowStashedBusbar
+
+Sự kiện này được kích hoạt khi thanh doanh nghiệp Nền tảng Lập trình Vòng đời động không thể hiển thị và thanh doanh nghiệp tĩnh bị dở lại cần hiển thị thay vào đó. Sự kiện dữ liệu này sẽ được sử dụng để đảm bảo bạn quay trở lại thanh doanh nghiệp tĩnh thành công.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Type (int32)** - Cho biết loại thanh doanh nghiệp cấp phép
+
 
 ### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
  
@@ -4014,6 +4080,17 @@ Các trường sau đây sẽ được thu thập:
  
 - **EnrollmentResult** - Kết quả của việc đăng ký Intune
 
+### <a name="skuproductpricenullevent"></a>SKU.PRODUCT.PRICE.NULL.EVENT
+
+Sự kiện này được sử dụng để ghi lại các sự kiện để định lượng tác động của lỗi do người dùng nhìn thấy "Null" thay vì một mức giá tại màn hình bộ chọn SKU. Lỗi sẽ được chẩn đoán thêm để xác định bản sửa lỗi. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **PriceNotFound** - Không tìm thấy giá từ cửa hàng.
+
+- **StoreNotTilized** - Khi cửa hàng không được khởi tạo thành công.
+
+
 ## <a name="microsoft-autoupdate-mau-events"></a>Sự kiện Microsoft AutoUpdate (MAU)
 
 ### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo.invalidpreference
@@ -4215,6 +4292,49 @@ Các trường sau đây sẽ được thu thập:
 - **PipelineInfo_ClientIp** – Ba octet đầu tiên của địa chỉ IP
 
 - **SessionId** – Mã định danh của phiên
+
+### <a name="appinstallxpcremoteobjecterror"></a>appinstall.xpcremoteobjecterror
+
+Báo cáo sự kiện này về một lỗi được tìm thấy khi đang tìm cách kết nối với Công cụ Trợ giúp Đặc quyền thông qua kết nối XPC. Chúng tôi sử dụng sự kiện này để theo dõi và giải quyết các sự cố cài đặt MAU có thể xảy ra.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** – Quy trình ứng dụng để gửi sự kiện
+
+- **AppID** – Mã định danh của ứng dụng.
+
+- **AppInfo_Language** – Ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** – Phiên bản ứng dụng
+
+- **Channel** – Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** – Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **DeviceID** – Mã định danh của thiết bị
+
+- **DeviceInfo_Model** – Mô hình phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** – Loại mạng (Wi-Fi, có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** – Phiên bản hệ thống của hệ điều hành
+
+- **Event_ReceivedTime** – Thời gian nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** – Tên của sự kiện đo từ xa được ghi lại
+
+- **EventInfo_Time** – Thời gian sự kiện được ghi lại xảy ra 
+
+- **HowTocheck** – Tùy chọn kiểm tra cập nhật
+
+- **Payload** – Chứa thông tin về bản chất của lỗi proxy gặp phải
+
+- **PipelineInfo_ClientCountry** – Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** – Ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** – Mã định danh của phiên
+
 
 ### <a name="appregistryconfig"></a>appregistry.config
 
@@ -9559,6 +9679,50 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh của phiên
 
+
+### <a name="guidashboardrowviewupdatestate"></a>gui.dashboardrowview.updatestate
+
+Sự kiện này báo cáo một lỗi được tìm thấy khi đang cố gắng hiển thị thông tin ứng dụng trên giao diện người dùng MAU. Chúng tôi sử dụng sự kiện này để đảm bảo trạng thái của MAU và theo dõi và giải quyết các thất bại.
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** – Quy trình ứng dụng để gửi sự kiện
+
+- **AppID** – Mã định danh của ứng dụng.
+
+- **AppInfo_Language** – Ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** – Phiên bản ứng dụng
+
+- **Channel** – Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** – Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **DeviceID** – Mã định danh của thiết bị
+
+- **DeviceInfo_Model** – Mô hình phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** – Loại mạng (Wi-Fi, có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** – Phiên bản hệ thống của hệ điều hành
+
+- **Event_ReceivedTime** – Thời gian nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** – Tên của sự kiện đo từ xa được ghi lại
+
+- **EventInfo_Time** – Thời gian sự kiện được ghi lại xảy ra 
+
+- **HowTocheck** – Tùy chọn kiểm tra cập nhật
+
+- **Payload** – Chứa thông tin về bản chất của lỗi gặp phải
+
+- **PipelineInfo_ClientCountry** – Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** – Ba octet đầu tiên của địa chỉ IP
+
+- **SessionId** – Mã định danh của phiên
+
+
 ### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Sự kiện này cho biết UI đã hiện một hộp thoại đóng ứng dụng mở để tiếp tục cập nhật ứng dụng. Sự kiện được sử dụng để xác định số lượng bản cập nhật bị trì hoãn để cải thiện trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng.
@@ -10325,6 +10489,55 @@ Các trường sau đây sẽ được thu thập:
 - **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
 
 - **SessionId** - Mã định danh của phiên
+
+
+### <a name="installedappacknowledgedcoreappleevent"></a>installedapp.acknowledgedcoreappleevent
+
+Sự kiện này cho biết Microsoft Auto Update (MAU) đã gửi một xác nhận sự kiện của Apple từ một ứng dụng đã đăng ký để chấm dứt ứng dụng nhằm tiếp tục cập nhật ứng dụng đang chờ. Sự kiện này được sử dụng để giúp phát triển tính năng nâng cao trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng trong quá trình cập nhật ứng dụng. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppID** - Mã định danh cho ứng dụng đang được cập nhật
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppleEventClass** - Cho biết loại sự kiện được gửi/nhận
+
+- **AppleEventID** - Mã định danh duy nhất của sự kiện được gửi/nhận
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, có dây, không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** -   Thời gian sự kiện được ghi lại xảy ra 
+
+- **HowToCheck** - Cách kiểm tra cài đặt
+
+- **Payload** - Chứa số lần thử lại
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+- **UpdateID** – Định danh cập nhật.
 
 
 ### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
@@ -11197,7 +11410,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowTocheck** - Tùy chọn kiểm tra bản cập nhật
 
-- **Payload** - Văn bản cho thấy thao tác thành công.
+- **Payload** - Văn bản cho thấy thao tác thành công. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -11205,6 +11418,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh của phiên
 
+- **Success** – Boolean cho thấy thao tác thành công.
 
 ### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
@@ -11846,11 +12060,13 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **HowToCheck** - Cách kiểm tra cài đặt
 
-- **Payload** - Văn bản tĩnh
+- **Payload** - Văn bản tĩnh *[Trường này đã bị xóa khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-- **PipelineInfo_ClientCountry** - Quốc gia của thiết bị (dựa trên địa chỉ IP)
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **PipelineInfo_ClientIp** -Ba octet đầu tiên của địa chỉ IP
+
+- **Reason** - Văn bản tĩnh
 
 - **SessionId** - Mã định danh của phiên
 
@@ -12168,11 +12384,13 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 - **HowToCheck** - Cách kiểm tra cài đặt
 
-- **Payload** - Văn bản tĩnh
+- **Payload** - Văn bản tĩnh *[Trường này đã bị xóa khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
 - **PipelineInfo_ClientIp** - ba octet đầu tiên của địa chỉ IP
+
+- **Reason** - Văn bản tĩnh
 
 - **SessionId** - Mã định danh của phiên
 
@@ -12320,6 +12538,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
 
+- **Duration** - Văn bản cho biết khoảng thời gian thông báo lại
+
 - **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
 
 - **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
@@ -12328,7 +12548,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **HowToCheck** - Cách kiểm tra cài đặt
 
-- **Payload** - Văn bản tĩnh
+- **Payload** - Văn bản tĩnh *[Trường này đã bị xóa khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
 - **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
 
@@ -14590,6 +14810,47 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionId** - Mã định danh của phiên
 
+
+### <a name="updatemanagernetwork"></a>updatemanager.network
+
+Sự kiện này sẽ ghi nhật ký tình trạng sẵn có mạng. Chúng tôi dùng sự kiện này để đảm bảo quy trình cập nhật hoạt động như dự kiến cũng như trợ giúp khắc phục sự cố lỗi.
+ 
+Các trường sau đây sẽ được thu thập:
+
+- **App** – Quy trình ứng dụng để gửi sự kiện
+
+- **AppInfo_Language** – Ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** – Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** – Hạt của thiết bị (dựa trên địa chỉ IP)
+
+- **DeviceID** – Mã định danh của thiết bị
+
+- **DeviceInfo_Model** – Mô hình Phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, Có dây, Không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản hệ điều hành
+
+- **Event_ReceivedTime** – Thời gian nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** – Tên của sự kiện đo từ xa được ghi lại
+
+- **EventInfo_Time** – Thời gian sự kiện được ghi lại xảy ra 
+
+- **HowTocheck** – Tùy chọn kiểm tra cập nhật
+
+- **PipelineInfo_ClientCountry** – Quốc gia của thiết bị (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+- **ServerReacheable** – Boolean cho biết mạng có sẵn hay không.
+
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
@@ -15447,6 +15708,19 @@ Các trường sau đây sẽ được thu thập:
 Không có sự kiện dữ liệu dịch vụ bắt buộc được thu thập bởi Cấu hình dịch vụ.
 
 ## <a name="telemetry-events"></a>Sự kiện phép đo từ xa
+
+### <a name="appdeeplink"></a>app.deep.link
+
+Sự kiện này giúp theo dõi việc sử dụng tính năng khởi chạy cuộc họp trên lịch, ở nhiều điểm cuối khác nhau. Sự kiện này cho phép chúng tôi phát hiện hai điều khi cuộc họp được khởi chạy qua Skype for Business và khi cuộc họp bắt đầu thông qua Teams và khi ứng dụng Teams được cài đặt.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **account** - Thông tin tài khoản bị băm thực hiện hành động
+
+- **action_type** – tác vụ được thực hiện, chẳng hạn như khởi chạy cuộc họp hoặc cài đặt ứng dụng
+
+- **application** - Ứng dụng được cho chạy thông qua một liên kết sâu, như Teams hoặc Skype for Business
+
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
@@ -16363,81 +16637,100 @@ Các trường sau đây sẽ được thu thập:
 
   - **AppName -** Tên ứng dụng bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedAssignedFlights -** Chuyến bay được gán cho quy trình gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **AppUsedVirtualMemory** - Bộ nhớ ảo được sử dụng bởi ứng dụng Office
 
-  - **CrashedConfigIds -** Cấu hình được gán cho quy trình gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **BucketId** - Mã định danh bucket Watson cho sự cố
 
-  - **CrashedEcsETag -** một mã định danh thử nghiệm cho quy trình rơi.
+- **WatsonGuid** - mã định danh GUID cho cáp Watson.
 
-  - **CrashedImpressionId -** mã định danh ấn tượng của quy trình rơi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **CallStack** - Ngăn xếp cuộc gọi nội bộ của Microsoft gây ra sự cố.
 
-  - **CrashedModuleName** - Tên mô-đun lỗi
+- **CrashedAssignedFlights -** Chuyến bay được gán cho quy trình gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedProcessSessionID -** một mã định danh duy nhất của quy trình rơi. 
+- **CrashedConfigIds -** Cấu hình được gán cho quy trình gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashedProcessSessionInitTime -** thời gian khi bắt đầu quy trình bị ảnh hưởng. 
+- **CrashedEcsETag -** một mã định danh thử nghiệm cho quy trình rơi.
 
-  - **CrashedProcessSessionUninitTime** - Thời gian khi kết thúc quy trình bị ảnh hưởng.
+- **CrashedImpressionId -** mã định danh ấn tượng của quy trình rơi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **CrashTag** - Mã định danh duy nhất cho mã của sự cố.
+- **CrashedModuleName** - Tên mô-đun lỗi
 
-  - **CrashType -** Mã định danh bucketing cho loại gặp sự cố.
+- **CrashedProcessSessionID -** một mã định danh duy nhất của quy trình rơi. 
 
-  - **DetectionTime -** thời gian khi việc thoát không mong muốn đã được phát hiện. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **CrashedProcessSessionInitTime -** thời gian khi bắt đầu quy trình bị ảnh hưởng. 
 
-  - **ErrorString -** Mô tả lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **CrashedProcessSessionUninitTime** - Thời gian khi kết thúc quy trình bị ảnh hưởng.
 
-  - **ExceptionAddress -** Địa chỉ trong chương trình nơi lỗi xảy ra. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **CrashTag** - Mã định danh duy nhất cho mã của sự cố.
 
-  - **ExceptionCode -** Mã định danh bucketing cho trường hợp ngoại lệ.
+- **CrashType -** Mã định danh bucketing cho loại gặp sự cố.
 
-  - **FaultAppName -** tên của ứng dụng lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **DetectionTime -** thời gian khi việc thoát không mong muốn đã được phát hiện. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **InstallMethod** - Bản dựng hiện tại của Office đã được nâng cấp từ, quay lại hay cài đặt mới.
+- **ErrorString -** Mô tả lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **InstallType -** Mã định danh cho phương thức mà Office được cài đặt. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **ExceptionAddress -** Địa chỉ trong chương trình nơi lỗi xảy ra. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **InstallTypeName -** Mã định danh cho phương thức mà Office được cài đặt. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **ExceptionCode -** Mã định danh bucketing cho trường hợp ngoại lệ.
 
-  - **IsLabMachine -** Office có đang được chạy trong phòng thí nghiệm của Microsoft hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **ExceptionInfo** - Thông tin hệ thống cho trường hợp ngoại lệ.
 
-  - **IsMsftInternal -** Người dùng Windows mà Office đang chạy có phải nhân viên của Microsoft hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **FaultAppName -** tên của ứng dụng lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **HangTypeCode** - Cho biết hình thức bị treo nếu quá trình bị treo trong khi thực thi.
 
-  - **ModuleBaseAddress -** Địa chỉ cơ sở của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **InstallMethod** - Bản dựng hiện tại của Office đã được nâng cấp từ, quay lại hay cài đặt mới.
 
-  - **ModuleBuildVersion -** Số phiên bản dựng của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **InstallType -** Mã định danh cho phương thức mà Office được cài đặt. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleMajorVersion -** Số phiên bản chính của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **InstallTypeName -** Mã định danh cho phương thức mà Office được cài đặt. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleMinorVersion -** Số phiên bản phụ của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **IsLabMachine -** Office có đang được chạy trong phòng thí nghiệm của Microsoft hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleName -** Tên mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **IsMsftInternal -** Người dùng Windows mà Office đang chạy có phải nhân viên của Microsoft hay không. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleOffset -** Bù trừ tính theo byte (theo hệ thập lục phân) từ địa chỉ cơ sở nơi lỗi xảy ra.
+- **ModuleBaseAddress -** Địa chỉ cơ sở của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleRevisionVersion -** Số phiên bản của bản chỉnh sửa bản dựng của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **ModuleBuildVersion -** Số phiên bản dựng của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleSize -** Kích cỡ mô-đun lỗi theo byte. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **ModuleMajorVersion -** Số phiên bản chính của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ModuleVersion** - Phiên bản của mô-đun lỗi gây ra sự cố.
+- **ModuleMinorVersion -** Số phiên bản phụ của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **OfficeArchitectureText** - Kiến trúc cài đặt: x64, x86, v.v.
+- **ModuleName -** Tên mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **OfficeUILang** - Ngôn ngữ giao diện người dùng trong Bản dựng Office.
+- **ModuleOffset -** Bù trừ tính theo byte (theo hệ thập lục phân) từ địa chỉ cơ sở nơi lỗi xảy ra.
 
-  - **OSEnvironment -** Mã định danh cho môi trường mà Office đang chạy.
+- **ModuleRevisionVersion -** Số phiên bản của bản chỉnh sửa bản dựng của mô-đun lỗi. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **PreviousBuild** - Phiên bản bản dựng đã được cài đặt trước đó
+- **ModuleSize -** Kích cỡ mô-đun lỗi theo byte. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **ProcessorArchitecture** - Kiến trúc bộ xử lý cho môi trường: x64, x86, v.v.
+- **ModuleVersion** - Phiên bản của mô-đun lỗi gây ra sự cố.
 
-  - **SessionFlags** - Xác định các điều kiện của phiên như: tệp đã mở hay đã chỉnh sửa, tài liệu đám mây đã mở chưa, trình tự khởi động đã hoàn thành chưa, v.v. 
+- **OfficeArchitectureText** - Kiến trúc cài đặt: x64, x86, v.v.
 
-  - **UAETypeName -** Mã định danh bucketing cho cách ứng dụng cố ý thoát. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **OfficeUILang** - Ngôn ngữ giao diện người dùng trong Bản dựng Office.
 
-  - **UninitLibletId** - Mã định danh duy nhất cho cấu phần lỗi của sự cố.
+- **OSEnvironment -** Mã định danh cho môi trường mà Office đang chạy.
 
-  - **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+- **PreviousBuild** - Phiên bản bản dựng đã được cài đặt trước đó
+
+- **ProcessorArchitecture** - Kiến trúc bộ xử lý cho môi trường: x64, x86, v.v.
+
+- **SessionFlags** - Xác định các điều kiện của phiên như: tệp đã mở hay đã chỉnh sửa, tài liệu đám mây đã mở chưa, trình tự khởi động đã hoàn thành chưa, v.v. 
+
+- **StackHash** - Cung cấp ID dạng băm cho ngăn xếp lỗi trong Office.
+
+- **SystemAvailableMemory** - Bộ nhớ có sẵn trong hệ điều hành
+
+- **UAETypeName -** Mã định danh bucketing cho cách ứng dụng cố ý thoát. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+- **UninitLibletId** - Mã định danh duy nhất cho cấu phần lỗi của sự cố.
+
+- **VerifyElseCrashTag -** Mã định danh duy nhất cho vị trí ứng dụng gặp sự cố. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+
+- **WatsonReportId** - Mã định danh của báo cáo được gửi đến dịch vụ Windows Watson.
+
+- **WerEventCreatedTime** - Dấu thời gian cho sự kiện Báo cáo Lỗi Windows.
 
 ### <a name="officesystemsystemhealthungracefulappexitimmersive"></a>Office.System.SystemHealthUngracefulAppExitImmersive
 
