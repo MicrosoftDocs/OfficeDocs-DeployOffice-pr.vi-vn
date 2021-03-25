@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp thông tin về các sản phẩm và phiên bản Office nào có các kiểm soát quyền riêng tư gần đây nhất.
 hideEdit: true
-ms.openlocfilehash: 8434891947997908bb4de61ad56606f8b4b59614
-ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
+ms.openlocfilehash: 01d7658c90706ac2bc5870262e59be4e0d9d1dd5
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931204"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181681"
 ---
 # <a name="privacy-controls-available-for-office-products"></a>Kiểm soát quyền riêng tư có sẵn cho các sản phẩm Office
 
@@ -192,7 +192,7 @@ Không có phiên bản tối thiểu nào được liệt kê cho các ứng d�
 
 ## <a name="related-articles"></a>Các bài viết liên quan
 
-- [ Quyền riêng tư và Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-privacy)
+- [ Quyền riêng tư và Microsoft Teams](/MicrosoftTeams/teams-privacy)
 - [Cài đặt quyền riêng tư trong Microsoft Whiteboard ](https://support.microsoft.com/office/ed9f0de9-71be-44c2-837d-e0f448660be1)
 - [Tôi đang sử dụng phiên bản Office nào?](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19)
 - [Tôi có phiên bản Outlook nào?](https://support.microsoft.com/office/b3a9568c-edb5-42b9-9825-d48d82b2257c)

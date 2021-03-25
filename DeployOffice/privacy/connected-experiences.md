@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: fe0d70bb03699af3b393de560234f9a1bb32c3c7
-ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
+ms.openlocfilehash: d7c4af6af94025136ab09f0709d8c65382f456dd
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597353"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181284"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -57,7 +57,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | PowerPoint Designer   | [Tạo bố trí trang chiếu chuyên nghiệp cùng PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 |Huấn luyện viên thuyết trình (PowerPoint)|[Diễn tập trình chiếu của bạn với Huấn luyện viên thuyết trình](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Phát hành lên Microsoft Stream    | [Chuyển bản trình bày thành video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Phát hành lên Power BI   | [Phát hành lên Power BI từ Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
+| Phát hành lên Power BI   | [Phát hành lên Power BI từ Excel](/power-bi/service-publish-from-excel) |
 | *Nghiên cứu*\*   | [Thêm hoặc thay đổi dịch vụ nghiên cứu](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Quét danh thiếp|  [Quét hoặc nhấn vào để thêm liên hệ vào Outlook for Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Chia sẻ thông báo|[Nhận thông báo khi các thành viên trong nhóm của bạn cập nhật tệp chia sẻ của bạn](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
@@ -120,14 +120,14 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Sắp ra mắt (Outlook)  |[Sắp ra mắt](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Liên hệ Bộ phận hỗ trợ (Outlook) | Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng|
 | Nhập tùy chỉnh (Visio)  | [Nhập dữ liệu vào hình trong bản vẽ của bạn](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
-| Mẹo chính sách Ngăn Mất Dữ liệu (DLP) |[Gửi email thông báo và hiển thị các mẹo chính sách cho chính sách DLP](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)  |
+| Mẹo chính sách Ngăn Mất Dữ liệu (DLP) |[Gửi email thông báo và hiển thị các mẹo chính sách cho chính sách DLP](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Công cụ Trực quan hóa Dữ liệu (Visio) |[Tạo sơ đồ Công cụ trực quan hóa Dữ liệu](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
 | Thiết kế dòng (Visio)  | [Thiết kế dòng công việc tự động trong Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | Danh sách bên ngoài (Outlook) |[Kết nối một danh sách ngoài với Outlook](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
 | Hộp thư đến Ưu tiên (Outlook) |[Hộp thư đến Ưu tiên dành cho Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Quản lý Quyền Thông tin |[Mở tệp có các quyền bị hạn chế](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | Thẻ liên hệ LinkedIn |[LinkedIn trong các ứng dụng và dịch vụ của Microsoft](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Phần bổ trợ dành cho Office*\* | [Xem, quản lý và cài đặt phần bổ trợ trong các chương trình Office](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(cho người dùng)* <br/> [Triển khai các phần bổ trợ trong Trung tâm quản trị](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(cho người quản trị)* |
+| *Phần bổ trợ dành cho Office*\* | [Xem, quản lý và cài đặt phần bổ trợ trong các chương trình Office](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(cho người dùng)* <br/> [Triển khai các phần bổ trợ trong Trung tâm quản trị](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(cho người quản trị)* |
 | Phản hồi về Office |[Làm thế nào để gửi phản hồi về Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Bộ phận hỗ trợ của Office (Liên hệ với chúng tôi) |Khi bạn chọn **Trợ giúp** > **Liên hệ Bộ phận hỗ trợ** trên dải băng |
 | Sơ đồ tổ chức (Viso) |[Tạo sơ đồ tổ chức trong Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -136,8 +136,8 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Tài liệu gần đây |[Mở tệp từ menu Tệp](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | *Trợ lý Sơ yếu lý lịch (hoặc Trợ lý CV)*\* |[Sử dụng Trợ lý Sơ yếu lý lịch và LinkedIn để có được hồ sơ tuyệt vời](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Bộ tìm phòng (Outlook)|[Cách kiểm soát Bộ tìm phòng trong Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-|Tài liệu An toàn|[Tài liệu An toàn](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Tài liệu An toàn trong Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-| Liên kết an toàn |[Liên kết an toàn ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
+|Tài liệu An toàn|[Tài liệu An toàn](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Tài liệu An toàn trong Microsoft 365 E5](/microsoft-365/security/office-365-security/safe-docs)|
+| Liên kết an toàn |[Liên kết an toàn ATP](/microsoft-365/security/office-365-security/atp-safe-links)  |
 | Nhãn độ nhạy cảm |[Áp dụng nhãn mức nhạy cảm cho tài liệu và email của bạn trong Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Chia sẻ  |[Chia sẻ sổ làm việc Excel của bạn với người khác](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Chia sẻ bản trình bày (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Chia sẻ tài liệu (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Được chia sẻ với tôi |[Xem tệp những người khác đã chia sẻ với bạn](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |

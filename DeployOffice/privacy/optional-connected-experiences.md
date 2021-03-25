@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: 942f32d7a8d177e6d74530a8382c145e94bec41a
-ms.sourcegitcommit: dee7b8706ba5a0e763052d2f2f79fb2d3d3a6907
+ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826428"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181753"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -76,7 +76,7 @@ Khi bạn sử dụng Office Store, việc sử dụng site của cửa hàng đ
 
 > [!NOTE]
 > - Người quản trị trong tổ chức của bạn có thể cung cấp cho bạn các phần bổ trợ, ngay cả khi bạn không chọn sử dụng Office Store.
-> - Nếu bạn là người quản trị, để biết thêm thông tin về các phần bổ trợ, hãy xem phần “Trải nghiệm được kết nối tùy chọn” trong [ Quyền riêng tư và bảo mật cho Các bổ trợ dành cho Office](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) và [Quyền riêng tư, quyền truy nhập và bảo mật cho các bổ trợ dành cho Outlook](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security).
+> - Nếu bạn là người quản trị, để biết thêm thông tin về các phần bổ trợ, hãy xem phần “Trải nghiệm được kết nối tùy chọn” trong [ Quyền riêng tư và bảo mật cho Các bổ trợ dành cho Office](/office/dev/add-ins/concepts/privacy-and-security) và [Quyền riêng tư, quyền truy nhập và bảo mật cho các bổ trợ dành cho Outlook](/office/dev/add-ins/outlook/privacy-and-security).
 
 ### <a name="research"></a>Nghiên cứu
 
@@ -91,7 +91,7 @@ Trên Outlook for iOS, sự kiện sắp diễn ra tiếp theo của bạn sẽ 
 
 ### <a name="weather-bar-in-outlook"></a>Thanh Thời tiết trong Outlook
 
-[Thanh Thời tiết](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) trong Outlook hiển thị dự báo thời tiết cho các vị trí địa lý mà bạn chọn. Trong quá trình sử dụng, thanh thời tiết trong Outlook sẽ kết nối với Thời tiết trên MSN theo mặc định. MSN thuộc sở hữu của Microsoft và các điều khoản của [Thỏa thuận Dịch vụ của Microsoft của Microsoft](https://www.microsoft.com/servicesagreement) và [Điều khoản về quyền riêng tư](https://privacy.microsoft.com/) sẽ được áp dụng. Khi bạn sử dụng Thanh Thời tiết với Thời tiết trên MSN, Microsoft không phát hiện vị trí của bạn và các thành phố bạn chọn hiển thị không liên kết với bạn. Bạn có thể [thay đổi thiết đặt mặc định này](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) để kết nối với nhà cung cấp dịch vụ thời tiết khác. Nếu bạn quyết định sử dụng một nhà cung cấp dịch vụ thời tiết khác, bạn sẽ cần kiểm tra điều khoản về quyền riêng tư và điều khoản cấp phép của nhà cung cấp đó để biết về những điều khoản được áp dụng.
+[Thanh Thời tiết](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) trong Outlook hiển thị dự báo thời tiết cho các vị trí địa lý mà bạn chọn. Trong quá trình sử dụng, thanh thời tiết trong Outlook sẽ kết nối với Thời tiết trên MSN theo mặc định. MSN thuộc sở hữu của Microsoft và các điều khoản của [Thỏa thuận Dịch vụ của Microsoft của Microsoft](https://www.microsoft.com/servicesagreement) và [Điều khoản về quyền riêng tư](https://privacy.microsoft.com/) sẽ được áp dụng. Khi bạn sử dụng Thanh Thời tiết với Thời tiết trên MSN, Microsoft không phát hiện vị trí của bạn và các thành phố bạn chọn hiển thị không liên kết với bạn. Bạn có thể [thay đổi thiết đặt mặc định này](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) để kết nối với nhà cung cấp dịch vụ thời tiết khác. Nếu bạn quyết định sử dụng một nhà cung cấp dịch vụ thời tiết khác, bạn sẽ cần kiểm tra điều khoản về quyền riêng tư và điều khoản cấp phép của nhà cung cấp đó để biết về những điều khoản được áp dụng.
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Cách xác định xem người quản trị của bạn có cho bạn khả năng sử dụng các trải nghiệm được kết nối tùy chọn không
 

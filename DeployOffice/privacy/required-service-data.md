@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office cái nhìn tổng quan về dữ liệu dịch vụ bắt buộc được thu thập về các trải nghiệm được kết nối trong Office.
 hideEdit: true
-ms.openlocfilehash: faa3507708b4768ee3b2b0f51257273c31ad2de7
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: 7480869114096dc8f858ce2b1551575c6224ae64
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440221"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181941"
 ---
 # <a name="required-service-data-for-office"></a>Dữ liệu dịch vụ bắt buộc cho Office
 
@@ -51,7 +51,7 @@ Dữ liệu dịch vụ bắt buộc khác với [dữ liệu chẩn đoán](ove
 
 Dữ liệu dịch vụ bắt buộc cũng sẽ được thu thập và gửi đến Microsoft để hỗ trợ các [dịch vụ thiết yếu](essential-services.md) của Office như dịch vụ cấp phép sẽ xác nhận bạn đã được cấp phép hợp lệ để sử dụng Office. Mặc dù bạn có thể kiểm soát nhiều trải nghiệm được kết nối sẵn dùng đối với bạn hoặc đối với người dùng của bạn nếu bạn là người quản trị trong tổ chức của bạn nhưng bộ dịch vụ này vẫn rất quan trọng đối với cách hoạt động của Office và do đó không thể bị tắt được. Dữ liệu của các dịch vụ thiết yếu luôn được gửi đến và xử lý bởi Microsoft khi sử dụng Office dù đã đặt cấu hình cho các cài đặt khác liên quan đến quyền riêng tư như thế nào.
 
-Dữ liệu dịch vụ bắt buộc có sẵn thông qua các Yêu cầu dịch vụ dữ liệu (DSR). Để biết thêm thông tin, hãy xem [Điều khoản về quyền riêng tư của Microsoft](https://privacy.microsoft.com/privacystatement) và [Yêu cầu chủ thể dữ liệu Office 365 đối với GDPR và CCPA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
+Dữ liệu dịch vụ bắt buộc có sẵn thông qua các Yêu cầu dịch vụ dữ liệu (DSR). Để biết thêm thông tin, hãy xem [Điều khoản về quyền riêng tư của Microsoft](https://privacy.microsoft.com/privacystatement) và [Yêu cầu chủ thể dữ liệu Office 365 đối với GDPR và CCPA](/microsoft-365/compliance/gdpr-dsr-office365).
 
 Nếu bạn là người quản trị cho tổ chức của bạn và muốn quản lý trải nghiệm được kết nối, hãy xem các bài viết sau:
 
