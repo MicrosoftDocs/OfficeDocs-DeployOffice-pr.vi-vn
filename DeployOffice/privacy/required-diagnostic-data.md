@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
+ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242212"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51167391"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -1788,6 +1788,8 @@ Các trường sau được thu thập trong iOS và Android:
 
 - **include_deleted** – liệu tìm kiếm có hiển thị các tùy chọn đã xóa trong kết quả tìm kiếm hay không 
 
+- **is_best_match_suggestion** - xem đề xuất tìm kiếm đã chọn có phải kết quả phù hợp nhất hay không.
+
 - **is_ics_external_data** - Ghi lại nếu một sự kiện được thêm là nội bộ (ví dụ: được thêm vào lịch Outlook trong Outlook) hoặc bên ngoài (ví dụ: được thêm vào lịch Outlook từ một ứng dụng email khác như Gmail).
 
 - **is_network_fully_connected** - Trường này là để hiểu nguyên nhân tìm kiếm ngoại tuyến. Nếu đã kết nối mạng và tìm kiếm ngoại tuyến thì nguyên nhân có khả năng là máy chủ hết thời gian chờ
@@ -2621,6 +2623,18 @@ Các trường sau đây sẽ được thu thập:
 
 - **with_message_enabled** – Cho biết liệu người dùng có thể phản hồi với thư hay không để giúp chúng tôi phát hiện các sự cố với thao tác phản hồi cho lời mời họp
 
+
+#### <a name="multiwindowlaunch"></a>multi.window.launch
+
+Sự kiện này ghi lại khi người dùng thực hiện hành động liên quan đến việc khởi chạy nhiều cửa sổ trên thiết bị có thể gập. Ví dụ: soạn thư, sự kiện, mở cửa sổ lịch.  Sự kiện này sử dụng hành động để ghi nhớ hành động đó. Ví dụ: để tiếp tục nhận được lời nhắc hoặc luôn khởi chạy trong cửa sổ mới.  Dữ liệu do sự kiện này thu thập được sẽ được dùng để đánh giá khả năng phát hiện, hiệu quả cũng như tùy chọn người dùng chung để thúc đẩy sự phát triển trong hiện tại và tương lai của các chức năng liên quan đến chế độ nhiều cửa sổ.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **is_remembered** - xem người dùng đã lưu tùy chọn khởi chạy trong cửa sổ mới từ vị trí được báo cáo hay chưa.
+
+- **multi_window_origin** - vị trí trong ứng dụng xảy ra tương tác để khởi chạy màn hình ứng dụng khác trong cửa sổ mới.
+
+
 #### <a name="officeandroiddocsuifileoperationsopendocumentmeasurements"></a>Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
 Sự kiện này được thu thập cho các ứng dụng Office chạy trong nền tảng Android và sẽ ghi lại khi hoạt động mở tệp diễn ra. Sự kiện này giúp giữ cho hoạt động mở tệp được an toàn, cập nhật và hoạt động chính xác. Mục tiêu của việc thu thập dữ liệu này là để liên tục cải thiện hiệu năng mở tệp. 
@@ -2830,7 +2844,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
 
-Sự kiện này giúp bạn hiểu ứng dụng Microsoft khác trong thiết bị là gì, ứng dụng của chúng tôi có thể đăng nhập một lần im lặng, từ điểm vào nào, v.v. Đồng thời, giúp bạn hiểu lý do không thể đăng nhập một lần im lặng.  Chúng tôi có được những thông tin chuyên sâu tốt hơn như từ ứng dụng Microsoft nào trong thiết bị, chúng tôi đang hoàn thiện trải nghiệm đăng nhập một lần. Hành động khi thất bại, khi đăng nhập một lần không hoạt động như dự kiến.
+Sự kiện này giúp bạn hiểu ứng dụng Microsoft khác trong thiết bị là gì, ứng dụng của chúng tôi có thể đăng nhập một lần im lặng, từ điểm vào nào, v.v. Đồng thời, giúp bạn hiểu lý do không thể đăng nhập một lần im lặng.  Chúng tôi có được những thông tin chuyên sâu tốt hơn như từ ứng dụng Microsoft nào trong thiết bị, chúng tôi đang hoàn thiện trải nghiệm đăng nhập một lần. Hành động sau khi đăng nhập một lần không hoạt động như mong đợi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -6592,6 +6606,28 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_CloseAndReopen:bool -** Tài liệu này có phải đã được đóng và mở lại không?
 
+  - **Data_ClpDocHasDrmDoc:bool** - Xem tài liệu có bao gồm tài liệu DRM hay không
+
+  - **Data_ClpDocHasIdentity:bool** - Xem tài liệu có thông tin danh tính (dùng để tải và đặt nhãn nhạy cảm) hay không
+
+  - **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động từ phiên hay không
+
+  - **Data_ClpDocHasSpoMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IMetadataCache hay không
+
+  - **Data_ClpDocHasSpoPackage:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IPackage hay không
+
+  - **Data_ClpDocIsProtected:bool** - Xem tài liệu có được IRM bảo vệ hay không
+
+  - **Data_ClpDocMetadataSource:int** - Enum xác định nguồn gốc của siêu dữ liệu nhãn nhạy cảm (IRM, phần OPC, Sharepoint, v.v)
+
+  - **Data_ClpDocNeedsUpconversion:bool** - Xem tài liệu có cần phải chuyển đổi dữ liệu nhãn nhạy cảm từ phần custom.xml hay không
+
+  - **Data_ClpDocNumFailedSetLabels:int** - Số lượng nhãn nhạy cảm không thể đặt trên tài liệu
+
+  - **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động bị sai hay không
+
+  - **Data_ClpDocWasInTrustBoundary:bool** - Xem tài liệu có nằm trong ranh giới tin cậy (cho phép đứng tên đồng tác giả trong các tài liệu được nhãn nhạy cảm bảo vệ) hay không
+
   - **Data\_DetachedDuration:long -** Thời gian mà hoạt động bị tách ra/không chạy
 
   - **Data\_Doc\_AccessMode:long -** Cách tài liệu này đã được mở (Chỉ đọc | đọc ghi)
@@ -6711,6 +6747,28 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_ClearDirtyFlagTimeMS:long -** Thời gian để xóa cờ rác tài liệu
 
   - **Data\_CloneDocumentTimeMS:long -** Thời gian để sao chép tài liệu trước khi bắt đầu lưu
+
+  - **Data_ClpDocHasDrmDoc:bool** - Xem tài liệu có bao gồm tài liệu DRM hay không
+
+  - **Data_ClpDocHasIdentity:bool** - Xem tài liệu có thông tin danh tính (dùng để tải và đặt nhãn nhạy cảm) hay không
+
+  - **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động từ phiên hay không
+
+  - **Data_ClpDocHasSpoMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IMetadataCache hay không
+
+  - **Data_ClpDocHasSpoPackage:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IPackage hay không
+
+  - **Data_ClpDocIsProtected:bool** - Xem tài liệu có được IRM bảo vệ hay không
+
+  - **Data_ClpDocMetadataSource:int** - Enum xác định nguồn gốc của siêu dữ liệu nhãn nhạy cảm (IRM, phần OPC, Sharepoint, v.v)
+
+  - **Data_ClpDocNeedsUpconversion:bool** - Xem tài liệu có cần phải chuyển đổi dữ liệu nhãn nhạy cảm từ phần custom.xml hay không
+
+  - **Data_ClpDocNumFailedSetLabels:int** - Số lượng nhãn nhạy cảm không thể đặt trên tài liệu
+
+  - **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động bị sai hay không
+
+  - **Data_ClpDocWasInTrustBoundary:bool** - Xem tài liệu có nằm trong ranh giới tin cậy (cho phép đứng tên đồng tác giả trong các tài liệu được nhãn nhạy cảm bảo vệ) hay không
 
   - **Data\_CommitTransactionTimeMS:long -** Thời gian thực hiện giao tác lưu
 
@@ -6857,6 +6915,28 @@ Các trường sau đây sẽ được thu thập:
 Các trường sau đây sẽ được thu thập:
 
 - **Data_AddDocTelemetryResult:long** - Mục nhập nhật ký này có tất cả các phép đo từ xa tài liệu cần thiết hay không (Các trường Dữ_liệu_Tài_liệu_*) Nếu không, lý do là gì?
+
+- **Data_ClpDocHasDrmDoc:bool** - Xem tài liệu có bao gồm tài liệu DRM hay không
+
+- **Data_ClpDocHasIdentity:bool** - Xem tài liệu có thông tin danh tính (dùng để tải và đặt nhãn nhạy cảm) hay không
+
+- **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động từ phiên hay không
+
+- **Data_ClpDocHasSpoMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IMetadataCache hay không
+
+- **Data_ClpDocHasSpoPackage:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IPackage hay không
+
+- **Data_ClpDocIsProtected:bool** - Xem tài liệu có được IRM bảo vệ hay không
+
+- **Data_ClpDocMetadataSource:int** - Enum xác định nguồn gốc của siêu dữ liệu nhãn nhạy cảm (IRM, phần OPC, Sharepoint, v.v)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Xem tài liệu có cần phải chuyển đổi dữ liệu nhãn nhạy cảm từ phần custom.xml hay không
+
+- **Data_ClpDocNumFailedSetLabels:int** - Số lượng nhãn nhạy cảm không thể đặt trên tài liệu
+
+- **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động bị sai hay không
+
+- **Data_ClpDocWasInTrustBoundary:bool** - Xem tài liệu có nằm trong ranh giới tin cậy (cho phép đứng tên đồng tác giả trong các tài liệu được nhãn nhạy cảm bảo vệ) hay không
 
 - **Data_CppUncaughtExceptionCount:long** - Không theo kịp ngoại lệ riêng trong khi hoạt động đang chạy
 
@@ -7044,6 +7124,28 @@ Các trường sau đây sẽ được thu thập:
 Các trường sau đây sẽ được thu thập:
 
 - **Data_AddDocTelemetryResult:long** - Mục nhập nhật ký này có tất cả các phép đo từ xa tài liệu cần thiết hay không (Các trường Dữ_liệu_Tài_liệu_*) Nếu không, lý do là gì?
+
+- **Data_ClpDocHasDrmDoc:bool** - Xem tài liệu có bao gồm tài liệu DRM hay không
+
+- **Data_ClpDocHasIdentity:bool** - Xem tài liệu có thông tin danh tính (dùng để tải và đặt nhãn nhạy cảm) hay không
+
+- **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động từ phiên hay không
+
+- **Data_ClpDocHasSpoMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IMetadataCache hay không
+
+- **Data_ClpDocHasSpoPackage:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IPackage hay không
+
+- **Data_ClpDocIsProtected:bool** - Xem tài liệu có được IRM bảo vệ hay không
+
+- **Data_ClpDocMetadataSource:int** - Enum xác định nguồn gốc của siêu dữ liệu nhãn nhạy cảm (IRM, phần OPC, Sharepoint, v.v)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Xem tài liệu có cần phải chuyển đổi dữ liệu nhãn nhạy cảm từ phần custom.xml hay không
+
+- **Data_ClpDocNumFailedSetLabels:int** - Số lượng nhãn nhạy cảm không thể đặt trên tài liệu
+
+- **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động bị sai hay không
+
+- **Data_ClpDocWasInTrustBoundary:bool** - Xem tài liệu có nằm trong ranh giới tin cậy (cho phép đứng tên đồng tác giả trong các tài liệu được nhãn nhạy cảm bảo vệ) hay không
 
 - **Data_CppUncaughtExceptionCount:long** - Không theo kịp ngoại lệ riêng trong khi hoạt động đang chạy
 
@@ -8750,6 +8852,12 @@ Các trường sau đây sẽ được thu thập:
 
 - **has_mip_label** - cho biết nhãn MIP có được đóng dấu trên thư hay không
 
+- **image_attachment_count** - cho biết số lượng hình ảnh đang được gửi dưới dạng tệp đính kèm với email
+
+- **image_body_count** - cho biết số lượng hình ảnh đang được gửi trong dòng dưới dạng một phần nội dung của email
+
+- **image_movement_count** - cho biết số lượng hình ảnh của email đã được chuyển vào trong dòng hoặc di chuyển trở lại.
+
 - **is_group_escalation** - đây có phải là thư tăng cấp trong nhóm không, "thư tăng cấp" là thư được gửi đến hộp thư của người dùng do sự tăng cấp (đã đăng ký với nhóm)
 
 - **is_groups** - theo dõi xem thư đã gửi có là thư nhóm hay không
@@ -9780,6 +9888,28 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_CheckWebSharingViolationForIncOpen -** Khoảng thời gian thực hiện phương pháp CheckWebSharingViolationForIncOpen tính bằng mili giây
    
   - **Data_CloseAndReopenWithoutDiscard –** Tài liệu đã được đóng và mở lại trong suốt quy trình mở mà không cần loại bỏ hay không.
+
+  - **Data_ClpDocHasDrmDoc:bool** - Xem tài liệu có bao gồm tài liệu DRM hay không
+
+  - **Data_ClpDocHasIdentity:bool** - Xem tài liệu có thông tin danh tính (dùng để tải và đặt nhãn nhạy cảm) hay không
+
+  - **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động từ phiên hay không
+
+  - **Data_ClpDocHasSpoMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IMetadataCache hay không
+
+  - **Data_ClpDocHasSpoPackage:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm từ SPO thông qua IPackage hay không
+
+  - **Data_ClpDocIsProtected:bool** - Xem tài liệu có được IRM bảo vệ hay không
+
+  - **Data_ClpDocMetadataSource:int** - Enum xác định nguồn gốc của siêu dữ liệu nhãn nhạy cảm (IRM, phần OPC, Sharepoint, v.v)
+
+  - **Data_ClpDocNeedsUpconversion:bool** - Xem tài liệu có cần phải chuyển đổi dữ liệu nhãn nhạy cảm từ phần custom.xml hay không
+
+  - **Data_ClpDocNumFailedSetLabels:int** - Số lượng nhãn nhạy cảm không thể đặt trên tài liệu
+
+  - **Data_ClpDocHasSessionMetadata:bool** - Xem tài liệu có siêu dữ liệu nhãn nhạy cảm đang hoạt động bị sai hay không
+
+  - **Data_ClpDocWasInTrustBoundary:bool** - Xem tài liệu có nằm trong ranh giới tin cậy (cho phép đứng tên đồng tác giả trong các tài liệu được nhãn nhạy cảm bảo vệ) hay không
 
   - **Data\_ContentTransaction -** Tập hợp các giá trị được xác định trước của thời điểm có thể tạo giao dịch (AllowedOnLoadDocument, AllowedOnOpenComplete, v.v.)
 
@@ -12521,9 +12651,9 @@ Các trường sau đây sẽ được thu thập:
   
 - **BootToStart** - Liệu người dùng có chọn hiển thị màn hình bắt đầu khi ứng dụng này khởi chạy hay không.
 
-- **ColdBoot** - Đây là lần đầu ứng dụng Office chạy sau khi khởi động lại hệ thống hay phải tải nhị phân ứng dụng từ đĩa.
+- **ColdBoot** - Xem đây là lần đầu ứng dụng Office chạy sau khi khởi động lại hệ thống hay phải tải nhị phân ứng dụng dụng từ đĩa. (Chỉ dành cho macOS/iOS)
 
-- **DeviceModel** - Model của thiết bị.
+- **DeviceModel** - Mô hình của thiết bị. (Chỉ dành cho macOS/iOS)
 
 - **DocLocation** -  Khi mở tài liệu, cho biết dịch vụ nào đã cung cấp tài liệu (OneDrive, File Server, SharePoint, v.v).
 
@@ -12533,6 +12663,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **FirstBoot** - Đây có phải là lần khởi động đầu tiên của ứng dụng hay không.
 
+- **FreeMemoryPercentage** - Phần trăm dung lượng bộ nhớ trên thiết bị miễn phí. (Chỉ dành cho Windows)
+
 - **InitializationDuration** - Khoảng thời gian tính bằng micrô giây cần để khởi tạo quy trình Office trước.
 
 - **InterruptionMessageId** - Nếu khởi động bị gián đoạn bởi hộp thoại yêu cầu thông tin nhập của người dùng của người dùng, ID của hộp thoại.
@@ -12541,9 +12673,19 @@ Các trường sau đây sẽ được thu thập:
 
 - **OpenAsNew** – Ứng dụng có được khởi động bằng cách mở tài liệu hiện có làm mẫu cho tài liệu mới hay không.
 
+- **PageFaultCount** - Số lượng lỗi trang trong quy trình. (Chỉ dành cho Windows)
+
+- **PrimaryDiskType** - Xem thiết bị lưu trữ chính là ổ đĩa cứng hay ổ đĩa quay kèm tốc độ quay của ổ (nếu có). (Chỉ dành cho macOS/iOS)
+
+- **PrivateCommitUsageMB** - Phí cam kết (tức là dung lượng bộ nhớ mà trình quản lý bộ nhớ đã cam kết cho quy trình này) tính bằng megabyte đối với quy trình này. (Chỉ dành cho Windows)
+
+- **ProcessorCount** - Số lượng bộ xử lý trên thiết bị. (Chỉ dành cho macOS/iOS)
+
+- **TotalPhysicalMemory** - Tổng dung lượng bộ nhớ vật lý trên thiết bị. (Chỉ dành cho macOS/iOS)
+
 - **TotalWorkingSetMB** - Dung lượng bộ nhớ tính bằng megabyte trong bộ làm việc của quy trình.
 
-- **VirtualSetMB** - Dung lượng bộ nhớ tính bằng megabyte trong bộ ảo của quy trình. (Chỉ dành cho MacOS/iOS)
+- **VirtualSetMB** - Dung lượng bộ nhớ tính bằng megabyte trong bộ ảo của quy trình. (Chỉ dành cho macOS/iOS)
 
 - **WorkingSetPeakMB** - Dung lượng bộ nhớ lớn nhất tính bằng megabyte đã từng có từ trước đến nay trong bộ làm việc của quy trình.
 
