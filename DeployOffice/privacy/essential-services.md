@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
-ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
+ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
+ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51032005"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51891226"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -3410,6 +3410,92 @@ Các trường sau đây sẽ được thu thập:
 - **context** - Chuỗi – Luồng mà người dùng đã vào trang mua trong ứng dụng
 
 
+### <a name="officeapplelicensingcommonpaywallcontrol"></a>Office.Apple.Licensing.CommonPaywallControl
+
+Sự kiện này được sử dụng để hiểu rõ trải nghiệm mua trong ứng dụng (IAP) cho người dùng. Sự kiện này cho phép chúng tôi đảm bảo IAP hoạt động như mong muốn và giúp chúng tôi hiểu rõ sự cố của người dùng để có thể tối ưu hóa trải nghiệm IAP.  Bộ sưu tập diễn ra thông qua một trong các sự kiện con sau đây.
+
+- **Office.iOS.Payami.Payami.Presented** - Dữ liệu được thu thập khi quyền kiểm soát paywall được hiển thị cho người dùng. Dữ liệu được sử dụng để xây dựng một chế độ xem nhằm đo lường tốc độ chuyển đổi ở từng bước và đảm bảo giao diện người dùng hoạt động như dự kiến đối với người dùng trải nghiệm giao diện tối thiểu trong trải nghiệm mua.
+
+   Các trường sau đây sẽ được thu thập:
+
+  - **entryPoint** - Chuỗi – Paywall được hiển thị Nút/Dòng này. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu"
+  - **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
+
+- **Office.iOS.Paywall.Paywall.Stats** - Dữ liệu được thu thập khi giao diện người dùng của paywall được hiển thị cho người dùng, thời lượng tương tác và xem giao dịch mua có được thực hiện, thực hiện thành công hoặc thất bại hay không. Dữ liệu được sử dụng để đo hiệu suất của giao diện người dùng và đảm bảo giao diện người dùng hoạt động như mong đợi. 
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu".
+   - **isFRE** - Boolean – Kiểm tra xem Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường đang được hiển thị.
+   - **status** - Chuỗi – Trạng thái thoát của paywall. Như “initiated”, “paymentDone”, “provisionFailed”.
+   - **userDuration** - Kép – Khoảng thời gian tính bằng mili giây mà người dùng đã dành cho paywall
+  
+- **Office.iOS.Paywall.SKUChooser.BuyButtonTap** - Dữ liệu được thu thập khi người dùng nhấn vào nút Mua/Mua hàng. Dữ liệu được sử dụng để đo hiệu suất của nút và đảm bảo nút hoạt động như mong đợi.
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
+   - **isDefaultSKU** - Bool – Nếu người dùng đang mua sản phẩm, chúng tôi đề xuất cho họ bằng cách hiển thị sản phẩm theo mặc định.
+   - **productId** - Chuỗi – ID sản phẩm trong cửa hàng ứng dụng của sản phẩm có nút Mua được nhấn vào.
+   - **toggleCount** - Int – Số lần người dùng chuyển đổi giữa việc xem các sản phẩm khác nhau trước khi họ nhấn vào Nút Mua trong phiên hiện tại của Paywall.
+
+- **Office.iOS.Paywall.SKUChooser.Stats** - Dữ liệu được thu thập để xem người dùng truy cập Bộ chọn SKU như thế nào, thời gian người dùng dành cho màn hình Bộ chọn SKU là bao nhiêu và tại sao họ thoát Bộ chọn SKU. Với thông tin này, chúng tôi có thể đảm bảo Bộ chọn SKU đang hoạt động như mong đợi, đồng thời chúng tôi sẽ có thể tối ưu hóa và cải thiện trải nghiệm người dùng cuối.
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu".
+   - **exitReason** - Chuỗi – Nguyên nhân thoát của Bộ chọn SKU. Như “BuyButton”, “CloseButton”
+   - **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
+   - **userDuration** - Kép - Khoảng thời gian tính bằng mili giây mà người dùng đã dành cho bộ chọn SKU.
+
+- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** - Dữ liệu được thu thập khi Mua/Cung cấp/Kích hoạt không thành công và người dùng nhấn vào nút thử lại. Dữ liệu được sử dụng để khắc phục các kịch bản lỗi khi mua hàng và sửa lỗi nhằm đảm bảo chức năng hoạt động như mong đợi.
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **lỗiReason** - Chuỗi – Cho biết lỗi người dùng đang thử lại là gì như “provisioningFailed”, “purchaseFailed”, “activationFailed”.
+   - **productId** - Chuỗi – ID sản phẩm trong Cửa hàng ứng dụng mà người dùng đang thử lại yêu cầu lỗi.
+
+- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** - Dữ liệu được thu thập khi người dùng nhấn vào “Xem thêm quyền lợi” để xem tất cả dịch vụ, ứng dụng và tính năng có trong giao dịch mua. Họ phải mở rộng các phần nêu chi tiết các tính năng cho từng ứng dụng. Sự kiện này thu thập các tính năng và ứng dụng mà họ đã mở rộng, cùng với khoảng thời gian đã sử dụng. Dữ liệu được sử dụng để đảm bảo giao diện người dùng được cung cấp cho người dùng cuối để tìm hiểu về các quyền lợi đang hoạt động như mong đợi. 
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **appsExpanded** - Chuỗi – Danh sách dịch vụ/ứng dụng phân tách bằng dấu phẩy có các quyền lợi đã được mở rộng.
+   - **productId** - Chuỗi – ID của sản phẩm trong Cửa hàng ứng dụng có người dùng đang xem thêm các quyền lợi được cung cấp
+   - **userDuration** - Kép – Khoảng thời gian tính bằng mili giây mà người dùng đã dành cho màn hình Quyền lợi.
+
+- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - Sự kiện này được thu thập khi người dùng nhấn vào “Xem tất cả quyền lợi” sau khi mua thành công để xem các ứng dụng và tính năng có trong giao dịch mua. Dữ liệu được sử dụng để đo lường giao diện người dùng có đang hoạt động như mong đợi không.
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **productId** - Chuỗi – ID của sản phẩm trong Cửa hàng ứng dụng có người dùng đang xem tất cả các quyền lợi được cung cấp.
+
+- **Office.iOS.Paywall.SKUChooser.ProductSwitched** - Phép đo mức độ sử dụng từ xa để xem tương tác của người dùng cuối với giao diện người dùng được cung cấp để chuyển đổi giữa các SKU khác nhau và đảm bảo rằng chức năng hoạt động như mong đợi. 
+
+   Các trường sau đây sẽ được thu thập:
+
+  - **productId**- Chuỗi – ID của sản phẩm trong Cửa hàng ứng dụng mà người dùng vừa chuyển sang xem từ các sản phẩm có sẵn trên bộ chọn SKU.
+
+- **Office.iOS.Paywall.StoreKit.Response** - Phép đo kỹ thuật từ xa quan trọng để ghi lại kết quả của lần thử mua hàng do người dùng kích hoạt theo cách thủ công và phản hồi của Cửa hàng ứng dụng đối với sự kiện. Dữ liệu được dùng để đo trạng thái của lần thử mua hàng và lý do không thành công (nếu có), đồng thời thực hiện các hành động sửa lỗi để đảm bảo IAP và tất cả các điểm nhập đều hoạt động như mong muốn.
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
+   - **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (không thành công). Chỉ ra phản hồi lỗi do phản hồi Cửa hàng ứng dụng đưa ra.
+   - **productId** - Chuỗi – Chỉ dành cho “MakePurchase”, “PendingPurchase”, ID cửa hàng ứng dụng của sản phẩm mà yêu cầu được thực hiện.
+   - **productsCount** - Int – Chỉ dành cho “ProductsFetch”, số lượng sản phẩm được Cửa hàng trả về.
+   - **requestType** - Chuỗi – Loại yêu cầu StoreKit. Như “ProductsFetch”, “PendingPurchase”
+   - **status** - Chuỗi – Thành công hay thất bại, cho biết yêu cầu thành công hay thất bại.
+
+- **Office.iOS.Paywall.Provisioning.Response** - Phép đo kỹ thuật từ xa quan trọng và hợp đồng với Dịch vụ liên đoàn bán lẻ (RFS) để thu thập thông tin được cung cấp trong trường này. RFS là dịch vụ nội bộ được sử dụng trong Microsoft để kiểm tra chéo giao dịch mua. Trường này được sử dụng để gọi API đối với RFS, điều này sẽ giúp hiểu rằng hiệu suất tích hợp sẽ như mong đợi.  
+
+   Các trường sau đây sẽ được thu thập:
+
+   - **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
+   - **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (không thành công). Chỉ ra phản hồi lỗi do phản hồi Cấp phép RFS đưa ra.
+   - **productId** - Chuỗi – ID cửa hàng ứng dụng của sản phẩm mà yêu cầu được thực hiện
+   - **status** - Chuỗi – Thành công hay thất bại, cho biết yêu cầu thành công hay thất bại
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Sự kiện này thu thập dữ liệu giúp giám sát trạng thái của các thành phần Dime. Ví dụ: đối với dòng mua sản phẩm trong ứng dụng khi người dùng chọn mua đăng ký Microsoft 365 từ trong ứng dụng Office for Android hoặc trên các thiết bị chạy Windows.
@@ -3496,29 +3582,6 @@ Sự kiện này sẽ thu thập các thao tác nhấn của người dùng mi�
 Các trường sau đây sẽ được thu thập:
 
 - **featureId** - TCID cho tính năng cao cấp mà người dùng nhấn vào
-
-
-### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Phép đo từ xa mức sử dụng quan trọng được thu thập để cho biết khi nào người dùng nhấn vào nút Mua.  Dữ liệu được sử dụng để suy ra mẫu hình sử dụng và chỉ số chuyển đổi cho những người dùng cố gắng mua gói đăng ký trong ứng dụng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
-
-- **isDefaultSKU** - Bool – Nếu người dùng đang mua sản phẩm, chúng tôi đề xuất cho họ bằng cách hiển thị sản phẩm theo mặc định.
-
-- **productId** - Chuỗi – Id sản phẩm trong cửa hàng ứng dụng của sản phẩm mà nút Mua được nhấn vào
-
-- **toggleCount** - Int – Số lần người dùng chuyển đổi giữa việc xem các sản phẩm khác nhau trước khi họ nhấn vào Nút Mua trong phiên hiện tại của Paywall.
-
-### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
-
-Đo lường sử dụng từ xa để biết khi nào người dùng nhấn vào “Xem Tất cả Lợi ích”, sau khi mua hàng thành công để xem các ứng dụng và tính năng bao gồm trong giao dịch mua mà họ vừa thực hiện. Dữ liệu được sử dụng để giúp phát triển tính năng nâng cao trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng trong quá trình cập nhật ứng dụng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **productId** - Chuỗi - ID Ứng dụng của Microsoft Store của sản phẩm mà người dùng đang xem tất cả các lợi ích được cung cấp
 
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
@@ -3675,7 +3738,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **ErrorType** - Lý do xảy ra lỗi, chẳng hạn như "AlreadyRedeemedByOther".
 
-- **InAFOFlow** - Một boolean cho biết chúng tôi đang ở trong dòng thu hồi AFO.
+- **InAFOFlow** - Giá trị boolean cho biết chúng tôi đang ở dòng quy đổi Kích hoạt Office.
 
 - **StatusCode** - Kết quả gồm một từ của cuộc gọi dịch vụ, chẳng hạn như “Created”.
 
@@ -3831,6 +3894,107 @@ Nếu chúng tôi không thể kích hoạt người dùng vì một số lý do
 
 Sự kiện này không thu thập trường nào.
 
+### <a name="officelicensingoobehandledigitalattachfailure"></a>Office.Licensing.OOBE.HandleDigitalAttachFailure
+
+Sự kiện này được kích hoạt khi tính năng kiểm tra dịch vụ (xem Office.Licensing.OOBE.SearchForDigitalAttach) không tìm thấy ưu đãi Bản đính kèm kỹ thuật số có thể nhận trên thiết bị này. Dựa trên các điều kiện khác nhau của thiết bị, chúng tôi sẽ hiển thị các hộp thoại khác nhau cho người dùng. Sự kiện này sẽ ghi lại nhiều kịch bản khác nhau về cách chúng tôi xử lý lỗi đính kèm kỹ thuật số.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Activity_Result_Tag** cho chúng tôi biết cách chúng tôi chuyển người dùng sang các trạng thái lỗi khác nhau.
+   - 0x222e318f - Chúng tôi nên tiếp tục tìm kiếm ưu đãi Kích hoạt Office.
+   - 0x222e318e - Chúng tôi sẽ quay lại chế độ OEM trong phiên này vì thiết bị này không đi kèm với bất kỳ ưu đãi Bản đính kèm kỹ thuật số nào.
+   - 0x222e318d - Không có kết nối Internet, điều này sẽ khiến chúng tôi hiển thị hộp thoại NoInternetConnectivity cho người dùng 
+   - 0 - Chúng tôi sẽ hiển thị giao diện người dùng lỗi khác nhau dựa trên mã lỗi cụ thể của người dùng.
+
+- **Data_DigitalAttachErrorType** - cho chúng tôi biết mã lỗi cụ thể nào từ cuộc gọi dịch vụ.
+
+- **Data_FallbackFlight** - cho chúng tôi biết liệu bản dựng xem trước UseAFOAsFallBack đã được BẬT hay không.
+
+
+### <a name="officelicensingoobehandledigitalattachsuccess"></a>Office.Licensing.OOBE.HandleDigitalAttachSuccess
+
+Sự kiện này được kích hoạt khi công cụ kiểm tra dịch vụ tìm thấy ưu đãi Bản đính kèm kỹ thuật số có thể nhận trên thiết bị này. Dựa trên các điều kiện khác nhau của thiết bị, chúng tôi sẽ hiển thị các hộp thoại khác nhau cho người dùng. Sự kiện này sẽ ghi lại nhiều kịch bản khác nhau về cách chúng tôi xử lý trường hợp đính kèm kỹ thuật số thành công.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Activity_Result_Tag** - cho chúng tôi biết cách chúng tôi xử lý các kịch bản Bản đính kèm kỹ thuật số thành công.
+   - 0 - Chúng tôi có thể tự động tải danh tính và chúng tôi đã hiển thị giao diện người dùng “Bạn có Office” (có tài khoản) cho người dùng.
+   - 0x222e3191 - Chúng tôi không thể tự động tải danh tính nên chúng tôi sẽ hiển thị giao diện người dùng “Bạn có Office” (không có tài khoản) cho họ.
+   - 0x222e3193 - Chúng tôi đã hiển thị giao diện người dùng “Bạn có Office” (không có tài khoản) cho người dùng hoặc chúng tôi không cần hiển thị bất kỳ giao diện người dùng “Bạn có Office” nào cho người dùng vì đó là ưu đãi dựa trên thiết bị.
+
+- **Data_IsClaimTypeDevice** - cho chúng tôi biết liệu hình thức nhận ưu đãi Bản đính kèm kỹ thuật số có dựa trên thiết bị không.
+
+### <a name="officelicensingoobepopulatedigitalattachoffersignindex"></a>Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
+
+Nhà sản xuất thiết bị ban đầu (OEM) bán các máy đi kèm với Office (gói đăng ký một năm hoặc vĩnh viễn) đã được thanh toán khi khách hàng mua máy của họ. Sự kiện này theo dõi thời điểm tìm thấy quyền sở hữu Office trước cho thiết bị và người dùng đã đăng nhập bằng Tài khoản Microsoft để cho phép chúng tôi theo dõi tình trạng của hệ thống và dịch vụ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_ExpirationDate** - cho chúng tôi biết ngày hết hạn của ưu đãi đăng ký
+
+- **Data_IsSubscription** - cho chúng tôi biết sản phẩm có thể nhận là SKU cần đăng ký hay SKU vĩnh viễn
+
+- **Data_ProductName** - cho chúng tôi biết tên sản phẩm của ưu đãi Bản đính kèm kỹ thuật số
+
+
+### <a name="officelicensingoobesearchfordigitalattach"></a>Office.Licensing.OOBE.SearchForDigitalAttach
+
+Nhà sản xuất thiết bị ban đầu (OEM) bán các máy đi kèm với Office (gói đăng ký một năm hoặc vĩnh viễn) đã được thanh toán khi khách hàng mua máy của họ. Máy được thiết lập bằng một khóa đăng ký cụ thể (OOBEMode: OEMTA) có thể có một ưu đãi Office được đính kèm kỹ thuật số vào máy đó. Khi chúng tôi khởi động Office, chúng tôi thực hiện kiểm tra dịch vụ để xem liệu có tìm thấy ưu đãi Office đính kèm kỹ thuật số hay không. Hoạt động này là phương tiện để theo dõi điều này. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Activity_Result_Tag** - cho chúng tôi biết kết quả tổng thể của hoạt động kiểm tra dịch vụ này. 
+   - 0x222e318c Bản dựng xem trước Bản đính kèm kỹ thuật số đã bị TẮT, do đó không thực hiện kiểm tra dịch vụ nào.
+   - 0x222e318b Máy khách không có Internet, do đó không thể thực hiện kiểm tra dịch vụ.
+   - 0x222e318a Tìm thấy ưu đãi Bản đính kèm kỹ thuật số có thể quy đổi
+   - 0x222e3189 Tìm thấy ưu đãi Bản đính kèm kỹ thuật số không thể quy đổi
+
+- **Data_EnableDAFlight** - sẽ cho chúng tôi biết bản dựng xem trước Bản đính kèm kỹ thuật số kích hoạt kiểm tra dịch vụ này đã được BẬT hay không.
+
+
+### <a name="officelicensingoobeshowtouchlessattachfailuredialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
+
+Nhà sản xuất thiết bị ban đầu (OEM) bán các máy đi kèm với Office (gói đăng ký một năm hoặc vĩnh viễn) đã được thanh toán khi khách hàng mua máy của họ. Sự kiện này được kích hoạt khi xảy ra lỗi trong khi quy đổi Bản đính kèm kỹ thuật số và dòng kích hoạt cho các PC OEM có quyền sở hữu Office trước.  Chúng tôi sử dụng dữ liệu này để theo dõi trạng thái của các hệ thống và dịch vụ, đồng thời khắc phục các sự cố liên quan đến dòng kích hoạt Office OEM.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Continue** - cho chúng tôi biết người dùng có bấm vào “Tiếp tục” trên hộp thoại không.
+
+- **Activity_Result_Tag** - cho chúng tôi biết nút mà người dùng đã bấm vào trên hộp thoại.
+   - 0x222e319d - Người dùng bấm vào “Thử lại” trên hộp thoại
+   - 0x222e319c - Người dùng bấm vào “Tiếp tục” trên hộp thoại
+   - 0 - Người dùng thoát khỏi hộp thoại
+
+- **Data_IsForDigitalAttach** - cho chúng tôi biết người dùng đang sử dụng nền tảng và quy trình nào – Cũ (Kích hoạt Office (AFO)) và Hiện đại (Bản đính kèm kỹ thuật số).
+
+- **Data_Retry** - cho chúng tôi biết nếu người dùng bấm vào “Tìm lại” trên hộp thoại.
+
+
+### <a name="officelicensingoobeshowtouchlessattachofferdialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
+
+Nhà sản xuất thiết bị ban đầu (OEM) bán các máy đi kèm với Office (gói đăng ký một năm hoặc vĩnh viễn) đã được thanh toán khi khách hàng mua máy của họ. Sự kiện này theo dõi thời điểm tìm thấy quyền sở hữu Office trước cho thiết bị và người dùng không đăng nhập bằng Tài khoản Microsoft để cho phép chúng tôi theo dõi tình trạng của hệ thống và dịch vụ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Activity_Result_Tag** - cho chúng tôi biết liệu danh tính của người dùng đã được tìm thấy hay không
+   - 0x222e3194 - Chúng tôi không thể nhận dạng người dùng (họ đã hủy đăng nhập hoặc xác thực không thành công).
+   - 0 - Chúng tôi đã tìm được danh tính người dùng.
+
+- **Data_ExpirationDate** - cho chúng tôi biết ngày hết hạn của ưu đãi đăng ký
+
+- **Data_IsCentennial** - cho chúng tôi biết liệu ứng dụng Office đang chạy trên nền tảng centennial hay không
+
+- **Data_IsForDigitalAttach** - cho chúng tôi biết hộp thoại này được kích hoạt từ dòng Bản đính kèm kỹ thuật số hay dòng Kích hoạt Office.
+
+- **Data_IsSubscription** - cho chúng tôi biết sản phẩm có thể nhận là SKU cần đăng ký hay SKU vĩnh viễn
+
+- **Data_OExType** - cho chúng tôi biết người dùng có thoát khỏi hộp thoại không sau khi bấm vào liên kết ChangeAccount
+
+- **Data_ProductName** - cho chúng tôi biết tên sản phẩm của ưu đãi Bản đính kèm kỹ thuật số
+
+- **Data_UseInAppRedemption** - cho chúng tôi biết nếu chúng tôi sử dụng tính năng quy đổi web trong ứng dụng trên web – điều này chỉ liên quan đến dòng Kích hoạt Office.
+
+
 ### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
 
 Người dùng có Office được cài đặt sẵn trên máy mới chưa có quyền được hưởng Office đã cho thấy một hộp thoại thông qua đó họ có thể thử, mua hoặc nhập một chìa khóa sản phẩm để đực cấp phép. Sự kiện này ghi lại hành động người dùng trên hộp thoại. Sự kiện này được sử dụng để theo dõi hành động của người dùng được thực hiện trên hộp thoại hiển thị cho người dùng không có quyền được hưởng Office cài đặt sẵn trên máy tính, đồng thời, giúp xác định xem người dùng được cấp phép hay chưa được cấp phép bằng cách thiết kế.
@@ -3965,7 +4129,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
 
-Sau khi nhận thành công một mã pin hợp lệ, bạn sẽ liên kết với một chiếc máy tính bảng cài sẵn Office, chúng tôi sẽ hiển thị một hộp thoại đăng nhập hoặc hộp thoại quy đổi.  Sau khi mã pin được quy đổi, chúng tôi sẽ hiển thị hộp thoại EULA.  Là một phần của tính năng hiện đại hóa AFO của chúng tôi, chúng tôi đã làm mới hai hộp thoại để truyền tải thêm thông tin về sản phẩm Office đi kèm với máy tính.  Phép đo từ xa này là để theo dõi xem liệu tính năng của chúng tôi có thành công trong việc làm giảm sự người dùng ma sát trong quy trình quy đổi sản phẩm của họ bằng cách theo dõi quy trình và các điểm thoát của quy trình quy đổi (hộp thoại bị bác bỏ).
+Sau khi nhận thành công một mã pin hợp lệ, bạn sẽ liên kết với một chiếc máy tính bảng cài sẵn Office, chúng tôi sẽ hiển thị một hộp thoại đăng nhập hoặc hộp thoại quy đổi.  Sau khi mã pin được quy đổi, chúng tôi sẽ hiển thị hộp thoại EULA.  Nằm trong quá trình hiện đại hóa tính năng Kích hoạt Office của chúng tôi, chúng tôi đã làm mới hai hộp thoại để truyền tải thêm thông tin về sản phẩm Office đi kèm với máy.  Phép đo từ xa này là để theo dõi xem liệu tính năng của chúng tôi có thành công trong việc làm giảm sự người dùng ma sát trong quy trình quy đổi sản phẩm của họ bằng cách theo dõi quy trình và các điểm thoát của quy trình quy đổi (hộp thoại bị bác bỏ).
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3981,9 +4145,9 @@ Các trường sau đây sẽ được thu thập:
 
 - **DialogEULA** -  Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại “Chấp nhận EULA”. 
 
-- **DialogRedemption** - Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại quy đổi AFO.
+- **DialogRedemption** - Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại quy đổi Kích hoạt Office.
 
-- **DialogSignIn** - Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại đăng nhập AFO.
+- **DialogSignIn** - Tín hiệu cho biết chúng tôi đã hiển thị hộp thoại đăng nhập Kích hoạt Office.
 
 - **EmptyRedemptionDefaults** - Tín hiệu cho biết chúng tôi không thể tải thông tin quy đổi mặc định.
  
@@ -3995,7 +4159,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **OExType** - Loại lỗi chúng tôi quay trở lại khi hộp thoại đăng nhập danh tính bị bỏ qua.
 
-- **Tag** - Cho chúng tôi biết tại bước nào người dùng thoát ra khỏi quy trình quy đổi AFO. Các thẻ có thể sử dụng:
+- **Tag** - Cho chúng tôi biết tại bước nào người dùng thoát ra khỏi quy trình quy đổi Kích hoạt Office. Các thẻ có thể sử dụng:
     - 0x0311380b    Người dùng bỏ qua hộp thoại đăng nhập nhận dạng khỏi hộp thoại đổi quà
     - 0x0311380c    Không thể tự động tải đăng nhập danh tính người dùng từ hộp thoại đổi quà
     - 0x03113810    Không thể tải thông tin nhân khẩu học của tài khoản (mã quốc gia, ngôn ngữ, tiền tệ, ưu đãi bản dùng thử và tùy chọn tiếp thị)
@@ -4010,13 +4174,13 @@ Các trường sau đây sẽ được thu thập:
     - 0x2370e3c1      Đi đến web để quy đổi mã pin
     - 0x2370e3a1      Đi đến web để quy đổi mã pin
     - 0x2370e3c0      Chuỗi hộp thoại lặp do người dùng gây ra di chuyển qua lại trong luồng hộp thoại
-    - 0x2370e3a3      Người dùng đã bấm vào siêu liên kết “Không phải bây giờ” sẽ bỏ qua khả năng cung cấp AFO cho phiên này
-    - 0x2370e3a2      Người dùng đã bấm vào siêu liên kết “Đừng hiển thị cho tôi nữa” sẽ tắt khả năng cung cấp AFO
+    - 0x2370e3a3      Người dùng đã bấm vào siêu liên kết “Không phải bây giờ” để bỏ qua ưu đãi Kích hoạt Office cho phiên đó
+    - 0x2370e3a2      Người dùng đã bấm vào siêu liên kết “Đừng hiển thị cho tôi nữa” sẽ tắt ưu đãi Kích hoạt Office
 
 
-- **UseInAppRedemption** - Cho chúng tôi biết nếu chúng tôi giữ người dùng trong ứng dụng để đổi quà hoặc gửi họ đến web để đổi mã pin đã được tải (được điền trước).
+- **UseInAppRedemption** - Cho chúng tôi biết nếu chúng tôi giữ người dùng trong ứng dụng để quy đổi hoặc gửi họ đến web để đổi mã pin đã được tải (được điền trước).
 
-- **UseModernAFO** - Cho chúng tôi biết rằng chúng tôi đang sử dụng trải nghiệm AFO mới hay cũ.
+- **UseModernAFO** - Cho chúng tôi biết chúng tôi đang sử dụng trải nghiệm Kích hoạt Office mới hay cũ.
 
 ### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
 
@@ -4026,7 +4190,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **ActiveView** - Cho biết mã ID hộp thoại được hiển thị cho người dùng
 
-- **CurrentOOBEMode** - Cho biết chế độ cài đặt sẵn (OOBE Mode, như AFO, OEM v.v.)
+- **CurrentOOBEMode** - Cho biết chế độ cài đặt sẵn (Chế độ OOBE như Kích hoạt Office, OEM, v.v.)
 
 - **NotInitializedBeforeWhileAdding** - Đây chỉ là thông tin và cho biết liệu sự kiện đã được thêm vào bản đồ trình quản lý phép đo từ xa mà không cần đăng ký một cách rõ ràng cho nó hay không
 
@@ -10704,6 +10868,55 @@ Các trường sau đây sẽ được thu thập:
 - **SessionId** - Mã định danh của phiên
 
 
+### <a name="installedapprespondedcoreappleevent"></a>installedapp.respondedcoreappleevent
+
+Sự kiện này cho biết Microsoft Auto Update (MAU) đã gửi mã phản hồi sự kiện của Apple từ một ứng dụng đã đăng ký để chấm dứt ứng dụng nhằm tiếp tục cập nhật ứng dụng đang chờ. Sự kiện này được sử dụng để giúp phát triển tính năng nâng cao trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng trong quá trình cập nhật ứng dụng. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
+
+- **AppID** - Mã định danh cho ứng dụng đang được cập nhật
+
+- **AppInfo_Language** - Loại ngôn ngữ mà ứng dụng đang sử dụng
+
+- **AppleEventClass** - Cho biết loại sự kiện được gửi/nhận
+
+- **AppleEventID** - Mã định danh duy nhất của sự kiện được gửi/nhận
+
+- **AppVersionLong** - Phiên bản ứng dụng
+
+- **Channel** - Tùy chọn dành cho người xem
+
+- **Device_NetworkCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **DeviceID** - Mã định danh thiết bị
+
+- **DeviceInfo_Model** - Kiểu phần cứng của thiết bị
+
+- **DeviceInfo_NetworkType** - Loại mạng (Wi-Fi, có dây, không xác định)
+
+- **DeviceInfo_OsBuild** - Phiên bản của hệ điều hành
+
+- **Event_ReceivedTime** - Thời điểm nhận được dữ liệu đo từ xa
+
+- **EventInfo_Name** - Tên của sự kiện đo từ xa đang được ghi lại
+
+- **EventInfo_Time** -   Thời gian sự kiện được ghi lại xảy ra 
+
+- **HowToCheck** - Cách kiểm tra cài đặt
+
+- **Payload** - Chứa số lần thử lại
+
+- **PipelineInfo_ClientCountry** - Thiết bị thuộc quốc gia nào (dựa trên địa chỉ IP)
+
+- **PipelineInfo_ClientIp** - 3 octet đầu tiên của địa chỉ IP
+
+- **SessionId** - Mã định danh của phiên
+
+- **UpdateID** – Định danh cập nhật.
+
+
 ### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Sự kiện này cho biết Microsoft Auto Update (MAU) đang gửi một sự kiện của Apple tới một ứng dụng đã đăng ký để chấm dứt ứng dụng nhằm tiếp tục cập nhật ứng dụng đang chờ. Sự kiện này hiện đang được sử dụng để giúp cải thiện trong tương lai nhằm giảm thiểu sự gián đoạn của người dùng trong quá trình cập nhật ứng dụng. 
@@ -15764,39 +15977,6 @@ Sự kiện này được thu thập đối với các ứng dụng Office chạ
 Các trường sau đây sẽ được thu thập:
 
 - **Data_EventId** – Mã cho biết tùy chọn thu thập dữ liệu chẩn đoán mà người dùng đã chọn.
-
-### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Phép đo từ xa của sản phẩm được sử dụng để đối chiếu thông tin giao dịch mua hàng với hệ thống thương mại của Microsoft nhằm hỗ trợ các lợi ích đăng ký liên quan. Được sử dụng để tạo điều kiện thuận lợi cho việc ghi nhật ký giao dịch và cấp phép đăng ký để tham khảo trong tương lai và đối chiếu nội bộ.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
-
-- **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (không thành công). Chỉ ra phản hồi lỗi do phản hồi Cấp phép RFS đưa ra.
-
-- **productId** - Chuỗi – ID cửa hàng ứng dụng của sản phẩm mà yêu cầu được thực hiện
-
-- **status** - Chuỗi – Thành công hay thất bại, cho biết yêu cầu thành công hay thất bại
-
-
-### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
-
-Dữ liệu được thu thập làm phép đo từ xa kỹ thuật quan trọng để ghi lại kết quả của nỗ lực mua hàng do người dùng kích hoạt thủ công. Phép đo từ xa của sản phẩm được sử dụng để đối chiếu thông tin giao dịch mua hàng với hệ thống thương mại của Microsoft nhằm hỗ trợ các lợi ích đăng ký liên quan.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút nâng cấp lên cao cấp” hoặc "Dòng chạy lần đầu".
-
-- **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (không thành công). Chỉ ra phản hồi lỗi do phản hồi Cửa hàng ứng dụng đưa ra.
-
-- **productId** - Chuỗi – Chỉ dành cho “MakePurchase”, “PendingPurchase”, ID cửa hàng ứng dụng của sản phẩm mà yêu cầu được thực hiện.
-
-- **productsCount** - Int – Chỉ dành cho “ProductsFetch”, số lượng sản phẩm được Cửa hàng trả về.
-
-- **requestType** - Chuỗi – Loại yêu cầu StoreKit. Như “ProductsFetch”, “PendingPurchase”
-
-- **status** - Chuỗi – Thành công hay thất bại, cho biết yêu cầu thành công hay thất bại
 
 ### <a name="officeonenotegetsharepointidsfordocument"></a>Office.OneNote.GetSharePointIdsForDocument
 
