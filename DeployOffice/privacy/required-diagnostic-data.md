@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
-ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
+ms.openlocfilehash: 69abd5fc0355db7758debc0193b4439754eda2f2
+ms.sourcegitcommit: b6f55a032079a9525cedd93b9e431c188ca24775
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167391"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51889806"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -633,6 +633,8 @@ Ngoài ra, các trường sau phổ biến đối với tất cả các sự ki�
 
 - **gcc_restrictions_enabled** - Cho chúng tôi biết liệu các hạn chế GCC có được áp dụng cho ứng dụng hay không để chúng tôi có thể đảm bảo khách hàng GCC sử dụng ứng dụng của chúng tôi một cách an toàn
  
+- **multi_pane_mode** - Cho chúng tôi biết nếu người dùng trên iPad đang sử dụng hộp thư đến có bật nhiều ngăn mà họ có thể thấy danh sách thư mục khi đang tra cứu email. Điều này là cần thiết để giúp chúng tôi phát hiện các sự cố cụ thể đối với người dùng sử dụng hộp thư đến mở nhiều ngăn.
+
 - **multi_window_mode** – Hãy cho chúng tôi biết nếu người dùng trên iPad đang sử dụng nhiều cửa sổ để giúp chúng tôi phát hiện các sự cố liên quan đến việc sử dụng nhiều cửa sổ.
 
 - **office_session_id** - ID duy nhất theo dõi phiên cho các dịch vụ Office được kết nối giúp phát hiện các sự cố tích hợp dịch vụ Office cụ thể trong Outlook như Word
@@ -5237,6 +5239,16 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_FirstRunPanelName** - Tên của bảng điều khiển bắt đầu trải nghiệm
 
+
+#### <a name="officefloodgateuserfactappusage"></a>Office.Floodgate.UserFact.AppUsage
+
+Thông tin này cho biết khi nào người dùng đã sử dụng các tính năng giá trị cao trong sản phẩm. Đồng thời có thể cho biết nếu người dùng khám phá hoặc sử dụng tính năng đó. Tín hiệu sẽ cung cấp kiến thức về sản phẩm liên quan đến mức sử dụng tính năng giúp cải thiện sản phẩm.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **FeatureAction** - Nhãn cho biết tính năng giá trị cao và hành động do người dùng thực hiện, ví dụ: ContentPickerTried, TemplatesSeen.
+
+
 #### <a name="officelenslenssdkcloudconnectorlaunch"></a>Office.Lens.LensSdk.CloudConnectorLaunch
 
 Khi người dùng cắt hình ảnh và ấn xác nhận trên lựa chọn hình ảnh cuối cùng để sử dụng OCR, sự kiện này sẽ được ghi lại.     
@@ -5289,19 +5301,6 @@ Các trường sau đây sẽ được thu thập:
 - **TaskType** - Chuỗi xác định mục đích của cuộc gọi Dịch vụ.
 
 
-#### <a name="officelenslenssdkpermission"></a>Office.Lens.LensSdk.Permission
-
-Quyền truy nhập là một tính năng nhạy cảm, vì không có người dùng nào không thể trải nghiệm được mọi tính năng của Lens. Quyền được theo dõi để hiểu rõ thói quen người dùng để cung cấp/thu hồi quyền truy nhập. Khi người dùng tương tác với mọi hộp thoại quyền trong ứng dụng của chúng tôi, chúng tôi thu thập những sự kiện này. Dựa trên xu hướng người dùng để chấp nhận và từ chối quyền, chúng tôi xác định các cải tiến tính năng để giúp người dùng hiểu lý do tại sao các quyền lại quan trọng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_action** - Chứa các giá trị như "CameraPermissionAllowed (hoặc Bị từ chối), StoragePermissionGranBed (hoặc Bị từ chối), điều này giúp chúng tôi hiểu xem bạn đã chấp nhận hoặc quyền lưu trữ và camera từ chối người dùng hay không.
-
-- **Data_Action** - Trường này sẽ giúp chúng tôi hiểu được loại quyền đã được người dùng yêu cầu, chẳng hạn như camera hoặc dung lượng lưu trữ
-
-- **Data_status** - Chứa các giá trị như được Allowed, Denied và DeniedForever, giúp chúng tôi hiểu việc người dùng đã chấp nhận hoặc quyền lưu trữ và camera bị từ chối.
-
-
 #### <a name="officelenslenssdksavemedia"></a>Office.Lens.LensSdk.SaveMedia
 
 Sự kiện này sẽ được gọi khi người dùng bấm vào nút thực hiện, rồi lưu hình ảnh trên Android và iOS. Việc này giúp đo lường mức độ cam kết của người dùng bằng cách xác định người dùng đang sử dụng tính năng lưu hình ảnh thông qua ứng dụng của chúng tôi.
@@ -5349,105 +5348,22 @@ Các trường sau chỉ được thu thập cho iOS:
 
 #### <a name="officelenslenssdkserviceidmapping"></a>Office.Lens.LensSdk.ServiceIDMapping
 
-Khi đã tải lên một hình ảnh thành công với dịch vụ, sự kiện này sẽ được thu thập. Ứng dụng này có nghĩa là dịch vụ hiện đang thực hiện một hoặc nhiều tác vụ cần xử lý hình ảnh và có ID có liên quan để giúp khắc phục sự cố tiến trình. Việc này cũng giúp phân tích sử dụng các tính năng dịch vụ khác nhau.
+Sự kiện này được thu thập khi Lens SDK tương t ác với dịch vụ Hình ảnh sang tài liệu (hay I2D) của Microsoft. Điều này có nghĩa là sự kiện được gọi:
+
+- Khi một hình ảnh được tải lên dịch vụ I2D để chuyển đổi tệp và trích xuất (OCR).
+- Khi người dùng cần sửa kết quả đầu ra của dịch vụ, chúng tôi sẽ gửi phản hồi để cải thiện chất lượng.
+
+Dữ liệu được sử dụng để phân tích mức sử dụng và khắc phục sự cố của dịch vụ.  
 
 Các trường sau đây sẽ được thu thập:
 
-- **CloudConnectorRequestId** - Chuỗi nhận dạng yêu cầu dịch vụ đã được thực hiện để chuyển đổi hình ảnh thông qua dịch vụ.
+- **CloudConnectorRequestId** - Chuỗi xác định yêu cầu dịch vụ trên ứng dụng máy khách đối với cả hai kịch bản chuyển đổi và phản hồi.
 
-- **I2DserviceProcessID** - Chuỗi xác định việc dịch vụ đang chạy một yêu cầu phụ cụ thể 
+- **CustomerId** - Chuỗi này giúp ánh xạ người dùng đến các yêu cầu dịch vụ và giúp chúng tôi theo dõi. UserId là bắt buộc để thực hiện các yêu cầu GDPR vì người dùng không trực tiếp tiếp xúc với dịch vụ, mà thông qua máy khách và xác định tổng số người dùng sử dụng dịch vụ, giúp dịch vụ theo dõi số lượng người dùng sử dụng sản phẩm. 
 
+- **I2DFeedbackAPICorrelationId** - Chuỗi xác định yêu cầu phản hồi trong dịch vụ I2D khi người dùng sửa kết quả đầu ra của dịch vụ.
 
-#### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
-
-Phép đo từ xa mức sử dụng quan trọng này được thu thập khi điều khiển Paywall được hiển thị cho người dùng và được sử dụng để hiểu trải nghiệm mua trong ứng dụng cho người dùng và tối ưu hóa điều tương tự cho các phiên bản tương lai.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Paywall được hiển thị Nút/Dòng này. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu"
-
-- **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
-
-#### <a name="officeiospaywallpaywallstats"></a>Office.iOS.Paywall.Paywall.Stats
-
-Siêu dữ liệu theo phiên này được thu thập khi giao diện người dùng Paywall được hiển thị cho người dùng, thời gian tương tác và liệu bạn đã tìm cách mua hàng và thành công hay thất bại.  Dữ liệu được sử dụng để hiểu mức sử dụng và tình trạng của toàn bộ trải nghiệm thanh toán và gỡ lỗi, tối ưu hóa và khắc phục trải nghiệm mua trong ứng dụng trong các phiên bản tương lai.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu".
-
-- **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
-
-- **status** - Chuỗi – Trạng thái thoát của Paywall. Như "đã khởi tạo", "Thanhtoánxong", "cungcấpThấtbại"
-
-- **userDuration** - Kép – Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho Paywall
-
-
-#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Đo từ xa kỹ thuật quan trọng với Dịch vụ Liên đoàn Bán lẻ của Microsoft (RFS) để thu thập thông tin được cung cấp trong sự kiện này. RFS là dịch vụ nội bộ được sử dụng trong Microsoft để kiểm tra chéo giao dịch mua. Dữ liệu được sử dụng để có được tình trạng của lệnh gọi API được thực hiện tới RFS, điều này sẽ giúp hiểu tỷ lệ thành công và gỡ lỗi cho bất kỳ lỗi nào.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Nút/Luồng từ đó Paywall được hiển thị. Như “Nút Nâng cấp Cao cấp” hoặc "Luồng Chạy Đầu tiên".
-
-- **failureReason** - Chuỗi – Chỉ được thêm vào khi trạng thái là “failure” (thất bại). Chỉ ra phản hồi lỗi do phản hồi Cấp phép RFS đưa ra.
-
-- **productId** - Chuỗi – ID Cửa hàng Ứng dụng của sản phẩm mà yêu cầu được thực hiện cho
-
-- **status** - Chuỗi – Thành công hay Thất bại, cho biết yêu cầu thành công hay thất bại
-
-
-#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Phép đo từ xa mức sử dụng quan trọng cho biết khi nào người dùng nhấn vào nút Mua hàng/Mua. Được sử dụng để suy ra mẫu hình sử dụng và chỉ số chuyển đổi cho những người dùng cố gắng mua gói đăng ký trong ứng dụng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Nút/Luồng từ đó Paywall được hiển thị. Như “Nút Nâng cấp Cao cấp” hoặc "Luồng Chạy Đầu tiên".
-
-- **isDefaultSKU** - Bool – Nếu người dùng đang mua sản phẩm, chúng tôi đề xuất cho họ bằng cách hiển thị sản phẩm theo mặc định.
-
-- **productId** - Chuỗi – Id sản phẩm trong cửa hàng ứng dụng của sản phẩm mà nút Mua đã được nhấn vào
-
-- **toggleCount** - Int – Số lần người dùng chuyển đổi giữa việc xem các sản phẩm khác nhau trước khi họ nhấn vào Nút Mua trong phiên hiện tại của Paywall.
-
-
-#### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
-
-Sự kiện này thu thập các tính năng và ứng dụng người dùng mở rộng từ "Xem Thêm Lợi Ích” và khoảng thời gian đã dành ra.  Dữ liệu được sử dụng để hiểu mức sử dụng tính năng "Xem mọi lợi ích" và tối ưu hóa hơn nữa trải nghiệm trong các phiên bản tương lai.
-
-Các trường sau đây sẽ được thu thập:
-
-- **appsExpanded** - Chuỗi - Các lợi ích đã được bung rộng cho danh sách các dịch vụ/ứng dụng phân tách bằng dấu phẩy này.
-
-- **productId** - Chuỗi - Người dùng đang xem thêm lợi ích được cung cấp cho App Store ID của sản phẩm này
-
-- **userDuration** - Kép - Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho Màn hình Lợi ích.
-
-
-### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSwitched
-
-Phép đo từ xa mức sử dụng để hiển thị số lần người dùng chuyển đổi giữa các SKU khác nhau trước khi thử mua hàng.
-
-Các trường sau đây sẽ được thu thập:
-
-- **productId**- Chuỗi – ID Cửa hàng Ứng dụng của sản phẩm mà người dùng vừa chuyển sang xem từ các sản phẩm có sẵn trên trình chọn SKU.
-
-
-#### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
-
-Phép đo từ xa mức sử dụng này được thu thập để xem cách người dùng nhập vào bộ chọn SKU, người dùng đã dành bao nhiêu thời gian vào màn hình Bộ chọn SKU và lý do tại sao họ thoát Bộ chọn SKU.  Dữ liệu được sử dụng để hiểu về mức sử dụng bộ chọn SKU và tối ưu hóa trong trải nghiệm mua trong ứng dụng trong các phiên bản tương lai.
-
-Các trường sau đây sẽ được thu thập:
-
-- **entryPoint** - Chuỗi – Nút/Dòng hiển thị Paywall. Như “Nút Nâng Cấp Premium" hoặc "Dòng Chạy Lần Đầu".
-
-- **exitReason** - Chuỗi – Nguyên nhân thoát của Bộ chọn SKU. Như "NútMua", “NútĐóng
-
-- **isFRE** - Boolean – Chúng tôi đang hiển thị Trải nghiệm chạy lần đầu hay giao diện người dùng thông thường?
-
-- **userDuration** - Kép - Khoảng thời gian tính bằng mili giây người dùng đã dành ra cho bộ chọn SKU
+- **I2DServiceProcessID** - Chuỗi xác định yêu cầu dịch vụ trong dịch vụ I2D khi người dùng đang tải hình ảnh lên để chuyển đổi.
 
 
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
@@ -9049,6 +8965,33 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.Url** - URL của máy chủ Dịch vụ Quản lý Quyền
 
+
+#### <a name="surveyfloodgatetriggermet"></a>Survey.Floodgate.TriggerMet
+
+Theo dõi khi thiết bị đã đáp ứng các tiêu chí để hiển thị khảo sát. Dùng để đánh giá tình trạng của quá trình kích hoạt khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **CampaignId** – Mã định danh của chiến dịch cung cấp dịch vụ
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **SurveyType** – Xác định loai khảo sát
+
+
+#### <a name="surveyuiformsubmit"></a>Survey.UI.Form.Submit
+
+Theo dõi thời gian gửi khảo sát. Dùng để đánh giá trạng thái quy trình gửi khảo sát cũng như đảm bảo tín hiệu được sử dụng để phân tích sự cố và trạng thái khách hàng hoạt động đúng cách.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **CampaignId** – Mã định danh của chiến dịch cung cấp dịch vụ
+
+- **SurveyId** – Phiên bản duy nhất của chiến dịch
+
+- **SurveyType** – Xác định loai khảo sát
+
+
 #### <a name="watchappv2"></a>watchAppV2
 
 Sự kiện này cho phép chúng tôi phát hiện và khắc phục các sự cố có thể xảy ra trong các khả năng trên Apple Watch của bạn như nhận thông báo và phản hồi email.
@@ -12512,16 +12455,6 @@ Các trường sau đây sẽ được thu thập:
 
 - **TypeId** - GUID cho giao diện mà phương thức này được gọi
 
-#### <a name="officeiospaywallfailedscreenretrybuttontap"></a>Office.iOS.Paywall.FailedScreen.RetryButtonTap
-
-Phép đo từ xa mức sử dụng này được thu thập để biết thời gian Mua/Cung cấp/Kích hoạt không thành công, và người dùng gõ nhẹ nút "Thử lại".  Được sử dụng để khắc phục sự cố về các tình huống lỗi khi mua dẫn đến việc thử lại và cải thiện độ tin cậy của quy trình.
-
-Các trường sau đây sẽ được thu thập:
-
-- **failureReason** - Chuỗi – Cho biết sự cố mà người dùng đang thử lại. Như “cungcấpThấtbại”, “muaThấtbại”, “kíchhoạtThấtbại”.
-
-- **productId** - Chuỗi - Người dùng đang xem thêm lợi ích được thử lại yêu cầu không thành công
-
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -12651,6 +12584,8 @@ Các trường sau đây sẽ được thu thập:
   
 - **BootToStart** - Liệu người dùng có chọn hiển thị màn hình bắt đầu khi ứng dụng này khởi chạy hay không.
 
+- **ChildProcessCount** – Số lượng quy trình con được ứng dụng khởi chạy. (Chỉ dành cho Windows)
+
 - **ColdBoot** - Xem đây là lần đầu ứng dụng Office chạy sau khi khởi động lại hệ thống hay phải tải nhị phân ứng dụng dụng từ đĩa. (Chỉ dành cho macOS/iOS)
 
 - **DeviceModel** - Mô hình của thiết bị. (Chỉ dành cho macOS/iOS)
@@ -12665,6 +12600,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **FreeMemoryPercentage** - Phần trăm dung lượng bộ nhớ trên thiết bị miễn phí. (Chỉ dành cho Windows)
 
+- **HandleCount** – Số lượng trình điều khiển hệ thống vận hành mà quy trình đã mở. (Chỉ dành cho Windows)
+
+- **HardFaultCount** – Số lượng lỗi trang nặng của quy trình. (Chỉ dành cho Windows)
+
 - **InitializationDuration** - Khoảng thời gian tính bằng micrô giây cần để khởi tạo quy trình Office trước.
 
 - **InterruptionMessageId** - Nếu khởi động bị gián đoạn bởi hộp thoại yêu cầu thông tin nhập của người dùng của người dùng, ID của hộp thoại.
@@ -12673,13 +12612,23 @@ Các trường sau đây sẽ được thu thập:
 
 - **OpenAsNew** – Ứng dụng có được khởi động bằng cách mở tài liệu hiện có làm mẫu cho tài liệu mới hay không.
 
+- **OtherOperationCount** – Số lượng thao tác I/O được thực hiện ngoài các thao tác đọc và ghi. (Chỉ dành cho Windows)
+
+- **OtherTransferCount** – Số lượng byte được truyền trong các thao tác ngoài thao tác đọc và ghi. (Chỉ dành cho Windows)
+
 - **PageFaultCount** - Số lượng lỗi trang trong quy trình. (Chỉ dành cho Windows)
 
 - **PrimaryDiskType** - Xem thiết bị lưu trữ chính là ổ đĩa cứng hay ổ đĩa quay kèm tốc độ quay của ổ (nếu có). (Chỉ dành cho macOS/iOS)
 
 - **PrivateCommitUsageMB** - Phí cam kết (tức là dung lượng bộ nhớ mà trình quản lý bộ nhớ đã cam kết cho quy trình này) tính bằng megabyte đối với quy trình này. (Chỉ dành cho Windows)
 
+- **PrivateWorkingSetMB** – Dung lượng bộ nhớ theo megabyte trong nhóm làm việc của quy trình không được chia sẻ với các quy trình khác. (Chỉ dành cho Windows)
+
 - **ProcessorCount** - Số lượng bộ xử lý trên thiết bị. (Chỉ dành cho macOS/iOS)
+
+- **ReadOperationCount** – Số lượng thao tác đọc được thực hiện. (Chỉ dành cho Windows)
+
+- **ReadTransferCount** – Số lượng byte đọc.
 
 - **TotalPhysicalMemory** - Tổng dung lượng bộ nhớ vật lý trên thiết bị. (Chỉ dành cho macOS/iOS)
 
@@ -12688,6 +12637,10 @@ Các trường sau đây sẽ được thu thập:
 - **VirtualSetMB** - Dung lượng bộ nhớ tính bằng megabyte trong bộ ảo của quy trình. (Chỉ dành cho macOS/iOS)
 
 - **WorkingSetPeakMB** - Dung lượng bộ nhớ lớn nhất tính bằng megabyte đã từng có từ trước đến nay trong bộ làm việc của quy trình.
+
+- **WriteOperationCount** – Số lượng thao tác ghi được thực hiện. (Chỉ dành cho Windows)
+
+- **WriteTransferCount** – Số lượng byte ghi. (Chỉ dành cho Windows)
 
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
@@ -13887,6 +13840,30 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_TagCount** - Số lần từng lỗi xảy ra
 
   - **Data\_TagID** - Mã định danh của sự cố đã xảy ra
+
+
+#### <a name="officeofficemobilepersonalizedcampaigningerrors"></a>Office.OfficeMobile.PersonalizedCampaigning.Errors
+
+Để nâng cao nhận thức về các tính năng của Office dành cho di động mà người dùng chưa khám phá, Office dành cho di động tích hợp với IRIS để hỗ trợ các thông báo trong ứng dụng và thông báo đẩy. Trong trường hợp thông báo trong ứng dụng, tính năng này ghi lại các lỗi xảy ra khi kéo hoặc hiển thị thông báo cũng như khi người dùng tương tác với thông báo và cung cấp phản hồi cho máy chủ IRIS. Trong trường hợp thông báo đẩy, tính năng này ghi lại các lỗi xảy ra khi hiển thị thông báo và khi người dùng tương tác với thông báo.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Class** - Tên lớp xảy ra lỗi
+
+- **CreativeId** - ID thông báo xác định duy nhất thông báo và nội dung của thông báo.
+
+- **ErrorDetails** - Chi tiết lỗi
+
+- **ErrorMessage** - Thông báo lỗi.
+
+- **ErrorReason** - Nguyên nhân cơ bản của lỗi
+
+- **Method** - Tên hàm xảy ra lỗi.
+
+- **RequestParams** - Yêu cầu các thông số được sử dụng khi liên lạc với máy chủ IRIS để kéo thông báo.
+
+- **SurfaceId** - ID của bề mặt nơi hiển thị thông báo.
+
 
 #### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfoldererror"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
 
