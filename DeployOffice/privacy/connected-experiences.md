@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: d7c4af6af94025136ab09f0709d8c65382f456dd
-ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
+ms.openlocfilehash: c1fb64bc45ed9e97cde37541dad85162a5a3699c
+ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51181284"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51916109"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -36,16 +36,16 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | **Name**   | **Xem thêm thông tin**   |
 | ----------- | ------------------ |
 | *Bản đồ 3D*\*    | [Bắt đầu với Bản đồ 3D](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| Phân tích dữ liệu (trước đó tên là Ý tưởng) | [Phân tích dữ liệu trong Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 |Tự động sửa lỗi|[Căn chỉnh nội dung của bạn một cách nhanh chóng và dễ dàng với Tự động Sửa lỗi](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Đề xuất về biểu đồ (Excel dành cho web)|[Tạo biểu đồ với các biểu đồ được đề xuất](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Các phần bổ trợ của Class Notebook (OneNote)|[Bắt đầu với OneNote Class Notebook: Một Hướng dẫn dành cho Giáo viên](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Kiểu dữ liệu| [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 |Trình thiết kế (Word cho web)|[Sử dụng Trình thiết kế để tạo tài liệu đẹp mắt hơn](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
-| Đọc chính tả  | [Đọc chính tả tài liệu Word của bạn](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+| Đọc chính tả  | [Đọc chính tả trong Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Trình soạn thảo<sup>1</sup> |[Trình soạn thảo Microsoft kiểm tra ngữ pháp và nhiều nội dung khác trong tài liệu, thư và web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Liên kết thân thiện trong Outlook |[Tên liên kết thân thiện hơn trong email](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
-| Ý tưởng     | [Các ý tưởng trong Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 |Công cụ Học tập|[Công cụ Học tập](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
@@ -103,6 +103,7 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Ước tính thời gian di chuyển trong Up Next*\*|Khi bạn chọn cho phép Outlook for iOS và Android truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) thẻ ở đầu hộp thư đến của bạn.<br/><br/> [Thông báo Đến lúc đi là gì?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Thanh thời tiết*\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+|*Thời tiết trên lịch*\* (Outlook dành cho thiết bị di động)|[Làm thế nào để bật thời tiết trên lịch Outlook dành cho thiết bị di động?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
 
 > [!NOTE]
 >\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.

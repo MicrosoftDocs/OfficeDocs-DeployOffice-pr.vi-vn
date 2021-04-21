@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
-ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
+ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
+ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51181753"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51914967"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -43,6 +43,7 @@ Bing cung cấp các trải nghiệm sau trong Outlook cho iOS và Android:
 - **Đề xuất vị trí:**   Khi bạn thêm một vị trí công cộng với địa chỉ đường vào mục lịch, địa chỉ đường đầy đủ sẽ có trong trường Vị trí.
 - **Lịch thú vị:**   Bạn có thể [đăng ký](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) lịch của các đội tuyển thể thao hay chương trình truyền hình yêu thích của bạn.
 - **Thời gian di chuyển trong Up Next:** Sự kiện sắp diễn ra tiếp theo của bạn sẽ được tóm tắt ở đầu hộp thư đến trong email của bạn trong một thẻ có tên [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) Trong Outlook for Android, trải nghiệm này yêu cầu Bing Maps cung cấp thời gian di chuyển ước tính.
+- **Thời tiết trên lịch:** [Dự báo thời tiết](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) cho vị trí hiện tại của bạn sẽ xuất hiện ở đầu màn hình lịch của bạn.
 
  Những trải nghiệm này hoạt động dựa trên Bing được cấp phép cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Mọi truy vấn tìm kiếm bạn cung cấp cho tổ chức Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn trong khi sử dụng các dịch vụ này đều được gửi đến Microsoft Bing. Chúng không được liên kết với bạn bởi tổ chức Bing.
 
