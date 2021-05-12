@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các dịch vụ cần thiết trong Office, chẳng hạn như Click-to-Run và Cấp phép và cung cấp danh sách các sự kiện và trường dữ liệu cho các dịch vụ cần thiết đó.
 hideEdit: true
-ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
-ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
+ms.openlocfilehash: d3e5ca5381c9fb68a1e05fca703729e282593ded
+ms.sourcegitcommit: cb1f6e3ba1336fc1a8cdca927f545dc43fd8e829
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51891226"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52308167"
 ---
 # <a name="essential-services-for-office"></a>Dịch vụ cần thiết cho Office
 
@@ -47,7 +47,7 @@ Bảng sau đây cung cấp danh sách các dịch vụ cần thiết cho Office
 
 | **Service**  | **Mô tả**  |
 | ------ | ---- |
-| [Xác thực](#authentication-events) | Xác thực là một dịch vụ đa nền tảng xác thực danh tính người dùng Office của bạn.  Nó là điều bắt buộc để cho phép bạn đăng nhập vào Office, kích hoạt giấy phép Office, truy nhập các tệp được lưu trữ trên đám mây và cung cấp trải nghiệm nhất quán trên các phiên Office và thiết bị của bạn.    |
+| [Xác thực](#authentication-events) | Xác thực là một dịch vụ đa nền tảng xác thực danh tính người dùng Office của bạn. Nó là điều bắt buộc để cho phép bạn đăng nhập vào Office, kích hoạt giấy phép Office, truy nhập các tệp được lưu trữ trên đám mây và cung cấp trải nghiệm nhất quán trên các phiên Office và thiết bị của bạn.    |
 | [Click-to-Run](#click-to-run-events) | Click-to-Run là công nghệ cài đặt được sử dụng để cài đặt và cập nhật Office trên Windows. Công nghệ này kiểm tra các phiên bản mới của Office và tải xuống và cài đặt khi có phiên bản mới. Click-to-Run sẽ phát hiện nhu cầu, thực hiện tải xuống và cài đặt các bản cập nhật Office, bao gồm các bản cập nhật bảo mật.     |
 | [Dịch vụ cấu hình nâng cao (ECS)](#enhanced-configuration-service-ecs-events) | ECS cung cấp cho Microsoft khả năng cấu hình lại các bản cài đặt Office mà không cần bạn phải triển khai lại Office. Dịch vụ này được sử dụng để kiểm soát việc triển khai dần các tính năng hoặc bản cập nhật, trong khi ảnh hưởng của việc triển khai được theo dõi từ dữ liệu chẩn đoán được thu thập. Nó cũng được sử dụng để giảm thiểu các vấn đề về bảo mật hoặc hiệu suất với một tính năng hoặc bản cập nhật. Ngoài ra, ECS còn hỗ trợ thay đổi cấu hình liên quan đến dữ liệu chẩn đoán để giúp đảm bảo rằng các sự kiện thích hợp sẽ được thu thập. |
 | [Cấp phép](#licensing-events)     | Cấp phép là dịch vụ dựa trên nền điện toán đám mây hỗ trợ kích hoạt Office của bạn để cài đặt mới và duy trì giấy phép trên thiết bị của bạn sau khi Office được kích hoạt. Dịch vụ này đăng ký cho từng thiết bị của bạn, kích hoạt Office, kiểm tra trạng thái đăng ký Office và quản lý khóa của các sản phẩm của bạn.    |
@@ -898,7 +898,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
-Sự kiện này đã được ghi nhật ký khi một tài khoản có mã thông báo làm mới hợp lệ được tìm thấy trong danh sách tài khoản được cung cấp bởi TokenSharingManager.  Kịch bản này sẽ được dành riêng để Đăng nhập một lần (SSO).
+Sự kiện này đã được ghi nhật ký khi một tài khoản có mã thông báo làm mới hợp lệ được tìm thấy trong danh sách tài khoản được cung cấp bởi TokenSharingManager. Kịch bản này dành riêng cho trường hợp Đăng nhập một lần (SSO). 
  
 Các trường sau đây sẽ được thu thập:
  
@@ -1168,7 +1168,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -1266,7 +1266,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
-Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình cài đặt Office đang cài đặt giấy phép và thiết đặt đăng ký. Sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
+Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình cài đặt Office đang cài đặt giấy phép và thiết lập đăng ký. Được sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1320,7 +1320,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -1342,7 +1342,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officeclicktorunscenarioinstalltaskfonts"></a>Office.ClickToRun.Scenario.InstallTaskFonts
 
-Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình cài đặt Office đang cài đặt phông chữ. Sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
+Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình cài đặt Office đang cài đặt phông chữ. Được sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1472,7 +1472,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt.
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -1548,7 +1548,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt 
+  - **Data\_ScenarioName -** kịch bản nào đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -1624,7 +1624,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt
+  - **Data\_ScenarioName -** kịch bản nào đang chạy, ví dụ: cài đặt.
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -1700,7 +1700,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. ví dụ: cài đặt
+  - **Data\_ScenarioName -** kịch bản nào đang chạy, ví dụ: cài đặt.
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -1852,7 +1852,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -1874,7 +1874,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
-Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình cài đặt Office đang tải xuống các tệp mới cho Office. Sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
+Thiết lập Office và dữ liệu kiểm kê được thu thập khi trình cài đặt Office tải xuống các tệp mới cho Office. Được sử dụng để đo lường mức độ thành công/thất bại của bản cài đặt Office.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1928,7 +1928,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2004,7 +2004,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2080,7 +2080,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2156,7 +2156,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2232,7 +2232,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2308,7 +2308,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2384,7 +2384,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2460,7 +2460,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2546,7 +2546,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2708,7 +2708,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt.
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2796,7 +2796,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -2872,7 +2872,7 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_ScenarioInstanceID -** Một GUID duy nhất cho kịch bản đang chạy 
 
-  - **Data\_ScenarioName -** Kịch bản đang chạy. Ví dụ: cài đặt 
+  - **Data\_ScenarioName -** Kịch bản đang chạy, ví dụ: cài đặt. 
 
   - **Data\_ScenarioSubType -** Loại kịch bản chúng tôi đang chạy, ví dụ: gỡ cài đặt, cài đặt lại 
 
@@ -3053,7 +3053,7 @@ Báo cáo về hành động giải thích lý do cho việc đầu vào đượ
 
 ### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
 
-Báo cáo về hành động đọc đầu vào đã gắn thẻ từ chữ ký nhúng của exe.  Đây là một khái niệm chưa được chứng minh, việc lặp lại trước đó của setup.exe đã không diễn ra và là những gì chúng tôi đang dựa vào để truyền tải những lựa chọn về sản phẩm/ ngôn ngữ/ bitness của người dùng từ trang web tới quá trình bên trong setup.exe.
+Báo cáo về hành động đọc đầu vào đã gắn thẻ từ chữ ký nhúng của exe. Đây là một khái niệm chưa được chứng minh, việc lặp lại trước đó của setup.exe đã không diễn ra và là những gì chúng tôi đang dựa vào để truyền tải những lựa chọn về sản phẩm/ ngôn ngữ/ bitness của người dùng từ trang web tới quá trình bên trong setup.exe.
  
 - **ErrorCode -**    Số nguyên được liên kết với một ngoại lệ chưa được xử lý
 
@@ -3685,7 +3685,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Điều này được thu thập khi chúng tôi hiển thị hộp thoại hết hạn cho người dùng nói rằng giấy phép của họ đã hết hạn. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
+Điều này được thu thập khi chúng tôi hiển thị hộp thoại hết hạn cho người dùng thông báo rằng giấy phép của họ đã hết hạn. Đây là điều quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3716,6 +3716,29 @@ Chúng tôi thu thập điều này khi người dùng đang thiết lập một
 Các trường sau đây sẽ được thu thập:
 
 - **EntitlementCount** – Số quyền được hưởng mà người dùng sở hữu
+
+
+### <a name="officelicensinggetnextuserlicense"></a>Office.Licensing.GetNextUserLicense
+
+Sự kiện này sẽ được kích hoạt khi nạp giấy phép cho quyền truy nhập Office dựa trên người dùng đã chọn trong trải nghiệm kích hoạt lần đầu tiên. Chúng tôi sử dụng dữ liệu này để theo dõi tình trạng của các hệ thống và dịch vụ.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Activity_Success** - Boolean: cho chúng tôi biết liệu chúng tôi đã nạp thành công giấy phép cho thiết bị được kích hoạt trên ứng dụng Office của thiết bị đó hay chưa.
+
+- **Data_AllowNULPerpetual** - Boolean: cho chúng tôi biết liệu chuyến bay đang bật vNext Perpetual hay không.
+
+- **Data_AttemptNulReactivation** - Boolean: cho chúng tôi biết liệu đây có phải là kịch bản kích hoạt lại hay không.
+
+- **Data_CurrentMode** - 0 nghĩa là SPP (ngăn xếp cấp phép truyền thống), 2 nghĩa là vNext (ngăn xếp cấp phép hiện đại).
+
+- **Data_HasError** - Boolean: cho chúng tôi biết liệu chúng tôi gặp bất kỳ lỗi nào khi tìm cách nhận giấy phép cho quyền được chọn dựa trên người dùng.
+
+- **Data_IsSubscription** - Boolean: cho chúng tôi biết liệu kích hoạt lại có dành cho văn phòng đăng ký hay không.
+
+- **Data_NewMode** - 0 nghĩa là SPP (ngăn xếp cấp phép truyền thống), 2 nghĩa là vNext (ngăn xếp cấp phép hiện đại). Chúng ta nên dự kiến cả 2 hầu hết thời gian.
+
+- **Data_SkuToSkuNeeded** - Boolean: cho chúng ta biết nếu chúng ta cần thực hiện chuyển đổi SKU sang SKU do SKU Office có quyền không khớp với SKU Office đã cài đặt hay không.
 
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
@@ -3774,7 +3797,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-Trong trường hợp chúng tôi gặp sự cố với dòng công việc Kích hoạt, chúng tôi sẽ kích hoạt trình hướng dẫn cấp phép và gửi tín hiệu này để chỉ ra điều tương tự. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
+Trong trường hợp chúng tôi thấy có vấn đề với quy trình kích hoạt, chúng tôi sẽ kích hoạt trình hướng dẫn giấy phép và gửi tín hiệu này để chỉ ra điều tương tự. Đây là điều quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3798,7 +3821,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensinglicexitofficeprocess"></a>Office.Licensing.LicExitOfficeProcess 
 
-Nếu chúng tôi đóng hoặc gặp sự cố với Office do vấn đề cấp phép, chúng tôi sẽ gửi tín hiệu này để cho biết điều tương tự. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ.
+Nếu chúng tôi đóng hoặc gặp sự cố với Office do vấn đề cấp phép, chúng tôi sẽ gửi tín hiệu này để cho biết điều tương tự. Điều quan trọng là cần phát hiện xem người dùng có đang trong trạng thái tốt và không bị thiếu chức năng hay không, kết quả này được dùng cho tình trạng hệ thống và mục đích chẩn đoán trong trường hợp người dùng báo cáo có sự cố với máy của họ.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4228,7 +4251,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
-Vì một số lý do nếu chúng tôi không thể cấp phép cho người dùng, chúng tôi sẽ cài đặt khóa gia hạn và gửi tín hiệu này để nhận biết. Điều rất quan trọng trong việc phát hiện nếu người dùng ở trạng thái tốt và không thiếu chức năng, được sử dụng cho trạng thái hệ thống và được sử dụng cho mục đích chẩn đoán nếu người dùng báo cáo sự cố với máy của họ
+Vì một số lý do nếu chúng tôi không thể cấp phép cho người dùng, chúng tôi sẽ cài đặt khóa gia hạn và gửi tín hiệu này để nhận biết. Vì một số lý do nếu chúng tôi không thể cấp phép cho người dùng, chúng tôi sẽ cài đặt khóa gia hạn và gửi tín hiệu này để nhận biết.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5333,7 +5356,7 @@ Các trường sau đây sẽ được thu thập:
     
 ### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
-Sự kiện này cho biết không tìm thấy bản cập nhật nào từ quá trình kiểm tra vì ứng dụng trong thiết bị đã được cập nhật.  Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
+Sự kiện này cho biết không tìm thấy bản cập nhật nào từ quá trình kiểm tra vì ứng dụng trong thiết bị đã được cập nhật. Chúng tôi dùng sự kiện này để đảm bảo các bản cập nhật được đề xuất một cách chính xác.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -7931,7 +7954,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này cho biết bắt buộc kiểm tra cập nhật. Chúng tôi sử dụng sự kiện này để xác định số lần kiểm tra cập nhật bắt buộc xảy ra ngoài chu kỳ kiểm tra cập nhật bình thường.
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -8257,7 +8280,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết Bộ trợ giúp Microsoft Update đang khởi chạy các bản cập nhật tự hành. Sự kiện này được sử dụng để xác định số lượng bản cập nhật được áp dụng mà không có sự can thiệp của người dùng để giúp thúc đẩy cải thiện trải nghiệm người dùng.
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -10019,7 +10042,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này cho biết chế độ cập nhật đã được thay đổi từ Điều khiển UI. Sự kiện này được sử dụng để xác định số lượng thiết bị chuyển tiếp từ chế độ này sang chế độ khác, giúp xác định nguyên nhân khách hàng không muốn cập nhật tự động. 
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
  
@@ -13920,7 +13943,7 @@ Các trường sau đây sẽ được thu thập:
 
 Sự kiện này báo cáo lỗi cho biết không tìm thấy tệp bản kê với id ứng dụng truy nhập từ phản hồi web. Sự kiện này được sử dụng để điều tra lỗi được báo cáo.
 
-Các lĩnh vực sau đây sẽ được thu thập: 
+Các trường sau đây sẽ được thu thập: 
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -13960,7 +13983,7 @@ Các lĩnh vực sau đây sẽ được thu thập:
 
 Sự kiện này báo cáo lỗi cho biết ID ứng dụng truy nhập từ phản hồi web không ở định dạng mong muốn. Sự kiện này được sử dụng để điều tra lỗi được báo cáo.
 
-Các lĩnh vực sau đây sẽ được thu thập:
+Các trường sau đây sẽ được thu thập:
 
 - **App** - Quy trình ứng dụng sử dụng để gửi sự kiện
 
@@ -15908,7 +15931,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
  
-Sự kiện này đã được ghi nhật ký khi đồng bộ các Ghi chú Nhanh không thành công cho người dùng trong Trải nghiệm Lần đầu trên thiết bị.  Đây là dành riêng cho kịch bản Trải nghiệm Lần đầu.
+Sự kiện này đã được ghi nhật ký khi đồng bộ các Ghi chú Nhanh không thành công cho người dùng trong Trải nghiệm Lần đầu trên thiết bị. Đây là dành riêng cho kịch bản Trải nghiệm Lần đầu.
  
 Các trường sau đây sẽ được thu thập:
  
@@ -15933,6 +15956,10 @@ Các trường sau đây sẽ được thu thập:
 - **action_type** – tác vụ được thực hiện, chẳng hạn như khởi chạy cuộc họp hoặc cài đặt ứng dụng
 
 - **application** - Ứng dụng được cho chạy thông qua một liên kết sâu, như Teams hoặc Skype for Business
+
+- **context** - Trải nghiệm được dẫn hướng đến trong ứng dụng, ví dụ: office_union - word, office_union – excel, v.v.
+
+- **source** - Nguồn của một hành động, ví dụ: được khởi tạo từ người dùng, tự động bởi khách hàng, v.v.
 
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
@@ -16791,15 +16818,17 @@ Sự kiện được kích hoạt do hành động chấm dứt ứng dụng b�
 
 Các trường sau đây sẽ được thu thập:
 
-  - **AffectedProcessAppBuild -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
+  - **AffectedProcessAppBuild -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessAppBuildRevision -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
+  - **AffectedProcessAppBuildRevision -** Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessAppMajorVer** - Mã định danh phiên bản chính cho quá trình bị ảnh hưởng.
+  - **AffectedProcessAppMajorVer** - Mã định danh phiên bản chính cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
-  - **AffectedProcessAppMinorVer -** Mã định danh phiên bản phụ cho quá trình bị ảnh hưởng.
+  - **AffectedProcessAppMinorVer -** Mã định danh phiên bản phụ cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
   - **AffectedProcessAppName -** Tên của quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
+  
+  - **AffectedProcessAppBuild** - Mã định danh phiên bản bản dựng cho quá trình bị ảnh hưởng.
 
   - **AffectedProcessExeBuildVersion -** Số phiên bản dựng của quy trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
@@ -16985,6 +17014,8 @@ Các trường sau đây sẽ được thu thập:
   - **BucketId** - Mã định danh bucket Watson cho sự cố
  
   - **CabGuid** - Mã định danh nhận dạng chung duy nhất (GUID) cho taxi Watson.
+
+  - **CallStack** - Ngăn xếp cuộc gọi nội bộ của Microsoft gây ra sự cố.
 
   - **CrashedAppBuild** - Mã định danh phiên bản dựng cho quá trình bị ảnh hưởng. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]*
 
@@ -17433,7 +17464,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officetelemetryrulesenginediskthrottled"></a>Office.Telemetry.RulesEngineDiskThrottled
 
-Điều chỉnh số liệu DQ. Bắt buộc để có được độ chính xác trong tất cả các dữ liệu khác.
+Điều chỉnh các chỉ số DQ. Bắt buộc để tin cậy vào mọi dữ liệu khác.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -17447,13 +17478,13 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officetelemetryrulesenginemediumcostthrottled"></a>Office.Telemetry.RulesEngineMediumCostThrottled
 
-Điều chỉnh số liệu DQ. Bắt buộc để có được độ chính xác trong tất cả các dữ liệu khác.
+Điều chỉnh các chỉ số DQ. Bắt buộc để tin cậy vào mọi dữ liệu khác.
 
 Sự kiện này không thu thập trường nào.
 
 ### <a name="officetelemetryrulesenginespikethrottled"></a>Office.Telemetry.RulesEngineSpikeThrottled
 
-Điều chỉnh số liệu DQ. Bắt buộc để có được độ chính xác trong tất cả các dữ liệu khác.
+Điều chỉnh các chỉ số DQ. Bắt buộc để tin cậy vào mọi dữ liệu khác.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -17475,7 +17506,7 @@ Các trường sau đây sẽ được thu thập:
 
 ### <a name="officetelemetryrulesenginethrottled"></a>Office.Telemetry.RulesEngineThrottled
 
-Điều chỉnh số liệu DQ. Bắt buộc để có được độ chính xác trong tất cả các dữ liệu khác.
+Điều chỉnh các chỉ số DQ. Bắt buộc để tin cậy vào mọi dữ liệu khác.
 
 Các trường sau đây sẽ được thu thập:
 
