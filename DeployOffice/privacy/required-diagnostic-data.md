@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: 69abd5fc0355db7758debc0193b4439754eda2f2
-ms.sourcegitcommit: b6f55a032079a9525cedd93b9e431c188ca24775
+ms.openlocfilehash: c61c3072c4c0f61926b51c0fab5e46a1b5151e00
+ms.sourcegitcommit: 2796ba69444926d686e7ed587a89d8ee9e313d84
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51889806"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52328445"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -62,7 +62,7 @@ Bảng sau đây cung cấp danh sách các danh mục cho dữ liệu chẩn đ
 | **Thiết lập phần mềm và hàng tồn kho** | [Thiết lập Office và hàng tồn kho](#office-setup-and-inventory-subtype)   | Sản phẩm được cài đặt và phiên bản và trạng thái cài đặt.  |
 | | [Cấu hình phần bổ trợ Office](#office-add-in-configuration-subtype)  | Phần bổ trợ phần mềm và các thiết đặt.     |
 | | [Bảo mật](#security-subtype)  | Tài liệu, tính năng và các điều kiện lỗi phần bổ trợ có thể ảnh hưởng đến bảo mật, bao gồm tính sẵn sàng cập nhật sản phẩm.  |
-| **Sử dụng sản phẩm và dịch vụ**    | [Mức độ thành công của tính năng ứng dụng ](#application-feature-success-subtype)   | Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác). |
+| **Sử dụng sản phẩm và dịch vụ**    | [Mức độ thành công của tính năng ứng dụng ](#application-feature-success-subtype)   | Sự thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng cũng như tài liệu, chỉnh sửa tập tin và chia sẻ tập tin (cộng tác). |
 | | [Trạng thái ứng dụng và khởi động](#application-status-and-boot-subtype)    | Xác định xem các sự kiện tính năng cụ thể đã xảy ra hay chưa, chẳng hạn như bắt đầu hoặc dừng và tính năng có đang hoạt động hay không.   |
 | | [Cấu hình khả năng truy nhập Office](#office-accessibility-configuration-subtype)  | Các tính năng trợ năng của Office       |
 | | [Quyền riêng tư](#privacy-subtype)| Thiết đặt quyền riêng tư của Office|
@@ -103,7 +103,7 @@ Danh mục này chứa các trường sau đây:
 
 #### <a name="client"></a>Máy khách 
 
-Mã định danh liên quan đến một phiên bản Office trên thiết bị. Không thay đổi cho tất cả các phiên của tất cả các ứng dụng của một phiên bản cài đặt nhất định cho các bộ đa ứng dụng hoặc không đổi cho tất cả các phiên của phiên bản ứng dụng nhất định.
+Mã định danh liên quan đến một bản sao Office trên một thiết bị. Không thay đổi cho tất cả các phiên của tất cả các ứng dụng của một phiên bản cài đặt nhất định cho các bộ đa ứng dụng, hoặc không đổi cho tất cả các phiên của phiên bản ứng dụng nhất định.
 
 Danh mục này chứa các trường sau đây:
 
@@ -373,7 +373,7 @@ Danh mục này chứa các trường sau đây:
 
   - **RuleVersion** - Mã định danh của quy tắc tạo ra dữ liệu nếu nó được tạo bởi quy tắc. Cho phép chúng tôi xác định nguồn của một phần dữ liệu để chúng tôi có thể xác thực và quản lý các tham số của sự kiện đó.
 
-  - **SampleRate** - Một chỉ báo cho biết tỷ lệ phần trăm người dùng đang gửi đoạn dữ liệu này. Điều này cho phép chúng tôi phân tích thống kê dữ liệu và đối với các điểm dữ liệu rất phổ biến không yêu cầu phải gửi cho tất cả người dùng.
+  - **SampleRate** - Chỉ báo cho biết tỷ lệ phần trăm người dùng đang gửi đoạn dữ liệu này. Giá trị này cho phép chúng tôi phân tích thống kê dữ liệu và đối với các điểm dữ liệu rất phổ biến không yêu cầu tất cả người dùng phải gửi.
 
   - **SchemaVersion** - Phiên bản của sơ đồ được sử dụng để tạo dữ liệu chẩn đoán. Cần thiết để quản lý dữ liệu được gửi từ máy khách. Điều này cho phép thay đổi theo thời gian trong những dữ liệu được gửi từ mỗi máy khách.
 
@@ -616,6 +616,8 @@ Các trường dữ liệu sau phổ biến đối với tất cả các sự ki
 
 - **PipelineInfo.IngestionTime** - Dấu thời gian khi việc nhập phép đo từ xa diễn ra cho sự kiện này
 
+- **sample_rate** - Tỷ lệ phần trăm thiết bị thu thập các bản sao của sự kiện. Giúp tính toán số bản sao ban đầu của sự kiện.
+
 - **Session.Id** - Mã định danh duy nhất cho phiên ứng dụng giúp xác định các sự cố liên quan đến phiên
 
 - **Session.ImpressionId** - Mã định danh duy nhất cho việc quản lý phát hành tính năng để đảm bảo tính năng được phát hành thành công cho tất cả người dùng và thiết bị
@@ -652,7 +654,13 @@ Ngoài ra, các trường sau phổ biến đối với tất cả các sự ki�
 
 - **is_dex_mode_enabled** - Xem liệu chế độ DeX của Samsung có bật không giúp phát hiện các sự cố cụ thể đối với chế độ DeX trên thiết bị Samsung
 
+- **is_preload_install** – Cho chúng tôi biết ứng dụng của chúng tôi đã được tải sẵn trên thiết bị (thiết bị chạy Android 11 trở lên)
+
 - **is_sliding_drawer_enabled** - Xem liệu giao diện Ngăn kéo trượt có bật không giúp phát hiện các sự cố do giao diện ngăn kéo trượt của chúng tôi gây ra
+
+- **oem_preinstall** – Cho chúng tôi biết liệu ứng dụng của chúng tôi đã được cài đặt sẵn trên thiết bị hay chưa
+
+- **oem_preload_property** – Cho chúng tôi biết ứng dụng của chúng tôi đã được tải sẵn như một phần trong thỏa thuận cụ thể với OEM hay chưa
 
 - **orientation** - Hướng vật lý của màn hình (dọc/ngang) giúp phát hiện các sự cố cụ thể đối với hướng thiết bị
 
@@ -704,7 +712,7 @@ Các trường sau đây sẽ được thu thập:
  
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
-Áp dụng cho tất cả các ứng dụng chạy win32. Giúp chúng tôi hiểu được trạng thái quá trình cập nhật của bộ Office (Thành công hay thất bại kèm theo thông tin lỗi)
+Có thể áp dụng với mọi ứng dụng win32. Giúp chúng tôi hiểu được trạng thái của quá trình cập nhật bộ Office (Thành công hay thất bại kèm theo thông tin lỗi)
 
 Các trường sau đây sẽ được thu thập:
 
@@ -921,6 +929,21 @@ Các trường sau đây sẽ được thu thập:
 - **OnPremNBCount** - Số lượng sổ tay trong máy chủ Tại chỗ
 
 - **TotalNBCount** - Tổng số lượng sổ tay liên kết với Tài khoản người dùng
+
+#### <a name="officeonenotesystemapplifecycleuseraccountinfo"></a>Office.OneNote.System.AppLifeCycle.UserAccountInfo
+
+Sự kiện này được kích hoạt cho mã dùng chung và các giá trị bản ghi cho loại tài khoản đã đăng nhập thông qua isEdu, isMsftInternal, isIW, isMSA. Dữ liệu được thu thập vào lần đầu tiên hàng đợi không hoạt động sau khi cho chạy. Dấu này được sử dụng để theo dõi các loại tài khoản đã được đăng nhập trên thiết bị. Thông tin này sẽ giúp chúng tôi xác định người dùng EDU trong OneNote. 
+
+Các trường sau đây sẽ được thu thập: 
+
+- **IsEdu** - Các giá trị có thể - true/false
+
+- **IsMSA** - Các giá trị có thể - true/false
+
+- **IsIW** - Các giá trị có thể - true/false
+
+- **IsMsftInternal** - Các giá trị có thể - true/false
+
 
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
@@ -1201,7 +1224,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeoutlookdesktopadd-insadd-inloaded"></a>Office.Outlook.Desktop.Add-ins.Add-inLoaded
 
-Thu thập mức độ thành công và thất bại của việc tải Outlook của một phần bổ trợ. Dữ liệu này được theo dõi tích cực để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ của khách hàng. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
+Thu thập kết quả thành công hay thất bại khi Outlook tải phần bổ trợ. Dữ liệu này được theo dõi chủ động để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ của khách hàng. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1209,7 +1232,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeoutlookmacaddinapiusage"></a>Office.Outlook.Mac.AddinAPIUsage
 
-Thu thập thành công và thất bại trong việc thực thi phần bổ trợ trong Outlook. Dữ liệu này được theo dõi tích cực để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
+Thu thập kết quả thành công và thất bại khi thực thi phần bổ trợ trong Outlook. Dữ liệu này được theo dõi chủ động để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1230,7 +1253,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeoutlookmacaddineventapisusage"></a>Office.Outlook.Mac.AddinEventAPIsUsage
 
-Thu thập thành công hoặc thất bại trong việc thực thi phần bổ trợ trong Outlook. Dữ liệu này được theo dõi tích cực để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
+Thu thập kết quả thành công hay thất bại khi thực thi phần bổ trợ trong Outlook. Dữ liệu này được theo dõi chủ động để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1244,7 +1267,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeoutlookmacaddininstallationfrominclientstore"></a>Office.Outlook.Mac.AddInInstallationFromInClientStore
 
-Thu thập thành công hoặc thất bại trong quá trình cài đặt phần bổ trợ trong Outlook. Dữ liệu này được theo dõi tích cực để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
+Thu thập kết quả thành công hay thất bại khi cài đặt phần bổ trợ trong Outlook. Dữ liệu này được theo dõi chủ động để đảm bảo Outlook hoạt động chính xác với các phần bổ trợ. Dữ liệu này được sử dụng để phát hiện và điều tra sự cố.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1351,7 +1374,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeappguardlaunchfile"></a>Office.AppGuard.LaunchFile
 
-Sự kiện này biểu thị kết quả thực hiện tệp khởi chạy Bảo vệ Ứng dụng. Chúng tôi sẽ có thể xác định tỷ lệ phần trăm phiên mà chúng tôi đã khởi chạy thành công một tệp Word, Excel hoặc PowerPoint và mã lỗi cho những lần không thành công.
+Sự kiện này biểu thị kết quả khi thực thi tệp cho chạy Bảo vệ ứng dụng. Chúng tôi sẽ có thể xác định tỷ lệ phần trăm các phiên mà chúng tôi đã khởi chạy thành công một tệp Word, Excel hoặc PowerPoint và mã lỗi cho những lần không thành công.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1516,7 +1539,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officesecuritymacroxl4prompted"></a>Office.Security.Macro.XL4Prompted
 
-Theo dõi khi người dùng được nhắc bật Macro XL4. Được sử dụng để đánh giá mức độ phổ biến của Macro XL4 trong Excel để thúc đẩy các giảm thiểu bảo mật trong tương lai chặn XL4 theo mặc định để đối phó với các sự cố bảo mật liên quan đến việc lạm dụng macro XL4.
+Theo dõi khi người dùng được nhắc bật Macro XL4. Được sử dụng để đánh giá mức độ phổ biến của Macro XL4 trong Excel để thúc đẩy các biện pháp giảm thiểu bảo mật trong tương lai chặn XL4 theo mặc định, nhằm đối phó với các sự cố bảo mật liên quan đến việc lạm dụng macro XL4.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1538,7 +1561,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officesecuritysecurereaderhostopeninosr"></a>Office.Security.SecureReaderHost.OpenInOSR
 
-Theo dõi hoàn thành thao tác mở trong Dạng xem được bảo vệ. Được sử dụng để chẩn đoán các điều kiện dẫn đến lỗi khi mở tệp trong Dạng xem được bảo vệ ảnh hưởng đến bảo mật và năng suất của khách hàng.
+Theo dõi sự hoàn thành của tác vụ mở trong Dạng xem được Bảo vệ. Được sử dụng để chẩn đoán các điều kiện dẫn đến lỗi khi mở tệp trong Dạng xem được bảo vệ ảnh hưởng đến bảo mật và năng suất của khách hàng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1556,7 +1579,7 @@ Sau đây là những loại dữ liệu con trong danh mục này:
 
 ### <a name="application-feature-success-subtype"></a>*Loại con mức độ thành công của tính năng ứng dụng*
 
-Thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng và tài liệu, chỉnh sửa tệp và chia sẻ tệp (cộng tác).
+Sự thành công của chức năng ứng dụng. Giới hạn mở và đóng ứng dụng cũng như tài liệu, chỉnh sửa tập tin và chia sẻ tập tin (cộng tác).
 
 #### <a name="accountaction"></a>account.action
 
@@ -1745,6 +1768,8 @@ Các trường sau đây sẽ được thu thập:
 - **meeting_insights_type** – Dạng thông tin chuyên sâu về cuộc họp trong chi tiết sự kiện.  Dạng thông này bao gồm tệp và thư. Giúp chúng tôi hiểu được số lượng thông tin chuyên sâu về cuộc họp đang được hiển thị. 
 
 - **meeting_type** – Kiểu cuộc họp trực tuyến liên kết với hành động.  Điều này bao gồm các loại Skype, Skype for Business, Hangout và Teams for Business. Giúp chúng tôi hiểu được cuộc họp trực tuyến đã được đặt cấu hình đúng cách hay chưa. 
+
+- **online_meeting_provider_switch_type** - Loại chuyển đổi được người dùng thực hiện giữa các nhà cung cấp cuộc họp trực tuyến. Giúp chúng tôi hiểu rõ sự gắn kết của người dùng với tính năng này.
 
 - **origin** – Nguồn gốc của hành động lịch. Nguồn gốc này bao gồm các loại như lịch công tác, lịch, lịch công tác tiện ích, v.v. Giúp chúng tôi đảm bảo hơn về việc tương tác trong các cấu phần lịch đang hoạt động đúng cách 
 
@@ -1963,7 +1988,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcCreateRepublishingLicense.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcCreateRepublishingLicense.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1993,7 +2018,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcgetlicenseproperty"></a>IpcGetLicenseProperty
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi cuộc gọi API IpcGetLicenseProperty được thực hiện.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcGetLicenseProperty.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2025,7 +2050,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcgetserializedlicenseproperty"></a>IpcGetSerializedLicenseProperty
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán đúng sự cố xảy ra khi cuộc gọi API IpcGetSerializedLicenseProperty được thực hiện.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcGetSerializedLicenseProperty.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2057,7 +2082,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcgettemplateissuerlist"></a>IpcGetTemplateIssuerList
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcgettemplateissuerList.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcGetTemplateIssuerList.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2119,7 +2144,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcgettemplatelist"></a>IpcGetTemplateList
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcGetTemplateList.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcGetTemplateList.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2183,7 +2208,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcpcreatelicensefromscratch"></a>IpcpCreateLicenseFromScratch
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpCreateLicenseFromScratch.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpCreateLicenseFromScratch.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2237,7 +2262,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcpcreatelicensefromtemplate"></a>IpcpCreateLicenseFromTemplate
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpCreateLicenseFromTemplate. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpCreateLicenseFromTemplate. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2275,7 +2300,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcpgettemplatelistforuser"></a>IpcpGetTemplateListForUser
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpGetTemplateListForUser. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpGetTemplateListForUser. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2393,7 +2418,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.LicenseFormat** - Định dạng giấy phép: Xrml hoặc Json
 
-- **RMS.PL.KeyType** – Giá trị 'Đơn' hay 'Kép'. Cho biết liệu PL được bảo vệ bằng Khóa bảo vệ đơn hay Khóa bảo vệ kép.
+- **RMS.PL.KeyType** – Giá trị ‘Đơn’ hoặc ‘Kép’ Cho biết PL được bảo vệ bằng Khóa bảo vệ đơn hay Khóa bảo vệ kép.
 
 - **RMS.RACType** - Loại Chứng nhận tài khoản quyền
 
@@ -2415,7 +2440,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcsetlicenseproperty"></a>IpcSetLicenseProperty
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Thông tin này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API Ipcsetlicenall. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcSetLicenseProperty. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -2580,6 +2605,8 @@ Các trường sau đây sẽ được thu thập:
 Các trường sau đây sẽ được thu thập: 
 
 - **draft_message_id** – ID nháp của cuộc trò chuyện đang được tạo làm bản nháp để giúp chúng tôi phát hiện các sự cố liên quan đến email nháp
+
+- **from_context_menu** - Cho chúng tôi biết liệu tác vụ soạn có xuất phát từ hành động menu ngữ cảnh hay không.
 
 - **message_id** – ID thư của cuộc trò chuyện đang được trả lời hoặc được chuyển tiếp để giúp chúng tôi phát hiện các sự cố liên quan đến một thư cụ thể
 
@@ -3064,7 +3091,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeappleactivateperpetual"></a>Office.Apple.ActivatePerpetual
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện được sử dụng để theo dõi trạng thái của dòng kích hoạt vĩnh viễn cũng như việc điều tra các nguyên nhân gây ra lỗi bằng cách xem xét các giá trị FailedAt.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện được sử dụng để theo dõi trạng thái của dòng kích hoạt vĩnh viễn cũng như điều tra các nguyên nhân gây ra lỗi bằng cách đánh giá các giá trị FailedAt.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3176,7 +3203,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappdocsoperationopenfrommrubypath"></a>Office.Docs.AppDocs.OperationOpenFromMruByPath
 
-Sự kiện này được thu thập đối với các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ phần tệp được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ đường dẫn được cung cấp trong danh sách sử dụng gần nhất và được sử dụng để hiểu cũng như ưu tiên các lỗi trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3288,7 +3315,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappdocsoperationopenfrommrubyurl"></a>Office.Docs.AppDocs.OperationOpenFromMruByUrl
 
-Sự kiện này được thu thập đối với các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ URL được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp. 
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ URL được cung cấp trong danh sách sử dụng gần nhất và được sử dụng để hiểu cũng như ưu tiên các trải nghiệm người dùng dựa trên thông tin thao tác mở tệp. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3862,7 +3889,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappledocsuxmacatmentioninsertedatmention"></a>Office.Docs.Apple.DocsUXMacAtMentionInsertedAtMention 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại thời điểm một người dùng "@" đề cập đến một người dùng khác và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên cách người dùng cộng tác với những người dùng khác.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện này ghi lại thời điểm một người dùng "@" đề cập đến một người dùng khác và được dùng để hiểu cũng như ưu tiên trải nghiệm người dùng dựa trên cách người dùng cộng tác với những người dùng khác.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3870,7 +3897,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappledocsuxmacodspsharingwebviewsharingcompleted"></a>Office.Docs.Apple.DocsUXMacODSPSharingWebViewSharingCompleted 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn chia sẻ tài liệu đám mây bằng trải nghiệm chia sẻ OneDrive và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện này ghi lại thời điểm người dùng chọn chia sẻ tài liệu đám mây bằng trải nghiệm chia sẻ OneDrive và được sử dụng để hiểu rõ hơn cũng như ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3922,7 +3949,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuidocstagerecommendedopen"></a>Office.DocsUI.DocStage.RecommendedOpen
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ phần tệp được đề xuất của thư viện tài liệu và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ phần tệp được đề xuất của thư viện tài liệu và được sử dụng để hiểu cũng như ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3930,7 +3957,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuifileoperationsdocsuifileopenmacrequired"></a>Office.DocsUI.FileOperations.DocsUIFileOpenMacRequired
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí "Loại_dịch_vụ" và bốn ký tự đầu tiên trong phần mở rộng.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu cũng như ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí "Loại_dịch_vụ" và bốn ký tự đầu tiên trong phần mở rộng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3940,7 +3967,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuifileoperationsopendocumentmeasurements"></a>Office.DocsUI.FileOperations.OpenDocumentMeasurements
 
-Sự kiện này được thu thập cho các ứng dụng Office hoạt động trong nền tảng iOS. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp, đặc biệt là thông tin về hiệu suất.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng iOS. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu cũng như ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp, đặc biệt là thông tin về hiệu suất.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4034,6 +4061,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **Data_OpenStartTime** - Thời gian Unix khi thao tác mở tệp bắt đầu.
 
+- **Data_PrefetchSourceOptions** - Danh sách liệt kê cho biết cách tệp sẵn dùng ngoại tuyến đối với các tài liệu đám mây, ví dụ: từ các tệp gần đây và được đề xuất. 
+
 - **Data_SilhouetteDuration** - Khoảng thời gian hiển thị của thao tác mở tệp.
 
 - **Data_SourceApplication** - Một chuỗi cho biết ID gói của ứng dụng nguồn khi thao tác mở tệp là do một ứng dụng khác kích hoạt.
@@ -4044,7 +4073,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuifileoperationsopenfilewithreason"></a>Office.DocsUI.FileOperations.OpenFileWithReason 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí "Loại_dịch_vụ" và từ vị trí trong Ứng dụng mà người dùng yêu cầu mở tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu cũng như ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp như danh mục vị trí "Loại_dịch_vụ" và từ nơi trong Ứng dụng mà người dùng yêu cầu mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4123,7 +4152,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuisharinguicopylinkoperation"></a>Office.DocsUI.SharingUI.CopyLinkOperation
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn chia sẻ tài liệu bằng cách tạo liên kết đến tài liệu đám mây và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện này ghi lại thời điểm người dùng chọn chia sẻ tài liệu bằng cách tạo liên kết đến tài liệu đám mây và được sử dụng để hiểu rõ hơn cũng như ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4135,7 +4164,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuisharinguidocsuionedriveshare"></a>Office.DocsUI.SharingUI.DocsUIOneDriveShare 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn chia sẻ tài liệu đám mây bằng trải nghiệm chia sẻ OneDrive và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện này ghi lại thời điểm người dùng chọn chia sẻ tài liệu đám mây bằng trải nghiệm chia sẻ OneDrive và được sử dụng để hiểu rõ hơn cũng như ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4151,7 +4180,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuisharinguiinvitepeople"></a>Office.DocsUI.SharingUI.InvitePeople 
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn để mời mọi người đến tài liệu đám mây và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện này ghi lại thời điểm người dùng chọn mời mọi người tới một tài liệu đám mây và được sử dụng để hiểu rõ hơn cũng như ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4167,7 +4196,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsuisharinguisendacopyoperation"></a>Office.DocsUI.SharingUI.SendACopyOperation
 
-Sự kiện này được thu thập đối với các ứng dụng Office chạy dưới nền tảng Apple. Sự kiện này ghi lại khi người dùng chọn để gửi bản sao của tài liệu và được sử dụng để hiểu rõ hơn và ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trong nền tảng Apple. Sự kiện ghi lại thời điểm người dùng chọn gửi bản sao tài liệu và được sử dụng để hiểu rõ hơn cũng như ưu tiên trải nghiệm người dùng dựa trên việc chia sẻ tài liệu.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4416,7 +4445,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officefeedbacksurveyfloodgateclientuserselected"></a>Office.Feedback.Survey.FloodgateClient.UserSelected
 
-Theo dõi khi thiết bị đã được chọn cho khảo sát. Dùng để đánh giá tình trạng của quá trình chọn người dùng tham gia khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+Theo dõi thời điểm thiết bị được chọn cho một khảo sát. Dùng để đánh giá trạng thái của quá trình chọn người dùng tham gia khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4486,7 +4515,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officefeedbacksurveyuiwin32toast"></a>Office.Feedback.Survey.UI.Win32.Toast
 
-Theo dõi khi hiển thị lời nhắc khảo sát. Dùng để đánh giá tình trạng của quá trình nhắc thực hiện khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+Theo dõi thời điểm hiển thị lời nhắc khảo sát. Dùng để đánh giá trạng thái của quá trình nhắc thực hiện khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4500,7 +4529,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
-Cho phép chúng tôi biết nếu một tệp đã được mở thành công từ Lớp FIO. Sử dụng để giám sát và biết về trạng thái tính năng.
+Cho phép chúng tôi biết nếu một tệp đã được mở thành công từ Lớp FIO. Được dùng cho trạng thái tính năng và theo dõi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4748,7 +4777,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officefileiocsiccachedfilecsisavefilebasic"></a>Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
 
-Cho phép chúng tôi biết nếu một tệp đã được lưu thành công từ Lớp FIO. Sử dụng để giám sát và biết về trạng thái tính năng.
+Sự kiện này cho phép chúng tôi biết nếu một tệp đã được lưu thành công từ Lớp FIO. Sử dụng để giám sát và biết về trạng thái tính năng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5252,7 +5281,7 @@ Các trường sau đây sẽ được thu thập:
 #### <a name="officelenslenssdkcloudconnectorlaunch"></a>Office.Lens.LensSdk.CloudConnectorLaunch
 
 Khi người dùng cắt hình ảnh và ấn xác nhận trên lựa chọn hình ảnh cuối cùng để sử dụng OCR, sự kiện này sẽ được ghi lại.     
-Đây là bản ghi người dùng yêu cầu đối với dịch vụ vì không có ánh xạ người dùng dịch vụ việc cần làm với việc đang sử dụng dịch vụ. UserId bắt buộc nên thực hiện các yêu cầu của GDPR khi dịch vụ không trực tiếp tiếp xúc với người dùng nhưng thông qua khách hàng và xác định tổng số người sử dụng dịch vụ, giúp dịch vụ theo dõi lượng người dùng đang sử dụng sản phẩm cũng như xác định thay đổi trong xu hướng, trợ giúp tìm kiếm và khắc phục các sự cố trong sản phẩm.
+Đây là bản ghi người dùng đến yêu cầu cho dịch vụ vì không có ánh xạ người dùng đến công việc dịch vụ trên dịch vụ. Cần có UserId để hoàn thành các yêu cầu của GDPR khi dịch vụ không trực tiếp tiếp xúc với người dùng nhưng thông qua khách hàng và xác định tổng số người sử dụng dịch vụ, giúp dịch vụ theo dõi lượng người dùng đang sử dụng sản phẩm, cũng như xác định các thay đổi trong xu hướng, trợ giúp tìm kiếm và khắc phục các sự cố trong sản phẩm.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5368,7 +5397,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
 
-Chúng tôi ghi nhật ký khi người dùng đang ở trong một ứng dụng có tải Thẻ Cá nhân với dự đoán rằng người dùng đó sẽ mở Thẻ Cá nhân Trực tiếp.  Dữ liệu dùng để xác định xem thẻ có được tải đúng hay không. 
+Chúng tôi ghi nhật ký khi người dùng đang ở trong một ứng dụng có tải Thẻ Cá nhân với dự đoán rằng người dùng đó sẽ mở Thẻ Cá nhân Trực tiếp. Dữ liệu được sử dụng để xác định xem thẻ đã tải chính xác hay chưa. 
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -5784,36 +5813,6 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Log** - Thông báo nhật ký tuỳ chỉnh cho biết sự thành công hay thất bại của việc kiểm tra trước
 
-#### <a name="officeofficemobilepdfviewerpdffileopenmeasurements"></a>Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements
-
-Sự kiện này được thu thập đối với ứng dụng Office cho iOS, ghi lại thời điểm thao tác mở tệp được thực hiện. Chúng tôi thu thập dữ liệu này để đảm bảo hiệu năng tốt cho tất cả tệp mở trong ứng dụng. 
-
-Các trường sau đây sẽ được thu thập:
-
-- **Data_Doc_ActivationFQDN** - Tên miền của ứng dụng Nhà cung cấp cho kịch bản kích hoạt tệp (chỉ ghi nhật ký thông tin về ứng dụng của bên thứ nhất).
-
-- **Data_Doc_CreateTelemetryReason** – Nguyên nhân tạo PDF từ xa.(ví dụ: Tạo từ bản quét, sử dụng hành động “ảnh sang pdf”, sử dụng hành động “tài liệu sang pdf”, v.v.)
-
-- **Data_Doc_DownloadDurationms** - Thời gian để tải xuống một tệp PDF trên nền điện toán đám mây.
-
-- **Data_Doc_DownloadEndTime** - Dấu thời gian lúc kết thúc tải xuống một tệp trên nền điện toán đám mây.
-
-- **Data_Doc_DownloadStartTime** - Dấu thời gian lúc bắt đầu tải xuống một tệp trên nền điện toán đám mây.
-
-- **Data_Doc_FileOpSessionID** - Id duy nhất cho Phiên tài liệu.
-
-- **Data_Doc_Location** - Vị trí của tệp (Cục bộ, ODSP, iCloud, ứng dụng tệp của bên thứ ba, wopi
-
-- **Data_Doc_OpenCompletionTime** - Dấu thời gian lúc kết thúc mở tệp PDF.
-
-- **Data_Doc_OpenDurationms** - Thời gian để mở tệp PDF tính bằng mili giây.
-
-- **Data_Doc_OpenStartTime** - Dấu thời gian lúc bắt đầu mở tệp PDF.
-
-- **Data_Doc_TelemetryReason** - Nguyên nhân từ xa cho sự kiện mở (ví dụ:mở từ MRU hoặc duyệt, Kích hoạt tệp, Kích hoạt giao thức, v.v.).
-
-- **Doc_RenderDurationms** - Thời gian để kiết xuất tệp pdf
-
 
 #### <a name="officeofficemobilepdfviewerpdffileoperations-on-android"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations (trên Android)
 
@@ -5828,6 +5827,8 @@ Các trường sau đây sẽ được thu thập:
 - **Data_ErrorMessage** - mã thông-báo-về-lỗi liên quan
 
 - **Data_FailureReason** - Trường hợp không thể mở, các enum này xác định nguyên nhân không thể mở.
+
+- **Data_FetchReason** - Biểu thị cách tải tệp (thủ công, được lưu vào bộ đệm ẩn, không được lưu vào bộ đệm ẩn) 
 
 - **Data_FileGUID** – Mã định danh toàn bộ cho tệp được tạo ngẫu nhiên
 
@@ -5866,6 +5867,8 @@ Sự kiện được thu thập cho ứng dụng Office dành cho iOS. Ghi lại
 - **Data_ErrorMessage** – thông báo liên quan về mã sự cố 
 
 - **Data_FailureReason** - Trong trường hợp không thể mở, các enum này xác định nguyên nhân không thể mở. 
+
+- **Data_FetchReason** - Biểu thị cách tải tệp (thủ công, được lưu vào bộ đệm ẩn, không được lưu vào bộ đệm ẩn)
 
 - **Data_FileGUID** – Mã định danh toàn bộ cho tệp được tạo ngẫu nhiên
 
@@ -6510,7 +6513,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointdocoperationopencompleteprotocol"></a>Office.PowerPoint.DocOperation.OpenCompleteProtocol
 
-Được thu thập khi PowerPoint mở bản trình bày. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở.
+Được thu thập khi PowerPoint mở bản trình bày. Sự kiện chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở.
 
 Microsoft sử dụng dữ liệu này để đảm bảo tính năng này hoạt động như mong đợi và không có sự giảm hiệu suất khi mở các bản trình bày.
 
@@ -7318,7 +7321,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointpptiosrehearseview"></a>Office.PowerPoint.PPT.IOS.RehearseView 
 
-Sự kiện này biểu thị người dùng đã ngừng phiên bản thử nghiệm. Dữ liệu được sử dụng kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.  
+Sự kiện này đang biểu thị rằng người dùng đã dừng phiên duyệt lại. Dữ liệu được sử dụng kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.  
  
 Các trường sau đây sẽ được thu thập:
 
@@ -7969,7 +7972,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
 
-Theo dõi tính năng chống lại người dùng. Sự kiện này giúp chúng tôi xác định thành công hay thất bại của việc chống lại tính năng.
+Theo dõi việc phát hành bản dựng xem trước của tính năng đối với người dùng. Sự kiện này giúp chúng tôi xác định thành công hay thất bại của bản dựng xem trước của tính năng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -8656,7 +8659,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="parselicenseop"></a>ParseLicenseOp
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác phân tích giấy phép. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện phân tích thao tác giấy phép. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -8796,7 +8799,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **suggestions_requested** - cho biết số lượng đề xuất soạn thảo thông minh theo yêu cầu
 
-- **suggestions_results** - kết quả của đề xuất soạn thảo thông minh, như chấp thuận, từ chối
+- **suggestions_results** - kết quả của đề xuất soạn thảo thông minh, chẳng hạn như được chấp nhận, bị từ chối
 
 - **suggestions_returned** - cho biết số lượng đề xuất soạn thảo thông minh được trả về từ máy chủ
 
@@ -8824,7 +8827,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="settingsaction"></a>settings.action
 
-Sự kiện này thu thập thông tin cấu hình trong thiết đặt. Dữ liệu cho phép chúng tôi phát hiện các trường hợp có thể gây tác động tiêu cực đến khả năng đặt cấu hình thiết đặt ứng dụng của người dùng, như cài đặt thông báo, tài khoản email chính và đặt cấu hình chữ ký thư.
+Sự kiện này thu thập thông tin cấu hình trong cài đặt. Dữ liệu cho phép chúng tôi phát hiện các trường hợp có thể gây tác động tiêu cực đến khả năng đặt cấu hình cài đặt ứng dụng của người dùng, như cài đặt thông báo, tài khoản email chính và đặt cấu hình chữ ký thư.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -8968,7 +8971,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="surveyfloodgatetriggermet"></a>Survey.Floodgate.TriggerMet
 
-Theo dõi khi thiết bị đã đáp ứng các tiêu chí để hiển thị khảo sát. Dùng để đánh giá tình trạng của quá trình kích hoạt khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+Theo dõi thời điểm thiết bị đáp ứng tiêu chí để hiển thị một khảo sát. Dùng để đánh giá trạng thái của quá trình kích hoạt khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -8981,7 +8984,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="surveyuiformsubmit"></a>Survey.UI.Form.Submit
 
-Theo dõi thời gian gửi khảo sát. Dùng để đánh giá trạng thái quy trình gửi khảo sát cũng như đảm bảo tín hiệu được sử dụng để phân tích sự cố và trạng thái khách hàng hoạt động đúng cách.
+Theo dõi khi khảo sát được gửi. Dùng để đánh giá trạng thái quy trình gửi khảo sát cũng như đảm bảo tín hiệu được sử dụng để phân tích sự cố và trạng thái khách hàng hoạt động đúng cách.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -9159,7 +9162,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="httpop"></a>HttpOp
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác yêu cầu http.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9217,7 +9220,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Việc này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán chính xác các sự cố xảy ra khi đã thực hiện cuộc gọi API IpcCreateOauth2Token.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcCreateOauth2Token.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9283,7 +9286,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
-Ghi lại thông tin về việc tắt không mong muốn của Office. Điều này cho phép chúng tôi xác định sự cố hoặc tạm dừng sản phẩm để có thể xử lý chúng.
+Ghi lại các thông tin về những lần tắt không mong muốn của Office. Dữ liệu này cho phép chúng tôi xác định sự cố hoặc tạm dừng sản phẩm để có thể xử lý.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9626,7 +9629,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeofficemobilefrefirstrunsetup"></a>Office.OfficeMobile.FRE.FirstRunSetup
 
-Lần chạy đầu tiên của ứng dụng sau khi cài đặt sẽ kích hoạt sự kiện nhịp tim này. Việc này sẽ giúp xác định các bản cài đặt và nâng cấp tự động từ các phiên bản cũ hơn của ứng dụng và cho phép chúng tôi xác định các lỗi trong quá trình tự động nâng cấp, bao gồm tải xuống các gói thư viện và mở rộng/ngôn ngữ.
+Lần chạy đầu tiên của ứng dụng sau khi cài đặt sẽ kích hoạt sự kiện nhịp này. Dữ liệu này sẽ giúp xác định các bản cài đặt và nâng cấp tự động từ các phiên bản cũ hơn của ứng dụng và cho phép chúng tôi xác định các lỗi trong quá trình tự động nâng cấp, bao gồm các lần tải thư viện và tải xuống gói mở rộng/ngôn ngữ không thành công.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9980,6 +9983,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data_FErrorAfterDocWinCreation:boolean-** Có bất kỳ lỗi hoặc ngoại lệ nào xảy ra sau khi cửa sổ tài liệu được tạo ra không.
 
+  - **Data_FileIOClpState:int** – Bitset chứa các giá trị liên quan đến trạng thái nhãn nhạy cảm. Ví dụ: dữ liệu này bao gồm thông tin về tính năng đồng tác giả với nhãn được bảo vệ có bật hay không, tài liệu có áp dụng nhãn từ đối tượng thuê hiện tại hay không và tài liệu có được bảo vệ bởi IRM hay không.
+
   - **Data\_FileUrlLocation -** Tập hợp các giá trị được xác định trước về nơi lưu trữ tài liệu (Network Share, Local Drive, ServerOther, v.v.)
 
   - **Data\_FirstSlideCompressedSize -** kích cỡ được nén của phần zip trang chiếu đầu tiên (thường là Slide1.xml)
@@ -10295,7 +10300,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officesystemsessionhandoff"></a>Office.System.SessionHandoff
 
-Cho biết rằng phiên Office hiện tại là phiên giao ca. Điều này có nghĩa là việc xử lý yêu cầu của người dùng để mở tài liệu đang được chuyển đến một phiên bản đã chạy của cùng một ứng dụng.
+Cho biết phiên Office hiện tại là phiên chuyển dịch. Điều này có nghĩa là việc xử lý yêu cầu của người dùng để mở tài liệu đang được giao cho một phiên bản đã chạy của cùng một ứng dụng.
 
 Các trường sau đây sẽ được thu thập.
 
@@ -10887,7 +10892,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="servicediscoveryop"></a>ServiceDiscoveryOp
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các sự cố xảy ra khi hoạt động khám phá dịch vụ được thực hiện. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác khám phá dịch vụ. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -11345,6 +11350,8 @@ Các trường sau đây sẽ được thu thập:
 - **AssetId** - ID tài sản của ứng dụng
 
 - **ErrorCode** - Tổng thời gian sử dụng
+
+- **IsArm64** - cho biết liệu việc kích hoạt phần bổ trợ đang diễn ra trên một ứng dụng được mô phỏng trên thiết bị ARM64 hay không
 
 - **IsAugmentationScenario** – cho biết nếu vòng lặp tăng cường có trách nhiệm khởi tạo điều khiển Khung giải pháp Office
 
@@ -11921,7 +11928,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở khi thực hiện cuộc gọi API IpcpBootstrapUser.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpBootstrapUser.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -11991,7 +11998,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="ipcpgetkey"></a>IpcpGetKey
 
-Được thu thập khi người dùng nỗ lực mở tài liệu được bảo vệ bởi Quyền Quản lý Thông tin (IRM) được quản lý hoặc áp dụng tính năng bảo vệ IRM. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra trong giai đoạn cuối của quy trình mở khi thực hiện cuộc gọi API IpcpGetKey.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng Quản lý Quyền Thông tin (IRM) hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện cuộc gọi API IpcpGetKey.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -12133,7 +12140,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="messagerenderingintercepted"></a>message.rendering.intercepted
 
-Sự kiện này cho phép chúng tôi theo dõi tần suất người dùng chặn tiến trình kết xuất trước khi hoàn tất. Chúng tôi sử dụng dữ liệu này để phát hiện các sự cố về hiệu suất.
+Sự kiện này cho phép chúng tôi theo dõi tần suất người dùng chặn tiến trình kết xuất trước khi hoàn tất. Chúng tôi sử dụng dữ liệu này để phát hiện các sự cố về hiệu năng.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -12237,6 +12244,38 @@ Các trường sau đây sẽ được thu thập:
 - **UIRaaSDownloadLanguagePackageBoot** - thông tin liên quan đến việc tải xuống gói ngôn ngữ
 
 - **UserDialogInterruptionDuringBoot** - Boolean cho bất kỳ hộp thoại chặn nào hiển thị trong quá trình khởi động
+
+
+#### <a name="officeandroiddocsuiviewsdimepurchaseflowstate"></a>Office.Android.DocsUI.Views.DimePurchaseFlowState
+
+Sự kiện trạng thái này tìm cách ghi lại từng trạng thái mà người dùng gặp phải khi người dùng đang tìm cách mua thông qua dòng mua trong ứng dụng do Dime lưu trữ. Dữ liệu được sử dụng để theo dõi và cảnh báo về trạng thái dòng mua được kích hoạt từ ứng dụng Office dành cho thiết bị di động khi người dùng chọn mua đăng ký Microsoft 365.
+
+Các trường sau đây sẽ được thu thập:
+
+- **EntryPoint** - Điểm mục nhập của giao dịch mua do người dùng tìm cách mua
+
+- **OEMPreInstalled** - Xác định xem ứng dụng được cài đặt sẵn hay người dùng cài đặt
+
+- **PurchaseState** - Trạng thái của người dùng khi tìm cách mua hàng
+    - 0 - Lỗi không xác định
+    - 1 - Người dùng tìm cách mở Dime
+    - 2 - Lỗi mạng
+    - 3 - Dime hiển thị cho người dùng
+    - 4 - Người dùng hủy bỏ Dime
+    - 5 - Cần làm mới khi mua hàng thành công
+    - 6 - Mua thành công
+    - 7 - Lỗi dime chung
+    - 8 - Không thể tải lên phép đo từ xa của Dime do giao tiếp không thành công
+    - 9 - Hai bản sao của Dime đang chạy gây ra lỗi gián đoạn
+    - 10 - WebURL Cơ sở đã tải trên ứng dụng officemobile không hợp lệ
+    - 11 - Giao tiếp của ứng dụng officemobile với Dime không thành công 
+    - 12 - Không thể thiết lập kênh liên lạc
+    - 13 - Không thể gửi ID Liên lạc cho Dime
+    - 14 - Ứng dụng officemobile đang liên lạc tới điểm cuối sai
+    - 15 - Không lấy được AuthToken cho tài khoản MSA này
+    - 16 - Không gửi được AuthToken đến Dime
+
+- **WebViewShownDuration** - Khoảng thời gian mà trang mua của dime hiển thị cho người dùng 
 
 
 #### <a name="officeappleappleappbootmac"></a>Office.Apple.Apple.AppBoot.Mac
@@ -12468,6 +12507,58 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data.Last Error** - Một trong năm giá trị chuỗi (bộ liệt kê) để ghi lại giai đoạn của ứng dụng chính sách được thực thi khi xảy ra ngoại lệ
 
+
+#### <a name="officeofficemobilepdfviewerpdffileopenmeasurements-on-android"></a>Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (trên Android)
+
+Sự kiện được thu thập cho ứng dụng Office for Android. Sự kiện này ghi lại thời điểm thao tác mở tệp diễn ra. Chúng tôi thu thập dữ liệu này để đảm bảo hiệu năng tốt cho tất cả tệp mở trong ứng dụng. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Doc_ActivationFQDN** - Tên miền của ứng dụng Nhà cung cấp cho kịch bản kích hoạt tệp (chỉ ghi nhật ký thông tin về ứng dụng của bên thứ nhất).
+
+- **Data_Doc_DownloadDurationms** - Thời gian để tải xuống một tệp PDF trên đám mây.
+
+- **Data_Doc_Location** - Vị trí của tệp (Cục bộ, ODSP, iCloud, ứng dụng tệp của bên thứ ba, wopi
+
+- **Data_Doc_OpenDurationms** - Thời gian để mở tệp PDF tính bằng mili giây.
+
+- **Data_FetchReason** – Biểu thị cách tải tệp (thủ công, được lưu vào bộ đệm ẩn, không được lưu vào bộ đệm ẩn)
+
+- **Doc_RenderDurationms** - Thời gian để kiết xuất tệp pdf
+
+#### <a name="officeofficemobilepdfviewerpdffileopenmeasurements-on-ios"></a>Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (trên iOS)
+
+Sự kiện được thu thập cho ứng dụng Office for iOS. Sự kiện này ghi lại thời điểm thao tác mở tệp diễn ra. Chúng tôi thu thập dữ liệu này để đảm bảo hiệu năng tốt cho tất cả tệp mở trong ứng dụng. 
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_Doc_ActivationFQDN** - Tên miền của ứng dụng Nhà cung cấp cho kịch bản kích hoạt tệp (chỉ ghi nhật ký thông tin về ứng dụng của bên thứ nhất).
+
+- **Data_Doc_CreateTelemetryReason** – Nguyên nhân tạo PDF từ xa.(ví dụ: Tạo từ bản quét, sử dụng hành động “ảnh sang pdf”, sử dụng hành động “tài liệu sang pdf”, v.v.)
+
+- **Data_Doc_DownloadDurationms** - Thời gian để tải xuống một tệp PDF trên nền điện toán đám mây.
+
+- **Data_Doc_DownloadEndTime** - Dấu thời gian lúc kết thúc tải xuống một tệp trên nền điện toán đám mây.
+
+- **Data_Doc_DownloadStartTime** - Dấu thời gian lúc bắt đầu tải xuống một tệp trên nền điện toán đám mây.
+
+- **Data_Doc_FileOpSessionID** - Id duy nhất cho Phiên tài liệu.
+
+- **Data_Doc_Location** - Vị trí của tệp (Cục bộ, ODSP, iCloud, ứng dụng tệp của bên thứ ba, wopi
+
+- **Data_Doc_OpenCompletionTime** - Dấu thời gian lúc kết thúc mở tệp PDF.
+
+- **Data_Doc_OpenDurationms** - Thời gian để mở tệp PDF tính bằng mili giây.
+
+- **Data_Doc_OpenStartTime** - Dấu thời gian lúc bắt đầu mở tệp PDF.
+
+- **Data_Doc_TelemetryReason** - Nguyên nhân từ xa cho sự kiện mở (ví dụ:mở từ MRU hoặc duyệt, Kích hoạt tệp, Kích hoạt giao thức, v.v.).
+
+- **Data_FetchReason** – Biểu thị cách tải tệp (thủ công, được lưu vào bộ đệm ẩn, không được lưu vào bộ đệm ẩn)
+
+- **Doc_RenderDurationms** - Thời gian để kiết xuất tệp pdf
+
+
 #### <a name="officeonenoteandroidsyncprovisioningcompleted"></a>Office.OneNote.Android.Sync.ProvisioningCompleted
 
 *[Sự kiện này trước đây đã được đặt tên là OneNote.Sync.ProvisioningCompleted.]*
@@ -12669,7 +12760,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **ResumeRehearsingCount** - Đếm số lần người dùng bấm vào tiếp tục thử nghiệm.
 
-- **SessionId** - Đây là ID phiên phát biểu trước cửa. ID này được sử dụng để gỡ lỗi các bản ghi dịch vụ.
+- **Sessionid** - Đây là ID phiên trước cửa của bài diễn thuyết. Dữ liệu này được sử dụng để gỡ lỗi nhật ký dịch vụ.
 
 - ding **SlideshowViewLoadTime** – thời gian thực hiện bởi trình chiếu để tải.
 
@@ -12684,7 +12775,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **PostUrlCallTime** – Đây là thời gian tính bằng mili giây để gửi lệnh gọi URL bài đăng. 
 
-- **RehearseSessionId** - Đây là ID phiên phát biểu trước cửa. Chúng tôi có thể điều này để gỡ lỗi các bản ghi dịch vụ.
+- **RehearseSessionid** - Đây là ID phiên trước cửa của bài diễn thuyết. Chúng tôi có thể sử dụng dữ liệu này để gỡ lỗi nhật ký dịch vụ.
 
 - **RequestPayloadSize** – Đây là kích cỡ của tải trọng yêu cầu. 
 
@@ -12713,7 +12804,7 @@ Các trường sau đây sẽ được thu thập:
 
 *[Sự kiện này trước đây đã được đặt tên là Office.PowerPoint.PPT.Android.RehearseView.Errors]*
 
-Sự kiện được kích hoạt khi bất kỳ lỗi nào xảy ra. Sự kiện này sẽ giúp chúng tôi biết lỗi người dùng đã gặp phải và đảm bảo Huấn luyện trình bày hiệu quả trên thiết bị di động.
+Sự kiện này kích hoạt khi xảy ra bất kỳ sự cố nào. Sự kiện này sẽ giúp chúng tôi biết lỗi người dùng đã gặp phải và đảm bảo Huấn luyện cho Diễn giả hoạt động hiệu quả trên thiết bị di động.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -12760,7 +12851,7 @@ Các trường sau đây sẽ được thu thập:
 
 - **SessionDurationInMs** – Đây là khoảng thời gian của toàn bộ phiên từ khi người dùng nhấp vào bắt đầu đến khi người dùng nhấp vào dừng.
 
-- **SessionId** – Đây là ID bài phát biểu trước cửa. Chúng tôi có thể điều này để gỡ lỗi các bản ghi dịch vụ.
+- **SessionId** - Đây là ID phiên trước cửa. Chúng tôi có thể sử dụng nhật ký dịch vụ vá lỗi.
 
 - **SpeechClientResultEventsWithTimestamps** – Đây là một loạt mã lỗi đã nhận được cùng với dấu thời gian có thể hỗ trợ trong việc gỡ lỗi.
 
@@ -12807,7 +12898,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
 
-Tín hiệu quan trọng theo dõi tương tác của người dùng đối với hộp thoại Tham gia người dùng nội bộ Office. Tín hiệu được dùng để xác định bất kỳ sự cố nào trong khi thực hiện các thay đổi do người dùng khởi tạo như tham gia hoặc rời khỏi chương trình Người dùng nội bộ Office và thay đổi cấp độ Người dùng nội bộ Office.
+Tín hiệu quan trọng theo dõi tương tác của người dùng với hộp thoại Tham gia Người dùng Nội bộ Office. Tín hiệu được dùng để xác định bất kỳ sự cố nào trong khi thực hiện các thay đổi do người dùng khởi tạo như tham gia hoặc rời khỏi chương trình Người dùng nội bộ Office và thay đổi cấp độ Người dùng nội bộ Office.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -12958,7 +13049,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="performancerecord"></a>performance.record
 
-Sự kiện này sẽ thu thập chỉ số hiệu suất của ứng dụng. Điều này cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, mức sử dụng bộ nhớ ứng dụng và mức sử dụng CPU trở nên cực kỳ nghiêm trọng hoặc có các vấn đề hiệu suất khác, có thể khiến thiết bị của bạn bị chậm lại.
+Sự kiện này thu thập các chỉ số về hiệu năng của ứng dụng. Điều này cho phép chúng tôi phát hiện và khắc phục các trường hợp trong đó, mức sử dụng bộ nhớ ứng dụng và mức sử dụng CPU trở nên cực kỳ cao hoặc có các vấn đề hiệu suất khác, có thể khiến thiết bị của bạn bị chậm lại.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -13469,7 +13560,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
 
-Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định sự cố hỏng DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong Word, Excel hoặc PowerPoint.
+Phép đo từ xa Lỗi quan trọng cho các Trường hợp không thành công của Cơ sở dữ liệu khi đang duyệt tệp và thêm địa điểm. Microsoft dùng dữ liệu này để xác định sự cố hỏng DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm địa điểm hoặc duyệt qua các địa điểm này từ bên trong ứng dụng trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -13511,7 +13602,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
 
-Phép đo từ xa Lỗi nghiêm trọng cho Sự cố cơ sở dữ liệu trong khi duyệt tệp và thêm vị trí.  Microsoft dùng phép đo từ xa này để xác định sự cố hỏng DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm vị trí hoặc duyệt qua các vị trí này từ bên trong ứng dụng trong Word, Excel hoặc PowerPoint.
+Phép đo từ xa Lỗi quan trọng cho các Trường hợp không thành công của Cơ sở dữ liệu khi đang duyệt tệp và thêm địa điểm. Microsoft dùng dữ liệu này để xác định sự cố hỏng DB trong các ứng dụng, từ đó có thể cản trở người dùng thêm địa điểm hoặc duyệt qua các địa điểm này từ bên trong ứng dụng trong Word, Excel hoặc PowerPoint.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -14037,7 +14128,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officesystemsystemhealtherrorsetwshim"></a>Office.System.SystemHealthErrorsEtwShim
 
-Được sử dụng để xác định các sự cố ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
+Được sử dụng để xác định các vấn đề ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -14053,7 +14144,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officesystemsystemhealtherrorsulsandasserts"></a>Office.System.SystemHealthErrorsUlsAndAsserts
 
-Được sử dụng để xác định các sự cố ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
+Được sử dụng để xác định các vấn đề ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -14069,7 +14160,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officesystemsystemhealtherrorsulsworkaround"></a>Office.System.SystemHealthErrorsUlsWorkaround
 
-Được sử dụng để xác định các sự cố ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình
+Được sử dụng để xác định các vấn đề ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình
 
 Các trường sau đây sẽ được thu thập:
 
@@ -14083,7 +14174,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officesystemsystemhealtherrorswithouttag"></a>Office.System.SystemHealthErrorsWithoutTag
 
-Được sử dụng để xác định các sự cố ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
+Được sử dụng để xác định các vấn đề ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -14103,7 +14194,7 @@ Count – Số lượng từng lỗi
 
 #### <a name="officesystemsystemhealtherrorswithtag"></a>Office.System.SystemHealthErrorsWithTag
 
-Được sử dụng để xác định các sự cố ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
+Được sử dụng để xác định các vấn đề ảnh hưởng đến khách hàng trong ứng dụng đang chạy có thể biểu hiện là sự cố hoặc chức năng bị xuống cấp. Ghi lại các lỗi xảy ra trong thời gian chạy quy trình.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -14237,7 +14328,7 @@ Cho phép chúng tôi phát hiện các trường hợp trong đó, dạng xem c
 
 Các trường sau đây sẽ được thu thập:
 
-- Không có trường hay dữ liệu được thêm vào nào được thu thập. Chỉ nhật ký được thu thập nếu có rò rỉ bộ nhớ liên quan đến chuỗi hội thoại.
+- Không thu thập các trường hoặc dữ liệu đượ thêm. Chỉ thu thập nhật ký nếu có rò rỉ bộ nhớ liên quan đến chuỗi hội thoại.
 
 #### <a name="coredatacorruption"></a>core.data.corruption
 
@@ -14270,6 +14361,8 @@ Các trường sau đây sẽ được thu thập:
 Sự kiện này thu thập thông tin cho phép chúng tôi phân mục và phân loại các sự cố trong ứng dụng Outlook có liên quan đến trợ năng và thiết đặt thiết bị.  Việc phân mục này là cần thiết để ưu tiên tác động của sự cố đối với khách hàng.
 
 Các trường sau chỉ được thu thập cho iOS:
+
+- **alternate_app_icon**- Cho chúng tôi biết biểu tượng ứng dụng thay thế mà người dùng hiện được chọn bằng ứng dụng
 
 - **bold_text** – Cho chúng tôi biết liệu thiết bị có bật văn bản in đậm để giúp chúng tôi phát hiện các sự cố liên quan đến văn bản in đậm hay không
 
@@ -14308,8 +14401,6 @@ Các trường sau chỉ được thu thập cho Android:
 - **high_contrast** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho độ tương phản cao trên thiết bị của mình để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
 
 - **large_text** – Cho chúng tôi biết liệu người dùng có bật cài đặt văn bản lớn để giúp chúng tôi phát hiện ra các sự cố liên quan đến cài đặt này hay không
-
-- **oem_preinstall** – Cho chúng tôi biết liệu ứng dụng của chúng tôi đã được cài đặt sẵn trên thiết bị hay chưa (chỉ áp dụng cho các thiết bị Samsung)
 
 - **supported_abis** – Cho chúng tôi biết loại giao diện nhị phân ứng dụng (ABIs) nào được nền tảng thiết bị hỗ trợ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này
 
@@ -14435,7 +14526,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointpptsharednointernetconnectivity"></a>Office.PowerPoint.PPT.Shared.NoInternetConnectivity
 
-Thu thập bất cứ khi nào PowerPoint phát hiện không có kết nối internet. Microsoft sử dụng dữ liệu này để có được thông tin chẩn đoán về kết nối internet của người dùng để có thể hiểu cách điều đó tác động đến kết nối với các dịch vụ Office.
+Được thu thập bất kể thời điểm nào PowerPoint phát hiện không có kết nối internet. Microsoft sử dụng dữ liệu này để có được thông tin chẩn đoán về kết nối internet của người dùng để có thể hiểu cách điều đó tác động đến khả năng kết nối với các dịch vụ Office.
 
 Các trường sau đây sẽ được thu thập:
 
