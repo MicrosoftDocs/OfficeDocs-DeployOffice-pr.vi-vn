@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho quản trị viên Office thông tin về dữ liệu chẩn đoán bắt buộc trong Office và cung cấp danh sách các sự kiện và trường dữ liệu.
 hideEdit: true
-ms.openlocfilehash: c61c3072c4c0f61926b51c0fab5e46a1b5151e00
-ms.sourcegitcommit: 2796ba69444926d686e7ed587a89d8ee9e313d84
+ms.openlocfilehash: 47ecf8e0195324b1c40a627333275bbed0947253
+ms.sourcegitcommit: 0e2ec395ca334719883a7a48b5313a72217f2eab
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52328445"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52907412"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Dữ liệu chẩn đoán bắt buộc cho Office
 
@@ -45,6 +45,11 @@ Nếu bạn là người quản trị cho tổ chức của mình, bạn cũng c
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office cho Mac](mac-privacy-preferences.md)
 - [Sử dụng tùy chọn để quản lý kiểm soát quyền riêng tư cho Office trên thiết bị iOS](ios-privacy-preferences.md)
 - [Sử dụng cài đặt chính sách để quản lý các biện pháp kiểm soát quyền riêng tư cho Office trên thiết bị Android](android-privacy-controls.md)
+
+> [!NOTE]
+> Để biết thông tin về dữ liệu chẩn đoán bắt buộc của Microsoft Teams, hãy xem các bài viết sau:
+> - [Dữ liệu chẩn đoán từ máy tính để bàn bắt buộc của Microsoft Teams](/microsoftteams/policy-control-diagnostic-data-desktop)
+> - [Dữ liệu chẩn đoán từ di động bắt buộc của Microsoft Teams](/microsoftteams/policy-control-diagnostic-data-mobile)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Danh mục, loại dữ liệu con, sự kiện và trường dữ liệu cho dữ liệu chẩn đoán được yêu cầu
 
@@ -153,6 +158,8 @@ Thông tin về hệ điều hành và bản dựng.
 
 Danh mục này chứa các trường sau đây:
 
+  - **Model** - chuỗi chứa mô hình vật lý của thiết bị chạy ứng dụng. Chỉ iOS. Ví dụ: iPhone13,3 hoặc iPad11,6.
+  
   - **OsBuild** - Số bản dựng của hệ điều hành được cài đặt trên thiết bị. Cho phép chúng tôi xác định xem các sự cố có ảnh hưởng đến các gói dịch vụ riêng lẻ hoặc các phiên bản của một hệ điều hành nhất định khác với các vấn đề khác hay không để chúng tôi có thể ưu tiên các sự cố.
 
   - **OsVersion** - Phiên bản chính của hệ điều hành được cài đặt trên thiết bị. Cho phép chúng tôi xác định xem các sự cố có ảnh hưởng đến một phiên bản hệ điều hành cụ thể hơn các sự cố khác hay không để chúng tôi có thể ưu tiên các sự cố.
@@ -360,6 +367,8 @@ Danh mục này chứa các trường sau đây:
   - **Flags** - Thông tin được sử dụng để thay đổi cách một sự kiện nhất định phản ứng. Được sử dụng để quản lý cách xử lý một sự kiện nhất định cho mục đích tải dữ liệu lên Microsoft.
 
   - **Id** - Mã định danh duy nhất cho sự kiện. Cho phép chúng tôi xác định duy nhất các sự kiện đang được nhận.
+
+  - **IsExportable** - Trường biểu thị nếu sự kiện này cần quy trình xuất xử lý thêm.
 
   - **Level** - biểu thị loại sự kiện.
 
@@ -1076,7 +1085,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Dữ liệu liên quan đến thành công khi không truy xuất dữ liệu quyền phần bổ trợ cho người quản trị viên đối tượng thuê Office 365 gán phần bổ trợ. Được sử dụng cho các số liệu về trạng thái, biểu đồ và phân tích các vấn đề của khách hàng. ExchangeGetLastUpdate sẽ luôn chạy khi khởi động như một phần của mã máy chủ và xác định xem hoạt động gán phần bổ trợ đã thay đổi cho người dùng hay chưa.  Nếu vậy thì osf.DLL sẽ được tải để chúng tôi có thể gọi ExchangeGetEntitlements để nhận các hoạt động gán cụ thể (và ExchangeGetManifests sẽ được gọi để truy xuất bất kỳ bản kê mới nào cần thiết).  ExchangeGetEntitlements (và ExchangeGetManifests) cũng có thể được gọi theo yêu cầu sau khi ứng dụng máy chủ đã chạy.   Tốt nhất là không tải DLL lớn nếu chúng tôi không cần đến.  Nếu không có sự kiện này trong phần Bắt buộc, chúng tôi sẽ không thể biết nếu người dùng không nhận được phần bổ trợ được gán cho họ nếu cuộc gọi dịch vụ đầu tiên đó không thành công.   Đó cũng là tín hiệu chính cho bất kỳ vấn đề xác thực nào mà chúng tôi gặp phải khi giao tiếp với dịch vụ của chúng tôi.
+Dữ liệu liên quan đến thành công khi không truy xuất dữ liệu quyền phần bổ trợ cho người quản trị viên đối tượng thuê Office 365 gán phần bổ trợ. Được sử dụng cho các số liệu về trạng thái, biểu đồ và phân tích các vấn đề của khách hàng. ExchangeGetLastUpdate sẽ luôn chạy khi khởi động như một phần của mã máy chủ và xác định xem hoạt động gán phần bổ trợ đã thay đổi cho người dùng hay chưa.  Nếu vậy thì osf.DLL sẽ được tải để chúng tôi có thể gọi ExchangeGetEntitlements để nhận các hoạt động gán cụ thể (và ExchangeGetManifests sẽ được gọi để truy xuất bất kỳ bản kê mới nào cần thiết).  ExchangeGetEntitlements (và ExchangeGetManifests) cũng có thể được gọi theo yêu cầu sau khi ứng dụng máy chủ đã chạy.   Tốt nhất là không tải DLL lớn nếu chúng tôi không cần đến.  Nếu không có sự kiện này trong phần Bắt buộc, chúng tôi sẽ không thể biết nếu người dùng không nhận được phần bổ trợ được gán cho họ nếu cuộc gọi dịch vụ đầu tiên đó không thành công.   Đó cũng là tín hiệu chính cho bất kỳ vấn đề xác thực nào mà chúng tôi gặp phải khi giao tiếp với dịch vụ của chúng tôi.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -1747,6 +1756,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **is_all_day** - Được sử dụng cùng với "meeting_duration" để xác định xem đây có phải là cuộc họp cả ngày hay không. Giúp chúng tôi hiểu được có sự cố nào với các hành động được thực hiện trên các cuộc họp cả ngày hay không. 
 
+- **is_every_meeting_online_on** - True nếu tài khoản người dùng được đặt thành bật cuộc họp trực tuyến theo mặc định. Giúp chúng tôi hiểu được có sự cố nào với lịch cuộc họp trực tuyến đã kích hoạt hay không. 
+
 - **is_location_permission_granted** – Người dùng có cấp quyền truy nhập vị trí hệ thống cho ứng dụng hay không. Nếu được cấp quyền truy nhập vị trí, ứng dụng có thể hiện thông tin tiện ích bổ sung trong giao diện người dùng. Biết được quyền truy nhập vị trí có được cấp hay không sẽ giúp chúng tôi biết mức độ người dùng nhìn thấy thông tin tiện tích bổ sung.
 
 - **is_organizer** – Giúp chúng tôi hiểu được người tổ chức có thể chỉnh sửa và tạo cuộc họp một cách chính xác hay không. 
@@ -1805,7 +1816,9 @@ Các trường sau được thu thập trong iOS và Android:
 
 - **account_switcher_action_type** – Loại hành động này theo dõi nếu người dùng sử dụng trình chuyển đổi tài khoản trong quá trình chỉ đơn giản là khám phá hoặc nếu họ đã quyết định chuyển đổi tài khoản
 
-- **action_type** – Loại hành động đã được thực hiện cho tìm kiếm. Điều này xác định liệu một tìm kiếm đã bắt đầu, xảy ra hoặc kết thúc hay chưa và những hành động nào đã xảy ra trong quá trình tìm kiếm, chẳng hạn như đã sử dụng mic chưa. Đây là công cụ trong việc đảm bảo các tìm kiếm là chính xác và hữu ích. 
+- **action** – loại hành động đã được thực hiện cho tìm kiếm. Điều này xác định liệu một tìm kiếm đã bắt đầu, xảy ra hoặc kết thúc hay chưa và những hành động nào đã xảy ra trong quá trình tìm kiếm, chẳng hạn như đã sử dụng mic chưa. Đây là công cụ trong việc đảm bảo các tìm kiếm là chính xác và hữu ích.
+
+- **action_type** – Loại hành động đã được thực hiện cho tìm kiếm. Điều này xác định liệu một tìm kiếm đã bắt đầu, xảy ra hoặc kết thúc hay chưa và những hành động nào đã xảy ra trong quá trình tìm kiếm, chẳng hạn như đã sử dụng mic chưa. Đây là công cụ trong việc đảm bảo các tìm kiếm là chính xác và hữu ích. *[Trường này đã bị loại bỏ khỏi các bản dựng hiện tại của Office, nhưng vẫn có thể xuất hiện trong các bản dựng cũ hơn.]* 
 
 - **conversation_id** - ID duy nhất cho mọi phiên tìm kiếm (ví dụ mỗi khi người dùng nhập vào hộp tìm kiếm)
 
@@ -1840,8 +1853,6 @@ Các trường sau được thu thập trong iOS và Android:
 - **search_result_filter_type** – Cho biết loại bộ lọc đã được áp dụng để tìm kiếm, hiển thị tất cả hay chỉ tệp đính kèm
 
 Các trường sau được thu thập trong các ứng dụng của Outlook dành cho Thiết bị di động trên iOS: 
-
-- **action** – loại hành động đã được thực hiện cho tìm kiếm. Điều này xác định liệu một tìm kiếm đã bắt đầu, xảy ra hoặc kết thúc hay chưa và những hành động nào đã xảy ra trong quá trình tìm kiếm, chẳng hạn như đã sử dụng mic chưa. Đây là công cụ trong việc đảm bảo các tìm kiếm là chính xác và hữu ích.
 
 - **answer_result_selected_count** - theo dõi số lần tìm kiếm "thành công", chẳng hạn như người dùng đã tìm thấy người mà họ muốn hay chưa? Bạn đã soạn thảo một email? Bạn đã đánh dấu thư? 
 
@@ -1903,6 +1914,8 @@ Các trường sau đây sẽ được thu thập:
 - **hx_error_type** - cho chúng tôi biết lỗi nào đã xảy ra đã ngăn dịch vụ hoàn tất việc xoá, cập nhật, hoặc thêm tương tác vào tin nhắn.
 
 - **hx_string_tag** - cho chúng tôi biết thẻ của lỗi trong cơ sở mã của dịch vụ
+
+- **is_pinned** - Cho chúng tôi biết nếu cuộc trò chuyện được ghim. Sự kiện này để đánh giá nếu người dùng đang tương tác với tin nhắn ghim và liệu tính năng ghim có hoạt động như dự kiến hay không.
 
 - **reaction_origin** – Cho chúng tôi biết nguồn gốc phản ứng của người dùng 
 
@@ -2542,6 +2555,8 @@ Các trường sau đây sẽ được thu thập:
 
 - **is_group_escalation** – cho biết liệu thư mà hành động được thực hiện có được gửi đến hộp thư của người dùng do sự leo thang hay không (đã đăng ký với nhóm)
 
+- **is_pinned** - Cho chúng tôi biết nếu cuộc trò chuyện được ghim. Sự kiện này để đánh giá nếu người dùng đang tương tác với tin nhắn ghim và liệu tính năng ghim có hoạt động như dự kiến hay không.
+
 - **is_rule** – cho biết liệu hành động thư đã hoàn tất có đang đặt lại phân loại ưu tiên/khác hay không
 
 - **is_threaded_mode** – cho biết liệu thư có ở chế độ luồng hay không, tức là các thư được nhóm như thế nào
@@ -2973,7 +2988,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officeappdocsappdocsdocumentoperation"></a>Office.AppDocs.AppDocs.DocumentOperation
 
-Sự kiện này được thu thập đối với các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác tệp (tạo/mở/lưu/xuất/v.v.) được thực hiện và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác tệp (tạo/mở/lưu/xuất/v.v.) diễn ra và được sử dụng để hiểu cũng như ưu tiên các trải nghiệm người dùng dựa trên thông tin thao tác tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3428,7 +3443,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappdocsoperationopenfrompath"></a>Office.Docs.AppDocs.OperationOpenFromPath
 
-Sự kiện này được thu thập đối với các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một đường dẫn và được sử dụng để hiểu cũng như ưu tiên các trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3540,7 +3555,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappdocsoperationopenfromprotocolhandler"></a>Office.Docs.AppDocs.OperationOpenFromProtocolHandler
 
-Sự kiện này được thu thập đối với các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một ứng dụng khác sử dụng giao diện bộ xử lý giao thức và được sử dụng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một ứng dụng khác bằng cách sử dụng giao diện bộ xử lý giao thức và được sử dụng để hiểu cũng như ưu tiên các trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3652,7 +3667,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappdocsoperationopenfromshell"></a>Office.Docs.AppDocs.OperationOpenFromShell
 
-Sự kiện này được thu thập đối với các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ vỏ và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ vỏ và được sử dụng để hiểu cũng như ưu tiên các trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -3765,7 +3780,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officedocsappdocsoperationopenfromurl"></a>Office.Docs.AppDocs.OperationOpenFromUrl
 
-Sự kiện này được thu thập đối với các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ một URL và được dùng để hiểu và ưu tiên trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
+Sự kiện này được thu thập cho các ứng dụng Office đang chạy trên nền tảng Android, iOS, Universal hoặc Windows. Sự kiện ghi lại thời điểm thao tác mở tệp diễn ra từ URL và được sử dụng để hiểu cũng như ưu tiên các trải nghiệm người dùng dựa trên thông tin thao tác mở tệp.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4414,10 +4429,20 @@ Sự kiện này được thu thập khi nguồn cấp dữ liệu được hi�
 
 - **version** - Phiên bản máy khách của nguồn cấp dữ liệu.
 
+#### <a name="officefeedbacksurveyfloodgateclientgetdecisionforactionprestart"></a>Office.Feedback.Survey.FloodgateClient.GetDecisionForActionPreStart
+
+Trong các ứng dụng Office, chúng tôi kiểm soát tần suất của các thông báo trong sản phẩm và thông báo đẩy thông qua tầng quản trị. Sự kiện này được ghi lại trong điều kiện lỗi khi chúng tôi tìm cách áp dụng quản trị vào thông báo trong ứng dụng trước khi mô-đun xử lý quản trị được kích hoạt hoàn toàn. Phép đo từ xa này giúp logic quản trị của chúng tôi mạnh mẽ hơn bằng cách thu thập chi tiết về các kịch bản trong đó, quản trị không được áp dụng.
+
+Các trường sau đây sẽ được thu thập:
+
+- **Data_EventId** - Mã định danh duy nhất của câu lệnh ghi nhật ký.
+
+- **Data_SurveyId** - Tên thông báo mà chúng tôi đang tìm cách hiển thị khi lỗi này được tạo.
+
 
 #### <a name="officefeedbacksurveyfloodgateclientsurveytracked"></a>Office.Feedback.Survey.FloodgateClient.SurveyTracked
 
-Theo dõi khi thiết bị đủ điều kiện thực hiện khảo sát sẽ khởi động ứng dụng. Dùng để đánh giá tình trạng của quá trình chọn người dùng tham gia khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+Theo dõi thời điểm thiết bị đủ điều kiện cho một khảo sát bắt đầu ứng dụng. Dùng để đánh giá trạng thái của quá trình chọn người dùng tham gia khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -4431,7 +4456,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officefeedbacksurveyfloodgateclienttriggermet"></a>Office.Feedback.Survey.FloodgateClient.TriggerMet
 
-Theo dõi khi thiết bị đã đáp ứng các tiêu chí để hiển thị khảo sát. Dùng để đánh giá tình trạng của quá trình kích hoạt khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
+Theo dõi thời điểm thiết bị đáp ứng tiêu chí để hiển thị một khảo sát. Dùng để đánh giá trạng thái của quá trình kích hoạt khảo sát cũng như đảm bảo tín hiệu dùng để phân tích các vấn đề và tình trạng của khách hàng hoạt động đúng cách.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -5568,7 +5593,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
-Chúng tôi ghi nhật ký khi người dùng đóng Thẻ Cá nhân.  Dữ liệu được dùng để xác định xem thẻ có được đóng đúng cách hay không. 
+Chúng tôi ghi lại thời điểm người dùng đóng Thẻ cá nhân. Dữ liệu được sử dụng để xác định liệu thẻ đã được đóng đúng cách hay chưa. 
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -6501,7 +6526,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointdocoperationnewdocument"></a>Office.PowerPoint.DocOperation.NewDocument
 
-Được thu thập khi PowerPoint tạo bản trình bày mới.  Bao gồm các số liệu về thành công, thất bại và hiệu suất.
+Được thu thập khi PowerPoint tạo bản trình bày mới.  Bao gồm các số liệu về thành công, thất bại và hiệu suất.
 
 Thông tin này được sử dụng để đảm bảo chúng tôi có thể tạo các tệp thành công và không bị suy giảm hiệu suất.
 
@@ -8697,6 +8722,16 @@ Các trường sau đây sẽ được thu thập:
 
 - **RMS.VerifySignatureDuration** - Thời gian để xác minh chữ ký
 
+
+#### <a name="qrcodescan"></a>qr.code.scan
+
+Sự kiện này cho chúng tôi biết thời điểm người dùng đăng nhập vào Outlook Mobile bằng cách quét mã QR xác thực trên một máy khách Outlook dành cho máy tính để bàn có chứa thông tin đăng nhập của người dùng một cách bảo mật, do đó người dùng không cần đăng nhập thủ công. Sự kiện này được sử dụng để phát hiện thao tác khởi tạo và hoàn thành thành công của quy trình xác thực người dùng bằng chức năng QR. Sự kiện chẩn đoán các lỗi đăng nhập có thể ngăn người dùng xác thực thành công trên ứng dụng dành cho thiết bị di động.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **action** - hành động nào mà người dùng đã thực hiện trong dòng qrcode
+
+
 #### <a name="readconversation"></a>read.conversation
 
 Được dùng để giám sát tác động tiêu cực có thể có đối với tình trạng và hiệu năng khi kết xuất email
@@ -8841,6 +8876,10 @@ Các trường sau đây sẽ được thu thập:
 
 - **delete_scope** – Trong quá trình xóa tài khoản, liệu bạn đã xóa tài khoản khỏi thiết bị này hay từ tất cả các thiết bị có Outlook hay chưa.  
 
+- **emo_default_provider_selected_type** - Trường xác định loại nhà cung cấp cuộc họp mặc định do người dùng đặt. 
+
+- **emo_default_provider_switch_type** - Loại chuyển đổi do người dùng thực hiện giữa các nhà cung cấp cuộc họp trong màn hình Mỗi cuộc họp trực tuyến. Giúp chúng tôi hiểu rõ tương tác của người dùng với tính năng này. 
+
 - **enabled_state** – Liệu cài đặt trả lời tự động, lưu liên hệ và chặn các hình ảnh bên ngoài của bạn có được đặt cấu hình đúng cách hay không  
 
 - **notification_action** – Để kiểm tra xem liệu bạn đã đặt cấu hình bất kỳ hành động thông báo nào cho việc đồng bộ email hay chưa để giúp chúng tôi đảm bảo cài đặt này hoạt động thành công 
@@ -8928,7 +8967,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="storeop"></a>StoreOp
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể điều tra và chẩn đoán đúng sự cố xảy ra khi hoạt động của Dịch vụ Quản lý quyền giấy phép được thực hiện. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác lưu trữ giấy phép Dịch vụ Quản lý quyền. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9066,7 +9105,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="dnslookupop"></a>DnsLookupOp
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Thông tin này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán đúng sự cố xảy ra khi hoạt động tra cứu thông tin DNS được thực hiện. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác tra cứu thông tin DNS. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9122,7 +9161,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="getuserop"></a>GetUserOp
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể tìm hiểu và chẩn đoán các sự cố xảy ra khi bạn thực hiện thao tác chứng chỉ người dùng. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác tải chứng chỉ người dùng. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -9873,6 +9912,8 @@ Các trường sau đây sẽ được thu thập:
 
   - **Data\_CreateLocalTempFile -** Khoảng thời gian thực hiện phương pháp CreateLocalTempFile tính theo mili giây
 
+  - **Data_CsiDownloadErrDlgSuppressed:bool** – Liệu hộp thoại do CSI hiển thị trong lỗi tải xuống đã được ngăn chặn chưa, thường được thay thế bằng hộp thoại do PowerPoint hiển thị.
+
   - **Data\_DetachedDuration:long -** Thời gian mà hoạt động bị tách ra/không chạy
 
   - **Data\_DetermineFileType -** Khoảng thời gian thực hiện phương pháp DetermineFileType tính theo mili giây
@@ -9954,6 +9995,10 @@ Các trường sau đây sẽ được thu thập:
   - **Data\_Doc\_UsedWrsDataOnOpen:bool -** True nếu tệp được mở tăng dần bằng cách sử dụng dữ liệu WRS được lưu trước trong bộ nhớ đệm ẩn trên máy chủ
 
   - **Data\_Doc\_WopiServiceId:string -** Mã định danh dịch vụ WOPI, ví dụ: "Dropbox"
+
+  - **Data_DownloadErrorCsi:int** – Loại lỗi tải xuống, như được CSI cung cấp
+
+  - **Data_DownloadErrorHResult:int** – HResult của một lỗi tải xuống, như được CSI cung cấp
 
   - **Data\_DownloadExcludedData -** Khoảng thời gian thực hiện phương pháp DownloadExcludedData tính theo mili giây
 
@@ -10854,7 +10899,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="renewuserop"></a>RenewUserOp
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM.  Việc này chứa thông tin cần thiết để có thể tìm hiểu và chẩn đoán các sự cố xảy ra khi gia hạn chứng nhận thao tác người dùng được thực hiện. 
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi thực hiện thao tác gia hạn chứng chỉ người dùng. 
 
 Các trường sau đây sẽ được thu thập:
 
@@ -11681,6 +11726,20 @@ Các trường sau đây sẽ được thu thập:
 - **Ngoại lệ** - Ngăn xếp lệnh gọi cho Ngoại lệ
 
 - **Tên sự kiện** - Tên sự kiện là Danh mục sự kiện và Nhãn sự kiện.
+
+
+#### <a name="onenotesafebootaction"></a>OneNote.SafeBootAction
+
+Sự kiện này được kích hoạt trong quá trình khởi động ứng dụng nếu ứng dụng gặp sự cố trong phiên trước đó. Dữ liệu này được sử dụng để theo dõi các sự cố mới và sẽ giúp chúng tôi xác định liệu logic phát hiện sự cố có hoạt động đúng cách không, cũng như theo dõi số lượng sự cố khi khởi động và sự cố sớm.
+
+Các trường sau đây sẽ được thu thập: 
+
+- **ActionType** - Các giá trị khả thi - IncrementCount, ResetBootCounter, ResetEarlyCounter
+
+- **IsLoopCrash** - Các giá trị khả thi – Có/Không
+
+- **IsNativeCrash** - Các giá trị khả thi - Có/Không
+
 
 #### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetrysafebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry.SafeBootResetCrashCounterOnAppSuspend
 
@@ -12736,7 +12795,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
 
-Sự kiện này biểu thị người dùng đã ngừng phiên bản thử nghiệm. Kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.
+Sự kiện này đang biểu thị rằng người dùng đã dừng phiên duyệt lại. Kết hợp với Office.PowerPoint.PPT.Android.RehearseView.StartSession, sự kiện này sẽ là chỉ báo đầu tiên về bất kỳ sự cố hoặc lỗi nào người dùng gặp phải.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -13011,7 +13070,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="onenoteappsafebootdialogactiontaken-officeonenoteandroidsafebootdialogactiontaken-officeandroidearlytelemetrysafebootdialogactiontaken"></a>OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
 
-Tín hiệu quan trọng được sử dụng để theo dõi phản hồi người dùng khi thấy một hộp thoại khởi động an toàn. Hộp thoại khởi động an toàn được hiển thị khi chúng tôi không thể khởi động lặp lại. Người dùng lựa chọn dùng quyền khởi động an toàn để xóa dữ liệu ứng dụng để khởi động thành công. Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote. Người dùng nhìn thấy khi gặp lỗi sự cố khởi động quan trọng. Thông tin này sẽ giúp theo dõi nguyên nhân của sự cố đã được giải quyết hay chưa và người dùng có thể cho chạy ứng dụng thành công hay không.
+Tín hiệu quan trọng được sử dụng để theo dõi phản hồi người dùng khi thấy một hộp thoại khởi động an toàn. Hộp thoại khởi động an toàn được hiển thị khi chúng tôi không thể khởi động lặp lại. Tín hiệu này được dùng để phát hiện hồi quy quan trọng cho tình trạng của ứng dụng và dịch vụ OneNote. Người dùng nhìn thấy khi gặp lỗi sự cố khởi động quan trọng. Thông tin này sẽ giúp theo dõi liệu nguyên nhân của sự cố đã được giải quyết hay chưa và người dùng có thể cho chạy ứng dụng thành công hay không.
 
 Các trường sau đây sẽ được thu thập: 
 
@@ -14214,7 +14273,7 @@ Các trường sau đây sẽ được thu thập:
 
 #### <a name="renewidentityfailure"></a>RenewIdentityFailure
 
-Được thu thập khi người dùng thử mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng bảo vệ IRM. Nó chứa thông tin cần thiết để có thể điều tra và chẩn đoán chính xác các vấn đề xảy ra khi gia hạn chứng nhận người dùng thất bại.
+Được thu thập khi người dùng tìm cách mở một tài liệu được bảo vệ bằng IRM hoặc áp dụng biện pháp bảo vệ IRM. Dữ liệu này chứa thông tin cần thiết để có thể kiểm tra và chẩn đoán các sự cố xảy ra khi không gia hạn được chứng chỉ người dùng.
 
 Các trường sau đây sẽ được thu thập:
 
@@ -14397,6 +14456,8 @@ Các trường sau chỉ được thu thập cho Android:
 - **caption** – Cho chúng tôi biết liệu người dùng có bật phụ đề chi tiết trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến phụ đề chi tiết hay không
 
 - **color_inversion** – Cho chúng tôi biết liệu người dùng có bật cài đặt đảo màu trên thiết bị của họ để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
+
+- **density_setting** - Chế độ mật độ tùy chỉnh (do người dùng chọn) hiện đang được ứng dụng sử dụng
 
 - **high_contrast** – Cho chúng tôi biết liệu người dùng có bật cài đặt cho độ tương phản cao trên thiết bị của mình để giúp chúng tôi phát hiện các sự cố liên quan đến cài đặt này hay không
 
