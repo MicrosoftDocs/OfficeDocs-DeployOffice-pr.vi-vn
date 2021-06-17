@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về các trải nghiệm được kết nối tùy chọn, bao gồm các điều khoản sử dụng được áp dụng.
 hideEdit: true
-ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
-ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
+ms.openlocfilehash: 3583b22e9df50a3cdaff5e4cd3f6e695ab447498
+ms.sourcegitcommit: b906a2ca706cd4441964f09e1f4adf2e8b94d6be
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51914967"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957669"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Tổng quan về trải nghiệm được kết nối tuỳ chọn trong Office
 
@@ -28,7 +28,8 @@ ms.locfileid: "51914967"
 Nếu bạn có tài khoản cơ quan hoặc trường học, người quản trị của tổ chức bạn có thể cung cấp cho bạn khả năng sử dụng một hoặc nhiều dịch vụ được hỗ trợ trên nền tảng đám mây (còn được gọi là “trải nghiệm được kết nối tùy chọn”) trong khi sử dụng các ứng dụng Office, như Word hoặc Excel, được bao gồm trong Ứng dụng Microsoft 365 dành cho doanh nghiệp lớn (trước đó là Office 365 ProPlus). Các dịch vụ dựa trên đám mây này là tùy chọn. Việc bạn có sử dụng chúng hay không là tuỳ thuộc vào bạn. Chúng được cung cấp cho bạn theo các điều khoản của [Thỏa thuận Dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement) và [điều khoản về quyền riêng tư](https://privacy.microsoft.com/). Trong một số trường hợp, các điều khoản khác cũng có thể áp dụng. Bài viết này liệt kê các dịch vụ được hỗ trợ bởi đám mây, giải thích thêm về các điều khoản sử dụng của các dịch vụ và mô tả cách bạn có thể tắt hoặc bật dịch vụ bất cứ lúc nào.
 
 > [!NOTE]
-> Nếu bạn là người quản trị, hãy xem mục [Kiểm soát của người quản trị cho trải nghiệm được kết nối tùy chọn](#admin-controls-for-optional-connected-experiences).
+> - Nếu bạn là người quản trị, hãy xem mục [Kiểm soát của người quản trị cho trải nghiệm được kết nối tùy chọn](#admin-controls-for-optional-connected-experiences).
+> - Đối với Microsoft Teams, hãy xem [Tổng quan về trải nghiệm được kết nối tùy chọn trong Microsoft Teams](/microsoftteams/teams-privacy-oce-overview).
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Nếu bạn sử dụng các dịch vụ này, bạn cần đồng ý với những điều khoản sử dụng nào?
 
