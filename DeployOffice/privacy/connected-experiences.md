@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Cung cấp cho người quản trị Office thông tin về trải nghiệm được kết nối cho Office, chẳng hạn như trải nghiệm phân tích nội dung hoặc trải nghiệm tải xuống nội dung trực tuyến.
 hideEdit: true
-ms.openlocfilehash: c1fb64bc45ed9e97cde37541dad85162a5a3699c
-ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
+ms.openlocfilehash: 176166681e1e1e14ac6a13dce65e432de4bdac61
+ms.sourcegitcommit: b906a2ca706cd4441964f09e1f4adf2e8b94d6be
 ms.translationtype: HT
 ms.contentlocale: vi-VN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51916109"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957633"
 ---
 # <a name="connected-experiences-in-office"></a>Trải nghiệm được kết nối trong Office
 
@@ -29,7 +29,7 @@ Office bao gồm các ứng dụng phần mềm máy khách và trải nghiệm 
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Trải nghiệm được kết nối phân tích nội dung của bạn
 
-Các trải nghiệm được kết nối phân tích nội dung của bạn là các trải nghiệm sử dụng nội dung Office của bạn để cung cấp cho bạn các đề xuất thiết kế, đề xuất chỉnh sửa, thông tin chi tiết và các tính năng tương tự. Ví dụ: PowerPoint Designer hoặc Bộ dịch.
+Các trải nghiệm được kết nối phân tích nội dung của bạn là các trải nghiệm sử dụng nội dung Office của bạn để cung cấp cho bạn các đề xuất thiết kế, đề xuất chỉnh sửa, thông tin chi tiết về dữ liệu và các tính năng tương tự. Ví dụ: Trình thiết kết PowerPoint hoặc Trình dịch.
 
 Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối để phân tích nội dung của bạn và cũng cung cấp các liên kết đến nhiều thông tin hơn về chúng.
 
@@ -37,23 +37,21 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | ----------- | ------------------ |
 | *Bản đồ 3D*\*    | [Bắt đầu với Bản đồ 3D](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Phân tích dữ liệu (trước đó tên là Ý tưởng) | [Phân tích dữ liệu trong Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-|Tự động sửa lỗi|[Căn chỉnh nội dung của bạn một cách nhanh chóng và dễ dàng với Tự động Sửa lỗi](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Văn bản thay thế tự động   | [Tất cả mọi thứ bạn cần biết để viết văn bản thay thế hiệu quả](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
-|Đề xuất về biểu đồ (Excel dành cho web)|[Tạo biểu đồ với các biểu đồ được đề xuất](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
+|Đề xuất Biểu đồ|[Tạo biểu đồ với các biểu đồ được đề xuất](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0)|
 |Các phần bổ trợ của Class Notebook (OneNote)|[Bắt đầu với OneNote Class Notebook: Một Hướng dẫn dành cho Giáo viên](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Kiểu dữ liệu| [Kiểu dữ liệu Excel :Chứng khoán và địa lý](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
-|Trình thiết kế (Word cho web)|[Sử dụng Trình thiết kế để tạo tài liệu đẹp mắt hơn](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
 | Đọc chính tả  | [Đọc chính tả trong Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Trình soạn thảo<sup>1</sup> |[Trình soạn thảo Microsoft kiểm tra ngữ pháp và nhiều nội dung khác trong tài liệu, thư và web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Liên kết thân thiện trong Outlook |[Tên liên kết thân thiện hơn trong email](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
-| Viết tay sang Văn bản, Viết tay sang Hình, Viết tay sang Toán học | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Viết mực thành Văn bản, Viết mực thành Hình dạng, Viết mực thành Toán<sup>2</sup> | [Thay đổi Viết tay sang hình, văn bản hoặc toán học trong PowerPoint cho Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Chèn dữ liệu từ ảnh| [Chèn dữ liệu từ ảnh](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 |Công cụ Học tập|[Công cụ Học tập](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Chú thích và phụ đề trực tiếp |  [Trình bày với chú thích theo thời gian thực, tự động hoặc phụ đề trong PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | *Biểu đồ dạng bản đồ*\*    | [Tạo Biểu đồ dạng bản đồ trong Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Bản đồ trong Power View   | [Bản đồ trong Power View](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Dịch vụ Bản trình bày Office  | [Phát rộng bản trình bày PowerPoint của bạn đến một người xem từ xa](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
-|Đề xuất về PivotTable (Microsoft Excel trên web)|[Tạo PivotTable để phân tích dữ liệu trang tính](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576#OfficeVersion=Web)|
+|Các đề xuất PivotTable|[Tạo PivotTable để phân tích dữ liệu trang tính](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
 | PowerPoint Designer   | [Tạo bố trí trang chiếu chuyên nghiệp cùng PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 |Huấn luyện viên thuyết trình (PowerPoint)|[Diễn tập trình chiếu của bạn với Huấn luyện viên thuyết trình](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Phát hành lên Microsoft Stream    | [Chuyển bản trình bày thành video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
@@ -63,21 +61,22 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 |Chia sẻ thông báo|[Nhận thông báo khi các thành viên trong nhóm của bạn cập nhật tệp chia sẻ của bạn](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Tính năng kiểm tra tính tương đồng*\* (tính năng của Trình soạn thảo)|[Kiểm tra tính tương đồng trong tài liệu của bạn với các nguồn trực tuyến](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Tra cứu thông minh*\*   | [Sở hữu thông tin chuyên sâu về công việc bạn đang thực hiện với Tra cứu Thông minh](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
-| Thư trả lời được đề xuất | [Thư trả lời được đề xuất là gì?](https://support.microsoft.com/office/58517b93-946e-42d4-95d0-777aa5aa42a5) <br/> [Câu trả lời được gợi ý được tạo như thế nào?](https://support.microsoft.com/office/af9cfa57-4f4f-419f-b76d-bb305c3a9d4d)|
+| Thư trả lời được đề xuất | [Sử dụng các câu trả lời được đề xuất trong Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
 | Nhấn để lấy tài liệu Word (Thêm từ tệp)   | [Tìm và sử dụng nội dung bạn cần mà không cần rời khỏi Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Dự đoán văn bản (một tính năng của Trình soạn thảo)|[Giúp viết nhanh hơn với tính năng dự đoán văn bản trong Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
-|Bản chép lại |[Chép lại bản ghi của bạn](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Chuyển đổi vào trang web   | [Chuyển đổi tài liệu Word thành trang web Sway](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Bộ dịch   | [Dịch văn bản sang ngôn ngữ khác](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
 <sup>1</sup> Ngay cả khi không có kết nối Internet, bạn vẫn có thể dùng chức năng cơ bản của Trình soạn thảo. Các chức năng cơ bản cũng vẫn khả dụng nếu bạn chọn vô hiệu hóa việc sử dụng trải nghiệm được kết nối để phân tích nội dung của mình. Trong cả hai trường hợp, Microsoft sẽ không nhận được bất kỳ dữ liệu nào về việc sử dụng Trình soạn thảo.
+
+<sup>2</sup> Đối với thiết bị chạy Android, các khả năng viết mực này vẫn khả dụng ngay cả khi bạn không kết nối với internet. Các khả năng viết mực này cũng vẫn khả dụng trên các thiết bị chạy Android ngay cả khi bạn quyết định tắt tính năng sử dụng trải nghiệm được kết nối để phân tích nội dung của bạn. Trong cả hai trường hợp, không có dữ liệu nào về việc sử dụng các tính năng viết mực này được gửi tới Microsoft.
 
 > [!NOTE]
 > \*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
 
 ## <a name="connected-experiences-that-download-online-content"></a>Trải nghiệm được kết nối tải xuống nội dung trực tuyến
 
-Trải nghiệm được kết nối tải xuống nội dung trực tuyến là những trải nghiệm cho phép bạn tìm kiếm và tải xuống nội dung trực tuyến bao gồm các mẫu, hình ảnh, mô hình 3D, video và tài liệu tham khảo để cải thiện tài liệu của bạn. Ví dụ: mẫu Office hoặc Trình Bắt đầu Nhanh PowerPoint.
+Trải nghiệm được kết nối tải xuống nội dung trực tuyến là những trải nghiệm cho phép bạn tìm kiếm và tải xuống nội dung trực tuyến bao gồm các mẫu, hình ảnh, mô hình 3D, video và tài liệu tham khảo để nâng cao tài liệu của bạn. Ví dụ: Các mẫu Office hoặc PowerPoint QuickStarter.
 
 Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối tải xuống nội dung trực tuyến và cũng cung cấp các liên kết đến nhiều thông tin hơn về chúng.
 
@@ -99,11 +98,13 @@ Bảng sau đây cung cấp danh sách các trải nghiệm được kết nối
 | Tìm kiếm hình trực tuyến (Visio) | [Tìm thêm các hình và mẫu tô](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | *Trình bắt đầu nhanh PowerPoint*\*     | [Nghiên cứu một chủ đề với Trình bắt đầu nhanh PowerPoint](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | *Trình nghiên cứu*\*    | [Nghiên cứu bài luận của bạn dễ dàng trong Word](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
-| Cho Tôi Biết    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
+| Cho Tôi Biết<sup>3</sup>    | [Thao tác nhanh với tính năng Cho Tôi Biết](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Mẫu  | [Tải xuống miễn phí mẫu được dựng sẵn](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Ước tính thời gian di chuyển trong Up Next*\*|Khi bạn chọn cho phép Outlook for iOS và Android truy cập vị trí của mình, ước tính thời gian di chuyển của bạn tới sự kiện tiếp theo sẽ được đưa vào [ Up Next ](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) thẻ ở đầu hộp thư đến của bạn.<br/><br/> [Thông báo Đến lúc đi là gì?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Thanh thời tiết*\* (Outlook)| [Thay đổi thành phố được dự báo trên thanh thời tiết của lịch](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 |*Thời tiết trên lịch*\* (Outlook dành cho thiết bị di động)|[Làm thế nào để bật thời tiết trên lịch Outlook dành cho thiết bị di động?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
+
+<sup>3</sup> Chức năng cơ bản của Cho Tôi Biết vẫn khả dụng ngay cả khi bạn không kết nối với internet. Chức năng cơ bản tương tự cũng vẫn khả dụng nếu bạn quyết định vô hiệu hóa việc sử dụng trải nghiệm được kết nối để tải xuống nội dung trực tuyến. Trong cả hai trường hợp, không có dữ liệu nào về việc sử dụng Cho Tôi Biết được gửi tới Microsoft.
 
 > [!NOTE]
 >\*Khi người dùng đăng nhập bằng tài khoản cơ quan hoặc trường học, trải nghiệm kết nối được liệt kê ở trên phần in nghiêng là tùy chọn và được cung cấp theo điều khoản của [Thỏa thuận dịch vụ của Microsoft](https://www.microsoft.com/servicesagreement), [tuyên bố về quyền riêng tư](https://privacy.microsoft.com/) và các điều khoản khác cũng có thể áp dụng. Để tìm hiểu thêm thông tin, hãy xem [Tổng quan về trải nghiệm kết nối tuỳ chọn trong Office](optional-connected-experiences.md). Nếu bạn là người quản trị, trải nghiệm kết nối này có thể được quản lý bởi kiểm soát quyền riêng tư cho các trải nghiệm kết nối hoặc bởi thiết đặt chính sách *Cho phép sử dụng các trải nghiệm được kết nối tùy chọn bổ sung trong Office*.
